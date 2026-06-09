@@ -149,9 +149,9 @@
 
 ## 今日项目目录更新
 - 新建目录：
-  - `open-notebook/README.md`
-  - `Agent-Reach/README.md`
-  - `cosmos/README.md`
+  - `projects/open-notebook/README.md`
+  - `projects/Agent-Reach/README.md`
+  - `projects/cosmos/README.md`
 - 更新目录：无。
 
 ## 今日综合判断

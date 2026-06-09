@@ -69,9 +69,9 @@
 
 ## 二、今日新增 GitHub AI 工具目录（仓库已更新）
 
-- `hunk/README.md`
-- `dflash/README.md`
-- `financial-services-plugins/README.md`
+- `projects/hunk/README.md`
+- `projects/dflash/README.md`
+- `projects/financial-services-plugins/README.md`
 
 以上目录均包含：项目定位、使用方法、原理拆解、价值判断、风险与落地建议。
 

@@ -69,9 +69,9 @@
 ## 二、今日 GitHub AI 项目目录更新
 
 - 新增：
-  - `cline/README.md`
-  - `autogen/README.md`
-  - `anything-llm/README.md`
+  - `projects/cline/README.md`
+  - `projects/autogen/README.md`
+  - `projects/anything-llm/README.md`
 
 以上项目说明均覆盖：定位、用法、原理、价值、风险边界、补充建议、参考资料。
 

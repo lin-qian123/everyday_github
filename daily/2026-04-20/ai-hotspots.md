@@ -30,11 +30,11 @@
 
 ### 今日仓库同步结果
 
-1. 新建目录：`claude-code/README.md`
-2. 新建目录：`codex/README.md`
-3. 新建目录：`llama.cpp/README.md`
-4. 更新目录：`goose/README.md`
-5. 更新目录：`opencode/README.md`
+1. 新建目录：`projects/claude-code/README.md`
+2. 新建目录：`projects/codex/README.md`
+3. 新建目录：`projects/llama.cpp/README.md`
+4. 更新目录：`projects/goose/README.md`
+5. 更新目录：`projects/opencode/README.md`
 
 以上 README 均已补齐：`中文详解 + 最短用法 + 核心原理 + 价值/风险 + 参考链接`。
 

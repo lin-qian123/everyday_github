@@ -80,10 +80,10 @@
 
 ## 今日项目目录更新
 - 新建目录：
-  - `hermes-webui/README.md`
-  - `VoxCPM/README.md`
-  - `train-llm-from-scratch/README.md`
-  - `supermemory/README.md`
+  - `projects/hermes-webui/README.md`
+  - `projects/VoxCPM/README.md`
+  - `projects/train-llm-from-scratch/README.md`
+  - `projects/supermemory/README.md`
 - 更新目录：无。
 
 ## 今日综合判断

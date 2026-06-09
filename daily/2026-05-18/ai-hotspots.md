@@ -63,8 +63,8 @@
 
 ## 二、今日 GitHub AI 项目目录更新
 
-- 新增：`x-algorithm/README.md`
-- 新增：`academic-research-skills/README.md`
+- 新增：`projects/x-algorithm/README.md`
+- 新增：`projects/academic-research-skills/README.md`
 
 以上项目说明均覆盖：定位、用法、原理、价值、风险边界、补充建议、参考资料。
 

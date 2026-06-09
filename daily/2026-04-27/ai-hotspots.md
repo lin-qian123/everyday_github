@@ -22,11 +22,11 @@
 
 ### 今日新增目录
 
-1. `AutoGPT/README.md`
-2. `MetaGPT/README.md`
-3. `AFFiNE/README.md`
-4. `vllm/README.md`
-5. `mem0/README.md`
+1. `projects/AutoGPT/README.md`
+2. `projects/MetaGPT/README.md`
+3. `projects/AFFiNE/README.md`
+4. `projects/vllm/README.md`
+5. `projects/mem0/README.md`
 
 ### 重点项目与热度信号
 

@@ -59,9 +59,9 @@
 - 可信度：B（官方政策 + 媒体跟进）
 
 ## 二、今日新增 GitHub AI 工具（已写入仓库）
-- `open-design/README.md`
-- `sim/README.md`
-- `browserbase-skills/README.md`
+- `projects/open-design/README.md`
+- `projects/sim/README.md`
+- `projects/browserbase-skills/README.md`
 
 以上 3 个目录均为本次新增，包含：定位、用法、原理、场景、风险与补充资料。
 

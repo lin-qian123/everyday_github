@@ -66,8 +66,8 @@
 
 ## 二、今日新增 GitHub AI 工具目录（仓库已更新）
 
-- `voice-pro/README.md`
-- `Understand-Anything/README.md`
+- `projects/voice-pro/README.md`
+- `projects/Understand-Anything/README.md`
 
 以上目录均包含：项目定位、使用方法、原理拆解、实践价值与风险补充。
 

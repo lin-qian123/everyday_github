@@ -69,9 +69,9 @@
 
 ## 二、今日新增 GitHub AI 工具目录（仓库已更新）
 
-- `local-deep-research/README.md`
-- `InsForge/README.md`
-- `TabPFN/README.md`
+- `projects/local-deep-research/README.md`
+- `projects/InsForge/README.md`
+- `projects/TabPFN/README.md`
 
 以上目录均包含：项目定位、使用方法、原理拆解、价值判断、风险与落地建议。
 

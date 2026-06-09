@@ -62,9 +62,9 @@
 
 ## 二、今日 GitHub AI 工具目录更新
 
-- 新增：`spec-kit/README.md`
-- 新增：`gstack/README.md`
-- 新增：`video-search-and-summarization/README.md`
+- 新增：`projects/spec-kit/README.md`
+- 新增：`projects/gstack/README.md`
+- 新增：`projects/video-search-and-summarization/README.md`
 
 以上项目说明均覆盖：定位、用法、原理、价值、风险边界、补充建议、参考资料。
 

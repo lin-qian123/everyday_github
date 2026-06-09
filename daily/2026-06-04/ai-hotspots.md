@@ -102,8 +102,8 @@
 
 ## 今日项目目录更新
 - 新建目录：
-  - `Open-LLM-VTuber/README.md`
-  - `Vibe-Trading/README.md`
+  - `projects/Open-LLM-VTuber/README.md`
+  - `projects/Vibe-Trading/README.md`
 - 更新目录：无。
 
 ## 今日综合判断

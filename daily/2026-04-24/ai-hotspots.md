@@ -22,9 +22,9 @@
 
 ### 今日新增目录
 
-1. `context7/README.md`
-2. `github-mcp-server/README.md`
-3. `playwright-mcp/README.md`
+1. `projects/context7/README.md`
+2. `projects/github-mcp-server/README.md`
+3. `projects/playwright-mcp/README.md`
 
 ### 重点项目与热度信号
 

@@ -112,8 +112,8 @@
 
 ## 今日项目目录更新
 - 新建目录：
-  - `headroom/README.md`
-  - `production-agentic-rag-course/README.md`
+  - `projects/headroom/README.md`
+  - `projects/production-agentic-rag-course/README.md`
 - 更新目录：无。
 
 ## 今日综合判断

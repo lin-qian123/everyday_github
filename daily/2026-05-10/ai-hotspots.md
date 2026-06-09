@@ -65,10 +65,10 @@
 
 ## 二、今日 GitHub AI 工具目录更新
 
-- 更新：`DeepSeek-TUI/README.md`
-- 更新：`financial-services/README.md`
-- 更新：`local-deep-research/README.md`
-- 更新：`agent-skills/README.md`
+- 更新：`projects/DeepSeek-TUI/README.md`
+- 更新：`projects/financial-services/README.md`
+- 更新：`projects/local-deep-research/README.md`
+- 更新：`projects/agent-skills/README.md`
 
 更新内容统一包含：项目定位、使用方法、原理拆解、适用场景与补充判断，便于后续横向比较与二次复用。
 

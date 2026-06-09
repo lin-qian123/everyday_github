@@ -65,7 +65,7 @@
 
 ## 二、今日 GitHub AI 项目目录更新
 
-- 新增：`semble/README.md`
+- 新增：`projects/semble/README.md`
 
 以上项目说明已覆盖：定位、用法、原理、价值、风险边界、补充建议、参考资料。
 

@@ -65,8 +65,8 @@
 
 ## 二、今日 GitHub AI 工具目录更新
 
-- 新增：`hello-agents/README.md`
-- 新增：`easy-vibe/README.md`
+- 新增：`projects/hello-agents/README.md`
+- 新增：`projects/easy-vibe/README.md`
 
 新增内容均已覆盖：项目定位、使用方法、原理拆解、风险边界与工程化补充建议。
 

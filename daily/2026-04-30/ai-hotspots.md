@@ -19,10 +19,10 @@
 
 ### 今日新增目录
 
-1. `skills/README.md`
-2. `agent-skills/README.md`
-3. `awesome-codex-skills/README.md`
-4. `tolaria/README.md`
+1. `projects/skills/README.md`
+2. `projects/agent-skills/README.md`
+3. `projects/awesome-codex-skills/README.md`
+4. `projects/tolaria/README.md`
 
 ### 项目热度与讨论
 

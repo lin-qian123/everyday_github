@@ -69,10 +69,10 @@
 ## 二、今日 GitHub AI 项目目录更新
 
 - 新增：
-  - `gpt4all/README.md`
-  - `crewAI/README.md`
-  - `Flowise/README.md`
-  - `aider/README.md`
+  - `projects/gpt4all/README.md`
+  - `projects/crewAI/README.md`
+  - `projects/Flowise/README.md`
+  - `projects/aider/README.md`
 
 以上项目说明均覆盖：定位、用法、原理、价值、风险边界、补充建议、参考资料。
 

@@ -20,12 +20,12 @@
 
 ### 今日更新目录
 
-1. `ollama/README.md`
-2. `dify/README.md`
-3. `open-webui/README.md`
-4. `llama.cpp/README.md`
-5. `OpenHands/README.md`
-6. `codex/README.md`
+1. `projects/ollama/README.md`
+2. `projects/dify/README.md`
+3. `projects/open-webui/README.md`
+4. `projects/llama.cpp/README.md`
+5. `projects/OpenHands/README.md`
+6. `projects/codex/README.md`
 
 ### 重点项目与热度信号
 

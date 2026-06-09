@@ -65,7 +65,7 @@
 
 ## 二、今日新增/更新 GitHub AI 工具目录
 
-- 新增：`financial-services/README.md`（`anthropics/financial-services`）
+- 新增：`projects/financial-services/README.md`（`anthropics/financial-services`）
 - 延续跟踪（已有目录）：`DeepSeek-TUI`、`local-deep-research`、`hunk`、`dflash`
 
 以上目录聚焦：项目定位、使用方法、原理拆解、价值补充与风险边界。

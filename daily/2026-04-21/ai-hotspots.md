@@ -30,8 +30,8 @@
 
 ### 今日仓库同步结果
 
-1. 新建目录：`dify/README.md`
-2. 新建目录：`OpenHands/README.md`
+1. 新建目录：`projects/dify/README.md`
+2. 新建目录：`projects/OpenHands/README.md`
 
 两份 README 已补齐：`中文详解 + 最短用法 + 核心原理 + 场景/风险 + 实操补充材料`。
 

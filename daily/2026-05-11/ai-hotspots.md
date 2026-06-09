@@ -65,7 +65,7 @@
 
 ## 二、今日 GitHub AI 工具目录更新
 
-- 新增：`9router/README.md`
+- 新增：`projects/9router/README.md`
 
 新增内容已覆盖：项目定位、使用方法、原理拆解、风险边界与可落地的工程建议。
 

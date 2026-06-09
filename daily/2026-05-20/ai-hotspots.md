@@ -77,12 +77,12 @@
 ## 二、今日 GitHub AI 项目目录更新
 
 - 新增：
-  - `agentmemory/README.md`
-  - `claude-plugins-official/README.md`
-  - `12-factor-agents/README.md`
-  - `ai-agents-for-beginners/README.md`
-  - `ViMax/README.md`
-  - `rtk/README.md`
+  - `projects/agentmemory/README.md`
+  - `projects/claude-plugins-official/README.md`
+  - `projects/12-factor-agents/README.md`
+  - `projects/ai-agents-for-beginners/README.md`
+  - `projects/ViMax/README.md`
+  - `projects/rtk/README.md`
 
 以上项目说明均覆盖：定位、用法、原理、价值、风险边界、补充建议、参考资料。
 

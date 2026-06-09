@@ -151,8 +151,8 @@
 
 ## 今日项目目录更新
 - 新建目录：
-  - `CopilotKit/README.md`
-  - `Personal_AI_Infrastructure/README.md`
+  - `projects/CopilotKit/README.md`
+  - `projects/Personal_AI_Infrastructure/README.md`
 - 更新目录：无。
 
 ## 今日综合判断

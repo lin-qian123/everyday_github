@@ -125,8 +125,8 @@
 
 ## 今日项目目录更新
 - 新建目录：
-  - `OpenSpec/README.md`
-  - `agno/README.md`
+  - `projects/OpenSpec/README.md`
+  - `projects/agno/README.md`
 - 更新目录：无。
 
 ## 今日综合判断

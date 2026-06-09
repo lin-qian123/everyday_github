@@ -64,9 +64,9 @@
 
 ## 二、今日 GitHub AI 工具目录更新
 
-- 新增：`CloakBrowser/README.md`
-- 新增：`aidlc-workflows/README.md`
-- 新增：`AI-Trader/README.md`
+- 新增：`projects/CloakBrowser/README.md`
+- 新增：`projects/aidlc-workflows/README.md`
+- 新增：`projects/AI-Trader/README.md`
 
 新增内容均已覆盖：项目定位、使用方法、原理拆解、风险边界与工程补充建议。
 

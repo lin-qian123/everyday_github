@@ -23,9 +23,9 @@
 
 ### 今日新增目录
 
-1. `awesome-design-md/README.md`
-2. `claude-code-best-practice/README.md`
-3. `superpowers/README.md`
+1. `projects/awesome-projects/design-md/README.md`
+2. `projects/claude-code-best-practice/README.md`
+3. `projects/superpowers/README.md`
 
 ### 重点项目与热度信号
 

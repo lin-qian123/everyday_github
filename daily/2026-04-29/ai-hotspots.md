@@ -20,11 +20,11 @@
 
 ### 今日新增目录
 
-1. `free-claude-code/README.md`
-2. `ml-intern/README.md`
-3. `guizang-ppt-skill/README.md`
-4. `design-md/README.md`
-5. `awesome-gpt-image-2/README.md`
+1. `free-projects/claude-code/README.md`
+2. `projects/ml-intern/README.md`
+3. `projects/guizang-ppt-skill/README.md`
+4. `projects/design-md/README.md`
+5. `projects/awesome-gpt-image-2/README.md`
 
 ### 重点项目与热度信号
 

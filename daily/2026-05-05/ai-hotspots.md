@@ -63,9 +63,9 @@
 
 ## 二、今日新增 GitHub AI 工具目录（仓库已更新）
 
-- `cocoindex/README.md`
-- `holaOS/README.md`
-- `DeepSeek-TUI/README.md`
+- `projects/cocoindex/README.md`
+- `projects/holaOS/README.md`
+- `projects/DeepSeek-TUI/README.md`
 
 以上目录均已包含：项目定位、使用方法、工作原理、价值判断与补充材料。
 

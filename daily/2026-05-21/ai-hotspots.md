@@ -70,8 +70,8 @@
 ## 二、今日 GitHub AI 项目目录更新
 
 - 新增：
-  - `ai-engineering-from-scratch/README.md`
-  - `oh-my-pi/README.md`
+  - `projects/ai-engineering-from-scratch/README.md`
+  - `projects/oh-my-pi/README.md`
 
 以上项目说明均覆盖：定位、用法、原理、价值、风险边界、补充建议、参考资料。
 

@@ -148,8 +148,8 @@
 
 ## 今日项目目录更新
 - 新建目录：
-  - `memsearch/README.md`
-  - `openless/README.md`
+  - `projects/memsearch/README.md`
+  - `projects/openless/README.md`
 - 更新目录：无。
 
 ## 今日综合判断

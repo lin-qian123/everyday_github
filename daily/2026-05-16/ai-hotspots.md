@@ -69,11 +69,11 @@
 
 ## 二、今日 GitHub AI 项目目录更新
 
-- 新增：`openhuman/README.md`
-- 新增：`scientific-agent-skills/README.md`
-- 新增：`supertonic/README.md`
-- 新增：`RuView/README.md`
-- 新增：`qiaomu-anything-to-notebooklm/README.md`
+- 新增：`projects/openhuman/README.md`
+- 新增：`projects/scientific-agent-skills/README.md`
+- 新增：`projects/supertonic/README.md`
+- 新增：`projects/RuView/README.md`
+- 新增：`projects/qiaomu-anything-to-notebooklm/README.md`
 
 以上项目说明均覆盖：定位、用法、原理、价值、风险边界、补充建议、参考资料。
 

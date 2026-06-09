@@ -22,9 +22,9 @@
 
 ### 今日新增/更新的仓库目录
 
-1. `andrej-karpathy-skills/README.md`
-2. `caveman/README.md`
-3. `graphify/README.md`
+1. `projects/andrej-karpathy-skills/README.md`
+2. `projects/caveman/README.md`
+3. `projects/graphify/README.md`
 
 ### 重点项目热度信号
 

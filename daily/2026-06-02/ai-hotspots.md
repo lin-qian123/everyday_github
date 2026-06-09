@@ -98,8 +98,8 @@
 ## 今日项目目录更新
 - 新建目录：无。
 - 更新目录：
-  - `Scrapling/README.md`
-  - `ruflo/README.md`
+  - `projects/scrapling/README.md`
+  - `projects/ruflo/README.md`
 
 ## 今日综合判断
 - GitHub 侧的高热项目继续向三条线收敛：文档摄入层、skill/插件分发层、多代理编排层。

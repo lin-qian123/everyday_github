@@ -66,11 +66,11 @@
 
 ## 二、今日 GitHub AI 项目目录更新
 
-- 新增：`CLI-Anything/README.md`
-- 新增：`DeepSeek-Reasonix/README.md`
-- 新增：`codegraph/README.md`
-- 新增：`whichllm/README.md`
-- 新增：`TencentDB-Agent-Memory/README.md`
+- 新增：`projects/CLI-Anything/README.md`
+- 新增：`projects/DeepSeek-Reasonix/README.md`
+- 新增：`projects/codegraph/README.md`
+- 新增：`projects/whichllm/README.md`
+- 新增：`projects/TencentDB-Agent-Memory/README.md`
 
 以上项目说明均覆盖：定位、用法、原理、价值、风险边界、补充建议、参考资料。
 

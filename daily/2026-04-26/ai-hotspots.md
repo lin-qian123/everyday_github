@@ -22,9 +22,9 @@
 
 ### 今日新增目录
 
-1. `ollama/README.md`
-2. `langchain/README.md`
-3. `gemini-cli/README.md`
+1. `projects/ollama/README.md`
+2. `projects/langchain/README.md`
+3. `projects/gemini-cli/README.md`
 
 ### 重点项目与热度信号
 

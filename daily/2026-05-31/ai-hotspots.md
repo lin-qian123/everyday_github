@@ -91,8 +91,8 @@
 ## 今日项目目录更新
 - 新建目录：无。
 - 更新目录：
-  - `claude-code/README.md`
-  - `compound-engineering-plugin/README.md`
+  - `projects/claude-code/README.md`
+  - `projects/compound-engineering-plugin/README.md`
 - 说明：基于当日可复核证据，本次 GitHub AI 头部热点与仓库既有目录高度重合，故执行“更新既有高热项目说明”而非重复新建目录。
 
 ## 今日综合判断

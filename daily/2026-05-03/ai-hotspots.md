@@ -67,7 +67,7 @@
 - 可信度：A-（媒体报道 + 平台历史政策）
 
 ## 二、今日新增 GitHub AI 工具目录（仓库已更新）
-- `symphony/README.md`
+- `projects/symphony/README.md`
 
 新增内容已覆盖：定位、使用方式、工作原理、落地建议、风险边界与延伸资料。
 

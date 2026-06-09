@@ -56,9 +56,9 @@
 - 可信度：B（官方政策为 A；舆论热度多来自媒体二手观察）
 
 ## 二、今日新增 GitHub AI 工具（已写入仓库）
-- `warp/README.md`
-- `craft-agents-oss/README.md`
-- `jcode/README.md`
+- `projects/warp/README.md`
+- `projects/craft-agents-oss/README.md`
+- `projects/jcode/README.md`
 
 以上 3 个目录均为本次新增，包含：项目定位、用法、原理、价值边界、补充资料。
 

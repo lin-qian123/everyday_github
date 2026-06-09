@@ -22,9 +22,9 @@
 
 ### 今日新增目录
 
-1. `open-webui/README.md`
-2. `ragflow/README.md`
-3. `modelcontextprotocol-servers/README.md`
+1. `projects/open-webui/README.md`
+2. `projects/ragflow/README.md`
+3. `projects/modelcontextprotocol-servers/README.md`
 
 ### 重点项目与热度信号
 
