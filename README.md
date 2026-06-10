@@ -80,6 +80,7 @@
 | `goose` | 可扩展的通用代理执行器，适合自动化与工程操作。 | [GitHub](https://github.com/aaif-goose/goose) |
 | `cline` | 面向 IDE 工作流的 AI 编码助手，社区热度长期较高。 | [GitHub](https://github.com/cline/cline) |
 | `aider` | 偏向实际改代码与提交循环的老牌 CLI 助手。 | [GitHub](https://github.com/paul-gauthier/aider) |
+| `continue` | 从 IDE 助手演进到 PR / CI 中的 AI 检查与代码治理路线。 | [GitHub](https://github.com/continuedev/continue) |
 | `qwen-code` | 阿里系开源终端 coding agent，围绕 Qwen coder 能力优化。 | [GitHub](https://github.com/QwenLM/qwen-code) |
 
 ### Agent 框架与技能生态
@@ -155,6 +156,8 @@
 | --- | --- | --- |
 | `llama.cpp` | 本地推理生态的标志性项目。 | [GitHub](https://github.com/ggml-org/llama.cpp) |
 | `vllm` | 高性能推理服务框架。 | [GitHub](https://github.com/vllm-project/vllm) |
+| `LocalAI` | 本地优先的开源 AI 引擎，兼容 OpenAI / Anthropic API。 | [GitHub](https://github.com/mudler/LocalAI) |
+| `sglang` | 面向大模型与多模态模型的高性能 serving 基础设施。 | [GitHub](https://github.com/sgl-project/sglang) |
 | `gemini-cli` | Google 的 CLI 入口项目，兼具模型调用与开发体验属性。 | [GitHub](https://github.com/google-gemini/gemini-cli) |
 | `BitNet` | 微软系低比特模型路线代表项目。 | [GitHub](https://github.com/microsoft/BitNet) |
 | `TabPFN` | 表格机器学习方向的高热项目。 | [GitHub](https://github.com/PriorLabs/TabPFN) |
@@ -179,18 +182,18 @@
 
 - 全量项目目录：[`projects/`](./projects/)
 - 最近日报：
+  - [`2026-06-10`](./daily/2026-06-10/ai-hotspots.md)
   - [`2026-06-09`](./daily/2026-06-09/ai-hotspots.md)
   - [`2026-06-08`](./daily/2026-06-08/ai-hotspots.md)
-  - [`2026-06-07`](./daily/2026-06-07/ai-hotspots.md)
 
 如果你要找的是某个具体项目，而不是看分类，直接在 [`projects/`](./projects/) 中按名称查找会更快。
 
 ## 当前状态
 
 - 状态：持续日更中。
-- 最新更新：`2026-06-09`。
+- 最新更新：`2026-06-10`。
 - 当前项目总数：约 `200+`。
-- 最近新增项目：`turbovec`、`pm-skills`。
+- 最近新增项目：`LocalAI`、`continue`、`sglang`。
 - 覆盖平台：GitHub、X、Instagram、YouTube。
 
 ## 维护约定

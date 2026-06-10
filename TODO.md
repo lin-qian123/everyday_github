@@ -89,7 +89,7 @@
 - 持续把 X 聚合来源替换为原帖直链，减少二次聚合依赖。
 - 为日报新增“可复核状态”字段（可直接打开 / 需登录 / 聚合摘录），提升可追溯性。
 - 增加每条社媒热点的“时间戳字段”（发布日期 + 抓取日期），减少跨日混淆。
-- 优先补齐当前 OSSInsight Top 50 里仍未建目录且无同名冲突的项目，例如 `LocalAI`、`sglang`、`continue` 等。
+- 优先补齐当前 OSSInsight Top 50 里仍未建目录且无同名冲突的项目，例如 `milvus`、`qdrant`、`haystack` 等。
 
 ## 阻塞点
 
@@ -184,3 +184,10 @@
   - 保留既有 `skills/` 目录，不覆盖为 `google/skills`，改在日报中记录其趋势信号与目录冲突取舍。
   - 新增 `projects/` 统一项目目录，后续自动化新增项目一律放在该目录下。
   - 更新自动化规则：后续每日运行需同步做项目分类、维护首页 `README.md`，并在成功后自动提交推送 GitHub。
+
+- 2026-06-10：
+  - 新增 `projects/LocalAI/README.md`。
+  - 新增 `projects/continue/README.md`。
+  - 新增 `projects/sglang/README.md`。
+  - 新增 `daily/2026-06-10/ai-hotspots.md`。
+  - 同步首页 `README.md`：补充 `continue`、`LocalAI`、`sglang` 到对应分类，并更新最新日期。
