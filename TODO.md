@@ -6,6 +6,7 @@
 - 为热点日报增加统一模板字段（发布时间、证据等级、争议标签）。
 - 增加每周汇总（周趋势、重复热点、降温话题）。
 - 评估是否为首页分类索引增加“自动统计脚本”，减少手工维护成本。
+- 建立 `projects/` 的轻量索引脚本或清单，减少人工判断“是否已建档”。
 
 ## 阶段性开发记录
 
@@ -84,12 +85,12 @@
 
 ## 下一步行动
 
-- 明日继续优先比对 GitHub Trending 与 OSSInsight AI 榜单，优先补齐 Top 50 中尚未建目录项目。
+- 明日继续优先比对 GitHub Trending 与 OSSInsight AI 榜单，优先补齐 Top 50 中仍缺失且分类价值高的项目。
 - 对 X/Instagram 热点补充更多可直接访问的官方帖链接，降低媒体复述占比。
 - 持续把 X 聚合来源替换为原帖直链，减少二次聚合依赖。
 - 为日报新增“可复核状态”字段（可直接打开 / 需登录 / 聚合摘录），提升可追溯性。
 - 增加每条社媒热点的“时间戳字段”（发布日期 + 抓取日期），减少跨日混淆。
-- 优先补齐当前 OSSInsight Top 50 里仍未建目录且无同名冲突的项目，例如 `milvus`、`qdrant`、`haystack` 等。
+- 若 GitHub 头部高热项目已全部建档，转为优先刷新已有项目说明与首页分类代表项。
 
 ## 阻塞点
 
@@ -191,3 +192,9 @@
   - 新增 `projects/sglang/README.md`。
   - 新增 `daily/2026-06-10/ai-hotspots.md`。
   - 同步首页 `README.md`：补充 `continue`、`LocalAI`、`sglang` 到对应分类，并更新最新日期。
+- 2026-06-11：
+  - 新增 `projects/milvus/README.md`。
+  - 新增 `projects/qdrant/README.md`。
+  - 新增 `projects/haystack/README.md`。
+  - 新增 `daily/2026-06-11/ai-hotspots.md`。
+  - 同步首页 `README.md`：补充 `milvus`、`qdrant`、`haystack` 到 `RAG、检索与知识处理`，并更新最新日期。
