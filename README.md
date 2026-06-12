@@ -48,7 +48,7 @@
 
 如果你是第一次进入这个仓库，建议从这几个入口开始：
 
-- 最新日报：[`daily/2026-06-11/ai-hotspots.md`](./daily/2026-06-11/ai-hotspots.md)
+- 最新日报：[`daily/2026-06-12/ai-hotspots.md`](./daily/2026-06-12/ai-hotspots.md)
 - 项目总目录：[`projects/`](./projects/)
 - 自动化约束：[`AGENTS.md`](./AGENTS.md)
 - 开发续接记录：[`TODO.md`](./TODO.md)
@@ -82,6 +82,7 @@
 | `aider` | 偏向实际改代码与提交循环的老牌 CLI 助手。 | [GitHub](https://github.com/paul-gauthier/aider) |
 | `continue` | 从 IDE 助手演进到 PR / CI 中的 AI 检查与代码治理路线。 | [GitHub](https://github.com/continuedev/continue) |
 | `qwen-code` | 阿里系开源终端 coding agent，围绕 Qwen coder 能力优化。 | [GitHub](https://github.com/QwenLM/qwen-code) |
+| `tabby` | 自托管、可本地部署的开源 AI 编码助手。 | [GitHub](https://github.com/TabbyML/tabby) |
 
 ### Agent 框架与技能生态
 
@@ -126,6 +127,8 @@
 | `milvus` | 大规模向量检索底座，适合生产级 RAG 基础设施。 | [GitHub](https://github.com/milvus-io/milvus) |
 | `qdrant` | 强调过滤、混合检索和多向量表达的 AI 搜索引擎。 | [GitHub](https://github.com/qdrant/qdrant) |
 | `haystack` | 面向生产级 LLM / RAG / agent 的透明编排框架。 | [GitHub](https://github.com/deepset-ai/haystack) |
+| `llama_index` | 把文档解析、索引、检索与 agent 连接起来的数据接入层框架。 | [GitHub](https://github.com/run-llama/llama_index) |
+| `chroma` | 轻量、AI 友好的搜索与向量检索基础设施。 | [GitHub](https://github.com/chroma-core/chroma) |
 
 ### 前端、UI 与 Agent 交互层
 
@@ -185,6 +188,7 @@
 
 - 全量项目目录：[`projects/`](./projects/)
 - 最近日报：
+  - [`2026-06-12`](./daily/2026-06-12/ai-hotspots.md)
   - [`2026-06-11`](./daily/2026-06-11/ai-hotspots.md)
   - [`2026-06-10`](./daily/2026-06-10/ai-hotspots.md)
   - [`2026-06-09`](./daily/2026-06-09/ai-hotspots.md)
@@ -194,9 +198,9 @@
 ## 当前状态
 
 - 状态：持续日更中。
-- 最新更新：`2026-06-11`。
+- 最新更新：`2026-06-12`。
 - 当前项目总数：约 `200+`。
-- 最近新增项目：`milvus`、`qdrant`、`haystack`。
+- 最近新增项目：`llama_index`、`chroma`、`tabby`。
 - 覆盖平台：GitHub、X、Instagram、YouTube。
 
 ## 维护约定

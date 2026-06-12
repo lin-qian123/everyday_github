@@ -198,3 +198,9 @@
   - 新增 `projects/haystack/README.md`。
   - 新增 `daily/2026-06-11/ai-hotspots.md`。
   - 同步首页 `README.md`：补充 `milvus`、`qdrant`、`haystack` 到 `RAG、检索与知识处理`，并更新最新日期。
+- 2026-06-12：
+  - 新增 `projects/llama_index/README.md`。
+  - 新增 `projects/chroma/README.md`。
+  - 新增 `projects/tabby/README.md`。
+  - 新增 `daily/2026-06-12/ai-hotspots.md`。
+  - 同步首页 `README.md`：补充 `tabby` 到 `Coding Agents 与终端助手`，补充 `llama_index`、`chroma` 到 `RAG、检索与知识处理`，并更新最新日期。
