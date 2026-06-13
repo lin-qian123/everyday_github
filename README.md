@@ -48,7 +48,7 @@
 
 如果你是第一次进入这个仓库，建议从这几个入口开始：
 
-- 最新日报：[`daily/2026-06-12/ai-hotspots.md`](./daily/2026-06-12/ai-hotspots.md)
+- 最新日报：[`daily/2026-06-13/ai-hotspots.md`](./daily/2026-06-13/ai-hotspots.md)
 - 项目总目录：[`projects/`](./projects/)
 - 自动化约束：[`AGENTS.md`](./AGENTS.md)
 - 开发续接记录：[`TODO.md`](./TODO.md)
@@ -83,6 +83,7 @@
 | `continue` | 从 IDE 助手演进到 PR / CI 中的 AI 检查与代码治理路线。 | [GitHub](https://github.com/continuedev/continue) |
 | `qwen-code` | 阿里系开源终端 coding agent，围绕 Qwen coder 能力优化。 | [GitHub](https://github.com/QwenLM/qwen-code) |
 | `tabby` | 自托管、可本地部署的开源 AI 编码助手。 | [GitHub](https://github.com/TabbyML/tabby) |
+| `zed` | 高性能、多人协作的代码编辑器，体现 AI 时代开发入口向编辑器本体回流。 | [GitHub](https://github.com/zed-industries/zed) |
 
 ### Agent 框架与技能生态
 
@@ -129,6 +130,7 @@
 | `haystack` | 面向生产级 LLM / RAG / agent 的透明编排框架。 | [GitHub](https://github.com/deepset-ai/haystack) |
 | `llama_index` | 把文档解析、索引、检索与 agent 连接起来的数据接入层框架。 | [GitHub](https://github.com/run-llama/llama_index) |
 | `chroma` | 轻量、AI 友好的搜索与向量检索基础设施。 | [GitHub](https://github.com/chroma-core/chroma) |
+| `faiss` | Meta 主导的向量相似度搜索与聚类库，是很多检索系统的底层内核。 | [GitHub](https://github.com/facebookresearch/faiss) |
 
 ### 前端、UI 与 Agent 交互层
 
@@ -142,6 +144,7 @@
 | `OpenSandbox` | 为 Agent 提供可控执行环境与隔离层。 | [GitHub](https://github.com/alibaba/OpenSandbox) |
 | `page-agent` | 页面级 agent 交互与操作路线。 | [GitHub](https://github.com/alibaba/page-agent) |
 | `lightpanda-browser` | 为自动化与 Agent 场景设计的高性能浏览器内核路线。 | [GitHub](https://github.com/lightpanda-io/browser) |
+| `openui` | 开源生成式 UI 原型工具，支持描述界面并导出到多种前端框架。 | [GitHub](https://github.com/wandb/openui) |
 
 ### 语音、视频与多模态
 
@@ -165,6 +168,7 @@
 | `LocalAI` | 本地优先的开源 AI 引擎，兼容 OpenAI / Anthropic API。 | [GitHub](https://github.com/mudler/LocalAI) |
 | `sglang` | 面向大模型与多模态模型的高性能 serving 基础设施。 | [GitHub](https://github.com/sgl-project/sglang) |
 | `gemini-cli` | Google 的 CLI 入口项目，兼具模型调用与开发体验属性。 | [GitHub](https://github.com/google-gemini/gemini-cli) |
+| `FastChat` | 老牌 LLM 训练、服务与评测底座，连接 Chatbot Arena 与多模型 API 路线。 | [GitHub](https://github.com/lm-sys/FastChat) |
 | `BitNet` | 微软系低比特模型路线代表项目。 | [GitHub](https://github.com/microsoft/BitNet) |
 | `TabPFN` | 表格机器学习方向的高热项目。 | [GitHub](https://github.com/PriorLabs/TabPFN) |
 | `timesfm` | Google 的时间序列基础模型。 | [GitHub](https://github.com/google-research/timesfm) |
@@ -188,6 +192,7 @@
 
 - 全量项目目录：[`projects/`](./projects/)
 - 最近日报：
+  - [`2026-06-13`](./daily/2026-06-13/ai-hotspots.md)
   - [`2026-06-12`](./daily/2026-06-12/ai-hotspots.md)
   - [`2026-06-11`](./daily/2026-06-11/ai-hotspots.md)
   - [`2026-06-10`](./daily/2026-06-10/ai-hotspots.md)
@@ -198,9 +203,9 @@
 ## 当前状态
 
 - 状态：持续日更中。
-- 最新更新：`2026-06-12`。
+- 最新更新：`2026-06-13`。
 - 当前项目总数：约 `200+`。
-- 最近新增项目：`llama_index`、`chroma`、`tabby`。
+- 最近新增项目：`zed`、`FastChat`、`faiss`、`openui`。
 - 覆盖平台：GitHub、X、Instagram、YouTube。
 
 ## 维护约定

@@ -91,6 +91,7 @@
 - 为日报新增“可复核状态”字段（可直接打开 / 需登录 / 聚合摘录），提升可追溯性。
 - 增加每条社媒热点的“时间戳字段”（发布日期 + 抓取日期），减少跨日混淆。
 - 若 GitHub 头部高热项目已全部建档，转为优先刷新已有项目说明与首页分类代表项。
+- 评估是否需要把 `zed` 这类“AI 工作流入口型编辑器”单独做二级标签，避免与纯 agent 项目混淆。
 
 ## 阻塞点
 
@@ -204,3 +205,10 @@
   - 新增 `projects/tabby/README.md`。
   - 新增 `daily/2026-06-12/ai-hotspots.md`。
   - 同步首页 `README.md`：补充 `tabby` 到 `Coding Agents 与终端助手`，补充 `llama_index`、`chroma` 到 `RAG、检索与知识处理`，并更新最新日期。
+- 2026-06-13：
+  - 新增 `projects/zed/README.md`。
+  - 新增 `projects/FastChat/README.md`。
+  - 新增 `projects/faiss/README.md`。
+  - 新增 `projects/openui/README.md`。
+  - 新增 `daily/2026-06-13/ai-hotspots.md`。
+  - 同步首页 `README.md`：补充 `zed`、`FastChat`、`faiss`、`openui` 到对应分类，并更新最新日期。
