@@ -92,6 +92,7 @@
 - 增加每条社媒热点的“时间戳字段”（发布日期 + 抓取日期），减少跨日混淆。
 - 若 GitHub 头部高热项目已全部建档，转为优先刷新已有项目说明与首页分类代表项。
 - 评估是否需要把 `zed` 这类“AI 工作流入口型编辑器”单独做二级标签，避免与纯 agent 项目混淆。
+- 持续补齐 `text-generation-webui`、`chatbot-ui` 这类“入口壳层项目”的横向对照，避免仓库只偏底层基础设施。
 
 ## 阻塞点
 
@@ -212,3 +213,9 @@
   - 新增 `projects/openui/README.md`。
   - 新增 `daily/2026-06-13/ai-hotspots.md`。
   - 同步首页 `README.md`：补充 `zed`、`FastChat`、`faiss`、`openui` 到对应分类，并更新最新日期。
+- 2026-06-14：
+  - 新增 `projects/text-generation-webui/README.md`。
+  - 新增 `projects/chatbot-ui/README.md`。
+  - 新增 `projects/llamafile/README.md`。
+  - 新增 `daily/2026-06-14/ai-hotspots.md`。
+  - 同步首页 `README.md`：补充 `chatbot-ui` 到 `前端、UI 与 Agent 交互层`，补充 `text-generation-webui`、`llamafile` 到 `模型、训练与推理基础设施`，并更新最新日期。

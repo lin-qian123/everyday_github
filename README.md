@@ -48,7 +48,7 @@
 
 如果你是第一次进入这个仓库，建议从这几个入口开始：
 
-- 最新日报：[`daily/2026-06-13/ai-hotspots.md`](./daily/2026-06-13/ai-hotspots.md)
+- 最新日报：[`daily/2026-06-14/ai-hotspots.md`](./daily/2026-06-14/ai-hotspots.md)
 - 项目总目录：[`projects/`](./projects/)
 - 自动化约束：[`AGENTS.md`](./AGENTS.md)
 - 开发续接记录：[`TODO.md`](./TODO.md)
@@ -145,6 +145,7 @@
 | `page-agent` | 页面级 agent 交互与操作路线。 | [GitHub](https://github.com/alibaba/page-agent) |
 | `lightpanda-browser` | 为自动化与 Agent 场景设计的高性能浏览器内核路线。 | [GitHub](https://github.com/lightpanda-io/browser) |
 | `openui` | 开源生成式 UI 原型工具，支持描述界面并导出到多种前端框架。 | [GitHub](https://github.com/wandb/openui) |
+| `chatbot-ui` | 开源 AI 聊天前端骨架，适合做多模型、自托管聊天入口。 | [GitHub](https://github.com/mckaywrigley/chatbot-ui) |
 
 ### 语音、视频与多模态
 
@@ -174,6 +175,8 @@
 | `timesfm` | Google 的时间序列基础模型。 | [GitHub](https://github.com/google-research/timesfm) |
 | `train-llm-from-scratch` | 从零训练 LLM 的学习型项目。 | [GitHub](https://github.com/FareedKhan-dev/train-llm-from-scratch) |
 | `minimind` | 偏教学与实验导向的小型模型项目。 | [GitHub](https://github.com/jingyaogong/minimind) |
+| `text-generation-webui` | 本地模型工作台，兼顾 UI、多后端和 OpenAI-compatible API。 | [GitHub](https://github.com/oobabooga/text-generation-webui) |
+| `llamafile` | 把本地大模型打包成单文件可执行体的分发方案。 | [GitHub](https://github.com/Mozilla-Ocho/llamafile) |
 
 ### 办公、商业与行业应用
 
@@ -192,20 +195,20 @@
 
 - 全量项目目录：[`projects/`](./projects/)
 - 最近日报：
+  - [`2026-06-14`](./daily/2026-06-14/ai-hotspots.md)
   - [`2026-06-13`](./daily/2026-06-13/ai-hotspots.md)
   - [`2026-06-12`](./daily/2026-06-12/ai-hotspots.md)
   - [`2026-06-11`](./daily/2026-06-11/ai-hotspots.md)
   - [`2026-06-10`](./daily/2026-06-10/ai-hotspots.md)
-  - [`2026-06-09`](./daily/2026-06-09/ai-hotspots.md)
 
 如果你要找的是某个具体项目，而不是看分类，直接在 [`projects/`](./projects/) 中按名称查找会更快。
 
 ## 当前状态
 
 - 状态：持续日更中。
-- 最新更新：`2026-06-13`。
+- 最新更新：`2026-06-14`。
 - 当前项目总数：约 `200+`。
-- 最近新增项目：`zed`、`FastChat`、`faiss`、`openui`。
+- 最近新增项目：`text-generation-webui`、`chatbot-ui`、`llamafile`。
 - 覆盖平台：GitHub、X、Instagram、YouTube。
 
 ## 维护约定
