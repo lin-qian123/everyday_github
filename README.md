@@ -48,7 +48,7 @@
 
 如果你是第一次进入这个仓库，建议从这几个入口开始：
 
-- 最新日报：[`daily/2026-06-14/ai-hotspots.md`](./daily/2026-06-14/ai-hotspots.md)
+- 最新日报：[`daily/2026-06-15/ai-hotspots.md`](./daily/2026-06-15/ai-hotspots.md)
 - 项目总目录：[`projects/`](./projects/)
 - 自动化约束：[`AGENTS.md`](./AGENTS.md)
 - 开发续接记录：[`TODO.md`](./TODO.md)
@@ -81,6 +81,7 @@
 | `cline` | 面向 IDE 工作流的 AI 编码助手，社区热度长期较高。 | [GitHub](https://github.com/cline/cline) |
 | `aider` | 偏向实际改代码与提交循环的老牌 CLI 助手。 | [GitHub](https://github.com/paul-gauthier/aider) |
 | `continue` | 从 IDE 助手演进到 PR / CI 中的 AI 检查与代码治理路线。 | [GitHub](https://github.com/continuedev/continue) |
+| `cursor` | 产品化 AI IDE 代表项，体现“编辑器即 Agent 入口”的路线。 | [GitHub](https://github.com/cursor/cursor) |
 | `qwen-code` | 阿里系开源终端 coding agent，围绕 Qwen coder 能力优化。 | [GitHub](https://github.com/QwenLM/qwen-code) |
 | `tabby` | 自托管、可本地部署的开源 AI 编码助手。 | [GitHub](https://github.com/TabbyML/tabby) |
 | `zed` | 高性能、多人协作的代码编辑器，体现 AI 时代开发入口向编辑器本体回流。 | [GitHub](https://github.com/zed-industries/zed) |
@@ -99,6 +100,8 @@
 | `skills` | 面向多代理环境的技能安装与分发工具。 | [GitHub](https://github.com/vercel-labs/skills) |
 | `context7` | 为 LLM / agent 提供更稳定上下文注入的开发基础设施。 | [GitHub](https://github.com/upstash/context7) |
 | `modelcontextprotocol-servers` | MCP 官方服务器集合，是当前 agent 工具生态的基础目录之一。 | [GitHub](https://github.com/modelcontextprotocol/servers) |
+| `babyagi` | 经典 autonomous agent 名字的新实验版本，偏函数式 agent 研究样本。 | [GitHub](https://github.com/yoheinakajima/babyagi) |
+| `JARVIS` | HuggingGPT 路线代表项目，用 LLM 做任务规划与外部模型路由。 | [GitHub](https://github.com/microsoft/JARVIS) |
 
 ### 记忆层与个人 AI 基础设施
 
@@ -167,6 +170,7 @@
 | `llama.cpp` | 本地推理生态的标志性项目。 | [GitHub](https://github.com/ggml-org/llama.cpp) |
 | `vllm` | 高性能推理服务框架。 | [GitHub](https://github.com/vllm-project/vllm) |
 | `LocalAI` | 本地优先的开源 AI 引擎，兼容 OpenAI / Anthropic API。 | [GitHub](https://github.com/mudler/LocalAI) |
+| `ollama` | 当前最主流的本地模型运行底座之一，承担拉取、运行与统一接口暴露。 | [GitHub](https://github.com/ollama/ollama) |
 | `sglang` | 面向大模型与多模态模型的高性能 serving 基础设施。 | [GitHub](https://github.com/sgl-project/sglang) |
 | `gemini-cli` | Google 的 CLI 入口项目，兼具模型调用与开发体验属性。 | [GitHub](https://github.com/google-gemini/gemini-cli) |
 | `FastChat` | 老牌 LLM 训练、服务与评测底座，连接 Chatbot Arena 与多模型 API 路线。 | [GitHub](https://github.com/lm-sys/FastChat) |
@@ -195,20 +199,20 @@
 
 - 全量项目目录：[`projects/`](./projects/)
 - 最近日报：
+  - [`2026-06-15`](./daily/2026-06-15/ai-hotspots.md)
   - [`2026-06-14`](./daily/2026-06-14/ai-hotspots.md)
   - [`2026-06-13`](./daily/2026-06-13/ai-hotspots.md)
   - [`2026-06-12`](./daily/2026-06-12/ai-hotspots.md)
   - [`2026-06-11`](./daily/2026-06-11/ai-hotspots.md)
-  - [`2026-06-10`](./daily/2026-06-10/ai-hotspots.md)
 
 如果你要找的是某个具体项目，而不是看分类，直接在 [`projects/`](./projects/) 中按名称查找会更快。
 
 ## 当前状态
 
 - 状态：持续日更中。
-- 最新更新：`2026-06-14`。
+- 最新更新：`2026-06-15`。
 - 当前项目总数：约 `200+`。
-- 最近新增项目：`text-generation-webui`、`chatbot-ui`、`llamafile`。
+- 最近新增项目：`babyagi`、`JARVIS`、`cursor`。
 - 覆盖平台：GitHub、X、Instagram、YouTube。
 
 ## 维护约定

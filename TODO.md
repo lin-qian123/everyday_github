@@ -91,8 +91,8 @@
 - 为日报新增“可复核状态”字段（可直接打开 / 需登录 / 聚合摘录），提升可追溯性。
 - 增加每条社媒热点的“时间戳字段”（发布日期 + 抓取日期），减少跨日混淆。
 - 若 GitHub 头部高热项目已全部建档，转为优先刷新已有项目说明与首页分类代表项。
-- 评估是否需要把 `zed` 这类“AI 工作流入口型编辑器”单独做二级标签，避免与纯 agent 项目混淆。
-- 持续补齐 `text-generation-webui`、`chatbot-ui` 这类“入口壳层项目”的横向对照，避免仓库只偏底层基础设施。
+- 评估是否要把 `cursor`、`zed` 这类“AI 工作流入口型编辑器”做二级标签，避免与纯 CLI agent 混在一起。
+- 持续补齐 `ollama`、`LocalAI`、`text-generation-webui` 这类“本地运行层 / 工作台 / 兼容层”的横向对照，避免仓库只看单项目热度。
 
 ## 阻塞点
 
@@ -219,3 +219,10 @@
   - 新增 `projects/llamafile/README.md`。
   - 新增 `daily/2026-06-14/ai-hotspots.md`。
   - 同步首页 `README.md`：补充 `chatbot-ui` 到 `前端、UI 与 Agent 交互层`，补充 `text-generation-webui`、`llamafile` 到 `模型、训练与推理基础设施`，并更新最新日期。
+- 2026-06-15：
+  - 新增 `projects/babyagi/README.md`。
+  - 新增 `projects/JARVIS/README.md`。
+  - 新增 `projects/cursor/README.md`。
+  - 更新 `projects/ollama/README.md`。
+  - 新增 `daily/2026-06-15/ai-hotspots.md`。
+  - 同步首页 `README.md`：补充 `babyagi`、`JARVIS`、`cursor`、`ollama` 到对应分类，并更新最新日期。
