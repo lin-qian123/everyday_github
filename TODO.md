@@ -226,3 +226,9 @@
   - 更新 `projects/ollama/README.md`。
   - 新增 `daily/2026-06-15/ai-hotspots.md`。
   - 同步首页 `README.md`：补充 `babyagi`、`JARVIS`、`cursor`、`ollama` 到对应分类，并更新最新日期。
+- 2026-06-16：
+  - 新增 `projects/cua/README.md`。
+  - 新增 `projects/agentsview/README.md`。
+  - 新增 `projects/postman-mcp-server/README.md`。
+  - 新增 `daily/2026-06-16/ai-hotspots.md`。
+  - 同步首页 `README.md`：补充 `cua`、`agentsview`、`postman-mcp-server` 到对应分类，并更新最新日期。

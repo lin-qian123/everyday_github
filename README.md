@@ -48,7 +48,7 @@
 
 如果你是第一次进入这个仓库，建议从这几个入口开始：
 
-- 最新日报：[`daily/2026-06-15/ai-hotspots.md`](./daily/2026-06-15/ai-hotspots.md)
+- 最新日报：[`daily/2026-06-16/ai-hotspots.md`](./daily/2026-06-16/ai-hotspots.md)
 - 项目总目录：[`projects/`](./projects/)
 - 自动化约束：[`AGENTS.md`](./AGENTS.md)
 - 开发续接记录：[`TODO.md`](./TODO.md)
@@ -96,10 +96,12 @@
 | `agno` | 面向 agent 应用构建的全栈式框架。 | [GitHub](https://github.com/agno-agi/agno) |
 | `CopilotKit` | 面向 Agent Native 应用的前端交互层框架。 | [GitHub](https://github.com/CopilotKit/CopilotKit) |
 | `browser-use` | 把浏览器控制能力接进 agent 工作流。 | [GitHub](https://github.com/browser-use/browser-use) |
+| `cua` | computer-use agent 基础设施套件，覆盖桌面驱动、沙箱、基准与虚拟化。 | [GitHub](https://github.com/trycua/cua) |
 | `chrome-devtools-mcp` | 将 Chrome DevTools 能力封装为 MCP 工具。 | [GitHub](https://github.com/ChromeDevTools/chrome-devtools-mcp) |
 | `skills` | 面向多代理环境的技能安装与分发工具。 | [GitHub](https://github.com/vercel-labs/skills) |
 | `context7` | 为 LLM / agent 提供更稳定上下文注入的开发基础设施。 | [GitHub](https://github.com/upstash/context7) |
 | `modelcontextprotocol-servers` | MCP 官方服务器集合，是当前 agent 工具生态的基础目录之一。 | [GitHub](https://github.com/modelcontextprotocol/servers) |
+| `postman-mcp-server` | Postman 官方 MCP Server，把 API 工作区与集合管理能力接进 agent。 | [GitHub](https://github.com/postmanlabs/postman-mcp-server) |
 | `babyagi` | 经典 autonomous agent 名字的新实验版本，偏函数式 agent 研究样本。 | [GitHub](https://github.com/yoheinakajima/babyagi) |
 | `JARVIS` | HuggingGPT 路线代表项目，用 LLM 做任务规划与外部模型路由。 | [GitHub](https://github.com/microsoft/JARVIS) |
 
@@ -115,6 +117,7 @@
 | `supermemory` | 试图把“记忆”做成可复用产品层能力。 | [GitHub](https://github.com/supermemoryai/supermemory) |
 | `open-notebook` | 把笔记与 AI 工作流结合的本地化知识项目。 | [GitHub](https://github.com/lfnovo/open-notebook) |
 | `openless` | 强调输入整理、提示加工和结构化输出的效率工具。 | [GitHub](https://github.com/Open-Less/openless) |
+| `agentsview` | 本地优先的 coding agent 会话搜索、成本统计与使用分析面板。 | [GitHub](https://github.com/kenn-io/agentsview) |
 
 ### RAG、检索与知识处理
 
@@ -199,20 +202,20 @@
 
 - 全量项目目录：[`projects/`](./projects/)
 - 最近日报：
+  - [`2026-06-16`](./daily/2026-06-16/ai-hotspots.md)
   - [`2026-06-15`](./daily/2026-06-15/ai-hotspots.md)
   - [`2026-06-14`](./daily/2026-06-14/ai-hotspots.md)
   - [`2026-06-13`](./daily/2026-06-13/ai-hotspots.md)
   - [`2026-06-12`](./daily/2026-06-12/ai-hotspots.md)
-  - [`2026-06-11`](./daily/2026-06-11/ai-hotspots.md)
 
 如果你要找的是某个具体项目，而不是看分类，直接在 [`projects/`](./projects/) 中按名称查找会更快。
 
 ## 当前状态
 
 - 状态：持续日更中。
-- 最新更新：`2026-06-15`。
+- 最新更新：`2026-06-16`。
 - 当前项目总数：约 `200+`。
-- 最近新增项目：`babyagi`、`JARVIS`、`cursor`。
+- 最近新增项目：`cua`、`agentsview`、`postman-mcp-server`。
 - 覆盖平台：GitHub、X、Instagram、YouTube。
 
 ## 维护约定
