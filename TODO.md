@@ -93,6 +93,8 @@
 - 若 GitHub 头部高热项目已全部建档，转为优先刷新已有项目说明与首页分类代表项。
 - 评估是否要把 `cursor`、`zed` 这类“AI 工作流入口型编辑器”做二级标签，避免与纯 CLI agent 混在一起。
 - 持续补齐 `ollama`、`LocalAI`、`text-generation-webui` 这类“本地运行层 / 工作台 / 兼容层”的横向对照，避免仓库只看单项目热度。
+- 继续观察 `ponytail`、`omnigent` 这类“agent 规则层 / harness 层”项目是否会从爆红仓库演化成稳定基础设施。
+- 跟踪 `ppt-master` 与平台侧 PowerPoint AI 入口的分化，判断“本地工作流”与“闭环 SaaS”哪条更有长期代表性。
 
 ## 阻塞点
 
@@ -232,3 +234,9 @@
   - 新增 `projects/postman-mcp-server/README.md`。
   - 新增 `daily/2026-06-16/ai-hotspots.md`。
   - 同步首页 `README.md`：补充 `cua`、`agentsview`、`postman-mcp-server` 到对应分类，并更新最新日期。
+- 2026-06-17：
+  - 新增 `projects/ponytail/README.md`。
+  - 新增 `projects/omnigent/README.md`。
+  - 新增 `projects/ppt-master/README.md`。
+  - 新增 `daily/2026-06-17/ai-hotspots.md`。
+  - 同步首页 `README.md`：补充 `ponytail`、`omnigent`、`ppt-master` 到对应分类，并更新最新日期。

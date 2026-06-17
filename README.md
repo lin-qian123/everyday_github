@@ -48,7 +48,7 @@
 
 如果你是第一次进入这个仓库，建议从这几个入口开始：
 
-- 最新日报：[`daily/2026-06-16/ai-hotspots.md`](./daily/2026-06-16/ai-hotspots.md)
+- 最新日报：[`daily/2026-06-17/ai-hotspots.md`](./daily/2026-06-17/ai-hotspots.md)
 - 项目总目录：[`projects/`](./projects/)
 - 自动化约束：[`AGENTS.md`](./AGENTS.md)
 - 开发续接记录：[`TODO.md`](./TODO.md)
@@ -104,6 +104,8 @@
 | `postman-mcp-server` | Postman 官方 MCP Server，把 API 工作区与集合管理能力接进 agent。 | [GitHub](https://github.com/postmanlabs/postman-mcp-server) |
 | `babyagi` | 经典 autonomous agent 名字的新实验版本，偏函数式 agent 研究样本。 | [GitHub](https://github.com/yoheinakajima/babyagi) |
 | `JARVIS` | HuggingGPT 路线代表项目，用 LLM 做任务规划与外部模型路由。 | [GitHub](https://github.com/microsoft/JARVIS) |
+| `ponytail` | 把“少写代码、优先现成能力”的工程约束注入多种 coding agent。 | [GitHub](https://github.com/DietrichGebert/ponytail) |
+| `omnigent` | 多 agent 共享会话、共享策略和共享沙箱的 meta-harness。 | [GitHub](https://github.com/omnigent-ai/omnigent) |
 
 ### 记忆层与个人 AI 基础设施
 
@@ -197,25 +199,26 @@
 | `TradingAgents` | 多代理交易研究与决策框架。 | [GitHub](https://github.com/TauricResearch/TradingAgents) |
 | `Vibe-Trading` | 偏交易工作流的 agent 化项目。 | [GitHub](https://github.com/HKUDS/Vibe-Trading) |
 | `presenton` | 开源 AI 演示文稿生成器。 | [GitHub](https://github.com/presenton/presenton) |
+| `ppt-master` | 生成原生可编辑 PPTX 的 agent 工作流，强调真实办公交付物。 | [GitHub](https://github.com/hugohe3/ppt-master) |
 
 ## 完整索引与每日热点
 
 - 全量项目目录：[`projects/`](./projects/)
 - 最近日报：
+  - [`2026-06-17`](./daily/2026-06-17/ai-hotspots.md)
   - [`2026-06-16`](./daily/2026-06-16/ai-hotspots.md)
   - [`2026-06-15`](./daily/2026-06-15/ai-hotspots.md)
   - [`2026-06-14`](./daily/2026-06-14/ai-hotspots.md)
   - [`2026-06-13`](./daily/2026-06-13/ai-hotspots.md)
-  - [`2026-06-12`](./daily/2026-06-12/ai-hotspots.md)
 
 如果你要找的是某个具体项目，而不是看分类，直接在 [`projects/`](./projects/) 中按名称查找会更快。
 
 ## 当前状态
 
 - 状态：持续日更中。
-- 最新更新：`2026-06-16`。
+- 最新更新：`2026-06-17`。
 - 当前项目总数：约 `200+`。
-- 最近新增项目：`cua`、`agentsview`、`postman-mcp-server`。
+- 最近新增项目：`ponytail`、`omnigent`、`ppt-master`。
 - 覆盖平台：GitHub、X、Instagram、YouTube。
 
 ## 维护约定
