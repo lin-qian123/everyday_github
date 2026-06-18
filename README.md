@@ -48,7 +48,7 @@
 
 如果你是第一次进入这个仓库，建议从这几个入口开始：
 
-- 最新日报：[`daily/2026-06-17/ai-hotspots.md`](./daily/2026-06-17/ai-hotspots.md)
+- 最新日报：[`daily/2026-06-18/ai-hotspots.md`](./daily/2026-06-18/ai-hotspots.md)
 - 项目总目录：[`projects/`](./projects/)
 - 自动化约束：[`AGENTS.md`](./AGENTS.md)
 - 开发续接记录：[`TODO.md`](./TODO.md)
@@ -120,6 +120,7 @@
 | `open-notebook` | 把笔记与 AI 工作流结合的本地化知识项目。 | [GitHub](https://github.com/lfnovo/open-notebook) |
 | `openless` | 强调输入整理、提示加工和结构化输出的效率工具。 | [GitHub](https://github.com/Open-Less/openless) |
 | `agentsview` | 本地优先的 coding agent 会话搜索、成本统计与使用分析面板。 | [GitHub](https://github.com/kenn-io/agentsview) |
+| `codebase-memory-mcp` | 面向 agent 的代码知识图谱与持久记忆层，把仓库结构索引成可查询 MCP 能力。 | [GitHub](https://github.com/DeusData/codebase-memory-mcp) |
 
 ### RAG、检索与知识处理
 
@@ -167,6 +168,7 @@
 | `video-search-and-summarization` | NVIDIA 的视频搜索与摘要蓝图。 | [GitHub](https://github.com/NVIDIA-AI-Blueprints/video-search-and-summarization) |
 | `voicebox` | 本地优先的语音合成与声音工作台。 | [GitHub](https://github.com/jamiepine/voicebox) |
 | `VibeVoice` | Microsoft 的语音方向项目。 | [GitHub](https://github.com/microsoft/VibeVoice) |
+| `OpenMontage` | 多代理驱动的开源视频生产系统，把研究、脚本、素材、字幕和合成串成完整流水线。 | [GitHub](https://github.com/calesthio/OpenMontage) |
 
 ### 模型、训练与推理基础设施
 
@@ -205,20 +207,20 @@
 
 - 全量项目目录：[`projects/`](./projects/)
 - 最近日报：
+  - [`2026-06-18`](./daily/2026-06-18/ai-hotspots.md)
   - [`2026-06-17`](./daily/2026-06-17/ai-hotspots.md)
   - [`2026-06-16`](./daily/2026-06-16/ai-hotspots.md)
   - [`2026-06-15`](./daily/2026-06-15/ai-hotspots.md)
   - [`2026-06-14`](./daily/2026-06-14/ai-hotspots.md)
-  - [`2026-06-13`](./daily/2026-06-13/ai-hotspots.md)
 
 如果你要找的是某个具体项目，而不是看分类，直接在 [`projects/`](./projects/) 中按名称查找会更快。
 
 ## 当前状态
 
 - 状态：持续日更中。
-- 最新更新：`2026-06-17`。
+- 最新更新：`2026-06-18`。
 - 当前项目总数：约 `200+`。
-- 最近新增项目：`ponytail`、`omnigent`、`ppt-master`。
+- 最近新增项目：`codebase-memory-mcp`、`OpenMontage`。
 - 覆盖平台：GitHub、X、Instagram、YouTube。
 
 ## 维护约定

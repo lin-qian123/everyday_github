@@ -86,6 +86,7 @@
 ## 下一步行动
 
 - 明日继续优先比对 GitHub Trending 与 OSSInsight AI 榜单，优先补齐 Top 50 中仍缺失且分类价值高的项目。
+- 继续观察“代码记忆层 / MCP 索引”与“agent 化视频生产”会不会从单日热点变成稳定赛道，必要时补横向对照项目。
 - 对 X/Instagram 热点补充更多可直接访问的官方帖链接，降低媒体复述占比。
 - 持续把 X 聚合来源替换为原帖直链，减少二次聚合依赖。
 - 为日报新增“可复核状态”字段（可直接打开 / 需登录 / 聚合摘录），提升可追溯性。
@@ -240,3 +241,8 @@
   - 新增 `projects/ppt-master/README.md`。
   - 新增 `daily/2026-06-17/ai-hotspots.md`。
   - 同步首页 `README.md`：补充 `ponytail`、`omnigent`、`ppt-master` 到对应分类，并更新最新日期。
+- 2026-06-18：
+  - 新增 `projects/codebase-memory-mcp/README.md`。
+  - 新增 `projects/OpenMontage/README.md`。
+  - 新增 `daily/2026-06-18/ai-hotspots.md`。
+  - 同步首页 `README.md`：补充 `codebase-memory-mcp`、`OpenMontage` 到对应分类，并更新最新日期。
