@@ -48,7 +48,7 @@
 
 如果你是第一次进入这个仓库，建议从这几个入口开始：
 
-- 最新日报：[`daily/2026-06-18/ai-hotspots.md`](./daily/2026-06-18/ai-hotspots.md)
+- 最新日报：[`daily/2026-06-19/ai-hotspots.md`](./daily/2026-06-19/ai-hotspots.md)
 - 项目总目录：[`projects/`](./projects/)
 - 自动化约束：[`AGENTS.md`](./AGENTS.md)
 - 开发续接记录：[`TODO.md`](./TODO.md)
@@ -140,6 +140,7 @@
 | `llama_index` | 把文档解析、索引、检索与 agent 连接起来的数据接入层框架。 | [GitHub](https://github.com/run-llama/llama_index) |
 | `chroma` | 轻量、AI 友好的搜索与向量检索基础设施。 | [GitHub](https://github.com/chroma-core/chroma) |
 | `faiss` | Meta 主导的向量相似度搜索与聚类库，是很多检索系统的底层内核。 | [GitHub](https://github.com/facebookresearch/faiss) |
+| `Hyper-Extract` | 把非结构化文档抽成强类型知识对象、图谱和超图的知识抽取 CLI。 | [GitHub](https://github.com/yifanfeng97/Hyper-Extract) |
 
 ### 前端、UI 与 Agent 交互层
 
@@ -188,6 +189,7 @@
 | `minimind` | 偏教学与实验导向的小型模型项目。 | [GitHub](https://github.com/jingyaogong/minimind) |
 | `text-generation-webui` | 本地模型工作台，兼顾 UI、多后端和 OpenAI-compatible API。 | [GitHub](https://github.com/oobabooga/text-generation-webui) |
 | `llamafile` | 把本地大模型打包成单文件可执行体的分发方案。 | [GitHub](https://github.com/Mozilla-Ocho/llamafile) |
+| `GLM-5` | 智谱 / Z.ai 面向长时程 agentic engineering 的开源大模型系列。 | [GitHub](https://github.com/zai-org/GLM-5) |
 
 ### 办公、商业与行业应用
 
@@ -207,20 +209,20 @@
 
 - 全量项目目录：[`projects/`](./projects/)
 - 最近日报：
+  - [`2026-06-19`](./daily/2026-06-19/ai-hotspots.md)
   - [`2026-06-18`](./daily/2026-06-18/ai-hotspots.md)
   - [`2026-06-17`](./daily/2026-06-17/ai-hotspots.md)
   - [`2026-06-16`](./daily/2026-06-16/ai-hotspots.md)
   - [`2026-06-15`](./daily/2026-06-15/ai-hotspots.md)
-  - [`2026-06-14`](./daily/2026-06-14/ai-hotspots.md)
 
 如果你要找的是某个具体项目，而不是看分类，直接在 [`projects/`](./projects/) 中按名称查找会更快。
 
 ## 当前状态
 
 - 状态：持续日更中。
-- 最新更新：`2026-06-18`。
+- 最新更新：`2026-06-19`。
 - 当前项目总数：约 `200+`。
-- 最近新增项目：`codebase-memory-mcp`、`OpenMontage`。
+- 最近新增项目：`GLM-5`、`Hyper-Extract`。
 - 覆盖平台：GitHub、X、Instagram、YouTube。
 
 ## 维护约定

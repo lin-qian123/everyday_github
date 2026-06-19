@@ -96,6 +96,7 @@
 - 持续补齐 `ollama`、`LocalAI`、`text-generation-webui` 这类“本地运行层 / 工作台 / 兼容层”的横向对照，避免仓库只看单项目热度。
 - 继续观察 `ponytail`、`omnigent` 这类“agent 规则层 / harness 层”项目是否会从爆红仓库演化成稳定基础设施。
 - 跟踪 `ppt-master` 与平台侧 PowerPoint AI 入口的分化，判断“本地工作流”与“闭环 SaaS”哪条更有长期代表性。
+- 继续跟踪 `GLM-5` 这类“长时程 agent 底模”与 `Hyper-Extract` 这类“结构化知识抽取层”是否会在未来几天持续留在 GitHub 热榜。
 
 ## 阻塞点
 
@@ -246,3 +247,8 @@
   - 新增 `projects/OpenMontage/README.md`。
   - 新增 `daily/2026-06-18/ai-hotspots.md`。
   - 同步首页 `README.md`：补充 `codebase-memory-mcp`、`OpenMontage` 到对应分类，并更新最新日期。
+- 2026-06-19：
+  - 新增 `projects/GLM-5/README.md`。
+  - 新增 `projects/Hyper-Extract/README.md`。
+  - 新增 `daily/2026-06-19/ai-hotspots.md`。
+  - 同步首页 `README.md`：补充 `GLM-5`、`Hyper-Extract` 到对应分类，并更新最新日期。
