@@ -97,6 +97,8 @@
 - 继续观察 `ponytail`、`omnigent` 这类“agent 规则层 / harness 层”项目是否会从爆红仓库演化成稳定基础设施。
 - 跟踪 `ppt-master` 与平台侧 PowerPoint AI 入口的分化，判断“本地工作流”与“闭环 SaaS”哪条更有长期代表性。
 - 继续跟踪 `GLM-5` 这类“长时程 agent 底模”与 `Hyper-Extract` 这类“结构化知识抽取层”是否会在未来几天持续留在 GitHub 热榜。
+- 继续观察 `agent-native`、`flue` 这类“应用层 / 执行层 agent 框架”会不会从单日热度演化成稳定基础设施带。
+- 跟踪 `palmier-pro` 与 `LTX-2` 是否会把“生成 + 编辑 + agent 协作”推成新的视频工作流组合。
 
 ## 阻塞点
 
@@ -252,3 +254,10 @@
   - 新增 `projects/Hyper-Extract/README.md`。
   - 新增 `daily/2026-06-19/ai-hotspots.md`。
   - 同步首页 `README.md`：补充 `GLM-5`、`Hyper-Extract` 到对应分类，并更新最新日期。
+- 2026-06-20：
+  - 新增 `projects/agent-native/README.md`。
+  - 新增 `projects/flue/README.md`。
+  - 新增 `projects/palmier-pro/README.md`。
+  - 新增 `projects/LTX-2/README.md`。
+  - 新增 `daily/2026-06-20/ai-hotspots.md`。
+  - 同步首页 `README.md`：补充 `agent-native`、`flue`、`palmier-pro`、`LTX-2` 到对应分类，并更新最新日期与项目总数。

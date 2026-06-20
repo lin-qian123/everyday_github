@@ -48,7 +48,7 @@
 
 如果你是第一次进入这个仓库，建议从这几个入口开始：
 
-- 最新日报：[`daily/2026-06-19/ai-hotspots.md`](./daily/2026-06-19/ai-hotspots.md)
+- 最新日报：[`daily/2026-06-20/ai-hotspots.md`](./daily/2026-06-20/ai-hotspots.md)
 - 项目总目录：[`projects/`](./projects/)
 - 自动化约束：[`AGENTS.md`](./AGENTS.md)
 - 开发续接记录：[`TODO.md`](./TODO.md)
@@ -106,6 +106,8 @@
 | `JARVIS` | HuggingGPT 路线代表项目，用 LLM 做任务规划与外部模型路由。 | [GitHub](https://github.com/microsoft/JARVIS) |
 | `ponytail` | 把“少写代码、优先现成能力”的工程约束注入多种 coding agent。 | [GitHub](https://github.com/DietrichGebert/ponytail) |
 | `omnigent` | 多 agent 共享会话、共享策略和共享沙箱的 meta-harness。 | [GitHub](https://github.com/omnigent-ai/omnigent) |
+| `agent-native` | 把 Agent、UI、动作层和共享状态统一到同一产品架构里的 agent-native 应用框架。 | [GitHub](https://github.com/BuilderIO/agent-native) |
+| `flue` | 强调 sandbox、durable execution、skills 和 subagents 的 TypeScript agent harness 框架。 | [GitHub](https://github.com/withastro/flue) |
 
 ### 记忆层与个人 AI 基础设施
 
@@ -170,6 +172,8 @@
 | `voicebox` | 本地优先的语音合成与声音工作台。 | [GitHub](https://github.com/jamiepine/voicebox) |
 | `VibeVoice` | Microsoft 的语音方向项目。 | [GitHub](https://github.com/microsoft/VibeVoice) |
 | `OpenMontage` | 多代理驱动的开源视频生产系统，把研究、脚本、素材、字幕和合成串成完整流水线。 | [GitHub](https://github.com/calesthio/OpenMontage) |
+| `palmier-pro` | 面向 macOS 的 AI 时间线视频编辑器，支持通过 MCP 与 Claude / Codex / Cursor 协作。 | [GitHub](https://github.com/palmier-io/palmier-pro) |
+| `LTX-2` | Lightricks 的音视频基础模型与推理/训练工具栈，覆盖 audio-to-video、lipdub 与多条视频 pipeline。 | [GitHub](https://github.com/Lightricks/LTX-2) |
 
 ### 模型、训练与推理基础设施
 
@@ -209,20 +213,20 @@
 
 - 全量项目目录：[`projects/`](./projects/)
 - 最近日报：
+  - [`2026-06-20`](./daily/2026-06-20/ai-hotspots.md)
   - [`2026-06-19`](./daily/2026-06-19/ai-hotspots.md)
   - [`2026-06-18`](./daily/2026-06-18/ai-hotspots.md)
   - [`2026-06-17`](./daily/2026-06-17/ai-hotspots.md)
   - [`2026-06-16`](./daily/2026-06-16/ai-hotspots.md)
-  - [`2026-06-15`](./daily/2026-06-15/ai-hotspots.md)
 
 如果你要找的是某个具体项目，而不是看分类，直接在 [`projects/`](./projects/) 中按名称查找会更快。
 
 ## 当前状态
 
 - 状态：持续日更中。
-- 最新更新：`2026-06-19`。
-- 当前项目总数：约 `200+`。
-- 最近新增项目：`GLM-5`、`Hyper-Extract`。
+- 最新更新：`2026-06-20`。
+- 当前项目总数：`240`。
+- 最近新增项目：`agent-native`、`flue`、`palmier-pro`、`LTX-2`。
 - 覆盖平台：GitHub、X、Instagram、YouTube。
 
 ## 维护约定
