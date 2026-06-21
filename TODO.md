@@ -86,6 +86,10 @@
 ## 下一步行动
 
 - 明日继续优先比对 GitHub Trending 与 OSSInsight AI 榜单，优先补齐 Top 50 中仍缺失且分类价值高的项目。
+- 继续跟踪 `kilocode` 是否会从“多入口 coding agent”进一步演化成稳定平台层代表项目。
+- 继续观察 `Rapid-MLX` 能否把“Apple Silicon 本地推理 + tool calling”从单机优化做成更稳定的 agent 底层选项。
+- 跟踪 `mcphub` 与其他 MCP 网关/路由层项目的分化，判断它会停留在工具集成层还是进入团队基础设施层。
+- 继续观察 `Archon` 这类 workflow engine 是否会把“YAML 化 agent 开发流程”沉淀成稳定赛道。
 - 继续观察“代码记忆层 / MCP 索引”与“agent 化视频生产”会不会从单日热点变成稳定赛道，必要时补横向对照项目。
 - 对 X/Instagram 热点补充更多可直接访问的官方帖链接，降低媒体复述占比。
 - 持续把 X 聚合来源替换为原帖直链，减少二次聚合依赖。
@@ -260,4 +264,11 @@
   - 新增 `projects/palmier-pro/README.md`。
   - 新增 `projects/LTX-2/README.md`。
   - 新增 `daily/2026-06-20/ai-hotspots.md`。
-  - 同步首页 `README.md`：补充 `agent-native`、`flue`、`palmier-pro`、`LTX-2` 到对应分类，并更新最新日期与项目总数。
+  - 同步首页 `README.md`：补充 `agent-native`、`flue`、`palmier-pro`、`LTX-2` 到对应分类，并更新最新日期。
+- 2026-06-21：
+  - 新增 `projects/kilocode/README.md`。
+  - 新增 `projects/Rapid-MLX/README.md`。
+  - 新增 `projects/mcphub/README.md`。
+  - 新增 `projects/Archon/README.md`。
+  - 新增 `daily/2026-06-21/ai-hotspots.md`。
+  - 同步首页 `README.md`：补充 `kilocode`、`Rapid-MLX`、`mcphub`、`Archon` 到对应分类，并更新最新日期与项目总数。

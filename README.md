@@ -48,7 +48,7 @@
 
 如果你是第一次进入这个仓库，建议从这几个入口开始：
 
-- 最新日报：[`daily/2026-06-20/ai-hotspots.md`](./daily/2026-06-20/ai-hotspots.md)
+- 最新日报：[`daily/2026-06-21/ai-hotspots.md`](./daily/2026-06-21/ai-hotspots.md)
 - 项目总目录：[`projects/`](./projects/)
 - 自动化约束：[`AGENTS.md`](./AGENTS.md)
 - 开发续接记录：[`TODO.md`](./TODO.md)
@@ -77,6 +77,7 @@
 | `claude-code` | Anthropic 的终端代码助手，强调仓库理解、改动执行与工作流协作。 | [GitHub](https://github.com/anthropics/claude-code) |
 | `OpenHands` | 面向通用软件任务的开源 AI 开发代理。 | [GitHub](https://github.com/All-Hands-AI/OpenHands) |
 | `opencode` | 增长很快的开源 coding agent，强调终端中的 agentic 开发体验。 | [GitHub](https://github.com/anomalyco/opencode) |
+| `kilocode` | 覆盖 VS Code、JetBrains 与 CLI 的开源 coding agent 平台。 | [GitHub](https://github.com/Kilo-Org/kilocode) |
 | `goose` | 可扩展的通用代理执行器，适合自动化与工程操作。 | [GitHub](https://github.com/aaif-goose/goose) |
 | `cline` | 面向 IDE 工作流的 AI 编码助手，社区热度长期较高。 | [GitHub](https://github.com/cline/cline) |
 | `aider` | 偏向实际改代码与提交循环的老牌 CLI 助手。 | [GitHub](https://github.com/paul-gauthier/aider) |
@@ -108,6 +109,8 @@
 | `omnigent` | 多 agent 共享会话、共享策略和共享沙箱的 meta-harness。 | [GitHub](https://github.com/omnigent-ai/omnigent) |
 | `agent-native` | 把 Agent、UI、动作层和共享状态统一到同一产品架构里的 agent-native 应用框架。 | [GitHub](https://github.com/BuilderIO/agent-native) |
 | `flue` | 强调 sandbox、durable execution、skills 和 subagents 的 TypeScript agent harness 框架。 | [GitHub](https://github.com/withastro/flue) |
+| `mcphub` | 面向多 MCP server 的统一网关与路由层，强调管理、编排与权限控制。 | [GitHub](https://github.com/samanhappy/mcphub) |
+| `Archon` | 把 AI 编码流程写成 YAML workflow 的工作流引擎，强调确定性与可重复执行。 | [GitHub](https://github.com/coleam00/Archon) |
 
 ### 记忆层与个人 AI 基础设施
 
@@ -194,6 +197,7 @@
 | `text-generation-webui` | 本地模型工作台，兼顾 UI、多后端和 OpenAI-compatible API。 | [GitHub](https://github.com/oobabooga/text-generation-webui) |
 | `llamafile` | 把本地大模型打包成单文件可执行体的分发方案。 | [GitHub](https://github.com/Mozilla-Ocho/llamafile) |
 | `GLM-5` | 智谱 / Z.ai 面向长时程 agentic engineering 的开源大模型系列。 | [GitHub](https://github.com/zai-org/GLM-5) |
+| `Rapid-MLX` | 面向 Apple Silicon 的本地 AI 推理引擎，主打 OpenAI-compatible 接口与 agent 工具调用。 | [GitHub](https://github.com/raullenchai/Rapid-MLX) |
 
 ### 办公、商业与行业应用
 
@@ -213,6 +217,7 @@
 
 - 全量项目目录：[`projects/`](./projects/)
 - 最近日报：
+  - [`2026-06-21`](./daily/2026-06-21/ai-hotspots.md)
   - [`2026-06-20`](./daily/2026-06-20/ai-hotspots.md)
   - [`2026-06-19`](./daily/2026-06-19/ai-hotspots.md)
   - [`2026-06-18`](./daily/2026-06-18/ai-hotspots.md)
@@ -224,9 +229,9 @@
 ## 当前状态
 
 - 状态：持续日更中。
-- 最新更新：`2026-06-20`。
-- 当前项目总数：`240`。
-- 最近新增项目：`agent-native`、`flue`、`palmier-pro`、`LTX-2`。
+- 最新更新：`2026-06-21`。
+- 当前项目总数：`244`。
+- 最近新增项目：`kilocode`、`Rapid-MLX`、`mcphub`、`Archon`。
 - 覆盖平台：GitHub、X、Instagram、YouTube。
 
 ## 维护约定
