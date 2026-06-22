@@ -85,6 +85,9 @@
 
 ## 下一步行动
 
+- 继续观察 `background-agents` 会不会从“热门新仓库”演化成稳定的后台 agent 控制面代表项目。
+- 跟踪 `cognee` 与 `mem0`、`memsearch`、`codebase-memory-mcp` 的功能分层，判断其更偏通用记忆平台还是工程记忆底座。
+- 继续观察 `stitch-mcp` 会不会把 Google Stitch 的设计结果稳定变成前端 agent 的主流上下文入口。
 - 明日继续优先比对 GitHub Trending 与 OSSInsight AI 榜单，优先补齐 Top 50 中仍缺失且分类价值高的项目。
 - 继续跟踪 `kilocode` 是否会从“多入口 coding agent”进一步演化成稳定平台层代表项目。
 - 继续观察 `Rapid-MLX` 能否把“Apple Silicon 本地推理 + tool calling”从单机优化做成更稳定的 agent 底层选项。
@@ -272,3 +275,9 @@
   - 新增 `projects/Archon/README.md`。
   - 新增 `daily/2026-06-21/ai-hotspots.md`。
   - 同步首页 `README.md`：补充 `kilocode`、`Rapid-MLX`、`mcphub`、`Archon` 到对应分类，并更新最新日期与项目总数。
+- 2026-06-22：
+  - 新增 `projects/background-agents/README.md`。
+  - 新增 `projects/cognee/README.md`。
+  - 新增 `projects/stitch-mcp/README.md`。
+  - 新增 `daily/2026-06-22/ai-hotspots.md`。
+  - 同步首页 `README.md`：补充 `background-agents`、`cognee`、`stitch-mcp` 到对应分类，并更新最新日期。

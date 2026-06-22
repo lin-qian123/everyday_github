@@ -48,7 +48,7 @@
 
 如果你是第一次进入这个仓库，建议从这几个入口开始：
 
-- 最新日报：[`daily/2026-06-21/ai-hotspots.md`](./daily/2026-06-21/ai-hotspots.md)
+- 最新日报：[`daily/2026-06-22/ai-hotspots.md`](./daily/2026-06-22/ai-hotspots.md)
 - 项目总目录：[`projects/`](./projects/)
 - 自动化约束：[`AGENTS.md`](./AGENTS.md)
 - 开发续接记录：[`TODO.md`](./TODO.md)
@@ -111,6 +111,7 @@
 | `flue` | 强调 sandbox、durable execution、skills 和 subagents 的 TypeScript agent harness 框架。 | [GitHub](https://github.com/withastro/flue) |
 | `mcphub` | 面向多 MCP server 的统一网关与路由层，强调管理、编排与权限控制。 | [GitHub](https://github.com/samanhappy/mcphub) |
 | `Archon` | 把 AI 编码流程写成 YAML workflow 的工作流引擎，强调确定性与可重复执行。 | [GitHub](https://github.com/coleam00/Archon) |
+| `background-agents` | 面向团队后台异步执行的开源 coding agent 系统，覆盖 Web、Slack、GitHub 和定时任务入口。 | [GitHub](https://github.com/ColeMurray/background-agents) |
 
 ### 记忆层与个人 AI 基础设施
 
@@ -126,6 +127,7 @@
 | `openless` | 强调输入整理、提示加工和结构化输出的效率工具。 | [GitHub](https://github.com/Open-Less/openless) |
 | `agentsview` | 本地优先的 coding agent 会话搜索、成本统计与使用分析面板。 | [GitHub](https://github.com/kenn-io/agentsview) |
 | `codebase-memory-mcp` | 面向 agent 的代码知识图谱与持久记忆层，把仓库结构索引成可查询 MCP 能力。 | [GitHub](https://github.com/DeusData/codebase-memory-mcp) |
+| `cognee` | 面向 agent 的开源长期记忆平台，把文档、工具调用和上下文沉淀为可查询知识图谱。 | [GitHub](https://github.com/topoteretes/cognee) |
 
 ### RAG、检索与知识处理
 
@@ -161,6 +163,7 @@
 | `lightpanda-browser` | 为自动化与 Agent 场景设计的高性能浏览器内核路线。 | [GitHub](https://github.com/lightpanda-io/browser) |
 | `openui` | 开源生成式 UI 原型工具，支持描述界面并导出到多种前端框架。 | [GitHub](https://github.com/wandb/openui) |
 | `chatbot-ui` | 开源 AI 聊天前端骨架，适合做多模型、自托管聊天入口。 | [GitHub](https://github.com/mckaywrigley/chatbot-ui) |
+| `stitch-mcp` | 把 Google Stitch 生成的 UI 设计接入本地开发与 coding agent 工作流的 CLI / MCP 桥接层。 | [GitHub](https://github.com/davideast/stitch-mcp) |
 
 ### 语音、视频与多模态
 
@@ -217,6 +220,7 @@
 
 - 全量项目目录：[`projects/`](./projects/)
 - 最近日报：
+  - [`2026-06-22`](./daily/2026-06-22/ai-hotspots.md)
   - [`2026-06-21`](./daily/2026-06-21/ai-hotspots.md)
   - [`2026-06-20`](./daily/2026-06-20/ai-hotspots.md)
   - [`2026-06-19`](./daily/2026-06-19/ai-hotspots.md)
@@ -229,9 +233,9 @@
 ## 当前状态
 
 - 状态：持续日更中。
-- 最新更新：`2026-06-21`。
-- 当前项目总数：`244`。
-- 最近新增项目：`kilocode`、`Rapid-MLX`、`mcphub`、`Archon`。
+- 最新更新：`2026-06-22`。
+- 当前项目总数：`247`。
+- 最近新增项目：`background-agents`、`cognee`、`stitch-mcp`。
 - 覆盖平台：GitHub、X、Instagram、YouTube。
 
 ## 维护约定
