@@ -106,6 +106,9 @@
 - 继续跟踪 `GLM-5` 这类“长时程 agent 底模”与 `Hyper-Extract` 这类“结构化知识抽取层”是否会在未来几天持续留在 GitHub 热榜。
 - 继续观察 `agent-native`、`flue` 这类“应用层 / 执行层 agent 框架”会不会从单日热度演化成稳定基础设施带。
 - 跟踪 `palmier-pro` 与 `LTX-2` 是否会把“生成 + 编辑 + agent 协作”推成新的视频工作流组合。
+- 继续观察 `ax` 会不会把“agent 复盘 + 成本 + 本地记忆图谱”从个人实验做成稳定子赛道。
+- 继续跟踪 `firecrawl` 与 `crawl4ai` 这两条 Web 上下文路线，判断托管 API 层和本地抓取流水线会如何分化。
+- 观察 `daily_stock_analysis` 这类“AI 分析 + 定时交付”项目会不会在办公/行业应用层持续留在热榜，而不是只靠一次性传播。
 
 ## 阻塞点
 
@@ -281,3 +284,9 @@
   - 新增 `projects/stitch-mcp/README.md`。
   - 新增 `daily/2026-06-22/ai-hotspots.md`。
   - 同步首页 `README.md`：补充 `background-agents`、`cognee`、`stitch-mcp` 到对应分类，并更新最新日期。
+- 2026-06-23：
+  - 新增 `projects/ax/README.md`。
+  - 新增 `projects/firecrawl/README.md`。
+  - 新增 `projects/daily_stock_analysis/README.md`。
+  - 新增 `daily/2026-06-23/ai-hotspots.md`。
+  - 同步首页 `README.md`：补充 `ax`、`firecrawl`、`daily_stock_analysis` 到对应分类，并更新最新日期与项目总数（`251`）。

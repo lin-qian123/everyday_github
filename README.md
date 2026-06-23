@@ -48,7 +48,7 @@
 
 如果你是第一次进入这个仓库，建议从这几个入口开始：
 
-- 最新日报：[`daily/2026-06-22/ai-hotspots.md`](./daily/2026-06-22/ai-hotspots.md)
+- 最新日报：[`daily/2026-06-23/ai-hotspots.md`](./daily/2026-06-23/ai-hotspots.md)
 - 项目总目录：[`projects/`](./projects/)
 - 自动化约束：[`AGENTS.md`](./AGENTS.md)
 - 开发续接记录：[`TODO.md`](./TODO.md)
@@ -128,6 +128,7 @@
 | `agentsview` | 本地优先的 coding agent 会话搜索、成本统计与使用分析面板。 | [GitHub](https://github.com/kenn-io/agentsview) |
 | `codebase-memory-mcp` | 面向 agent 的代码知识图谱与持久记忆层，把仓库结构索引成可查询 MCP 能力。 | [GitHub](https://github.com/DeusData/codebase-memory-mcp) |
 | `cognee` | 面向 agent 的开源长期记忆平台，把文档、工具调用和上下文沉淀为可查询知识图谱。 | [GitHub](https://github.com/topoteretes/cognee) |
+| `ax` | 面向 Claude Code、Codex 等工具的本地 agent 复盘、记忆、成本与 observability 图谱层。 | [GitHub](https://github.com/Necmttn/ax) |
 
 ### RAG、检索与知识处理
 
@@ -138,6 +139,7 @@
 | `dify` | AI 应用平台，也常被用来快速搭建知识库应用。 | [GitHub](https://github.com/langgenius/dify) |
 | `cocoindex` | 索引构建与持续更新导向的知识处理基础设施。 | [GitHub](https://github.com/cocoindex-io/cocoindex) |
 | `crawl4ai` | 面向 LLM 场景的网页抓取与结构化提取工具。 | [GitHub](https://github.com/unclecode/crawl4ai) |
+| `firecrawl` | 把搜索、抓取、交互和结构化提取封装成统一 Web context API 的热门基础设施。 | [GitHub](https://github.com/firecrawl/firecrawl) |
 | `turbovec` | 低内存向量检索库，代表检索压缩层热点。 | [GitHub](https://github.com/RyanCodrai/turbovec) |
 | `paperless-ngx` | 文档归档、OCR 与可搜索知识仓库工具。 | [GitHub](https://github.com/paperless-ngx/paperless-ngx) |
 | `local-deep-research` | 偏本地化 deep research / 文献搜集工作流。 | [GitHub](https://github.com/LearningCircuit/local-deep-research) |
@@ -215,27 +217,28 @@
 | `Vibe-Trading` | 偏交易工作流的 agent 化项目。 | [GitHub](https://github.com/HKUDS/Vibe-Trading) |
 | `presenton` | 开源 AI 演示文稿生成器。 | [GitHub](https://github.com/presenton/presenton) |
 | `ppt-master` | 生成原生可编辑 PPTX 的 agent 工作流，强调真实办公交付物。 | [GitHub](https://github.com/hugohe3/ppt-master) |
+| `daily_stock_analysis` | 用大模型驱动多市场股票分析、定时推送与 Web 工作台的行业应用型系统。 | [GitHub](https://github.com/ZhuLinsen/daily_stock_analysis) |
 
 ## 完整索引与每日热点
 
 - 全量项目目录：[`projects/`](./projects/)
 - 最近日报：
+  - [`2026-06-23`](./daily/2026-06-23/ai-hotspots.md)
   - [`2026-06-22`](./daily/2026-06-22/ai-hotspots.md)
   - [`2026-06-21`](./daily/2026-06-21/ai-hotspots.md)
   - [`2026-06-20`](./daily/2026-06-20/ai-hotspots.md)
   - [`2026-06-19`](./daily/2026-06-19/ai-hotspots.md)
   - [`2026-06-18`](./daily/2026-06-18/ai-hotspots.md)
   - [`2026-06-17`](./daily/2026-06-17/ai-hotspots.md)
-  - [`2026-06-16`](./daily/2026-06-16/ai-hotspots.md)
 
 如果你要找的是某个具体项目，而不是看分类，直接在 [`projects/`](./projects/) 中按名称查找会更快。
 
 ## 当前状态
 
 - 状态：持续日更中。
-- 最新更新：`2026-06-22`。
-- 当前项目总数：`247`。
-- 最近新增项目：`background-agents`、`cognee`、`stitch-mcp`。
+- 最新更新：`2026-06-23`。
+- 当前项目总数：`251`。
+- 最近新增项目：`ax`、`firecrawl`、`daily_stock_analysis`。
 - 覆盖平台：GitHub、X、Instagram、YouTube。
 
 ## 维护约定
