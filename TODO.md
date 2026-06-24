@@ -109,6 +109,9 @@
 - 继续观察 `ax` 会不会把“agent 复盘 + 成本 + 本地记忆图谱”从个人实验做成稳定子赛道。
 - 继续跟踪 `firecrawl` 与 `crawl4ai` 这两条 Web 上下文路线，判断托管 API 层和本地抓取流水线会如何分化。
 - 观察 `daily_stock_analysis` 这类“AI 分析 + 定时交付”项目会不会在办公/行业应用层持续留在热榜，而不是只靠一次性传播。
+- 继续观察 `agent-toolkit-for-aws` 这类官方云厂商插件仓库，会不会把 MCP / skills / plugin 变成默认接入层。
+- 跟踪 `hyperframes` 是否会把“HTML 即视频”从单日热点沉淀成稳定的视频自动化渲染赛道。
+- 继续观察 `worldmonitor` 这类 AI 情报工作台，判断其热度来自产品化工作流还是单次传播叙事。
 
 ## 阻塞点
 
@@ -258,6 +261,12 @@
   - 新增 `projects/codebase-memory-mcp/README.md`。
   - 新增 `projects/OpenMontage/README.md`。
   - 新增 `daily/2026-06-18/ai-hotspots.md`。
+- 2026-06-24：
+  - 新增 `projects/agent-toolkit-for-aws/README.md`。
+  - 新增 `projects/hyperframes/README.md`。
+  - 新增 `projects/worldmonitor/README.md`。
+  - 新增 `daily/2026-06-24/ai-hotspots.md`。
+  - 同步首页 `README.md`：补充 `agent-toolkit-for-aws`、`hyperframes`、`worldmonitor` 到对应分类，并更新最新日期与项目总数。
   - 同步首页 `README.md`：补充 `codebase-memory-mcp`、`OpenMontage` 到对应分类，并更新最新日期。
 - 2026-06-19：
   - 新增 `projects/GLM-5/README.md`。

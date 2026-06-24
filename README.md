@@ -48,7 +48,7 @@
 
 如果你是第一次进入这个仓库，建议从这几个入口开始：
 
-- 最新日报：[`daily/2026-06-23/ai-hotspots.md`](./daily/2026-06-23/ai-hotspots.md)
+- 最新日报：[`daily/2026-06-24/ai-hotspots.md`](./daily/2026-06-24/ai-hotspots.md)
 - 项目总目录：[`projects/`](./projects/)
 - 自动化约束：[`AGENTS.md`](./AGENTS.md)
 - 开发续接记录：[`TODO.md`](./TODO.md)
@@ -112,6 +112,7 @@
 | `mcphub` | 面向多 MCP server 的统一网关与路由层，强调管理、编排与权限控制。 | [GitHub](https://github.com/samanhappy/mcphub) |
 | `Archon` | 把 AI 编码流程写成 YAML workflow 的工作流引擎，强调确定性与可重复执行。 | [GitHub](https://github.com/coleam00/Archon) |
 | `background-agents` | 面向团队后台异步执行的开源 coding agent 系统，覆盖 Web、Slack、GitHub 和定时任务入口。 | [GitHub](https://github.com/ColeMurray/background-agents) |
+| `agent-toolkit-for-aws` | AWS 官方维护的 agent 插件、skills 与 MCP 接入工具包。 | [GitHub](https://github.com/aws/agent-toolkit-for-aws) |
 
 ### 记忆层与个人 AI 基础设施
 
@@ -182,6 +183,7 @@
 | `OpenMontage` | 多代理驱动的开源视频生产系统，把研究、脚本、素材、字幕和合成串成完整流水线。 | [GitHub](https://github.com/calesthio/OpenMontage) |
 | `palmier-pro` | 面向 macOS 的 AI 时间线视频编辑器，支持通过 MCP 与 Claude / Codex / Cursor 协作。 | [GitHub](https://github.com/palmier-io/palmier-pro) |
 | `LTX-2` | Lightricks 的音视频基础模型与推理/训练工具栈，覆盖 audio-to-video、lipdub 与多条视频 pipeline。 | [GitHub](https://github.com/Lightricks/LTX-2) |
+| `hyperframes` | 用 HTML/CSS 与可 seek 动画直接渲染视频的 agent 友好型开源框架。 | [GitHub](https://github.com/heygen-com/hyperframes) |
 
 ### 模型、训练与推理基础设施
 
@@ -218,11 +220,13 @@
 | `presenton` | 开源 AI 演示文稿生成器。 | [GitHub](https://github.com/presenton/presenton) |
 | `ppt-master` | 生成原生可编辑 PPTX 的 agent 工作流，强调真实办公交付物。 | [GitHub](https://github.com/hugohe3/ppt-master) |
 | `daily_stock_analysis` | 用大模型驱动多市场股票分析、定时推送与 Web 工作台的行业应用型系统。 | [GitHub](https://github.com/ZhuLinsen/daily_stock_analysis) |
+| `worldmonitor` | 面向全球情报与基础设施监测的 AI 工作台，强调多源新闻聚合与态势感知。 | [GitHub](https://github.com/koala73/worldmonitor) |
 
 ## 完整索引与每日热点
 
 - 全量项目目录：[`projects/`](./projects/)
 - 最近日报：
+  - [`2026-06-24`](./daily/2026-06-24/ai-hotspots.md)
   - [`2026-06-23`](./daily/2026-06-23/ai-hotspots.md)
   - [`2026-06-22`](./daily/2026-06-22/ai-hotspots.md)
   - [`2026-06-21`](./daily/2026-06-21/ai-hotspots.md)
@@ -236,9 +240,9 @@
 ## 当前状态
 
 - 状态：持续日更中。
-- 最新更新：`2026-06-23`。
-- 当前项目总数：`251`。
-- 最近新增项目：`ax`、`firecrawl`、`daily_stock_analysis`。
+- 最新更新：`2026-06-24`。
+- 当前项目总数：`253`。
+- 最近新增项目：`agent-toolkit-for-aws`、`hyperframes`、`worldmonitor`。
 - 覆盖平台：GitHub、X、Instagram、YouTube。
 
 ## 维护约定
