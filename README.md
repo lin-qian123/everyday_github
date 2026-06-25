@@ -48,7 +48,7 @@
 
 如果你是第一次进入这个仓库，建议从这几个入口开始：
 
-- 最新日报：[`daily/2026-06-25/ai-hotspots.md`](./daily/2026-06-25/ai-hotspots.md)
+- 最新日报：[`daily/2026-06-26/ai-hotspots.md`](./daily/2026-06-26/ai-hotspots.md)
 - 项目总目录：[`projects/`](./projects/)
 - 自动化约束：[`AGENTS.md`](./AGENTS.md)
 - 开发续接记录：[`TODO.md`](./TODO.md)
@@ -116,6 +116,7 @@
 | `agent-toolkit-for-aws` | AWS 官方维护的 agent 插件、skills 与 MCP 接入工具包。 | [GitHub](https://github.com/aws/agent-toolkit-for-aws) |
 | `agents` | 面向 Claude Code、Codex、Cursor 等多种 harness 的插件市场与技能分发仓库。 | [GitHub](https://github.com/wshobson/agents) |
 | `nvidia-skills` | NVIDIA 官方验证的 agent skill 目录，面向 CUDA-X、蓝图与平台工具。 | [GitHub](https://github.com/NVIDIA/skills) |
+| `SkillSpector` | 面向 agent skills 的安全扫描器，专查恶意模式、权限风险与 MCP 相关漏洞。 | [GitHub](https://github.com/NVIDIA/SkillSpector) |
 
 ### 记忆层与个人 AI 基础设施
 
@@ -160,7 +161,7 @@
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
 | `awesome-design-md` | 收集 `DESIGN.md` 模板的设计约束索引仓库。 | [GitHub](https://github.com/VoltAgent/awesome-design-md) |
-| `design-md` | Google Labs 的设计说明格式实践。 | [GitHub](https://github.com/google-labs-code/design.md) |
+| `design-md` | Google Labs 推动的设计契约格式，把视觉系统写成 coding agent 可读取的文本规范。 | [GitHub](https://github.com/google-labs-code/design.md) |
 | `open-design` | 面向开放设计流程和组件思路的项目。 | [GitHub](https://github.com/nexu-io/open-design) |
 | `AionUi` | 偏 AI 应用界面的组件/模板方向。 | [GitHub](https://github.com/iOfficeAI/AionUi) |
 | `UI-TARS-desktop` | 偏桌面 Agent UI 与可操作前端表面。 | [GitHub](https://github.com/bytedance/UI-TARS-desktop) |
@@ -224,11 +225,13 @@
 | `ppt-master` | 生成原生可编辑 PPTX 的 agent 工作流，强调真实办公交付物。 | [GitHub](https://github.com/hugohe3/ppt-master) |
 | `daily_stock_analysis` | 用大模型驱动多市场股票分析、定时推送与 Web 工作台的行业应用型系统。 | [GitHub](https://github.com/ZhuLinsen/daily_stock_analysis) |
 | `worldmonitor` | 面向全球情报与基础设施监测的 AI 工作台，强调多源新闻聚合与态势感知。 | [GitHub](https://github.com/koala73/worldmonitor) |
+| `ai-berkshire` | 把价值投资研究拆成技能与多 Agent 流程的领域化投研框架。 | [GitHub](https://github.com/xbtlin/ai-berkshire) |
 
 ## 完整索引与每日热点
 
 - 全量项目目录：[`projects/`](./projects/)
 - 最近日报：
+  - [`2026-06-26`](./daily/2026-06-26/ai-hotspots.md)
   - [`2026-06-25`](./daily/2026-06-25/ai-hotspots.md)
   - [`2026-06-24`](./daily/2026-06-24/ai-hotspots.md)
   - [`2026-06-23`](./daily/2026-06-23/ai-hotspots.md)
@@ -243,9 +246,9 @@
 ## 当前状态
 
 - 状态：持续日更中。
-- 最新更新：`2026-06-25`。
-- 当前项目总数：`256`。
-- 最近新增项目：`orca`、`agents`、`nvidia-skills`。
+- 最新更新：`2026-06-26`。
+- 当前项目总数：`258`。
+- 最近新增项目：`ai-berkshire`、`SkillSpector`。
 - 覆盖平台：GitHub、X、Instagram、YouTube。
 
 ## 维护约定

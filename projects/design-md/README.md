@@ -1,53 +1,69 @@
 # DESIGN.md（google-labs-code/design.md）
 
 - GitHub: https://github.com/google-labs-code/design.md
-- 记录日期: 2026-04-29 (Asia/Shanghai)
+- 规范页: https://stitch.withgoogle.com/docs/design-md/specification
+- 记录日期: 2026-06-26 (Asia/Shanghai)
 
-## 这是什么
+## 定位
 
-`design.md` 是面向编码 Agent 的设计系统描述规范，目标是让 Agent 持久理解视觉身份（颜色、字体、组件、约束）并据此生成一致 UI。
+`design.md` 是一个给 coding agent 使用的界面设计规范格式。它试图把设计系统从“截图、口头描述、Figma 链接”变成一份 agent 可长期理解的文本契约，让模型既看到设计 token，也看到背后的风格说明。
 
 ## 热度信号
 
-1. GitHub 仓库约 `9.7k stars`（2026-04-29 抓取）。
-2. GitTrend（2026-04-25）显示日增明显（+207/day 量级）。
+1. GitHub API 在 2026-06-26 抓取时显示约 `19,077 stars`、`1,641 forks`，仓库在 `2026-06-15T22:22:46Z` 仍有近期推送记录。
+2. GitHub Trending 全站与 TypeScript 日榜在 2026-06-26 抓取时都出现该项目，Trending 页面显示约 `1,407 stars today`。
+3. 官方 README 把定位写得很直接：`A format specification for describing a visual identity to coding agents`。
 
-## 怎么用（最短路径）
+## 用法
 
-1. 在项目根目录新增 `DESIGN.md`。
-2. 按规范写入品牌色、排版、组件语义、页面风格规则。
-3. 在 Agent 提示词中明确“以 DESIGN.md 作为 UI 生成约束”。
-4. 使用项目 CLI/校验流程验证格式与兼容性。
+### 1) 在项目里写一个 `DESIGN.md`
 
-## 核心原理
+README 的基本格式是：YAML front matter 写 token，Markdown 正文写设计原则，例如颜色、字体、间距、组件风格与 Do's / Don'ts。
 
-1. 结构化规范：把设计偏好从“口头要求”变成机器可解析约束。
-2. 一致性传递：跨页面、跨任务复用相同视觉语义，减少风格漂移。
-3. 向后兼容策略：对未知字段给出保留/告警机制，降低规范演进成本。
+### 2) 用官方 CLI 校验规范
 
-## 适用场景
+```bash
+npx @google/design.md lint DESIGN.md
+```
 
-1. 团队希望让多个 Agent 共享同一套设计语言。
-2. 需要批量生成页面并维持一致品牌风格。
-3. 前端协作中“设计系统文档化”不足的项目。
+它会检查结构问题、token 引用、对比度和其他规范性错误，并输出 JSON。
 
-## 价值与风险
+### 3) 比较两个设计版本的差异
 
-价值：
-- 大幅减少“每次重新解释 UI 风格”的沟通成本。
-- 提升 Agent 产出的可预测性与可审查性。
+```bash
+npx @google/design.md diff DESIGN.md DESIGN-v2.md
+```
 
-风险：
-- 规范早期迭代快，版本漂移可能影响稳定性。
-- 如果规范本身不完整，会把设计缺陷规模化复制。
+这对 agent 工作流很关键，因为它把“设计变更”也做成了可比较、可审查的文本差异。
 
-## 我认为有价值的补充材料
+## 原理
 
-1. 与 Storybook/Design Token 管线互通，避免双份配置。
-2. 对生成结果做自动视觉回归（截图 diff）。
-3. 维护“禁用样式清单”，降低品牌偏差风险。
+1. 文件分成两层：上面的 YAML token 提供机器可读的精确值，下面的 Markdown 解释这些值为何存在、应该怎么用。
+2. agent 在生成界面时，不再只靠提示词临时猜风格，而是读取一份持久化设计契约。
+3. CLI 既能 lint，也能 diff，说明它不是单纯提格式，而是在把设计系统纳入工程工作流。
+4. 这条路线和 `stitch-mcp`、`openui` 一样，核心都是把设计上下文转成模型可消费的结构化输入。
 
-## 参考来源
+## 价值
+
+- 对 AI 驱动前端开发，这是很强的基础设施信号，因为它把“设计语言”从抽象偏好变成了仓库里的可执行上下文。
+- 它特别适合多人协作或多 agent 场景，减少“同一品牌风格在不同页面被模型生成得越来越飘”的问题。
+- 如果后续更多前端项目把 `DESIGN.md` 当成标准入口，设计系统和代码仓库之间的边界会进一步收敛。
+
+## 风险边界
+
+- 有了 `DESIGN.md` 不代表页面一定好看；它解决的是约束一致性，不是自动提供高质量审美判断。
+- 规范能约束 token 和结构，但不能替代真实产品需求、交互逻辑和可访问性审查。
+- 若团队没有维护设计 token 的习惯，文件很容易过时，最终变成“看起来规范、实际上失效”的陈旧上下文。
+
+## 补充建议
+
+1. 先在营销页、组件库或内部工具里试点，用它约束颜色、字体、圆角、间距和按钮语义，最容易看出收益。
+2. 如果仓库已经在用 `DESIGN.md`、`SPEC.md`、`PRD` 这类文本契约，可以把它放进同一套 agent 上下文管理链里。
+3. 建议与 `stitch-mcp`、`openui`、`agent-native` 一起理解：前者偏把设计产物接入开发，`design.md` 偏把设计原则本身结构化。
+
+## 参考资料
 
 - https://github.com/google-labs-code/design.md
-- https://gittrend.io/
+- https://stitch.withgoogle.com/docs/design-md/specification
+- https://github.com/trending
+- https://github.com/trending/typescript

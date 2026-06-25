@@ -85,6 +85,9 @@
 
 ## 下一步行动
 
+- 跟踪 `SkillSpector` 是否会和 `nvidia-skills`、`agents` 这类技能分发项目一起，把“agent skill 安全扫描”沉淀成长期基础设施层。
+- 继续观察 `design-md` / `design.md` 这套格式规范会不会演化成前端仓库默认的 agent 设计契约文件。
+- 跟踪 `ai-berkshire` 这类领域化 agent workflow 是否会扩展到法务、咨询、研究支持等更广的知识工作场景。
 - 继续观察 `background-agents` 会不会从“热门新仓库”演化成稳定的后台 agent 控制面代表项目。
 - 跟踪 `cognee` 与 `mem0`、`memsearch`、`codebase-memory-mcp` 的功能分层，判断其更偏通用记忆平台还是工程记忆底座。
 - 继续观察 `stitch-mcp` 会不会把 Google Stitch 的设计结果稳定变成前端 agent 的主流上下文入口。
@@ -125,6 +128,12 @@
 - 延续 `daily/` 下按日期归档策略。
 - 优先维护“新上榜且仓库尚未建立目录”的项目。
 - 首页项目总数继续按 `projects/` 实际目录数重算，不复用旧数字。
+- 2026-06-26：
+  - 新增 `projects/ai-berkshire/README.md`。
+  - 新增 `projects/SkillSpector/README.md`。
+  - 新增 `daily/2026-06-26/ai-hotspots.md`。
+  - 更新 `projects/design-md/README.md`。
+  - 同步首页 `README.md`：补充 `ai-berkshire`、`SkillSpector`，刷新 `design-md` 条目，并更新最新日期与项目总数（`258`）。
 - 2026-05-27：
   - 新增 `projects/stop-slop/README.md`。
   - 新增 `projects/taste-skill/README.md`。
