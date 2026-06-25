@@ -48,7 +48,7 @@
 
 如果你是第一次进入这个仓库，建议从这几个入口开始：
 
-- 最新日报：[`daily/2026-06-24/ai-hotspots.md`](./daily/2026-06-24/ai-hotspots.md)
+- 最新日报：[`daily/2026-06-25/ai-hotspots.md`](./daily/2026-06-25/ai-hotspots.md)
 - 项目总目录：[`projects/`](./projects/)
 - 自动化约束：[`AGENTS.md`](./AGENTS.md)
 - 开发续接记录：[`TODO.md`](./TODO.md)
@@ -86,6 +86,7 @@
 | `qwen-code` | 阿里系开源终端 coding agent，围绕 Qwen coder 能力优化。 | [GitHub](https://github.com/QwenLM/qwen-code) |
 | `tabby` | 自托管、可本地部署的开源 AI 编码助手。 | [GitHub](https://github.com/TabbyML/tabby) |
 | `zed` | 高性能、多人协作的代码编辑器，体现 AI 时代开发入口向编辑器本体回流。 | [GitHub](https://github.com/zed-industries/zed) |
+| `orca` | 多 worktree 并行调度的 agent 开发环境，把多个 coding agent 收到同一工作台里。 | [GitHub](https://github.com/stablyai/orca) |
 
 ### Agent 框架与技能生态
 
@@ -113,6 +114,8 @@
 | `Archon` | 把 AI 编码流程写成 YAML workflow 的工作流引擎，强调确定性与可重复执行。 | [GitHub](https://github.com/coleam00/Archon) |
 | `background-agents` | 面向团队后台异步执行的开源 coding agent 系统，覆盖 Web、Slack、GitHub 和定时任务入口。 | [GitHub](https://github.com/ColeMurray/background-agents) |
 | `agent-toolkit-for-aws` | AWS 官方维护的 agent 插件、skills 与 MCP 接入工具包。 | [GitHub](https://github.com/aws/agent-toolkit-for-aws) |
+| `agents` | 面向 Claude Code、Codex、Cursor 等多种 harness 的插件市场与技能分发仓库。 | [GitHub](https://github.com/wshobson/agents) |
+| `nvidia-skills` | NVIDIA 官方验证的 agent skill 目录，面向 CUDA-X、蓝图与平台工具。 | [GitHub](https://github.com/NVIDIA/skills) |
 
 ### 记忆层与个人 AI 基础设施
 
@@ -226,6 +229,7 @@
 
 - 全量项目目录：[`projects/`](./projects/)
 - 最近日报：
+  - [`2026-06-25`](./daily/2026-06-25/ai-hotspots.md)
   - [`2026-06-24`](./daily/2026-06-24/ai-hotspots.md)
   - [`2026-06-23`](./daily/2026-06-23/ai-hotspots.md)
   - [`2026-06-22`](./daily/2026-06-22/ai-hotspots.md)
@@ -233,16 +237,15 @@
   - [`2026-06-20`](./daily/2026-06-20/ai-hotspots.md)
   - [`2026-06-19`](./daily/2026-06-19/ai-hotspots.md)
   - [`2026-06-18`](./daily/2026-06-18/ai-hotspots.md)
-  - [`2026-06-17`](./daily/2026-06-17/ai-hotspots.md)
 
 如果你要找的是某个具体项目，而不是看分类，直接在 [`projects/`](./projects/) 中按名称查找会更快。
 
 ## 当前状态
 
 - 状态：持续日更中。
-- 最新更新：`2026-06-24`。
-- 当前项目总数：`253`。
-- 最近新增项目：`agent-toolkit-for-aws`、`hyperframes`、`worldmonitor`。
+- 最新更新：`2026-06-25`。
+- 当前项目总数：`256`。
+- 最近新增项目：`orca`、`agents`、`nvidia-skills`。
 - 覆盖平台：GitHub、X、Instagram、YouTube。
 
 ## 维护约定

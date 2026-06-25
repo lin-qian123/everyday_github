@@ -112,6 +112,9 @@
 - 继续观察 `agent-toolkit-for-aws` 这类官方云厂商插件仓库，会不会把 MCP / skills / plugin 变成默认接入层。
 - 跟踪 `hyperframes` 是否会把“HTML 即视频”从单日热点沉淀成稳定的视频自动化渲染赛道。
 - 继续观察 `worldmonitor` 这类 AI 情报工作台，判断其热度来自产品化工作流还是单次传播叙事。
+- 跟踪 `orca` 会不会把“多 worktree 并行 agent 调度”从极客玩法做成稳定开发环境赛道。
+- 继续观察 `agents` 这类跨 harness 插件市场会不会成为长期的 agent 生态分发层，而不只是大而全目录。
+- 跟踪 `nvidia-skills` 与 `agent-toolkit-for-aws` 这类厂商官方能力目录是否会推动“verified skills / 官方插件注册表”成为新默认层。
 
 ## 阻塞点
 
@@ -121,6 +124,7 @@
 
 - 延续 `daily/` 下按日期归档策略。
 - 优先维护“新上榜且仓库尚未建立目录”的项目。
+- 首页项目总数继续按 `projects/` 实际目录数重算，不复用旧数字。
 - 2026-05-27：
   - 新增 `projects/stop-slop/README.md`。
   - 新增 `projects/taste-skill/README.md`。
@@ -267,6 +271,12 @@
   - 新增 `projects/worldmonitor/README.md`。
   - 新增 `daily/2026-06-24/ai-hotspots.md`。
   - 同步首页 `README.md`：补充 `agent-toolkit-for-aws`、`hyperframes`、`worldmonitor` 到对应分类，并更新最新日期与项目总数。
+- 2026-06-25：
+  - 新增 `projects/orca/README.md`。
+  - 新增 `projects/agents/README.md`。
+  - 新增 `projects/nvidia-skills/README.md`。
+  - 新增 `daily/2026-06-25/ai-hotspots.md`。
+  - 同步首页 `README.md`：补充 `orca`、`agents`、`nvidia-skills` 到对应分类，并更新最新日期与项目总数。
   - 同步首页 `README.md`：补充 `codebase-memory-mcp`、`OpenMontage` 到对应分类，并更新最新日期。
 - 2026-06-19：
   - 新增 `projects/GLM-5/README.md`。
