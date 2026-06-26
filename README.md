@@ -48,7 +48,7 @@
 
 如果你是第一次进入这个仓库，建议从这几个入口开始：
 
-- 最新日报：[`daily/2026-06-26/ai-hotspots.md`](./daily/2026-06-26/ai-hotspots.md)
+- 最新日报：[`daily/2026-06-27/ai-hotspots.md`](./daily/2026-06-27/ai-hotspots.md)
 - 项目总目录：[`projects/`](./projects/)
 - 自动化约束：[`AGENTS.md`](./AGENTS.md)
 - 开发续接记录：[`TODO.md`](./TODO.md)
@@ -155,6 +155,7 @@
 | `chroma` | 轻量、AI 友好的搜索与向量检索基础设施。 | [GitHub](https://github.com/chroma-core/chroma) |
 | `faiss` | Meta 主导的向量相似度搜索与聚类库，是很多检索系统的底层内核。 | [GitHub](https://github.com/facebookresearch/faiss) |
 | `Hyper-Extract` | 把非结构化文档抽成强类型知识对象、图谱和超图的知识抽取 CLI。 | [GitHub](https://github.com/yifanfeng97/Hyper-Extract) |
+| `MinerU` | 面向 LLM / agent 的复杂文档解析基础设施，强调把 PDF / Office 资料转成结构化 Markdown / JSON。 | [GitHub](https://github.com/opendatalab/MinerU) |
 
 ### 前端、UI 与 Agent 交互层
 
@@ -171,6 +172,8 @@
 | `openui` | 开源生成式 UI 原型工具，支持描述界面并导出到多种前端框架。 | [GitHub](https://github.com/wandb/openui) |
 | `chatbot-ui` | 开源 AI 聊天前端骨架，适合做多模型、自托管聊天入口。 | [GitHub](https://github.com/mckaywrigley/chatbot-ui) |
 | `stitch-mcp` | 把 Google Stitch 生成的 UI 设计接入本地开发与 coding agent 工作流的 CLI / MCP 桥接层。 | [GitHub](https://github.com/davideast/stitch-mcp) |
+| `hermes-studio` | Hermes Agent 的桌面工作台、本地运行时与 Web 控制台组合，强调会话、任务与控制面。 | [GitHub](https://github.com/EKKOLearnAI/hermes-studio) |
+| `ai-website-cloner-template` | 用 AI coding agent 复刻网站的 Next.js 工作流模板，强调设计 token 抽取与并行重建。 | [GitHub](https://github.com/JCodesMore/ai-website-cloner-template) |
 
 ### 语音、视频与多模态
 
@@ -231,6 +234,7 @@
 
 - 全量项目目录：[`projects/`](./projects/)
 - 最近日报：
+  - [`2026-06-27`](./daily/2026-06-27/ai-hotspots.md)
   - [`2026-06-26`](./daily/2026-06-26/ai-hotspots.md)
   - [`2026-06-25`](./daily/2026-06-25/ai-hotspots.md)
   - [`2026-06-24`](./daily/2026-06-24/ai-hotspots.md)
@@ -246,9 +250,9 @@
 ## 当前状态
 
 - 状态：持续日更中。
-- 最新更新：`2026-06-26`。
-- 当前项目总数：`258`。
-- 最近新增项目：`ai-berkshire`、`SkillSpector`。
+- 最新更新：`2026-06-27`。
+- 当前项目总数：`261`。
+- 最近新增项目：`MinerU`、`hermes-studio`、`ai-website-cloner-template`。
 - 覆盖平台：GitHub、X、Instagram、YouTube。
 
 ## 维护约定

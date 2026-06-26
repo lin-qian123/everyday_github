@@ -86,6 +86,9 @@
 ## 下一步行动
 
 - 跟踪 `SkillSpector` 是否会和 `nvidia-skills`、`agents` 这类技能分发项目一起，把“agent skill 安全扫描”沉淀成长期基础设施层。
+- 跟踪 `MinerU` 与 `markitdown`、`Hyper-Extract` 这类文档入口层项目的分工，判断复杂文档解析会不会继续成为独立热点带。
+- 继续观察 `hermes-studio` 是否会把“本地 runtime + 桌面工作台 + Web 控制台”收敛成稳定的 agent 控制面形态。
+- 跟踪 `ai-website-cloner-template` 与 `design-md`、`stitch-mcp` 的联动，看“设计读取 + 网站重建”会不会从单日传播题材变成稳定工作流赛道。
 - 继续观察 `design-md` / `design.md` 这套格式规范会不会演化成前端仓库默认的 agent 设计契约文件。
 - 跟踪 `ai-berkshire` 这类领域化 agent workflow 是否会扩展到法务、咨询、研究支持等更广的知识工作场景。
 - 继续观察 `background-agents` 会不会从“热门新仓库”演化成稳定的后台 agent 控制面代表项目。
@@ -128,6 +131,12 @@
 - 延续 `daily/` 下按日期归档策略。
 - 优先维护“新上榜且仓库尚未建立目录”的项目。
 - 首页项目总数继续按 `projects/` 实际目录数重算，不复用旧数字。
+- 2026-06-27：
+  - 新增 `projects/MinerU/README.md`。
+  - 新增 `projects/hermes-studio/README.md`。
+  - 新增 `projects/ai-website-cloner-template/README.md`。
+  - 新增 `daily/2026-06-27/ai-hotspots.md`。
+  - 同步首页 `README.md`：补充 `MinerU`、`hermes-studio`、`ai-website-cloner-template`，并更新最新日期与项目总数（`261`）。
 - 2026-06-26：
   - 新增 `projects/ai-berkshire/README.md`。
   - 新增 `projects/SkillSpector/README.md`。
