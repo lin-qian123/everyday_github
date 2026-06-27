@@ -48,7 +48,7 @@
 
 如果你是第一次进入这个仓库，建议从这几个入口开始：
 
-- 最新日报：[`daily/2026-06-27/ai-hotspots.md`](./daily/2026-06-27/ai-hotspots.md)
+- 最新日报：[`daily/2026-06-28/ai-hotspots.md`](./daily/2026-06-28/ai-hotspots.md)
 - 项目总目录：[`projects/`](./projects/)
 - 自动化约束：[`AGENTS.md`](./AGENTS.md)
 - 开发续接记录：[`TODO.md`](./TODO.md)
@@ -174,6 +174,7 @@
 | `stitch-mcp` | 把 Google Stitch 生成的 UI 设计接入本地开发与 coding agent 工作流的 CLI / MCP 桥接层。 | [GitHub](https://github.com/davideast/stitch-mcp) |
 | `hermes-studio` | Hermes Agent 的桌面工作台、本地运行时与 Web 控制台组合，强调会话、任务与控制面。 | [GitHub](https://github.com/EKKOLearnAI/hermes-studio) |
 | `ai-website-cloner-template` | 用 AI coding agent 复刻网站的 Next.js 工作流模板，强调设计 token 抽取与并行重建。 | [GitHub](https://github.com/JCodesMore/ai-website-cloner-template) |
+| `cherry-studio` | 跨平台多模型 AI 桌面客户端，集成预置助手、文档处理与 MCP 能力。 | [GitHub](https://github.com/CherryHQ/cherry-studio) |
 
 ### 语音、视频与多模态
 
@@ -191,6 +192,8 @@
 | `palmier-pro` | 面向 macOS 的 AI 时间线视频编辑器，支持通过 MCP 与 Claude / Codex / Cursor 协作。 | [GitHub](https://github.com/palmier-io/palmier-pro) |
 | `LTX-2` | Lightricks 的音视频基础模型与推理/训练工具栈，覆盖 audio-to-video、lipdub 与多条视频 pipeline。 | [GitHub](https://github.com/Lightricks/LTX-2) |
 | `hyperframes` | 用 HTML/CSS 与可 seek 动画直接渲染视频的 agent 友好型开源框架。 | [GitHub](https://github.com/heygen-com/hyperframes) |
+| `Open-Generative-AI` | 面向图像与视频生成的开源聚合工作台，覆盖多模型、桌面端与 Web 端。 | [GitHub](https://github.com/Anil-matcha/Open-Generative-AI) |
+| `video-use` | 让 coding agent 驱动视频剪辑、字幕、调色与渲染检查的自动化工作流。 | [GitHub](https://github.com/browser-use/video-use) |
 
 ### 模型、训练与推理基础设施
 
@@ -234,6 +237,7 @@
 
 - 全量项目目录：[`projects/`](./projects/)
 - 最近日报：
+  - [`2026-06-28`](./daily/2026-06-28/ai-hotspots.md)
   - [`2026-06-27`](./daily/2026-06-27/ai-hotspots.md)
   - [`2026-06-26`](./daily/2026-06-26/ai-hotspots.md)
   - [`2026-06-25`](./daily/2026-06-25/ai-hotspots.md)
@@ -243,16 +247,15 @@
   - [`2026-06-21`](./daily/2026-06-21/ai-hotspots.md)
   - [`2026-06-20`](./daily/2026-06-20/ai-hotspots.md)
   - [`2026-06-19`](./daily/2026-06-19/ai-hotspots.md)
-  - [`2026-06-18`](./daily/2026-06-18/ai-hotspots.md)
 
 如果你要找的是某个具体项目，而不是看分类，直接在 [`projects/`](./projects/) 中按名称查找会更快。
 
 ## 当前状态
 
 - 状态：持续日更中。
-- 最新更新：`2026-06-27`。
-- 当前项目总数：`261`。
-- 最近新增项目：`MinerU`、`hermes-studio`、`ai-website-cloner-template`。
+- 最新更新：`2026-06-28`。
+- 当前项目总数：`264`。
+- 最近新增项目：`Open-Generative-AI`、`video-use`、`cherry-studio`。
 - 覆盖平台：GitHub、X、Instagram、YouTube。
 
 ## 维护约定

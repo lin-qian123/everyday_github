@@ -121,6 +121,9 @@
 - 跟踪 `orca` 会不会把“多 worktree 并行 agent 调度”从极客玩法做成稳定开发环境赛道。
 - 继续观察 `agents` 这类跨 harness 插件市场会不会成为长期的 agent 生态分发层，而不只是大而全目录。
 - 跟踪 `nvidia-skills` 与 `agent-toolkit-for-aws` 这类厂商官方能力目录是否会推动“verified skills / 官方插件注册表”成为新默认层。
+- 继续观察 `Open-Generative-AI` 会不会把“多模型生成聚合层 + 桌面端 + agent 自动化”沉淀成稳定的媒体工作台赛道。
+- 跟踪 `video-use` 与 `OpenMontage`、`hyperframes` 的分工，判断 AI 视频热点会更多落到生成层还是后期自动化层。
+- 继续观察 `cherry-studio` 这类多模型桌面客户端，会不会从聊天壳演化成稳定的 MCP / assistant 分发入口。
 
 ## 阻塞点
 
@@ -131,6 +134,13 @@
 - 延续 `daily/` 下按日期归档策略。
 - 优先维护“新上榜且仓库尚未建立目录”的项目。
 - 首页项目总数继续按 `projects/` 实际目录数重算，不复用旧数字。
+- 继续优先观察 GitHub Trending 中“视频工作流”“多模型桌面客户端”“生成聚合工作台”三条线，看是否持续占据榜单前排。
+- 2026-06-28：
+  - 新增 `projects/Open-Generative-AI/README.md`。
+  - 新增 `projects/video-use/README.md`。
+  - 新增 `projects/cherry-studio/README.md`。
+  - 新增 `daily/2026-06-28/ai-hotspots.md`。
+  - 同步首页 `README.md`：补充 `Open-Generative-AI`、`video-use`、`cherry-studio`，并更新最新日期与项目总数（`264`）。
 - 2026-06-27：
   - 新增 `projects/MinerU/README.md`。
   - 新增 `projects/hermes-studio/README.md`。
