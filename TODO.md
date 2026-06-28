@@ -124,6 +124,10 @@
 - 继续观察 `Open-Generative-AI` 会不会把“多模型生成聚合层 + 桌面端 + agent 自动化”沉淀成稳定的媒体工作台赛道。
 - 跟踪 `video-use` 与 `OpenMontage`、`hyperframes` 的分工，判断 AI 视频热点会更多落到生成层还是后期自动化层。
 - 继续观察 `cherry-studio` 这类多模型桌面客户端，会不会从聊天壳演化成稳定的 MCP / assistant 分发入口。
+- 跟踪 `strix` 与 `SkillSpector` 是否会把 agent 安全分成“应用漏洞验证”和“技能供应链审计”两条稳定路线。
+- 继续观察 `openpencil` 与 `design-md`、`stitch-mcp` 的分工，看设计画布是否会成为 coding agent 的标准上下文入口。
+- 跟踪 `FluidVoice` 这类本地离线听写工具，判断语音输入层是否会重新成为桌面 AI 高频入口。
+- 观察 `lingbot-map` 是否会被机器人、AR 或具身智能项目复用，而不是只停留在论文 / demo 热度。
 
 ## 阻塞点
 
@@ -135,6 +139,13 @@
 - 优先维护“新上榜且仓库尚未建立目录”的项目。
 - 首页项目总数继续按 `projects/` 实际目录数重算，不复用旧数字。
 - 继续优先观察 GitHub Trending 中“视频工作流”“多模型桌面客户端”“生成聚合工作台”三条线，看是否持续占据榜单前排。
+- 2026-06-29：
+  - 新增 `projects/strix/README.md`。
+  - 新增 `projects/openpencil/README.md`。
+  - 新增 `projects/FluidVoice/README.md`。
+  - 新增 `projects/lingbot-map/README.md`。
+  - 新增 `daily/2026-06-29/ai-hotspots.md`。
+  - 同步首页 `README.md`：补充 `strix`、`openpencil`、`FluidVoice`、`lingbot-map`，并更新最新日期与项目总数（`268`）。
 - 2026-06-28：
   - 新增 `projects/Open-Generative-AI/README.md`。
   - 新增 `projects/video-use/README.md`。

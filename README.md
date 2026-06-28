@@ -48,7 +48,7 @@
 
 如果你是第一次进入这个仓库，建议从这几个入口开始：
 
-- 最新日报：[`daily/2026-06-28/ai-hotspots.md`](./daily/2026-06-28/ai-hotspots.md)
+- 最新日报：[`daily/2026-06-29/ai-hotspots.md`](./daily/2026-06-29/ai-hotspots.md)
 - 项目总目录：[`projects/`](./projects/)
 - 自动化约束：[`AGENTS.md`](./AGENTS.md)
 - 开发续接记录：[`TODO.md`](./TODO.md)
@@ -117,6 +117,7 @@
 | `agents` | 面向 Claude Code、Codex、Cursor 等多种 harness 的插件市场与技能分发仓库。 | [GitHub](https://github.com/wshobson/agents) |
 | `nvidia-skills` | NVIDIA 官方验证的 agent skill 目录，面向 CUDA-X、蓝图与平台工具。 | [GitHub](https://github.com/NVIDIA/skills) |
 | `SkillSpector` | 面向 agent skills 的安全扫描器，专查恶意模式、权限风险与 MCP 相关漏洞。 | [GitHub](https://github.com/NVIDIA/SkillSpector) |
+| `strix` | 用 AI hacker agents 做应用漏洞发现、PoC 验证和 CI 安全门禁。 | [GitHub](https://github.com/usestrix/strix) |
 
 ### 记忆层与个人 AI 基础设施
 
@@ -175,6 +176,7 @@
 | `hermes-studio` | Hermes Agent 的桌面工作台、本地运行时与 Web 控制台组合，强调会话、任务与控制面。 | [GitHub](https://github.com/EKKOLearnAI/hermes-studio) |
 | `ai-website-cloner-template` | 用 AI coding agent 复刻网站的 Next.js 工作流模板，强调设计 token 抽取与并行重建。 | [GitHub](https://github.com/JCodesMore/ai-website-cloner-template) |
 | `cherry-studio` | 跨平台多模型 AI 桌面客户端，集成预置助手、文档处理与 MCP 能力。 | [GitHub](https://github.com/CherryHQ/cherry-studio) |
+| `openpencil` | AI-native 矢量设计工具，把 prompt、agent team、Design-as-Code 与 MCP 接入同一画布。 | [GitHub](https://github.com/ZSeven-W/openpencil) |
 
 ### 语音、视频与多模态
 
@@ -194,6 +196,8 @@
 | `hyperframes` | 用 HTML/CSS 与可 seek 动画直接渲染视频的 agent 友好型开源框架。 | [GitHub](https://github.com/heygen-com/hyperframes) |
 | `Open-Generative-AI` | 面向图像与视频生成的开源聚合工作台，覆盖多模型、桌面端与 Web 端。 | [GitHub](https://github.com/Anil-matcha/Open-Generative-AI) |
 | `video-use` | 让 coding agent 驱动视频剪辑、字幕、调色与渲染检查的自动化工作流。 | [GitHub](https://github.com/browser-use/video-use) |
+| `FluidVoice` | 面向 macOS 的本地离线语音转文字应用，强调设备端 AI 后处理。 | [GitHub](https://github.com/altic-dev/FluidVoice) |
+| `lingbot-map` | 流式 3D 重建基础模型，把视频/传感器流转成可用空间表示。 | [GitHub](https://github.com/Robbyant/lingbot-map) |
 
 ### 模型、训练与推理基础设施
 
@@ -237,6 +241,7 @@
 
 - 全量项目目录：[`projects/`](./projects/)
 - 最近日报：
+  - [`2026-06-29`](./daily/2026-06-29/ai-hotspots.md)
   - [`2026-06-28`](./daily/2026-06-28/ai-hotspots.md)
   - [`2026-06-27`](./daily/2026-06-27/ai-hotspots.md)
   - [`2026-06-26`](./daily/2026-06-26/ai-hotspots.md)
@@ -246,16 +251,15 @@
   - [`2026-06-22`](./daily/2026-06-22/ai-hotspots.md)
   - [`2026-06-21`](./daily/2026-06-21/ai-hotspots.md)
   - [`2026-06-20`](./daily/2026-06-20/ai-hotspots.md)
-  - [`2026-06-19`](./daily/2026-06-19/ai-hotspots.md)
 
 如果你要找的是某个具体项目，而不是看分类，直接在 [`projects/`](./projects/) 中按名称查找会更快。
 
 ## 当前状态
 
 - 状态：持续日更中。
-- 最新更新：`2026-06-28`。
-- 当前项目总数：`264`。
-- 最近新增项目：`Open-Generative-AI`、`video-use`、`cherry-studio`。
+- 最新更新：`2026-06-29`。
+- 当前项目总数：`268`。
+- 最近新增项目：`strix`、`openpencil`、`FluidVoice`、`lingbot-map`。
 - 覆盖平台：GitHub、X、Instagram、YouTube。
 
 ## 维护约定
