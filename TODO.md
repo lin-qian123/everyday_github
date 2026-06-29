@@ -128,6 +128,10 @@
 - 继续观察 `openpencil` 与 `design-md`、`stitch-mcp` 的分工，看设计画布是否会成为 coding agent 的标准上下文入口。
 - 跟踪 `FluidVoice` 这类本地离线听写工具，判断语音输入层是否会重新成为桌面 AI 高频入口。
 - 观察 `lingbot-map` 是否会被机器人、AR 或具身智能项目复用，而不是只停留在论文 / demo 热度。
+- 跟踪 `ai-maestro` 是否会从个人多终端 agent dashboard 演化成团队级 agent control plane。
+- 跟踪 `awesome-harness-engineering` 是否能成为 agent harness 工程的稳定资料入口，并与厂商实践持续同步。
+- 用 `GUI-Agents-Paper-List` 作为后续 GUI / computer-use agent 项目的论文与 benchmark 背景入口。
+- 横向比较 `VulnClaw`、`strix`、`SkillSpector`，区分应用漏洞验证、授权渗透 agent、skill 供应链审计和 CI 安全门禁四条路线。
 
 ## 阻塞点
 
@@ -146,6 +150,14 @@
   - 新增 `projects/lingbot-map/README.md`。
   - 新增 `daily/2026-06-29/ai-hotspots.md`。
   - 同步首页 `README.md`：补充 `strix`、`openpencil`、`FluidVoice`、`lingbot-map`，并更新最新日期与项目总数（`268`）。
+- 2026-06-30：
+  - 新增 `projects/ai-maestro/README.md`。
+  - 新增 `projects/awesome-harness-engineering/README.md`。
+  - 新增 `projects/GUI-Agents-Paper-List/README.md`。
+  - 新增 `projects/VulnClaw/README.md`。
+  - 更新 `projects/agency-agents/README.md`，补充桌面安装器、多工具安装和今日重新上榜信号。
+  - 新增 `daily/2026-06-30/ai-hotspots.md`。
+  - 同步首页 `README.md`：补充 `ai-maestro`、`awesome-harness-engineering`、`GUI-Agents-Paper-List`、`VulnClaw`，并更新最新日期与项目总数（`272`）。
 - 2026-06-28：
   - 新增 `projects/Open-Generative-AI/README.md`。
   - 新增 `projects/video-use/README.md`。

@@ -3,6 +3,17 @@
 > GitHub: https://github.com/msitarzewski/agency-agents  
 > 定位：把“多角色 AI 协作团队”做成可直接复用的 Agent 角色库（工程、设计、营销、产品、测试等）。
 
+## 0. 2026-06-30 更新
+
+`agency-agents` 在 2026-06-30 的 GitHub Trending daily 榜单中再次进入前排，GitHub API 抓取时约为 `118.8k stars / 19.4k forks`。项目已经从早期“Claude Code 角色文件集合”扩展到更明确的跨工具 agent roster：
+
+- 新增原生桌面安装器 `agency-agents-app`，支持 macOS、Linux、Windows。
+- 官方 README 说明可一键安装到 Claude Code、Cursor、Codex、Gemini CLI、OpenCode、Qwen、Osaurus、Hermes 等工具。
+- 仓库提供 `scripts/convert.sh` 与 `scripts/install.sh`，可以按 tool、division、agent 子集生成和安装集成文件。
+- 角色数量和 division 扩张后，项目价值不再只是“prompt 收藏”，而是越来越接近跨 agent harness 的角色分发层。
+
+这也带来新的风险：角色越多，越需要对权限、工具边界、输出验收和上下文污染做治理；不能把“角色名字很专业”等同于“产出一定可靠”。
+
 ## 1. 项目是什么
 `agency-agents` 本质是一个“AI 团队角色模板仓库”。它不是单一模型或单一 agent，而是把不同岗位的职责、语气、流程、交付标准，固化成可直接调用的 agent persona。
 
@@ -38,17 +49,44 @@
 
 ## 3. 怎么用（最小可跑）
 
-## 3.1 快速接入 Claude Code
+## 3.1 快速接入桌面安装器
+
+官方现在推荐通过 `agency-agents-app` 安装，它提供跨平台桌面界面，并把角色安装到多种 AI coding 工具：
+
+```bash
+brew install --cask msitarzewski/agency-agents/agency-agents
+```
+
+也可以从 release 页面下载：
+
+```text
+https://github.com/msitarzewski/agency-agents-app/releases/latest
+```
+
+## 3.2 快速接入 Claude Code
 ```bash
 git clone https://github.com/msitarzewski/agency-agents.git
-cp -r agency-agents/* ~/.claude/agents/
+cd agency-agents
+./scripts/install.sh --tool claude-code
 ```
 
 然后在会话里按角色调用，例如：
 - “activate Frontend Developer mode …”
 - “switch to Growth Hacker …”
 
-## 3.2 当作角色素材库使用
+## 3.3 接入其他工具
+
+仓库提供转换和安装脚本，可面向不同工具生成角色文件：
+
+```bash
+./scripts/convert.sh
+./scripts/install.sh --tool codex
+./scripts/install.sh --tool opencode --division engineering --dry-run
+```
+
+如果目标工具有角色数量限制，应优先按 division 或 agent 子集安装。
+
+## 3.4 当作角色素材库使用
 不直接复制到 `~/.claude/agents/` 也可以：
 - 按任务选角色文件
 - 抽取其流程与交付规范
@@ -78,5 +116,7 @@ cp -r agency-agents/* ~/.claude/agents/
 
 ## 7. 参考链接
 - GitHub Repo: https://github.com/msitarzewski/agency-agents
+- Agency Agents App Repo: https://github.com/msitarzewski/agency-agents-app
+- Agency Agents App Release: https://github.com/msitarzewski/agency-agents-app/releases/latest
 - Trendshift（趋势快照）: https://trendshift.io/repositories/22315
 - GitHub Trending 频道转发（样例）: https://t.me/s/githubtrending/15530

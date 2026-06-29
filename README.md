@@ -48,7 +48,7 @@
 
 如果你是第一次进入这个仓库，建议从这几个入口开始：
 
-- 最新日报：[`daily/2026-06-29/ai-hotspots.md`](./daily/2026-06-29/ai-hotspots.md)
+- 最新日报：[`daily/2026-06-30/ai-hotspots.md`](./daily/2026-06-30/ai-hotspots.md)
 - 项目总目录：[`projects/`](./projects/)
 - 自动化约束：[`AGENTS.md`](./AGENTS.md)
 - 开发续接记录：[`TODO.md`](./TODO.md)
@@ -118,6 +118,9 @@
 | `nvidia-skills` | NVIDIA 官方验证的 agent skill 目录，面向 CUDA-X、蓝图与平台工具。 | [GitHub](https://github.com/NVIDIA/skills) |
 | `SkillSpector` | 面向 agent skills 的安全扫描器，专查恶意模式、权限风险与 MCP 相关漏洞。 | [GitHub](https://github.com/NVIDIA/SkillSpector) |
 | `strix` | 用 AI hacker agents 做应用漏洞发现、PoC 验证和 CI 安全门禁。 | [GitHub](https://github.com/usestrix/strix) |
+| `ai-maestro` | 面向多终端、多机器、多 agent 协作的 AI agent 控制面与编排系统。 | [GitHub](https://github.com/23blocks-OS/ai-maestro) |
+| `awesome-harness-engineering` | 汇总 agent harness 工程的上下文、工具、记忆、权限、验证与可观测性模式。 | [GitHub](https://github.com/ai-boost/awesome-harness-engineering) |
+| `VulnClaw` | 基于 LLM Agent、MCP 工具链和渗透 skill 的授权安全测试工作流。 | [GitHub](https://github.com/Unclecheng-li/VulnClaw) |
 
 ### 记忆层与个人 AI 基础设施
 
@@ -177,6 +180,7 @@
 | `ai-website-cloner-template` | 用 AI coding agent 复刻网站的 Next.js 工作流模板，强调设计 token 抽取与并行重建。 | [GitHub](https://github.com/JCodesMore/ai-website-cloner-template) |
 | `cherry-studio` | 跨平台多模型 AI 桌面客户端，集成预置助手、文档处理与 MCP 能力。 | [GitHub](https://github.com/CherryHQ/cherry-studio) |
 | `openpencil` | AI-native 矢量设计工具，把 prompt、agent team、Design-as-Code 与 MCP 接入同一画布。 | [GitHub](https://github.com/ZSeven-W/openpencil) |
+| `GUI-Agents-Paper-List` | GUI agent 论文、基准、数据集和研究趋势的结构化索引。 | [GitHub](https://github.com/OSU-NLP-Group/GUI-Agents-Paper-List) |
 
 ### 语音、视频与多模态
 
@@ -241,6 +245,7 @@
 
 - 全量项目目录：[`projects/`](./projects/)
 - 最近日报：
+  - [`2026-06-30`](./daily/2026-06-30/ai-hotspots.md)
   - [`2026-06-29`](./daily/2026-06-29/ai-hotspots.md)
   - [`2026-06-28`](./daily/2026-06-28/ai-hotspots.md)
   - [`2026-06-27`](./daily/2026-06-27/ai-hotspots.md)
@@ -250,16 +255,15 @@
   - [`2026-06-23`](./daily/2026-06-23/ai-hotspots.md)
   - [`2026-06-22`](./daily/2026-06-22/ai-hotspots.md)
   - [`2026-06-21`](./daily/2026-06-21/ai-hotspots.md)
-  - [`2026-06-20`](./daily/2026-06-20/ai-hotspots.md)
 
 如果你要找的是某个具体项目，而不是看分类，直接在 [`projects/`](./projects/) 中按名称查找会更快。
 
 ## 当前状态
 
 - 状态：持续日更中。
-- 最新更新：`2026-06-29`。
-- 当前项目总数：`268`。
-- 最近新增项目：`strix`、`openpencil`、`FluidVoice`、`lingbot-map`。
+- 最新更新：`2026-06-30`。
+- 当前项目总数：`272`。
+- 最近新增项目：`ai-maestro`、`awesome-harness-engineering`、`GUI-Agents-Paper-List`、`VulnClaw`。
 - 覆盖平台：GitHub、X、Instagram、YouTube。
 
 ## 维护约定
