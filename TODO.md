@@ -132,6 +132,10 @@
 - 跟踪 `awesome-harness-engineering` 是否能成为 agent harness 工程的稳定资料入口，并与厂商实践持续同步。
 - 用 `GUI-Agents-Paper-List` 作为后续 GUI / computer-use agent 项目的论文与 benchmark 背景入口。
 - 横向比较 `VulnClaw`、`strix`、`SkillSpector`，区分应用漏洞验证、授权渗透 agent、skill 供应链审计和 CI 安全门禁四条路线。
+- 跟踪 `MiMo-Code` 是否能把模型厂商自有 coding agent、checkpoint、持久记忆和 goal judge 做成稳定长任务体验。
+- 观察 `testsprite-cli` 是否会成为 coding agent 默认验收环节，并与现有 Playwright / CI 测试体系形成互补。
+- 跟踪 `superlog` 这类 agentic observability 项目，判断 AI 自愈软件会先落在摘要、triage 还是自动修复。
+- 观察 `open-knowledge` 是否能把 Markdown wiki、MCP、skills 和 git 同步组合成稳定的 agent second brain。
 
 ## 阻塞点
 
@@ -158,6 +162,13 @@
   - 更新 `projects/agency-agents/README.md`，补充桌面安装器、多工具安装和今日重新上榜信号。
   - 新增 `daily/2026-06-30/ai-hotspots.md`。
   - 同步首页 `README.md`：补充 `ai-maestro`、`awesome-harness-engineering`、`GUI-Agents-Paper-List`、`VulnClaw`，并更新最新日期与项目总数（`272`）。
+- 2026-07-01：
+  - 新增 `projects/MiMo-Code/README.md`。
+  - 新增 `projects/testsprite-cli/README.md`。
+  - 新增 `projects/superlog/README.md`。
+  - 新增 `projects/open-knowledge/README.md`。
+  - 新增 `daily/2026-07-01/ai-hotspots.md`。
+  - 同步首页 `README.md`：补充 `MiMo-Code`、`testsprite-cli`、`superlog`、`open-knowledge`，并更新最新日期与项目总数（`276`）。
 - 2026-06-28：
   - 新增 `projects/Open-Generative-AI/README.md`。
   - 新增 `projects/video-use/README.md`。

@@ -48,7 +48,7 @@
 
 如果你是第一次进入这个仓库，建议从这几个入口开始：
 
-- 最新日报：[`daily/2026-06-30/ai-hotspots.md`](./daily/2026-06-30/ai-hotspots.md)
+- 最新日报：[`daily/2026-07-01/ai-hotspots.md`](./daily/2026-07-01/ai-hotspots.md)
 - 项目总目录：[`projects/`](./projects/)
 - 自动化约束：[`AGENTS.md`](./AGENTS.md)
 - 开发续接记录：[`TODO.md`](./TODO.md)
@@ -84,6 +84,7 @@
 | `continue` | 从 IDE 助手演进到 PR / CI 中的 AI 检查与代码治理路线。 | [GitHub](https://github.com/continuedev/continue) |
 | `cursor` | 产品化 AI IDE 代表项，体现“编辑器即 Agent 入口”的路线。 | [GitHub](https://github.com/cursor/cursor) |
 | `qwen-code` | 阿里系开源终端 coding agent，围绕 Qwen coder 能力优化。 | [GitHub](https://github.com/QwenLM/qwen-code) |
+| `MiMo-Code` | 小米 MiMo 团队的终端原生 coding agent，强调持久记忆、checkpoint、subagent 与目标判定。 | [GitHub](https://github.com/XiaomiMiMo/MiMo-Code) |
 | `tabby` | 自托管、可本地部署的开源 AI 编码助手。 | [GitHub](https://github.com/TabbyML/tabby) |
 | `zed` | 高性能、多人协作的代码编辑器，体现 AI 时代开发入口向编辑器本体回流。 | [GitHub](https://github.com/zed-industries/zed) |
 | `orca` | 多 worktree 并行调度的 agent 开发环境，把多个 coding agent 收到同一工作台里。 | [GitHub](https://github.com/stablyai/orca) |
@@ -120,6 +121,8 @@
 | `strix` | 用 AI hacker agents 做应用漏洞发现、PoC 验证和 CI 安全门禁。 | [GitHub](https://github.com/usestrix/strix) |
 | `ai-maestro` | 面向多终端、多机器、多 agent 协作的 AI agent 控制面与编排系统。 | [GitHub](https://github.com/23blocks-OS/ai-maestro) |
 | `awesome-harness-engineering` | 汇总 agent harness 工程的上下文、工具、记忆、权限、验证与可观测性模式。 | [GitHub](https://github.com/ai-boost/awesome-harness-engineering) |
+| `testsprite-cli` | 面向 coding agent 的测试验证 CLI，把失败证据打包成 agent 可处理的修复输入。 | [GitHub](https://github.com/TestSprite/testsprite-cli) |
+| `superlog` | agentic observability 工作台，把 OpenTelemetry 数据、incident 分组和 agent 调查摘要接起来。 | [GitHub](https://github.com/superloglabs/superlog) |
 | `VulnClaw` | 基于 LLM Agent、MCP 工具链和渗透 skill 的授权安全测试工作流。 | [GitHub](https://github.com/Unclecheng-li/VulnClaw) |
 
 ### 记忆层与个人 AI 基础设施
@@ -138,6 +141,7 @@
 | `codebase-memory-mcp` | 面向 agent 的代码知识图谱与持久记忆层，把仓库结构索引成可查询 MCP 能力。 | [GitHub](https://github.com/DeusData/codebase-memory-mcp) |
 | `cognee` | 面向 agent 的开源长期记忆平台，把文档、工具调用和上下文沉淀为可查询知识图谱。 | [GitHub](https://github.com/topoteretes/cognee) |
 | `ax` | 面向 Claude Code、Codex 等工具的本地 agent 复盘、记忆、成本与 observability 图谱层。 | [GitHub](https://github.com/Necmttn/ax) |
+| `open-knowledge` | AI-native Markdown 编辑器与 LLM Wiki，把本地知识库、MCP、skills 和 git 同步接入 agent 工作流。 | [GitHub](https://github.com/inkeep/open-knowledge) |
 
 ### RAG、检索与知识处理
 
@@ -245,6 +249,7 @@
 
 - 全量项目目录：[`projects/`](./projects/)
 - 最近日报：
+  - [`2026-07-01`](./daily/2026-07-01/ai-hotspots.md)
   - [`2026-06-30`](./daily/2026-06-30/ai-hotspots.md)
   - [`2026-06-29`](./daily/2026-06-29/ai-hotspots.md)
   - [`2026-06-28`](./daily/2026-06-28/ai-hotspots.md)
@@ -261,9 +266,9 @@
 ## 当前状态
 
 - 状态：持续日更中。
-- 最新更新：`2026-06-30`。
-- 当前项目总数：`272`。
-- 最近新增项目：`ai-maestro`、`awesome-harness-engineering`、`GUI-Agents-Paper-List`、`VulnClaw`。
+- 最新更新：`2026-07-01`。
+- 当前项目总数：`276`。
+- 最近新增项目：`MiMo-Code`、`testsprite-cli`、`superlog`、`open-knowledge`。
 - 覆盖平台：GitHub、X、Instagram、YouTube。
 
 ## 维护约定
