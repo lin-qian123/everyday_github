@@ -48,7 +48,7 @@
 
 如果你是第一次进入这个仓库，建议从这几个入口开始：
 
-- 最新日报：[`daily/2026-07-01/ai-hotspots.md`](./daily/2026-07-01/ai-hotspots.md)
+- 最新日报：[`daily/2026-07-02/ai-hotspots.md`](./daily/2026-07-02/ai-hotspots.md)
 - 项目总目录：[`projects/`](./projects/)
 - 自动化约束：[`AGENTS.md`](./AGENTS.md)
 - 开发续接记录：[`TODO.md`](./TODO.md)
@@ -85,6 +85,7 @@
 | `cursor` | 产品化 AI IDE 代表项，体现“编辑器即 Agent 入口”的路线。 | [GitHub](https://github.com/cursor/cursor) |
 | `qwen-code` | 阿里系开源终端 coding agent，围绕 Qwen coder 能力优化。 | [GitHub](https://github.com/QwenLM/qwen-code) |
 | `MiMo-Code` | 小米 MiMo 团队的终端原生 coding agent，强调持久记忆、checkpoint、subagent 与目标判定。 | [GitHub](https://github.com/XiaomiMiMo/MiMo-Code) |
+| `dao-code` | 围绕 DeepSeek V4 长上下文与 prefix cache 优化的低成本终端 coding agent。 | [GitHub](https://github.com/tigicion/dao-code) |
 | `tabby` | 自托管、可本地部署的开源 AI 编码助手。 | [GitHub](https://github.com/TabbyML/tabby) |
 | `zed` | 高性能、多人协作的代码编辑器，体现 AI 时代开发入口向编辑器本体回流。 | [GitHub](https://github.com/zed-industries/zed) |
 | `orca` | 多 worktree 并行调度的 agent 开发环境，把多个 coding agent 收到同一工作台里。 | [GitHub](https://github.com/stablyai/orca) |
@@ -124,6 +125,8 @@
 | `testsprite-cli` | 面向 coding agent 的测试验证 CLI，把失败证据打包成 agent 可处理的修复输入。 | [GitHub](https://github.com/TestSprite/testsprite-cli) |
 | `superlog` | agentic observability 工作台，把 OpenTelemetry 数据、incident 分组和 agent 调查摘要接起来。 | [GitHub](https://github.com/superloglabs/superlog) |
 | `VulnClaw` | 基于 LLM Agent、MCP 工具链和渗透 skill 的授权安全测试工作流。 | [GitHub](https://github.com/Unclecheng-li/VulnClaw) |
+| `loop-engineering` | 面向 AI coding agent 的 loop 工程模式、脚手架和预算/审计 CLI。 | [GitHub](https://github.com/cobusgreyling/loop-engineering) |
+| `security-audit-skill` | Cloudflare 开源的 coding-agent 安全审计 skill，强调多阶段发现、验证和结构化输出。 | [GitHub](https://github.com/cloudflare/security-audit-skill) |
 
 ### 记忆层与个人 AI 基础设施
 
@@ -164,6 +167,7 @@
 | `faiss` | Meta 主导的向量相似度搜索与聚类库，是很多检索系统的底层内核。 | [GitHub](https://github.com/facebookresearch/faiss) |
 | `Hyper-Extract` | 把非结构化文档抽成强类型知识对象、图谱和超图的知识抽取 CLI。 | [GitHub](https://github.com/yifanfeng97/Hyper-Extract) |
 | `MinerU` | 面向 LLM / agent 的复杂文档解析基础设施，强调把 PDF / Office 资料转成结构化 Markdown / JSON。 | [GitHub](https://github.com/opendatalab/MinerU) |
+| `codeseek` | Rust 代码智能 CLI，为 coding agent 提供调用图、混合语义搜索和 MCP 工具。 | [GitHub](https://github.com/CodeBendKit/codeseek) |
 
 ### 前端、UI 与 Agent 交互层
 
@@ -249,6 +253,7 @@
 
 - 全量项目目录：[`projects/`](./projects/)
 - 最近日报：
+  - [`2026-07-02`](./daily/2026-07-02/ai-hotspots.md)
   - [`2026-07-01`](./daily/2026-07-01/ai-hotspots.md)
   - [`2026-06-30`](./daily/2026-06-30/ai-hotspots.md)
   - [`2026-06-29`](./daily/2026-06-29/ai-hotspots.md)
@@ -259,16 +264,15 @@
   - [`2026-06-24`](./daily/2026-06-24/ai-hotspots.md)
   - [`2026-06-23`](./daily/2026-06-23/ai-hotspots.md)
   - [`2026-06-22`](./daily/2026-06-22/ai-hotspots.md)
-  - [`2026-06-21`](./daily/2026-06-21/ai-hotspots.md)
 
 如果你要找的是某个具体项目，而不是看分类，直接在 [`projects/`](./projects/) 中按名称查找会更快。
 
 ## 当前状态
 
 - 状态：持续日更中。
-- 最新更新：`2026-07-01`。
-- 当前项目总数：`276`。
-- 最近新增项目：`MiMo-Code`、`testsprite-cli`、`superlog`、`open-knowledge`。
+- 最新更新：`2026-07-02`。
+- 当前项目总数：`280`。
+- 最近新增项目：`loop-engineering`、`codeseek`、`security-audit-skill`、`dao-code`。
 - 覆盖平台：GitHub、X、Instagram、YouTube。
 
 ## 维护约定

@@ -136,6 +136,10 @@
 - 观察 `testsprite-cli` 是否会成为 coding agent 默认验收环节，并与现有 Playwright / CI 测试体系形成互补。
 - 跟踪 `superlog` 这类 agentic observability 项目，判断 AI 自愈软件会先落在摘要、triage 还是自动修复。
 - 观察 `open-knowledge` 是否能把 Markdown wiki、MCP、skills 和 git 同步组合成稳定的 agent second brain。
+- 跟踪 `loop-engineering` 是否会把 agent loop 设计、预算、状态和审计分数沉淀成团队级 checklist。
+- 观察 `codeseek` 与 `codebase-memory-mcp`、`memsearch` 的边界，判断调用图索引、语义搜索和长期记忆是否会合流。
+- 跟踪 Cloudflare `security-audit-skill` 与 `SkillSpector`、`strix`、`VulnClaw` 的分工，区分 skill 供应链审计、单仓库代码审计和授权攻击验证。
+- 继续观察 `dao-code` 的 DeepSeek V4 prefix cache 成本工程是否能在更多真实仓库中复现。
 
 ## 阻塞点
 
@@ -169,6 +173,13 @@
   - 新增 `projects/open-knowledge/README.md`。
   - 新增 `daily/2026-07-01/ai-hotspots.md`。
   - 同步首页 `README.md`：补充 `MiMo-Code`、`testsprite-cli`、`superlog`、`open-knowledge`，并更新最新日期与项目总数（`276`）。
+- 2026-07-02：
+  - 新增 `projects/loop-engineering/README.md`。
+  - 新增 `projects/codeseek/README.md`。
+  - 新增 `projects/security-audit-skill/README.md`。
+  - 新增 `projects/dao-code/README.md`。
+  - 新增 `daily/2026-07-02/ai-hotspots.md`。
+  - 同步首页 `README.md`：补充 `loop-engineering`、`codeseek`、`security-audit-skill`、`dao-code`，并更新最新日期与项目总数（`280`）。
 - 2026-06-28：
   - 新增 `projects/Open-Generative-AI/README.md`。
   - 新增 `projects/video-use/README.md`。
