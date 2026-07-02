@@ -48,7 +48,7 @@
 
 如果你是第一次进入这个仓库，建议从这几个入口开始：
 
-- 最新日报：[`daily/2026-07-02/ai-hotspots.md`](./daily/2026-07-02/ai-hotspots.md)
+- 最新日报：[`daily/2026-07-03/ai-hotspots.md`](./daily/2026-07-03/ai-hotspots.md)
 - 项目总目录：[`projects/`](./projects/)
 - 自动化约束：[`AGENTS.md`](./AGENTS.md)
 - 开发续接记录：[`TODO.md`](./TODO.md)
@@ -127,6 +127,8 @@
 | `VulnClaw` | 基于 LLM Agent、MCP 工具链和渗透 skill 的授权安全测试工作流。 | [GitHub](https://github.com/Unclecheng-li/VulnClaw) |
 | `loop-engineering` | 面向 AI coding agent 的 loop 工程模式、脚手架和预算/审计 CLI。 | [GitHub](https://github.com/cobusgreyling/loop-engineering) |
 | `security-audit-skill` | Cloudflare 开源的 coding-agent 安全审计 skill，强调多阶段发现、验证和结构化输出。 | [GitHub](https://github.com/cloudflare/security-audit-skill) |
+| `self-learning-skills` | 面向 coding agent 的自学习元技能，把会话中验证过的黄金路径沉淀成可复用 skill / rule / memory。 | [GitHub](https://github.com/Kulaxyz/self-learning-skills) |
+| `bumblebee` | Perplexity 开源的开发端点供应链清点工具，覆盖 MCP 配置、agent skills 和扩展暴露面。 | [GitHub](https://github.com/perplexityai/bumblebee) |
 
 ### 记忆层与个人 AI 基础设施
 
@@ -189,6 +191,7 @@
 | `cherry-studio` | 跨平台多模型 AI 桌面客户端，集成预置助手、文档处理与 MCP 能力。 | [GitHub](https://github.com/CherryHQ/cherry-studio) |
 | `openpencil` | AI-native 矢量设计工具，把 prompt、agent team、Design-as-Code 与 MCP 接入同一画布。 | [GitHub](https://github.com/ZSeven-W/openpencil) |
 | `GUI-Agents-Paper-List` | GUI agent 论文、基准、数据集和研究趋势的结构化索引。 | [GitHub](https://github.com/OSU-NLP-Group/GUI-Agents-Paper-List) |
+| `Agent-S` | Simular AI 的 computer-use / GUI agent 框架，围绕 OSWorld 等桌面操作基准推进 Agent S3。 | [GitHub](https://github.com/simular-ai/Agent-S) |
 
 ### 语音、视频与多模态
 
@@ -231,6 +234,7 @@
 | `llamafile` | 把本地大模型打包成单文件可执行体的分发方案。 | [GitHub](https://github.com/Mozilla-Ocho/llamafile) |
 | `GLM-5` | 智谱 / Z.ai 面向长时程 agentic engineering 的开源大模型系列。 | [GitHub](https://github.com/zai-org/GLM-5) |
 | `Rapid-MLX` | 面向 Apple Silicon 的本地 AI 推理引擎，主打 OpenAI-compatible 接口与 agent 工具调用。 | [GitHub](https://github.com/raullenchai/Rapid-MLX) |
+| `AgentsMeetRL` | 聚焦用强化学习训练 LLM agents 的项目索引与 Claude Code skill，覆盖奖励、环境、工具调用和 GUI agent。 | [GitHub](https://github.com/thinkwee/AgentsMeetRL) |
 
 ### 办公、商业与行业应用
 
@@ -253,6 +257,7 @@
 
 - 全量项目目录：[`projects/`](./projects/)
 - 最近日报：
+  - [`2026-07-03`](./daily/2026-07-03/ai-hotspots.md)
   - [`2026-07-02`](./daily/2026-07-02/ai-hotspots.md)
   - [`2026-07-01`](./daily/2026-07-01/ai-hotspots.md)
   - [`2026-06-30`](./daily/2026-06-30/ai-hotspots.md)
@@ -270,9 +275,9 @@
 ## 当前状态
 
 - 状态：持续日更中。
-- 最新更新：`2026-07-02`。
-- 当前项目总数：`280`。
-- 最近新增项目：`loop-engineering`、`codeseek`、`security-audit-skill`、`dao-code`。
+- 最新更新：`2026-07-03`。
+- 当前项目总数：`284`。
+- 最近新增项目：`self-learning-skills`、`AgentsMeetRL`、`Agent-S`、`bumblebee`。
 - 覆盖平台：GitHub、X、Instagram、YouTube。
 
 ## 维护约定

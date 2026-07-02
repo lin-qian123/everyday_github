@@ -140,6 +140,10 @@
 - 观察 `codeseek` 与 `codebase-memory-mcp`、`memsearch` 的边界，判断调用图索引、语义搜索和长期记忆是否会合流。
 - 跟踪 Cloudflare `security-audit-skill` 与 `SkillSpector`、`strix`、`VulnClaw` 的分工，区分 skill 供应链审计、单仓库代码审计和授权攻击验证。
 - 继续观察 `dao-code` 的 DeepSeek V4 prefix cache 成本工程是否能在更多真实仓库中复现。
+- 跟踪 `self-learning-skills` 是否会被 Claude Code / Codex / Cursor 用户实际用于团队技能库。
+- 观察 `AgentsMeetRL` 是否继续把 agentic RL 项目语料做成可查询 skill / MCP 数据源。
+- 跟踪 `Agent-S` S3 的 OSWorld、WindowsAgentArena、AndroidWorld 结果是否有第三方复测。
+- 观察 `bumblebee` 是否扩展到 Codex `config.toml`、Continue YAML 和更多 agent 配置格式。
 
 ## 阻塞点
 
@@ -180,6 +184,13 @@
   - 新增 `projects/dao-code/README.md`。
   - 新增 `daily/2026-07-02/ai-hotspots.md`。
   - 同步首页 `README.md`：补充 `loop-engineering`、`codeseek`、`security-audit-skill`、`dao-code`，并更新最新日期与项目总数（`280`）。
+- 2026-07-03：
+  - 新增 `projects/self-learning-skills/README.md`。
+  - 新增 `projects/AgentsMeetRL/README.md`。
+  - 新增 `projects/Agent-S/README.md`。
+  - 新增 `projects/bumblebee/README.md`。
+  - 新增 `daily/2026-07-03/ai-hotspots.md`。
+  - 同步首页 `README.md`：补充 `self-learning-skills`、`AgentsMeetRL`、`Agent-S`、`bumblebee`，并更新最新日期与项目总数（`284`）。
 - 2026-06-28：
   - 新增 `projects/Open-Generative-AI/README.md`。
   - 新增 `projects/video-use/README.md`。
