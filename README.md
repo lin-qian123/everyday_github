@@ -48,7 +48,7 @@
 
 如果你是第一次进入这个仓库，建议从这几个入口开始：
 
-- 最新日报：[`daily/2026-07-03/ai-hotspots.md`](./daily/2026-07-03/ai-hotspots.md)
+- 最新日报：[`daily/2026-07-04/ai-hotspots.md`](./daily/2026-07-04/ai-hotspots.md)
 - 项目总目录：[`projects/`](./projects/)
 - 自动化约束：[`AGENTS.md`](./AGENTS.md)
 - 开发续接记录：[`TODO.md`](./TODO.md)
@@ -86,6 +86,7 @@
 | `qwen-code` | 阿里系开源终端 coding agent，围绕 Qwen coder 能力优化。 | [GitHub](https://github.com/QwenLM/qwen-code) |
 | `MiMo-Code` | 小米 MiMo 团队的终端原生 coding agent，强调持久记忆、checkpoint、subagent 与目标判定。 | [GitHub](https://github.com/XiaomiMiMo/MiMo-Code) |
 | `dao-code` | 围绕 DeepSeek V4 长上下文与 prefix cache 优化的低成本终端 coding agent。 | [GitHub](https://github.com/tigicion/dao-code) |
+| `learn-agent` | 从零实现 coding agent 的渐进式教程，覆盖 agent loop、预算、压缩、权限和工具披露。 | [GitHub](https://github.com/7-e1even/learn-agent) |
 | `tabby` | 自托管、可本地部署的开源 AI 编码助手。 | [GitHub](https://github.com/TabbyML/tabby) |
 | `zed` | 高性能、多人协作的代码编辑器，体现 AI 时代开发入口向编辑器本体回流。 | [GitHub](https://github.com/zed-industries/zed) |
 | `orca` | 多 worktree 并行调度的 agent 开发环境，把多个 coding agent 收到同一工作台里。 | [GitHub](https://github.com/stablyai/orca) |
@@ -129,6 +130,7 @@
 | `security-audit-skill` | Cloudflare 开源的 coding-agent 安全审计 skill，强调多阶段发现、验证和结构化输出。 | [GitHub](https://github.com/cloudflare/security-audit-skill) |
 | `self-learning-skills` | 面向 coding agent 的自学习元技能，把会话中验证过的黄金路径沉淀成可复用 skill / rule / memory。 | [GitHub](https://github.com/Kulaxyz/self-learning-skills) |
 | `bumblebee` | Perplexity 开源的开发端点供应链清点工具，覆盖 MCP 配置、agent skills 和扩展暴露面。 | [GitHub](https://github.com/perplexityai/bumblebee) |
+| `fable-soul` | 面向 Codex / Claude Code 的 agent 判断层规则包，把验证、根因和完成度纪律写成可加载 skill。 | [GitHub](https://github.com/akseolabs-seo/fable-soul) |
 
 ### 记忆层与个人 AI 基础设施
 
@@ -170,6 +172,7 @@
 | `Hyper-Extract` | 把非结构化文档抽成强类型知识对象、图谱和超图的知识抽取 CLI。 | [GitHub](https://github.com/yifanfeng97/Hyper-Extract) |
 | `MinerU` | 面向 LLM / agent 的复杂文档解析基础设施，强调把 PDF / Office 资料转成结构化 Markdown / JSON。 | [GitHub](https://github.com/opendatalab/MinerU) |
 | `codeseek` | Rust 代码智能 CLI，为 coding agent 提供调用图、混合语义搜索和 MCP 工具。 | [GitHub](https://github.com/CodeBendKit/codeseek) |
+| `ky-markdown-rebuilder` | Codex / Claude Code 文档重建 skill，把视觉复杂 PDF、PPT、长截图整理成按页对齐 Markdown。 | [GitHub](https://github.com/KyrieCheungYep/ky-markdown-rebuilder) |
 
 ### 前端、UI 与 Agent 交互层
 
@@ -235,6 +238,7 @@
 | `GLM-5` | 智谱 / Z.ai 面向长时程 agentic engineering 的开源大模型系列。 | [GitHub](https://github.com/zai-org/GLM-5) |
 | `Rapid-MLX` | 面向 Apple Silicon 的本地 AI 推理引擎，主打 OpenAI-compatible 接口与 agent 工具调用。 | [GitHub](https://github.com/raullenchai/Rapid-MLX) |
 | `AgentsMeetRL` | 聚焦用强化学习训练 LLM agents 的项目索引与 Claude Code skill，覆盖奖励、环境、工具调用和 GUI agent。 | [GitHub](https://github.com/thinkwee/AgentsMeetRL) |
+| `local-llm` | 本地运行高端 LLM 的硬件、GPU 互联、vLLM runner 和语音转文字实践记录。 | [GitHub](https://github.com/jamesob/local-llm) |
 
 ### 办公、商业与行业应用
 
@@ -252,11 +256,13 @@
 | `daily_stock_analysis` | 用大模型驱动多市场股票分析、定时推送与 Web 工作台的行业应用型系统。 | [GitHub](https://github.com/ZhuLinsen/daily_stock_analysis) |
 | `worldmonitor` | 面向全球情报与基础设施监测的 AI 工作台，强调多源新闻聚合与态势感知。 | [GitHub](https://github.com/koala73/worldmonitor) |
 | `ai-berkshire` | 把价值投资研究拆成技能与多 Agent 流程的领域化投研框架。 | [GitHub](https://github.com/xbtlin/ai-berkshire) |
+| `open-science` | 面向科研发现的开源 AI 工作台愿景项目，强调模型无关、本地可部署和可审计 provenance。 | [GitHub](https://github.com/aipoch/open-science) |
 
 ## 完整索引与每日热点
 
 - 全量项目目录：[`projects/`](./projects/)
 - 最近日报：
+  - [`2026-07-04`](./daily/2026-07-04/ai-hotspots.md)
   - [`2026-07-03`](./daily/2026-07-03/ai-hotspots.md)
   - [`2026-07-02`](./daily/2026-07-02/ai-hotspots.md)
   - [`2026-07-01`](./daily/2026-07-01/ai-hotspots.md)
@@ -268,16 +274,15 @@
   - [`2026-06-25`](./daily/2026-06-25/ai-hotspots.md)
   - [`2026-06-24`](./daily/2026-06-24/ai-hotspots.md)
   - [`2026-06-23`](./daily/2026-06-23/ai-hotspots.md)
-  - [`2026-06-22`](./daily/2026-06-22/ai-hotspots.md)
 
 如果你要找的是某个具体项目，而不是看分类，直接在 [`projects/`](./projects/) 中按名称查找会更快。
 
 ## 当前状态
 
 - 状态：持续日更中。
-- 最新更新：`2026-07-03`。
-- 当前项目总数：`284`。
-- 最近新增项目：`self-learning-skills`、`AgentsMeetRL`、`Agent-S`、`bumblebee`。
+- 最新更新：`2026-07-04`。
+- 当前项目总数：`289`。
+- 最近新增项目：`local-llm`、`learn-agent`、`fable-soul`、`ky-markdown-rebuilder`、`open-science`。
 - 覆盖平台：GitHub、X、Instagram、YouTube。
 
 ## 维护约定

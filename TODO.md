@@ -109,18 +109,21 @@
 - 持续补齐 `ollama`、`LocalAI`、`text-generation-webui` 这类“本地运行层 / 工作台 / 兼容层”的横向对照，避免仓库只看单项目热度。
 - 继续观察 `ponytail`、`omnigent` 这类“agent 规则层 / harness 层”项目是否会从爆红仓库演化成稳定基础设施。
 - 跟踪 `ppt-master` 与平台侧 PowerPoint AI 入口的分化，判断“本地工作流”与“闭环 SaaS”哪条更有长期代表性。
-- 继续跟踪 `GLM-5` 这类“长时程 agent 底模”与 `Hyper-Extract` 这类“结构化知识抽取层”是否会在未来几天持续留在 GitHub 热榜。
+- 继续跟踪 `GLM-5` 这类“长时程 agent 底模”与 `Hyper-Extract`
+  这类“结构化知识抽取层”是否会在未来几天持续留在 GitHub 热榜。
 - 继续观察 `agent-native`、`flue` 这类“应用层 / 执行层 agent 框架”会不会从单日热度演化成稳定基础设施带。
 - 跟踪 `palmier-pro` 与 `LTX-2` 是否会把“生成 + 编辑 + agent 协作”推成新的视频工作流组合。
 - 继续观察 `ax` 会不会把“agent 复盘 + 成本 + 本地记忆图谱”从个人实验做成稳定子赛道。
 - 继续跟踪 `firecrawl` 与 `crawl4ai` 这两条 Web 上下文路线，判断托管 API 层和本地抓取流水线会如何分化。
-- 观察 `daily_stock_analysis` 这类“AI 分析 + 定时交付”项目会不会在办公/行业应用层持续留在热榜，而不是只靠一次性传播。
+- 观察 `daily_stock_analysis` 这类“AI 分析 + 定时交付”项目会不会
+  在办公/行业应用层持续留在热榜，而不是只靠一次性传播。
 - 继续观察 `agent-toolkit-for-aws` 这类官方云厂商插件仓库，会不会把 MCP / skills / plugin 变成默认接入层。
 - 跟踪 `hyperframes` 是否会把“HTML 即视频”从单日热点沉淀成稳定的视频自动化渲染赛道。
 - 继续观察 `worldmonitor` 这类 AI 情报工作台，判断其热度来自产品化工作流还是单次传播叙事。
 - 跟踪 `orca` 会不会把“多 worktree 并行 agent 调度”从极客玩法做成稳定开发环境赛道。
 - 继续观察 `agents` 这类跨 harness 插件市场会不会成为长期的 agent 生态分发层，而不只是大而全目录。
-- 跟踪 `nvidia-skills` 与 `agent-toolkit-for-aws` 这类厂商官方能力目录是否会推动“verified skills / 官方插件注册表”成为新默认层。
+- 跟踪 `nvidia-skills` 与 `agent-toolkit-for-aws` 这类厂商官方能力目录
+  是否会推动“verified skills / 官方插件注册表”成为新默认层。
 - 继续观察 `Open-Generative-AI` 会不会把“多模型生成聚合层 + 桌面端 + agent 自动化”沉淀成稳定的媒体工作台赛道。
 - 跟踪 `video-use` 与 `OpenMontage`、`hyperframes` 的分工，判断 AI 视频热点会更多落到生成层还是后期自动化层。
 - 继续观察 `cherry-studio` 这类多模型桌面客户端，会不会从聊天壳演化成稳定的 MCP / assistant 分发入口。
@@ -131,19 +134,37 @@
 - 跟踪 `ai-maestro` 是否会从个人多终端 agent dashboard 演化成团队级 agent control plane。
 - 跟踪 `awesome-harness-engineering` 是否能成为 agent harness 工程的稳定资料入口，并与厂商实践持续同步。
 - 用 `GUI-Agents-Paper-List` 作为后续 GUI / computer-use agent 项目的论文与 benchmark 背景入口。
-- 横向比较 `VulnClaw`、`strix`、`SkillSpector`，区分应用漏洞验证、授权渗透 agent、skill 供应链审计和 CI 安全门禁四条路线。
-- 跟踪 `MiMo-Code` 是否能把模型厂商自有 coding agent、checkpoint、持久记忆和 goal judge 做成稳定长任务体验。
-- 观察 `testsprite-cli` 是否会成为 coding agent 默认验收环节，并与现有 Playwright / CI 测试体系形成互补。
-- 跟踪 `superlog` 这类 agentic observability 项目，判断 AI 自愈软件会先落在摘要、triage 还是自动修复。
-- 观察 `open-knowledge` 是否能把 Markdown wiki、MCP、skills 和 git 同步组合成稳定的 agent second brain。
-- 跟踪 `loop-engineering` 是否会把 agent loop 设计、预算、状态和审计分数沉淀成团队级 checklist。
-- 观察 `codeseek` 与 `codebase-memory-mcp`、`memsearch` 的边界，判断调用图索引、语义搜索和长期记忆是否会合流。
-- 跟踪 Cloudflare `security-audit-skill` 与 `SkillSpector`、`strix`、`VulnClaw` 的分工，区分 skill 供应链审计、单仓库代码审计和授权攻击验证。
+- 横向比较 `VulnClaw`、`strix`、`SkillSpector`，区分应用漏洞验证、
+  授权渗透 agent、skill 供应链审计和 CI 安全门禁四条路线。
+- 跟踪 `MiMo-Code` 是否能把模型厂商自有 coding agent、checkpoint、
+  持久记忆和 goal judge 做成稳定长任务体验。
+- 观察 `testsprite-cli` 是否会成为 coding agent 默认验收环节，并与现有
+  Playwright / CI 测试体系形成互补。
+- 跟踪 `superlog` 这类 agentic observability 项目，判断 AI 自愈软件
+  会先落在摘要、triage 还是自动修复。
+- 观察 `open-knowledge` 是否能把 Markdown wiki、MCP、skills 和 git
+  同步组合成稳定的 agent second brain。
+- 跟踪 `loop-engineering` 是否会把 agent loop 设计、预算、状态和
+  审计分数沉淀成团队级 checklist。
+- 观察 `codeseek` 与 `codebase-memory-mcp`、`memsearch` 的边界，判断
+  调用图索引、语义搜索和长期记忆是否会合流。
+- 跟踪 Cloudflare `security-audit-skill` 与 `SkillSpector`、`strix`、
+  `VulnClaw` 的分工，区分 skill 供应链审计、单仓库代码审计和
+  授权攻击验证。
 - 继续观察 `dao-code` 的 DeepSeek V4 prefix cache 成本工程是否能在更多真实仓库中复现。
 - 跟踪 `self-learning-skills` 是否会被 Claude Code / Codex / Cursor 用户实际用于团队技能库。
 - 观察 `AgentsMeetRL` 是否继续把 agentic RL 项目语料做成可查询 skill / MCP 数据源。
 - 跟踪 `Agent-S` S3 的 OSWorld、WindowsAgentArena、AndroidWorld 结果是否有第三方复测。
 - 观察 `bumblebee` 是否扩展到 Codex `config.toml`、Continue YAML 和更多 agent 配置格式。
+- 跟踪 `local-llm` 是否持续更新 GLM、Qwen、DeepSeek、Kimi 等开放权重
+  模型 runner，并验证高端本地推理配置是否可复用。
+- 观察 `learn-agent` 是否补充 MCP、Python 示例、CI 验收或更完整的生产 agent 对照。
+- 跟踪 `fable-soul` 是否把行为 eval 自动化，验证 judgment rules 对
+  coding agent 结果的实际影响。
+- 观察 `ky-markdown-rebuilder` 是否补充真实文档样例、许可证和可重复测试，
+  判断复杂文档重建 skill 能否成为稳定入口层。
+- 跟踪 `open-science` 是否从 pre-alpha 愿景进入可运行 prototype，并明确
+  科研数据 provenance 和本地部署接口。
 
 ## 阻塞点
 
@@ -191,6 +212,14 @@
   - 新增 `projects/bumblebee/README.md`。
   - 新增 `daily/2026-07-03/ai-hotspots.md`。
   - 同步首页 `README.md`：补充 `self-learning-skills`、`AgentsMeetRL`、`Agent-S`、`bumblebee`，并更新最新日期与项目总数（`284`）。
+- 2026-07-04：
+  - 新增 `projects/local-llm/README.md`。
+  - 新增 `projects/learn-agent/README.md`。
+  - 新增 `projects/fable-soul/README.md`。
+  - 新增 `projects/ky-markdown-rebuilder/README.md`。
+  - 新增 `projects/open-science/README.md`。
+  - 新增 `daily/2026-07-04/ai-hotspots.md`。
+  - 同步首页 `README.md`：补充 `local-llm`、`learn-agent`、`fable-soul`、`ky-markdown-rebuilder`、`open-science`，并更新最新日期与项目总数（`289`）。
 - 2026-06-28：
   - 新增 `projects/Open-Generative-AI/README.md`。
   - 新增 `projects/video-use/README.md`。
@@ -233,7 +262,6 @@
   - 更新 `projects/claude-code/README.md`。
   - 更新 `projects/compound-engineering-plugin/README.md`。
   - 同步根文档 `README.md`（最新日期与当日处理项目）。
-
 
 - 2026-06-01：
   - 新增 `projects/hermes-webui/README.md`。
@@ -312,7 +340,8 @@
   - 新增 `projects/chroma/README.md`。
   - 新增 `projects/tabby/README.md`。
   - 新增 `daily/2026-06-12/ai-hotspots.md`。
-  - 同步首页 `README.md`：补充 `tabby` 到 `Coding Agents 与终端助手`，补充 `llama_index`、`chroma` 到 `RAG、检索与知识处理`，并更新最新日期。
+  - 同步首页 `README.md`：补充 `tabby` 到 `Coding Agents 与终端助手`，
+    补充 `llama_index`、`chroma` 到 `RAG、检索与知识处理`，并更新最新日期。
 - 2026-06-13：
   - 新增 `projects/zed/README.md`。
   - 新增 `projects/FastChat/README.md`。
@@ -325,7 +354,9 @@
   - 新增 `projects/chatbot-ui/README.md`。
   - 新增 `projects/llamafile/README.md`。
   - 新增 `daily/2026-06-14/ai-hotspots.md`。
-  - 同步首页 `README.md`：补充 `chatbot-ui` 到 `前端、UI 与 Agent 交互层`，补充 `text-generation-webui`、`llamafile` 到 `模型、训练与推理基础设施`，并更新最新日期。
+  - 同步首页 `README.md`：补充 `chatbot-ui` 到 `前端、UI 与 Agent 交互层`，
+    补充 `text-generation-webui`、`llamafile` 到 `模型、训练与推理基础设施`，
+    并更新最新日期。
 - 2026-06-15：
   - 新增 `projects/babyagi/README.md`。
   - 新增 `projects/JARVIS/README.md`。
