@@ -48,7 +48,7 @@
 
 如果你是第一次进入这个仓库，建议从这几个入口开始：
 
-- 最新日报：[`daily/2026-07-04/ai-hotspots.md`](./daily/2026-07-04/ai-hotspots.md)
+- 最新日报：[`daily/2026-07-05/ai-hotspots.md`](./daily/2026-07-05/ai-hotspots.md)
 - 项目总目录：[`projects/`](./projects/)
 - 自动化约束：[`AGENTS.md`](./AGENTS.md)
 - 开发续接记录：[`TODO.md`](./TODO.md)
@@ -131,6 +131,9 @@
 | `self-learning-skills` | 面向 coding agent 的自学习元技能，把会话中验证过的黄金路径沉淀成可复用 skill / rule / memory。 | [GitHub](https://github.com/Kulaxyz/self-learning-skills) |
 | `bumblebee` | Perplexity 开源的开发端点供应链清点工具，覆盖 MCP 配置、agent skills 和扩展暴露面。 | [GitHub](https://github.com/perplexityai/bumblebee) |
 | `fable-soul` | 面向 Codex / Claude Code 的 agent 判断层规则包，把验证、根因和完成度纪律写成可加载 skill。 | [GitHub](https://github.com/akseolabs-seo/fable-soul) |
+| `token-diet` | 面向 Claude Code、Codex、Cursor 等 coding agent 的 token 成本控制 skill。 | [GitHub](https://github.com/Kulaxyz/token-diet) |
+| `ConferenceWatch` | 跟踪 AI/ML 会议 deadline、CFP、地点和录用率趋势的 agent skill。 | [GitHub](https://github.com/Zsun79/ConferenceWatch) |
+| `agent-runtime` | Provider-neutral 的 agent runtime core，把 loop、工具调度、预算和消息类型抽成可复用内核。 | [GitHub](https://github.com/easylink-ai-open/agent-runtime) |
 
 ### 记忆层与个人 AI 基础设施
 
@@ -195,6 +198,7 @@
 | `openpencil` | AI-native 矢量设计工具，把 prompt、agent team、Design-as-Code 与 MCP 接入同一画布。 | [GitHub](https://github.com/ZSeven-W/openpencil) |
 | `GUI-Agents-Paper-List` | GUI agent 论文、基准、数据集和研究趋势的结构化索引。 | [GitHub](https://github.com/OSU-NLP-Group/GUI-Agents-Paper-List) |
 | `Agent-S` | Simular AI 的 computer-use / GUI agent 框架，围绕 OSWorld 等桌面操作基准推进 Agent S3。 | [GitHub](https://github.com/simular-ai/Agent-S) |
+| `hermex` | iPhone 原生 self-hosted agent 控制面，用手机管理 Hermes 会话、任务、skills 和 workspace。 | [GitHub](https://github.com/uzairansaruzi/hermex) |
 
 ### 语音、视频与多模态
 
@@ -239,6 +243,7 @@
 | `Rapid-MLX` | 面向 Apple Silicon 的本地 AI 推理引擎，主打 OpenAI-compatible 接口与 agent 工具调用。 | [GitHub](https://github.com/raullenchai/Rapid-MLX) |
 | `AgentsMeetRL` | 聚焦用强化学习训练 LLM agents 的项目索引与 Claude Code skill，覆盖奖励、环境、工具调用和 GUI agent。 | [GitHub](https://github.com/thinkwee/AgentsMeetRL) |
 | `local-llm` | 本地运行高端 LLM 的硬件、GPU 互联、vLLM runner 和语音转文字实践记录。 | [GitHub](https://github.com/jamesob/local-llm) |
+| `Talos` | 将本机 Ollama / GPU 作为 Talos network worker，接收开放模型推理任务并回传在线与使用状态。 | [GitHub](https://github.com/jmerelnyc/Talos) |
 
 ### 办公、商业与行业应用
 
@@ -257,11 +262,13 @@
 | `worldmonitor` | 面向全球情报与基础设施监测的 AI 工作台，强调多源新闻聚合与态势感知。 | [GitHub](https://github.com/koala73/worldmonitor) |
 | `ai-berkshire` | 把价值投资研究拆成技能与多 Agent 流程的领域化投研框架。 | [GitHub](https://github.com/xbtlin/ai-berkshire) |
 | `open-science` | 面向科研发现的开源 AI 工作台愿景项目，强调模型无关、本地可部署和可审计 provenance。 | [GitHub](https://github.com/aipoch/open-science) |
+| `CSSwitch` | Claude Science 的第三方模型接入切换工具，用本地代理连接 DeepSeek、Qwen、GLM、Kimi 等端点。 | [GitHub](https://github.com/SuperJJ007/CSSwitch) |
 
 ## 完整索引与每日热点
 
 - 全量项目目录：[`projects/`](./projects/)
 - 最近日报：
+  - [`2026-07-05`](./daily/2026-07-05/ai-hotspots.md)
   - [`2026-07-04`](./daily/2026-07-04/ai-hotspots.md)
   - [`2026-07-03`](./daily/2026-07-03/ai-hotspots.md)
   - [`2026-07-02`](./daily/2026-07-02/ai-hotspots.md)
@@ -280,9 +287,9 @@
 ## 当前状态
 
 - 状态：持续日更中。
-- 最新更新：`2026-07-04`。
-- 当前项目总数：`289`。
-- 最近新增项目：`local-llm`、`learn-agent`、`fable-soul`、`ky-markdown-rebuilder`、`open-science`。
+- 最新更新：`2026-07-05`。
+- 当前项目总数：`295`。
+- 最近新增项目：`Talos`、`hermex`、`token-diet`、`ConferenceWatch`、`agent-runtime`、`CSSwitch`。
 - 覆盖平台：GitHub、X、Instagram、YouTube。
 
 ## 维护约定

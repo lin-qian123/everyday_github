@@ -165,6 +165,12 @@
   判断复杂文档重建 skill 能否成为稳定入口层。
 - 跟踪 `open-science` 是否从 pre-alpha 愿景进入可运行 prototype，并明确
   科研数据 provenance 和本地部署接口。
+- 跟踪 `Talos` 是否公开更清晰的收益、任务验证、worker 安全和模型质量控制机制。
+- 观察 `hermex` 是否扩展到更多 self-hosted agent 后端，而不只绑定 Hermes。
+- 跟踪 `token-diet` 是否补充许可证、第三方 benchmark 和不同 agent 的安装差异。
+- 观察 `ConferenceWatch` 是否加入自动差异检测、日历导出和官方来源校验。
+- 跟踪 `agent-runtime` 是否稳定 API，并给出 sandbox / durable execution 的推荐组合。
+- 观察 `CSSwitch` 是否持续适配 Claude Science 变更，并补充 notarization、日志脱敏和本地模型支持。
 
 ## 阻塞点
 
@@ -219,7 +225,18 @@
   - 新增 `projects/ky-markdown-rebuilder/README.md`。
   - 新增 `projects/open-science/README.md`。
   - 新增 `daily/2026-07-04/ai-hotspots.md`。
-  - 同步首页 `README.md`：补充 `local-llm`、`learn-agent`、`fable-soul`、`ky-markdown-rebuilder`、`open-science`，并更新最新日期与项目总数（`289`）。
+  - 同步首页 `README.md`：补充 `local-llm`、`learn-agent`、`fable-soul`、
+    `ky-markdown-rebuilder`、`open-science`，并更新最新日期与项目总数（`289`）。
+- 2026-07-05：
+  - 新增 `projects/Talos/README.md`。
+  - 新增 `projects/hermex/README.md`。
+  - 新增 `projects/token-diet/README.md`。
+  - 新增 `projects/ConferenceWatch/README.md`。
+  - 新增 `projects/agent-runtime/README.md`。
+  - 新增 `projects/CSSwitch/README.md`。
+  - 新增 `daily/2026-07-05/ai-hotspots.md`。
+  - 同步首页 `README.md`：补充 `Talos`、`hermex`、`token-diet`、
+    `ConferenceWatch`、`agent-runtime`、`CSSwitch`，并更新最新日期与项目总数（`295`）。
 - 2026-06-28：
   - 新增 `projects/Open-Generative-AI/README.md`。
   - 新增 `projects/video-use/README.md`。
