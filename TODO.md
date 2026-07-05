@@ -171,6 +171,13 @@
 - 观察 `ConferenceWatch` 是否加入自动差异检测、日历导出和官方来源校验。
 - 跟踪 `agent-runtime` 是否稳定 API，并给出 sandbox / durable execution 的推荐组合。
 - 观察 `CSSwitch` 是否持续适配 Claude Science 变更，并补充 notarization、日志脱敏和本地模型支持。
+- 跟踪 `T3MP3ST` 的 `verify-claims`、scope containment 和授权红队边界是否有第三方复测。
+- 观察 `Godcoder` 的 Harness / CoWork 模式是否能形成稳定的本地优先桌面 coding agent 工作流。
+- 跟踪 `lemma-platform` 是否把 pod、permissions、approvals 与 coding agent skills 组合成团队级结构化工作区。
+- 观察 `agterm` 的 agent status hooks 和 `agtermctl` 是否会成为多 agent session 管理的常用终端层。
+- 跟踪 `peerd` 的浏览器原生 actor / vault / WebAssembly sandbox 设计
+  是否能经受 prompt injection 场景验证。
+- 观察 `tupper` 是否补齐 Firecracker / WSL 后端，并成为本地 agent code-execution sandbox 代表项目。
 
 ## 阻塞点
 
@@ -237,6 +244,16 @@
   - 新增 `daily/2026-07-05/ai-hotspots.md`。
   - 同步首页 `README.md`：补充 `Talos`、`hermex`、`token-diet`、
     `ConferenceWatch`、`agent-runtime`、`CSSwitch`，并更新最新日期与项目总数（`295`）。
+- 2026-07-06：
+  - 新增 `projects/T3MP3ST/README.md`。
+  - 新增 `projects/Godcoder/README.md`。
+  - 新增 `projects/lemma-platform/README.md`。
+  - 新增 `projects/agterm/README.md`。
+  - 新增 `projects/peerd/README.md`。
+  - 新增 `projects/tupper/README.md`。
+  - 新增 `daily/2026-07-06/ai-hotspots.md`。
+  - 同步首页 `README.md`：补充 `T3MP3ST`、`Godcoder`、
+    `lemma-platform`、`agterm`、`peerd`、`tupper`，并更新最新日期与项目总数（`301`）。
 - 2026-06-28：
   - 新增 `projects/Open-Generative-AI/README.md`。
   - 新增 `projects/video-use/README.md`。

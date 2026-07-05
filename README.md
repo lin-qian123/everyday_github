@@ -48,7 +48,7 @@
 
 如果你是第一次进入这个仓库，建议从这几个入口开始：
 
-- 最新日报：[`daily/2026-07-05/ai-hotspots.md`](./daily/2026-07-05/ai-hotspots.md)
+- 最新日报：[`daily/2026-07-06/ai-hotspots.md`](./daily/2026-07-06/ai-hotspots.md)
 - 项目总目录：[`projects/`](./projects/)
 - 自动化约束：[`AGENTS.md`](./AGENTS.md)
 - 开发续接记录：[`TODO.md`](./TODO.md)
@@ -87,6 +87,8 @@
 | `MiMo-Code` | 小米 MiMo 团队的终端原生 coding agent，强调持久记忆、checkpoint、subagent 与目标判定。 | [GitHub](https://github.com/XiaomiMiMo/MiMo-Code) |
 | `dao-code` | 围绕 DeepSeek V4 长上下文与 prefix cache 优化的低成本终端 coding agent。 | [GitHub](https://github.com/tigicion/dao-code) |
 | `learn-agent` | 从零实现 coding agent 的渐进式教程，覆盖 agent loop、预算、压缩、权限和工具披露。 | [GitHub](https://github.com/7-e1even/learn-agent) |
+| `Godcoder` | 本地优先的桌面 coding agent，强调 BYOK、Harness mode、CoWork mode 与 MCP 接入。 | [GitHub](https://github.com/eli-labz/Godcoder) |
+| `agterm` | 面向多 agent session 的 macOS 原生终端，用 workspace、status hooks 和 `agtermctl` 管理长任务。 | [GitHub](https://github.com/umputun/agterm) |
 | `tabby` | 自托管、可本地部署的开源 AI 编码助手。 | [GitHub](https://github.com/TabbyML/tabby) |
 | `zed` | 高性能、多人协作的代码编辑器，体现 AI 时代开发入口向编辑器本体回流。 | [GitHub](https://github.com/zed-industries/zed) |
 | `orca` | 多 worktree 并行调度的 agent 开发环境，把多个 coding agent 收到同一工作台里。 | [GitHub](https://github.com/stablyai/orca) |
@@ -134,6 +136,9 @@
 | `token-diet` | 面向 Claude Code、Codex、Cursor 等 coding agent 的 token 成本控制 skill。 | [GitHub](https://github.com/Kulaxyz/token-diet) |
 | `ConferenceWatch` | 跟踪 AI/ML 会议 deadline、CFP、地点和录用率趋势的 agent skill。 | [GitHub](https://github.com/Zsun79/ConferenceWatch) |
 | `agent-runtime` | Provider-neutral 的 agent runtime core，把 loop、工具调度、预算和消息类型抽成可复用内核。 | [GitHub](https://github.com/easylink-ai-open/agent-runtime) |
+| `T3MP3ST` | 面向授权红队测试的多代理 offensive-security meta-harness，强调 scope、工具链和可复算声明。 | [GitHub](https://github.com/elder-plinius/T3MP3ST) |
+| `lemma-platform` | 人类与 AI agents 共用的结构化 workspace，用 pod 承载表格、workflow、权限和审批。 | [GitHub](https://github.com/lemma-work/lemma-platform) |
+| `tupper` | 本地 agent code-execution sandbox，提供 E2B-style TypeScript SDK、MCP server 和多后端隔离路线。 | [GitHub](https://github.com/lightbearco/tupper) |
 
 ### 记忆层与个人 AI 基础设施
 
@@ -199,6 +204,7 @@
 | `GUI-Agents-Paper-List` | GUI agent 论文、基准、数据集和研究趋势的结构化索引。 | [GitHub](https://github.com/OSU-NLP-Group/GUI-Agents-Paper-List) |
 | `Agent-S` | Simular AI 的 computer-use / GUI agent 框架，围绕 OSWorld 等桌面操作基准推进 Agent S3。 | [GitHub](https://github.com/simular-ai/Agent-S) |
 | `hermex` | iPhone 原生 self-hosted agent 控制面，用手机管理 Hermes 会话、任务、skills 和 workspace。 | [GitHub](https://github.com/uzairansaruzi/hermex) |
+| `peerd` | 浏览器原生 AI agent harness，用扩展、vault、actor agent 和 WASM sandbox 驱动真实网页任务。 | [GitHub](https://github.com/NotASithLord/peerd) |
 
 ### 语音、视频与多模态
 
@@ -268,6 +274,7 @@
 
 - 全量项目目录：[`projects/`](./projects/)
 - 最近日报：
+  - [`2026-07-06`](./daily/2026-07-06/ai-hotspots.md)
   - [`2026-07-05`](./daily/2026-07-05/ai-hotspots.md)
   - [`2026-07-04`](./daily/2026-07-04/ai-hotspots.md)
   - [`2026-07-03`](./daily/2026-07-03/ai-hotspots.md)
@@ -280,16 +287,15 @@
   - [`2026-06-26`](./daily/2026-06-26/ai-hotspots.md)
   - [`2026-06-25`](./daily/2026-06-25/ai-hotspots.md)
   - [`2026-06-24`](./daily/2026-06-24/ai-hotspots.md)
-  - [`2026-06-23`](./daily/2026-06-23/ai-hotspots.md)
 
 如果你要找的是某个具体项目，而不是看分类，直接在 [`projects/`](./projects/) 中按名称查找会更快。
 
 ## 当前状态
 
 - 状态：持续日更中。
-- 最新更新：`2026-07-05`。
-- 当前项目总数：`295`。
-- 最近新增项目：`Talos`、`hermex`、`token-diet`、`ConferenceWatch`、`agent-runtime`、`CSSwitch`。
+- 最新更新：`2026-07-06`。
+- 当前项目总数：`301`。
+- 最近新增项目：`T3MP3ST`、`Godcoder`、`lemma-platform`、`agterm`、`peerd`、`tupper`。
 - 覆盖平台：GitHub、X、Instagram、YouTube。
 
 ## 维护约定
