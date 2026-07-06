@@ -178,6 +178,11 @@
 - 跟踪 `peerd` 的浏览器原生 actor / vault / WebAssembly sandbox 设计
   是否能经受 prompt injection 场景验证。
 - 观察 `tupper` 是否补齐 Firecracker / WSL 后端，并成为本地 agent code-execution sandbox 代表项目。
+- 跟踪 `codex-plugin-cc` 是否成为 Claude Code 用户调用 Codex 审查、救援和会话转移的默认入口。
+- 观察 `herdr` 与 `gastown` 的分工，判断终端 session 管理与多 agent 任务治理是否会拆成两个稳定层。
+- 跟踪 `claude-video` 是否被 Codex、Cursor、Copilot、Gemini CLI 等非 Claude 宿主实际采用。
+- 观察 `meetily` 的社区版 / PRO 边界、本地 diarization 和企业自托管能力是否持续清晰。
+- 跟踪 `system_prompts_leaks` 的更新时效与来源标注，避免把社区捕获文本误当作官方当前规范。
 
 ## 阻塞点
 
@@ -218,6 +223,15 @@
   - 新增 `projects/dao-code/README.md`。
   - 新增 `daily/2026-07-02/ai-hotspots.md`。
   - 同步首页 `README.md`：补充 `loop-engineering`、`codeseek`、`security-audit-skill`、`dao-code`，并更新最新日期与项目总数（`280`）。
+- 2026-07-07：
+  - 新增 `projects/system_prompts_leaks/README.md`。
+  - 新增 `projects/codex-plugin-cc/README.md`。
+  - 新增 `projects/herdr/README.md`。
+  - 新增 `projects/claude-video/README.md`。
+  - 新增 `projects/meetily/README.md`。
+  - 新增 `projects/gastown/README.md`。
+  - 新增 `daily/2026-07-07/ai-hotspots.md`。
+  - 同步首页 `README.md`：补充六个项目，并更新最新日期与项目总数（`307`）。
 - 2026-07-03：
   - 新增 `projects/self-learning-skills/README.md`。
   - 新增 `projects/AgentsMeetRL/README.md`。

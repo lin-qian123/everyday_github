@@ -48,7 +48,7 @@
 
 如果你是第一次进入这个仓库，建议从这几个入口开始：
 
-- 最新日报：[`daily/2026-07-06/ai-hotspots.md`](./daily/2026-07-06/ai-hotspots.md)
+- 最新日报：[`daily/2026-07-07/ai-hotspots.md`](./daily/2026-07-07/ai-hotspots.md)
 - 项目总目录：[`projects/`](./projects/)
 - 自动化约束：[`AGENTS.md`](./AGENTS.md)
 - 开发续接记录：[`TODO.md`](./TODO.md)
@@ -89,6 +89,8 @@
 | `learn-agent` | 从零实现 coding agent 的渐进式教程，覆盖 agent loop、预算、压缩、权限和工具披露。 | [GitHub](https://github.com/7-e1even/learn-agent) |
 | `Godcoder` | 本地优先的桌面 coding agent，强调 BYOK、Harness mode、CoWork mode 与 MCP 接入。 | [GitHub](https://github.com/eli-labz/Godcoder) |
 | `agterm` | 面向多 agent session 的 macOS 原生终端，用 workspace、status hooks 和 `agtermctl` 管理长任务。 | [GitHub](https://github.com/umputun/agterm) |
+| `codex-plugin-cc` | OpenAI 的 Claude Code 插件，在 Claude Code 内调用 Codex 做审查、对抗式审查、救援和会话转移。 | [GitHub](https://github.com/openai/codex-plugin-cc) |
+| `herdr` | 终端原生的多 agent session 管理器，用真实 pane、持久会话和状态识别管理 Claude Code、Codex、Copilot 等工具。 | [GitHub](https://github.com/ogulcancelik/herdr) |
 | `tabby` | 自托管、可本地部署的开源 AI 编码助手。 | [GitHub](https://github.com/TabbyML/tabby) |
 | `zed` | 高性能、多人协作的代码编辑器，体现 AI 时代开发入口向编辑器本体回流。 | [GitHub](https://github.com/zed-industries/zed) |
 | `orca` | 多 worktree 并行调度的 agent 开发环境，把多个 coding agent 收到同一工作台里。 | [GitHub](https://github.com/stablyai/orca) |
@@ -139,6 +141,8 @@
 | `T3MP3ST` | 面向授权红队测试的多代理 offensive-security meta-harness，强调 scope、工具链和可复算声明。 | [GitHub](https://github.com/elder-plinius/T3MP3ST) |
 | `lemma-platform` | 人类与 AI agents 共用的结构化 workspace，用 pod 承载表格、workflow、权限和审批。 | [GitHub](https://github.com/lemma-work/lemma-platform) |
 | `tupper` | 本地 agent code-execution sandbox，提供 E2B-style TypeScript SDK、MCP server 和多后端隔离路线。 | [GitHub](https://github.com/lightbearco/tupper) |
+| `system_prompts_leaks` | 收集 Claude、ChatGPT / Codex、Gemini、Copilot、Cursor 等产品系统提示词，用于研究 agent 工具边界与安全策略。 | [GitHub](https://github.com/asgeirtj/system_prompts_leaks) |
+| `gastown` | 多 agent workspace manager，用 git-backed hooks、任务 ledger、handoff 和合并队列协调多个 coding agents。 | [GitHub](https://github.com/gastownhall/gastown) |
 
 ### 记忆层与个人 AI 基础设施
 
@@ -226,6 +230,7 @@
 | `video-use` | 让 coding agent 驱动视频剪辑、字幕、调色与渲染检查的自动化工作流。 | [GitHub](https://github.com/browser-use/video-use) |
 | `FluidVoice` | 面向 macOS 的本地离线语音转文字应用，强调设备端 AI 后处理。 | [GitHub](https://github.com/altic-dev/FluidVoice) |
 | `lingbot-map` | 流式 3D 重建基础模型，把视频/传感器流转成可用空间表示。 | [GitHub](https://github.com/Robbyant/lingbot-map) |
+| `claude-video` | `/watch` agent skill，用字幕、Whisper、关键帧和去重机制让 Claude / Codex 等工具理解视频内容。 | [GitHub](https://github.com/bradautomates/claude-video) |
 
 ### 模型、训练与推理基础设施
 
@@ -269,11 +274,13 @@
 | `ai-berkshire` | 把价值投资研究拆成技能与多 Agent 流程的领域化投研框架。 | [GitHub](https://github.com/xbtlin/ai-berkshire) |
 | `open-science` | 面向科研发现的开源 AI 工作台愿景项目，强调模型无关、本地可部署和可审计 provenance。 | [GitHub](https://github.com/aipoch/open-science) |
 | `CSSwitch` | Claude Science 的第三方模型接入切换工具，用本地代理连接 DeepSeek、Qwen、GLM、Kimi 等端点。 | [GitHub](https://github.com/SuperJJ007/CSSwitch) |
+| `meetily` | 隐私优先的本地 AI 会议助手，覆盖实时转写、说话人分离、Ollama 摘要和自托管会议记录。 | [GitHub](https://github.com/Zackriya-Solutions/meetily) |
 
 ## 完整索引与每日热点
 
 - 全量项目目录：[`projects/`](./projects/)
 - 最近日报：
+  - [`2026-07-07`](./daily/2026-07-07/ai-hotspots.md)
   - [`2026-07-06`](./daily/2026-07-06/ai-hotspots.md)
   - [`2026-07-05`](./daily/2026-07-05/ai-hotspots.md)
   - [`2026-07-04`](./daily/2026-07-04/ai-hotspots.md)
@@ -286,16 +293,15 @@
   - [`2026-06-27`](./daily/2026-06-27/ai-hotspots.md)
   - [`2026-06-26`](./daily/2026-06-26/ai-hotspots.md)
   - [`2026-06-25`](./daily/2026-06-25/ai-hotspots.md)
-  - [`2026-06-24`](./daily/2026-06-24/ai-hotspots.md)
 
 如果你要找的是某个具体项目，而不是看分类，直接在 [`projects/`](./projects/) 中按名称查找会更快。
 
 ## 当前状态
 
 - 状态：持续日更中。
-- 最新更新：`2026-07-06`。
-- 当前项目总数：`301`。
-- 最近新增项目：`T3MP3ST`、`Godcoder`、`lemma-platform`、`agterm`、`peerd`、`tupper`。
+- 最新更新：`2026-07-07`。
+- 当前项目总数：`307`。
+- 最近新增项目：`system_prompts_leaks`、`codex-plugin-cc`、`herdr`、`claude-video`、`meetily`、`gastown`。
 - 覆盖平台：GitHub、X、Instagram、YouTube。
 
 ## 维护约定
