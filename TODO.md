@@ -183,6 +183,12 @@
 - 跟踪 `claude-video` 是否被 Codex、Cursor、Copilot、Gemini CLI 等非 Claude 宿主实际采用。
 - 观察 `meetily` 的社区版 / PRO 边界、本地 diarization 和企业自托管能力是否持续清晰。
 - 跟踪 `system_prompts_leaks` 的更新时效与来源标注，避免把社区捕获文本误当作官方当前规范。
+- 跟踪 `claude-antigravity-agents` 是否形成跨 agent 委派的稳定模式，尤其是只读 sandbox、隔离 worktree 和结果验证流程。
+- 观察 `system-prompts-and-models-of-ai-tools` 与 `system_prompts_leaks` 的来源标注、时效和版权/安全争议。
+- 跟踪 `ui-ux-pro-max-skill` 是否能从设计规则库演化成可验证的 UI 质量评估工具。
+- 观察 `oh-my-openagent` 是否能在真实复杂仓库中证明低 token agent harness 的优势。
+- 跟踪 `awesome-claude-code` 是否成为 Claude Code 生态 skills / subagents / MCP 资源的长期入口。
+- 观察 `nanobot` 是否继续把个人 agent kernel、聊天渠道、MCP、记忆和自动化稳定到日常使用层。
 
 ## 阻塞点
 
@@ -194,6 +200,15 @@
 - 优先维护“新上榜且仓库尚未建立目录”的项目。
 - 首页项目总数继续按 `projects/` 实际目录数重算，不复用旧数字。
 - 继续优先观察 GitHub Trending 中“视频工作流”“多模型桌面客户端”“生成聚合工作台”三条线，看是否持续占据榜单前排。
+- 2026-07-08：
+  - 新增 `projects/claude-antigravity-agents/README.md`。
+  - 新增 `projects/system-prompts-and-models-of-ai-tools/README.md`。
+  - 新增 `projects/ui-ux-pro-max-skill/README.md`。
+  - 新增 `projects/oh-my-openagent/README.md`。
+  - 新增 `projects/awesome-claude-code/README.md`。
+  - 新增 `projects/nanobot/README.md`。
+  - 新增 `daily/2026-07-08/ai-hotspots.md`。
+  - 同步首页 `README.md`：补充六个项目，并更新最新日期与项目总数（`313`）。
 - 2026-06-29：
   - 新增 `projects/strix/README.md`。
   - 新增 `projects/openpencil/README.md`。

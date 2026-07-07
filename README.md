@@ -48,7 +48,7 @@
 
 如果你是第一次进入这个仓库，建议从这几个入口开始：
 
-- 最新日报：[`daily/2026-07-07/ai-hotspots.md`](./daily/2026-07-07/ai-hotspots.md)
+- 最新日报：[`daily/2026-07-08/ai-hotspots.md`](./daily/2026-07-08/ai-hotspots.md)
 - 项目总目录：[`projects/`](./projects/)
 - 自动化约束：[`AGENTS.md`](./AGENTS.md)
 - 开发续接记录：[`TODO.md`](./TODO.md)
@@ -91,6 +91,8 @@
 | `agterm` | 面向多 agent session 的 macOS 原生终端，用 workspace、status hooks 和 `agtermctl` 管理长任务。 | [GitHub](https://github.com/umputun/agterm) |
 | `codex-plugin-cc` | OpenAI 的 Claude Code 插件，在 Claude Code 内调用 Codex 做审查、对抗式审查、救援和会话转移。 | [GitHub](https://github.com/openai/codex-plugin-cc) |
 | `herdr` | 终端原生的多 agent session 管理器，用真实 pane、持久会话和状态识别管理 Claude Code、Codex、Copilot 等工具。 | [GitHub](https://github.com/ogulcancelik/herdr) |
+| `claude-antigravity-agents` | Claude Code skill，把长审查、研究和第二意见任务委派给 Google Antigravity CLI 子 agent。 | [GitHub](https://github.com/markfulton/claude-antigravity-agents) |
+| `oh-my-openagent` | 面向复杂代码库的低 token coding agent harness，围绕 Codex、OpenCode 等生态做上下文与编排优化。 | [GitHub](https://github.com/code-yeongyu/oh-my-openagent) |
 | `tabby` | 自托管、可本地部署的开源 AI 编码助手。 | [GitHub](https://github.com/TabbyML/tabby) |
 | `zed` | 高性能、多人协作的代码编辑器，体现 AI 时代开发入口向编辑器本体回流。 | [GitHub](https://github.com/zed-industries/zed) |
 | `orca` | 多 worktree 并行调度的 agent 开发环境，把多个 coding agent 收到同一工作台里。 | [GitHub](https://github.com/stablyai/orca) |
@@ -143,6 +145,8 @@
 | `tupper` | 本地 agent code-execution sandbox，提供 E2B-style TypeScript SDK、MCP server 和多后端隔离路线。 | [GitHub](https://github.com/lightbearco/tupper) |
 | `system_prompts_leaks` | 收集 Claude、ChatGPT / Codex、Gemini、Copilot、Cursor 等产品系统提示词，用于研究 agent 工具边界与安全策略。 | [GitHub](https://github.com/asgeirtj/system_prompts_leaks) |
 | `gastown` | 多 agent workspace manager，用 git-backed hooks、任务 ledger、handoff 和合并队列协调多个 coding agents。 | [GitHub](https://github.com/gastownhall/gastown) |
+| `system-prompts-and-models-of-ai-tools` | 覆盖多款 AI 工具系统提示词、内部工具说明和模型线索的社区资料库，用于研究 agent 边界。 | [GitHub](https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools) |
+| `awesome-claude-code` | Claude Code 生态资源索引，收集 skills、subagents、status lines、插件、MCP 和工作流资料。 | [GitHub](https://github.com/hesreallyhim/awesome-claude-code) |
 
 ### 记忆层与个人 AI 基础设施
 
@@ -161,6 +165,7 @@
 | `cognee` | 面向 agent 的开源长期记忆平台，把文档、工具调用和上下文沉淀为可查询知识图谱。 | [GitHub](https://github.com/topoteretes/cognee) |
 | `ax` | 面向 Claude Code、Codex 等工具的本地 agent 复盘、记忆、成本与 observability 图谱层。 | [GitHub](https://github.com/Necmttn/ax) |
 | `open-knowledge` | AI-native Markdown 编辑器与 LLM Wiki，把本地知识库、MCP、skills 和 git 同步接入 agent 工作流。 | [GitHub](https://github.com/inkeep/open-knowledge) |
+| `nanobot` | 轻量个人 AI agent kernel，整合 WebUI、聊天渠道、MCP、记忆、自动化和模型路由。 | [GitHub](https://github.com/HKUDS/nanobot) |
 
 ### RAG、检索与知识处理
 
@@ -209,6 +214,7 @@
 | `Agent-S` | Simular AI 的 computer-use / GUI agent 框架，围绕 OSWorld 等桌面操作基准推进 Agent S3。 | [GitHub](https://github.com/simular-ai/Agent-S) |
 | `hermex` | iPhone 原生 self-hosted agent 控制面，用手机管理 Hermes 会话、任务、skills 和 workspace。 | [GitHub](https://github.com/uzairansaruzi/hermex) |
 | `peerd` | 浏览器原生 AI agent harness，用扩展、vault、actor agent 和 WASM sandbox 驱动真实网页任务。 | [GitHub](https://github.com/NotASithLord/peerd) |
+| `ui-ux-pro-max-skill` | 面向 coding agent 的 UI/UX 设计 skill，把行业风格、设计系统、色彩、排版和交付检查结构化。 | [GitHub](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill) |
 
 ### 语音、视频与多模态
 
@@ -280,6 +286,7 @@
 
 - 全量项目目录：[`projects/`](./projects/)
 - 最近日报：
+  - [`2026-07-08`](./daily/2026-07-08/ai-hotspots.md)
   - [`2026-07-07`](./daily/2026-07-07/ai-hotspots.md)
   - [`2026-07-06`](./daily/2026-07-06/ai-hotspots.md)
   - [`2026-07-05`](./daily/2026-07-05/ai-hotspots.md)
@@ -299,9 +306,9 @@
 ## 当前状态
 
 - 状态：持续日更中。
-- 最新更新：`2026-07-07`。
-- 当前项目总数：`307`。
-- 最近新增项目：`system_prompts_leaks`、`codex-plugin-cc`、`herdr`、`claude-video`、`meetily`、`gastown`。
+- 最新更新：`2026-07-08`。
+- 当前项目总数：`313`。
+- 最近新增项目：`claude-antigravity-agents`、`system-prompts-and-models-of-ai-tools`、`ui-ux-pro-max-skill`、`oh-my-openagent`、`awesome-claude-code`、`nanobot`。
 - 覆盖平台：GitHub、X、Instagram、YouTube。
 
 ## 维护约定
