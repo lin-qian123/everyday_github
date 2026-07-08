@@ -48,7 +48,7 @@
 
 如果你是第一次进入这个仓库，建议从这几个入口开始：
 
-- 最新日报：[`daily/2026-07-08/ai-hotspots.md`](./daily/2026-07-08/ai-hotspots.md)
+- 最新日报：[`daily/2026-07-09/ai-hotspots.md`](./daily/2026-07-09/ai-hotspots.md)
 - 项目总目录：[`projects/`](./projects/)
 - 自动化约束：[`AGENTS.md`](./AGENTS.md)
 - 开发续接记录：[`TODO.md`](./TODO.md)
@@ -93,6 +93,7 @@
 | `herdr` | 终端原生的多 agent session 管理器，用真实 pane、持久会话和状态识别管理 Claude Code、Codex、Copilot 等工具。 | [GitHub](https://github.com/ogulcancelik/herdr) |
 | `claude-antigravity-agents` | Claude Code skill，把长审查、研究和第二意见任务委派给 Google Antigravity CLI 子 agent。 | [GitHub](https://github.com/markfulton/claude-antigravity-agents) |
 | `oh-my-openagent` | 面向复杂代码库的低 token coding agent harness，围绕 Codex、OpenCode 等生态做上下文与编排优化。 | [GitHub](https://github.com/code-yeongyu/oh-my-openagent) |
+| `Codex-X` | Codex 桌面/CLI 的本地配置控制面，覆盖 Provider、Auth、TOML、会话、Skills 与 MCP 管理。 | [GitHub](https://github.com/yynxxxxx/Codex-X) |
 | `tabby` | 自托管、可本地部署的开源 AI 编码助手。 | [GitHub](https://github.com/TabbyML/tabby) |
 | `zed` | 高性能、多人协作的代码编辑器，体现 AI 时代开发入口向编辑器本体回流。 | [GitHub](https://github.com/zed-industries/zed) |
 | `orca` | 多 worktree 并行调度的 agent 开发环境，把多个 coding agent 收到同一工作台里。 | [GitHub](https://github.com/stablyai/orca) |
@@ -147,6 +148,8 @@
 | `gastown` | 多 agent workspace manager，用 git-backed hooks、任务 ledger、handoff 和合并队列协调多个 coding agents。 | [GitHub](https://github.com/gastownhall/gastown) |
 | `system-prompts-and-models-of-ai-tools` | 覆盖多款 AI 工具系统提示词、内部工具说明和模型线索的社区资料库，用于研究 agent 边界。 | [GitHub](https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools) |
 | `awesome-claude-code` | Claude Code 生态资源索引，收集 skills、subagents、status lines、插件、MCP 和工作流资料。 | [GitHub](https://github.com/hesreallyhim/awesome-claude-code) |
+| `OpenOPC` | AI-native company 工作台，把角色招聘、任务分派、交接、组织记忆和 Office UI 串成多 agent 公司流程。 | [GitHub](https://github.com/HKUDS/OpenOPC) |
+| `claude-code-merge-queue` | 本地 Claude Code 并行 worktree 合并队列，串行化 rebase、push、build 与 test。 | [GitHub](https://github.com/funador/claude-code-merge-queue) |
 
 ### 记忆层与个人 AI 基础设施
 
@@ -166,6 +169,7 @@
 | `ax` | 面向 Claude Code、Codex 等工具的本地 agent 复盘、记忆、成本与 observability 图谱层。 | [GitHub](https://github.com/Necmttn/ax) |
 | `open-knowledge` | AI-native Markdown 编辑器与 LLM Wiki，把本地知识库、MCP、skills 和 git 同步接入 agent 工作流。 | [GitHub](https://github.com/inkeep/open-knowledge) |
 | `nanobot` | 轻量个人 AI agent kernel，整合 WebUI、聊天渠道、MCP、记忆、自动化和模型路由。 | [GitHub](https://github.com/HKUDS/nanobot) |
+| `engram` | 面向 Claude Code / Codex 的本地学习记忆引擎，用 free recall、盲评和 FSRS 复习调度沉淀知识。 | [GitHub](https://github.com/nagisanzenin/engram) |
 
 ### RAG、检索与知识处理
 
@@ -215,6 +219,7 @@
 | `hermex` | iPhone 原生 self-hosted agent 控制面，用手机管理 Hermes 会话、任务、skills 和 workspace。 | [GitHub](https://github.com/uzairansaruzi/hermex) |
 | `peerd` | 浏览器原生 AI agent harness，用扩展、vault、actor agent 和 WASM sandbox 驱动真实网页任务。 | [GitHub](https://github.com/NotASithLord/peerd) |
 | `ui-ux-pro-max-skill` | 面向 coding agent 的 UI/UX 设计 skill，把行业风格、设计系统、色彩、排版和交付检查结构化。 | [GitHub](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill) |
+| `gzh-design-skill` | 面向 AI agent 的微信公众号排版 skill，把 Markdown 转为可粘贴的内联 HTML 并提供主题与校验脚本。 | [GitHub](https://github.com/isjiamu/gzh-design-skill) |
 
 ### 语音、视频与多模态
 
@@ -281,11 +286,13 @@
 | `open-science` | 面向科研发现的开源 AI 工作台愿景项目，强调模型无关、本地可部署和可审计 provenance。 | [GitHub](https://github.com/aipoch/open-science) |
 | `CSSwitch` | Claude Science 的第三方模型接入切换工具，用本地代理连接 DeepSeek、Qwen、GLM、Kimi 等端点。 | [GitHub](https://github.com/SuperJJ007/CSSwitch) |
 | `meetily` | 隐私优先的本地 AI 会议助手，覆盖实时转写、说话人分离、Ollama 摘要和自托管会议记录。 | [GitHub](https://github.com/Zackriya-Solutions/meetily) |
+| `Vibe-Research` | 个人 AI 投研看板，整合 A 股/美股/港股数据、资讯、持仓、研报和本地 AI 分析入口。 | [GitHub](https://github.com/simonlin1212/Vibe-Research) |
 
 ## 完整索引与每日热点
 
 - 全量项目目录：[`projects/`](./projects/)
 - 最近日报：
+  - [`2026-07-09`](./daily/2026-07-09/ai-hotspots.md)
   - [`2026-07-08`](./daily/2026-07-08/ai-hotspots.md)
   - [`2026-07-07`](./daily/2026-07-07/ai-hotspots.md)
   - [`2026-07-06`](./daily/2026-07-06/ai-hotspots.md)
@@ -306,9 +313,9 @@
 ## 当前状态
 
 - 状态：持续日更中。
-- 最新更新：`2026-07-08`。
-- 当前项目总数：`313`。
-- 最近新增项目：`claude-antigravity-agents`、`system-prompts-and-models-of-ai-tools`、`ui-ux-pro-max-skill`、`oh-my-openagent`、`awesome-claude-code`、`nanobot`。
+- 最新更新：`2026-07-09`。
+- 当前项目总数：`319`。
+- 最近新增项目：`gzh-design-skill`、`OpenOPC`、`Codex-X`、`engram`、`Vibe-Research`、`claude-code-merge-queue`。
 - 覆盖平台：GitHub、X、Instagram、YouTube。
 
 ## 维护约定

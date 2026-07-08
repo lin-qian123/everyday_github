@@ -189,6 +189,12 @@
 - 观察 `oh-my-openagent` 是否能在真实复杂仓库中证明低 token agent harness 的优势。
 - 跟踪 `awesome-claude-code` 是否成为 Claude Code 生态 skills / subagents / MCP 资源的长期入口。
 - 观察 `nanobot` 是否继续把个人 agent kernel、聊天渠道、MCP、记忆和自动化稳定到日常使用层。
+- 跟踪 `gzh-design-skill` 是否扩展到更多中文内容平台，并保持公众号 HTML 校验脚本有效。
+- 观察 `OpenOPC` 是否能给出可复现 benchmark、失败案例和多 agent 成本统计。
+- 跟踪 `Codex-X` 是否补齐安全模式、只读预览、密钥脱敏、配置备份和回滚能力。
+- 观察 `engram` 是否能在 Claude Code / Codex 之外形成可迁移学习状态和复习记录格式。
+- 跟踪 `Vibe-Research` 的数据质量、金融合规边界、本地隐私策略和研报索引能力。
+- 观察 `claude-code-merge-queue` 是否被多 agent worktree 用户实际采用，并扩展到 Claude Code 之外的 agent。
 
 ## 阻塞点
 
@@ -200,6 +206,15 @@
 - 优先维护“新上榜且仓库尚未建立目录”的项目。
 - 首页项目总数继续按 `projects/` 实际目录数重算，不复用旧数字。
 - 继续优先观察 GitHub Trending 中“视频工作流”“多模型桌面客户端”“生成聚合工作台”三条线，看是否持续占据榜单前排。
+- 2026-07-09：
+  - 新增 `projects/gzh-design-skill/README.md`。
+  - 新增 `projects/OpenOPC/README.md`。
+  - 新增 `projects/Codex-X/README.md`。
+  - 新增 `projects/engram/README.md`。
+  - 新增 `projects/Vibe-Research/README.md`。
+  - 新增 `projects/claude-code-merge-queue/README.md`。
+  - 新增 `daily/2026-07-09/ai-hotspots.md`。
+  - 同步首页 `README.md`：补充六个项目，并更新最新日期与项目总数（`319`）。
 - 2026-07-08：
   - 新增 `projects/claude-antigravity-agents/README.md`。
   - 新增 `projects/system-prompts-and-models-of-ai-tools/README.md`。
