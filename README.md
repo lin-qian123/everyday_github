@@ -48,7 +48,7 @@
 
 如果你是第一次进入这个仓库，建议从这几个入口开始：
 
-- 最新日报：[`daily/2026-07-09/ai-hotspots.md`](./daily/2026-07-09/ai-hotspots.md)
+- 最新日报：[`daily/2026-07-10/ai-hotspots.md`](./daily/2026-07-10/ai-hotspots.md)
 - 项目总目录：[`projects/`](./projects/)
 - 自动化约束：[`AGENTS.md`](./AGENTS.md)
 - 开发续接记录：[`TODO.md`](./TODO.md)
@@ -150,6 +150,9 @@
 | `awesome-claude-code` | Claude Code 生态资源索引，收集 skills、subagents、status lines、插件、MCP 和工作流资料。 | [GitHub](https://github.com/hesreallyhim/awesome-claude-code) |
 | `OpenOPC` | AI-native company 工作台，把角色招聘、任务分派、交接、组织记忆和 Office UI 串成多 agent 公司流程。 | [GitHub](https://github.com/HKUDS/OpenOPC) |
 | `claude-code-merge-queue` | 本地 Claude Code 并行 worktree 合并队列，串行化 rebase、push、build 与 test。 | [GitHub](https://github.com/funador/claude-code-merge-queue) |
+| `open-connector` | 面向 AI agents 的开源连接器网关，用 SDK、CLI、MCP、HTTP 和 OpenAPI 统一 SaaS action 与凭据边界。 | [GitHub](https://github.com/oomol-lab/open-connector) |
+| `sim-use` | 让 AI agent 观察并操作 iOS Simulator 与 Android emulator/device 的移动端验证 CLI。 | [GitHub](https://github.com/lycorp-jp/sim-use) |
+| `mcpsnoop` | MCP 透明代理调试器，捕获真实客户端与 server 之间的 JSON-RPC 工具调用流。 | [GitHub](https://github.com/kerlenton/mcpsnoop) |
 
 ### 记忆层与个人 AI 基础设施
 
@@ -170,6 +173,7 @@
 | `open-knowledge` | AI-native Markdown 编辑器与 LLM Wiki，把本地知识库、MCP、skills 和 git 同步接入 agent 工作流。 | [GitHub](https://github.com/inkeep/open-knowledge) |
 | `nanobot` | 轻量个人 AI agent kernel，整合 WebUI、聊天渠道、MCP、记忆、自动化和模型路由。 | [GitHub](https://github.com/HKUDS/nanobot) |
 | `engram` | 面向 Claude Code / Codex 的本地学习记忆引擎，用 free recall、盲评和 FSRS 复习调度沉淀知识。 | [GitHub](https://github.com/nagisanzenin/engram) |
+| `agent-chief` | 本地优先的 agent 注意力路由层，过滤空报告、批处理事件、委派任务并验证完成结果。 | [GitHub](https://github.com/SmileLikeYe/agent-chief) |
 
 ### RAG、检索与知识处理
 
@@ -242,6 +246,9 @@
 | `FluidVoice` | 面向 macOS 的本地离线语音转文字应用，强调设备端 AI 后处理。 | [GitHub](https://github.com/altic-dev/FluidVoice) |
 | `lingbot-map` | 流式 3D 重建基础模型，把视频/传感器流转成可用空间表示。 | [GitHub](https://github.com/Robbyant/lingbot-map) |
 | `claude-video` | `/watch` agent skill，用字幕、Whisper、关键帧和去重机制让 Claude / Codex 等工具理解视频内容。 | [GitHub](https://github.com/bradautomates/claude-video) |
+| `claude-real-video` | 本地视频关键帧、去重、转写和 contact sheet 工具，让任意 LLM 可审计地读取视频内容。 | [GitHub](https://github.com/HUANGCHIHHUNGLeo/claude-real-video) |
+| `motion-anything` | Agentic motion layer，用自然语言生成和编辑页面动效、launch video，并导出 CSS、React、Lottie、MP4、GIF。 | [GitHub](https://github.com/nexu-io/motion-anything) |
+| `FableCut` | 浏览器非线性视频编辑器，把时间线暴露为 JSON、REST 和 MCP，方便 agent 直接剪辑。 | [GitHub](https://github.com/ronak-create/FableCut) |
 
 ### 模型、训练与推理基础设施
 
@@ -292,6 +299,7 @@
 
 - 全量项目目录：[`projects/`](./projects/)
 - 最近日报：
+  - [`2026-07-10`](./daily/2026-07-10/ai-hotspots.md)
   - [`2026-07-09`](./daily/2026-07-09/ai-hotspots.md)
   - [`2026-07-08`](./daily/2026-07-08/ai-hotspots.md)
   - [`2026-07-07`](./daily/2026-07-07/ai-hotspots.md)
@@ -313,9 +321,9 @@
 ## 当前状态
 
 - 状态：持续日更中。
-- 最新更新：`2026-07-09`。
-- 当前项目总数：`319`。
-- 最近新增项目：`gzh-design-skill`、`OpenOPC`、`Codex-X`、`engram`、`Vibe-Research`、`claude-code-merge-queue`。
+- 最新更新：`2026-07-10`。
+- 当前项目总数：`326`。
+- 最近新增项目：`open-connector`、`sim-use`、`claude-real-video`、`motion-anything`、`mcpsnoop`、`FableCut`、`agent-chief`。
 - 覆盖平台：GitHub、X、Instagram、YouTube。
 
 ## 维护约定

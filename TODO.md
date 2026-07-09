@@ -195,6 +195,14 @@
 - 观察 `engram` 是否能在 Claude Code / Codex 之外形成可迁移学习状态和复习记录格式。
 - 跟踪 `Vibe-Research` 的数据质量、金融合规边界、本地隐私策略和研报索引能力。
 - 观察 `claude-code-merge-queue` 是否被多 agent worktree 用户实际采用，并扩展到 Claude Code 之外的 agent。
+- 跟踪 `open-connector` 是否能持续维护 provider/action catalog，并把
+  OAuth、scope、运行日志和 MCP/OpenAPI contract 做成稳定连接层。
+- 观察 `sim-use` 是否被移动端 coding agent、Appium/Detox 用户或 GUI agent benchmark 采用。
+- 跟踪 `claude-real-video` 与 `claude-video` 的分工，判断视频理解入口会偏
+  通用 keyframe extractor 还是宿主专用 skill。
+- 观察 `motion-anything` 与 `FableCut`、`hyperframes` 的边界，判断 agent-native 视频/动效工作流会收敛到哪种编辑模型。
+- 跟踪 `mcpsnoop` 是否成为 MCP server issue 复现和真实 client 调试的默认工具。
+- 观察 `agent-chief` 是否能在真实多 agent heartbeat 场景中稳定降低噪音而不漏掉高风险事件。
 
 ## 阻塞点
 
@@ -215,6 +223,16 @@
   - 新增 `projects/claude-code-merge-queue/README.md`。
   - 新增 `daily/2026-07-09/ai-hotspots.md`。
   - 同步首页 `README.md`：补充六个项目，并更新最新日期与项目总数（`319`）。
+- 2026-07-10：
+  - 新增 `projects/open-connector/README.md`。
+  - 新增 `projects/sim-use/README.md`。
+  - 新增 `projects/claude-real-video/README.md`。
+  - 新增 `projects/motion-anything/README.md`。
+  - 新增 `projects/mcpsnoop/README.md`。
+  - 新增 `projects/FableCut/README.md`。
+  - 新增 `projects/agent-chief/README.md`。
+  - 新增 `daily/2026-07-10/ai-hotspots.md`。
+  - 同步首页 `README.md`：补充七个项目，并更新最新日期与项目总数（`326`）。
 - 2026-07-08：
   - 新增 `projects/claude-antigravity-agents/README.md`。
   - 新增 `projects/system-prompts-and-models-of-ai-tools/README.md`。
