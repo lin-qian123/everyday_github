@@ -48,7 +48,7 @@
 
 如果你是第一次进入这个仓库，建议从这几个入口开始：
 
-- 最新日报：[`daily/2026-07-10/ai-hotspots.md`](./daily/2026-07-10/ai-hotspots.md)
+- 最新日报：[`daily/2026-07-11/ai-hotspots.md`](./daily/2026-07-11/ai-hotspots.md)
 - 项目总目录：[`projects/`](./projects/)
 - 自动化约束：[`AGENTS.md`](./AGENTS.md)
 - 开发续接记录：[`TODO.md`](./TODO.md)
@@ -153,6 +153,10 @@
 | `open-connector` | 面向 AI agents 的开源连接器网关，用 SDK、CLI、MCP、HTTP 和 OpenAPI 统一 SaaS action 与凭据边界。 | [GitHub](https://github.com/oomol-lab/open-connector) |
 | `sim-use` | 让 AI agent 观察并操作 iOS Simulator 与 Android emulator/device 的移动端验证 CLI。 | [GitHub](https://github.com/lycorp-jp/sim-use) |
 | `mcpsnoop` | MCP 透明代理调试器，捕获真实客户端与 server 之间的 JSON-RPC 工具调用流。 | [GitHub](https://github.com/kerlenton/mcpsnoop) |
+| `reverse-flow-skill` | 面向 Codex / AI Agent 的本地 CTF 逆向工程流程 skill，覆盖样本分诊、静态分析、深度逆向和报告输出。 | [GitHub](https://github.com/lingbol088-spec/reverse-flow-skill) |
+| `loopkit` | 可落盘的 `.claude/` harness 与 49 个小 skill，用 Plan-Act-Verify、hooks 和 verifier subagent 约束 coding agent。 | [GitHub](https://github.com/Archive228/loopkit) |
+| `homerail` | 语音优先的本地 agent DAG runtime，用 CLI、Docker worker、scorecard 和 replay 管理可审计工作流。 | [GitHub](https://github.com/xiaotianfotos/homerail) |
+| `OpenTag` | Slack-first 团队 agent gateway，把 Codex、Claude Code、OpenCode 等 runtime 接进线程、审批、记忆和审计流。 | [GitHub](https://github.com/linxidnju/OpenTag) |
 
 ### 记忆层与个人 AI 基础设施
 
@@ -224,6 +228,8 @@
 | `peerd` | 浏览器原生 AI agent harness，用扩展、vault、actor agent 和 WASM sandbox 驱动真实网页任务。 | [GitHub](https://github.com/NotASithLord/peerd) |
 | `ui-ux-pro-max-skill` | 面向 coding agent 的 UI/UX 设计 skill，把行业风格、设计系统、色彩、排版和交付检查结构化。 | [GitHub](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill) |
 | `gzh-design-skill` | 面向 AI agent 的微信公众号排版 skill，把 Markdown 转为可粘贴的内联 HTML 并提供主题与校验脚本。 | [GitHub](https://github.com/isjiamu/gzh-design-skill) |
+| `guizang-material-illustration` | 面向中文内容生产的材质插画 skill，把文章、图表、教学材料和工作汇报转成带中文标签的解释图。 | [GitHub](https://github.com/op7418/guizang-material-illustration) |
+| `Browser-BC` | 本地记录浏览器任务轨迹，并按站点 capability bucket 蒸馏成 Claude / Codex 可复用 skill。 | [GitHub](https://github.com/Einsia/Browser-BC) |
 
 ### 语音、视频与多模态
 
@@ -249,6 +255,7 @@
 | `claude-real-video` | 本地视频关键帧、去重、转写和 contact sheet 工具，让任意 LLM 可审计地读取视频内容。 | [GitHub](https://github.com/HUANGCHIHHUNGLeo/claude-real-video) |
 | `motion-anything` | Agentic motion layer，用自然语言生成和编辑页面动效、launch video，并导出 CSS、React、Lottie、MP4、GIF。 | [GitHub](https://github.com/nexu-io/motion-anything) |
 | `FableCut` | 浏览器非线性视频编辑器，把时间线暴露为 JSON、REST 和 MCP，方便 agent 直接剪辑。 | [GitHub](https://github.com/ronak-create/FableCut) |
+| `video-production-skills` | AI 视频制作 skill 集合，覆盖动效导演、参考视频复刻、暗色 SaaS 短片和片头包装。 | [GitHub](https://github.com/Pluviobyte/video-production-skills) |
 
 ### 模型、训练与推理基础设施
 
@@ -273,6 +280,7 @@
 | `AgentsMeetRL` | 聚焦用强化学习训练 LLM agents 的项目索引与 Claude Code skill，覆盖奖励、环境、工具调用和 GUI agent。 | [GitHub](https://github.com/thinkwee/AgentsMeetRL) |
 | `local-llm` | 本地运行高端 LLM 的硬件、GPU 互联、vLLM runner 和语音转文字实践记录。 | [GitHub](https://github.com/jamesob/local-llm) |
 | `Talos` | 将本机 Ollama / GPU 作为 Talos network worker，接收开放模型推理任务并回传在线与使用状态。 | [GitHub](https://github.com/jmerelnyc/Talos) |
+| `Hy3` | 腾讯混元 295B MoE / 21B active 开放权重模型，强调 256K 上下文、工具调用和 agentic 任务能力。 | [GitHub](https://github.com/Tencent-Hunyuan/Hy3) |
 
 ### 办公、商业与行业应用
 
@@ -299,6 +307,7 @@
 
 - 全量项目目录：[`projects/`](./projects/)
 - 最近日报：
+  - [`2026-07-11`](./daily/2026-07-11/ai-hotspots.md)
   - [`2026-07-10`](./daily/2026-07-10/ai-hotspots.md)
   - [`2026-07-09`](./daily/2026-07-09/ai-hotspots.md)
   - [`2026-07-08`](./daily/2026-07-08/ai-hotspots.md)
@@ -321,9 +330,9 @@
 ## 当前状态
 
 - 状态：持续日更中。
-- 最新更新：`2026-07-10`。
-- 当前项目总数：`326`。
-- 最近新增项目：`open-connector`、`sim-use`、`claude-real-video`、`motion-anything`、`mcpsnoop`、`FableCut`、`agent-chief`。
+- 最新更新：`2026-07-11`。
+- 当前项目总数：`334`。
+- 最近新增项目：`video-production-skills`、`guizang-material-illustration`、`reverse-flow-skill`、`loopkit`、`Hy3`、`homerail`、`Browser-BC`、`OpenTag`。
 - 覆盖平台：GitHub、X、Instagram、YouTube。
 
 ## 维护约定

@@ -203,6 +203,18 @@
 - 观察 `motion-anything` 与 `FableCut`、`hyperframes` 的边界，判断 agent-native 视频/动效工作流会收敛到哪种编辑模型。
 - 跟踪 `mcpsnoop` 是否成为 MCP server issue 复现和真实 client 调试的默认工具。
 - 观察 `agent-chief` 是否能在真实多 agent heartbeat 场景中稳定降低噪音而不漏掉高风险事件。
+- 观察 `video-production-skills` 是否能与 `FableCut`、`hyperframes`、
+  `motion-anything` 形成稳定的 agent-native 视频制作链路。
+- 跟踪 `guizang-material-illustration` 与 `gzh-design-skill`、社交卡片
+  skill 的分工，判断中文内容生产 skill 是否会形成套件。
+- 跟踪 `reverse-flow-skill` 的授权沙盒边界、工具链 profile 和真实 CTF
+  案例，避免安全 skill 泛化到未授权场景。
+- 观察 `loopkit` 的 Plan-Act-Verify harness 是否被 Codex / Claude Code / Cursor 用户实际拆用。
+- 验证 `Hy3` 的 tool call、长上下文和多轮约束继承是否有第三方实测。
+- 跟踪 `homerail` 的语音入口、DAG replay、Docker worker 和生成式 UI 是否能走向稳定本地 runtime。
+- 观察 `Browser-BC` 的浏览器 trace 脱敏、capability bucket 质量和 Claude
+  Desktop / Code skill 安装体验。
+- 跟踪 `OpenTag` 是否补齐 Slack OAuth、多实例存储、web admin UI 和更强 sandbox。
 
 ## 阻塞点
 
@@ -233,6 +245,17 @@
   - 新增 `projects/agent-chief/README.md`。
   - 新增 `daily/2026-07-10/ai-hotspots.md`。
   - 同步首页 `README.md`：补充七个项目，并更新最新日期与项目总数（`326`）。
+- 2026-07-11：
+  - 新增 `projects/video-production-skills/README.md`。
+  - 新增 `projects/guizang-material-illustration/README.md`。
+  - 新增 `projects/reverse-flow-skill/README.md`。
+  - 新增 `projects/loopkit/README.md`。
+  - 新增 `projects/Hy3/README.md`。
+  - 新增 `projects/homerail/README.md`。
+  - 新增 `projects/Browser-BC/README.md`。
+  - 新增 `projects/OpenTag/README.md`。
+  - 新增 `daily/2026-07-11/ai-hotspots.md`。
+  - 同步首页 `README.md`：补充八个项目，并更新最新日期与项目总数（`334`）。
 - 2026-07-08：
   - 新增 `projects/claude-antigravity-agents/README.md`。
   - 新增 `projects/system-prompts-and-models-of-ai-tools/README.md`。
