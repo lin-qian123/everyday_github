@@ -48,7 +48,7 @@
 
 如果你是第一次进入这个仓库，建议从这几个入口开始：
 
-- 最新日报：[`daily/2026-07-11/ai-hotspots.md`](./daily/2026-07-11/ai-hotspots.md)
+- 最新日报：[`daily/2026-07-12/ai-hotspots.md`](./daily/2026-07-12/ai-hotspots.md)
 - 项目总目录：[`projects/`](./projects/)
 - 自动化约束：[`AGENTS.md`](./AGENTS.md)
 - 开发续接记录：[`TODO.md`](./TODO.md)
@@ -94,6 +94,7 @@
 | `claude-antigravity-agents` | Claude Code skill，把长审查、研究和第二意见任务委派给 Google Antigravity CLI 子 agent。 | [GitHub](https://github.com/markfulton/claude-antigravity-agents) |
 | `oh-my-openagent` | 面向复杂代码库的低 token coding agent harness，围绕 Codex、OpenCode 等生态做上下文与编排优化。 | [GitHub](https://github.com/code-yeongyu/oh-my-openagent) |
 | `Codex-X` | Codex 桌面/CLI 的本地配置控制面，覆盖 Provider、Auth、TOML、会话、Skills 与 MCP 管理。 | [GitHub](https://github.com/yynxxxxx/Codex-X) |
+| `tau` | Hugging Face 组织下的极简终端 coding agent，也是可读的 agent harness 教学实现。 | [GitHub](https://github.com/huggingface/tau) |
 | `tabby` | 自托管、可本地部署的开源 AI 编码助手。 | [GitHub](https://github.com/TabbyML/tabby) |
 | `zed` | 高性能、多人协作的代码编辑器，体现 AI 时代开发入口向编辑器本体回流。 | [GitHub](https://github.com/zed-industries/zed) |
 | `orca` | 多 worktree 并行调度的 agent 开发环境，把多个 coding agent 收到同一工作台里。 | [GitHub](https://github.com/stablyai/orca) |
@@ -157,6 +158,8 @@
 | `loopkit` | 可落盘的 `.claude/` harness 与 49 个小 skill，用 Plan-Act-Verify、hooks 和 verifier subagent 约束 coding agent。 | [GitHub](https://github.com/Archive228/loopkit) |
 | `homerail` | 语音优先的本地 agent DAG runtime，用 CLI、Docker worker、scorecard 和 replay 管理可审计工作流。 | [GitHub](https://github.com/xiaotianfotos/homerail) |
 | `OpenTag` | Slack-first 团队 agent gateway，把 Codex、Claude Code、OpenCode 等 runtime 接进线程、审批、记忆和审计流。 | [GitHub](https://github.com/linxidnju/OpenTag) |
+| `eve` | Vercel 的 filesystem-first agent framework，用文件约定组织 instructions、tools、skills、channels 和 schedules。 | [GitHub](https://github.com/vercel/eve) |
+| `loopy` | AI-agent loop library 与可安装 skill，把重复工作写成带反馈、度量和停止条件的流程。 | [GitHub](https://github.com/Forward-Future/loopy) |
 
 ### 记忆层与个人 AI 基础设施
 
@@ -178,6 +181,8 @@
 | `nanobot` | 轻量个人 AI agent kernel，整合 WebUI、聊天渠道、MCP、记忆、自动化和模型路由。 | [GitHub](https://github.com/HKUDS/nanobot) |
 | `engram` | 面向 Claude Code / Codex 的本地学习记忆引擎，用 free recall、盲评和 FSRS 复习调度沉淀知识。 | [GitHub](https://github.com/nagisanzenin/engram) |
 | `agent-chief` | 本地优先的 agent 注意力路由层，过滤空报告、批处理事件、委派任务并验证完成结果。 | [GitHub](https://github.com/SmileLikeYe/agent-chief) |
+| `openwiki` | LangChain 的代码库 / 个人知识库 wiki CLI，把 agent 需要长期读取的上下文落盘并可由 CI 更新。 | [GitHub](https://github.com/langchain-ai/openwiki) |
+| `brain0` | AI 写代码的本地黑盒审计层，把 commit、prompt、读取上下文、风险评分和 provenance 连接成决策图。 | [GitHub](https://github.com/Brain0-ai/brain0) |
 
 ### RAG、检索与知识处理
 
@@ -256,6 +261,7 @@
 | `motion-anything` | Agentic motion layer，用自然语言生成和编辑页面动效、launch video，并导出 CSS、React、Lottie、MP4、GIF。 | [GitHub](https://github.com/nexu-io/motion-anything) |
 | `FableCut` | 浏览器非线性视频编辑器，把时间线暴露为 JSON、REST 和 MCP，方便 agent 直接剪辑。 | [GitHub](https://github.com/ronak-create/FableCut) |
 | `video-production-skills` | AI 视频制作 skill 集合，覆盖动效导演、参考视频复刻、暗色 SaaS 短片和片头包装。 | [GitHub](https://github.com/Pluviobyte/video-production-skills) |
+| `pixel2motion` | Codex / Claude logo 动效 skill，把 raster logo 转成 SVG、HTML motion demo、GIF / video 预览和 QA 证据。 | [GitHub](https://github.com/nolangz/pixel2motion) |
 
 ### 模型、训练与推理基础设施
 
@@ -281,6 +287,7 @@
 | `local-llm` | 本地运行高端 LLM 的硬件、GPU 互联、vLLM runner 和语音转文字实践记录。 | [GitHub](https://github.com/jamesob/local-llm) |
 | `Talos` | 将本机 Ollama / GPU 作为 Talos network worker，接收开放模型推理任务并回传在线与使用状态。 | [GitHub](https://github.com/jmerelnyc/Talos) |
 | `Hy3` | 腾讯混元 295B MoE / 21B active 开放权重模型，强调 256K 上下文、工具调用和 agentic 任务能力。 | [GitHub](https://github.com/Tencent-Hunyuan/Hy3) |
+| `coreai-models` | Apple 的 Core AI 模型导出、Python primitives、Swift runtime utilities 和 agent skills 仓库。 | [GitHub](https://github.com/apple/coreai-models) |
 
 ### 办公、商业与行业应用
 
@@ -302,11 +309,13 @@
 | `CSSwitch` | Claude Science 的第三方模型接入切换工具，用本地代理连接 DeepSeek、Qwen、GLM、Kimi 等端点。 | [GitHub](https://github.com/SuperJJ007/CSSwitch) |
 | `meetily` | 隐私优先的本地 AI 会议助手，覆盖实时转写、说话人分离、Ollama 摘要和自托管会议记录。 | [GitHub](https://github.com/Zackriya-Solutions/meetily) |
 | `Vibe-Research` | 个人 AI 投研看板，整合 A 股/美股/港股数据、资讯、持仓、研报和本地 AI 分析入口。 | [GitHub](https://github.com/simonlin1212/Vibe-Research) |
+| `dashiAI-ppt-skill` | 中文 AI PPT skill，生成可浏览器编辑的 HTML deck，并导出 PDF / 可编辑 PPTX。 | [GitHub](https://github.com/chuspeeism/dashiAI-ppt-skill) |
 
 ## 完整索引与每日热点
 
 - 全量项目目录：[`projects/`](./projects/)
 - 最近日报：
+  - [`2026-07-12`](./daily/2026-07-12/ai-hotspots.md)
   - [`2026-07-11`](./daily/2026-07-11/ai-hotspots.md)
   - [`2026-07-10`](./daily/2026-07-10/ai-hotspots.md)
   - [`2026-07-09`](./daily/2026-07-09/ai-hotspots.md)
@@ -323,16 +332,15 @@
   - [`2026-06-28`](./daily/2026-06-28/ai-hotspots.md)
   - [`2026-06-27`](./daily/2026-06-27/ai-hotspots.md)
   - [`2026-06-26`](./daily/2026-06-26/ai-hotspots.md)
-  - [`2026-06-25`](./daily/2026-06-25/ai-hotspots.md)
 
 如果你要找的是某个具体项目，而不是看分类，直接在 [`projects/`](./projects/) 中按名称查找会更快。
 
 ## 当前状态
 
 - 状态：持续日更中。
-- 最新更新：`2026-07-11`。
-- 当前项目总数：`334`。
-- 最近新增项目：`video-production-skills`、`guizang-material-illustration`、`reverse-flow-skill`、`loopkit`、`Hy3`、`homerail`、`Browser-BC`、`OpenTag`。
+- 最新更新：`2026-07-12`。
+- 当前项目总数：`342`。
+- 最近新增项目：`openwiki`、`eve`、`loopy`、`dashiAI-ppt-skill`、`pixel2motion`、`tau`、`coreai-models`、`brain0`。
 - 覆盖平台：GitHub、X、Instagram、YouTube。
 
 ## 维护约定

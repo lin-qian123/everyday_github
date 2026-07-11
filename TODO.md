@@ -215,6 +215,14 @@
 - 观察 `Browser-BC` 的浏览器 trace 脱敏、capability bucket 质量和 Claude
   Desktop / Code skill 安装体验。
 - 跟踪 `OpenTag` 是否补齐 Slack OAuth、多实例存储、web admin UI 和更强 sandbox。
+- 跟踪 `openwiki` 是否会和 LangGraph / LangSmith / CI 文档更新形成稳定闭环。
+- 观察 `eve` 是否补齐 deployment、queue、MCP、observability 与 Vercel 平台集成。
+- 跟踪 `loopy` 与 `loopkit`、`loop-engineering` 的分工，看 loop catalog 是否能成为团队 agent 流程库。
+- 观察 `dashiAI-ppt-skill`、`ppt-master`、`presenton` 是否继续向“可编辑交付物 + QA 检查”收敛。
+- 跟踪 `pixel2motion` 与 `motion-anything`、`FableCut`、`hyperframes` 在品牌动效 / 视频自动化中的边界。
+- 观察 `tau` 是否成为教学型 coding agent harness 的常用参考实现。
+- 跟踪 `coreai-models` 的 Core AI skills 与 Apple 端侧模型导出 recipe 是否持续扩展。
+- 验证 `brain0` 对 Codex / Claude Code transcript、DLP audit 和 AI 代码 provenance 的覆盖是否可靠。
 
 ## 阻塞点
 
@@ -256,6 +264,17 @@
   - 新增 `projects/OpenTag/README.md`。
   - 新增 `daily/2026-07-11/ai-hotspots.md`。
   - 同步首页 `README.md`：补充八个项目，并更新最新日期与项目总数（`334`）。
+- 2026-07-12：
+  - 新增 `projects/openwiki/README.md`。
+  - 新增 `projects/eve/README.md`。
+  - 新增 `projects/loopy/README.md`。
+  - 新增 `projects/dashiAI-ppt-skill/README.md`。
+  - 新增 `projects/pixel2motion/README.md`。
+  - 新增 `projects/tau/README.md`。
+  - 新增 `projects/coreai-models/README.md`。
+  - 新增 `projects/brain0/README.md`。
+  - 新增 `daily/2026-07-12/ai-hotspots.md`。
+  - 同步首页 `README.md`：补充八个项目，并更新最新日期与项目总数（`342`）。
 - 2026-07-08：
   - 新增 `projects/claude-antigravity-agents/README.md`。
   - 新增 `projects/system-prompts-and-models-of-ai-tools/README.md`。
