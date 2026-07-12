@@ -223,6 +223,11 @@
 - 观察 `tau` 是否成为教学型 coding agent harness 的常用参考实现。
 - 跟踪 `coreai-models` 的 Core AI skills 与 Apple 端侧模型导出 recipe 是否持续扩展。
 - 验证 `brain0` 对 Codex / Claude Code transcript、DLP audit 和 AI 代码 provenance 的覆盖是否可靠。
+- 观察 `exxperts` 的 approval-gated memory 是否能在真实长期项目里保持可审计。
+- 跟踪 `ditto` 的日志脱敏、profile 分层和跨工具适配是否稳定。
+- 比较 `contextvc` 与手写 `AGENTS.md` / `CLAUDE.md` / Cursor rules 的同步成本。
+- 观察 `watch-skill` 是否能成为 agent UI 验收、视频证据和录屏复盘的通用层。
+- 跟踪 `codex-hygiene` 是否随 Codex Desktop 本地数据库和插件结构变化持续维护。
 
 ## 阻塞点
 
@@ -275,6 +280,17 @@
   - 新增 `projects/brain0/README.md`。
   - 新增 `daily/2026-07-12/ai-hotspots.md`。
   - 同步首页 `README.md`：补充八个项目，并更新最新日期与项目总数（`342`）。
+- 2026-07-13：
+  - 新增 `projects/lapian-notes/README.md`。
+  - 新增 `projects/exxperts/README.md`。
+  - 新增 `projects/ditto/README.md`。
+  - 新增 `projects/fable-method/README.md`。
+  - 新增 `projects/Cognitive-Core-Skills/README.md`。
+  - 新增 `projects/watch-skill/README.md`。
+  - 新增 `projects/contextvc/README.md`。
+  - 新增 `projects/codex-hygiene/README.md`。
+  - 新增 `daily/2026-07-13/ai-hotspots.md`。
+  - 同步首页 `README.md`：补充八个项目，并更新最新日期与项目总数（`350`）。
 - 2026-07-08：
   - 新增 `projects/claude-antigravity-agents/README.md`。
   - 新增 `projects/system-prompts-and-models-of-ai-tools/README.md`。

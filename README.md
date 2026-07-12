@@ -48,7 +48,7 @@
 
 如果你是第一次进入这个仓库，建议从这几个入口开始：
 
-- 最新日报：[`daily/2026-07-12/ai-hotspots.md`](./daily/2026-07-12/ai-hotspots.md)
+- 最新日报：[`daily/2026-07-13/ai-hotspots.md`](./daily/2026-07-13/ai-hotspots.md)
 - 项目总目录：[`projects/`](./projects/)
 - 自动化约束：[`AGENTS.md`](./AGENTS.md)
 - 开发续接记录：[`TODO.md`](./TODO.md)
@@ -95,6 +95,7 @@
 | `oh-my-openagent` | 面向复杂代码库的低 token coding agent harness，围绕 Codex、OpenCode 等生态做上下文与编排优化。 | [GitHub](https://github.com/code-yeongyu/oh-my-openagent) |
 | `Codex-X` | Codex 桌面/CLI 的本地配置控制面，覆盖 Provider、Auth、TOML、会话、Skills 与 MCP 管理。 | [GitHub](https://github.com/yynxxxxx/Codex-X) |
 | `tau` | Hugging Face 组织下的极简终端 coding agent，也是可读的 agent harness 教学实现。 | [GitHub](https://github.com/huggingface/tau) |
+| `codex-hygiene` | 面向 Codex Desktop 的上下文、工具表面、MCP / app / skill 可用性和长线程 replay 诊断 skill。 | [GitHub](https://github.com/sunflower-of-parchman/codex-hygiene) |
 | `tabby` | 自托管、可本地部署的开源 AI 编码助手。 | [GitHub](https://github.com/TabbyML/tabby) |
 | `zed` | 高性能、多人协作的代码编辑器，体现 AI 时代开发入口向编辑器本体回流。 | [GitHub](https://github.com/zed-industries/zed) |
 | `orca` | 多 worktree 并行调度的 agent 开发环境，把多个 coding agent 收到同一工作台里。 | [GitHub](https://github.com/stablyai/orca) |
@@ -160,6 +161,9 @@
 | `OpenTag` | Slack-first 团队 agent gateway，把 Codex、Claude Code、OpenCode 等 runtime 接进线程、审批、记忆和审计流。 | [GitHub](https://github.com/linxidnju/OpenTag) |
 | `eve` | Vercel 的 filesystem-first agent framework，用文件约定组织 instructions、tools、skills、channels 和 schedules。 | [GitHub](https://github.com/vercel/eve) |
 | `loopy` | AI-agent loop library 与可安装 skill，把重复工作写成带反馈、度量和停止条件的流程。 | [GitHub](https://github.com/Forward-Future/loopy) |
+| `fable-method` | 把 think / act / prove 写成可安装 skills 与 judge eval 的 agent 工作流方法论。 | [GitHub](https://github.com/Sahir619/fable-method) |
+| `Cognitive-Core-Skills` | 面向 LLM / SLM / agents / world models 的认知能力 taxonomy、schema 和 159 张 skill cards。 | [GitHub](https://github.com/eli-labz/Cognitive-Core-Skills) |
+| `contextvc` | Git-native agent 上下文控制面，用 `.context/` 渲染 AGENTS、CLAUDE、Cursor、Copilot、Gemini 等规则文件。 | [GitHub](https://github.com/HaochengLu/contextvc) |
 
 ### 记忆层与个人 AI 基础设施
 
@@ -183,6 +187,8 @@
 | `agent-chief` | 本地优先的 agent 注意力路由层，过滤空报告、批处理事件、委派任务并验证完成结果。 | [GitHub](https://github.com/SmileLikeYe/agent-chief) |
 | `openwiki` | LangChain 的代码库 / 个人知识库 wiki CLI，把 agent 需要长期读取的上下文落盘并可由 CI 更新。 | [GitHub](https://github.com/langchain-ai/openwiki) |
 | `brain0` | AI 写代码的本地黑盒审计层，把 commit、prompt、读取上下文、风险评分和 provenance 连接成决策图。 | [GitHub](https://github.com/Brain0-ai/brain0) |
+| `exxperts` | 本地优先的 AI rooms 与审批式长期记忆工作台，把 room、memory、KB 和 artifacts 保存在本机。 | [GitHub](https://github.com/EXXETA/exxperts) |
+| `ditto` | 从 Claude Code、Codex、Copilot CLI 本地日志中挖掘个人工作画像，生成 agent 可读 profile。 | [GitHub](https://github.com/ohad6k/ditto) |
 
 ### RAG、检索与知识处理
 
@@ -262,6 +268,8 @@
 | `FableCut` | 浏览器非线性视频编辑器，把时间线暴露为 JSON、REST 和 MCP，方便 agent 直接剪辑。 | [GitHub](https://github.com/ronak-create/FableCut) |
 | `video-production-skills` | AI 视频制作 skill 集合，覆盖动效导演、参考视频复刻、暗色 SaaS 短片和片头包装。 | [GitHub](https://github.com/Pluviobyte/video-production-skills) |
 | `pixel2motion` | Codex / Claude logo 动效 skill，把 raster logo 转成 SVG、HTML motion demo、GIF / video 预览和 QA 证据。 | [GitHub](https://github.com/nolangz/pixel2motion) |
+| `lapian-notes` | 本地拉片笔记工具，把影片抽帧、字幕、AI 分析包、剧情泳道和结构树接成可编辑影视研究工作流。 | [GitHub](https://github.com/bkingfilm/lapian-notes) |
+| `watch-skill` | 本地优先的视频理解与自验证层，让 agent 读取视频、录屏、会议并引用时间戳证据。 | [GitHub](https://github.com/oxbshw/watch-skill) |
 
 ### 模型、训练与推理基础设施
 
@@ -315,6 +323,7 @@
 
 - 全量项目目录：[`projects/`](./projects/)
 - 最近日报：
+  - [`2026-07-13`](./daily/2026-07-13/ai-hotspots.md)
   - [`2026-07-12`](./daily/2026-07-12/ai-hotspots.md)
   - [`2026-07-11`](./daily/2026-07-11/ai-hotspots.md)
   - [`2026-07-10`](./daily/2026-07-10/ai-hotspots.md)
@@ -338,9 +347,9 @@
 ## 当前状态
 
 - 状态：持续日更中。
-- 最新更新：`2026-07-12`。
-- 当前项目总数：`342`。
-- 最近新增项目：`openwiki`、`eve`、`loopy`、`dashiAI-ppt-skill`、`pixel2motion`、`tau`、`coreai-models`、`brain0`。
+- 最新更新：`2026-07-13`。
+- 当前项目总数：`350`。
+- 最近新增项目：`lapian-notes`、`exxperts`、`ditto`、`fable-method`、`Cognitive-Core-Skills`、`watch-skill`、`contextvc`、`codex-hygiene`。
 - 覆盖平台：GitHub、X、Instagram、YouTube。
 
 ## 维护约定
