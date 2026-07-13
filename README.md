@@ -48,7 +48,7 @@
 
 如果你是第一次进入这个仓库，建议从这几个入口开始：
 
-- 最新日报：[`daily/2026-07-13/ai-hotspots.md`](./daily/2026-07-13/ai-hotspots.md)
+- 最新日报：[`daily/2026-07-14/ai-hotspots.md`](./daily/2026-07-14/ai-hotspots.md)
 - 项目总目录：[`projects/`](./projects/)
 - 自动化约束：[`AGENTS.md`](./AGENTS.md)
 - 开发续接记录：[`TODO.md`](./TODO.md)
@@ -155,6 +155,7 @@
 | `open-connector` | 面向 AI agents 的开源连接器网关，用 SDK、CLI、MCP、HTTP 和 OpenAPI 统一 SaaS action 与凭据边界。 | [GitHub](https://github.com/oomol-lab/open-connector) |
 | `sim-use` | 让 AI agent 观察并操作 iOS Simulator 与 Android emulator/device 的移动端验证 CLI。 | [GitHub](https://github.com/lycorp-jp/sim-use) |
 | `mcpsnoop` | MCP 透明代理调试器，捕获真实客户端与 server 之间的 JSON-RPC 工具调用流。 | [GitHub](https://github.com/kerlenton/mcpsnoop) |
+| `awesome-mcp-servers` | MCP server 目录入口，收集本地、云端、数据库、浏览器、API 等工具接入能力。 | [GitHub](https://github.com/punkpeye/awesome-mcp-servers) |
 | `reverse-flow-skill` | 面向 Codex / AI Agent 的本地 CTF 逆向工程流程 skill，覆盖样本分诊、静态分析、深度逆向和报告输出。 | [GitHub](https://github.com/lingbol088-spec/reverse-flow-skill) |
 | `loopkit` | 可落盘的 `.claude/` harness 与 49 个小 skill，用 Plan-Act-Verify、hooks 和 verifier subagent 约束 coding agent。 | [GitHub](https://github.com/Archive228/loopkit) |
 | `homerail` | 语音优先的本地 agent DAG runtime，用 CLI、Docker worker、scorecard 和 replay 管理可审计工作流。 | [GitHub](https://github.com/xiaotianfotos/homerail) |
@@ -164,6 +165,10 @@
 | `fable-method` | 把 think / act / prove 写成可安装 skills 与 judge eval 的 agent 工作流方法论。 | [GitHub](https://github.com/Sahir619/fable-method) |
 | `Cognitive-Core-Skills` | 面向 LLM / SLM / agents / world models 的认知能力 taxonomy、schema 和 159 张 skill cards。 | [GitHub](https://github.com/eli-labz/Cognitive-Core-Skills) |
 | `contextvc` | Git-native agent 上下文控制面，用 `.context/` 渲染 AGENTS、CLAUDE、Cursor、Copilot、Gemini 等规则文件。 | [GitHub](https://github.com/HaochengLu/contextvc) |
+| `lobehub` | 多 agent control plane，把 agent 创建、调度、协作、汇报和 7x24 运行组织到同一工作台。 | [GitHub](https://github.com/lobehub/lobehub) |
+| `daytona` | 面向 AI-generated code 的安全弹性 sandbox / runtime 基础设施，公开仓库已声明停止维护。 | [GitHub](https://github.com/daytonaio/daytona) |
+| `CowAgent` | 多渠道个人 AI agent harness，整合任务规划、记忆、知识库、skills、MCP 和多模型接入。 | [GitHub](https://github.com/zhayujie/CowAgent) |
+| `learn-harness-engineering` | Harness engineering 项目式课程，覆盖环境、状态、验证、控制机制与 loop engineering。 | [GitHub](https://github.com/walkinglabs/learn-harness-engineering) |
 
 ### 记忆层与个人 AI 基础设施
 
@@ -241,6 +246,7 @@
 | `gzh-design-skill` | 面向 AI agent 的微信公众号排版 skill，把 Markdown 转为可粘贴的内联 HTML 并提供主题与校验脚本。 | [GitHub](https://github.com/isjiamu/gzh-design-skill) |
 | `guizang-material-illustration` | 面向中文内容生产的材质插画 skill，把文章、图表、教学材料和工作汇报转成带中文标签的解释图。 | [GitHub](https://github.com/op7418/guizang-material-illustration) |
 | `Browser-BC` | 本地记录浏览器任务轨迹，并按站点 capability bucket 蒸馏成 Claude / Codex 可复用 skill。 | [GitHub](https://github.com/Einsia/Browser-BC) |
+| `browser-harness` | Browser Use 的真实浏览器 CDP harness，让 agent 在运行中沉淀 helper 与 domain skill。 | [GitHub](https://github.com/browser-use/browser-harness) |
 
 ### 语音、视频与多模态
 
@@ -323,6 +329,7 @@
 
 - 全量项目目录：[`projects/`](./projects/)
 - 最近日报：
+  - [`2026-07-14`](./daily/2026-07-14/ai-hotspots.md)
   - [`2026-07-13`](./daily/2026-07-13/ai-hotspots.md)
   - [`2026-07-12`](./daily/2026-07-12/ai-hotspots.md)
   - [`2026-07-11`](./daily/2026-07-11/ai-hotspots.md)
@@ -340,16 +347,15 @@
   - [`2026-06-29`](./daily/2026-06-29/ai-hotspots.md)
   - [`2026-06-28`](./daily/2026-06-28/ai-hotspots.md)
   - [`2026-06-27`](./daily/2026-06-27/ai-hotspots.md)
-  - [`2026-06-26`](./daily/2026-06-26/ai-hotspots.md)
 
 如果你要找的是某个具体项目，而不是看分类，直接在 [`projects/`](./projects/) 中按名称查找会更快。
 
 ## 当前状态
 
 - 状态：持续日更中。
-- 最新更新：`2026-07-13`。
-- 当前项目总数：`350`。
-- 最近新增项目：`lapian-notes`、`exxperts`、`ditto`、`fable-method`、`Cognitive-Core-Skills`、`watch-skill`、`contextvc`、`codex-hygiene`。
+- 最新更新：`2026-07-14`。
+- 当前项目总数：`356`。
+- 最近新增项目：`awesome-mcp-servers`、`lobehub`、`daytona`、`CowAgent`、`browser-harness`、`learn-harness-engineering`。
 - 覆盖平台：GitHub、X、Instagram、YouTube。
 
 ## 维护约定

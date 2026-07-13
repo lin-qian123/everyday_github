@@ -228,6 +228,12 @@
 - 比较 `contextvc` 与手写 `AGENTS.md` / `CLAUDE.md` / Cursor rules 的同步成本。
 - 观察 `watch-skill` 是否能成为 agent UI 验收、视频证据和录屏复盘的通用层。
 - 跟踪 `codex-hygiene` 是否随 Codex Desktop 本地数据库和插件结构变化持续维护。
+- 跟踪 `awesome-mcp-servers` 是否引入更明确的 MCP server 质量分级、安全标注和维护状态字段。
+- 观察 `lobehub` 是否能把多 agent 调度、任务验收、权限控制和审计日志做成稳定 control plane。
+- 跟踪 `daytona` 开源仓库停更后，agent sandbox 选型是否转向 `E2B`、`OpenSandbox`、`tupper` 等替代项目。
+- 观察 `CowAgent` 的 Skill Hub、长期记忆和多渠道入口是否形成中文个人 agent 生态。
+- 跟踪 `browser-harness` 的 domain skill 机制是否会带来可复用浏览器操作资产，以及 Cookie / 登录态隔离规范。
+- 继续观察 `learn-harness-engineering` 是否被团队用作 coding agent 工作流培训和模板来源。
 
 ## 阻塞点
 
@@ -291,6 +297,15 @@
   - 新增 `projects/codex-hygiene/README.md`。
   - 新增 `daily/2026-07-13/ai-hotspots.md`。
   - 同步首页 `README.md`：补充八个项目，并更新最新日期与项目总数（`350`）。
+- 2026-07-14：
+  - 新增 `projects/awesome-mcp-servers/README.md`。
+  - 新增 `projects/lobehub/README.md`。
+  - 新增 `projects/daytona/README.md`。
+  - 新增 `projects/CowAgent/README.md`。
+  - 新增 `projects/browser-harness/README.md`。
+  - 新增 `projects/learn-harness-engineering/README.md`。
+  - 新增 `daily/2026-07-14/ai-hotspots.md`。
+  - 同步首页 `README.md`：补充六个项目，并更新最新日期与项目总数（`356`）。
 - 2026-07-08：
   - 新增 `projects/claude-antigravity-agents/README.md`。
   - 新增 `projects/system-prompts-and-models-of-ai-tools/README.md`。
