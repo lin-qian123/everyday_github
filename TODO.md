@@ -218,6 +218,11 @@
 - 跟踪 `openwiki` 是否会和 LangGraph / LangSmith / CI 文档更新形成稳定闭环。
 - 观察 `eve` 是否补齐 deployment、queue、MCP、observability 与 Vercel 平台集成。
 - 跟踪 `loopy` 与 `loopkit`、`loop-engineering` 的分工，看 loop catalog 是否能成为团队 agent 流程库。
+- 跟踪 `semantic-kernel` 到 `microsoft/agent-framework` 的迁移节奏，避免后续新项目押在旧 API 上。
+- 比较 `Langflow`、`Flowise`、`Dify`、`Mastra`、`LangGraph` 在 agent workflow 生产化中的定位差异。
+- 跟踪 `Composio` 与 `open-connector` 在 OAuth、MCP、OpenAPI 和 SDK adapter 上的边界。
+- 观察 `Graphiti` 的 MCP server 是否会被 Claude、Cursor、Codex 等真实工作流采用。
+- 对 `awesome-copilot` 的 third-party skills、hooks 和 plugins 做供应链风险观察。
 - 观察 `dashiAI-ppt-skill`、`ppt-master`、`presenton` 是否继续向“可编辑交付物 + QA 检查”收敛。
 - 跟踪 `pixel2motion` 与 `motion-anything`、`FableCut`、`hyperframes` 在品牌动效 / 视频自动化中的边界。
 - 观察 `tau` 是否成为教学型 coding agent harness 的常用参考实现。
@@ -306,6 +311,17 @@
   - 新增 `projects/learn-harness-engineering/README.md`。
   - 新增 `daily/2026-07-14/ai-hotspots.md`。
   - 同步首页 `README.md`：补充六个项目，并更新最新日期与项目总数（`356`）。
+- 2026-07-15：
+  - 新增 `projects/langflow/README.md`。
+  - 新增 `projects/semantic-kernel/README.md`。
+  - 新增 `projects/awesome-llm-apps/README.md`。
+  - 新增 `projects/composio/README.md`。
+  - 新增 `projects/graphiti/README.md`。
+  - 新增 `projects/fastmcp/README.md`。
+  - 新增 `projects/mastra/README.md`。
+  - 新增 `projects/awesome-copilot/README.md`。
+  - 新增 `daily/2026-07-15/ai-hotspots.md`。
+  - 同步首页 `README.md`：补充八个项目，并更新最新日期与项目总数（`364`）。
 - 2026-07-08：
   - 新增 `projects/claude-antigravity-agents/README.md`。
   - 新增 `projects/system-prompts-and-models-of-ai-tools/README.md`。

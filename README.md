@@ -48,7 +48,7 @@
 
 如果你是第一次进入这个仓库，建议从这几个入口开始：
 
-- 最新日报：[`daily/2026-07-14/ai-hotspots.md`](./daily/2026-07-14/ai-hotspots.md)
+- 最新日报：[`daily/2026-07-15/ai-hotspots.md`](./daily/2026-07-15/ai-hotspots.md)
 - 项目总目录：[`projects/`](./projects/)
 - 自动化约束：[`AGENTS.md`](./AGENTS.md)
 - 开发续接记录：[`TODO.md`](./TODO.md)
@@ -169,6 +169,13 @@
 | `daytona` | 面向 AI-generated code 的安全弹性 sandbox / runtime 基础设施，公开仓库已声明停止维护。 | [GitHub](https://github.com/daytonaio/daytona) |
 | `CowAgent` | 多渠道个人 AI agent harness，整合任务规划、记忆、知识库、skills、MCP 和多模型接入。 | [GitHub](https://github.com/zhayujie/CowAgent) |
 | `learn-harness-engineering` | Harness engineering 项目式课程，覆盖环境、状态、验证、控制机制与 loop engineering。 | [GitHub](https://github.com/walkinglabs/learn-harness-engineering) |
+| `langflow` | 可视化 agent/workflow builder，可把流程部署为 API 或 MCP server。 | [GitHub](https://github.com/langflow-ai/langflow) |
+| `semantic-kernel` | Microsoft 的模型无关 agent SDK，正向 Microsoft Agent Framework 迁移。 | [GitHub](https://github.com/microsoft/semantic-kernel) |
+| `awesome-llm-apps` | 可运行的 AI agents、agent skills 与 RAG 应用模板集合。 | [GitHub](https://github.com/Shubhamsaboo/awesome-llm-apps) |
+| `composio` | 面向 AI agents 的工具接入、认证、per-user session 与 sandbox 网关。 | [GitHub](https://github.com/ComposioHQ/composio) |
+| `fastmcp` | 用 Python 快速构建 MCP servers 和 clients 的框架。 | [GitHub](https://github.com/PrefectHQ/fastmcp) |
+| `mastra` | 面向 TypeScript 的 agent 应用框架，覆盖 workflows、memory、MCP、evals 与 observability。 | [GitHub](https://github.com/mastra-ai/mastra) |
+| `awesome-copilot` | GitHub Copilot 的 agents、instructions、skills、hooks、plugins 与 workflows 资源目录。 | [GitHub](https://github.com/github/awesome-copilot) |
 
 ### 记忆层与个人 AI 基础设施
 
@@ -218,6 +225,7 @@
 | `MinerU` | 面向 LLM / agent 的复杂文档解析基础设施，强调把 PDF / Office 资料转成结构化 Markdown / JSON。 | [GitHub](https://github.com/opendatalab/MinerU) |
 | `codeseek` | Rust 代码智能 CLI，为 coding agent 提供调用图、混合语义搜索和 MCP 工具。 | [GitHub](https://github.com/CodeBendKit/codeseek) |
 | `ky-markdown-rebuilder` | Codex / Claude Code 文档重建 skill，把视觉复杂 PDF、PPT、长截图整理成按页对齐 Markdown。 | [GitHub](https://github.com/KyrieCheungYep/ky-markdown-rebuilder) |
+| `graphiti` | Zep 的 temporal context graph 引擎，为 agents 提供可追踪、可随时间变化的图谱记忆。 | [GitHub](https://github.com/getzep/graphiti) |
 
 ### 前端、UI 与 Agent 交互层
 
@@ -329,6 +337,7 @@
 
 - 全量项目目录：[`projects/`](./projects/)
 - 最近日报：
+  - [`2026-07-15`](./daily/2026-07-15/ai-hotspots.md)
   - [`2026-07-14`](./daily/2026-07-14/ai-hotspots.md)
   - [`2026-07-13`](./daily/2026-07-13/ai-hotspots.md)
   - [`2026-07-12`](./daily/2026-07-12/ai-hotspots.md)
@@ -353,9 +362,9 @@
 ## 当前状态
 
 - 状态：持续日更中。
-- 最新更新：`2026-07-14`。
-- 当前项目总数：`356`。
-- 最近新增项目：`awesome-mcp-servers`、`lobehub`、`daytona`、`CowAgent`、`browser-harness`、`learn-harness-engineering`。
+- 最新更新：`2026-07-15`。
+- 当前项目总数：`364`。
+- 最近新增项目：`langflow`、`semantic-kernel`、`awesome-llm-apps`、`composio`、`graphiti`、`fastmcp`、`mastra`、`awesome-copilot`。
 - 覆盖平台：GitHub、X、Instagram、YouTube。
 
 ## 维护约定
