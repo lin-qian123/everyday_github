@@ -48,7 +48,7 @@
 
 如果你是第一次进入这个仓库，建议从这几个入口开始：
 
-- 最新日报：[`daily/2026-07-15/ai-hotspots.md`](./daily/2026-07-15/ai-hotspots.md)
+- 最新日报：[`daily/2026-07-16/ai-hotspots.md`](./daily/2026-07-16/ai-hotspots.md)
 - 项目总目录：[`projects/`](./projects/)
 - 自动化约束：[`AGENTS.md`](./AGENTS.md)
 - 开发续接记录：[`TODO.md`](./TODO.md)
@@ -99,6 +99,7 @@
 | `tabby` | 自托管、可本地部署的开源 AI 编码助手。 | [GitHub](https://github.com/TabbyML/tabby) |
 | `zed` | 高性能、多人协作的代码编辑器，体现 AI 时代开发入口向编辑器本体回流。 | [GitHub](https://github.com/zed-industries/zed) |
 | `orca` | 多 worktree 并行调度的 agent 开发环境，把多个 coding agent 收到同一工作台里。 | [GitHub](https://github.com/stablyai/orca) |
+| `tura` | 本地开源 coding agent，强调用更少 turn / token 完成长时程工程任务并保留 benchmark 证据。 | [GitHub](https://github.com/Tura-AI/tura) |
 
 ### Agent 框架与技能生态
 
@@ -176,6 +177,9 @@
 | `fastmcp` | 用 Python 快速构建 MCP servers 和 clients 的框架。 | [GitHub](https://github.com/PrefectHQ/fastmcp) |
 | `mastra` | 面向 TypeScript 的 agent 应用框架，覆盖 workflows、memory、MCP、evals 与 observability。 | [GitHub](https://github.com/mastra-ai/mastra) |
 | `awesome-copilot` | GitHub Copilot 的 agents、instructions、skills、hooks、plugins 与 workflows 资源目录。 | [GitHub](https://github.com/github/awesome-copilot) |
+| `fable5-mode` | Claude Code skill 与 guard hooks，用 plan gate、验收命令和自检约束 coding agent 工作纪律。 | [GitHub](https://github.com/cozytab/fable5-mode) |
+| `bridgebench` | 面向 vibe coding 模型的可复核 arena benchmark，用盲评、journal 和 Elo 记录工程任务表现。 | [GitHub](https://github.com/bridge-mind/bridgebench) |
+| `Flawless` | AI-native SRE control plane，把告警、证据、审批、修复预演和恢复验证接成 AgenticOps 闭环。 | [GitHub](https://github.com/William-Lu-stack/Flawless) |
 
 ### 记忆层与个人 AI 基础设施
 
@@ -201,6 +205,7 @@
 | `brain0` | AI 写代码的本地黑盒审计层，把 commit、prompt、读取上下文、风险评分和 provenance 连接成决策图。 | [GitHub](https://github.com/Brain0-ai/brain0) |
 | `exxperts` | 本地优先的 AI rooms 与审批式长期记忆工作台，把 room、memory、KB 和 artifacts 保存在本机。 | [GitHub](https://github.com/EXXETA/exxperts) |
 | `ditto` | 从 Claude Code、Codex、Copilot CLI 本地日志中挖掘个人工作画像，生成 agent 可读 profile。 | [GitHub](https://github.com/ohad6k/ditto) |
+| `oh-my-ai-company` | 持续更新的 AI 公司对象图谱和研究库，把公司、产品、投资人、流量信号和证据来源结构化。 | [GitHub](https://github.com/yan5xu/oh-my-ai-company) |
 
 ### RAG、检索与知识处理
 
@@ -284,6 +289,7 @@
 | `pixel2motion` | Codex / Claude logo 动效 skill，把 raster logo 转成 SVG、HTML motion demo、GIF / video 预览和 QA 证据。 | [GitHub](https://github.com/nolangz/pixel2motion) |
 | `lapian-notes` | 本地拉片笔记工具，把影片抽帧、字幕、AI 分析包、剧情泳道和结构树接成可编辑影视研究工作流。 | [GitHub](https://github.com/bkingfilm/lapian-notes) |
 | `watch-skill` | 本地优先的视频理解与自验证层，让 agent 读取视频、录屏、会议并引用时间戳证据。 | [GitHub](https://github.com/oxbshw/watch-skill) |
+| `generative-media-skills` | 生成媒体 agent skill 套件，覆盖图像、视频、音频、3D、avatar、权利和交付 QA。 | [GitHub](https://github.com/calesthio/generative-media-skills) |
 
 ### 模型、训练与推理基础设施
 
@@ -310,6 +316,7 @@
 | `Talos` | 将本机 Ollama / GPU 作为 Talos network worker，接收开放模型推理任务并回传在线与使用状态。 | [GitHub](https://github.com/jmerelnyc/Talos) |
 | `Hy3` | 腾讯混元 295B MoE / 21B active 开放权重模型，强调 256K 上下文、工具调用和 agentic 任务能力。 | [GitHub](https://github.com/Tencent-Hunyuan/Hy3) |
 | `coreai-models` | Apple 的 Core AI 模型导出、Python primitives、Swift runtime utilities 和 agent skills 仓库。 | [GitHub](https://github.com/apple/coreai-models) |
+| `auto` | 记录并编译 LLM agent 重复行为为受能力约束的 WASM fast path，探索 agent 成本和安全边界。 | [GitHub](https://github.com/RightNow-AI/auto) |
 
 ### 办公、商业与行业应用
 
@@ -328,15 +335,18 @@
 | `worldmonitor` | 面向全球情报与基础设施监测的 AI 工作台，强调多源新闻聚合与态势感知。 | [GitHub](https://github.com/koala73/worldmonitor) |
 | `ai-berkshire` | 把价值投资研究拆成技能与多 Agent 流程的领域化投研框架。 | [GitHub](https://github.com/xbtlin/ai-berkshire) |
 | `open-science` | 面向科研发现的开源 AI 工作台愿景项目，强调模型无关、本地可部署和可审计 provenance。 | [GitHub](https://github.com/aipoch/open-science) |
+| `openscience` | Synthetic Sciences 的开源科研 AI workbench，把文献、代码、实验、科学数据库和报告写作接入同一浏览器工作区。 | [GitHub](https://github.com/synthetic-sciences/openscience) |
 | `CSSwitch` | Claude Science 的第三方模型接入切换工具，用本地代理连接 DeepSeek、Qwen、GLM、Kimi 等端点。 | [GitHub](https://github.com/SuperJJ007/CSSwitch) |
 | `meetily` | 隐私优先的本地 AI 会议助手，覆盖实时转写、说话人分离、Ollama 摘要和自托管会议记录。 | [GitHub](https://github.com/Zackriya-Solutions/meetily) |
 | `Vibe-Research` | 个人 AI 投研看板，整合 A 股/美股/港股数据、资讯、持仓、研报和本地 AI 分析入口。 | [GitHub](https://github.com/simonlin1212/Vibe-Research) |
 | `dashiAI-ppt-skill` | 中文 AI PPT skill，生成可浏览器编辑的 HTML deck，并导出 PDF / 可编辑 PPTX。 | [GitHub](https://github.com/chuspeeism/dashiAI-ppt-skill) |
+| `GemType` | 开源 BYOK AI 写作助手和 Grammarly 替代品，覆盖浏览器扩展与 Word add-in。 | [GitHub](https://github.com/riponcm/GemType) |
 
 ## 完整索引与每日热点
 
 - 全量项目目录：[`projects/`](./projects/)
 - 最近日报：
+  - [`2026-07-16`](./daily/2026-07-16/ai-hotspots.md)
   - [`2026-07-15`](./daily/2026-07-15/ai-hotspots.md)
   - [`2026-07-14`](./daily/2026-07-14/ai-hotspots.md)
   - [`2026-07-13`](./daily/2026-07-13/ai-hotspots.md)
@@ -362,9 +372,9 @@
 ## 当前状态
 
 - 状态：持续日更中。
-- 最新更新：`2026-07-15`。
-- 当前项目总数：`364`。
-- 最近新增项目：`langflow`、`semantic-kernel`、`awesome-llm-apps`、`composio`、`graphiti`、`fastmcp`、`mastra`、`awesome-copilot`。
+- 最新更新：`2026-07-16`。
+- 当前项目总数：`373`。
+- 最近新增项目：`openscience`、`Flawless`、`fable5-mode`、`auto`、`GemType`、`oh-my-ai-company`、`generative-media-skills`、`bridgebench`、`tura`。
 - 覆盖平台：GitHub、X、Instagram、YouTube。
 
 ## 维护约定

@@ -322,6 +322,18 @@
   - 新增 `projects/awesome-copilot/README.md`。
   - 新增 `daily/2026-07-15/ai-hotspots.md`。
   - 同步首页 `README.md`：补充八个项目，并更新最新日期与项目总数（`364`）。
+- 2026-07-16：
+  - 新增 `projects/openscience/README.md`。
+  - 新增 `projects/Flawless/README.md`。
+  - 新增 `projects/fable5-mode/README.md`。
+  - 新增 `projects/auto/README.md`。
+  - 新增 `projects/GemType/README.md`。
+  - 新增 `projects/oh-my-ai-company/README.md`。
+  - 新增 `projects/generative-media-skills/README.md`。
+  - 新增 `projects/bridgebench/README.md`。
+  - 新增 `projects/tura/README.md`。
+  - 新增 `daily/2026-07-16/ai-hotspots.md`。
+  - 同步首页 `README.md`：补充九个项目，并更新最新日期与项目总数（`373`）。
 - 2026-07-08：
   - 新增 `projects/claude-antigravity-agents/README.md`。
   - 新增 `projects/system-prompts-and-models-of-ai-tools/README.md`。
