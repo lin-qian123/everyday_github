@@ -10,6 +10,17 @@
 
 ## 阶段性开发记录
 
+- 2026-07-17：
+  - 新增 `projects/grok-build/README.md`。
+  - 新增 `projects/mindwalk/README.md`。
+  - 新增 `projects/clawk/README.md`。
+  - 新增 `projects/deja-vu/README.md`。
+  - 新增 `projects/personal-model/README.md`。
+  - 新增 `projects/pilotfish/README.md`。
+  - 新增 `projects/moore-wechat-article-downloader/README.md`。
+  - 新增 `projects/coder_eval/README.md`。
+  - 新增 `daily/2026-07-17/ai-hotspots.md`。
+  - 同步首页 `README.md`：补充今日项目到对应分类，并更新最新日期与项目总数（`381`）。
 - 2026-05-13：
   - 新增 `projects/hello-agents/README.md`。
   - 新增 `projects/easy-vibe/README.md`。
@@ -218,6 +229,12 @@
 - 跟踪 `openwiki` 是否会和 LangGraph / LangSmith / CI 文档更新形成稳定闭环。
 - 观察 `eve` 是否补齐 deployment、queue、MCP、observability 与 Vercel 平台集成。
 - 跟踪 `loopy` 与 `loopkit`、`loop-engineering` 的分工，看 loop catalog 是否能成为团队 agent 流程库。
+- 复测 `grok-build` 与 Codex、Claude Code、opencode 在同一任务集上的执行质量、权限边界和成本。
+- 观察 `clawk` 是否补齐更成熟的 network policy、secret boundary、VM 后端和跨平台稳定性。
+- 跟踪 `mindwalk` 是否能导出审查报告或 CI artifact，成为 agent session review 的常规工具。
+- 比较 `deja-vu`、`paxm`、`personal-model` 三类记忆层：session log 搜索、项目决策记忆、个人模型上下文。
+- 观察 `pilotfish` 的模型别名、Claude Code 版本依赖和全局配置副作用是否能长期稳定。
+- 跟踪 `coder_eval` 是否形成 agent skill CI 的事实模板，并与 BridgeBench 这类公开榜单分工。
 - 跟踪 `semantic-kernel` 到 `microsoft/agent-framework` 的迁移节奏，避免后续新项目押在旧 API 上。
 - 比较 `Langflow`、`Flowise`、`Dify`、`Mastra`、`LangGraph` 在 agent workflow 生产化中的定位差异。
 - 跟踪 `Composio` 与 `open-connector` 在 OAuth、MCP、OpenAPI 和 SDK adapter 上的边界。

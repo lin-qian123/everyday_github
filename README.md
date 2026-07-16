@@ -48,7 +48,7 @@
 
 如果你是第一次进入这个仓库，建议从这几个入口开始：
 
-- 最新日报：[`daily/2026-07-16/ai-hotspots.md`](./daily/2026-07-16/ai-hotspots.md)
+- 最新日报：[`daily/2026-07-17/ai-hotspots.md`](./daily/2026-07-17/ai-hotspots.md)
 - 项目总目录：[`projects/`](./projects/)
 - 自动化约束：[`AGENTS.md`](./AGENTS.md)
 - 开发续接记录：[`TODO.md`](./TODO.md)
@@ -100,6 +100,7 @@
 | `zed` | 高性能、多人协作的代码编辑器，体现 AI 时代开发入口向编辑器本体回流。 | [GitHub](https://github.com/zed-industries/zed) |
 | `orca` | 多 worktree 并行调度的 agent 开发环境，把多个 coding agent 收到同一工作台里。 | [GitHub](https://github.com/stablyai/orca) |
 | `tura` | 本地开源 coding agent，强调用更少 turn / token 完成长时程工程任务并保留 benchmark 证据。 | [GitHub](https://github.com/Tura-AI/tura) |
+| `grok-build` | xAI/SpaceXAI 开源的终端 coding agent harness，支持 TUI、headless/CI 与 ACP。 | [GitHub](https://github.com/xai-org/grok-build) |
 
 ### Agent 框架与技能生态
 
@@ -180,6 +181,10 @@
 | `fable5-mode` | Claude Code skill 与 guard hooks，用 plan gate、验收命令和自检约束 coding agent 工作纪律。 | [GitHub](https://github.com/cozytab/fable5-mode) |
 | `bridgebench` | 面向 vibe coding 模型的可复核 arena benchmark，用盲评、journal 和 Elo 记录工程任务表现。 | [GitHub](https://github.com/bridge-mind/bridgebench) |
 | `Flawless` | AI-native SRE control plane，把告警、证据、审批、修复预演和恢复验证接成 AgenticOps 闭环。 | [GitHub](https://github.com/William-Lu-stack/Flawless) |
+| `mindwalk` | 本地回放 Claude Code / Codex session log，用代码地图复盘 agent 搜索、阅读和编辑轨迹。 | [GitHub](https://github.com/cosmtrek/mindwalk) |
+| `clawk` | 给 coding agent 分配 disposable Linux VM，用虚拟机边界、网络 allow-list 和可销毁环境隔离执行。 | [GitHub](https://github.com/clawkwork/clawk) |
+| `pilotfish` | Claude Code 多模型编排配置层，让强模型规划、便宜模型执行，并用 fresh-context verifier 控制质量。 | [GitHub](https://github.com/Nanako0129/pilotfish) |
+| `coder_eval` | 用 YAML 任务、sandbox、连续评分和 CI 验证 coding agents 与 agent skills 的评测框架。 | [GitHub](https://github.com/UiPath/coder_eval) |
 
 ### 记忆层与个人 AI 基础设施
 
@@ -206,6 +211,8 @@
 | `exxperts` | 本地优先的 AI rooms 与审批式长期记忆工作台，把 room、memory、KB 和 artifacts 保存在本机。 | [GitHub](https://github.com/EXXETA/exxperts) |
 | `ditto` | 从 Claude Code、Codex、Copilot CLI 本地日志中挖掘个人工作画像，生成 agent 可读 profile。 | [GitHub](https://github.com/ohad6k/ditto) |
 | `oh-my-ai-company` | 持续更新的 AI 公司对象图谱和研究库，把公司、产品、投资人、流量信号和证据来源结构化。 | [GitHub](https://github.com/yan5xu/oh-my-ai-company) |
+| `deja-vu` | 本地索引 Claude Code、Codex、opencode 等会话日志，并通过搜索、MCP recall 和自动上下文注入复用历史经验。 | [GitHub](https://github.com/vshulcz/deja-vu) |
+| `personal-model` | 本地优先的 Personal Model / HUMAN.md，通过 MCP 给 agent 提供带证据的用户工作方式与偏好上下文。 | [GitHub](https://github.com/Intuition-Lab/personal-model) |
 
 ### RAG、检索与知识处理
 
@@ -341,11 +348,13 @@
 | `Vibe-Research` | 个人 AI 投研看板，整合 A 股/美股/港股数据、资讯、持仓、研报和本地 AI 分析入口。 | [GitHub](https://github.com/simonlin1212/Vibe-Research) |
 | `dashiAI-ppt-skill` | 中文 AI PPT skill，生成可浏览器编辑的 HTML deck，并导出 PDF / 可编辑 PPTX。 | [GitHub](https://github.com/chuspeeism/dashiAI-ppt-skill) |
 | `GemType` | 开源 BYOK AI 写作助手和 Grammarly 替代品，覆盖浏览器扩展与 Word add-in。 | [GitHub](https://github.com/riponcm/GemType) |
+| `moore-wechat-article-downloader` | 本地优先的微信公众号内容情报库，把文章、评论和互动数据沉淀成可搜索资料。 | [GitHub](https://github.com/Moore-developers/moore-wechat-article-downloader) |
 
 ## 完整索引与每日热点
 
 - 全量项目目录：[`projects/`](./projects/)
 - 最近日报：
+  - [`2026-07-17`](./daily/2026-07-17/ai-hotspots.md)
   - [`2026-07-16`](./daily/2026-07-16/ai-hotspots.md)
   - [`2026-07-15`](./daily/2026-07-15/ai-hotspots.md)
   - [`2026-07-14`](./daily/2026-07-14/ai-hotspots.md)
@@ -372,9 +381,9 @@
 ## 当前状态
 
 - 状态：持续日更中。
-- 最新更新：`2026-07-16`。
-- 当前项目总数：`373`。
-- 最近新增项目：`openscience`、`Flawless`、`fable5-mode`、`auto`、`GemType`、`oh-my-ai-company`、`generative-media-skills`、`bridgebench`、`tura`。
+- 最新更新：`2026-07-17`。
+- 当前项目总数：`381`。
+- 最近新增项目：`grok-build`、`mindwalk`、`clawk`、`deja-vu`、`personal-model`、`pilotfish`、`moore-wechat-article-downloader`、`coder_eval`。
 - 覆盖平台：GitHub、X、Instagram、YouTube。
 
 ## 维护约定
