@@ -10,6 +10,17 @@
 
 ## 阶段性开发记录
 
+- 2026-07-18：
+  - 新增 `projects/clodex-ide/README.md`。
+  - 新增 `projects/kill-ai-slop/README.md`。
+  - 新增 `projects/cue/README.md`。
+  - 新增 `projects/waku-agent/README.md`。
+  - 新增 `projects/agent-pulse/README.md`。
+  - 新增 `projects/managed-agents/README.md`。
+  - 新增 `projects/bolt-slides/README.md`。
+  - 新增 `projects/circuit-framework/README.md`。
+  - 新增 `daily/2026-07-18/ai-hotspots.md`。
+  - 同步首页 `README.md`：补充今日项目到对应分类，并更新最新日期与项目总数（`389`）。
 - 2026-07-17：
   - 新增 `projects/grok-build/README.md`。
   - 新增 `projects/mindwalk/README.md`。
@@ -218,6 +229,12 @@
   `motion-anything` 形成稳定的 agent-native 视频制作链路。
 - 跟踪 `guizang-material-illustration` 与 `gzh-design-skill`、社交卡片
   skill 的分工，判断中文内容生产 skill 是否会形成套件。
+- 跟踪 `clodex-ide` 是否能从技术预览进入签名发布，并给出受控执行的真实任务证据。
+- 观察 `kill-ai-slop` 是否成为 coding agent 生成前端后的通用 UI 审查 skill。
+- 跟踪 `managed-agents` 的许可证、API 稳定性、审计导出和多用户权限能力。
+- 观察 `bolt-slides` 是否让 agent-generated Web deck 进入真实汇报和办公交付流程。
+- 跟踪 `cue` 这类隐藏式会议/屏幕 copilot 的隐私、伦理和企业合规边界。
+- 观察 `circuit-framework` 是否能发布可复核的长期 paper trading 结果和失败案例。
 - 跟踪 `reverse-flow-skill` 的授权沙盒边界、工具链 profile 和真实 CTF
   案例，避免安全 skill 泛化到未授权场景。
 - 观察 `loopkit` 的 Plan-Act-Verify harness 是否被 Codex / Claude Code / Cursor 用户实际拆用。

@@ -48,7 +48,7 @@
 
 如果你是第一次进入这个仓库，建议从这几个入口开始：
 
-- 最新日报：[`daily/2026-07-17/ai-hotspots.md`](./daily/2026-07-17/ai-hotspots.md)
+- 最新日报：[`daily/2026-07-18/ai-hotspots.md`](./daily/2026-07-18/ai-hotspots.md)
 - 项目总目录：[`projects/`](./projects/)
 - 自动化约束：[`AGENTS.md`](./AGENTS.md)
 - 开发续接记录：[`TODO.md`](./TODO.md)
@@ -101,6 +101,7 @@
 | `orca` | 多 worktree 并行调度的 agent 开发环境，把多个 coding agent 收到同一工作台里。 | [GitHub](https://github.com/stablyai/orca) |
 | `tura` | 本地开源 coding agent，强调用更少 turn / token 完成长时程工程任务并保留 benchmark 证据。 | [GitHub](https://github.com/Tura-AI/tura) |
 | `grok-build` | xAI/SpaceXAI 开源的终端 coding agent harness，支持 TUI、headless/CI 与 ACP。 | [GitHub](https://github.com/xai-org/grok-build) |
+| `clodex-ide` | 本地优先、强调受控执行和用户审查的开源 agentic IDE。 | [GitHub](https://github.com/mereyabdenbekuly-ctrl/clodex-ide) |
 
 ### Agent 框架与技能生态
 
@@ -185,6 +186,8 @@
 | `clawk` | 给 coding agent 分配 disposable Linux VM，用虚拟机边界、网络 allow-list 和可销毁环境隔离执行。 | [GitHub](https://github.com/clawkwork/clawk) |
 | `pilotfish` | Claude Code 多模型编排配置层，让强模型规划、便宜模型执行，并用 fresh-context verifier 控制质量。 | [GitHub](https://github.com/Nanako0129/pilotfish) |
 | `coder_eval` | 用 YAML 任务、sandbox、连续评分和 CI 验证 coding agents 与 agent skills 的评测框架。 | [GitHub](https://github.com/UiPath/coder_eval) |
+| `waku-agent` | 可读的本地个人 agent harness，覆盖 loop、memory、eval 和 dashboard。 | [GitHub](https://github.com/ShenSeanChen/waku-agent) |
+| `managed-agents` | 本地优先的 agent runtime/control plane，覆盖 session、审批、sandbox、凭据、审计和 MCP。 | [GitHub](https://github.com/sandbaseai/managed-agents) |
 
 ### 记忆层与个人 AI 基础设施
 
@@ -267,6 +270,8 @@
 | `guizang-material-illustration` | 面向中文内容生产的材质插画 skill，把文章、图表、教学材料和工作汇报转成带中文标签的解释图。 | [GitHub](https://github.com/op7418/guizang-material-illustration) |
 | `Browser-BC` | 本地记录浏览器任务轨迹，并按站点 capability bucket 蒸馏成 Claude / Codex 可复用 skill。 | [GitHub](https://github.com/Einsia/Browser-BC) |
 | `browser-harness` | Browser Use 的真实浏览器 CDP harness，让 agent 在运行中沉淀 helper 与 domain skill。 | [GitHub](https://github.com/browser-use/browser-harness) |
+| `kill-ai-slop` | 把 AI 生成产品的视觉/文案套路整理成 taxonomy，并提供 agent skill 扫描与修复。 | [GitHub](https://github.com/yetone/kill-ai-slop) |
+| `bolt-slides` | StackBlitz 的 agent 友好型 React/Web slide 框架，让演示文稿成为可运行 Web app。 | [GitHub](https://github.com/stackblitz/bolt-slides) |
 
 ### 语音、视频与多模态
 
@@ -349,11 +354,15 @@
 | `dashiAI-ppt-skill` | 中文 AI PPT skill，生成可浏览器编辑的 HTML deck，并导出 PDF / 可编辑 PPTX。 | [GitHub](https://github.com/chuspeeism/dashiAI-ppt-skill) |
 | `GemType` | 开源 BYOK AI 写作助手和 Grammarly 替代品，覆盖浏览器扩展与 Word add-in。 | [GitHub](https://github.com/riponcm/GemType) |
 | `moore-wechat-article-downloader` | 本地优先的微信公众号内容情报库，把文章、评论和互动数据沉淀成可搜索资料。 | [GitHub](https://github.com/Moore-developers/moore-wechat-article-downloader) |
+| `cue` | 开源 macOS 悬浮 AI copilot，面向屏幕、会议和 BYOK 实时辅助场景。 | [GitHub](https://github.com/Blueturboguy07/cue) |
+| `agent-pulse` | 证据驱动 AI 行业情报项目，把来源、事件、判断和刷新节奏分离。 | [GitHub](https://github.com/barretlee/agent-pulse) |
+| `circuit-framework` | 面向 crypto paper trading 的多 agent 研究框架，用确定性风险门控约束交易提案。 | [GitHub](https://github.com/PengZhang64/circuit-framework) |
 
 ## 完整索引与每日热点
 
 - 全量项目目录：[`projects/`](./projects/)
 - 最近日报：
+  - [`2026-07-18`](./daily/2026-07-18/ai-hotspots.md)
   - [`2026-07-17`](./daily/2026-07-17/ai-hotspots.md)
   - [`2026-07-16`](./daily/2026-07-16/ai-hotspots.md)
   - [`2026-07-15`](./daily/2026-07-15/ai-hotspots.md)
@@ -381,9 +390,9 @@
 ## 当前状态
 
 - 状态：持续日更中。
-- 最新更新：`2026-07-17`。
-- 当前项目总数：`381`。
-- 最近新增项目：`grok-build`、`mindwalk`、`clawk`、`deja-vu`、`personal-model`、`pilotfish`、`moore-wechat-article-downloader`、`coder_eval`。
+- 最新更新：`2026-07-18`。
+- 当前项目总数：`389`。
+- 最近新增项目：`clodex-ide`、`kill-ai-slop`、`cue`、`waku-agent`、`agent-pulse`、`managed-agents`、`bolt-slides`、`circuit-framework`。
 - 覆盖平台：GitHub、X、Instagram、YouTube。
 
 ## 维护约定
