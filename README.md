@@ -48,7 +48,7 @@
 
 如果你是第一次进入这个仓库，建议从这几个入口开始：
 
-- 最新日报：[`daily/2026-07-18/ai-hotspots.md`](./daily/2026-07-18/ai-hotspots.md)
+- 最新日报：[`daily/2026-07-20/ai-hotspots.md`](./daily/2026-07-20/ai-hotspots.md)
 - 项目总目录：[`projects/`](./projects/)
 - 自动化约束：[`AGENTS.md`](./AGENTS.md)
 - 开发续接记录：[`TODO.md`](./TODO.md)
@@ -102,6 +102,7 @@
 | `tura` | 本地开源 coding agent，强调用更少 turn / token 完成长时程工程任务并保留 benchmark 证据。 | [GitHub](https://github.com/Tura-AI/tura) |
 | `grok-build` | xAI/SpaceXAI 开源的终端 coding agent harness，支持 TUI、headless/CI 与 ACP。 | [GitHub](https://github.com/xai-org/grok-build) |
 | `clodex-ide` | 本地优先、强调受控执行和用户审查的开源 agentic IDE。 | [GitHub](https://github.com/mereyabdenbekuly-ctrl/clodex-ide) |
+| `klaatcode` | KlaatAI 的终端原生 coding agent，用服务端模型路由和代码图谱降低长任务成本。 | [GitHub](https://github.com/KlaatAI/klaatcode) |
 
 ### Agent 框架与技能生态
 
@@ -188,6 +189,9 @@
 | `coder_eval` | 用 YAML 任务、sandbox、连续评分和 CI 验证 coding agents 与 agent skills 的评测框架。 | [GitHub](https://github.com/UiPath/coder_eval) |
 | `waku-agent` | 可读的本地个人 agent harness，覆盖 loop、memory、eval 和 dashboard。 | [GitHub](https://github.com/ShenSeanChen/waku-agent) |
 | `managed-agents` | 本地优先的 agent runtime/control plane，覆盖 session、审批、sandbox、凭据、审计和 MCP。 | [GitHub](https://github.com/sandbaseai/managed-agents) |
+| `harness-engineering` | Ryan Lopopolo 的 agent harness 工程资料库，把上下文、工具、权限和验证组织成可复用环境。 | [GitHub](https://github.com/lopopolo/harness-engineering) |
+| `agentsmith` | 模型无关的 agent operating harness，用 core + profile 组合 Codex、Claude Code、Gemini 等规则文件。 | [GitHub](https://github.com/PromptPartner/agentsmith) |
+| `fastctx` | Rust MCP runtime，把仓库读取、搜索、替换和命令执行封装成结构化 agent 工具。 | [GitHub](https://github.com/yc-duan/fastctx) |
 
 ### 记忆层与个人 AI 基础设施
 
@@ -216,6 +220,8 @@
 | `oh-my-ai-company` | 持续更新的 AI 公司对象图谱和研究库，把公司、产品、投资人、流量信号和证据来源结构化。 | [GitHub](https://github.com/yan5xu/oh-my-ai-company) |
 | `deja-vu` | 本地索引 Claude Code、Codex、opencode 等会话日志，并通过搜索、MCP recall 和自动上下文注入复用历史经验。 | [GitHub](https://github.com/vshulcz/deja-vu) |
 | `personal-model` | 本地优先的 Personal Model / HUMAN.md，通过 MCP 给 agent 提供带证据的用户工作方式与偏好上下文。 | [GitHub](https://github.com/Intuition-Lab/personal-model) |
+| `memmy-agent` | 跨 Codex、Claude Code、Cursor 等 agent 的个人长期记忆中心和本地 runtime。 | [GitHub](https://github.com/MemTensor/memmy-agent) |
+| `mentor` | 读取 Claude Code 与 Codex 本地历史的 session-insights skill，生成个人 agent 使用复盘报告。 | [GitHub](https://github.com/smixs/mentor) |
 
 ### RAG、检索与知识处理
 
@@ -258,6 +264,7 @@
 | `chatbot-ui` | 开源 AI 聊天前端骨架，适合做多模型、自托管聊天入口。 | [GitHub](https://github.com/mckaywrigley/chatbot-ui) |
 | `stitch-mcp` | 把 Google Stitch 生成的 UI 设计接入本地开发与 coding agent 工作流的 CLI / MCP 桥接层。 | [GitHub](https://github.com/davideast/stitch-mcp) |
 | `hermes-studio` | Hermes Agent 的桌面工作台、本地运行时与 Web 控制台组合，强调会话、任务与控制面。 | [GitHub](https://github.com/EKKOLearnAI/hermes-studio) |
+| `hig-mcp` | 把 Apple HIG、Liquid Glass 约束和 SwiftUI 映射转成结构化 MCP design tokens。 | [GitHub](https://github.com/aka-kika/hig-mcp) |
 | `ai-website-cloner-template` | 用 AI coding agent 复刻网站的 Next.js 工作流模板，强调设计 token 抽取与并行重建。 | [GitHub](https://github.com/JCodesMore/ai-website-cloner-template) |
 | `cherry-studio` | 跨平台多模型 AI 桌面客户端，集成预置助手、文档处理与 MCP 能力。 | [GitHub](https://github.com/CherryHQ/cherry-studio) |
 | `openpencil` | AI-native 矢量设计工具，把 prompt、agent team、Design-as-Code 与 MCP 接入同一画布。 | [GitHub](https://github.com/ZSeven-W/openpencil) |
@@ -329,6 +336,7 @@
 | `Hy3` | 腾讯混元 295B MoE / 21B active 开放权重模型，强调 256K 上下文、工具调用和 agentic 任务能力。 | [GitHub](https://github.com/Tencent-Hunyuan/Hy3) |
 | `coreai-models` | Apple 的 Core AI 模型导出、Python primitives、Swift runtime utilities 和 agent skills 仓库。 | [GitHub](https://github.com/apple/coreai-models) |
 | `auto` | 记录并编译 LLM agent 重复行为为受能力约束的 WASM fast path，探索 agent 成本和安全边界。 | [GitHub](https://github.com/RightNow-AI/auto) |
+| `conversation-steganography` | LLM 隐写 proof of concept，把加密消息伪装成普通聊天文本，双重用途风险高。 | [GitHub](https://github.com/nethical6/conversation-steganography) |
 
 ### 办公、商业与行业应用
 
@@ -362,6 +370,7 @@
 
 - 全量项目目录：[`projects/`](./projects/)
 - 最近日报：
+  - [`2026-07-20`](./daily/2026-07-20/ai-hotspots.md)
   - [`2026-07-18`](./daily/2026-07-18/ai-hotspots.md)
   - [`2026-07-17`](./daily/2026-07-17/ai-hotspots.md)
   - [`2026-07-16`](./daily/2026-07-16/ai-hotspots.md)
@@ -390,9 +399,9 @@
 ## 当前状态
 
 - 状态：持续日更中。
-- 最新更新：`2026-07-18`。
-- 当前项目总数：`389`。
-- 最近新增项目：`clodex-ide`、`kill-ai-slop`、`cue`、`waku-agent`、`agent-pulse`、`managed-agents`、`bolt-slides`、`circuit-framework`。
+- 最新更新：`2026-07-20`。
+- 当前项目总数：`397`。
+- 最近新增项目：`harness-engineering`、`agentsmith`、`klaatcode`、`fastctx`、`memmy-agent`、`mentor`、`hig-mcp`、`conversation-steganography`。
 - 覆盖平台：GitHub、X、Instagram、YouTube。
 
 ## 维护约定

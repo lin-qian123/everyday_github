@@ -10,6 +10,17 @@
 
 ## 阶段性开发记录
 
+- 2026-07-20：
+  - 新增 `projects/harness-engineering/README.md`。
+  - 新增 `projects/agentsmith/README.md`。
+  - 新增 `projects/klaatcode/README.md`。
+  - 新增 `projects/fastctx/README.md`。
+  - 新增 `projects/memmy-agent/README.md`。
+  - 新增 `projects/mentor/README.md`。
+  - 新增 `projects/hig-mcp/README.md`。
+  - 新增 `projects/conversation-steganography/README.md`。
+  - 新增 `daily/2026-07-20/ai-hotspots.md`。
+  - 同步首页 `README.md`：补充今日项目到对应分类，并更新最新日期与项目总数（`397`）。
 - 2026-07-18：
   - 新增 `projects/clodex-ide/README.md`。
   - 新增 `projects/kill-ai-slop/README.md`。
@@ -139,6 +150,14 @@
 - 继续跟踪 `firecrawl` 与 `crawl4ai` 这两条 Web 上下文路线，判断托管 API 层和本地抓取流水线会如何分化。
 - 观察 `daily_stock_analysis` 这类“AI 分析 + 定时交付”项目会不会
   在办公/行业应用层持续留在热榜，而不是只靠一次性传播。
+- 跟踪 `agentsmith` 与 `harness-engineering` 是否把 agent harness 从方法论推进到可复用团队配置层。
+- 复测 `klaatcode` 的服务端路由 benchmark，重点验证成本口径、隐私边界和第三方可复现性。
+- 观察 `fastctx` 是否成为 Codex / ChatGPT / Claude 等 MCP client 的通用本地 repo access 层。
+- 跟踪 `memmy-agent` 与 `deja-vu`、`engram`、`personal-model` 的边界，区分个人记忆、会话检索和用户画像。
+- 观察 `mentor` 这类 session-insights skill 是否会成为 agent 使用者的周复盘标准件。
+- 跟踪 `hig-mcp` 是否能持续跟进 Apple HIG / Liquid Glass 更新，并避免非官方 token 过期。
+- 将 `conversation-steganography` 与 GPT-Red、prompt injection red teaming、
+  内容 provenance 放在同一 AI 安全趋势下观察。
 - 继续观察 `agent-toolkit-for-aws` 这类官方云厂商插件仓库，会不会把 MCP / skills / plugin 变成默认接入层。
 - 跟踪 `hyperframes` 是否会把“HTML 即视频”从单日热点沉淀成稳定的视频自动化渲染赛道。
 - 继续观察 `worldmonitor` 这类 AI 情报工作台，判断其热度来自产品化工作流还是单次传播叙事。
