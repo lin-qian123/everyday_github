@@ -48,7 +48,7 @@
 
 如果你是第一次进入这个仓库，建议从这几个入口开始：
 
-- 最新日报：[`daily/2026-07-20/ai-hotspots.md`](./daily/2026-07-20/ai-hotspots.md)
+- 最新日报：[`daily/2026-07-21/ai-hotspots.md`](./daily/2026-07-21/ai-hotspots.md)
 - 项目总目录：[`projects/`](./projects/)
 - 自动化约束：[`AGENTS.md`](./AGENTS.md)
 - 开发续接记录：[`TODO.md`](./TODO.md)
@@ -103,6 +103,7 @@
 | `grok-build` | xAI/SpaceXAI 开源的终端 coding agent harness，支持 TUI、headless/CI 与 ACP。 | [GitHub](https://github.com/xai-org/grok-build) |
 | `clodex-ide` | 本地优先、强调受控执行和用户审查的开源 agentic IDE。 | [GitHub](https://github.com/mereyabdenbekuly-ctrl/clodex-ide) |
 | `klaatcode` | KlaatAI 的终端原生 coding agent，用服务端模型路由和代码图谱降低长任务成本。 | [GitHub](https://github.com/KlaatAI/klaatcode) |
+| `codex-router` | Codex 外部模型路由器，把 Kimi、DeepSeek 等 provider 接入 Codex model picker。 | [GitHub](https://github.com/duolahypercho/codex-router) |
 
 ### Agent 框架与技能生态
 
@@ -192,6 +193,11 @@
 | `harness-engineering` | Ryan Lopopolo 的 agent harness 工程资料库，把上下文、工具、权限和验证组织成可复用环境。 | [GitHub](https://github.com/lopopolo/harness-engineering) |
 | `agentsmith` | 模型无关的 agent operating harness，用 core + profile 组合 Codex、Claude Code、Gemini 等规则文件。 | [GitHub](https://github.com/PromptPartner/agentsmith) |
 | `fastctx` | Rust MCP runtime，把仓库读取、搜索、替换和命令执行封装成结构化 agent 工具。 | [GitHub](https://github.com/yc-duan/fastctx) |
+| `machine-genome` | 面向模型、agent、harness、数据集和产物的开放身份与 provenance 协议。 | [GitHub](https://github.com/paxlabs-inc/machine-genome) |
+| `software-periodic-table` | 把常见业务软件拆成 115 个可复用元素，供 LLM coding agent 检索与组合。 | [GitHub](https://github.com/NullLabTests/software-periodic-table) |
+| `open-kritt` | 开源 agentic security scanner，用多 agent workflow 查找、验证并构建漏洞 PoC。 | [GitHub](https://github.com/Kritt-ai/open-kritt) |
+| `fabrica` | 基于 Kubernetes、Kata Containers 和 Cloud Hypervisor 的 agent microVM sandbox 平台。 | [GitHub](https://github.com/mitkox/fabrica) |
+| `graphkit` | Claude Code graph engineering skill，用 executor、supervisor、ledger 拆解长时程 coding 任务。 | [GitHub](https://github.com/levi-qiao/graphkit) |
 
 ### 记忆层与个人 AI 基础设施
 
@@ -309,6 +315,7 @@
 | `lapian-notes` | 本地拉片笔记工具，把影片抽帧、字幕、AI 分析包、剧情泳道和结构树接成可编辑影视研究工作流。 | [GitHub](https://github.com/bkingfilm/lapian-notes) |
 | `watch-skill` | 本地优先的视频理解与自验证层，让 agent 读取视频、录屏、会议并引用时间戳证据。 | [GitHub](https://github.com/oxbshw/watch-skill) |
 | `generative-media-skills` | 生成媒体 agent skill 套件，覆盖图像、视频、音频、3D、avatar、权利和交付 QA。 | [GitHub](https://github.com/calesthio/generative-media-skills) |
+| `video-shotcraft` | 面向 Claude Code / Codex 的 Remotion 视频制作 skill，沉淀镜头卡、动效预览和产品宣传片模板。 | [GitHub](https://github.com/Vincentwei1021/video-shotcraft) |
 
 ### 模型、训练与推理基础设施
 
@@ -337,6 +344,7 @@
 | `coreai-models` | Apple 的 Core AI 模型导出、Python primitives、Swift runtime utilities 和 agent skills 仓库。 | [GitHub](https://github.com/apple/coreai-models) |
 | `auto` | 记录并编译 LLM agent 重复行为为受能力约束的 WASM fast path，探索 agent 成本和安全边界。 | [GitHub](https://github.com/RightNow-AI/auto) |
 | `conversation-steganography` | LLM 隐写 proof of concept，把加密消息伪装成普通聊天文本，双重用途风险高。 | [GitHub](https://github.com/nethical6/conversation-steganography) |
+| `nativ` | Apple Silicon 本地 AI 工作台，用 SwiftUI 封装 MLX 模型服务、性能监控和兼容 API。 | [GitHub](https://github.com/Blaizzy/nativ) |
 
 ### 办公、商业与行业应用
 
@@ -370,6 +378,7 @@
 
 - 全量项目目录：[`projects/`](./projects/)
 - 最近日报：
+  - [`2026-07-21`](./daily/2026-07-21/ai-hotspots.md)
   - [`2026-07-20`](./daily/2026-07-20/ai-hotspots.md)
   - [`2026-07-18`](./daily/2026-07-18/ai-hotspots.md)
   - [`2026-07-17`](./daily/2026-07-17/ai-hotspots.md)
@@ -399,9 +408,9 @@
 ## 当前状态
 
 - 状态：持续日更中。
-- 最新更新：`2026-07-20`。
-- 当前项目总数：`397`。
-- 最近新增项目：`harness-engineering`、`agentsmith`、`klaatcode`、`fastctx`、`memmy-agent`、`mentor`、`hig-mcp`、`conversation-steganography`。
+- 最新更新：`2026-07-21`。
+- 当前项目总数：`405`。
+- 最近新增项目：`machine-genome`、`nativ`、`codex-router`、`software-periodic-table`、`open-kritt`、`video-shotcraft`、`fabrica`、`graphkit`。
 - 覆盖平台：GitHub、X、Instagram、YouTube。
 
 ## 维护约定

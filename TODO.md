@@ -10,6 +10,17 @@
 
 ## 阶段性开发记录
 
+- 2026-07-21：
+  - 新增 `projects/machine-genome/README.md`。
+  - 新增 `projects/nativ/README.md`。
+  - 新增 `projects/codex-router/README.md`。
+  - 新增 `projects/software-periodic-table/README.md`。
+  - 新增 `projects/open-kritt/README.md`。
+  - 新增 `projects/video-shotcraft/README.md`。
+  - 新增 `projects/fabrica/README.md`。
+  - 新增 `projects/graphkit/README.md`。
+  - 新增 `daily/2026-07-21/ai-hotspots.md`。
+  - 同步首页 `README.md`：补充今日项目到对应分类，并更新最新日期与项目总数（`405`）。
 - 2026-07-20：
   - 新增 `projects/harness-engineering/README.md`。
   - 新增 `projects/agentsmith/README.md`。
@@ -218,6 +229,14 @@
 - 观察 `agterm` 的 agent status hooks 和 `agtermctl` 是否会成为多 agent session 管理的常用终端层。
 - 跟踪 `peerd` 的浏览器原生 actor / vault / WebAssembly sandbox 设计
   是否能经受 prompt injection 场景验证。
+- 跟踪 `machine-genome` 是否出现真实 registry 使用和第三方 attestations，验证 agent provenance 协议是否有生态接受度。
+- 观察 `nativ` 是否稳定发布 macOS app，并复测 OpenAI /
+  Anthropic-compatible endpoint 对 Codex、Claude Code、OpenCode 的兼容性。
+- 审查 `codex-router` 的配置迁移、rollback、凭据文件权限和 provider 生命周期，避免模型路由便利性掩盖本地安全边界。
+- 跟踪 `open-kritt` 的 threat model、误报率、PoC 验证质量和专用 Docker host / VM 隔离建议是否完善。
+- 横向比较 `fabrica`、`clawk`、`tupper`、`OpenSandbox` 的隔离模型、部署成本、网络策略和凭据注入边界。
+- 观察 `graphkit` 是否从 Claude Code skill 扩展到 Codex / OpenCode 等多 runtime，并补充真实长任务案例。
+- 跟踪 `video-shotcraft` 是否补充更多完整模板、渲染验证和版权/品牌 QA 流程。
 - 观察 `tupper` 是否补齐 Firecracker / WSL 后端，并成为本地 agent code-execution sandbox 代表项目。
 - 跟踪 `codex-plugin-cc` 是否成为 Claude Code 用户调用 Codex 审查、救援和会话转移的默认入口。
 - 观察 `herdr` 与 `gastown` 的分工，判断终端 session 管理与多 agent 任务治理是否会拆成两个稳定层。
