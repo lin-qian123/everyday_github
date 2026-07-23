@@ -48,7 +48,7 @@
 
 如果你是第一次进入这个仓库，建议从这几个入口开始：
 
-- 最新日报：[`daily/2026-07-21/ai-hotspots.md`](./daily/2026-07-21/ai-hotspots.md)
+- 最新日报：[`daily/2026-07-24/ai-hotspots.md`](./daily/2026-07-24/ai-hotspots.md)
 - 项目总目录：[`projects/`](./projects/)
 - 自动化约束：[`AGENTS.md`](./AGENTS.md)
 - 开发续接记录：[`TODO.md`](./TODO.md)
@@ -73,6 +73,9 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `VinvAI` | 以真实运行 trace、代码图谱和独立验收验证 coding agent 修复的本地工具。 | [GitHub](https://github.com/VinvAI/VinvAI) |
+| `agent-notify` | macOS 上给并行终端 agent 会话使用的自清理通知注意力队列。 | [GitHub](https://github.com/yauyauyauhen/agent-notify) |
+| `AgentBar` | 统一显示 coding agent 状态、并可处理 Claude Code 权限请求的 macOS 菜单栏应用。 | [GitHub](https://github.com/michalstrnadel/AgentBar) |
 | `sigbound` | 用 Git 并行运行 coding agents，并以构建/测试作为自动合并门槛。 | [GitHub](https://github.com/surya-koritala/sigbound) |
 | `aidd` | 本地优先的跨 CLI AI coding agent 监督控制面。 | [GitHub](https://github.com/NomadicDaddy/aidd) |
 | `codex` | OpenAI 的开源 coding agent，偏终端协作与代码任务执行。 | [GitHub](https://github.com/openai/codex) |
@@ -111,6 +114,8 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `openhub` | 终端内发现、安装并导出 AI 工具、MCP 与 agent skills 的本地目录中心。 | [GitHub](https://github.com/24KaratAu/openhub) |
+| `AxisAgentic` | 可扩展的长时程 agent runtime 与评测框架，保留状态忠实 trace 和可重放产物。 | [GitHub](https://github.com/XYZ-AI-Lab/AxisAgentic) |
 | `handoff-skill` | 将 AI 对话与任务状态整理为结构化交接文档的 Claude skill。 | [GitHub](https://github.com/ToolMonsters/handoff-skill) |
 | `OptiMCP` | 用确定性规则校验 agent 数学与逻辑输出的 MCP。 | [GitHub](https://github.com/ProfessionalQwerty/OptiMCP) |
 | `minos` | 为 coding agent 编写的硬规则集合。 | [GitHub](https://github.com/FlavioZanoni/minos) |
@@ -215,6 +220,8 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `anchor-memory` | SQLite-first 的本地 agent 记忆链，覆盖混合召回、belief 与夜间维护。 | [GitHub](https://github.com/anhe2021212-spec/anchor-memory) |
+| `TokenScope` | 解析 Claude Code 本地 transcript 的 token profiler，定位可量化的上下文浪费。 | [GitHub](https://github.com/AviVAvi/TokenScope) |
 | `RAG-OS` | 用 Git/Markdown 知识库构建的自托管个人 agent/RAG 工作台。 | [GitHub](https://github.com/csnyder256/RAG-OS) |
 | `not-goldfish` | SQLite/FTS5 驱动的跨 agent 本地记忆与上下文卫生层。 | [GitHub](https://github.com/vmelooo/not-goldfish) |
 | `XPC.md` | 用 Markdown 维护跨会话、跨模型项目记忆的 prompt 框架。 | [GitHub](https://github.com/tk-wxy/XPC.md) |
@@ -394,6 +401,7 @@
 
 - 全量项目目录：[`projects/`](./projects/)
 - 最近日报：
+  - [`2026-07-24`](./daily/2026-07-24/ai-hotspots.md)
   - [`2026-07-23`](./daily/2026-07-23/ai-hotspots.md)
   - [`2026-07-22`](./daily/2026-07-22/ai-hotspots.md)
   - [`2026-07-21`](./daily/2026-07-21/ai-hotspots.md)
@@ -426,9 +434,9 @@
 ## 当前状态
 
 - 状态：持续日更中。
-- 最新更新：`2026-07-23`。
-- 当前项目总数：`421`。
-- 最近新增项目：`handoff-skill`、`OptiMCP`、`minos`、`content-core`、`Baker-Street`、`RAG-OS`、`not-goldfish`、`sigbound`、`promptamp`、`XPC.md`、`aidd`、`checkup`、`repro`、`skeptic`、`fence`、`bisect`。
+- 最新更新：`2026-07-24`。
+- 当前项目总数：`428`。
+- 最近新增项目：`VinvAI`、`agent-notify`、`openhub`、`AxisAgentic`、`AgentBar`、`TokenScope`、`anchor-memory`。
 - 覆盖平台：GitHub、X、Instagram、YouTube。
 
 ## 维护约定
