@@ -10,6 +10,7 @@
 
 ## 阶段性开发记录
 
+- 2026-07-23：补跑 2026-07-22 与 2026-07-23 因额度不足未完成的热点任务。新增 16 个项目说明和两份热点日报；GitHub API 核验项目创建时间、stars/forks 和仓库描述。7 月 22 日集中于交接、规则验证、记忆与并行合并；7 月 23 日集中于浏览器 prompt、项目记忆、agent 控制面与可执行验证 skill。多数项目仅 1--7 stars，日报均明确标为早期开发者信号；同一作者的 `checkup`/`repro`/`skeptic`/`fence`/`bisect` 作为一个方法套件观察。首页更新到 421 个 `projects/` 目录。
 - 2026-07-21：
   - 新增 `projects/machine-genome/README.md`。
   - 新增 `projects/nativ/README.md`。

@@ -73,6 +73,8 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `sigbound` | 用 Git 并行运行 coding agents，并以构建/测试作为自动合并门槛。 | [GitHub](https://github.com/surya-koritala/sigbound) |
+| `aidd` | 本地优先的跨 CLI AI coding agent 监督控制面。 | [GitHub](https://github.com/NomadicDaddy/aidd) |
 | `codex` | OpenAI 的开源 coding agent，偏终端协作与代码任务执行。 | [GitHub](https://github.com/openai/codex) |
 | `claude-code` | Anthropic 的终端代码助手，强调仓库理解、改动执行与工作流协作。 | [GitHub](https://github.com/anthropics/claude-code) |
 | `OpenHands` | 面向通用软件任务的开源 AI 开发代理。 | [GitHub](https://github.com/All-Hands-AI/OpenHands) |
@@ -109,6 +111,16 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `handoff-skill` | 将 AI 对话与任务状态整理为结构化交接文档的 Claude skill。 | [GitHub](https://github.com/ToolMonsters/handoff-skill) |
+| `OptiMCP` | 用确定性规则校验 agent 数学与逻辑输出的 MCP。 | [GitHub](https://github.com/ProfessionalQwerty/OptiMCP) |
+| `minos` | 为 coding agent 编写的硬规则集合。 | [GitHub](https://github.com/FlavioZanoni/minos) |
+| `content-core` | 组合 LLM、RAG、MCP、workflow 与评测的 AI 平台内核。 | [GitHub](https://github.com/sai-chaithanya-navuluri/content-core) |
+| `Baker-Street` | 用多认知视角寻找论证冲突与盲区的 Claude Code 框架。 | [GitHub](https://github.com/tywinlu1988/Baker-Street) |
+| `checkup` | 检查链接、依赖、CI 与文档衰退的 Claude Code skill。 | [GitHub](https://github.com/tokyubevoxelverse/checkup) |
+| `repro` | 将偶发失败收敛为最小复现与回归测试的 Claude Code skill。 | [GitHub](https://github.com/tokyubevoxelverse/repro) |
+| `skeptic` | 用对抗性测试审查 PR 声明的 Claude Code skill。 | [GitHub](https://github.com/tokyubevoxelverse/skeptic) |
+| `fence` | 用 Git 历史调查代码删除风险的 Claude Code skill。 | [GitHub](https://github.com/tokyubevoxelverse/fence) |
+| `bisect` | 驱动隔离 `git bisect` 定位回归提交的 Claude Code skill。 | [GitHub](https://github.com/tokyubevoxelverse/bisect) |
 | `autogen` | Microsoft 的多代理编排框架。 | [GitHub](https://github.com/microsoft/autogen) |
 | `crewAI` | 面向多角色协作的 agent workflow 框架。 | [GitHub](https://github.com/crewAIInc/crewAI) |
 | `Flowise` | 低代码 AI workflow / agent 编排平台。 | [GitHub](https://github.com/FlowiseAI/Flowise) |
@@ -203,6 +215,9 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `RAG-OS` | 用 Git/Markdown 知识库构建的自托管个人 agent/RAG 工作台。 | [GitHub](https://github.com/csnyder256/RAG-OS) |
+| `not-goldfish` | SQLite/FTS5 驱动的跨 agent 本地记忆与上下文卫生层。 | [GitHub](https://github.com/vmelooo/not-goldfish) |
+| `XPC.md` | 用 Markdown 维护跨会话、跨模型项目记忆的 prompt 框架。 | [GitHub](https://github.com/tk-wxy/XPC.md) |
 | `mem0` | 热度很高的长期记忆基础设施项目。 | [GitHub](https://github.com/mem0ai/mem0) |
 | `memsearch` | 面向 coding agent 的可检索持久记忆层。 | [GitHub](https://github.com/zilliztech/memsearch) |
 | `agentmemory` | 强调 agent 可复用记忆的轻量项目。 | [GitHub](https://github.com/rohitg00/agentmemory) |
@@ -258,6 +273,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `promptamp` | 浏览器输入框的开源 BYOK prompt 增强器。 | [GitHub](https://github.com/Sina-Amare/promptamp) |
 | `awesome-design-md` | 收集 `DESIGN.md` 模板的设计约束索引仓库。 | [GitHub](https://github.com/VoltAgent/awesome-design-md) |
 | `design-md` | Google Labs 推动的设计契约格式，把视觉系统写成 coding agent 可读取的文本规范。 | [GitHub](https://github.com/google-labs-code/design.md) |
 | `open-design` | 面向开放设计流程和组件思路的项目。 | [GitHub](https://github.com/nexu-io/open-design) |
@@ -378,6 +394,8 @@
 
 - 全量项目目录：[`projects/`](./projects/)
 - 最近日报：
+  - [`2026-07-23`](./daily/2026-07-23/ai-hotspots.md)
+  - [`2026-07-22`](./daily/2026-07-22/ai-hotspots.md)
   - [`2026-07-21`](./daily/2026-07-21/ai-hotspots.md)
   - [`2026-07-20`](./daily/2026-07-20/ai-hotspots.md)
   - [`2026-07-18`](./daily/2026-07-18/ai-hotspots.md)
@@ -408,9 +426,9 @@
 ## 当前状态
 
 - 状态：持续日更中。
-- 最新更新：`2026-07-21`。
-- 当前项目总数：`405`。
-- 最近新增项目：`machine-genome`、`nativ`、`codex-router`、`software-periodic-table`、`open-kritt`、`video-shotcraft`、`fabrica`、`graphkit`。
+- 最新更新：`2026-07-23`。
+- 当前项目总数：`421`。
+- 最近新增项目：`handoff-skill`、`OptiMCP`、`minos`、`content-core`、`Baker-Street`、`RAG-OS`、`not-goldfish`、`sigbound`、`promptamp`、`XPC.md`、`aidd`、`checkup`、`repro`、`skeptic`、`fence`、`bisect`。
 - 覆盖平台：GitHub、X、Instagram、YouTube。
 
 ## 维护约定
