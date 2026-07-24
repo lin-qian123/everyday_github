@@ -10,6 +10,7 @@
 
 ## 阶段性开发记录
 
+- 2026-07-25：新增 `mission-control-board`、`slide-meme-inserter`、`job-search-workflow`、`blinkface`、`capybara`、`scientific-illustrator` 6 个项目说明及当日热点日报。GitHub REST API 核验它们均创建于 2026-07-24、约 8--52 stars；均作为早期开发者信号记录，而非全站 Trending 结论。主题集中于 agent 依赖可视化、trace 追溯、可编辑图文交付、个人工作流和本地 GPU 交互。首页分类、最新日报和项目总数同步至 `434`。
 - 2026-07-24：新增 `VinvAI`、`agent-notify`、`openhub`、`AxisAgentic`、`AgentBar`、`TokenScope`、`anchor-memory` 7 个项目说明与当日热点日报。GitHub REST API 核验它们均创建于 2026-07-23、约 3--20 stars；定位为早期开发者信号。主题集中在 coding agent 的独立验证、并行会话注意力、技能分发、长时程评测、token 卫生与本地记忆。首页分类、最新日报和项目总数同步至 `428`。
 - 2026-07-23：补跑 2026-07-22 与 2026-07-23 因额度不足未完成的热点任务。新增 16 个项目说明和两份热点日报；GitHub API 核验项目创建时间、stars/forks 和仓库描述。7 月 22 日集中于交接、规则验证、记忆与并行合并；7 月 23 日集中于浏览器 prompt、项目记忆、agent 控制面与可执行验证 skill。多数项目仅 1--7 stars，日报均明确标为早期开发者信号；同一作者的 `checkup`/`repro`/`skeptic`/`fence`/`bisect` 作为一个方法套件观察。首页更新到 421 个 `projects/` 目录。
 - 2026-07-21：
@@ -131,6 +132,10 @@
 
 ## 下一步行动
 
+- 验证 `capybara` 对不同 OTEL 规范、敏感内容关闭、回放和导出 fixture 的行为，判断能否接入团队 CI 回归链路。
+- 观察 `mission-control-board` 是否扩展多 owner、远程协作与可复核 CI/PR 状态，而不止本机任务可视化。
+- 跟踪 `scientific-illustrator` 的非 Windows draw.io 实测、可编辑性审计样例和科研数据隐私边界。
+- 复核 `blinkface` 的远程访问认证与同意记录；跟踪 `job-search-workflow` 的 alpha 完整度、许可证和个人资料最小化策略。
 - 跟踪 `SkillSpector` 是否会和 `nvidia-skills`、`agents` 这类技能分发项目一起，把“agent skill 安全扫描”沉淀成长期基础设施层。
 - 跟踪 `MinerU` 与 `markitdown`、`Hyper-Extract` 这类文档入口层项目的分工，判断复杂文档解析会不会继续成为独立热点带。
 - 继续观察 `hermes-studio` 是否会把“本地 runtime + 桌面工作台 + Web 控制台”收敛成稳定的 agent 控制面形态。

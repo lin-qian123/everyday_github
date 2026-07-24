@@ -48,7 +48,7 @@
 
 如果你是第一次进入这个仓库，建议从这几个入口开始：
 
-- 最新日报：[`daily/2026-07-24/ai-hotspots.md`](./daily/2026-07-24/ai-hotspots.md)
+- 最新日报：[`daily/2026-07-25/ai-hotspots.md`](./daily/2026-07-25/ai-hotspots.md)
 - 项目总目录：[`projects/`](./projects/)
 - 自动化约束：[`AGENTS.md`](./AGENTS.md)
 - 开发续接记录：[`TODO.md`](./TODO.md)
@@ -114,6 +114,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `capybara` | 本地终端 trace debugger，接收 OTLP/会话记录来定位 agent 工具失败、漂移、循环和成本尖峰。 | [GitHub](https://github.com/tonquoc0407/capybara) |
 | `openhub` | 终端内发现、安装并导出 AI 工具、MCP 与 agent skills 的本地目录中心。 | [GitHub](https://github.com/24KaratAu/openhub) |
 | `AxisAgentic` | 可扩展的长时程 agent runtime 与评测框架，保留状态忠实 trace 和可重放产物。 | [GitHub](https://github.com/XYZ-AI-Lab/AxisAgentic) |
 | `handoff-skill` | 将 AI 对话与任务状态整理为结构化交接文档的 Claude skill。 | [GitHub](https://github.com/ToolMonsters/handoff-skill) |
@@ -280,6 +281,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `mission-control-board` | 单 HTML 的依赖感知任务板，将人/agent 任务和阻塞关系可视化为可推导状态。 | [GitHub](https://github.com/rockthemike712/mission-control-board) |
 | `promptamp` | 浏览器输入框的开源 BYOK prompt 增强器。 | [GitHub](https://github.com/Sina-Amare/promptamp) |
 | `awesome-design-md` | 收集 `DESIGN.md` 模板的设计约束索引仓库。 | [GitHub](https://github.com/VoltAgent/awesome-design-md) |
 | `design-md` | Google Labs 推动的设计契约格式，把视觉系统写成 coding agent 可读取的文本规范。 | [GitHub](https://github.com/google-labs-code/design.md) |
@@ -313,6 +315,8 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `blinkface` | 以双手取景框控制的 FLUX 实时人像风格化实验，采用 GPU server 与浏览器客户端分离架构。 | [GitHub](https://github.com/xcc3641/blinkface) |
+| `scientific-illustrator` | Codex 插件，在 PowerPoint/draw.io 中用原生对象绘制、审查并修正可编辑科研插图。 | [GitHub](https://github.com/icebird1998/scientific-illustrator) |
 | `MOSS-TTS` | OpenMOSS 的语音生成模型家族。 | [GitHub](https://github.com/OpenMOSS/MOSS-TTS) |
 | `fish-speech` | 社区热度很高的开源语音模型项目。 | [GitHub](https://github.com/fishaudio/fish-speech) |
 | `Open-LLM-VTuber` | 把 LLM、角色扮演与 VTuber 工作流结合。 | [GitHub](https://github.com/Open-LLM-VTuber/Open-LLM-VTuber) |
@@ -373,6 +377,8 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `slide-meme-inserter` | Claude Code / Codex 共享的 HTML 演示文稿 skill，用明确叙事角色和审计流程插入梗图。 | [GitHub](https://github.com/amnotyoung/slide-meme-inserter) |
+| `job-search-workflow` | 本地优先的 AI 辅助求职框架，覆盖职位分诊、材料起草、决策记录和申请追踪。 | [GitHub](https://github.com/rcnsnr/job-search-workflow) |
 | `pm-skills` | 把 PM 方法论封装成 agent 可调用技能。 | [GitHub](https://github.com/phuryn/pm-skills) |
 | `career-ops` | 面向求职、简历、职业运营的 AI 工作流项目。 | [GitHub](https://github.com/santifer/career-ops) |
 | `financial-services` | Anthropic 的金融服务场景能力示例。 | [GitHub](https://github.com/anthropics/financial-services) |
@@ -401,6 +407,7 @@
 
 - 全量项目目录：[`projects/`](./projects/)
 - 最近日报：
+  - [`2026-07-25`](./daily/2026-07-25/ai-hotspots.md)
   - [`2026-07-24`](./daily/2026-07-24/ai-hotspots.md)
   - [`2026-07-23`](./daily/2026-07-23/ai-hotspots.md)
   - [`2026-07-22`](./daily/2026-07-22/ai-hotspots.md)
@@ -434,9 +441,9 @@
 ## 当前状态
 
 - 状态：持续日更中。
-- 最新更新：`2026-07-24`。
-- 当前项目总数：`428`。
-- 最近新增项目：`VinvAI`、`agent-notify`、`openhub`、`AxisAgentic`、`AgentBar`、`TokenScope`、`anchor-memory`。
+- 最新更新：`2026-07-25`。
+- 当前项目总数：`434`。
+- 最近新增项目：`mission-control-board`、`slide-meme-inserter`、`job-search-workflow`、`blinkface`、`capybara`、`scientific-illustrator`。
 - 覆盖平台：GitHub、X、Instagram、YouTube。
 
 ## 维护约定
