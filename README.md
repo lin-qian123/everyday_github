@@ -48,7 +48,7 @@
 
 如果你是第一次进入这个仓库，建议从这几个入口开始：
 
-- 最新日报：[`daily/2026-07-25/ai-hotspots.md`](./daily/2026-07-25/ai-hotspots.md)
+- 最新日报：[`daily/2026-07-26/ai-hotspots.md`](./daily/2026-07-26/ai-hotspots.md)
 - 项目总目录：[`projects/`](./projects/)
 - 自动化约束：[`AGENTS.md`](./AGENTS.md)
 - 开发续接记录：[`TODO.md`](./TODO.md)
@@ -73,6 +73,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `ctx-diet` | Claude Code 的 PostToolUse hook，在工具输出入模前压缩冗余内容以控制长会话 token 成本。 | [GitHub](https://github.com/illuwa/ctx-diet) |
 | `VinvAI` | 以真实运行 trace、代码图谱和独立验收验证 coding agent 修复的本地工具。 | [GitHub](https://github.com/VinvAI/VinvAI) |
 | `agent-notify` | macOS 上给并行终端 agent 会话使用的自清理通知注意力队列。 | [GitHub](https://github.com/yauyauyauhen/agent-notify) |
 | `AgentBar` | 统一显示 coding agent 状态、并可处理 Claude Code 权限请求的 macOS 菜单栏应用。 | [GitHub](https://github.com/michalstrnadel/AgentBar) |
@@ -114,6 +115,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `Verchestra` | 用策略门、只读探针、签名证据与人工审查组织可移植 AI 软件交付的早期 harness。 | [GitHub](https://github.com/accd/verchestra) |
 | `capybara` | 本地终端 trace debugger，接收 OTLP/会话记录来定位 agent 工具失败、漂移、循环和成本尖峰。 | [GitHub](https://github.com/tonquoc0407/capybara) |
 | `openhub` | 终端内发现、安装并导出 AI 工具、MCP 与 agent skills 的本地目录中心。 | [GitHub](https://github.com/24KaratAu/openhub) |
 | `AxisAgentic` | 可扩展的长时程 agent runtime 与评测框架，保留状态忠实 trace 和可重放产物。 | [GitHub](https://github.com/XYZ-AI-Lab/AxisAgentic) |
@@ -256,6 +258,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `Docvion` | 为 Docling、Tesseract、PaddleOCR 等解析器提供统一文档 schema 与结构感知 chunking 的 Python 适配层。 | [GitHub](https://github.com/prolixis/docvion) |
 | `ragflow` | 开源 RAG 平台，长期位于高热榜。 | [GitHub](https://github.com/infiniflow/ragflow) |
 | `anything-llm` | 一体化知识库问答与本地 LLM 工作台。 | [GitHub](https://github.com/Mintplex-Labs/anything-llm) |
 | `dify` | AI 应用平台，也常被用来快速搭建知识库应用。 | [GitHub](https://github.com/langgenius/dify) |
@@ -281,6 +284,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `MagicTeX-mcp` | 面向 agent 的 LaTeX MCP 工作区，用 WASM 编译、PDF 锚定评论和可视化编辑构成改稿闭环。 | [GitHub](https://github.com/ZoeLinUTS/MagicTeX-mcp) |
 | `mission-control-board` | 单 HTML 的依赖感知任务板，将人/agent 任务和阻塞关系可视化为可推导状态。 | [GitHub](https://github.com/rockthemike712/mission-control-board) |
 | `promptamp` | 浏览器输入框的开源 BYOK prompt 增强器。 | [GitHub](https://github.com/Sina-Amare/promptamp) |
 | `awesome-design-md` | 收集 `DESIGN.md` 模板的设计约束索引仓库。 | [GitHub](https://github.com/VoltAgent/awesome-design-md) |
@@ -315,6 +319,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `OpenEyes-Live` | 可插拔端侧多模态运行时，按需组合视觉、VAD、ASR 与声纹引擎处理实时相机/麦克风输入。 | [GitHub](https://github.com/vfvincentwong2026/-OpenEyes-Live) |
 | `blinkface` | 以双手取景框控制的 FLUX 实时人像风格化实验，采用 GPU server 与浏览器客户端分离架构。 | [GitHub](https://github.com/xcc3641/blinkface) |
 | `scientific-illustrator` | Codex 插件，在 PowerPoint/draw.io 中用原生对象绘制、审查并修正可编辑科研插图。 | [GitHub](https://github.com/icebird1998/scientific-illustrator) |
 | `MOSS-TTS` | OpenMOSS 的语音生成模型家族。 | [GitHub](https://github.com/OpenMOSS/MOSS-TTS) |
@@ -377,6 +382,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `Kition` | 将关联 Markdown、表格、浏览器研究、AI agent 与可视化自动化放入同一桌面工作区。 | [GitHub](https://github.com/KitionAI/kition) |
 | `slide-meme-inserter` | Claude Code / Codex 共享的 HTML 演示文稿 skill，用明确叙事角色和审计流程插入梗图。 | [GitHub](https://github.com/amnotyoung/slide-meme-inserter) |
 | `job-search-workflow` | 本地优先的 AI 辅助求职框架，覆盖职位分诊、材料起草、决策记录和申请追踪。 | [GitHub](https://github.com/rcnsnr/job-search-workflow) |
 | `pm-skills` | 把 PM 方法论封装成 agent 可调用技能。 | [GitHub](https://github.com/phuryn/pm-skills) |
@@ -407,6 +413,7 @@
 
 - 全量项目目录：[`projects/`](./projects/)
 - 最近日报：
+  - [`2026-07-26`](./daily/2026-07-26/ai-hotspots.md)
   - [`2026-07-25`](./daily/2026-07-25/ai-hotspots.md)
   - [`2026-07-24`](./daily/2026-07-24/ai-hotspots.md)
   - [`2026-07-23`](./daily/2026-07-23/ai-hotspots.md)
@@ -441,9 +448,9 @@
 ## 当前状态
 
 - 状态：持续日更中。
-- 最新更新：`2026-07-25`。
-- 当前项目总数：`434`。
-- 最近新增项目：`mission-control-board`、`slide-meme-inserter`、`job-search-workflow`、`blinkface`、`capybara`、`scientific-illustrator`。
+- 最新更新：`2026-07-26`。
+- 当前项目总数：`440`。
+- 最近新增项目：`kition`、`verchestra`、`ctx-diet`、`MagicTeX-mcp`、`docvion`、`OpenEyes-Live`。
 - 覆盖平台：GitHub、X、Instagram、YouTube。
 
 ## 维护约定
