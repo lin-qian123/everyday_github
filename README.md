@@ -48,7 +48,7 @@
 
 如果你是第一次进入这个仓库，建议从这几个入口开始：
 
-- 最新日报：[`daily/2026-07-26/ai-hotspots.md`](./daily/2026-07-26/ai-hotspots.md)
+- 最新日报：[`daily/2026-07-28/ai-hotspots.md`](./daily/2026-07-28/ai-hotspots.md)
 - 项目总目录：[`projects/`](./projects/)
 - 自动化约束：[`AGENTS.md`](./AGENTS.md)
 - 开发续接记录：[`TODO.md`](./TODO.md)
@@ -73,6 +73,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `llm-endpoint-doctor` | 探测 LLM 中继的协议、SSE 与工具循环能力，并生成可复用诊断报告。 | [GitHub](https://github.com/xinlizhu/llm-endpoint-doctor) |
 | `openclaude-improved` | 主打跨环境、可替换工具接入的开源 agent 项目。 | [GitHub](https://github.com/0xwilliamortiz/openclaude-improved) |
 | `cursor-bridge` | 连接 Claude Code 与 Cursor 订阅工作流的单 Rust 二进制桥接工具。 | [GitHub](https://github.com/hkc5/cursor-bridge) |
 | `ctx-diet` | Claude Code 的 PostToolUse hook，在工具输出入模前压缩冗余内容以控制长会话 token 成本。 | [GitHub](https://github.com/illuwa/ctx-diet) |
@@ -117,6 +118,8 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `letsfinddomain-skill` | 为 Codex/Claude Code/Cursor 生成域名候选、批量检查可用性与续费价的只读 skill。 | [GitHub](https://github.com/meepo-it/letsfinddomain-skill) |
+| `oil-tone` | 面向中英写作的 agent skill，以明确规则和轻量 lint 压制无信息文案。 | [GitHub](https://github.com/oil-oil/oil-tone) |
 | `deer-workflow` | 将 TypeScript 编排与可替换 agent runtime 解耦的动态工作流 runtime。 | [GitHub](https://github.com/deerwork-ai/deer-workflow) |
 | `llmwiki-harness` | 面向知识组织与 LLM 任务循环的早期 harness 观察项。 | [GitHub](https://github.com/cookyman74/llmwiki-harness) |
 | `crucible-agent-skill` | 以减少冗余和收缩 diff 为目标的 coding agent skill。 | [GitHub](https://github.com/ryanelian/crucible-agent-skill) |
@@ -289,6 +292,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `council-lab` | 本地优先的多模型顺序审议工作台，支持人类中途介入、预算与过程导出。 | [GitHub](https://github.com/loveramarois-byte/council-lab) |
 | `MagicTeX-mcp` | 面向 agent 的 LaTeX MCP 工作区，用 WASM 编译、PDF 锚定评论和可视化编辑构成改稿闭环。 | [GitHub](https://github.com/ZoeLinUTS/MagicTeX-mcp) |
 | `mission-control-board` | 单 HTML 的依赖感知任务板，将人/agent 任务和阻塞关系可视化为可推导状态。 | [GitHub](https://github.com/rockthemike712/mission-control-board) |
 | `promptamp` | 浏览器输入框的开源 BYOK prompt 增强器。 | [GitHub](https://github.com/Sina-Amare/promptamp) |
@@ -324,6 +328,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `stackchan-cloud-mcp` | 通过 OAuth、VPS 与 MCP 将 StackChan 桌面机器人接入 claude.ai 的工程实现。 | [GitHub](https://github.com/tianyupaipai-cmd/stackchan-cloud-mcp) |
 | `OpenEyes-Live` | 可插拔端侧多模态运行时，按需组合视觉、VAD、ASR 与声纹引擎处理实时相机/麦克风输入。 | [GitHub](https://github.com/vfvincentwong2026/-OpenEyes-Live) |
 | `blinkface` | 以双手取景框控制的 FLUX 实时人像风格化实验，采用 GPU server 与浏览器客户端分离架构。 | [GitHub](https://github.com/xcc3641/blinkface) |
 | `scientific-illustrator` | Codex 插件，在 PowerPoint/draw.io 中用原生对象绘制、审查并修正可编辑科研插图。 | [GitHub](https://github.com/icebird1998/scientific-illustrator) |
@@ -358,6 +363,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `open-free-router` | 聚合多个免费模型上游、按模型 ID 路由的本地代理和同步工具。 | [GitHub](https://github.com/NoelJudeNoel/open-free-router) |
 | `llama.cpp` | 本地推理生态的标志性项目。 | [GitHub](https://github.com/ggml-org/llama.cpp) |
 | `vllm` | 高性能推理服务框架。 | [GitHub](https://github.com/vllm-project/vllm) |
 | `LocalAI` | 本地优先的开源 AI 引擎，兼容 OpenAI / Anthropic API。 | [GitHub](https://github.com/mudler/LocalAI) |
@@ -419,6 +425,7 @@
 
 - 全量项目目录：[`projects/`](./projects/)
 - 最近日报：
+  - [`2026-07-28`](./daily/2026-07-28/ai-hotspots.md)
   - [`2026-07-27`](./daily/2026-07-27/ai-hotspots.md)
   - [`2026-07-26`](./daily/2026-07-26/ai-hotspots.md)
   - [`2026-07-25`](./daily/2026-07-25/ai-hotspots.md)
@@ -455,9 +462,9 @@
 ## 当前状态
 
 - 状态：持续日更中。
-- 最新更新：`2026-07-27`。
-- 当前项目总数：`446`。
-- 最近新增项目：`openclaude-improved`、`deer-workflow`、`ai-stock-pool`、`cursor-bridge`、`llmwiki-harness`、`crucible-agent-skill`。
+- 最新更新：`2026-07-28`。
+- 当前项目总数：`452`。
+- 最近新增项目：`letsfinddomain-skill`、`oil-tone`、`open-free-router`、`council-lab`、`stackchan-cloud-mcp`、`llm-endpoint-doctor`。
 - 覆盖平台：GitHub、X、Instagram、YouTube。
 
 ## 维护约定
