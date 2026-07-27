@@ -73,6 +73,8 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `openclaude-improved` | 主打跨环境、可替换工具接入的开源 agent 项目。 | [GitHub](https://github.com/0xwilliamortiz/openclaude-improved) |
+| `cursor-bridge` | 连接 Claude Code 与 Cursor 订阅工作流的单 Rust 二进制桥接工具。 | [GitHub](https://github.com/hkc5/cursor-bridge) |
 | `ctx-diet` | Claude Code 的 PostToolUse hook，在工具输出入模前压缩冗余内容以控制长会话 token 成本。 | [GitHub](https://github.com/illuwa/ctx-diet) |
 | `VinvAI` | 以真实运行 trace、代码图谱和独立验收验证 coding agent 修复的本地工具。 | [GitHub](https://github.com/VinvAI/VinvAI) |
 | `agent-notify` | macOS 上给并行终端 agent 会话使用的自清理通知注意力队列。 | [GitHub](https://github.com/yauyauyauhen/agent-notify) |
@@ -115,6 +117,9 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `deer-workflow` | 将 TypeScript 编排与可替换 agent runtime 解耦的动态工作流 runtime。 | [GitHub](https://github.com/deerwork-ai/deer-workflow) |
+| `llmwiki-harness` | 面向知识组织与 LLM 任务循环的早期 harness 观察项。 | [GitHub](https://github.com/cookyman74/llmwiki-harness) |
+| `crucible-agent-skill` | 以减少冗余和收缩 diff 为目标的 coding agent skill。 | [GitHub](https://github.com/ryanelian/crucible-agent-skill) |
 | `Verchestra` | 用策略门、只读探针、签名证据与人工审查组织可移植 AI 软件交付的早期 harness。 | [GitHub](https://github.com/accd/verchestra) |
 | `capybara` | 本地终端 trace debugger，接收 OTLP/会话记录来定位 agent 工具失败、漂移、循环和成本尖峰。 | [GitHub](https://github.com/tonquoc0407/capybara) |
 | `openhub` | 终端内发现、安装并导出 AI 工具、MCP 与 agent skills 的本地目录中心。 | [GitHub](https://github.com/24KaratAu/openhub) |
@@ -382,6 +387,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `ai-stock-pool` | 覆盖美股/A 股映射与产业链线索的 AI 行业股票池研究工具。 | [GitHub](https://github.com/yaoleifly/ai-stock-pool) |
 | `Kition` | 将关联 Markdown、表格、浏览器研究、AI agent 与可视化自动化放入同一桌面工作区。 | [GitHub](https://github.com/KitionAI/kition) |
 | `slide-meme-inserter` | Claude Code / Codex 共享的 HTML 演示文稿 skill，用明确叙事角色和审计流程插入梗图。 | [GitHub](https://github.com/amnotyoung/slide-meme-inserter) |
 | `job-search-workflow` | 本地优先的 AI 辅助求职框架，覆盖职位分诊、材料起草、决策记录和申请追踪。 | [GitHub](https://github.com/rcnsnr/job-search-workflow) |
@@ -413,6 +419,7 @@
 
 - 全量项目目录：[`projects/`](./projects/)
 - 最近日报：
+  - [`2026-07-27`](./daily/2026-07-27/ai-hotspots.md)
   - [`2026-07-26`](./daily/2026-07-26/ai-hotspots.md)
   - [`2026-07-25`](./daily/2026-07-25/ai-hotspots.md)
   - [`2026-07-24`](./daily/2026-07-24/ai-hotspots.md)
@@ -448,9 +455,9 @@
 ## 当前状态
 
 - 状态：持续日更中。
-- 最新更新：`2026-07-26`。
-- 当前项目总数：`440`。
-- 最近新增项目：`kition`、`verchestra`、`ctx-diet`、`MagicTeX-mcp`、`docvion`、`OpenEyes-Live`。
+- 最新更新：`2026-07-27`。
+- 当前项目总数：`446`。
+- 最近新增项目：`openclaude-improved`、`deer-workflow`、`ai-stock-pool`、`cursor-bridge`、`llmwiki-harness`、`crucible-agent-skill`。
 - 覆盖平台：GitHub、X、Instagram、YouTube。
 
 ## 维护约定

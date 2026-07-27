@@ -10,6 +10,7 @@
 
 ## 阶段性开发记录
 
+- 2026-07-27：补跑当天未完成的热点任务。新增 `openclaude-improved`、`deer-workflow`、`ai-stock-pool`、`cursor-bridge`、`llmwiki-harness`、`crucible-agent-skill` 6 个项目说明与当日日报。GitHub REST API 核验它们均创建于 2026-07-26，约 4--175 stars；明确标记为早期信号，`llmwiki-harness` 因公开元数据有限仅作待审计观察项。首页分类、最新日报和项目总数同步至 `446`。
 - 2026-07-26：新增 `kition`、`verchestra`、`ctx-diet`、`MagicTeX-mcp`、`docvion`、`OpenEyes-Live` 6 个项目说明及当日热点日报。GitHub REST API 核验它们均创建于 2026-07-25、约 2--4 stars；均作为早期开发者信号记录，而非全站 Trending 结论。主题集中于 agent 上下文压缩、带证据的交付 harness、PDF 批注改稿、文档解析适配与端侧多模态。首页分类、最新日报和项目总数同步至 `440`。
 - 2026-07-25：新增 `mission-control-board`、`slide-meme-inserter`、`job-search-workflow`、`blinkface`、`capybara`、`scientific-illustrator` 6 个项目说明及当日热点日报。GitHub REST API 核验它们均创建于 2026-07-24、约 8--52 stars；均作为早期开发者信号记录，而非全站 Trending 结论。主题集中于 agent 依赖可视化、trace 追溯、可编辑图文交付、个人工作流和本地 GPU 交互。首页分类、最新日报和项目总数同步至 `434`。
 - 2026-07-24：新增 `VinvAI`、`agent-notify`、`openhub`、`AxisAgentic`、`AgentBar`、`TokenScope`、`anchor-memory` 7 个项目说明与当日热点日报。GitHub REST API 核验它们均创建于 2026-07-23、约 3--20 stars；定位为早期开发者信号。主题集中在 coding agent 的独立验证、并行会话注意力、技能分发、长时程评测、token 卫生与本地记忆。首页分类、最新日报和项目总数同步至 `428`。
