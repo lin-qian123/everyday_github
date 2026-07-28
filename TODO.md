@@ -10,6 +10,7 @@
 
 ## 阶段性开发记录
 
+- 2026-07-29：新增 `ponytail-improved`、`deltafin`、`frieren-dast-ai`、`jaxotron`、`succubus`、`dreamvault` 6 个项目说明和当日日报。GitHub REST API 核验它们均创建于 2026-07-28、约 8--378 stars；均明确标为早期开发者信号。主题集中在 coding-agent 约束/协作、安全测试、超大 MoE 本地试验、JAX 训练与记忆治理；首页分类和项目总数同步至 `458`。X、Instagram、YouTube 均以可打开官方入口记录，未独立核验的互动量不编造。
 - 2026-07-28：新增 `letsfinddomain-skill`、`oil-tone`、`open-free-router`、`council-lab`、`stackchan-cloud-mcp`、`llm-endpoint-doctor` 6 个项目说明和当日日报。GitHub REST API 核验它们均创建于 2026-07-27、约 6--61 stars；均明确记为早期开发者信号。主题集中于 agent skill、端点探测、模型路由、多模型审议和具身 MCP；首页分类与项目总数同步至 `452`。
 - 2026-07-27：补跑当天未完成的热点任务。新增 `openclaude-improved`、`deer-workflow`、`ai-stock-pool`、`cursor-bridge`、`llmwiki-harness`、`crucible-agent-skill` 6 个项目说明与当日日报。GitHub REST API 核验它们均创建于 2026-07-26，约 4--175 stars；明确标记为早期信号，`llmwiki-harness` 因公开元数据有限仅作待审计观察项。首页分类、最新日报和项目总数同步至 `446`。
 - 2026-07-26：新增 `kition`、`verchestra`、`ctx-diet`、`MagicTeX-mcp`、`docvion`、`OpenEyes-Live` 6 个项目说明及当日热点日报。GitHub REST API 核验它们均创建于 2026-07-25、约 2--4 stars；均作为早期开发者信号记录，而非全站 Trending 结论。主题集中于 agent 上下文压缩、带证据的交付 harness、PDF 批注改稿、文档解析适配与端侧多模态。首页分类、最新日报和项目总数同步至 `440`。
@@ -135,6 +136,11 @@
 
 ## 下一步行动
 
+- 回归 `ponytail-improved` 的代码量缩减主张，至少同时观测测试通过率、review 返工和安全/可访问性回归，避免把“少写”直接等同于质量。
+- 对 `deltafin` 验证权重许可、完整下载空间、cache 增量和长超时行为；不要把实验 API 直接暴露到局域网或自动化生产任务。
+- 在靶场中审计 `frieren-dast-ai` 的 CA、session 数据、主动 payload 与 stop conditions；只在书面授权范围内运行。
+- 测试 `succubus` 在两 agent 文件冲突、daemon 故障和上下文压缩后的 lease/任务一致性；检查其本地日志保留与权限。
+- 用合成数据测量 `dreamvault` 的隔离墙、误隔离和检索泄漏，并把隐私、删除与申诉流程作为独立交付物。
 - 用长期会话与失败日志回归验证 `ctx-diet`，重点检查压缩是否丢失诊断证据；同时观察 `Verchestra` 能否从 qualification 进入可安装、可跨 agent 复现的稳定形态。
 - 对 `MagicTeX-mcp` 测试 CJK、参考文献、TikZ 与导出一致性；对 `Docvion` 用多引擎/多质量文档基准验证 schema 丢失与置信度口径。
 - 复核 `OpenEyes-Live` 的模型下载、网络出口、MCP gateway 与摄像头/麦克风同意机制；跟踪 `Kition` 的签名运行时边界、数据流和 AGPL 合规影响。

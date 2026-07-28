@@ -48,7 +48,7 @@
 
 如果你是第一次进入这个仓库，建议从这几个入口开始：
 
-- 最新日报：[`daily/2026-07-28/ai-hotspots.md`](./daily/2026-07-28/ai-hotspots.md)
+- 最新日报：[`daily/2026-07-29/ai-hotspots.md`](./daily/2026-07-29/ai-hotspots.md)
 - 项目总目录：[`projects/`](./projects/)
 - 自动化约束：[`AGENTS.md`](./AGENTS.md)
 - 开发续接记录：[`TODO.md`](./TODO.md)
@@ -74,6 +74,8 @@
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
 | `llm-endpoint-doctor` | 探测 LLM 中继的协议、SSE 与工具循环能力，并生成可复用诊断报告。 | [GitHub](https://github.com/xinlizhu/llm-endpoint-doctor) |
+| `ponytail-improved` | 用 skills 与 hook 让 coding agent 先复用、后新增的“反过度工程”规则包。 | [GitHub](https://github.com/0xwilliamortiz/ponytail-improved) |
+| `succubus` | 为同仓库并行 coding agents 提供共享任务板、问题区与带 TTL 的文件租约。 | [GitHub](https://github.com/enowdev/succubus) |
 | `openclaude-improved` | 主打跨环境、可替换工具接入的开源 agent 项目。 | [GitHub](https://github.com/0xwilliamortiz/openclaude-improved) |
 | `cursor-bridge` | 连接 Claude Code 与 Cursor 订阅工作流的单 Rust 二进制桥接工具。 | [GitHub](https://github.com/hkc5/cursor-bridge) |
 | `ctx-diet` | Claude Code 的 PostToolUse hook，在工具输出入模前压缩冗余内容以控制长会话 token 成本。 | [GitHub](https://github.com/illuwa/ctx-diet) |
@@ -119,6 +121,7 @@
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
 | `letsfinddomain-skill` | 为 Codex/Claude Code/Cursor 生成域名候选、批量检查可用性与续费价的只读 skill。 | [GitHub](https://github.com/meepo-it/letsfinddomain-skill) |
+| `frieren-dast-ai` | 将 MITM 代理、规则扫描、多 agent 检查与仪表板组合的授权 DAST 工具。 | [GitHub](https://github.com/knowbe4/frieren-dast-ai) |
 | `oil-tone` | 面向中英写作的 agent skill，以明确规则和轻量 lint 压制无信息文案。 | [GitHub](https://github.com/oil-oil/oil-tone) |
 | `deer-workflow` | 将 TypeScript 编排与可替换 agent runtime 解耦的动态工作流 runtime。 | [GitHub](https://github.com/deerwork-ai/deer-workflow) |
 | `llmwiki-harness` | 面向知识组织与 LLM 任务循环的早期 harness 观察项。 | [GitHub](https://github.com/cookyman74/llmwiki-harness) |
@@ -232,6 +235,7 @@
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
 | `anchor-memory` | SQLite-first 的本地 agent 记忆链，覆盖混合召回、belief 与夜间维护。 | [GitHub](https://github.com/anhe2021212-spec/anchor-memory) |
+| `dreamvault` | 将 companion 的未锚定生成隔离在主记忆检索路径之外的治理规范与参考实现。 | [GitHub](https://github.com/SilviaYue/dreamvault) |
 | `TokenScope` | 解析 Claude Code 本地 transcript 的 token profiler，定位可量化的上下文浪费。 | [GitHub](https://github.com/AviVAvi/TokenScope) |
 | `RAG-OS` | 用 Git/Markdown 知识库构建的自托管个人 agent/RAG 工作台。 | [GitHub](https://github.com/csnyder256/RAG-OS) |
 | `not-goldfish` | SQLite/FTS5 驱动的跨 agent 本地记忆与上下文卫生层。 | [GitHub](https://github.com/vmelooo/not-goldfish) |
@@ -364,6 +368,8 @@
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
 | `open-free-router` | 聚合多个免费模型上游、按模型 ID 路由的本地代理和同步工具。 | [GitHub](https://github.com/NoelJudeNoel/open-free-router) |
+| `deltafin` | 在 Apple Silicon 上以按需 MoE expert 缓存探索运行 Kimi K3 的本地推理实验。 | [GitHub](https://github.com/gavamedia/deltafin) |
+| `jaxotron` | 用 JAX/Equinox 展示数据、全分片、张量 3D 并行的极简 LLM 训练器。 | [GitHub](https://github.com/rishiraj/jaxotron) |
 | `llama.cpp` | 本地推理生态的标志性项目。 | [GitHub](https://github.com/ggml-org/llama.cpp) |
 | `vllm` | 高性能推理服务框架。 | [GitHub](https://github.com/vllm-project/vllm) |
 | `LocalAI` | 本地优先的开源 AI 引擎，兼容 OpenAI / Anthropic API。 | [GitHub](https://github.com/mudler/LocalAI) |
@@ -425,6 +431,7 @@
 
 - 全量项目目录：[`projects/`](./projects/)
 - 最近日报：
+  - [`2026-07-29`](./daily/2026-07-29/ai-hotspots.md)
   - [`2026-07-28`](./daily/2026-07-28/ai-hotspots.md)
   - [`2026-07-27`](./daily/2026-07-27/ai-hotspots.md)
   - [`2026-07-26`](./daily/2026-07-26/ai-hotspots.md)
@@ -462,9 +469,9 @@
 ## 当前状态
 
 - 状态：持续日更中。
-- 最新更新：`2026-07-28`。
-- 当前项目总数：`452`。
-- 最近新增项目：`letsfinddomain-skill`、`oil-tone`、`open-free-router`、`council-lab`、`stackchan-cloud-mcp`、`llm-endpoint-doctor`。
+- 最新更新：`2026-07-29`。
+- 当前项目总数：`458`。
+- 最近新增项目：`ponytail-improved`、`deltafin`、`frieren-dast-ai`、`jaxotron`、`succubus`、`dreamvault`。
 - 覆盖平台：GitHub、X、Instagram、YouTube。
 
 ## 维护约定
@@ -475,5 +482,6 @@
 - 新项目优先归入既有分类；只有在现有分类明显不合适时才新增分类。
 - 自动化成功完成后，默认提交并推送到 `origin/master`。
 - 热点内容优先采用官方来源与主流媒体交叉验证。
+- 社媒条目须标注可复核状态；无法独立读取原帖时，只能作为观察入口，不得虚构互动量或传播结论。
 - 对争议性结论明确区分“事实、判断、不确定性”。
 - 若 GitHub 头部热点已在仓库中建立目录，则优先刷新既有项目说明，并在当日日报中显式说明取舍。
