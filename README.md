@@ -48,7 +48,7 @@
 
 如果你是第一次进入这个仓库，建议从这几个入口开始：
 
-- 最新日报：[`daily/2026-07-29/ai-hotspots.md`](./daily/2026-07-29/ai-hotspots.md)
+- 最新日报：[`daily/2026-07-30/ai-hotspots.md`](./daily/2026-07-30/ai-hotspots.md)
 - 项目总目录：[`projects/`](./projects/)
 - 自动化约束：[`AGENTS.md`](./AGENTS.md)
 - 开发续接记录：[`TODO.md`](./TODO.md)
@@ -121,6 +121,8 @@
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
 | `letsfinddomain-skill` | 为 Codex/Claude Code/Cursor 生成域名候选、批量检查可用性与续费价的只读 skill。 | [GitHub](https://github.com/meepo-it/letsfinddomain-skill) |
+| `ai-design-skills` | 将落地页结构、视觉 token 与动效约束写成 coding agent 可读取的设计 skill 集。 | [GitHub](https://github.com/elayadesign/ai-design-skills) |
+| `lit-review-skill` | 为 Claude/Codex 等 agent 提供文献检索、书目核验与主张支持度审计。 | [GitHub](https://github.com/Zachariah9420/lit-review-skill) |
 | `frieren-dast-ai` | 将 MITM 代理、规则扫描、多 agent 检查与仪表板组合的授权 DAST 工具。 | [GitHub](https://github.com/knowbe4/frieren-dast-ai) |
 | `oil-tone` | 面向中英写作的 agent skill，以明确规则和轻量 lint 压制无信息文案。 | [GitHub](https://github.com/oil-oil/oil-tone) |
 | `deer-workflow` | 将 TypeScript 编排与可替换 agent runtime 解耦的动态工作流 runtime。 | [GitHub](https://github.com/deerwork-ai/deer-workflow) |
@@ -235,6 +237,7 @@
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
 | `anchor-memory` | SQLite-first 的本地 agent 记忆链，覆盖混合召回、belief 与夜间维护。 | [GitHub](https://github.com/anhe2021212-spec/anchor-memory) |
+| `zhixin-companion` | 用事实、感受、解释三层框架辅助个人记录与反思的本地提示词/agent 配置。 | [GitHub](https://github.com/LotusDecoder/zhixin-companion) |
 | `dreamvault` | 将 companion 的未锚定生成隔离在主记忆检索路径之外的治理规范与参考实现。 | [GitHub](https://github.com/SilviaYue/dreamvault) |
 | `TokenScope` | 解析 Claude Code 本地 transcript 的 token profiler，定位可量化的上下文浪费。 | [GitHub](https://github.com/AviVAvi/TokenScope) |
 | `RAG-OS` | 用 Git/Markdown 知识库构建的自托管个人 agent/RAG 工作台。 | [GitHub](https://github.com/csnyder256/RAG-OS) |
@@ -297,6 +300,7 @@
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
 | `council-lab` | 本地优先的多模型顺序审议工作台，支持人类中途介入、预算与过程导出。 | [GitHub](https://github.com/loveramarois-byte/council-lab) |
+| `fingertips` | 将打字时长、停顿等非内容节律信号接入对话 AI 的轻量组件。 | [GitHub](https://github.com/eveacla11/fingertips) |
 | `MagicTeX-mcp` | 面向 agent 的 LaTeX MCP 工作区，用 WASM 编译、PDF 锚定评论和可视化编辑构成改稿闭环。 | [GitHub](https://github.com/ZoeLinUTS/MagicTeX-mcp) |
 | `mission-control-board` | 单 HTML 的依赖感知任务板，将人/agent 任务和阻塞关系可视化为可推导状态。 | [GitHub](https://github.com/rockthemike712/mission-control-board) |
 | `promptamp` | 浏览器输入框的开源 BYOK prompt 增强器。 | [GitHub](https://github.com/Sina-Amare/promptamp) |
@@ -400,6 +404,8 @@
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
 | `ai-stock-pool` | 覆盖美股/A 股映射与产业链线索的 AI 行业股票池研究工具。 | [GitHub](https://github.com/yaoleifly/ai-stock-pool) |
+| `geolook` | 本地自托管的 GEO 工作台，覆盖生成式引擎采样、诊断、工单与验收。 | [GitHub](https://github.com/bingqiang2021/geolook) |
+| `dreampaper` | 本地模板驱动的科研图与学术幻灯片生成应用。 | [GitHub](https://github.com/dream-rec/dreampaper) |
 | `Kition` | 将关联 Markdown、表格、浏览器研究、AI agent 与可视化自动化放入同一桌面工作区。 | [GitHub](https://github.com/KitionAI/kition) |
 | `slide-meme-inserter` | Claude Code / Codex 共享的 HTML 演示文稿 skill，用明确叙事角色和审计流程插入梗图。 | [GitHub](https://github.com/amnotyoung/slide-meme-inserter) |
 | `job-search-workflow` | 本地优先的 AI 辅助求职框架，覆盖职位分诊、材料起草、决策记录和申请追踪。 | [GitHub](https://github.com/rcnsnr/job-search-workflow) |
@@ -431,6 +437,7 @@
 
 - 全量项目目录：[`projects/`](./projects/)
 - 最近日报：
+  - [`2026-07-30`](./daily/2026-07-30/ai-hotspots.md)
   - [`2026-07-29`](./daily/2026-07-29/ai-hotspots.md)
   - [`2026-07-28`](./daily/2026-07-28/ai-hotspots.md)
   - [`2026-07-27`](./daily/2026-07-27/ai-hotspots.md)
@@ -469,9 +476,9 @@
 ## 当前状态
 
 - 状态：持续日更中。
-- 最新更新：`2026-07-29`。
-- 当前项目总数：`458`。
-- 最近新增项目：`ponytail-improved`、`deltafin`、`frieren-dast-ai`、`jaxotron`、`succubus`、`dreamvault`。
+- 最新更新：`2026-07-30`。
+- 当前项目总数：`464`。
+- 最近新增项目：`ai-design-skills`、`fingertips`、`zhixin-companion`、`lit-review-skill`、`geolook`、`dreampaper`。
 - 覆盖平台：GitHub、X、Instagram、YouTube。
 
 ## 维护约定

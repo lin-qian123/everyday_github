@@ -10,6 +10,7 @@
 
 ## 阶段性开发记录
 
+- 2026-07-30：新增 `ai-design-skills`、`fingertips`、`zhixin-companion`、`lit-review-skill`、`geolook`、`dreampaper` 6 个项目说明和当日日报。GitHub REST API 核验它们均创建于 2026-07-29、约 8--154 stars；均明确标为早期开发者信号。主题覆盖设计规则、输入节律隐私、个人反思、文献核验、GEO 与科研图/幻灯片；首页分类与项目总数同步至 `464`。X、Instagram、YouTube 均保留可打开官方入口，未独立核验的互动量不编造。
 - 2026-07-29：新增 `ponytail-improved`、`deltafin`、`frieren-dast-ai`、`jaxotron`、`succubus`、`dreamvault` 6 个项目说明和当日日报。GitHub REST API 核验它们均创建于 2026-07-28、约 8--378 stars；均明确标为早期开发者信号。主题集中在 coding-agent 约束/协作、安全测试、超大 MoE 本地试验、JAX 训练与记忆治理；首页分类和项目总数同步至 `458`。X、Instagram、YouTube 均以可打开官方入口记录，未独立核验的互动量不编造。
 - 2026-07-28：新增 `letsfinddomain-skill`、`oil-tone`、`open-free-router`、`council-lab`、`stackchan-cloud-mcp`、`llm-endpoint-doctor` 6 个项目说明和当日日报。GitHub REST API 核验它们均创建于 2026-07-27、约 6--61 stars；均明确记为早期开发者信号。主题集中于 agent skill、端点探测、模型路由、多模型审议和具身 MCP；首页分类与项目总数同步至 `452`。
 - 2026-07-27：补跑当天未完成的热点任务。新增 `openclaude-improved`、`deer-workflow`、`ai-stock-pool`、`cursor-bridge`、`llmwiki-harness`、`crucible-agent-skill` 6 个项目说明与当日日报。GitHub REST API 核验它们均创建于 2026-07-26，约 4--175 stars；明确标记为早期信号，`llmwiki-harness` 因公开元数据有限仅作待审计观察项。首页分类、最新日报和项目总数同步至 `446`。
