@@ -10,6 +10,7 @@
 
 ## 阶段性开发记录
 
+- 2026-07-31：新增 `empathy`、`mubai-ears`、`video-to-skill`、`litecoder`、`skill-audit-router`、`project-continuity-memory` 6 个项目说明和当日日报。GitHub REST API 核验它们均创建于 2026-07-30、约 2--28 stars；均明确标为早期开发者信号。主题覆盖 agent 对外沟通、技能可发现性、视频证据转 skill、终端 runtime、仓库交接与本地语音处理；首页分类与项目总数同步至 `470`。X、Instagram、YouTube 均保留可打开官方入口，未独立核验的互动量不编造。
 - 2026-07-30：新增 `ai-design-skills`、`fingertips`、`zhixin-companion`、`lit-review-skill`、`geolook`、`dreampaper` 6 个项目说明和当日日报。GitHub REST API 核验它们均创建于 2026-07-29、约 8--154 stars；均明确标为早期开发者信号。主题覆盖设计规则、输入节律隐私、个人反思、文献核验、GEO 与科研图/幻灯片；首页分类与项目总数同步至 `464`。X、Instagram、YouTube 均保留可打开官方入口，未独立核验的互动量不编造。
 - 2026-07-29：新增 `ponytail-improved`、`deltafin`、`frieren-dast-ai`、`jaxotron`、`succubus`、`dreamvault` 6 个项目说明和当日日报。GitHub REST API 核验它们均创建于 2026-07-28、约 8--378 stars；均明确标为早期开发者信号。主题集中在 coding-agent 约束/协作、安全测试、超大 MoE 本地试验、JAX 训练与记忆治理；首页分类和项目总数同步至 `458`。X、Instagram、YouTube 均以可打开官方入口记录，未独立核验的互动量不编造。
 - 2026-07-28：新增 `letsfinddomain-skill`、`oil-tone`、`open-free-router`、`council-lab`、`stackchan-cloud-mcp`、`llm-endpoint-doctor` 6 个项目说明和当日日报。GitHub REST API 核验它们均创建于 2026-07-27、约 6--61 stars；均明确记为早期开发者信号。主题集中于 agent skill、端点探测、模型路由、多模型审议和具身 MCP；首页分类与项目总数同步至 `452`。
