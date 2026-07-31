@@ -48,7 +48,7 @@
 
 如果你是第一次进入这个仓库，建议从这几个入口开始：
 
-- 最新日报：[`daily/2026-07-31/ai-hotspots.md`](./daily/2026-07-31/ai-hotspots.md)
+- 最新日报：[`daily/2026-08-01/ai-hotspots.md`](./daily/2026-08-01/ai-hotspots.md)
 - 项目总目录：[`projects/`](./projects/)
 - 自动化约束：[`AGENTS.md`](./AGENTS.md)
 - 开发续接记录：[`TODO.md`](./TODO.md)
@@ -73,6 +73,8 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `hybrid-cli-ai` | 在 Ollama 与 Groq 间切换、默认先预览再执行的跨平台自然语言终端助手。 | [GitHub](https://github.com/HereIsMuhammad/hybrid-cli-ai) |
+| `proxybaby` | 面向 AI/SSE/ACP 会话的跨平台代理调试器；仅可在授权抓包范围内使用。 | [GitHub](https://github.com/imcuttle/proxybaby) |
 | `LiteCoder` | 终端优先 coding agent，结合持久会话、项目记忆、权限、trace、MCP 与协作。 | [GitHub](https://github.com/ikooky/litecoder) |
 | `llm-endpoint-doctor` | 探测 LLM 中继的协议、SSE 与工具循环能力，并生成可复用诊断报告。 | [GitHub](https://github.com/xinlizhu/llm-endpoint-doctor) |
 | `ponytail-improved` | 用 skills 与 hook 让 coding agent 先复用、后新增的“反过度工程”规则包。 | [GitHub](https://github.com/0xwilliamortiz/ponytail-improved) |
@@ -121,6 +123,8 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `architect-agent` | 研究型 BPMN 到工具、代码与测试生成工作流，强调确定性流程与评测。 | [GitHub](https://github.com/Commonwealth-Bank-of-Australia/architect-agent) |
+| `doubt` | 用可定位的支持、反驳、限定与缺失证据生成可审阅的交互式图谱。 | [GitHub](https://github.com/alsoleg89/doubt) |
 | `empathy` | 约束 agent 在对人发布前披露身份、尊重注意力，并判断是否应发送。 | [GitHub](https://github.com/danielroe/empathy) |
 | `video-to-skill` | 将有权访问的视频或课程转为带时间戳证据、可安装的 Claude Code/Codex skill。 | [GitHub](https://github.com/Lum1104/video-to-skill) |
 | `skill-audit-router` | 盘点可加载 skills、重复/遮蔽项与难路由描述，并支持重测改进。 | [GitHub](https://github.com/rushindrasinha/skill-audit-router) |
@@ -341,6 +345,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `project-echo` | 把档案录像的转写、关键帧描述与摘要存为可检索知识库的多模态管线。 | [GitHub](https://github.com/Commonwealth-Bank-of-Australia/project-echo) |
 | `mubai-ears` | 本地转写并提取音高、能量、停顿等韵律摘要的语音预处理工具。 | [GitHub](https://github.com/hmh323/mubai-ears) |
 | `stackchan-cloud-mcp` | 通过 OAuth、VPS 与 MCP 将 StackChan 桌面机器人接入 claude.ai 的工程实现。 | [GitHub](https://github.com/tianyupaipai-cmd/stackchan-cloud-mcp) |
 | `OpenEyes-Live` | 可插拔端侧多模态运行时，按需组合视觉、VAD、ASR 与声纹引擎处理实时相机/麦克风输入。 | [GitHub](https://github.com/vfvincentwong2026/-OpenEyes-Live) |
@@ -377,6 +382,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `slopsource` | 持续发布可自托管 AI 应用替代实现的单仓库计划；功能与许可需逐项核验。 | [GitHub](https://github.com/micahc123/slopsource) |
 | `open-free-router` | 聚合多个免费模型上游、按模型 ID 路由的本地代理和同步工具。 | [GitHub](https://github.com/NoelJudeNoel/open-free-router) |
 | `deltafin` | 在 Apple Silicon 上以按需 MoE expert 缓存探索运行 Kimi K3 的本地推理实验。 | [GitHub](https://github.com/gavamedia/deltafin) |
 | `jaxotron` | 用 JAX/Equinox 展示数据、全分片、张量 3D 并行的极简 LLM 训练器。 | [GitHub](https://github.com/rishiraj/jaxotron) |
@@ -443,6 +449,7 @@
 
 - 全量项目目录：[`projects/`](./projects/)
 - 最近日报：
+  - [`2026-08-01`](./daily/2026-08-01/ai-hotspots.md)
   - [`2026-07-31`](./daily/2026-07-31/ai-hotspots.md)
   - [`2026-07-30`](./daily/2026-07-30/ai-hotspots.md)
   - [`2026-07-29`](./daily/2026-07-29/ai-hotspots.md)
@@ -483,9 +490,9 @@
 ## 当前状态
 
 - 状态：持续日更中。
-- 最新更新：`2026-07-31`。
-- 当前项目总数：`470`。
-- 最近新增项目：`empathy`、`mubai-ears`、`video-to-skill`、`LiteCoder`、`skill-audit-router`、`Project Continuity Memory`。
+- 最新更新：`2026-08-01`。
+- 当前项目总数：`476`。
+- 最近新增项目：`architect-agent`、`project-echo`、`hybrid-cli-ai`、`doubt`、`proxybaby`、`slopsource`。
 - 覆盖平台：GitHub、X、Instagram、YouTube。
 
 ## 维护约定
