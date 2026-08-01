@@ -48,7 +48,7 @@
 
 如果你是第一次进入这个仓库，建议从这几个入口开始：
 
-- 最新日报：[`daily/2026-08-01/ai-hotspots.md`](./daily/2026-08-01/ai-hotspots.md)
+- 最新日报：[`daily/2026-08-02/ai-hotspots.md`](./daily/2026-08-02/ai-hotspots.md)
 - 项目总目录：[`projects/`](./projects/)
 - 自动化约束：[`AGENTS.md`](./AGENTS.md)
 - 开发续接记录：[`TODO.md`](./TODO.md)
@@ -73,6 +73,8 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `codex-ds-sub-agents` | 以本地任务文件、原子领取和回执让 Codex Desktop 试用 DeepSeek 子 agent 的第三方集成。 | [GitHub](https://github.com/wongchisum/codex-ds-sub-agents) |
+| `Tigriden` | 专为监督终端 coding agents 设计的轻量 macOS IDE，合并会话、文件树、编辑器与查看器。 | [GitHub](https://github.com/Sompote/Tigriden) |
 | `hybrid-cli-ai` | 在 Ollama 与 Groq 间切换、默认先预览再执行的跨平台自然语言终端助手。 | [GitHub](https://github.com/HereIsMuhammad/hybrid-cli-ai) |
 | `proxybaby` | 面向 AI/SSE/ACP 会话的跨平台代理调试器；仅可在授权抓包范围内使用。 | [GitHub](https://github.com/imcuttle/proxybaby) |
 | `LiteCoder` | 终端优先 coding agent，结合持久会话、项目记忆、权限、trace、MCP 与协作。 | [GitHub](https://github.com/ikooky/litecoder) |
@@ -123,6 +125,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `impeccable-lite` | 面向 coding agent 的单文件前端设计 judgment skill，刻意不携带插件和运行时 machinery。 | [GitHub](https://github.com/ilindaniel/impeccable-lite) |
 | `architect-agent` | 研究型 BPMN 到工具、代码与测试生成工作流，强调确定性流程与评测。 | [GitHub](https://github.com/Commonwealth-Bank-of-Australia/architect-agent) |
 | `doubt` | 用可定位的支持、反驳、限定与缺失证据生成可审阅的交互式图谱。 | [GitHub](https://github.com/alsoleg89/doubt) |
 | `empathy` | 约束 agent 在对人发布前披露身份、尊重注意力，并判断是否应发送。 | [GitHub](https://github.com/danielroe/empathy) |
@@ -244,6 +247,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `agent-inbox` | 将手机或浏览器发现的链接投递到 REST 队列，交给任意 agent/MCP client 后续处理。 | [GitHub](https://github.com/OGZamasu/agent-inbox) |
 | `Project Continuity Memory` | 用仓库内稳定记忆与当前交接双文件，让 agent 从已验证项目状态恢复工作。 | [GitHub](https://github.com/YSjandj-design/project-continuity-memory) |
 | `anchor-memory` | SQLite-first 的本地 agent 记忆链，覆盖混合召回、belief 与夜间维护。 | [GitHub](https://github.com/anhe2021212-spec/anchor-memory) |
 | `zhixin-companion` | 用事实、感受、解释三层框架辅助个人记录与反思的本地提示词/agent 配置。 | [GitHub](https://github.com/LotusDecoder/zhixin-companion) |
@@ -345,6 +349,8 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `gbro-collage-info` | 基于 HyperFrames 的中文口播拼贴信息动画 skill，以本地 HTML/CSS/GSAP 输出 MP4。 | [GitHub](https://github.com/pyang5166/gbro-collage-info) |
+| `hbg-life-simulation` | 将中文人生叙事组织为角色一致、TTS 对齐、字幕完整且经过 MP4 QA 的视频 skill。 | [GitHub](https://github.com/Mr-funny/hbg-life-simulation) |
 | `project-echo` | 把档案录像的转写、关键帧描述与摘要存为可检索知识库的多模态管线。 | [GitHub](https://github.com/Commonwealth-Bank-of-Australia/project-echo) |
 | `mubai-ears` | 本地转写并提取音高、能量、停顿等韵律摘要的语音预处理工具。 | [GitHub](https://github.com/hmh323/mubai-ears) |
 | `stackchan-cloud-mcp` | 通过 OAuth、VPS 与 MCP 将 StackChan 桌面机器人接入 claude.ai 的工程实现。 | [GitHub](https://github.com/tianyupaipai-cmd/stackchan-cloud-mcp) |
@@ -449,6 +455,7 @@
 
 - 全量项目目录：[`projects/`](./projects/)
 - 最近日报：
+  - [`2026-08-02`](./daily/2026-08-02/ai-hotspots.md)
   - [`2026-08-01`](./daily/2026-08-01/ai-hotspots.md)
   - [`2026-07-31`](./daily/2026-07-31/ai-hotspots.md)
   - [`2026-07-30`](./daily/2026-07-30/ai-hotspots.md)
@@ -490,9 +497,9 @@
 ## 当前状态
 
 - 状态：持续日更中。
-- 最新更新：`2026-08-01`。
-- 当前项目总数：`476`。
-- 最近新增项目：`architect-agent`、`project-echo`、`hybrid-cli-ai`、`doubt`、`proxybaby`、`slopsource`。
+- 最新更新：`2026-08-02`。
+- 当前项目总数：`482`。
+- 最近新增项目：`impeccable-lite`、`gbro-collage-info`、`hbg-life-simulation`、`codex-ds-sub-agents`、`agent-inbox`、`Tigriden`。
 - 覆盖平台：GitHub、X、Instagram、YouTube。
 
 ## 维护约定
