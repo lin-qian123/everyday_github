@@ -10,6 +10,7 @@
 
 ## 阶段性开发记录
 
+- 2026-08-03：新增 `agent`、`phoenix`、`time-to-first-token`、`Resonant`、`codex-agent-team`、`celln` 6 个项目说明和当日日报。GitHub REST API 核验它们均创建于 2026-08-02、约 9--71 stars；均明确标为早期开发者信号。主题覆盖分析 MCP 接入、Hermes 治理插件、推理服务实践、本地音乐工作站、多 agent 决策与执行隔离；首页分类与项目总数同步至 `488`。X、Instagram、YouTube 未获得可独立复核的当日互动量，只保留观察入口。`phoenix` 的 API 许可证字段缺失（仓库 LICENSE 标示 CC BY-NC 4.0），`Resonant` 发布构建未签名，均已标记需人工核验。
 - 2026-08-02：新增 `impeccable-lite`、`gbro-collage-info`、`hbg-life-simulation`、`codex-ds-sub-agents`、`agent-inbox`、`Tigriden` 6 个项目说明和当日日报。GitHub REST API 核验它们均创建于 2026-08-01、约 4--41 stars；均明确标为早期开发者信号。主题覆盖前端设计 skill、可审阅的视频生成、Codex 子 agent 集成、链接队列与 agent 监督界面；首页分类与项目总数同步至 `482`。X、Instagram、YouTube 仅保留可打开官方入口，未独立核验的互动量不编造。`codex-ds-sub-agents` 的 API 许可证字段缺失，且会改动用户级配置，已标记需人工核验。
 - 2026-08-01：新增 `architect-agent`、`project-echo`、`hybrid-cli-ai`、`doubt`、`proxybaby`、`slopsource` 6 个项目说明和当日日报。GitHub REST API 核验它们均创建于 2026-07-31、约 1--5 stars；均明确标为早期开发者信号。主题覆盖可测的流程生成、视频档案检索、证据图谱、自然语言终端、AI 协议调试与自托管替代应用；首页分类与项目总数同步至 `476`。X、Instagram、YouTube 仅保留可打开官方入口，未独立核验的互动量不编造。`proxybaby` 与 `slopsource` 的 API 许可证字段为 `NOASSERTION`，已标记需人工核验。
 - 2026-07-31：新增 `empathy`、`mubai-ears`、`video-to-skill`、`litecoder`、`skill-audit-router`、`project-continuity-memory` 6 个项目说明和当日日报。GitHub REST API 核验它们均创建于 2026-07-30、约 2--28 stars；均明确标为早期开发者信号。主题覆盖 agent 对外沟通、技能可发现性、视频证据转 skill、终端 runtime、仓库交接与本地语音处理；首页分类与项目总数同步至 `470`。X、Instagram、YouTube 均保留可打开官方入口，未独立核验的互动量不编造。

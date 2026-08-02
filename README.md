@@ -48,7 +48,7 @@
 
 如果你是第一次进入这个仓库，建议从这几个入口开始：
 
-- 最新日报：[`daily/2026-08-02/ai-hotspots.md`](./daily/2026-08-02/ai-hotspots.md)
+- 最新日报：[`daily/2026-08-03/ai-hotspots.md`](./daily/2026-08-03/ai-hotspots.md)
 - 项目总目录：[`projects/`](./projects/)
 - 自动化约束：[`AGENTS.md`](./AGENTS.md)
 - 开发续接记录：[`TODO.md`](./TODO.md)
@@ -125,6 +125,9 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `phoenix` | Hermes Agent 的第三方治理插件，组合模型路由、熔断、自愈、长任务守护与复核；需审阅非商业许可证和 provider 数据边界。 | [GitHub](https://github.com/xyaz1313/phoenix) |
+| `codex-agent-team` | 为 Codex 选择最小协作拓扑、验证方式与人工闸门的第三方 skill 及校验脚本。 | [GitHub](https://github.com/youngfor-shoot/codex-agent-team) |
+| `celln` | 用 microVM、只读借用工具与 agent/tool 执行通道隔离来运行 agent 生成程序的早期工具。 | [GitHub](https://github.com/sympozium-ai/celln) |
 | `impeccable-lite` | 面向 coding agent 的单文件前端设计 judgment skill，刻意不携带插件和运行时 machinery。 | [GitHub](https://github.com/ilindaniel/impeccable-lite) |
 | `architect-agent` | 研究型 BPMN 到工具、代码与测试生成工作流，强调确定性流程与评测。 | [GitHub](https://github.com/Commonwealth-Bank-of-Australia/architect-agent) |
 | `doubt` | 用可定位的支持、反驳、限定与缺失证据生成可审阅的交互式图谱。 | [GitHub](https://github.com/alsoleg89/doubt) |
@@ -349,6 +352,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `Resonant` | Windows 本地优先音乐工作站，可选本地 ACE-Step 生成、MCP 辅助创作与 WAV 导出；发布构建目前未签名。 | [GitHub](https://github.com/calesthio/Resonant) |
 | `gbro-collage-info` | 基于 HyperFrames 的中文口播拼贴信息动画 skill，以本地 HTML/CSS/GSAP 输出 MP4。 | [GitHub](https://github.com/pyang5166/gbro-collage-info) |
 | `hbg-life-simulation` | 将中文人生叙事组织为角色一致、TTS 对齐、字幕完整且经过 MP4 QA 的视频 skill。 | [GitHub](https://github.com/Mr-funny/hbg-life-simulation) |
 | `project-echo` | 把档案录像的转写、关键帧描述与摘要存为可检索知识库的多模态管线。 | [GitHub](https://github.com/Commonwealth-Bank-of-Australia/project-echo) |
@@ -388,6 +392,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `time-to-first-token` | 以一个可部署服务串起 LLM 推理、TTFT/成本观测、压测、量化和可复现 benchmark 的十周实践路线。 | [GitHub](https://github.com/patchy631/time-to-first-token) |
 | `slopsource` | 持续发布可自托管 AI 应用替代实现的单仓库计划；功能与许可需逐项核验。 | [GitHub](https://github.com/micahc123/slopsource) |
 | `open-free-router` | 聚合多个免费模型上游、按模型 ID 路由的本地代理和同步工具。 | [GitHub](https://github.com/NoelJudeNoel/open-free-router) |
 | `deltafin` | 在 Apple Silicon 上以按需 MoE expert 缓存探索运行 Kimi K3 的本地推理实验。 | [GitHub](https://github.com/gavamedia/deltafin) |
@@ -421,6 +426,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `agent` | Talivia 的 MCP agent kit，协助将网站追踪、事件核验和支付归因接入代码项目。 | [GitHub](https://github.com/talivia-group/agent) |
 | `ai-stock-pool` | 覆盖美股/A 股映射与产业链线索的 AI 行业股票池研究工具。 | [GitHub](https://github.com/yaoleifly/ai-stock-pool) |
 | `geolook` | 本地自托管的 GEO 工作台，覆盖生成式引擎采样、诊断、工单与验收。 | [GitHub](https://github.com/bingqiang2021/geolook) |
 | `dreampaper` | 本地模板驱动的科研图与学术幻灯片生成应用。 | [GitHub](https://github.com/dream-rec/dreampaper) |
@@ -455,6 +461,7 @@
 
 - 全量项目目录：[`projects/`](./projects/)
 - 最近日报：
+  - [`2026-08-03`](./daily/2026-08-03/ai-hotspots.md)
   - [`2026-08-02`](./daily/2026-08-02/ai-hotspots.md)
   - [`2026-08-01`](./daily/2026-08-01/ai-hotspots.md)
   - [`2026-07-31`](./daily/2026-07-31/ai-hotspots.md)
@@ -497,9 +504,9 @@
 ## 当前状态
 
 - 状态：持续日更中。
-- 最新更新：`2026-08-02`。
-- 当前项目总数：`482`。
-- 最近新增项目：`impeccable-lite`、`gbro-collage-info`、`hbg-life-simulation`、`codex-ds-sub-agents`、`agent-inbox`、`Tigriden`。
+- 最新更新：`2026-08-03`。
+- 当前项目总数：`488`。
+- 最近新增项目：`agent`、`phoenix`、`time-to-first-token`、`Resonant`、`codex-agent-team`、`celln`。
 - 覆盖平台：GitHub、X、Instagram、YouTube。
 
 ## 维护约定
