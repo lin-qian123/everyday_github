@@ -48,7 +48,7 @@
 
 如果你是第一次进入这个仓库，建议从这几个入口开始：
 
-- 最新日报：[`daily/2026-08-03/ai-hotspots.md`](./daily/2026-08-03/ai-hotspots.md)
+- 最新日报：[`daily/2026-08-04/ai-hotspots.md`](./daily/2026-08-04/ai-hotspots.md)
 - 项目总目录：[`projects/`](./projects/)
 - 自动化约束：[`AGENTS.md`](./AGENTS.md)
 - 开发续接记录：[`TODO.md`](./TODO.md)
@@ -125,6 +125,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `CUSTODY-framework` | 面向组织内自治 agent 的 containment 控制框架，用 Level/Mandate/Reach 盘点权限与可达性。 | [GitHub](https://github.com/malwarejake/CUSTODY-framework) |
 | `phoenix` | Hermes Agent 的第三方治理插件，组合模型路由、熔断、自愈、长任务守护与复核；需审阅非商业许可证和 provider 数据边界。 | [GitHub](https://github.com/xyaz1313/phoenix) |
 | `codex-agent-team` | 为 Codex 选择最小协作拓扑、验证方式与人工闸门的第三方 skill 及校验脚本。 | [GitHub](https://github.com/youngfor-shoot/codex-agent-team) |
 | `celln` | 用 microVM、只读借用工具与 agent/tool 执行通道隔离来运行 agent 生成程序的早期工具。 | [GitHub](https://github.com/sympozium-ai/celln) |
@@ -250,6 +251,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `reflection-engine` | 要求 AI 基于既有个人上下文生成带证据、置信度与行动建议的反思 prompt；输出敏感。 | [GitHub](https://github.com/kropdx/reflection-engine) |
 | `agent-inbox` | 将手机或浏览器发现的链接投递到 REST 队列，交给任意 agent/MCP client 后续处理。 | [GitHub](https://github.com/OGZamasu/agent-inbox) |
 | `Project Continuity Memory` | 用仓库内稳定记忆与当前交接双文件，让 agent 从已验证项目状态恢复工作。 | [GitHub](https://github.com/YSjandj-design/project-continuity-memory) |
 | `anchor-memory` | SQLite-first 的本地 agent 记忆链，覆盖混合召回、belief 与夜间维护。 | [GitHub](https://github.com/anhe2021212-spec/anchor-memory) |
@@ -315,6 +317,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `AbaoPal` | Android 原生手机自动化 agent，结合无障碍 UI、截图、多 agent 循环、录制回放与 skills。 | [GitHub](https://github.com/banye-technology/AbaoPal) |
 | `council-lab` | 本地优先的多模型顺序审议工作台，支持人类中途介入、预算与过程导出。 | [GitHub](https://github.com/loveramarois-byte/council-lab) |
 | `fingertips` | 将打字时长、停顿等非内容节律信号接入对话 AI 的轻量组件。 | [GitHub](https://github.com/eveacla11/fingertips) |
 | `MagicTeX-mcp` | 面向 agent 的 LaTeX MCP 工作区，用 WASM 编译、PDF 锚定评论和可视化编辑构成改稿闭环。 | [GitHub](https://github.com/ZoeLinUTS/MagicTeX-mcp) |
@@ -352,6 +355,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `hbg-classical-poem-silk-video` | 将古诗词转为国风竖屏动态视频的 agent skill，覆盖分镜、I2V、书法字幕与成片 QA。 | [GitHub](https://github.com/Mr-funny/hbg-classical-poem-silk-video) |
 | `Resonant` | Windows 本地优先音乐工作站，可选本地 ACE-Step 生成、MCP 辅助创作与 WAV 导出；发布构建目前未签名。 | [GitHub](https://github.com/calesthio/Resonant) |
 | `gbro-collage-info` | 基于 HyperFrames 的中文口播拼贴信息动画 skill，以本地 HTML/CSS/GSAP 输出 MP4。 | [GitHub](https://github.com/pyang5166/gbro-collage-info) |
 | `hbg-life-simulation` | 将中文人生叙事组织为角色一致、TTS 对齐、字幕完整且经过 MP4 QA 的视频 skill。 | [GitHub](https://github.com/Mr-funny/hbg-life-simulation) |
@@ -426,6 +430,8 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `qiaomu-seo` | 覆盖技术 SEO、迁移、流量诊断与 AI 搜索可见性边界的 agent skill。 | [GitHub](https://github.com/joeseesun/qiaomu-seo) |
+| `InduSecAgent` | 将工业流程、PLC 点位与时序建为工业时空图，用于异常检测和溯源原型。 | [GitHub](https://github.com/yuhuangerdi/InduSecAgent) |
 | `agent` | Talivia 的 MCP agent kit，协助将网站追踪、事件核验和支付归因接入代码项目。 | [GitHub](https://github.com/talivia-group/agent) |
 | `ai-stock-pool` | 覆盖美股/A 股映射与产业链线索的 AI 行业股票池研究工具。 | [GitHub](https://github.com/yaoleifly/ai-stock-pool) |
 | `geolook` | 本地自托管的 GEO 工作台，覆盖生成式引擎采样、诊断、工单与验收。 | [GitHub](https://github.com/bingqiang2021/geolook) |
@@ -461,6 +467,7 @@
 
 - 全量项目目录：[`projects/`](./projects/)
 - 最近日报：
+  - [`2026-08-04`](./daily/2026-08-04/ai-hotspots.md)
   - [`2026-08-03`](./daily/2026-08-03/ai-hotspots.md)
   - [`2026-08-02`](./daily/2026-08-02/ai-hotspots.md)
   - [`2026-08-01`](./daily/2026-08-01/ai-hotspots.md)
@@ -504,9 +511,9 @@
 ## 当前状态
 
 - 状态：持续日更中。
-- 最新更新：`2026-08-03`。
-- 当前项目总数：`488`。
-- 最近新增项目：`agent`、`phoenix`、`time-to-first-token`、`Resonant`、`codex-agent-team`、`celln`。
+- 最新更新：`2026-08-04`。
+- 当前项目总数：`494`。
+- 最近新增项目：`qiaomu-seo`、`InduSecAgent`、`hbg-classical-poem-silk-video`、`reflection-engine`、`CUSTODY-framework`、`AbaoPal`。
 - 覆盖平台：GitHub、X、Instagram、YouTube。
 
 ## 维护约定
