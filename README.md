@@ -73,6 +73,8 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `Fuxi` | 单二进制终端 coding agent，提供多模型路由、MCP、持久会话与工具调用；需控制凭据、费用与自动更新。 | [GitHub](https://github.com/fuxicodex/Fuxi) |
+| `diri` | macOS 原生多 agent 编排器，用 worktree、持久 PTY、状态识别和远端 host 管理并行会话。 | [GitHub](https://github.com/cristicretu/diri) |
 | `codex-ds-sub-agents` | 以本地任务文件、原子领取和回执让 Codex Desktop 试用 DeepSeek 子 agent 的第三方集成。 | [GitHub](https://github.com/wongchisum/codex-ds-sub-agents) |
 | `Tigriden` | 专为监督终端 coding agents 设计的轻量 macOS IDE，合并会话、文件树、编辑器与查看器。 | [GitHub](https://github.com/Sompote/Tigriden) |
 | `hybrid-cli-ai` | 在 Ollama 与 Groq 间切换、默认先预览再执行的跨平台自然语言终端助手。 | [GitHub](https://github.com/HereIsMuhammad/hybrid-cli-ai) |
@@ -125,6 +127,8 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `LongHorizon-Harness` | 用管理、执行、独立审计三角色保存长时程 agent 的已验证状态；外接 MCP 与真实权限仍须另行约束。 | [GitHub](https://github.com/AMAP-ML/LongHorizon-Harness) |
+| `ironcode` | 面向 Claude Code/Codex 的工程质量 gate skill，要求用实际测试、构建或运行证据支持完成声明。 | [GitHub](https://github.com/djfksjd/ironcode) |
 | `CUSTODY-framework` | 面向组织内自治 agent 的 containment 控制框架，用 Level/Mandate/Reach 盘点权限与可达性。 | [GitHub](https://github.com/malwarejake/CUSTODY-framework) |
 | `phoenix` | Hermes Agent 的第三方治理插件，组合模型路由、熔断、自愈、长任务守护与复核；需审阅非商业许可证和 provider 数据边界。 | [GitHub](https://github.com/xyaz1313/phoenix) |
 | `codex-agent-team` | 为 Codex 选择最小协作拓扑、验证方式与人工闸门的第三方 skill 及校验脚本。 | [GitHub](https://github.com/youngfor-shoot/codex-agent-team) |
@@ -291,6 +295,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `IngestReasonCreate` | 本地文档工作流 playbook：抽取为带页码 Markdown、推理、真实引擎构建、回读核验，避免 agent 编造文档事实。 | [GitHub](https://github.com/shinmingh/IngestReasonCreate) |
 | `Docvion` | 为 Docling、Tesseract、PaddleOCR 等解析器提供统一文档 schema 与结构感知 chunking 的 Python 适配层。 | [GitHub](https://github.com/prolixis/docvion) |
 | `ragflow` | 开源 RAG 平台，长期位于高热榜。 | [GitHub](https://github.com/infiniflow/ragflow) |
 | `anything-llm` | 一体化知识库问答与本地 LLM 工作台。 | [GitHub](https://github.com/Mintplex-Labs/anything-llm) |
@@ -396,6 +401,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `ai-evals` | Rails 发布的早期 AI 模型评测入口；任务、数据与许可信息仍需审计，不能据此推导模型排名。 | [GitHub](https://github.com/rails/ai-evals) |
 | `time-to-first-token` | 以一个可部署服务串起 LLM 推理、TTFT/成本观测、压测、量化和可复现 benchmark 的十周实践路线。 | [GitHub](https://github.com/patchy631/time-to-first-token) |
 | `slopsource` | 持续发布可自托管 AI 应用替代实现的单仓库计划；功能与许可需逐项核验。 | [GitHub](https://github.com/micahc123/slopsource) |
 | `open-free-router` | 聚合多个免费模型上游、按模型 ID 路由的本地代理和同步工具。 | [GitHub](https://github.com/NoelJudeNoel/open-free-router) |
@@ -467,6 +473,7 @@
 
 - 全量项目目录：[`projects/`](./projects/)
 - 最近日报：
+  - [`2026-08-05`](./daily/2026-08-05/ai-hotspots.md)
   - [`2026-08-04`](./daily/2026-08-04/ai-hotspots.md)
   - [`2026-08-03`](./daily/2026-08-03/ai-hotspots.md)
   - [`2026-08-02`](./daily/2026-08-02/ai-hotspots.md)
@@ -511,9 +518,9 @@
 ## 当前状态
 
 - 状态：持续日更中。
-- 最新更新：`2026-08-04`。
-- 当前项目总数：`494`。
-- 最近新增项目：`qiaomu-seo`、`InduSecAgent`、`hbg-classical-poem-silk-video`、`reflection-engine`、`CUSTODY-framework`、`AbaoPal`。
+- 最新更新：`2026-08-05`。
+- 当前项目总数：`500`。
+- 最近新增项目：`LongHorizon-Harness`、`Fuxi`、`diri`、`ironcode`、`IngestReasonCreate`、`ai-evals`。
 - 覆盖平台：GitHub、X、Instagram、YouTube。
 
 ## 维护约定

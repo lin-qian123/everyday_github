@@ -10,6 +10,7 @@
 
 ## 阶段性开发记录
 
+- 2026-08-05：新增 `LongHorizon-Harness`、`Fuxi`、`diri`、`ironcode`、`IngestReasonCreate`、`ai-evals` 6 个项目说明和当日日报。GitHub REST API 核验它们均创建于 2026-08-04、约 4--173 stars；均明确标为早期开发者信号。主题覆盖长时程 agent 验证、终端与 macOS 编排、工程质量门、本地文档核验与模型评测；首页分类与项目总数同步至 `500`。X、Instagram、YouTube 搜索未取得可独立复核的同日互动量，只保留平台搜索/官方频道观察入口。`ai-evals` 未声明 SPDX 许可证且公开细节有限，按待审计入口处理。
 - 2026-08-04：新增 `qiaomu-seo`、`InduSecAgent`、`hbg-classical-poem-silk-video`、`reflection-engine`、`CUSTODY-framework`、`AbaoPal` 6 个项目说明和当日日报。GitHub REST API 核验它们均创建于 2026-08-03、约 6--114 stars；均明确标为早期开发者信号。主题覆盖 SEO/AI 搜索工作流、工业异常检测、生成视频 QA、个人记忆反思、agent containment 与 Android UI 自动化；首页分类与项目总数同步至 `494`。X、Instagram、YouTube 未获得可独立复核的互动量，只保留作者或官方观察入口。`InduSecAgent`、`reflection-engine` 的 API 许可证字段缺失，分别标记为 OT 隔离验证与个人数据边界。
 - 2026-08-03：新增 `agent`、`phoenix`、`time-to-first-token`、`Resonant`、`codex-agent-team`、`celln` 6 个项目说明和当日日报。GitHub REST API 核验它们均创建于 2026-08-02、约 9--71 stars；均明确标为早期开发者信号。主题覆盖分析 MCP 接入、Hermes 治理插件、推理服务实践、本地音乐工作站、多 agent 决策与执行隔离；首页分类与项目总数同步至 `488`。X、Instagram、YouTube 未获得可独立复核的当日互动量，只保留观察入口。`phoenix` 的 API 许可证字段缺失（仓库 LICENSE 标示 CC BY-NC 4.0），`Resonant` 发布构建未签名，均已标记需人工核验。
 - 2026-08-02：新增 `impeccable-lite`、`gbro-collage-info`、`hbg-life-simulation`、`codex-ds-sub-agents`、`agent-inbox`、`Tigriden` 6 个项目说明和当日日报。GitHub REST API 核验它们均创建于 2026-08-01、约 4--41 stars；均明确标为早期开发者信号。主题覆盖前端设计 skill、可审阅的视频生成、Codex 子 agent 集成、链接队列与 agent 监督界面；首页分类与项目总数同步至 `482`。X、Instagram、YouTube 仅保留可打开官方入口，未独立核验的互动量不编造。`codex-ds-sub-agents` 的 API 许可证字段缺失，且会改动用户级配置，已标记需人工核验。
