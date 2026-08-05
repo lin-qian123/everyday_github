@@ -48,7 +48,7 @@
 
 如果你是第一次进入这个仓库，建议从这几个入口开始：
 
-- 最新日报：[`daily/2026-08-04/ai-hotspots.md`](./daily/2026-08-04/ai-hotspots.md)
+- 最新日报：[`daily/2026-08-06/ai-hotspots.md`](./daily/2026-08-06/ai-hotspots.md)
 - 项目总目录：[`projects/`](./projects/)
 - 自动化约束：[`AGENTS.md`](./AGENTS.md)
 - 开发续接记录：[`TODO.md`](./TODO.md)
@@ -73,6 +73,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `hud-mode` | 面向 Claude Code、Codex、OpenCode 的紧凑终端 HUD，以事件流呈现状态、token 与可排队交互；会改动用户级配置。 | [GitHub](https://github.com/adrida/hud-mode) |
 | `Fuxi` | 单二进制终端 coding agent，提供多模型路由、MCP、持久会话与工具调用；需控制凭据、费用与自动更新。 | [GitHub](https://github.com/fuxicodex/Fuxi) |
 | `diri` | macOS 原生多 agent 编排器，用 worktree、持久 PTY、状态识别和远端 host 管理并行会话。 | [GitHub](https://github.com/cristicretu/diri) |
 | `codex-ds-sub-agents` | 以本地任务文件、原子领取和回执让 Codex Desktop 试用 DeepSeek 子 agent 的第三方集成。 | [GitHub](https://github.com/wongchisum/codex-ds-sub-agents) |
@@ -127,6 +128,8 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `human-writing` | 将中文写作的材料门槛、段落推进与修订硬规则打包为 agent skill；不能替代事实、版权与作者审核。 | [GitHub](https://github.com/KKKKhazix/human-writing) |
+| `portable-agent-skills` | 三个跨宿主 skills，覆盖证据型研究、部署前执行 gate 与安装前静态安全审查。 | [GitHub](https://github.com/ch1109/portable-agent-skills) |
 | `LongHorizon-Harness` | 用管理、执行、独立审计三角色保存长时程 agent 的已验证状态；外接 MCP 与真实权限仍须另行约束。 | [GitHub](https://github.com/AMAP-ML/LongHorizon-Harness) |
 | `ironcode` | 面向 Claude Code/Codex 的工程质量 gate skill，要求用实际测试、构建或运行证据支持完成声明。 | [GitHub](https://github.com/djfksjd/ironcode) |
 | `CUSTODY-framework` | 面向组织内自治 agent 的 containment 控制框架，用 Level/Mandate/Reach 盘点权限与可达性。 | [GitHub](https://github.com/malwarejake/CUSTODY-framework) |
@@ -255,6 +258,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `zeromem` | Rust 的 agent 记忆实现，从原始对话 turn 重建图、时间和混合检索；检索效果与隐私仍须独立验证。 | [GitHub](https://github.com/ptaranat/zeromem) |
 | `reflection-engine` | 要求 AI 基于既有个人上下文生成带证据、置信度与行动建议的反思 prompt；输出敏感。 | [GitHub](https://github.com/kropdx/reflection-engine) |
 | `agent-inbox` | 将手机或浏览器发现的链接投递到 REST 队列，交给任意 agent/MCP client 后续处理。 | [GitHub](https://github.com/OGZamasu/agent-inbox) |
 | `Project Continuity Memory` | 用仓库内稳定记忆与当前交接双文件，让 agent 从已验证项目状态恢复工作。 | [GitHub](https://github.com/YSjandj-design/project-continuity-memory) |
@@ -295,6 +299,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `SparkFetch` | 自托管网页抓取与清洗 API，输出适合 LLM/RAG 的 Markdown 和结构化数据；需单独约束授权与注入风险。 | [GitHub](https://github.com/Sparkfetch/sparkfetch) |
 | `IngestReasonCreate` | 本地文档工作流 playbook：抽取为带页码 Markdown、推理、真实引擎构建、回读核验，避免 agent 编造文档事实。 | [GitHub](https://github.com/shinmingh/IngestReasonCreate) |
 | `Docvion` | 为 Docling、Tesseract、PaddleOCR 等解析器提供统一文档 schema 与结构感知 chunking 的 Python 适配层。 | [GitHub](https://github.com/prolixis/docvion) |
 | `ragflow` | 开源 RAG 平台，长期位于高热榜。 | [GitHub](https://github.com/infiniflow/ragflow) |
@@ -436,6 +441,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `open-kimi-ppt-skill` | 非官方 Kimi Slides 兼容 skill，生成可续改 PPTD 与 PPTX，并提供本地编辑器；协议兼容性与安装范围需核验。 | [GitHub](https://github.com/Binaryify/open-kimi-ppt-skill) |
 | `qiaomu-seo` | 覆盖技术 SEO、迁移、流量诊断与 AI 搜索可见性边界的 agent skill。 | [GitHub](https://github.com/joeseesun/qiaomu-seo) |
 | `InduSecAgent` | 将工业流程、PLC 点位与时序建为工业时空图，用于异常检测和溯源原型。 | [GitHub](https://github.com/yuhuangerdi/InduSecAgent) |
 | `agent` | Talivia 的 MCP agent kit，协助将网站追踪、事件核验和支付归因接入代码项目。 | [GitHub](https://github.com/talivia-group/agent) |
@@ -473,6 +479,7 @@
 
 - 全量项目目录：[`projects/`](./projects/)
 - 最近日报：
+  - [`2026-08-06`](./daily/2026-08-06/ai-hotspots.md)
   - [`2026-08-05`](./daily/2026-08-05/ai-hotspots.md)
   - [`2026-08-04`](./daily/2026-08-04/ai-hotspots.md)
   - [`2026-08-03`](./daily/2026-08-03/ai-hotspots.md)
@@ -518,9 +525,9 @@
 ## 当前状态
 
 - 状态：持续日更中。
-- 最新更新：`2026-08-05`。
-- 当前项目总数：`500`。
-- 最近新增项目：`LongHorizon-Harness`、`Fuxi`、`diri`、`ironcode`、`IngestReasonCreate`、`ai-evals`。
+- 最新更新：`2026-08-06`。
+- 当前项目总数：`506`。
+- 最近新增项目：`human-writing`、`open-kimi-ppt-skill`、`SparkFetch`、`portable-agent-skills`、`hud-mode`、`zeromem`。
 - 覆盖平台：GitHub、X、Instagram、YouTube。
 
 ## 维护约定
