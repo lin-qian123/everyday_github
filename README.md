@@ -48,7 +48,7 @@
 
 如果你是第一次进入这个仓库，建议从这几个入口开始：
 
-- 最新日报：[`daily/2026-08-06/ai-hotspots.md`](./daily/2026-08-06/ai-hotspots.md)
+- 最新日报：[`daily/2026-08-07/ai-hotspots.md`](./daily/2026-08-07/ai-hotspots.md)
 - 项目总目录：[`projects/`](./projects/)
 - 自动化约束：[`AGENTS.md`](./AGENTS.md)
 - 开发续接记录：[`TODO.md`](./TODO.md)
@@ -128,6 +128,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `macos-disk-cleanup` | 为 coding agent 提供唯读扫描与三级删除风险规则的 macOS 磁盘清理 skill；任何清理动作须人工核验与备份。 | [GitHub](https://github.com/himynameisben/macos-disk-cleanup) |
 | `human-writing` | 将中文写作的材料门槛、段落推进与修订硬规则打包为 agent skill；不能替代事实、版权与作者审核。 | [GitHub](https://github.com/KKKKhazix/human-writing) |
 | `portable-agent-skills` | 三个跨宿主 skills，覆盖证据型研究、部署前执行 gate 与安装前静态安全审查。 | [GitHub](https://github.com/ch1109/portable-agent-skills) |
 | `LongHorizon-Harness` | 用管理、执行、独立审计三角色保存长时程 agent 的已验证状态；外接 MCP 与真实权限仍须另行约束。 | [GitHub](https://github.com/AMAP-ML/LongHorizon-Harness) |
@@ -406,6 +407,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `Distillery` | 多 provider LLM API 网关，集中路由、代理凭据、配额、用量与可选脱敏/采集；提示词和日志仍需独立治理。 | [GitHub](https://github.com/TonicAI/distillery) |
 | `ai-evals` | Rails 发布的早期 AI 模型评测入口；任务、数据与许可信息仍需审计，不能据此推导模型排名。 | [GitHub](https://github.com/rails/ai-evals) |
 | `time-to-first-token` | 以一个可部署服务串起 LLM 推理、TTFT/成本观测、压测、量化和可复现 benchmark 的十周实践路线。 | [GitHub](https://github.com/patchy631/time-to-first-token) |
 | `slopsource` | 持续发布可自托管 AI 应用替代实现的单仓库计划；功能与许可需逐项核验。 | [GitHub](https://github.com/micahc123/slopsource) |
@@ -441,6 +443,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `Aetheris` | 面向学术研究流程的 Web/桌面 Agent，覆盖检索、写作、分析和子 agent；生成结论、引文与数据必须独立核验。 | [GitHub](https://github.com/shiqiaoshangxue/aetheris) |
 | `open-kimi-ppt-skill` | 非官方 Kimi Slides 兼容 skill，生成可续改 PPTD 与 PPTX，并提供本地编辑器；协议兼容性与安装范围需核验。 | [GitHub](https://github.com/Binaryify/open-kimi-ppt-skill) |
 | `qiaomu-seo` | 覆盖技术 SEO、迁移、流量诊断与 AI 搜索可见性边界的 agent skill。 | [GitHub](https://github.com/joeseesun/qiaomu-seo) |
 | `InduSecAgent` | 将工业流程、PLC 点位与时序建为工业时空图，用于异常检测和溯源原型。 | [GitHub](https://github.com/yuhuangerdi/InduSecAgent) |
@@ -479,6 +482,7 @@
 
 - 全量项目目录：[`projects/`](./projects/)
 - 最近日报：
+  - [`2026-08-07`](./daily/2026-08-07/ai-hotspots.md)
   - [`2026-08-06`](./daily/2026-08-06/ai-hotspots.md)
   - [`2026-08-05`](./daily/2026-08-05/ai-hotspots.md)
   - [`2026-08-04`](./daily/2026-08-04/ai-hotspots.md)
@@ -525,8 +529,8 @@
 ## 当前状态
 
 - 状态：持续日更中。
-- 最新更新：`2026-08-06`。
-- 当前项目总数：`506`。
+- 最新更新：`2026-08-07`。
+- 当前项目总数：`509`。
 - 最近新增项目：`human-writing`、`open-kimi-ppt-skill`、`SparkFetch`、`portable-agent-skills`、`hud-mode`、`zeromem`。
 - 覆盖平台：GitHub、X、Instagram、YouTube。
 
