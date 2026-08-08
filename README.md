@@ -48,7 +48,7 @@
 
 如果你是第一次进入这个仓库，建议从这几个入口开始：
 
-- 最新日报：[`daily/2026-08-07/ai-hotspots.md`](./daily/2026-08-07/ai-hotspots.md)
+- 最新日报：[`daily/2026-08-09/ai-hotspots.md`](./daily/2026-08-09/ai-hotspots.md)
 - 项目总目录：[`projects/`](./projects/)
 - 自动化约束：[`AGENTS.md`](./AGENTS.md)
 - 开发续接记录：[`TODO.md`](./TODO.md)
@@ -128,6 +128,9 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `KADATH` | 以可锁定基准、冻结证据和种群选择探索 agent 策略的进化 runtime；须约束模型成本、容器和外部权限。 | [GitHub](https://github.com/i3T4AN/KADATH) |
+| `unreal-mcp` | 用 MCP 对 UE 5.6/5.8 Blueprint 做分级读取、增量索引和可撤销编辑的本地 bridge。 | [GitHub](https://github.com/ZiggyMar/unreal-mcp) |
+| `remove-chinese-ai-tics` | 将中文模型化口癖审计和改写封装为 agent skill；仍需人工核验语义、事实和声口。 | [GitHub](https://github.com/AAzzAAzzAAzzAA/remove-chinese-ai-tics) |
 | `macos-disk-cleanup` | 为 coding agent 提供唯读扫描与三级删除风险规则的 macOS 磁盘清理 skill；任何清理动作须人工核验与备份。 | [GitHub](https://github.com/himynameisben/macos-disk-cleanup) |
 | `human-writing` | 将中文写作的材料门槛、段落推进与修订硬规则打包为 agent skill；不能替代事实、版权与作者审核。 | [GitHub](https://github.com/KKKKhazix/human-writing) |
 | `portable-agent-skills` | 三个跨宿主 skills，覆盖证据型研究、部署前执行 gate 与安装前静态安全审查。 | [GitHub](https://github.com/ch1109/portable-agent-skills) |
@@ -300,6 +303,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `research-evidence-agent` | 本地生成证据 manifest 并审计 claim—evidence 类型对应关系的科研发布预检工具。 | [GitHub](https://github.com/zxxasdfrty/research-evidence-agent) |
 | `SparkFetch` | 自托管网页抓取与清洗 API，输出适合 LLM/RAG 的 Markdown 和结构化数据；需单独约束授权与注入风险。 | [GitHub](https://github.com/Sparkfetch/sparkfetch) |
 | `IngestReasonCreate` | 本地文档工作流 playbook：抽取为带页码 Markdown、推理、真实引擎构建、回读核验，避免 agent 编造文档事实。 | [GitHub](https://github.com/shinmingh/IngestReasonCreate) |
 | `Docvion` | 为 Docling、Tesseract、PaddleOCR 等解析器提供统一文档 schema 与结构感知 chunking 的 Python 适配层。 | [GitHub](https://github.com/prolixis/docvion) |
@@ -366,6 +370,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `Cove Sensory MCP` | 以本地 stdio MCP 和授权路径为文本 agent 提供图像、视频、音频、音乐感知；云端 provider 数据边界需单独审查。 | [GitHub](https://github.com/moonlin1213/cove-sensory-mcp) |
 | `hbg-classical-poem-silk-video` | 将古诗词转为国风竖屏动态视频的 agent skill，覆盖分镜、I2V、书法字幕与成片 QA。 | [GitHub](https://github.com/Mr-funny/hbg-classical-poem-silk-video) |
 | `Resonant` | Windows 本地优先音乐工作站，可选本地 ACE-Step 生成、MCP 辅助创作与 WAV 导出；发布构建目前未签名。 | [GitHub](https://github.com/calesthio/Resonant) |
 | `gbro-collage-info` | 基于 HyperFrames 的中文口播拼贴信息动画 skill，以本地 HTML/CSS/GSAP 输出 MP4。 | [GitHub](https://github.com/pyang5166/gbro-collage-info) |
@@ -530,7 +535,7 @@
 
 - 状态：持续日更中。
 - 最新更新：`2026-08-07`。
-- 当前项目总数：`509`。
+- 当前项目总数：`514`。
 - 最近新增项目：`human-writing`、`open-kimi-ppt-skill`、`SparkFetch`、`portable-agent-skills`、`hud-mode`、`zeromem`。
 - 覆盖平台：GitHub、X、Instagram、YouTube。
 
