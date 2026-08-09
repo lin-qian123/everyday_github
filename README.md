@@ -48,7 +48,7 @@
 
 如果你是第一次进入这个仓库，建议从这几个入口开始：
 
-- 最新日报：[`daily/2026-08-09/ai-hotspots.md`](./daily/2026-08-09/ai-hotspots.md)
+- 最新日报：[`daily/2026-08-10/ai-hotspots.md`](./daily/2026-08-10/ai-hotspots.md)
 - 项目总目录：[`projects/`](./projects/)
 - 自动化约束：[`AGENTS.md`](./AGENTS.md)
 - 开发续接记录：[`TODO.md`](./TODO.md)
@@ -73,6 +73,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `pi-from-scratch` | 用 600 行 TypeScript 和可回放 Trace 拆解最小 coding agent；真实工具调用需在隔离工作区审查。 | [GitHub](https://github.com/SaladDay/pi-from-scratch) |
 | `hud-mode` | 面向 Claude Code、Codex、OpenCode 的紧凑终端 HUD，以事件流呈现状态、token 与可排队交互；会改动用户级配置。 | [GitHub](https://github.com/adrida/hud-mode) |
 | `Fuxi` | 单二进制终端 coding agent，提供多模型路由、MCP、持久会话与工具调用；需控制凭据、费用与自动更新。 | [GitHub](https://github.com/fuxicodex/Fuxi) |
 | `diri` | macOS 原生多 agent 编排器，用 worktree、持久 PTY、状态识别和远端 host 管理并行会话。 | [GitHub](https://github.com/cristicretu/diri) |
@@ -128,6 +129,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `hermes-starter-profile` | Hermes 的最小权限入门 profile，默认关闭终端、文件、浏览器控制和自动化；仍不是 OS 沙箱。 | [GitHub](https://github.com/teknium1/hermes-starter-profile) |
 | `KADATH` | 以可锁定基准、冻结证据和种群选择探索 agent 策略的进化 runtime；须约束模型成本、容器和外部权限。 | [GitHub](https://github.com/i3T4AN/KADATH) |
 | `unreal-mcp` | 用 MCP 对 UE 5.6/5.8 Blueprint 做分级读取、增量索引和可撤销编辑的本地 bridge。 | [GitHub](https://github.com/ZiggyMar/unreal-mcp) |
 | `remove-chinese-ai-tics` | 将中文模型化口癖审计和改写封装为 agent skill；仍需人工核验语义、事实和声口。 | [GitHub](https://github.com/AAzzAAzzAAzzAA/remove-chinese-ai-tics) |
@@ -303,6 +305,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `rag-ci` | 以配对 bootstrap、置信区间和最小效应门控 RAG 回归的 CLI/CI 工具；结论仍受 golden set 质量限制。 | [GitHub](https://github.com/Nokimalos/rag-ci) |
 | `research-evidence-agent` | 本地生成证据 manifest 并审计 claim—evidence 类型对应关系的科研发布预检工具。 | [GitHub](https://github.com/zxxasdfrty/research-evidence-agent) |
 | `SparkFetch` | 自托管网页抓取与清洗 API，输出适合 LLM/RAG 的 Markdown 和结构化数据；需单独约束授权与注入风险。 | [GitHub](https://github.com/Sparkfetch/sparkfetch) |
 | `IngestReasonCreate` | 本地文档工作流 playbook：抽取为带页码 Markdown、推理、真实引擎构建、回读核验，避免 agent 编造文档事实。 | [GitHub](https://github.com/shinmingh/IngestReasonCreate) |
@@ -370,6 +373,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `Scene Card Studio` | 将个人照片转为可编辑 Scene Card、版本化提示和生成审阅链的视觉叙事管线；需审查同意、版权和 provider 数据流。 | [GitHub](https://github.com/swping999/scene-card-studio) |
 | `Cove Sensory MCP` | 以本地 stdio MCP 和授权路径为文本 agent 提供图像、视频、音频、音乐感知；云端 provider 数据边界需单独审查。 | [GitHub](https://github.com/moonlin1213/cove-sensory-mcp) |
 | `hbg-classical-poem-silk-video` | 将古诗词转为国风竖屏动态视频的 agent skill，覆盖分镜、I2V、书法字幕与成片 QA。 | [GitHub](https://github.com/Mr-funny/hbg-classical-poem-silk-video) |
 | `Resonant` | Windows 本地优先音乐工作站，可选本地 ACE-Step 生成、MCP 辅助创作与 WAV 导出；发布构建目前未签名。 | [GitHub](https://github.com/calesthio/Resonant) |
@@ -448,6 +452,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `Lophius` | 语言模型研究工作台观察项；公开 README 尚无可复核安装/架构细节，AGPL-3.0 义务须按部署评估。 | [GitHub](https://github.com/p-e-w/lophius) |
 | `Aetheris` | 面向学术研究流程的 Web/桌面 Agent，覆盖检索、写作、分析和子 agent；生成结论、引文与数据必须独立核验。 | [GitHub](https://github.com/shiqiaoshangxue/aetheris) |
 | `open-kimi-ppt-skill` | 非官方 Kimi Slides 兼容 skill，生成可续改 PPTD 与 PPTX，并提供本地编辑器；协议兼容性与安装范围需核验。 | [GitHub](https://github.com/Binaryify/open-kimi-ppt-skill) |
 | `qiaomu-seo` | 覆盖技术 SEO、迁移、流量诊断与 AI 搜索可见性边界的 agent skill。 | [GitHub](https://github.com/joeseesun/qiaomu-seo) |
@@ -487,6 +492,8 @@
 
 - 全量项目目录：[`projects/`](./projects/)
 - 最近日报：
+  - [`2026-08-10`](./daily/2026-08-10/ai-hotspots.md)
+  - [`2026-08-09`](./daily/2026-08-09/ai-hotspots.md)
   - [`2026-08-07`](./daily/2026-08-07/ai-hotspots.md)
   - [`2026-08-06`](./daily/2026-08-06/ai-hotspots.md)
   - [`2026-08-05`](./daily/2026-08-05/ai-hotspots.md)
@@ -534,9 +541,9 @@
 ## 当前状态
 
 - 状态：持续日更中。
-- 最新更新：`2026-08-07`。
-- 当前项目总数：`514`。
-- 最近新增项目：`human-writing`、`open-kimi-ppt-skill`、`SparkFetch`、`portable-agent-skills`、`hud-mode`、`zeromem`。
+- 最新更新：`2026-08-10`。
+- 当前项目总数：`519`。
+- 最近新增项目：`pi-from-scratch`、`lophius`、`hermes-starter-profile`、`scene-card-studio`、`rag-ci`。
 - 覆盖平台：GitHub、X、Instagram、YouTube。
 
 ## 维护约定

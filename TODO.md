@@ -1,3 +1,5 @@
+<!-- markdownlint-disable MD013 -->
+
 # TODO（everyday_github）
 
 ## 待办事项
@@ -9,6 +11,8 @@
 - 建立 `projects/` 的轻量索引脚本或清单，减少人工判断“是否已建档”。
 
 ## 阶段性开发记录
+
+- 2026-08-10：新增 `pi-from-scratch`、`lophius`、`hermes-starter-profile`、`scene-card-studio`、`rag-ci` 5 个项目说明和当日日报。GitHub REST API 核验它们均创建于 2026-08-09、约 9--63 stars，许可证分别为 MIT、AGPL-3.0、MIT、Apache-2.0、MIT；均明确作为早期开发者信号。主题覆盖最小 coding agent 教学、模型研究工作台、最小权限 agent profile、可审阅照片叙事与带统计置信区间的 RAG CI；首页分类与项目总数同步至 `519`。X、Instagram、YouTube 未取得可独立核验的同项目互动量，仅保留搜索/标签/演示观察入口。`Lophius` 的公开安装和架构材料不足，按待审计观察；其余项目的工具权限、照片同意与 provider 数据、golden set/CI 泄露边界均列为后续验证项。
 
 - 2026-08-09：新增 `KADATH`、`unreal-mcp`、`research-evidence-agent`、`cove-sensory-mcp`、`remove-chinese-ai-tics` 5 个项目说明和当日日报。GitHub REST API 核验它们均创建于 2026-08-08、约 13--145 stars，许可证分别为 Apache-2.0、MIT、BSD-3-Clause、Apache-2.0、MIT；均明确作为早期开发者信号。主题覆盖进化式 agent runtime、UE Blueprint MCP、科研证据审计、受控多模态感知和中文写作 skill；首页分类与项目总数同步至 `514`。X、Instagram、YouTube 未取得可独立核验的项目级互动量，仅保留搜索/标签/演示观察入口。游戏脚本/瞄准类搜索噪声已排除；后续优先验证 KADATH 的评分与成本边界、Unreal MCP 的副本工程写入、Cove 的 provider 数据边界及两类文本/科研工具的误报和语义保持。
 - 2026-08-07：新增 `Aetheris`、`macos-disk-cleanup`、`Distillery` 3 个项目说明和当日日报。GitHub REST API 核验它们均创建于 2026-08-06、约 11--32 stars、MIT；均明确作为早期开发者信号。主题覆盖学术研究工作台、带人工确认的 macOS 清理 skill、以及多 provider LLM 流量网关；首页分类与项目总数同步至 `509`。X、Instagram、YouTube 未取得可独立核验的同日互动量，仅保留搜索/标签/演示观察入口。已排除含“关闭杀毒软件并管理员安装”指引的 skills 聚合候选；`Distillery` 的采集/脱敏覆盖、`Aetheris` 的引文与外部访问、清理 skill 的删除边界均列为独立验证项。
