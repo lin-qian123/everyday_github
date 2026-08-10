@@ -48,7 +48,7 @@
 
 如果你是第一次进入这个仓库，建议从这几个入口开始：
 
-- 最新日报：[`daily/2026-08-10/ai-hotspots.md`](./daily/2026-08-10/ai-hotspots.md)
+- 最新日报：[`daily/2026-08-11/ai-hotspots.md`](./daily/2026-08-11/ai-hotspots.md)
 - 项目总目录：[`projects/`](./projects/)
 - 自动化约束：[`AGENTS.md`](./AGENTS.md)
 - 开发续接记录：[`TODO.md`](./TODO.md)
@@ -73,6 +73,8 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `ai-smart-contract-auditor` | 面向 Claude Code 的智能合约审计技能/MCP 组合；PoC、基准与链上动作必须独立人工复核。 | [GitHub](https://github.com/iktok90-design/ai-smart-contract-auditor) |
+| `desktop-harness` | macOS 上以 Accessibility 树优先的本地 GUI 控制 CLI；高权限自动化必须最小授权。 | [GitHub](https://github.com/xfreeze2/desktop-harness) |
 | `pi-from-scratch` | 用 600 行 TypeScript 和可回放 Trace 拆解最小 coding agent；真实工具调用需在隔离工作区审查。 | [GitHub](https://github.com/SaladDay/pi-from-scratch) |
 | `hud-mode` | 面向 Claude Code、Codex、OpenCode 的紧凑终端 HUD，以事件流呈现状态、token 与可排队交互；会改动用户级配置。 | [GitHub](https://github.com/adrida/hud-mode) |
 | `Fuxi` | 单二进制终端 coding agent，提供多模型路由、MCP、持久会话与工具调用；需控制凭据、费用与自动更新。 | [GitHub](https://github.com/fuxicodex/Fuxi) |
@@ -129,6 +131,8 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `constitution` | 可固定版本的 coding-agent 工作原则；应在下游审阅合并，不能取代权限或沙箱。 | [GitHub](https://github.com/kenn-io/constitution) |
+| `inside-coding-agents` | 将 coding-agent 机制、来源证据与可重放实验组织成双语教材和图谱。 | [GitHub](https://github.com/vpromise/inside-coding-agents) |
 | `hermes-starter-profile` | Hermes 的最小权限入门 profile，默认关闭终端、文件、浏览器控制和自动化；仍不是 OS 沙箱。 | [GitHub](https://github.com/teknium1/hermes-starter-profile) |
 | `KADATH` | 以可锁定基准、冻结证据和种群选择探索 agent 策略的进化 runtime；须约束模型成本、容器和外部权限。 | [GitHub](https://github.com/i3T4AN/KADATH) |
 | `unreal-mcp` | 用 MCP 对 UE 5.6/5.8 Blueprint 做分级读取、增量索引和可撤销编辑的本地 bridge。 | [GitHub](https://github.com/ZiggyMar/unreal-mcp) |
@@ -335,6 +339,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `moli` | Rust agent 浏览器，默认 DOM/结构化数据、布局和像素按需计算；需实测兼容性与数据边界。 | [GitHub](https://github.com/lexmount/moli) |
 | `AbaoPal` | Android 原生手机自动化 agent，结合无障碍 UI、截图、多 agent 循环、录制回放与 skills。 | [GitHub](https://github.com/banye-technology/AbaoPal) |
 | `council-lab` | 本地优先的多模型顺序审议工作台，支持人类中途介入、预算与过程导出。 | [GitHub](https://github.com/loveramarois-byte/council-lab) |
 | `fingertips` | 将打字时长、停顿等非内容节律信号接入对话 AI 的轻量组件。 | [GitHub](https://github.com/eveacla11/fingertips) |
@@ -492,6 +497,7 @@
 
 - 全量项目目录：[`projects/`](./projects/)
 - 最近日报：
+  - [`2026-08-11`](./daily/2026-08-11/ai-hotspots.md)
   - [`2026-08-10`](./daily/2026-08-10/ai-hotspots.md)
   - [`2026-08-09`](./daily/2026-08-09/ai-hotspots.md)
   - [`2026-08-07`](./daily/2026-08-07/ai-hotspots.md)
@@ -541,9 +547,9 @@
 ## 当前状态
 
 - 状态：持续日更中。
-- 最新更新：`2026-08-10`。
-- 当前项目总数：`519`。
-- 最近新增项目：`pi-from-scratch`、`lophius`、`hermes-starter-profile`、`scene-card-studio`、`rag-ci`。
+- 最新更新：`2026-08-11`。
+- 当前项目总数：`524`。
+- 最近新增项目：`ai-smart-contract-auditor`、`constitution`、`moli`、`desktop-harness`、`inside-coding-agents`。
 - 覆盖平台：GitHub、X、Instagram、YouTube。
 
 ## 维护约定
