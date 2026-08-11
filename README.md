@@ -48,7 +48,7 @@
 
 如果你是第一次进入这个仓库，建议从这几个入口开始：
 
-- 最新日报：[`daily/2026-08-11/ai-hotspots.md`](./daily/2026-08-11/ai-hotspots.md)
+- 最新日报：[`daily/2026-08-12/ai-hotspots.md`](./daily/2026-08-12/ai-hotspots.md)
 - 项目总目录：[`projects/`](./projects/)
 - 自动化约束：[`AGENTS.md`](./AGENTS.md)
 - 开发续接记录：[`TODO.md`](./TODO.md)
@@ -73,6 +73,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `agent-link` | 以私有 Git 分支或 relay 在跨机 coding agents 间传递加密协作消息；仍须防范元数据、明文 transcript 与未可信输入。 | [GitHub](https://github.com/Riccardo8888/agent-link) |
 | `ai-smart-contract-auditor` | 面向 Claude Code 的智能合约审计技能/MCP 组合；PoC、基准与链上动作必须独立人工复核。 | [GitHub](https://github.com/iktok90-design/ai-smart-contract-auditor) |
 | `desktop-harness` | macOS 上以 Accessibility 树优先的本地 GUI 控制 CLI；高权限自动化必须最小授权。 | [GitHub](https://github.com/xfreeze2/desktop-harness) |
 | `pi-from-scratch` | 用 600 行 TypeScript 和可回放 Trace 拆解最小 coding agent；真实工具调用需在隔离工作区审查。 | [GitHub](https://github.com/SaladDay/pi-from-scratch) |
@@ -131,6 +132,8 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `HERO-Anti-OverDefense` | 用四类模式约束 agent 过度防御；不覆盖真实安全和用户指定验证。 | [GitHub](https://github.com/wanshuiyin/HERO-Anti-OverDefense) |
+| `toolpermit` | 给本地 MCP `stdio` 调用加 YAML 策略、一次性审批与脱敏审计；不是 OS sandbox。 | [GitHub](https://github.com/sunhao123456sun-svg/toolpermit) |
 | `constitution` | 可固定版本的 coding-agent 工作原则；应在下游审阅合并，不能取代权限或沙箱。 | [GitHub](https://github.com/kenn-io/constitution) |
 | `inside-coding-agents` | 将 coding-agent 机制、来源证据与可重放实验组织成双语教材和图谱。 | [GitHub](https://github.com/vpromise/inside-coding-agents) |
 | `hermes-starter-profile` | Hermes 的最小权限入门 profile，默认关闭终端、文件、浏览器控制和自动化；仍不是 OS 沙箱。 | [GitHub](https://github.com/teknium1/hermes-starter-profile) |
@@ -339,6 +342,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `chatbot-template` | shadcn-ui 的 Next.js/AI SDK 聊天模板，含流式消息、工具状态与人机问卷；公开部署前须补认证、限流和预算保护。 | [GitHub](https://github.com/shadcn-ui/chatbot-template) |
 | `moli` | Rust agent 浏览器，默认 DOM/结构化数据、布局和像素按需计算；需实测兼容性与数据边界。 | [GitHub](https://github.com/lexmount/moli) |
 | `AbaoPal` | Android 原生手机自动化 agent，结合无障碍 UI、截图、多 agent 循环、录制回放与 skills。 | [GitHub](https://github.com/banye-technology/AbaoPal) |
 | `council-lab` | 本地优先的多模型顺序审议工作台，支持人类中途介入、预算与过程导出。 | [GitHub](https://github.com/loveramarois-byte/council-lab) |
@@ -457,6 +461,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `ai-nuclear-spectroscopy` | 从公开核数据到 GCD 寿命估计的可审计人机协同参考流程；当前为合成数据 alpha，不能替代真实实验验证。 | [GitHub](https://github.com/JWP-p/ai-nuclear-spectroscopy) |
 | `Lophius` | 语言模型研究工作台观察项；公开 README 尚无可复核安装/架构细节，AGPL-3.0 义务须按部署评估。 | [GitHub](https://github.com/p-e-w/lophius) |
 | `Aetheris` | 面向学术研究流程的 Web/桌面 Agent，覆盖检索、写作、分析和子 agent；生成结论、引文与数据必须独立核验。 | [GitHub](https://github.com/shiqiaoshangxue/aetheris) |
 | `open-kimi-ppt-skill` | 非官方 Kimi Slides 兼容 skill，生成可续改 PPTD 与 PPTX，并提供本地编辑器；协议兼容性与安装范围需核验。 | [GitHub](https://github.com/Binaryify/open-kimi-ppt-skill) |
@@ -497,6 +502,7 @@
 
 - 全量项目目录：[`projects/`](./projects/)
 - 最近日报：
+  - [`2026-08-12`](./daily/2026-08-12/ai-hotspots.md)
   - [`2026-08-11`](./daily/2026-08-11/ai-hotspots.md)
   - [`2026-08-10`](./daily/2026-08-10/ai-hotspots.md)
   - [`2026-08-09`](./daily/2026-08-09/ai-hotspots.md)
@@ -547,9 +553,9 @@
 ## 当前状态
 
 - 状态：持续日更中。
-- 最新更新：`2026-08-11`。
-- 当前项目总数：`524`。
-- 最近新增项目：`ai-smart-contract-auditor`、`constitution`、`moli`、`desktop-harness`、`inside-coding-agents`。
+- 最新更新：`2026-08-12`。
+- 当前项目总数：`529`。
+- 最近新增项目：`chatbot-template`、`HERO-Anti-OverDefense`、`toolpermit`、`ai-nuclear-spectroscopy`、`agent-link`。
 - 覆盖平台：GitHub、X、Instagram、YouTube。
 
 ## 维护约定
