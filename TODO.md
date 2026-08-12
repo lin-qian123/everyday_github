@@ -12,6 +12,8 @@
 
 ## 阶段性开发记录
 
+- 2026-08-13：新增 `speech-to-speech` 与 `openwork` 两个项目说明和当日热点日报。GitHub REST API 快照分别约为 12.4k/1.5k 与 21.9k/2.2k stars/forks；前者为 Apache-2.0，后者 API 返回 `NOASSERTION`，不能据“开源”宣传推断完整许可。GitHub Trending 页面抓取时分别显示约 627、916 个当日 stars。前者归入语音、视频与多模态，后者归入 Agent 框架与技能生态；首页项目数重算至 `531`。X、Instagram、YouTube 未独立核验项目级原帖/互动量，仅保留可打开观察入口。后续以授权音频测试 `speech-to-speech` 的打断、延迟和数据流；以只读测试组织审计 OpenWork 的 OAuth scopes、能力执行与许可证/发行条款。
+
 - 2026-08-12：新增 `chatbot-template`、`HERO-Anti-OverDefense`、`toolpermit`、`ai-nuclear-spectroscopy`、`agent-link` 5 个项目说明和当日日报。GitHub REST API 核验它们均创建于 2026-08-11、约 22--387 stars，许可证分别为 MIT、MIT、Apache-2.0、Apache-2.0、MIT；均明确作为早期开发者信号。主题覆盖 agent UI 模板、任务范围约束、MCP 工具审批审计、证据型科学工作流与跨机 coding-agent 加密协作；首页分类和项目总数同步至 `529`。X、Instagram、YouTube 的定向公开搜索未返回可独立核验的同项目互动量，仅保留观察入口。后续验证 chatbot 的认证/成本、ToolPermit 策略与脱敏、HERO 安全例外、agent-link 分支/密钥/transcript 边界，并将核谱项目限定在合成 benchmark。
 
 - 2026-08-11：新增 `ai-smart-contract-auditor`、`constitution`、`moli`、`desktop-harness`、`inside-coding-agents` 5 个项目说明和当日日报。GitHub REST API 核验它们均创建于 2026-08-10、约 8--75 stars，许可证分别为 MIT、CC-BY-4.0、API 未声明 SPDX、MIT、Apache-2.0；均明确作为早期开发者信号。主题覆盖智能合约审计 agent、版本化 agent 原则、DOM 优先 browser-use、macOS 无障碍控制与证据型 coding-agent 教材；首页分类和项目总数同步至 `524`。X、Instagram、YouTube 未取得可独立核验的同项目互动量，仅保留观察入口。后续重点独立复现 AuditSentry 的检出率/PoC、测试 Moli 兼容性与数据边界，并以最小权限试用 desktop-harness。

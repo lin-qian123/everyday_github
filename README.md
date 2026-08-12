@@ -48,7 +48,7 @@
 
 如果你是第一次进入这个仓库，建议从这几个入口开始：
 
-- 最新日报：[`daily/2026-08-12/ai-hotspots.md`](./daily/2026-08-12/ai-hotspots.md)
+- 最新日报：[`daily/2026-08-13/ai-hotspots.md`](./daily/2026-08-13/ai-hotspots.md)
 - 项目总目录：[`projects/`](./projects/)
 - 自动化约束：[`AGENTS.md`](./AGENTS.md)
 - 开发续接记录：[`TODO.md`](./TODO.md)
@@ -132,6 +132,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `openwork` | 跨 agent 复用 skills、MCP 与企业连接的桌面工作区/远程 MCP；接入业务系统前应单独核验 OAuth、执行权限与许可。 | [GitHub](https://github.com/different-ai/openwork) |
 | `HERO-Anti-OverDefense` | 用四类模式约束 agent 过度防御；不覆盖真实安全和用户指定验证。 | [GitHub](https://github.com/wanshuiyin/HERO-Anti-OverDefense) |
 | `toolpermit` | 给本地 MCP `stdio` 调用加 YAML 策略、一次性审批与脱敏审计；不是 OS sandbox。 | [GitHub](https://github.com/sunhao123456sun-svg/toolpermit) |
 | `constitution` | 可固定版本的 coding-agent 工作原则；应在下游审阅合并，不能取代权限或沙箱。 | [GitHub](https://github.com/kenn-io/constitution) |
@@ -382,6 +383,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `speech-to-speech` | 组合可替换 VAD、STT、LLM、TTS 的本地语音 agent 链路；需分别管理语音同意、数据流和模型许可。 | [GitHub](https://github.com/huggingface/speech-to-speech) |
 | `Scene Card Studio` | 将个人照片转为可编辑 Scene Card、版本化提示和生成审阅链的视觉叙事管线；需审查同意、版权和 provider 数据流。 | [GitHub](https://github.com/swping999/scene-card-studio) |
 | `Cove Sensory MCP` | 以本地 stdio MCP 和授权路径为文本 agent 提供图像、视频、音频、音乐感知；云端 provider 数据边界需单独审查。 | [GitHub](https://github.com/moonlin1213/cove-sensory-mcp) |
 | `hbg-classical-poem-silk-video` | 将古诗词转为国风竖屏动态视频的 agent skill，覆盖分镜、I2V、书法字幕与成片 QA。 | [GitHub](https://github.com/Mr-funny/hbg-classical-poem-silk-video) |
@@ -502,6 +504,7 @@
 
 - 全量项目目录：[`projects/`](./projects/)
 - 最近日报：
+  - [`2026-08-13`](./daily/2026-08-13/ai-hotspots.md)
   - [`2026-08-12`](./daily/2026-08-12/ai-hotspots.md)
   - [`2026-08-11`](./daily/2026-08-11/ai-hotspots.md)
   - [`2026-08-10`](./daily/2026-08-10/ai-hotspots.md)
@@ -553,9 +556,9 @@
 ## 当前状态
 
 - 状态：持续日更中。
-- 最新更新：`2026-08-12`。
-- 当前项目总数：`529`。
-- 最近新增项目：`chatbot-template`、`HERO-Anti-OverDefense`、`toolpermit`、`ai-nuclear-spectroscopy`、`agent-link`。
+- 最新更新：`2026-08-13`。
+- 当前项目总数：`531`。
+- 最近新增项目：`speech-to-speech`、`openwork`。
 - 覆盖平台：GitHub、X、Instagram、YouTube。
 
 ## 维护约定
