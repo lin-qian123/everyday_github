@@ -48,7 +48,7 @@
 
 如果你是第一次进入这个仓库，建议从这几个入口开始：
 
-- 最新日报：[`daily/2026-08-13/ai-hotspots.md`](./daily/2026-08-13/ai-hotspots.md)
+- 最新日报：[`daily/2026-08-14/ai-hotspots.md`](./daily/2026-08-14/ai-hotspots.md)
 - 项目总目录：[`projects/`](./projects/)
 - 自动化约束：[`AGENTS.md`](./AGENTS.md)
 - 开发续接记录：[`TODO.md`](./TODO.md)
@@ -313,6 +313,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `semantica` | 将数据、知识图谱、向量检索与 agent 决策 provenance 组织为可查询的 Context Graph；关键事实与审批仍要回到原始证据。 | [GitHub](https://github.com/semantica-agi/semantica) |
 | `rag-ci` | 以配对 bootstrap、置信区间和最小效应门控 RAG 回归的 CLI/CI 工具；结论仍受 golden set 质量限制。 | [GitHub](https://github.com/Nokimalos/rag-ci) |
 | `research-evidence-agent` | 本地生成证据 manifest 并审计 claim—evidence 类型对应关系的科研发布预检工具。 | [GitHub](https://github.com/zxxasdfrty/research-evidence-agent) |
 | `SparkFetch` | 自托管网页抓取与清洗 API，输出适合 LLM/RAG 的 Markdown 和结构化数据；需单独约束授权与注入风险。 | [GitHub](https://github.com/Sparkfetch/sparkfetch) |
@@ -427,6 +428,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `Switchyard` | NVIDIA NeMo 的预览期 LLM 路由/协议适配层；代理凭据、数据流、兼容性与路由回退需独立验证。 | [GitHub](https://github.com/NVIDIA-NeMo/Switchyard) |
 | `Distillery` | 多 provider LLM API 网关，集中路由、代理凭据、配额、用量与可选脱敏/采集；提示词和日志仍需独立治理。 | [GitHub](https://github.com/TonicAI/distillery) |
 | `ai-evals` | Rails 发布的早期 AI 模型评测入口；任务、数据与许可信息仍需审计，不能据此推导模型排名。 | [GitHub](https://github.com/rails/ai-evals) |
 | `time-to-first-token` | 以一个可部署服务串起 LLM 推理、TTFT/成本观测、压测、量化和可复现 benchmark 的十周实践路线。 | [GitHub](https://github.com/patchy631/time-to-first-token) |
@@ -504,6 +506,7 @@
 
 - 全量项目目录：[`projects/`](./projects/)
 - 最近日报：
+  - [`2026-08-14`](./daily/2026-08-14/ai-hotspots.md)
   - [`2026-08-13`](./daily/2026-08-13/ai-hotspots.md)
   - [`2026-08-12`](./daily/2026-08-12/ai-hotspots.md)
   - [`2026-08-11`](./daily/2026-08-11/ai-hotspots.md)
@@ -556,9 +559,9 @@
 ## 当前状态
 
 - 状态：持续日更中。
-- 最新更新：`2026-08-13`。
-- 当前项目总数：`531`。
-- 最近新增项目：`speech-to-speech`、`openwork`。
+- 最新更新：`2026-08-14`。
+- 当前项目总数：`533`。
+- 最近新增项目：`semantica`、`Switchyard`。
 - 覆盖平台：GitHub、X、Instagram、YouTube。
 
 ## 维护约定
