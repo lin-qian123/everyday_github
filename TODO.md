@@ -12,6 +12,8 @@
 
 ## 阶段性开发记录
 
+- 2026-08-15：新增 `AI-For-Beginners` 项目说明和当日热点日报。GitHub REST API 快照约为 64.9k stars、12.6k forks，MIT；Trending 页面抓取时显示约 155 个当日 stars，仅作短期公开关注度信号。项目是 12 周、24 课的入门课程，因不属于现有工具类分类，新增“AI 学习与教育资源”并同步首页导航与 AGENTS 分类基线；首页项目总数重算至 `534`。`speech-to-speech`、`openwork` 已建档，未重复创建。X、Instagram、YouTube 未独立核验同项目当日原帖/互动量，仅保留官方/主题观察入口。
+
 - 2026-08-14：新增 `semantica` 与 `Switchyard` 两个项目说明和当日热点日报。GitHub REST API 快照分别约为 6.6k/693 与 1.2k/107 stars/forks，许可证分别为 MIT、Apache-2.0；Trending 页面抓取时分别显示约 727、408 个当日 stars，均只作观察时点的公开关注度信号。前者归入 RAG、检索与知识处理，关注 Context Graph、provenance、抽取误差与敏感数据治理；后者归入模型、训练与推理基础设施，需重点验证协议兼容、provider 数据流、凭据和 pre-alpha 的回滚路径。首页项目总数重算至 `533`。X、Instagram、YouTube 未独立核验项目级互动量，仅保留公开观察入口。
 
 - 2026-08-13：新增 `speech-to-speech` 与 `openwork` 两个项目说明和当日热点日报。GitHub REST API 快照分别约为 12.4k/1.5k 与 21.9k/2.2k stars/forks；前者为 Apache-2.0，后者 API 返回 `NOASSERTION`，不能据“开源”宣传推断完整许可。GitHub Trending 页面抓取时分别显示约 627、916 个当日 stars。前者归入语音、视频与多模态，后者归入 Agent 框架与技能生态；首页项目数重算至 `531`。X、Instagram、YouTube 未独立核验项目级原帖/互动量，仅保留可打开观察入口。后续以授权音频测试 `speech-to-speech` 的打断、延迟和数据流；以只读测试组织审计 OpenWork 的 OAuth scopes、能力执行与许可证/发行条款。

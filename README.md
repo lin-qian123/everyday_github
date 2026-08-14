@@ -16,6 +16,7 @@
   - [前端、UI 与 Agent 交互层](#前端ui-与-agent-交互层)
   - [语音、视频与多模态](#语音视频与多模态)
   - [模型、训练与推理基础设施](#模型训练与推理基础设施)
+  - [AI 学习与教育资源](#ai-学习与教育资源)
   - [办公、商业与行业应用](#办公商业与行业应用)
 - [完整索引与每日热点](#完整索引与每日热点)
 - [当前状态](#当前状态)
@@ -48,7 +49,7 @@
 
 如果你是第一次进入这个仓库，建议从这几个入口开始：
 
-- 最新日报：[`daily/2026-08-14/ai-hotspots.md`](./daily/2026-08-14/ai-hotspots.md)
+- 最新日报：[`daily/2026-08-15/ai-hotspots.md`](./daily/2026-08-15/ai-hotspots.md)
 - 项目总目录：[`projects/`](./projects/)
 - 自动化约束：[`AGENTS.md`](./AGENTS.md)
 - 开发续接记录：[`TODO.md`](./TODO.md)
@@ -461,6 +462,12 @@
 | `conversation-steganography` | LLM 隐写 proof of concept，把加密消息伪装成普通聊天文本，双重用途风险高。 | [GitHub](https://github.com/nethical6/conversation-steganography) |
 | `nativ` | Apple Silicon 本地 AI 工作台，用 SwiftUI 封装 MLX 模型服务、性能监控和兼容 API。 | [GitHub](https://github.com/Blaizzy/nativ) |
 
+### AI 学习与教育资源
+
+| 项目 | 简介 | 链接 |
+| --- | --- | --- |
+| `AI-For-Beginners` | Microsoft 的 12 周、24 课 AI 入门课程，覆盖经典 AI、深度学习、视觉、NLP、多智能体与伦理；课程时效与外部依赖须另行复核。 | [GitHub](https://github.com/microsoft/AI-For-Beginners) |
+
 ### 办公、商业与行业应用
 
 | 项目 | 简介 | 链接 |
@@ -506,6 +513,7 @@
 
 - 全量项目目录：[`projects/`](./projects/)
 - 最近日报：
+  - [`2026-08-15`](./daily/2026-08-15/ai-hotspots.md)
   - [`2026-08-14`](./daily/2026-08-14/ai-hotspots.md)
   - [`2026-08-13`](./daily/2026-08-13/ai-hotspots.md)
   - [`2026-08-12`](./daily/2026-08-12/ai-hotspots.md)
@@ -559,9 +567,9 @@
 ## 当前状态
 
 - 状态：持续日更中。
-- 最新更新：`2026-08-14`。
-- 当前项目总数：`533`。
-- 最近新增项目：`semantica`、`Switchyard`。
+- 最新更新：`2026-08-15`。
+- 当前项目总数：`534`。
+- 最近新增项目：`AI-For-Beginners`。
 - 覆盖平台：GitHub、X、Instagram、YouTube。
 
 ## 维护约定
