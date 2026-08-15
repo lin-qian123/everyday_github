@@ -12,6 +12,8 @@
 
 ## 阶段性开发记录
 
+- 2026-08-16：新增 `needle`、`ego-lite`、`diagram-design` 三个项目说明与当日热点日报。GitHub REST API 快照分别约为 6.1k/402、10.9k/557、18.6k/1.1k stars/forks，均为 MIT；Trending 页面抓取时分别显示约 551、546、1.6k 个当日 stars，均只记录为短期公开关注度。三者分别归入模型、训练与推理基础设施，Coding Agents 与终端助手，前端、UI 与 Agent 交互层；首页项目总数重算至 `537`。X、Instagram、YouTube 未独立核验项目级原帖或互动量，只保留官方/主题观察入口。后续优先以 mock tools 验证 Needle 的端侧指标，以专用 profile 审计 ego-lite 的身份/数据边界，并对 diagram-design 的品牌 URL 抽取、SVG/HTML 输出和无障碍做人工复核。
+
 - 2026-08-15：新增 `AI-For-Beginners` 项目说明和当日热点日报。GitHub REST API 快照约为 64.9k stars、12.6k forks，MIT；Trending 页面抓取时显示约 155 个当日 stars，仅作短期公开关注度信号。项目是 12 周、24 课的入门课程，因不属于现有工具类分类，新增“AI 学习与教育资源”并同步首页导航与 AGENTS 分类基线；首页项目总数重算至 `534`。`speech-to-speech`、`openwork` 已建档，未重复创建。X、Instagram、YouTube 未独立核验同项目当日原帖/互动量，仅保留官方/主题观察入口。
 
 - 2026-08-14：新增 `semantica` 与 `Switchyard` 两个项目说明和当日热点日报。GitHub REST API 快照分别约为 6.6k/693 与 1.2k/107 stars/forks，许可证分别为 MIT、Apache-2.0；Trending 页面抓取时分别显示约 727、408 个当日 stars，均只作观察时点的公开关注度信号。前者归入 RAG、检索与知识处理，关注 Context Graph、provenance、抽取误差与敏感数据治理；后者归入模型、训练与推理基础设施，需重点验证协议兼容、provider 数据流、凭据和 pre-alpha 的回滚路径。首页项目总数重算至 `533`。X、Instagram、YouTube 未独立核验项目级互动量，仅保留公开观察入口。

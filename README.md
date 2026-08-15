@@ -49,7 +49,7 @@
 
 如果你是第一次进入这个仓库，建议从这几个入口开始：
 
-- 最新日报：[`daily/2026-08-15/ai-hotspots.md`](./daily/2026-08-15/ai-hotspots.md)
+- 最新日报：[`daily/2026-08-16/ai-hotspots.md`](./daily/2026-08-16/ai-hotspots.md)
 - 项目总目录：[`projects/`](./projects/)
 - 自动化约束：[`AGENTS.md`](./AGENTS.md)
 - 开发续接记录：[`TODO.md`](./TODO.md)
@@ -128,6 +128,7 @@
 | `clodex-ide` | 本地优先、强调受控执行和用户审查的开源 agentic IDE。 | [GitHub](https://github.com/mereyabdenbekuly-ctrl/clodex-ide) |
 | `klaatcode` | KlaatAI 的终端原生 coding agent，用服务端模型路由和代码图谱降低长任务成本。 | [GitHub](https://github.com/KlaatAI/klaatcode) |
 | `codex-router` | Codex 外部模型路由器，把 Kimi、DeepSeek 等 provider 接入 Codex model picker。 | [GitHub](https://github.com/duolahypercho/codex-router) |
+| `ego-lite` | 为外部 coding agent 提供独立 browser Space 的 macOS 浏览器；迁移登录态前须隔离 profile、最小权限并审计网络数据流。 | [GitHub](https://github.com/citrolabs/ego-lite) |
 
 ### Agent 框架与技能生态
 
@@ -380,6 +381,7 @@
 | `browser-harness` | Browser Use 的真实浏览器 CDP harness，让 agent 在运行中沉淀 helper 与 domain skill。 | [GitHub](https://github.com/browser-use/browser-harness) |
 | `kill-ai-slop` | 把 AI 生成产品的视觉/文案套路整理成 taxonomy，并提供 agent skill 扫描与修复。 | [GitHub](https://github.com/yetone/kill-ai-slop) |
 | `bolt-slides` | StackBlitz 的 agent 友好型 React/Web slide 框架，让演示文稿成为可运行 Web app。 | [GitHub](https://github.com/stackblitz/bolt-slides) |
+| `diagram-design` | 面向 Claude Code、Codex、Pi 的图表设计 skill，输出可审阅 HTML/SVG；品牌 URL 抽取与事实准确性需独立审查。 | [GitHub](https://github.com/cathrynlavery/diagram-design) |
 
 ### 语音、视频与多模态
 
@@ -461,6 +463,7 @@
 | `auto` | 记录并编译 LLM agent 重复行为为受能力约束的 WASM fast path，探索 agent 成本和安全边界。 | [GitHub](https://github.com/RightNow-AI/auto) |
 | `conversation-steganography` | LLM 隐写 proof of concept，把加密消息伪装成普通聊天文本，双重用途风险高。 | [GitHub](https://github.com/nethical6/conversation-steganography) |
 | `nativ` | Apple Silicon 本地 AI 工作台，用 SwiftUI 封装 MLX 模型服务、性能监控和兼容 API。 | [GitHub](https://github.com/Blaizzy/nativ) |
+| `needle` | 面向端侧受约束工具调用和结构化抽取的小模型；schema 约束不能替代工具权限、参数校验或人工确认。 | [GitHub](https://github.com/cactus-compute/needle) |
 
 ### AI 学习与教育资源
 
@@ -513,6 +516,7 @@
 
 - 全量项目目录：[`projects/`](./projects/)
 - 最近日报：
+  - [`2026-08-16`](./daily/2026-08-16/ai-hotspots.md)
   - [`2026-08-15`](./daily/2026-08-15/ai-hotspots.md)
   - [`2026-08-14`](./daily/2026-08-14/ai-hotspots.md)
   - [`2026-08-13`](./daily/2026-08-13/ai-hotspots.md)
@@ -567,9 +571,9 @@
 ## 当前状态
 
 - 状态：持续日更中。
-- 最新更新：`2026-08-15`。
-- 当前项目总数：`534`。
-- 最近新增项目：`AI-For-Beginners`。
+- 最新更新：`2026-08-16`。
+- 当前项目总数：`537`。
+- 最近新增项目：`needle`、`ego-lite`、`diagram-design`。
 - 覆盖平台：GitHub、X、Instagram、YouTube。
 
 ## 维护约定
