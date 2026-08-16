@@ -49,7 +49,7 @@
 
 如果你是第一次进入这个仓库，建议从这几个入口开始：
 
-- 最新日报：[`daily/2026-08-16/ai-hotspots.md`](./daily/2026-08-16/ai-hotspots.md)
+- 最新日报：[`daily/2026-08-17/ai-hotspots.md`](./daily/2026-08-17/ai-hotspots.md)
 - 项目总目录：[`projects/`](./projects/)
 - 自动化约束：[`AGENTS.md`](./AGENTS.md)
 - 开发续接记录：[`TODO.md`](./TODO.md)
@@ -315,6 +315,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `research-radar` | workspace-first 的自托管研究订阅、去重、透明排序与本地检索工具；当前为 v0.1 alpha，真实订阅/反馈数据须独立保护。 | [GitHub](https://github.com/researchradar/research-radar) |
 | `semantica` | 将数据、知识图谱、向量检索与 agent 决策 provenance 组织为可查询的 Context Graph；关键事实与审批仍要回到原始证据。 | [GitHub](https://github.com/semantica-agi/semantica) |
 | `rag-ci` | 以配对 bootstrap、置信区间和最小效应门控 RAG 回归的 CLI/CI 工具；结论仍受 golden set 质量限制。 | [GitHub](https://github.com/Nokimalos/rag-ci) |
 | `research-evidence-agent` | 本地生成证据 manifest 并审计 claim—evidence 类型对应关系的科研发布预检工具。 | [GitHub](https://github.com/zxxasdfrty/research-evidence-agent) |
@@ -431,6 +432,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `unsloth` | 本地运行、训练和部署模型的 Desktop/Studio/Core 工具栈；安装脚本、远程访问和 agent 工具权限均需独立审计。 | [GitHub](https://github.com/unslothai/unsloth) |
 | `Switchyard` | NVIDIA NeMo 的预览期 LLM 路由/协议适配层；代理凭据、数据流、兼容性与路由回退需独立验证。 | [GitHub](https://github.com/NVIDIA-NeMo/Switchyard) |
 | `Distillery` | 多 provider LLM API 网关，集中路由、代理凭据、配额、用量与可选脱敏/采集；提示词和日志仍需独立治理。 | [GitHub](https://github.com/TonicAI/distillery) |
 | `ai-evals` | Rails 发布的早期 AI 模型评测入口；任务、数据与许可信息仍需审计，不能据此推导模型排名。 | [GitHub](https://github.com/rails/ai-evals) |
@@ -475,6 +477,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `ToolJet` | 构建内部工具、工作流与 agent 的低代码平台；连接器、脚本、服务账号、行列级权限和 AGPL-3.0 义务须分别审计。 | [GitHub](https://github.com/ToolJet/ToolJet) |
 | `ai-nuclear-spectroscopy` | 从公开核数据到 GCD 寿命估计的可审计人机协同参考流程；当前为合成数据 alpha，不能替代真实实验验证。 | [GitHub](https://github.com/JWP-p/ai-nuclear-spectroscopy) |
 | `Lophius` | 语言模型研究工作台观察项；公开 README 尚无可复核安装/架构细节，AGPL-3.0 义务须按部署评估。 | [GitHub](https://github.com/p-e-w/lophius) |
 | `Aetheris` | 面向学术研究流程的 Web/桌面 Agent，覆盖检索、写作、分析和子 agent；生成结论、引文与数据必须独立核验。 | [GitHub](https://github.com/shiqiaoshangxue/aetheris) |
@@ -516,6 +519,7 @@
 
 - 全量项目目录：[`projects/`](./projects/)
 - 最近日报：
+  - [`2026-08-17`](./daily/2026-08-17/ai-hotspots.md)
   - [`2026-08-16`](./daily/2026-08-16/ai-hotspots.md)
   - [`2026-08-15`](./daily/2026-08-15/ai-hotspots.md)
   - [`2026-08-14`](./daily/2026-08-14/ai-hotspots.md)
@@ -571,9 +575,9 @@
 ## 当前状态
 
 - 状态：持续日更中。
-- 最新更新：`2026-08-16`。
-- 当前项目总数：`537`。
-- 最近新增项目：`needle`、`ego-lite`、`diagram-design`。
+- 最新更新：`2026-08-17`。
+- 当前项目总数：`540`。
+- 最近新增项目：`unsloth`、`ToolJet`、`research-radar`。
 - 覆盖平台：GitHub、X、Instagram、YouTube。
 
 ## 维护约定

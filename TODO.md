@@ -12,6 +12,8 @@
 
 ## 阶段性开发记录
 
+- 2026-08-17：新增 `unsloth`、`ToolJet`、`research-radar` 三个项目说明与当日热点日报。GitHub REST API 快照分别约为 72.5k/6.5k、40.0k/5.3k、5/0 stars/forks；许可证依次为 Apache-2.0、AGPL-3.0、MIT。Trending 页面当时显示 `unsloth` 约 +580、`ToolJet` 约 +446 个当日 stars；`research-radar` 创建于 2026-08-16，作为 v0.1 alpha 的早期开发者信号记录。三者归入模型、训练与推理基础设施，办公、商业与行业应用，RAG、检索与知识处理；首页项目总数重算至 `540`。X、Instagram、YouTube 未独立核验项目级原帖或互动量，只保留官方/主题观察入口。后续优先隔离复现 Unsloth 的本地模型指标，审计 ToolJet 的连接器/RBAC/部署义务，并用少量 allowlist 数据源验证 Research Radar 的去重、排序和 workspace 隐私边界。
+
 - 2026-08-16：新增 `needle`、`ego-lite`、`diagram-design` 三个项目说明与当日热点日报。GitHub REST API 快照分别约为 6.1k/402、10.9k/557、18.6k/1.1k stars/forks，均为 MIT；Trending 页面抓取时分别显示约 551、546、1.6k 个当日 stars，均只记录为短期公开关注度。三者分别归入模型、训练与推理基础设施，Coding Agents 与终端助手，前端、UI 与 Agent 交互层；首页项目总数重算至 `537`。X、Instagram、YouTube 未独立核验项目级原帖或互动量，只保留官方/主题观察入口。后续优先以 mock tools 验证 Needle 的端侧指标，以专用 profile 审计 ego-lite 的身份/数据边界，并对 diagram-design 的品牌 URL 抽取、SVG/HTML 输出和无障碍做人工复核。
 
 - 2026-08-15：新增 `AI-For-Beginners` 项目说明和当日热点日报。GitHub REST API 快照约为 64.9k stars、12.6k forks，MIT；Trending 页面抓取时显示约 155 个当日 stars，仅作短期公开关注度信号。项目是 12 周、24 课的入门课程，因不属于现有工具类分类，新增“AI 学习与教育资源”并同步首页导航与 AGENTS 分类基线；首页项目总数重算至 `534`。`speech-to-speech`、`openwork` 已建档，未重复创建。X、Instagram、YouTube 未独立核验同项目当日原帖/互动量，仅保留官方/主题观察入口。
