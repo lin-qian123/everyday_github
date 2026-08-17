@@ -49,7 +49,7 @@
 
 如果你是第一次进入这个仓库，建议从这几个入口开始：
 
-- 最新日报：[`daily/2026-08-17/ai-hotspots.md`](./daily/2026-08-17/ai-hotspots.md)
+- 最新日报：[`daily/2026-08-18/ai-hotspots.md`](./daily/2026-08-18/ai-hotspots.md)
 - 项目总目录：[`projects/`](./projects/)
 - 自动化约束：[`AGENTS.md`](./AGENTS.md)
 - 开发续接记录：[`TODO.md`](./TODO.md)
@@ -274,6 +274,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `ai-memory` | 用 Markdown/Git wiki、MCP 与生命周期 hook 让 coding agent 跨会话、跨宿主交接上下文；敏感采集、权限隔离和过期 handoff 须独立治理。 | [GitHub](https://github.com/akitaonrails/ai-memory) |
 | `zeromem` | Rust 的 agent 记忆实现，从原始对话 turn 重建图、时间和混合检索；检索效果与隐私仍须独立验证。 | [GitHub](https://github.com/ptaranat/zeromem) |
 | `reflection-engine` | 要求 AI 基于既有个人上下文生成带证据、置信度与行动建议的反思 prompt；输出敏感。 | [GitHub](https://github.com/kropdx/reflection-engine) |
 | `agent-inbox` | 将手机或浏览器发现的链接投递到 REST 队列，交给任意 agent/MCP client 后续处理。 | [GitHub](https://github.com/OGZamasu/agent-inbox) |
@@ -432,6 +433,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `llmfit` | 用本机 RAM、CPU、GPU/VRAM 和 runtime 为本地 LLM 做适配与速度估计，并支持真实基准；估计须以实际模型、负载和质量任务复验。 | [GitHub](https://github.com/AlexsJones/llmfit) |
 | `unsloth` | 本地运行、训练和部署模型的 Desktop/Studio/Core 工具栈；安装脚本、远程访问和 agent 工具权限均需独立审计。 | [GitHub](https://github.com/unslothai/unsloth) |
 | `Switchyard` | NVIDIA NeMo 的预览期 LLM 路由/协议适配层；代理凭据、数据流、兼容性与路由回退需独立验证。 | [GitHub](https://github.com/NVIDIA-NeMo/Switchyard) |
 | `Distillery` | 多 provider LLM API 网关，集中路由、代理凭据、配额、用量与可选脱敏/采集；提示词和日志仍需独立治理。 | [GitHub](https://github.com/TonicAI/distillery) |
@@ -519,6 +521,7 @@
 
 - 全量项目目录：[`projects/`](./projects/)
 - 最近日报：
+  - [`2026-08-18`](./daily/2026-08-18/ai-hotspots.md)
   - [`2026-08-17`](./daily/2026-08-17/ai-hotspots.md)
   - [`2026-08-16`](./daily/2026-08-16/ai-hotspots.md)
   - [`2026-08-15`](./daily/2026-08-15/ai-hotspots.md)
@@ -575,9 +578,9 @@
 ## 当前状态
 
 - 状态：持续日更中。
-- 最新更新：`2026-08-17`。
-- 当前项目总数：`540`。
-- 最近新增项目：`unsloth`、`ToolJet`、`research-radar`。
+- 最新更新：`2026-08-18`。
+- 当前项目总数：`542`。
+- 最近新增项目：`ai-memory`、`llmfit`。
 - 覆盖平台：GitHub、X、Instagram、YouTube。
 
 ## 维护约定
