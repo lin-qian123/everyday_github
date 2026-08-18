@@ -12,6 +12,8 @@
 
 ## 阶段性开发记录
 
+- 2026-08-19：新增 `omlx`、`ai-agent-book`、`sprix-sage-router` 三个项目说明与当日热点日报。GitHub REST API 快照分别约为 19.4k/1.7k、39.1k/4.3k、153/9 stars/forks；许可证依次为 Apache-2.0、Apache-2.0、MIT。前两者为已有规模项目并在 2026-08-18 有上游提交，后者创建于 2026-08-18，明确只作为研究预览与早期公开关注信号记录。三者分别归入模型、训练与推理基础设施，AI 学习与教育资源，Agent 框架与技能生态；首页项目总数重算至 `545`。本轮 X、Instagram、YouTube 未独立核验同项目原帖或互动量，仅保留可追溯搜索/标签入口。后续优先在固定环境复测 oMLX，本地隔离跑书中少量实验，并用合成任务审计 SAGE 的不可信报价、权限与回滚边界。
+
 - 2026-08-18：新增 `ai-memory`、`llmfit` 两个项目说明与当日热点日报。GitHub REST API 快照分别约为 2.0k/192、32.2k/2.0k stars/forks，均为 MIT；Trending 页面抓取时分别显示约 +207、+239 个当日 stars。前者归入记忆层与个人 AI 基础设施，关注 hook 采集、敏感上下文、过期 handoff 与跨用户隔离；后者归入模型、训练与推理基础设施，需以固定模型、量化、runtime、并发和提示集对估计与实测 TTFT/tok/s/质量交叉验证。首页项目总数重算至 `542`。本轮 X、Instagram、YouTube 未独立核验同项目原帖或互动量，仅保留可追溯搜索/标签入口。
 
 - 2026-08-17：新增 `unsloth`、`ToolJet`、`research-radar` 三个项目说明与当日热点日报。GitHub REST API 快照分别约为 72.5k/6.5k、40.0k/5.3k、5/0 stars/forks；许可证依次为 Apache-2.0、AGPL-3.0、MIT。Trending 页面当时显示 `unsloth` 约 +580、`ToolJet` 约 +446 个当日 stars；`research-radar` 创建于 2026-08-16，作为 v0.1 alpha 的早期开发者信号记录。三者归入模型、训练与推理基础设施，办公、商业与行业应用，RAG、检索与知识处理；首页项目总数重算至 `540`。X、Instagram、YouTube 未独立核验项目级原帖或互动量，只保留官方/主题观察入口。后续优先隔离复现 Unsloth 的本地模型指标，审计 ToolJet 的连接器/RBAC/部署义务，并用少量 allowlist 数据源验证 Research Radar 的去重、排序和 workspace 隐私边界。

@@ -49,7 +49,7 @@
 
 如果你是第一次进入这个仓库，建议从这几个入口开始：
 
-- 最新日报：[`daily/2026-08-18/ai-hotspots.md`](./daily/2026-08-18/ai-hotspots.md)
+- 最新日报：[`daily/2026-08-19/ai-hotspots.md`](./daily/2026-08-19/ai-hotspots.md)
 - 项目总目录：[`projects/`](./projects/)
 - 自动化约束：[`AGENTS.md`](./AGENTS.md)
 - 开发续接记录：[`TODO.md`](./TODO.md)
@@ -134,6 +134,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `sprix-sage-router` | 面向开放 A2A 网络的多 agent 路由研究预览，比较独立执行、协作与交接，并显式约束权限、预算、任务 DAG 与上下文转移。 | [GitHub](https://github.com/wang2122/sprix-sage-router) |
 | `openwork` | 跨 agent 复用 skills、MCP 与企业连接的桌面工作区/远程 MCP；接入业务系统前应单独核验 OAuth、执行权限与许可。 | [GitHub](https://github.com/different-ai/openwork) |
 | `HERO-Anti-OverDefense` | 用四类模式约束 agent 过度防御；不覆盖真实安全和用户指定验证。 | [GitHub](https://github.com/wanshuiyin/HERO-Anti-OverDefense) |
 | `toolpermit` | 给本地 MCP `stdio` 调用加 YAML 策略、一次性审批与脱敏审计；不是 OS sandbox。 | [GitHub](https://github.com/sunhao123456sun-svg/toolpermit) |
@@ -433,6 +434,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `omlx` | Apple Silicon 本地 LLM 推理服务器与菜单栏管理工具，提供连续批处理、分层 KV cache 和 OpenAI 兼容 API。 | [GitHub](https://github.com/jundot/omlx) |
 | `llmfit` | 用本机 RAM、CPU、GPU/VRAM 和 runtime 为本地 LLM 做适配与速度估计，并支持真实基准；估计须以实际模型、负载和质量任务复验。 | [GitHub](https://github.com/AlexsJones/llmfit) |
 | `unsloth` | 本地运行、训练和部署模型的 Desktop/Studio/Core 工具栈；安装脚本、远程访问和 agent 工具权限均需独立审计。 | [GitHub](https://github.com/unslothai/unsloth) |
 | `Switchyard` | NVIDIA NeMo 的预览期 LLM 路由/协议适配层；代理凭据、数据流、兼容性与路由回退需独立验证。 | [GitHub](https://github.com/NVIDIA-NeMo/Switchyard) |
@@ -473,6 +475,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `ai-agent-book` | 覆盖上下文、工具、评估、后训练与协作的开源 AI Agent 书稿，配有 10 章和 103 个实验入口。 | [GitHub](https://github.com/bojieli/ai-agent-book) |
 | `AI-For-Beginners` | Microsoft 的 12 周、24 课 AI 入门课程，覆盖经典 AI、深度学习、视觉、NLP、多智能体与伦理；课程时效与外部依赖须另行复核。 | [GitHub](https://github.com/microsoft/AI-For-Beginners) |
 
 ### 办公、商业与行业应用
@@ -521,6 +524,7 @@
 
 - 全量项目目录：[`projects/`](./projects/)
 - 最近日报：
+  - [`2026-08-19`](./daily/2026-08-19/ai-hotspots.md)
   - [`2026-08-18`](./daily/2026-08-18/ai-hotspots.md)
   - [`2026-08-17`](./daily/2026-08-17/ai-hotspots.md)
   - [`2026-08-16`](./daily/2026-08-16/ai-hotspots.md)
@@ -578,9 +582,9 @@
 ## 当前状态
 
 - 状态：持续日更中。
-- 最新更新：`2026-08-18`。
-- 当前项目总数：`542`。
-- 最近新增项目：`ai-memory`、`llmfit`。
+- 最新更新：`2026-08-19`。
+- 当前项目总数：`545`。
+- 最近新增项目：`omlx`、`ai-agent-book`、`sprix-sage-router`。
 - 覆盖平台：GitHub、X、Instagram、YouTube。
 
 ## 维护约定
