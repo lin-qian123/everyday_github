@@ -129,6 +129,7 @@
 | `klaatcode` | KlaatAI 的终端原生 coding agent，用服务端模型路由和代码图谱降低长任务成本。 | [GitHub](https://github.com/KlaatAI/klaatcode) |
 | `codex-router` | Codex 外部模型路由器，把 Kimi、DeepSeek 等 provider 接入 Codex model picker。 | [GitHub](https://github.com/duolahypercho/codex-router) |
 | `ego-lite` | 为外部 coding agent 提供独立 browser Space 的 macOS 浏览器；迁移登录态前须隔离 profile、最小权限并审计网络数据流。 | [GitHub](https://github.com/citrolabs/ego-lite) |
+| `munder-difflin` | 以真实终端 CLI、文件型消息/记忆与人工闸门编排本地多 agent 的桌面 harness；不是沙箱，须审计权限和许可证。 | [GitHub](https://github.com/chaitanyagiri/munder-difflin) |
 
 ### Agent 框架与技能生态
 
@@ -524,6 +525,7 @@
 
 - 全量项目目录：[`projects/`](./projects/)
 - 最近日报：
+  - [`2026-08-20`](./daily/2026-08-20/ai-hotspots.md)
   - [`2026-08-19`](./daily/2026-08-19/ai-hotspots.md)
   - [`2026-08-18`](./daily/2026-08-18/ai-hotspots.md)
   - [`2026-08-17`](./daily/2026-08-17/ai-hotspots.md)
@@ -582,9 +584,9 @@
 ## 当前状态
 
 - 状态：持续日更中。
-- 最新更新：`2026-08-19`。
-- 当前项目总数：`545`。
-- 最近新增项目：`omlx`、`ai-agent-book`、`sprix-sage-router`。
+- 最新更新：`2026-08-20`。
+- 当前项目总数：`546`。
+- 最近新增项目：`munder-difflin`。
 - 覆盖平台：GitHub、X、Instagram、YouTube。
 
 ## 维护约定
