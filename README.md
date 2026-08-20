@@ -49,7 +49,7 @@
 
 如果你是第一次进入这个仓库，建议从这几个入口开始：
 
-- 最新日报：[`daily/2026-08-19/ai-hotspots.md`](./daily/2026-08-19/ai-hotspots.md)
+- 最新日报：[`daily/2026-08-21/ai-hotspots.md`](./daily/2026-08-21/ai-hotspots.md)
 - 项目总目录：[`projects/`](./projects/)
 - 自动化约束：[`AGENTS.md`](./AGENTS.md)
 - 开发续接记录：[`TODO.md`](./TODO.md)
@@ -135,6 +135,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `obsidian-skills` | 让 Claude Code、Codex、OpenCode 等 agent 按技能规范处理 Obsidian Markdown、Bases、Canvas 与 CLI；真实 vault 仍需最小写入权限和可回滚审查。 | [GitHub](https://github.com/kepano/obsidian-skills) |
 | `sprix-sage-router` | 面向开放 A2A 网络的多 agent 路由研究预览，比较独立执行、协作与交接，并显式约束权限、预算、任务 DAG 与上下文转移。 | [GitHub](https://github.com/wang2122/sprix-sage-router) |
 | `openwork` | 跨 agent 复用 skills、MCP 与企业连接的桌面工作区/远程 MCP；接入业务系统前应单独核验 OAuth、执行权限与许可。 | [GitHub](https://github.com/different-ai/openwork) |
 | `HERO-Anti-OverDefense` | 用四类模式约束 agent 过度防御；不覆盖真实安全和用户指定验证。 | [GitHub](https://github.com/wanshuiyin/HERO-Anti-OverDefense) |
@@ -391,6 +392,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `modly` | 本地 GPU 图像/提示词到 3D mesh 桌面工作台，带工作流、扩展与 CLI；扩展供应链、模型许可和输出网格须独立验收。 | [GitHub](https://github.com/lightningpixel/modly) |
 | `speech-to-speech` | 组合可替换 VAD、STT、LLM、TTS 的本地语音 agent 链路；需分别管理语音同意、数据流和模型许可。 | [GitHub](https://github.com/huggingface/speech-to-speech) |
 | `Scene Card Studio` | 将个人照片转为可编辑 Scene Card、版本化提示和生成审阅链的视觉叙事管线；需审查同意、版权和 provider 数据流。 | [GitHub](https://github.com/swping999/scene-card-studio) |
 | `Cove Sensory MCP` | 以本地 stdio MCP 和授权路径为文本 agent 提供图像、视频、音频、音乐感知；云端 provider 数据边界需单独审查。 | [GitHub](https://github.com/moonlin1213/cove-sensory-mcp) |
@@ -525,6 +527,7 @@
 
 - 全量项目目录：[`projects/`](./projects/)
 - 最近日报：
+  - [`2026-08-21`](./daily/2026-08-21/ai-hotspots.md)
   - [`2026-08-20`](./daily/2026-08-20/ai-hotspots.md)
   - [`2026-08-19`](./daily/2026-08-19/ai-hotspots.md)
   - [`2026-08-18`](./daily/2026-08-18/ai-hotspots.md)
@@ -584,9 +587,9 @@
 ## 当前状态
 
 - 状态：持续日更中。
-- 最新更新：`2026-08-20`。
-- 当前项目总数：`546`。
-- 最近新增项目：`munder-difflin`。
+- 最新更新：`2026-08-21`。
+- 当前项目总数：`548`。
+- 最近新增项目：`obsidian-skills`、`modly`。
 - 覆盖平台：GitHub、X、Instagram、YouTube。
 
 ## 维护约定

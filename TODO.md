@@ -12,6 +12,8 @@
 
 ## 阶段性开发记录
 
+- 2026-08-21：新增 `obsidian-skills`、`modly` 项目说明与当日热点日报。GitHub REST API 快照分别约为 46.9k/3.4k、7.0k/671 stars/forks；前者许可证 MIT，后者 API 字段为 `NOASSERTION`，与 README 的 MIT 表述存在待独立核验差异。Trending 页面抓取时分别显示约 +292、+118 当日 stars，仅作为短期公开关注度。前者归入 Agent 框架与技能生态，覆盖 Obsidian Markdown、Bases、JSON Canvas、CLI 和网页抽取；后者归入语音、视频与多模态，覆盖本地 GPU 图像/提示词到 3D mesh、工作流、扩展和 CLI。首页项目总数重算至 `548`。`holaOS`、`LTX-2`、`Switchyard`、`agency-agents` 等 Trending 候选已建档，未重复创建。X、Instagram、YouTube 未独立核验同项目原帖或互动量，仅保留可追溯观察入口。后续用复制 vault 回归 agent 写入的链接/属性/Canvas 正确性，以有权使用图像验证 Modly 的网格质量、导出和失败恢复，并审计每一个外部扩展的许可、脚本和网络权限。
+
 - 2026-08-20：新增 `munder-difflin` 项目说明与当日热点日报。GitHub REST API 快照约为 2.7k stars、318 forks、55 个开放 issue；创建于 2026-05-31、2026-08-19 有上游推送，API 许可证字段为 `NOASSERTION`（README 徽标为 MIT，仍须核验实际 LICENSE）。Trending 页面抓取时显示约 +797 个当日 stars，仅记录为短期公开关注度。项目归入 Coding Agents 与终端助手，因其将已有终端 agent CLI、PTy、文件型消息/记忆、任务板与人工门控合并为本地桌面 harness；首页项目总数重算至 `546`。`OpenViking`、`Anthropic-Cybersecurity-Skills`、`superpowers`、`omlx`、`career-ops` 等 Trending 候选已建档，未重复创建。X、Instagram、YouTube 未独立核验同项目原帖或互动量，仅保留可追溯观察入口。后续优先用无敏感仓库测量协作成功率、成本、冲突和人工返工，并审计 PTY、worktree、记忆、webhook 和自动更新权限。
 
 - 2026-08-19：新增 `omlx`、`ai-agent-book`、`sprix-sage-router` 三个项目说明与当日热点日报。GitHub REST API 快照分别约为 19.4k/1.7k、39.1k/4.3k、153/9 stars/forks；许可证依次为 Apache-2.0、Apache-2.0、MIT。前两者为已有规模项目并在 2026-08-18 有上游提交，后者创建于 2026-08-18，明确只作为研究预览与早期公开关注信号记录。三者分别归入模型、训练与推理基础设施，AI 学习与教育资源，Agent 框架与技能生态；首页项目总数重算至 `545`。本轮 X、Instagram、YouTube 未独立核验同项目原帖或互动量，仅保留可追溯搜索/标签入口。后续优先在固定环境复测 oMLX，本地隔离跑书中少量实验，并用合成任务审计 SAGE 的不可信报价、权限与回滚边界。
