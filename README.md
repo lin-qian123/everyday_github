@@ -49,7 +49,7 @@
 
 如果你是第一次进入这个仓库，建议从这几个入口开始：
 
-- 最新日报：[`daily/2026-08-21/ai-hotspots.md`](./daily/2026-08-21/ai-hotspots.md)
+- 最新日报：[`daily/2026-08-22/ai-hotspots.md`](./daily/2026-08-22/ai-hotspots.md)
 - 项目总目录：[`projects/`](./projects/)
 - 自动化约束：[`AGENTS.md`](./AGENTS.md)
 - 开发续接记录：[`TODO.md`](./TODO.md)
@@ -74,6 +74,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `claudish-to-english` | Claude Code 显示层改写插件，默认以本地 Ollama 将助手输出转成更直白的表述；云端 provider 会产生额外数据外发。 | [GitHub](https://github.com/Leutenegger/claudish-to-english) |
 | `agent-link` | 以私有 Git 分支或 relay 在跨机 coding agents 间传递加密协作消息；仍须防范元数据、明文 transcript 与未可信输入。 | [GitHub](https://github.com/Riccardo8888/agent-link) |
 | `ai-smart-contract-auditor` | 面向 Claude Code 的智能合约审计技能/MCP 组合；PoC、基准与链上动作必须独立人工复核。 | [GitHub](https://github.com/iktok90-design/ai-smart-contract-auditor) |
 | `desktop-harness` | macOS 上以 Accessibility 树优先的本地 GUI 控制 CLI；高权限自动化必须最小授权。 | [GitHub](https://github.com/xfreeze2/desktop-harness) |
@@ -135,6 +136,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `GamePhanes` | Godot 游戏 coding agent 的构建、试玩、测试与修复环境，借助外置 harness 做确定性断言；临时副本不等同于 OS 级隔离。 | [GitHub](https://github.com/GamePhanes/GamePhanes) |
 | `obsidian-skills` | 让 Claude Code、Codex、OpenCode 等 agent 按技能规范处理 Obsidian Markdown、Bases、Canvas 与 CLI；真实 vault 仍需最小写入权限和可回滚审查。 | [GitHub](https://github.com/kepano/obsidian-skills) |
 | `sprix-sage-router` | 面向开放 A2A 网络的多 agent 路由研究预览，比较独立执行、协作与交接，并显式约束权限、预算、任务 DAG 与上下文转移。 | [GitHub](https://github.com/wang2122/sprix-sage-router) |
 | `openwork` | 跨 agent 复用 skills、MCP 与企业连接的桌面工作区/远程 MCP；接入业务系统前应单独核验 OAuth、执行权限与许可。 | [GitHub](https://github.com/different-ai/openwork) |
@@ -437,6 +439,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `modelprint` | 在浏览器对 OpenAI 兼容端点跑 tokenizer、错误与响应形状探针；相似指纹只支持基础设施层面的推断。 | [GitHub](https://github.com/unclecode/modelprint) |
 | `omlx` | Apple Silicon 本地 LLM 推理服务器与菜单栏管理工具，提供连续批处理、分层 KV cache 和 OpenAI 兼容 API。 | [GitHub](https://github.com/jundot/omlx) |
 | `llmfit` | 用本机 RAM、CPU、GPU/VRAM 和 runtime 为本地 LLM 做适配与速度估计，并支持真实基准；估计须以实际模型、负载和质量任务复验。 | [GitHub](https://github.com/AlexsJones/llmfit) |
 | `unsloth` | 本地运行、训练和部署模型的 Desktop/Studio/Core 工具栈；安装脚本、远程访问和 agent 工具权限均需独立审计。 | [GitHub](https://github.com/unslothai/unsloth) |
@@ -527,6 +530,7 @@
 
 - 全量项目目录：[`projects/`](./projects/)
 - 最近日报：
+  - [`2026-08-22`](./daily/2026-08-22/ai-hotspots.md)
   - [`2026-08-21`](./daily/2026-08-21/ai-hotspots.md)
   - [`2026-08-20`](./daily/2026-08-20/ai-hotspots.md)
   - [`2026-08-19`](./daily/2026-08-19/ai-hotspots.md)
@@ -587,9 +591,9 @@
 ## 当前状态
 
 - 状态：持续日更中。
-- 最新更新：`2026-08-21`。
-- 当前项目总数：`548`。
-- 最近新增项目：`obsidian-skills`、`modly`。
+- 最新更新：`2026-08-22`。
+- 当前项目总数：`551`。
+- 最近新增项目：`claudish-to-english`、`GamePhanes`、`modelprint`。
 - 覆盖平台：GitHub、X、Instagram、YouTube。
 
 ## 维护约定
