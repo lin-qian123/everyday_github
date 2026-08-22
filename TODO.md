@@ -12,6 +12,8 @@
 
 ## 阶段性开发记录
 
+- 2026-08-23：新增 `scroll-craft`、`clipfactory`、`netwalk` 项目说明与当日热点日报。GitHub REST API 快照分别约为 57/9、44/7、39/8 stars/forks，均创建于 2026-08-22，属于早期开发者信号而非 GitHub Trending 排名；`scroll-craft`、`netwalk` 为 MIT，`clipfactory` 的 API SPDX 为 `NOASSERTION`，但 README/LICENSE 标示 Elastic License 2.0，须以 LICENSE 与实际用途独立核验。主题覆盖可验证的滚动网页设计、可编辑的本地短视频生成流水线和受授权范围内的只读网络巡检。首页项目总数重算至 `554`。X、Instagram、YouTube 未独立核验同项目原帖或互动量，仅保留可追溯观察入口。后续应实测 scroll-craft 的无障碍/性能与 macOS 兼容性，以 fake provider 审计 ClipFactory 的网络、密钥、费用与素材权利，并仅在书面授权的隔离网络审计 netwalk 的命令策略、范围限制和配置脱敏。
+
 - 2026-08-22：新增 `claudish-to-english`、`GamePhanes`、`modelprint` 项目说明与当日热点日报。GitHub REST API 快照分别约为 579/61、85/1、29/3 stars/forks，均为 MIT；三者均创建于 2026-08-21，因此是早期开发者信号而非 GitHub Trending 排名。主题覆盖 Claude Code 显示层可读性改写、Godot 游戏 coding-agent 的确定性评测、以及 OpenAI 兼容端点的基础设施指纹。首页项目总数重算至 `551`。X、Instagram、YouTube 未独立核验同项目原帖或互动量，仅保留可追溯观察入口。后续应以副本工程实测 GamePhanes 的断言覆盖与隔离边界，隔离审查 claudish 的 hook/云端数据流，并在获得供应商书面许可的前提下验证 modelprint 的误判、路由噪声和 API key 使用边界。
 
 - 2026-08-21：新增 `obsidian-skills`、`modly` 项目说明与当日热点日报。GitHub REST API 快照分别约为 46.9k/3.4k、7.0k/671 stars/forks；前者许可证 MIT，后者 API 字段为 `NOASSERTION`，与 README 的 MIT 表述存在待独立核验差异。Trending 页面抓取时分别显示约 +292、+118 当日 stars，仅作为短期公开关注度。前者归入 Agent 框架与技能生态，覆盖 Obsidian Markdown、Bases、JSON Canvas、CLI 和网页抽取；后者归入语音、视频与多模态，覆盖本地 GPU 图像/提示词到 3D mesh、工作流、扩展和 CLI。首页项目总数重算至 `548`。`holaOS`、`LTX-2`、`Switchyard`、`agency-agents` 等 Trending 候选已建档，未重复创建。X、Instagram、YouTube 未独立核验同项目原帖或互动量，仅保留可追溯观察入口。后续用复制 vault 回归 agent 写入的链接/属性/Canvas 正确性，以有权使用图像验证 Modly 的网格质量、导出和失败恢复，并审计每一个外部扩展的许可、脚本和网络权限。

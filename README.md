@@ -49,7 +49,7 @@
 
 如果你是第一次进入这个仓库，建议从这几个入口开始：
 
-- 最新日报：[`daily/2026-08-22/ai-hotspots.md`](./daily/2026-08-22/ai-hotspots.md)
+- 最新日报：[`daily/2026-08-23/ai-hotspots.md`](./daily/2026-08-23/ai-hotspots.md)
 - 项目总目录：[`projects/`](./projects/)
 - 自动化约束：[`AGENTS.md`](./AGENTS.md)
 - 开发续接记录：[`TODO.md`](./TODO.md)
@@ -136,6 +136,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `netwalk` | 用代码级只读命令策略与范围限制辅助 agent 做已授权网络巡检；配置、扫描与报告仍须最小权限和人工复核。 | [GitHub](https://github.com/ripmilla/netwalk) |
 | `GamePhanes` | Godot 游戏 coding agent 的构建、试玩、测试与修复环境，借助外置 harness 做确定性断言；临时副本不等同于 OS 级隔离。 | [GitHub](https://github.com/GamePhanes/GamePhanes) |
 | `obsidian-skills` | 让 Claude Code、Codex、OpenCode 等 agent 按技能规范处理 Obsidian Markdown、Bases、Canvas 与 CLI；真实 vault 仍需最小写入权限和可回滚审查。 | [GitHub](https://github.com/kepano/obsidian-skills) |
 | `sprix-sage-router` | 面向开放 A2A 网络的多 agent 路由研究预览，比较独立执行、协作与交接，并显式约束权限、预算、任务 DAG 与上下文转移。 | [GitHub](https://github.com/wang2122/sprix-sage-router) |
@@ -353,6 +354,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `scroll-craft` | Claude Code 的滚动网页设计与验证 skill，使用浏览器截图检查交互和显示问题；不替代无障碍与人工设计验收。 | [GitHub](https://github.com/nateherkai/scroll-craft) |
 | `chatbot-template` | shadcn-ui 的 Next.js/AI SDK 聊天模板，含流式消息、工具状态与人机问卷；公开部署前须补认证、限流和预算保护。 | [GitHub](https://github.com/shadcn-ui/chatbot-template) |
 | `moli` | Rust agent 浏览器，默认 DOM/结构化数据、布局和像素按需计算；需实测兼容性与数据边界。 | [GitHub](https://github.com/lexmount/moli) |
 | `AbaoPal` | Android 原生手机自动化 agent，结合无障碍 UI、截图、多 agent 循环、录制回放与 skills。 | [GitHub](https://github.com/banye-technology/AbaoPal) |
@@ -394,6 +396,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `clipfactory` | 自托管短视频流水线，保存脚本、镜头、字幕和渲染中间产物；无认证 API、外部 provider、费用与 Elastic 2.0 条款需审查。 | [GitHub](https://github.com/feyzilim/clipfactory) |
 | `modly` | 本地 GPU 图像/提示词到 3D mesh 桌面工作台，带工作流、扩展与 CLI；扩展供应链、模型许可和输出网格须独立验收。 | [GitHub](https://github.com/lightningpixel/modly) |
 | `speech-to-speech` | 组合可替换 VAD、STT、LLM、TTS 的本地语音 agent 链路；需分别管理语音同意、数据流和模型许可。 | [GitHub](https://github.com/huggingface/speech-to-speech) |
 | `Scene Card Studio` | 将个人照片转为可编辑 Scene Card、版本化提示和生成审阅链的视觉叙事管线；需审查同意、版权和 provider 数据流。 | [GitHub](https://github.com/swping999/scene-card-studio) |
@@ -530,6 +533,7 @@
 
 - 全量项目目录：[`projects/`](./projects/)
 - 最近日报：
+  - [`2026-08-23`](./daily/2026-08-23/ai-hotspots.md)
   - [`2026-08-22`](./daily/2026-08-22/ai-hotspots.md)
   - [`2026-08-21`](./daily/2026-08-21/ai-hotspots.md)
   - [`2026-08-20`](./daily/2026-08-20/ai-hotspots.md)
@@ -591,9 +595,9 @@
 ## 当前状态
 
 - 状态：持续日更中。
-- 最新更新：`2026-08-22`。
-- 当前项目总数：`551`。
-- 最近新增项目：`claudish-to-english`、`GamePhanes`、`modelprint`。
+- 最新更新：`2026-08-23`。
+- 当前项目总数：`554`。
+- 最近新增项目：`scroll-craft`、`clipfactory`、`netwalk`。
 - 覆盖平台：GitHub、X、Instagram、YouTube。
 
 ## 维护约定
