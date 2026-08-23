@@ -49,7 +49,7 @@
 
 如果你是第一次进入这个仓库，建议从这几个入口开始：
 
-- 最新日报：[`daily/2026-08-23/ai-hotspots.md`](./daily/2026-08-23/ai-hotspots.md)
+- 最新日报：[`daily/2026-08-24/ai-hotspots.md`](./daily/2026-08-24/ai-hotspots.md)
 - 项目总目录：[`projects/`](./projects/)
 - 自动化约束：[`AGENTS.md`](./AGENTS.md)
 - 开发续接记录：[`TODO.md`](./TODO.md)
@@ -442,6 +442,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `aura` | 用硬件探测、预算规划和 OS 级约束协调 Ollama/GGUF/llama.cpp 的低内存本地推理；实际内存边界与质量须独立复现。 | [GitHub](https://github.com/Grevix/aura) |
 | `modelprint` | 在浏览器对 OpenAI 兼容端点跑 tokenizer、错误与响应形状探针；相似指纹只支持基础设施层面的推断。 | [GitHub](https://github.com/unclecode/modelprint) |
 | `omlx` | Apple Silicon 本地 LLM 推理服务器与菜单栏管理工具，提供连续批处理、分层 KV cache 和 OpenAI 兼容 API。 | [GitHub](https://github.com/jundot/omlx) |
 | `llmfit` | 用本机 RAM、CPU、GPU/VRAM 和 runtime 为本地 LLM 做适配与速度估计，并支持真实基准；估计须以实际模型、负载和质量任务复验。 | [GitHub](https://github.com/AlexsJones/llmfit) |
@@ -484,6 +485,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `agent_tutorial` | 中文八章智能体教程，按模型调用、RAG、工具、记忆、harness 与协作递进；生产级安全、评测和依赖仍须逐章补齐。 | [GitHub](https://github.com/gitzyong812/agent_tutorial) |
 | `ai-agent-book` | 覆盖上下文、工具、评估、后训练与协作的开源 AI Agent 书稿，配有 10 章和 103 个实验入口。 | [GitHub](https://github.com/bojieli/ai-agent-book) |
 | `AI-For-Beginners` | Microsoft 的 12 周、24 课 AI 入门课程，覆盖经典 AI、深度学习、视觉、NLP、多智能体与伦理；课程时效与外部依赖须另行复核。 | [GitHub](https://github.com/microsoft/AI-For-Beginners) |
 
@@ -533,6 +535,7 @@
 
 - 全量项目目录：[`projects/`](./projects/)
 - 最近日报：
+  - [`2026-08-24`](./daily/2026-08-24/ai-hotspots.md)
   - [`2026-08-23`](./daily/2026-08-23/ai-hotspots.md)
   - [`2026-08-22`](./daily/2026-08-22/ai-hotspots.md)
   - [`2026-08-21`](./daily/2026-08-21/ai-hotspots.md)
@@ -595,9 +598,9 @@
 ## 当前状态
 
 - 状态：持续日更中。
-- 最新更新：`2026-08-23`。
-- 当前项目总数：`554`。
-- 最近新增项目：`scroll-craft`、`clipfactory`、`netwalk`。
+- 最新更新：`2026-08-24`。
+- 当前项目总数：`556`。
+- 最近新增项目：`aura`、`agent_tutorial`。
 - 覆盖平台：GitHub、X、Instagram、YouTube。
 
 ## 维护约定

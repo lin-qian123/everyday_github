@@ -12,6 +12,8 @@
 
 ## 阶段性开发记录
 
+- 2026-08-24：新增 `aura`、`agent_tutorial` 项目说明与当日热点日报。GitHub REST API 核验两者均创建于 2026-08-23，快照均为 3 stars、0 forks、0 个开放 issue、Apache-2.0；均明确标记为早期开发者信号，不是 Trending 或社媒热度。前者归入模型、训练与推理基础设施，后者归入 AI 学习与教育资源；首页分类、最新日期与实际项目数同步为 `556`。多源搜索层无可用新闻结果，X、Instagram、YouTube 未独立核验项目级原帖或互动量，仅保留可追溯观察入口。后续分别独立复现 `aura` 的内存约束/质量边界，并逐章核验 `agent_tutorial` 的依赖、密钥处理、测试和对抗评测。
+
 - 2026-08-23：新增 `scroll-craft`、`clipfactory`、`netwalk` 项目说明与当日热点日报。GitHub REST API 快照分别约为 57/9、44/7、39/8 stars/forks，均创建于 2026-08-22，属于早期开发者信号而非 GitHub Trending 排名；`scroll-craft`、`netwalk` 为 MIT，`clipfactory` 的 API SPDX 为 `NOASSERTION`，但 README/LICENSE 标示 Elastic License 2.0，须以 LICENSE 与实际用途独立核验。主题覆盖可验证的滚动网页设计、可编辑的本地短视频生成流水线和受授权范围内的只读网络巡检。首页项目总数重算至 `554`。X、Instagram、YouTube 未独立核验同项目原帖或互动量，仅保留可追溯观察入口。后续应实测 scroll-craft 的无障碍/性能与 macOS 兼容性，以 fake provider 审计 ClipFactory 的网络、密钥、费用与素材权利，并仅在书面授权的隔离网络审计 netwalk 的命令策略、范围限制和配置脱敏。
 
 - 2026-08-22：新增 `claudish-to-english`、`GamePhanes`、`modelprint` 项目说明与当日热点日报。GitHub REST API 快照分别约为 579/61、85/1、29/3 stars/forks，均为 MIT；三者均创建于 2026-08-21，因此是早期开发者信号而非 GitHub Trending 排名。主题覆盖 Claude Code 显示层可读性改写、Godot 游戏 coding-agent 的确定性评测、以及 OpenAI 兼容端点的基础设施指纹。首页项目总数重算至 `551`。X、Instagram、YouTube 未独立核验同项目原帖或互动量，仅保留可追溯观察入口。后续应以副本工程实测 GamePhanes 的断言覆盖与隔离边界，隔离审查 claudish 的 hook/云端数据流，并在获得供应商书面许可的前提下验证 modelprint 的误判、路由噪声和 API key 使用边界。
