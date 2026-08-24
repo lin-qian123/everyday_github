@@ -49,7 +49,7 @@
 
 如果你是第一次进入这个仓库，建议从这几个入口开始：
 
-- 最新日报：[`daily/2026-08-24/ai-hotspots.md`](./daily/2026-08-24/ai-hotspots.md)
+- 最新日报：[`daily/2026-08-25/ai-hotspots.md`](./daily/2026-08-25/ai-hotspots.md)
 - 项目总目录：[`projects/`](./projects/)
 - 自动化约束：[`AGENTS.md`](./AGENTS.md)
 - 开发续接记录：[`TODO.md`](./TODO.md)
@@ -280,6 +280,8 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `Evaan_Personal_Intelligence_Engine` | 用小型本地模型、prompt、规则式语气与 JSON 状态实现陪伴式聊天示例；明文记忆、心理陪伴边界与许可证须先审计。 | [GitHub](https://github.com/Tahirpathan-AiLab/Evaan_Personal_Intelligence_Engine) |
+| `sessiontrove` | 私有归档 Claude Code、Codex 等 agent 的原始会话；其中可能含密钥、路径与第三方材料，训练或同步前必须脱敏治理。 | [GitHub](https://github.com/maedmatt/sessiontrove) |
 | `ai-memory` | 用 Markdown/Git wiki、MCP 与生命周期 hook 让 coding agent 跨会话、跨宿主交接上下文；敏感采集、权限隔离和过期 handoff 须独立治理。 | [GitHub](https://github.com/akitaonrails/ai-memory) |
 | `zeromem` | Rust 的 agent 记忆实现，从原始对话 turn 重建图、时间和混合检索；检索效果与隐私仍须独立验证。 | [GitHub](https://github.com/ptaranat/zeromem) |
 | `reflection-engine` | 要求 AI 基于既有个人上下文生成带证据、置信度与行动建议的反思 prompt；输出敏感。 | [GitHub](https://github.com/kropdx/reflection-engine) |
@@ -535,6 +537,7 @@
 
 - 全量项目目录：[`projects/`](./projects/)
 - 最近日报：
+  - [`2026-08-25`](./daily/2026-08-25/ai-hotspots.md)
   - [`2026-08-24`](./daily/2026-08-24/ai-hotspots.md)
   - [`2026-08-23`](./daily/2026-08-23/ai-hotspots.md)
   - [`2026-08-22`](./daily/2026-08-22/ai-hotspots.md)
@@ -598,9 +601,9 @@
 ## 当前状态
 
 - 状态：持续日更中。
-- 最新更新：`2026-08-24`。
-- 当前项目总数：`556`。
-- 最近新增项目：`aura`、`agent_tutorial`。
+- 最新更新：`2026-08-25`。
+- 当前项目总数：`558`。
+- 最近新增项目：`Evaan_Personal_Intelligence_Engine`、`sessiontrove`。
 - 覆盖平台：GitHub、X、Instagram、YouTube。
 
 ## 维护约定

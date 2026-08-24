@@ -12,6 +12,8 @@
 
 ## 阶段性开发记录
 
+- 2026-08-25：新增 `Evaan_Personal_Intelligence_Engine`、`sessiontrove` 项目说明与当日热点日报。GitHub REST API 核验两者均创建于 2026-08-24；快照分别为 10/0/0（stars/forks/open issues，API 未声明 SPDX 许可证）与 4/1/1（MIT）。均仅作为早期开发者信号：前者是本地 persona、规则式语气与 JSON 会话状态的聊天样例，后者归档多个 coding agent 的原始本地会话。两者归入记忆层与个人 AI 基础设施；首页分类、最新日期与实际项目数同步为 `558`。X、Instagram、YouTube 未独立核验同项目原帖或互动量，仅保留观察入口。后续分别用虚构数据测 Evaan 的删除/恢复/误判与性能，并在可丢弃 profile 上核验 sessiontrove 的发现、权限、恢复、加密和保留期策略后再处理真实会话。
+
 - 2026-08-24：新增 `aura`、`agent_tutorial` 项目说明与当日热点日报。GitHub REST API 核验两者均创建于 2026-08-23，快照均为 3 stars、0 forks、0 个开放 issue、Apache-2.0；均明确标记为早期开发者信号，不是 Trending 或社媒热度。前者归入模型、训练与推理基础设施，后者归入 AI 学习与教育资源；首页分类、最新日期与实际项目数同步为 `556`。多源搜索层无可用新闻结果，X、Instagram、YouTube 未独立核验项目级原帖或互动量，仅保留可追溯观察入口。后续分别独立复现 `aura` 的内存约束/质量边界，并逐章核验 `agent_tutorial` 的依赖、密钥处理、测试和对抗评测。
 
 - 2026-08-23：新增 `scroll-craft`、`clipfactory`、`netwalk` 项目说明与当日热点日报。GitHub REST API 快照分别约为 57/9、44/7、39/8 stars/forks，均创建于 2026-08-22，属于早期开发者信号而非 GitHub Trending 排名；`scroll-craft`、`netwalk` 为 MIT，`clipfactory` 的 API SPDX 为 `NOASSERTION`，但 README/LICENSE 标示 Elastic License 2.0，须以 LICENSE 与实际用途独立核验。主题覆盖可验证的滚动网页设计、可编辑的本地短视频生成流水线和受授权范围内的只读网络巡检。首页项目总数重算至 `554`。X、Instagram、YouTube 未独立核验同项目原帖或互动量，仅保留可追溯观察入口。后续应实测 scroll-craft 的无障碍/性能与 macOS 兼容性，以 fake provider 审计 ClipFactory 的网络、密钥、费用与素材权利，并仅在书面授权的隔离网络审计 netwalk 的命令策略、范围限制和配置脱敏。
