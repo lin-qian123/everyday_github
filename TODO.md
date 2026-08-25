@@ -12,6 +12,8 @@
 
 ## 阶段性开发记录
 
+- 2026-08-26：新增 `maka`、`claude-obsidian` 项目说明与当日热点日报。GitHub Trending 抓取时分别约为 +538、+810 当日 stars；REST API 快照分别为 3,301/327/285（stars/forks/open issues，Apache-2.0）与 12,674/1,380/135（MIT），上游均在 2026-08-25 有提交。前者归入 Coding Agents 与终端助手，记录本地 Runtime Host、审批、可恢复执行事实与 eval；后者归入记忆层与个人 AI 基础设施，记录可审阅的来源/主张/Obsidian vault 工作流。首页分类、最新日期与实际项目数同步为 `560`。`awesome-gpt-image-2`、`openhuman`、`needle` 已建档，不重复创建。X、Instagram、YouTube 未独立核验同项目原帖或互动量，只保留搜索/标签观察入口。后续以无敏感 fixture 验证 Maka 的权限/恢复/评测，以副本 vault 验证 claude-obsidian 的来源、写入、回滚和数据出口。
+
 - 2026-08-25：新增 `Evaan_Personal_Intelligence_Engine`、`sessiontrove` 项目说明与当日热点日报。GitHub REST API 核验两者均创建于 2026-08-24；快照分别为 10/0/0（stars/forks/open issues，API 未声明 SPDX 许可证）与 4/1/1（MIT）。均仅作为早期开发者信号：前者是本地 persona、规则式语气与 JSON 会话状态的聊天样例，后者归档多个 coding agent 的原始本地会话。两者归入记忆层与个人 AI 基础设施；首页分类、最新日期与实际项目数同步为 `558`。X、Instagram、YouTube 未独立核验同项目原帖或互动量，仅保留观察入口。后续分别用虚构数据测 Evaan 的删除/恢复/误判与性能，并在可丢弃 profile 上核验 sessiontrove 的发现、权限、恢复、加密和保留期策略后再处理真实会话。
 
 - 2026-08-24：新增 `aura`、`agent_tutorial` 项目说明与当日热点日报。GitHub REST API 核验两者均创建于 2026-08-23，快照均为 3 stars、0 forks、0 个开放 issue、Apache-2.0；均明确标记为早期开发者信号，不是 Trending 或社媒热度。前者归入模型、训练与推理基础设施，后者归入 AI 学习与教育资源；首页分类、最新日期与实际项目数同步为 `556`。多源搜索层无可用新闻结果，X、Instagram、YouTube 未独立核验项目级原帖或互动量，仅保留可追溯观察入口。后续分别独立复现 `aura` 的内存约束/质量边界，并逐章核验 `agent_tutorial` 的依赖、密钥处理、测试和对抗评测。

@@ -74,6 +74,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `maka` | Apache 孵化中的 local-first agent 工作区，把桌面、CLI、工具审批和评测统一到可恢复的执行记录；sandbox、网络和日志仍需独立治理。 | [GitHub](https://github.com/apache/maka) |
 | `claudish-to-english` | Claude Code 显示层改写插件，默认以本地 Ollama 将助手输出转成更直白的表述；云端 provider 会产生额外数据外发。 | [GitHub](https://github.com/Leutenegger/claudish-to-english) |
 | `agent-link` | 以私有 Git 分支或 relay 在跨机 coding agents 间传递加密协作消息；仍须防范元数据、明文 transcript 与未可信输入。 | [GitHub](https://github.com/Riccardo8888/agent-link) |
 | `ai-smart-contract-auditor` | 面向 Claude Code 的智能合约审计技能/MCP 组合；PoC、基准与链上动作必须独立人工复核。 | [GitHub](https://github.com/iktok90-design/ai-smart-contract-auditor) |
@@ -280,6 +281,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `claude-obsidian` | 将来源、主张、链接笔记与 Obsidian vault 组织成 local-first 知识系统；模型、检索和批量写入仍须审计。 | [GitHub](https://github.com/AgriciDaniel/claude-obsidian) |
 | `Evaan_Personal_Intelligence_Engine` | 用小型本地模型、prompt、规则式语气与 JSON 状态实现陪伴式聊天示例；明文记忆、心理陪伴边界与许可证须先审计。 | [GitHub](https://github.com/Tahirpathan-AiLab/Evaan_Personal_Intelligence_Engine) |
 | `sessiontrove` | 私有归档 Claude Code、Codex 等 agent 的原始会话；其中可能含密钥、路径与第三方材料，训练或同步前必须脱敏治理。 | [GitHub](https://github.com/maedmatt/sessiontrove) |
 | `ai-memory` | 用 Markdown/Git wiki、MCP 与生命周期 hook 让 coding agent 跨会话、跨宿主交接上下文；敏感采集、权限隔离和过期 handoff 须独立治理。 | [GitHub](https://github.com/akitaonrails/ai-memory) |
@@ -537,6 +539,7 @@
 
 - 全量项目目录：[`projects/`](./projects/)
 - 最近日报：
+  - [`2026-08-26`](./daily/2026-08-26/ai-hotspots.md)
   - [`2026-08-25`](./daily/2026-08-25/ai-hotspots.md)
   - [`2026-08-24`](./daily/2026-08-24/ai-hotspots.md)
   - [`2026-08-23`](./daily/2026-08-23/ai-hotspots.md)
@@ -601,9 +604,9 @@
 ## 当前状态
 
 - 状态：持续日更中。
-- 最新更新：`2026-08-25`。
-- 当前项目总数：`558`。
-- 最近新增项目：`Evaan_Personal_Intelligence_Engine`、`sessiontrove`。
+- 最新更新：`2026-08-26`。
+- 当前项目总数：`560`。
+- 最近新增项目：`maka`、`claude-obsidian`。
 - 覆盖平台：GitHub、X、Instagram、YouTube。
 
 ## 维护约定
