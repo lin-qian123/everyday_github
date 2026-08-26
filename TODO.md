@@ -12,6 +12,8 @@
 
 ## 阶段性开发记录
 
+- 2026-08-27：新增 `archify`、`garden-skills`、`ai-job-search`、`marin` 项目说明与当日热点日报。GitHub Trending 抓取时分别约为 +1,002、+537、+1,299、+130 当日 stars；REST API 快照分别为 17,804/1,232/30（stars/forks/open issues，MIT）、10,898/1,387/16（MIT）、36,428/12,407/5（MIT）与 2,443/212/568（Apache-2.0）。四者均归入现有分类，首页项目总数重算为 `564`。`free-claude-code`、`claude-plugins-official`、`awesome-agent-skills` 等候选已存在或与现有条目重叠，未重复创建。X、Instagram、YouTube 本轮未独立核验项目级原帖或互动量，仅保留可追溯搜索/标签入口。后续分别以固定 commit 核验 Archify 图形事实性、隔离安装 Garden Skills、以合成个人资料审计 AI Job Search 的隐私与自动提交边界，并用 CPU TinyStories 复现 Marin 的最小实验。
+
 - 2026-08-26：新增 `maka`、`claude-obsidian` 项目说明与当日热点日报。GitHub Trending 抓取时分别约为 +538、+810 当日 stars；REST API 快照分别为 3,301/327/285（stars/forks/open issues，Apache-2.0）与 12,674/1,380/135（MIT），上游均在 2026-08-25 有提交。前者归入 Coding Agents 与终端助手，记录本地 Runtime Host、审批、可恢复执行事实与 eval；后者归入记忆层与个人 AI 基础设施，记录可审阅的来源/主张/Obsidian vault 工作流。首页分类、最新日期与实际项目数同步为 `560`。`awesome-gpt-image-2`、`openhuman`、`needle` 已建档，不重复创建。X、Instagram、YouTube 未独立核验同项目原帖或互动量，只保留搜索/标签观察入口。后续以无敏感 fixture 验证 Maka 的权限/恢复/评测，以副本 vault 验证 claude-obsidian 的来源、写入、回滚和数据出口。
 
 - 2026-08-25：新增 `Evaan_Personal_Intelligence_Engine`、`sessiontrove` 项目说明与当日热点日报。GitHub REST API 核验两者均创建于 2026-08-24；快照分别为 10/0/0（stars/forks/open issues，API 未声明 SPDX 许可证）与 4/1/1（MIT）。均仅作为早期开发者信号：前者是本地 persona、规则式语气与 JSON 会话状态的聊天样例，后者归档多个 coding agent 的原始本地会话。两者归入记忆层与个人 AI 基础设施；首页分类、最新日期与实际项目数同步为 `558`。X、Instagram、YouTube 未独立核验同项目原帖或互动量，仅保留观察入口。后续分别用虚构数据测 Evaan 的删除/恢复/误判与性能，并在可丢弃 profile 上核验 sessiontrove 的发现、权限、恢复、加密和保留期策略后再处理真实会话。

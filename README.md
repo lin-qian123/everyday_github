@@ -137,6 +137,8 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `archify` | 将代码库或系统描述转换为带 schema、验证和多格式导出的交互式系统图；图形正确性仍需回到源码和运行时核验。 | [GitHub](https://github.com/tt-a1i/archify) |
+| `garden-skills` | 面向 Claude Code、Cursor、Codex 等宿主的网页设计、检索、图像和文章生成技能集合；skill 不是沙箱或事实核验器。 | [GitHub](https://github.com/ConardLi/garden-skills) |
 | `netwalk` | 用代码级只读命令策略与范围限制辅助 agent 做已授权网络巡检；配置、扫描与报告仍须最小权限和人工复核。 | [GitHub](https://github.com/ripmilla/netwalk) |
 | `GamePhanes` | Godot 游戏 coding agent 的构建、试玩、测试与修复环境，借助外置 harness 做确定性断言；临时副本不等同于 OS 级隔离。 | [GitHub](https://github.com/GamePhanes/GamePhanes) |
 | `obsidian-skills` | 让 Claude Code、Codex、OpenCode 等 agent 按技能规范处理 Obsidian Markdown、Bases、Canvas 与 CLI；真实 vault 仍需最小写入权限和可回滚审查。 | [GitHub](https://github.com/kepano/obsidian-skills) |
@@ -446,6 +448,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `marin` | 记录数据、训练、评测和失败过程的 foundation model 研究框架，支持从 CPU 教程到 GPU/TPU 实验；复现性和数据许可仍需独立核验。 | [GitHub](https://github.com/marin-community/marin) |
 | `aura` | 用硬件探测、预算规划和 OS 级约束协调 Ollama/GGUF/llama.cpp 的低内存本地推理；实际内存边界与质量须独立复现。 | [GitHub](https://github.com/Grevix/aura) |
 | `modelprint` | 在浏览器对 OpenAI 兼容端点跑 tokenizer、错误与响应形状探针；相似指纹只支持基础设施层面的推断。 | [GitHub](https://github.com/unclecode/modelprint) |
 | `omlx` | Apple Silicon 本地 LLM 推理服务器与菜单栏管理工具，提供连续批处理、分层 KV cache 和 OpenAI 兼容 API。 | [GitHub](https://github.com/jundot/omlx) |
@@ -497,6 +500,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `ai-job-search` | 在本机用 Claude Code 组织职位搜索、匹配、CV/求职信、面试和结果追踪；个人资料、职位站点条款与自动提交须人工控制。 | [GitHub](https://github.com/MadsLorentzen/ai-job-search) |
 | `ToolJet` | 构建内部工具、工作流与 agent 的低代码平台；连接器、脚本、服务账号、行列级权限和 AGPL-3.0 义务须分别审计。 | [GitHub](https://github.com/ToolJet/ToolJet) |
 | `ai-nuclear-spectroscopy` | 从公开核数据到 GCD 寿命估计的可审计人机协同参考流程；当前为合成数据 alpha，不能替代真实实验验证。 | [GitHub](https://github.com/JWP-p/ai-nuclear-spectroscopy) |
 | `Lophius` | 语言模型研究工作台观察项；公开 README 尚无可复核安装/架构细节，AGPL-3.0 义务须按部署评估。 | [GitHub](https://github.com/p-e-w/lophius) |
@@ -539,6 +543,7 @@
 
 - 全量项目目录：[`projects/`](./projects/)
 - 最近日报：
+  - [`2026-08-27`](./daily/2026-08-27/ai-hotspots.md)
   - [`2026-08-26`](./daily/2026-08-26/ai-hotspots.md)
   - [`2026-08-25`](./daily/2026-08-25/ai-hotspots.md)
   - [`2026-08-24`](./daily/2026-08-24/ai-hotspots.md)
@@ -604,9 +609,9 @@
 ## 当前状态
 
 - 状态：持续日更中。
-- 最新更新：`2026-08-26`。
-- 当前项目总数：`560`。
-- 最近新增项目：`maka`、`claude-obsidian`。
+- 最新更新：`2026-08-27`。
+- 当前项目总数：`564`。
+- 最近新增项目：`archify`、`garden-skills`、`ai-job-search`、`marin`。
 - 覆盖平台：GitHub、X、Instagram、YouTube。
 
 ## 维护约定
