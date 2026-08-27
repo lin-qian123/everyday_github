@@ -12,6 +12,8 @@
 
 ## 阶段性开发记录
 
+- 2026-08-28：新增 `Megatron-LM`、`cutlass`、`OpenBB`、`transformers`、`fiftyone`、`datahub` 项目说明与当日日报。官方 GitHub Trending 快照显示它们分别约为 +16、+16、+58、+48、+4、+12 当日 stars；REST API 快照分别为 17,634/4,423/1,248（API SPDX 为 NOASSERTION，仓库 LICENSE 含 NVIDIA 条款）、10,328/2,049/695（仓库 LICENSE.txt 为 BSD-3-Clause）、72,384/7,466/108（README/LICENSE 为 AGPLv3，API SPDX 为 NOASSERTION）、164,515/34,386/2,405（Apache-2.0）、11,044/816/673（Apache-2.0）与 12,597/3,676/1,261（Apache-2.0）。六者分别归入模型、训练与推理基础设施、办公/行业应用和 RAG/检索；首页项目总数重算为 `570`。langchain 与 milvus 同在官方 Trending 但已有建档，本轮去重。X、Instagram、YouTube 的项目级原帖和互动量未独立核验，仅保留平台搜索/标签入口；另记录 OpenAI Hugging Face 安全事件和 Google Gemini Live 任务委派为近期可追溯讨论主题，未把社媒搜索结果写成传播结论。
+
 - 2026-08-27：新增 `archify`、`garden-skills`、`ai-job-search`、`marin` 项目说明与当日热点日报。GitHub Trending 抓取时分别约为 +1,002、+537、+1,299、+130 当日 stars；REST API 快照分别为 17,804/1,232/30（stars/forks/open issues，MIT）、10,898/1,387/16（MIT）、36,428/12,407/5（MIT）与 2,443/212/568（Apache-2.0）。四者均归入现有分类，首页项目总数重算为 `564`。`free-claude-code`、`claude-plugins-official`、`awesome-agent-skills` 等候选已存在或与现有条目重叠，未重复创建。X、Instagram、YouTube 本轮未独立核验项目级原帖或互动量，仅保留可追溯搜索/标签入口。后续分别以固定 commit 核验 Archify 图形事实性、隔离安装 Garden Skills、以合成个人资料审计 AI Job Search 的隐私与自动提交边界，并用 CPU TinyStories 复现 Marin 的最小实验。
 
 - 2026-08-26：新增 `maka`、`claude-obsidian` 项目说明与当日热点日报。GitHub Trending 抓取时分别约为 +538、+810 当日 stars；REST API 快照分别为 3,301/327/285（stars/forks/open issues，Apache-2.0）与 12,674/1,380/135（MIT），上游均在 2026-08-25 有提交。前者归入 Coding Agents 与终端助手，记录本地 Runtime Host、审批、可恢复执行事实与 eval；后者归入记忆层与个人 AI 基础设施，记录可审阅的来源/主张/Obsidian vault 工作流。首页分类、最新日期与实际项目数同步为 `560`。`awesome-gpt-image-2`、`openhuman`、`needle` 已建档，不重复创建。X、Instagram、YouTube 未独立核验同项目原帖或互动量，只保留搜索/标签观察入口。后续以无敏感 fixture 验证 Maka 的权限/恢复/评测，以副本 vault 验证 claude-obsidian 的来源、写入、回滚和数据出口。

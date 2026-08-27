@@ -49,7 +49,7 @@
 
 如果你是第一次进入这个仓库，建议从这几个入口开始：
 
-- 最新日报：[`daily/2026-08-25/ai-hotspots.md`](./daily/2026-08-25/ai-hotspots.md)
+- 最新日报：[`daily/2026-08-28/ai-hotspots.md`](./daily/2026-08-28/ai-hotspots.md)
 - 项目总目录：[`projects/`](./projects/)
 - 自动化约束：[`AGENTS.md`](./AGENTS.md)
 - 开发续接记录：[`TODO.md`](./TODO.md)
@@ -328,6 +328,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `datahub` | 面向数据发现、治理、血缘和可观测性的 AI data catalog，以 metadata graph 为 agent/RAG 提供上下文；连接器、权限、数据新鲜度和生产部署须独立核验。 | [GitHub](https://github.com/datahub-project/datahub) |
 | `research-radar` | workspace-first 的自托管研究订阅、去重、透明排序与本地检索工具；当前为 v0.1 alpha，真实订阅/反馈数据须独立保护。 | [GitHub](https://github.com/researchradar/research-radar) |
 | `semantica` | 将数据、知识图谱、向量检索与 agent 决策 provenance 组织为可查询的 Context Graph；关键事实与审批仍要回到原始证据。 | [GitHub](https://github.com/semantica-agi/semantica) |
 | `rag-ci` | 以配对 bootstrap、置信区间和最小效应门控 RAG 回归的 CLI/CI 工具；结论仍受 golden set 质量限制。 | [GitHub](https://github.com/Nokimalos/rag-ci) |
@@ -448,6 +449,10 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `Megatron-LM` | NVIDIA 的 GPU 优化 Transformer 大规模训练库，覆盖 TP/PP/DP/EP/CP、混合精度、MoE、checkpoint 与推理；规模、性能和许可证须按固定环境独立核验。 | [GitHub](https://github.com/NVIDIA/Megatron-LM) |
+| `cutlass` | NVIDIA 的 CUDA 高性能 GEMM、CuTe 和 CuTe DSL 抽象库；适合构建/调优训练与推理 kernel，性能与兼容性依赖 GPU、CUDA、形状和编译选项。 | [GitHub](https://github.com/NVIDIA/cutlass) |
+| `transformers` | Hugging Face 的文本、视觉、音频、视频和多模态模型定义与训练/推理框架；模型代码、权重、数据和 benchmark 仍需逐项审计。 | [GitHub](https://github.com/huggingface/transformers) |
+| `fiftyone` | 面向视觉数据集和模型质量的可视化、标注、清洗、评估与错误分析工具；数据隐私、标签 schema 和评测切分须独立治理。 | [GitHub](https://github.com/voxel51/fiftyone) |
 | `marin` | 记录数据、训练、评测和失败过程的 foundation model 研究框架，支持从 CPU 教程到 GPU/TPU 实验；复现性和数据许可仍需独立核验。 | [GitHub](https://github.com/marin-community/marin) |
 | `aura` | 用硬件探测、预算规划和 OS 级约束协调 Ollama/GGUF/llama.cpp 的低内存本地推理；实际内存边界与质量须独立复现。 | [GitHub](https://github.com/Grevix/aura) |
 | `modelprint` | 在浏览器对 OpenAI 兼容端点跑 tokenizer、错误与响应形状探针；相似指纹只支持基础设施层面的推断。 | [GitHub](https://github.com/unclecode/modelprint) |
@@ -500,6 +505,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `OpenBB` | 面向分析师、量化人员和 AI agent 的金融数据集成层，统一连接 provider、Python、Workspace、Excel、MCP 与 REST；数据许可、金融风险和 AGPL 义务须分别审查。 | [GitHub](https://github.com/OpenBB-finance/OpenBB) |
 | `ai-job-search` | 在本机用 Claude Code 组织职位搜索、匹配、CV/求职信、面试和结果追踪；个人资料、职位站点条款与自动提交须人工控制。 | [GitHub](https://github.com/MadsLorentzen/ai-job-search) |
 | `ToolJet` | 构建内部工具、工作流与 agent 的低代码平台；连接器、脚本、服务账号、行列级权限和 AGPL-3.0 义务须分别审计。 | [GitHub](https://github.com/ToolJet/ToolJet) |
 | `ai-nuclear-spectroscopy` | 从公开核数据到 GCD 寿命估计的可审计人机协同参考流程；当前为合成数据 alpha，不能替代真实实验验证。 | [GitHub](https://github.com/JWP-p/ai-nuclear-spectroscopy) |
@@ -543,6 +549,7 @@
 
 - 全量项目目录：[`projects/`](./projects/)
 - 最近日报：
+  - [`2026-08-28`](./daily/2026-08-28/ai-hotspots.md)
   - [`2026-08-27`](./daily/2026-08-27/ai-hotspots.md)
   - [`2026-08-26`](./daily/2026-08-26/ai-hotspots.md)
   - [`2026-08-25`](./daily/2026-08-25/ai-hotspots.md)
@@ -609,9 +616,9 @@
 ## 当前状态
 
 - 状态：持续日更中。
-- 最新更新：`2026-08-27`。
-- 当前项目总数：`564`。
-- 最近新增项目：`archify`、`garden-skills`、`ai-job-search`、`marin`。
+- 最新更新：`2026-08-28`。
+- 当前项目总数：`570`。
+- 最近新增项目：`Megatron-LM`、`cutlass`、`OpenBB`、`transformers`、`fiftyone`、`datahub`。
 - 覆盖平台：GitHub、X、Instagram、YouTube。
 
 ## 维护约定
