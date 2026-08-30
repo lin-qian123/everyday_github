@@ -49,7 +49,7 @@
 
 如果你是第一次进入这个仓库，建议从这几个入口开始：
 
-- 最新日报：[`daily/2026-08-28/ai-hotspots.md`](./daily/2026-08-28/ai-hotspots.md)
+- 最新日报：[`daily/2026-08-31/ai-hotspots.md`](./daily/2026-08-31/ai-hotspots.md)
 - 项目总目录：[`projects/`](./projects/)
 - 自动化约束：[`AGENTS.md`](./AGENTS.md)
 - 开发续接记录：[`TODO.md`](./TODO.md)
@@ -450,6 +450,7 @@
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
 | `Megatron-LM` | NVIDIA 的 GPU 优化 Transformer 大规模训练库，覆盖 TP/PP/DP/EP/CP、混合精度、MoE、checkpoint 与推理；规模、性能和许可证须按固定环境独立核验。 | [GitHub](https://github.com/NVIDIA/Megatron-LM) |
+| `freellmapi` | 本地优先的单用户 LLM 统一路由器，提供多 provider 兼容端点、限额跟踪、健康检查和自动回退；免费额度、ToS、数据代理与无 SLA 边界须独立核验。 | [GitHub](https://github.com/tashfeenahmed/freellmapi) |
 | `cutlass` | NVIDIA 的 CUDA 高性能 GEMM、CuTe 和 CuTe DSL 抽象库；适合构建/调优训练与推理 kernel，性能与兼容性依赖 GPU、CUDA、形状和编译选项。 | [GitHub](https://github.com/NVIDIA/cutlass) |
 | `transformers` | Hugging Face 的文本、视觉、音频、视频和多模态模型定义与训练/推理框架；模型代码、权重、数据和 benchmark 仍需逐项审计。 | [GitHub](https://github.com/huggingface/transformers) |
 | `fiftyone` | 面向视觉数据集和模型质量的可视化、标注、清洗、评估与错误分析工具；数据隐私、标签 schema 和评测切分须独立治理。 | [GitHub](https://github.com/voxel51/fiftyone) |
@@ -500,12 +501,14 @@
 | `agent_tutorial` | 中文八章智能体教程，按模型调用、RAG、工具、记忆、harness 与协作递进；生产级安全、评测和依赖仍须逐章补齐。 | [GitHub](https://github.com/gitzyong812/agent_tutorial) |
 | `ai-agent-book` | 覆盖上下文、工具、评估、后训练与协作的开源 AI Agent 书稿，配有 10 章和 103 个实验入口。 | [GitHub](https://github.com/bojieli/ai-agent-book) |
 | `AI-For-Beginners` | Microsoft 的 12 周、24 课 AI 入门课程，覆盖经典 AI、深度学习、视觉、NLP、多智能体与伦理；课程时效与外部依赖须另行复核。 | [GitHub](https://github.com/microsoft/AI-For-Beginners) |
+| `OpenMAIC` | 清华 THU-MAIC 的多智能体互动课堂平台，把主题/材料生成课程、幻灯片、测验、交互场景和课堂讨论；教育效果、材料、模型和导出结果须独立审核。 | [GitHub](https://github.com/THU-MAIC/OpenMAIC) |
 
 ### 办公、商业与行业应用
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
 | `OpenBB` | 面向分析师、量化人员和 AI agent 的金融数据集成层，统一连接 provider、Python、Workspace、Excel、MCP 与 REST；数据许可、金融风险和 AGPL 义务须分别审查。 | [GitHub](https://github.com/OpenBB-finance/OpenBB) |
+| `patent-disclosure-skill` | 中文专利交底、专利解读、政策观察和审查答复辅助 skill，结合项目扫描、图示、Obsidian 与案例 RAG；法律判断、机密材料和查新证据必须人工核验。 | [GitHub](https://github.com/handsomestWei/patent-disclosure-skill) |
 | `ai-job-search` | 在本机用 Claude Code 组织职位搜索、匹配、CV/求职信、面试和结果追踪；个人资料、职位站点条款与自动提交须人工控制。 | [GitHub](https://github.com/MadsLorentzen/ai-job-search) |
 | `ToolJet` | 构建内部工具、工作流与 agent 的低代码平台；连接器、脚本、服务账号、行列级权限和 AGPL-3.0 义务须分别审计。 | [GitHub](https://github.com/ToolJet/ToolJet) |
 | `ai-nuclear-spectroscopy` | 从公开核数据到 GCD 寿命估计的可审计人机协同参考流程；当前为合成数据 alpha，不能替代真实实验验证。 | [GitHub](https://github.com/JWP-p/ai-nuclear-spectroscopy) |
@@ -549,6 +552,7 @@
 
 - 全量项目目录：[`projects/`](./projects/)
 - 最近日报：
+  - [`2026-08-31`](./daily/2026-08-31/ai-hotspots.md)
   - [`2026-08-28`](./daily/2026-08-28/ai-hotspots.md)
   - [`2026-08-27`](./daily/2026-08-27/ai-hotspots.md)
   - [`2026-08-26`](./daily/2026-08-26/ai-hotspots.md)
@@ -616,9 +620,9 @@
 ## 当前状态
 
 - 状态：持续日更中。
-- 最新更新：`2026-08-28`。
-- 当前项目总数：`570`。
-- 最近新增项目：`Megatron-LM`、`cutlass`、`OpenBB`、`transformers`、`fiftyone`、`datahub`。
+- 最新更新：`2026-08-31`。
+- 当前项目总数：`573`。
+- 最近新增项目：`OpenMAIC`、`patent-disclosure-skill`、`freellmapi`。
 - 覆盖平台：GitHub、X、Instagram、YouTube。
 
 ## 维护约定
