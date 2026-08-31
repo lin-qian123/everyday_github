@@ -49,7 +49,7 @@
 
 如果你是第一次进入这个仓库，建议从这几个入口开始：
 
-- 最新日报：[`daily/2026-08-31/ai-hotspots.md`](./daily/2026-08-31/ai-hotspots.md)
+- 最新日报：[`daily/2026-09-01/ai-hotspots.md`](./daily/2026-09-01/ai-hotspots.md)
 - 项目总目录：[`projects/`](./projects/)
 - 自动化约束：[`AGENTS.md`](./AGENTS.md)
 - 开发续接记录：[`TODO.md`](./TODO.md)
@@ -137,6 +137,8 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `reverse-skill` | 面向授权逆向、CTF、取证和渗透测试的 agent 技能路由包，以 scope、场景 playbook 和证据链约束执行；不能替代书面授权与隔离靶场。 | [GitHub](https://github.com/zhaoxuya520/reverse-skill) |
+| `paperclip` | 用组织图、目标、任务、心跳、预算和日志协调外部 agents 的控制面；预算与审计记录不是 OS sandbox，外部动作仍需人工闸门。 | [GitHub](https://github.com/paperclipai/paperclip) |
 | `archify` | 将代码库或系统描述转换为带 schema、验证和多格式导出的交互式系统图；图形正确性仍需回到源码和运行时核验。 | [GitHub](https://github.com/tt-a1i/archify) |
 | `garden-skills` | 面向 Claude Code、Cursor、Codex 等宿主的网页设计、检索、图像和文章生成技能集合；skill 不是沙箱或事实核验器。 | [GitHub](https://github.com/ConardLi/garden-skills) |
 | `netwalk` | 用代码级只读命令策略与范围限制辅助 agent 做已授权网络巡检；配置、扫描与报告仍须最小权限和人工复核。 | [GitHub](https://github.com/ripmilla/netwalk) |
@@ -328,6 +330,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `pdf-inspector` | Rust PDF 分类、位置感知抽取和选择性 OCR 路由层，覆盖 CLI、Python、Node 与 Wasm；关键数字、表格和阅读顺序仍须版面对照。 | [GitHub](https://github.com/firecrawl/pdf-inspector) |
 | `datahub` | 面向数据发现、治理、血缘和可观测性的 AI data catalog，以 metadata graph 为 agent/RAG 提供上下文；连接器、权限、数据新鲜度和生产部署须独立核验。 | [GitHub](https://github.com/datahub-project/datahub) |
 | `research-radar` | workspace-first 的自托管研究订阅、去重、透明排序与本地检索工具；当前为 v0.1 alpha，真实订阅/反馈数据须独立保护。 | [GitHub](https://github.com/researchradar/research-radar) |
 | `semantica` | 将数据、知识图谱、向量检索与 agent 决策 provenance 组织为可查询的 Context Graph；关键事实与审批仍要回到原始证据。 | [GitHub](https://github.com/semantica-agi/semantica) |
@@ -403,6 +406,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `VoiceStudio` | 本地优先的语音克隆、配音、转写、听写与长音频工作台；声音同意、模型许可、可选网络功能和水印效果须独立审查。 | [GitHub](https://github.com/debpalash/VoiceStudio) |
 | `clipfactory` | 自托管短视频流水线，保存脚本、镜头、字幕和渲染中间产物；无认证 API、外部 provider、费用与 Elastic 2.0 条款需审查。 | [GitHub](https://github.com/feyzilim/clipfactory) |
 | `modly` | 本地 GPU 图像/提示词到 3D mesh 桌面工作台，带工作流、扩展与 CLI；扩展供应链、模型许可和输出网格须独立验收。 | [GitHub](https://github.com/lightningpixel/modly) |
 | `speech-to-speech` | 组合可替换 VAD、STT、LLM、TTS 的本地语音 agent 链路；需分别管理语音同意、数据流和模型许可。 | [GitHub](https://github.com/huggingface/speech-to-speech) |
@@ -449,6 +453,9 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `ODS` | 将本地推理、Web UI、工作流、RAG、语音和图像服务组织成可安装/运维的私有 AI 栈；安装脚本、端口、网络出口和升级恢复须审计。 | [GitHub](https://github.com/Osmantic/ODS) |
+| `Soup` | 用单份 YAML 组织 LoRA/QLoRA、数据、评测与交付的消费级硬件微调 CLI；低显存演示须以固定模型和硬件独立复现。 | [GitHub](https://github.com/MakazhanAlpamys/Soup) |
+| `microduck_rl` | 面向 Microduck 双足机器人的 RL、执行器/齿隙建模、ONNX 导出与 sim2real 环境；真机须在保护架、限幅和急停下验证。 | [GitHub](https://github.com/pollen-robotics/microduck_rl) |
 | `Megatron-LM` | NVIDIA 的 GPU 优化 Transformer 大规模训练库，覆盖 TP/PP/DP/EP/CP、混合精度、MoE、checkpoint 与推理；规模、性能和许可证须按固定环境独立核验。 | [GitHub](https://github.com/NVIDIA/Megatron-LM) |
 | `freellmapi` | 本地优先的单用户 LLM 统一路由器，提供多 provider 兼容端点、限额跟踪、健康检查和自动回退；免费额度、ToS、数据代理与无 SLA 边界须独立核验。 | [GitHub](https://github.com/tashfeenahmed/freellmapi) |
 | `cutlass` | NVIDIA 的 CUDA 高性能 GEMM、CuTe 和 CuTe DSL 抽象库；适合构建/调优训练与推理 kernel，性能与兼容性依赖 GPU、CUDA、形状和编译选项。 | [GitHub](https://github.com/NVIDIA/cutlass) |
@@ -552,6 +559,7 @@
 
 - 全量项目目录：[`projects/`](./projects/)
 - 最近日报：
+  - [`2026-09-01`](./daily/2026-09-01/ai-hotspots.md)
   - [`2026-08-31`](./daily/2026-08-31/ai-hotspots.md)
   - [`2026-08-28`](./daily/2026-08-28/ai-hotspots.md)
   - [`2026-08-27`](./daily/2026-08-27/ai-hotspots.md)
@@ -620,9 +628,9 @@
 ## 当前状态
 
 - 状态：持续日更中。
-- 最新更新：`2026-08-31`。
-- 当前项目总数：`573`。
-- 最近新增项目：`OpenMAIC`、`patent-disclosure-skill`、`freellmapi`。
+- 最新更新：`2026-09-01`。
+- 当前项目总数：`580`。
+- 最近新增项目：`ODS`、`reverse-skill`、`pdf-inspector`、`microduck_rl`、`VoiceStudio`、`Soup`、`paperclip`。
 - 覆盖平台：GitHub、X、Instagram、YouTube。
 
 ## 维护约定
