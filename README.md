@@ -49,7 +49,7 @@
 
 如果你是第一次进入这个仓库，建议从这几个入口开始：
 
-- 最新日报：[`daily/2026-09-01/ai-hotspots.md`](./daily/2026-09-01/ai-hotspots.md)
+- 最新日报：[`daily/2026-09-02/ai-hotspots.md`](./daily/2026-09-02/ai-hotspots.md)
 - 项目总目录：[`projects/`](./projects/)
 - 自动化约束：[`AGENTS.md`](./AGENTS.md)
 - 开发续接记录：[`TODO.md`](./TODO.md)
@@ -74,6 +74,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `openclaude` | 跨云端 API、本地模型和多类工具的 coding-agent CLI；对话 fork 不是文件隔离，派生代码与 MIT 修改部分的许可边界须分别审查。 | [GitHub](https://github.com/Gitlawb/openclaude) |
 | `maka` | Apache 孵化中的 local-first agent 工作区，把桌面、CLI、工具审批和评测统一到可恢复的执行记录；sandbox、网络和日志仍需独立治理。 | [GitHub](https://github.com/apache/maka) |
 | `claudish-to-english` | Claude Code 显示层改写插件，默认以本地 Ollama 将助手输出转成更直白的表述；云端 provider 会产生额外数据外发。 | [GitHub](https://github.com/Leutenegger/claudish-to-english) |
 | `agent-link` | 以私有 Git 分支或 relay 在跨机 coding agents 间传递加密协作消息；仍须防范元数据、明文 transcript 与未可信输入。 | [GitHub](https://github.com/Riccardo8888/agent-link) |
@@ -137,6 +138,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `OpenShell` | NVIDIA 的 agent 隔离运行时，在进程外用 gateway、sandbox、策略与推理路由约束文件、网络和凭据；真实隔离强度须按后端对抗验证。 | [GitHub](https://github.com/NVIDIA/OpenShell) |
 | `reverse-skill` | 面向授权逆向、CTF、取证和渗透测试的 agent 技能路由包，以 scope、场景 playbook 和证据链约束执行；不能替代书面授权与隔离靶场。 | [GitHub](https://github.com/zhaoxuya520/reverse-skill) |
 | `paperclip` | 用组织图、目标、任务、心跳、预算和日志协调外部 agents 的控制面；预算与审计记录不是 OS sandbox，外部动作仍需人工闸门。 | [GitHub](https://github.com/paperclipai/paperclip) |
 | `archify` | 将代码库或系统描述转换为带 schema、验证和多格式导出的交互式系统图；图形正确性仍需回到源码和运行时核验。 | [GitHub](https://github.com/tt-a1i/archify) |
@@ -514,6 +516,9 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `openresearch-cli` | 本地优先的科研 agent 工作区，用 worktree、实验树、commit archive 与多类计算后端保存运行谱系；记录完整不等于科学结论成立。 | [GitHub](https://github.com/alphaXiv/openresearch-cli) |
+| `open-seo` | 将关键词、排名、链接、站点审计和 AI visibility 数据通过 Web、MCP 与 skills 提供给人和 agent；自托管仍依赖付费数据 API。 | [GitHub](https://github.com/every-app/open-seo) |
+| `robin` | 通过 Tor、搜索/抓取模块和 LLM 组织暗网 OSINT 调查；仅限书面授权与合法范围，摘要不能替代证据复核。 | [GitHub](https://github.com/apurvsinghgautam/robin) |
 | `OpenBB` | 面向分析师、量化人员和 AI agent 的金融数据集成层，统一连接 provider、Python、Workspace、Excel、MCP 与 REST；数据许可、金融风险和 AGPL 义务须分别审查。 | [GitHub](https://github.com/OpenBB-finance/OpenBB) |
 | `patent-disclosure-skill` | 中文专利交底、专利解读、政策观察和审查答复辅助 skill，结合项目扫描、图示、Obsidian 与案例 RAG；法律判断、机密材料和查新证据必须人工核验。 | [GitHub](https://github.com/handsomestWei/patent-disclosure-skill) |
 | `ai-job-search` | 在本机用 Claude Code 组织职位搜索、匹配、CV/求职信、面试和结果追踪；个人资料、职位站点条款与自动提交须人工控制。 | [GitHub](https://github.com/MadsLorentzen/ai-job-search) |
@@ -559,6 +564,7 @@
 
 - 全量项目目录：[`projects/`](./projects/)
 - 最近日报：
+  - [`2026-09-02`](./daily/2026-09-02/ai-hotspots.md)
   - [`2026-09-01`](./daily/2026-09-01/ai-hotspots.md)
   - [`2026-08-31`](./daily/2026-08-31/ai-hotspots.md)
   - [`2026-08-28`](./daily/2026-08-28/ai-hotspots.md)
@@ -628,9 +634,9 @@
 ## 当前状态
 
 - 状态：持续日更中。
-- 最新更新：`2026-09-01`。
-- 当前项目总数：`580`。
-- 最近新增项目：`ODS`、`reverse-skill`、`pdf-inspector`、`microduck_rl`、`VoiceStudio`、`Soup`、`paperclip`。
+- 最新更新：`2026-09-02`。
+- 当前项目总数：`585`。
+- 最近新增项目：`openclaude`、`open-seo`、`robin`、`openresearch-cli`、`OpenShell`。
 - 覆盖平台：GitHub、X、Instagram、YouTube。
 
 ## 维护约定
