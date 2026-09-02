@@ -12,6 +12,8 @@
 
 ## 阶段性开发记录
 
+- 2026-09-03：新增 `atlas`、`arcbox`、`Sequoia-X`、`geo-seo-claude`、`agent-browser`、`sie`、`superset`、`BrowserOS` 项目说明与当日热点日报。官方 GitHub Trending 抓取时分别约为 +895、+506、+138、+96、+88、+61、+48、+45 当日 stars；REST API 快照分别为 2,845/186/21（MIT）、2,346/58/42（MIT OR Apache-2.0）、6,020/1,243/22（README 声明 MIT，但无独立 LICENSE 且 API 未识别 SPDX）、10,169/1,568/25（MIT）、41,801/2,786/677（Apache-2.0）、3,038/299/17（Apache-2.0）、13,668/1,242/609（Elastic License 2.0）和 13,503/1,421/89（AGPL-3.0，均为 stars/forks/open issues）。八者归入现有分类，首页项目总数重算为 `593`；`ponytail`、`VoiceStudio`、`openclaude`、`hermes-agent`、`academic-research-skills`、`ECC`、`pdf-inspector` 等候选已建档，本轮去重。多源近一周检索返回 0 条可用结果，项目证据降级到官方 Trending、API、README、release、changelog 与站点；X 使用 BrowserOS / Superset 官方账号，YouTube 使用 BrowserOS 官方演示与 SIE 上游引用的技术演讲，Instagram 仅保留标签入口，未将社媒观察写成当日互动量。后续分别验证跨 agent 记忆与 worktree 冲突、浏览器提示注入和真实登录态、ArcBox microVM 边界、SIE 冷启动/LRU/多租户、GEO 分数校准，以及 Sequoia-X 的许可证与样本外成本后回测。
+
 - 2026-09-02：新增 `openclaude`、`open-seo`、`robin`、`openresearch-cli`、`OpenShell` 项目说明与当日热点日报。官方 GitHub Trending 抓取时分别约为 +37、+517、+127、+88、+25 当日 stars；REST API 快照分别为 31,251/8,945/71（许可证为复合边界：原始派生部分受 Anthropic 商业条款约束，修改/新增部分在法律允许范围内按 MIT）、16,123/1,958/126（MIT）、6,921/1,299/15（MIT）、644/47/7（MIT）、8,475/1,251/549（Apache-2.0，均为 stars/forks/open issues）。五者归入现有分类，首页项目总数重算为 `585`；`OpenMAIC`、`minimind`、`pdf-inspector`、`video-use`、`scientific-agent-skills`、`academic-research-skills`、`awesome-design-md`、`ECC`、`crawl4ai` 等头部候选已建档，本轮去重。多源近期新闻检索返回 0 条可用候选，因此项目证据降级到官方 Trending、API、release、README 与官方文档；X 使用 OpenClaude/OpenSEO 账号和 Robin README 引用帖，YouTube 仅保留一个可回溯的 OpenShell 第三方实操与搜索入口，Instagram 仅保留受登录和排序影响的标签入口，未将社媒观察写成当日互动量。后续分别审查 OpenClaude 的派生许可/凭据/后台日志，用固定数据核对 OpenSEO 成本与口径，只在授权合成样本上测试 Robin，以同布局小实验验证 OpenResearch 远端/调度边界，并对 OpenShell 做 deny-by-default、恶意 skill、container/MicroVM 与升级回滚测试。
 
 - 2026-09-01：新增 `ODS`、`reverse-skill`、`pdf-inspector`、`microduck_rl`、`VoiceStudio`、`Soup`、`paperclip` 项目说明与当日热点日报。官方 GitHub Trending 抓取时分别约为 +163、+1,439、+199、+384、+400、+349、+77 当日 stars；REST API 快照分别为 5,455/772/1,526（Apache-2.0）、33,077/4,489/19（MIT）、17,335/1,198/195（MIT）、1,119/193/15（代码 Apache-2.0，3D 模型另为 CC BY-SA-NC）、12,684/1,964/28（AGPL-3.0）、4,188/639/62（Apache-2.0）、79,765/14,632/5,442（MIT，均为 stars/forks/open issues）。七者均归入现有分类，首页项目总数重算为 `580`；`OpenMAIC`、`archify`、`scientific-agent-skills`、`ECC`、`video-use` 等候选已建档，本轮去重。多源新闻检索返回 0 条可用候选，因此项目证据降级到官方 Trending、API 与 README；X 使用 Paperclip 官方账号和 Grok Imagine 官方规则，YouTube 使用 ODS/Soup 上游演示，Instagram 仅保留受登录与排序影响的标签入口，未将社媒搜索或视频写成当日互动量。后续分别验证 ODS 安装/恢复、PDF golden set、安全靶场路由、Microduck 真机保护、VoiceStudio 声音授权、Soup 显存/质量与 Paperclip 的 heartbeat/审批/隔离。
@@ -191,6 +193,12 @@
   - 新增 `daily/2026-05-26/ai-hotspots.md`。
 
 ## 下一步行动
+
+- 用同一可丢弃仓库比较 `atlas` 与 `superset` 的跨 agent 交接、错误记忆传播、worktree 冲突、资源成本与恢复；把 Git checkpoint / UI 状态和真实测试结果分开。
+- 用专用浏览器 profile 和测试账号验证 `agent-browser` / `BrowserOS` 的 WebMCP、提示注入、OAuth 过期、下载、回放、人工确认和日志删除。
+- 在 M3+、macOS 15+ 测试机对 `arcbox` 做无网络/无凭据基线与恶意依赖、端口、文件复制、snapshot 对抗测试，不把上游性能数字写成实测。
+- 为 `sie` 固定模型 revision、镜像 digest 与金标集，测冷/热延迟、LRU 抖动、OOM、多租户认证和 telemetry 出口。
+- 校准 `geo-seo-claude` 的分项与真实平台原始结果；在复用 `Sequoia-X` 前先解决 LICENSE 文本，并完成无未来函数、交易成本和样本外回测。
 
 - 回归 `ponytail-improved` 的代码量缩减主张，至少同时观测测试通过率、review 返工和安全/可访问性回归，避免把“少写”直接等同于质量。
 - 对 `deltafin` 验证权重许可、完整下载空间、cache 增量和长超时行为；不要把实验 API 直接暴露到局域网或自动化生产任务。

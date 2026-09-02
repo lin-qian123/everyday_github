@@ -49,7 +49,7 @@
 
 如果你是第一次进入这个仓库，建议从这几个入口开始：
 
-- 最新日报：[`daily/2026-09-02/ai-hotspots.md`](./daily/2026-09-02/ai-hotspots.md)
+- 最新日报：[`daily/2026-09-03/ai-hotspots.md`](./daily/2026-09-03/ai-hotspots.md)
 - 项目总目录：[`projects/`](./projects/)
 - 自动化约束：[`AGENTS.md`](./AGENTS.md)
 - 开发续接记录：[`TODO.md`](./TODO.md)
@@ -74,6 +74,8 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `atlas` | 面向 coding agents 的 source-control 桌面工作台，将共享记忆、会话、工具调用与 Git checkpoint 关联；本地默认和 secret scrub 仍需独立验证。 | [GitHub](https://github.com/pacifio/atlas) |
+| `superset` | 以独立 worktree、终端、diff、自动化和远端 host 编排多路 CLI agents；worktree 不是 OS 隔离，ELv2 权利边界须审查。 | [GitHub](https://github.com/superset-sh/superset) |
 | `openclaude` | 跨云端 API、本地模型和多类工具的 coding-agent CLI；对话 fork 不是文件隔离，派生代码与 MIT 修改部分的许可边界须分别审查。 | [GitHub](https://github.com/Gitlawb/openclaude) |
 | `maka` | Apache 孵化中的 local-first agent 工作区，把桌面、CLI、工具审批和评测统一到可恢复的执行记录；sandbox、网络和日志仍需独立治理。 | [GitHub](https://github.com/apache/maka) |
 | `claudish-to-english` | Claude Code 显示层改写插件，默认以本地 Ollama 将助手输出转成更直白的表述；云端 provider 会产生额外数据外发。 | [GitHub](https://github.com/Leutenegger/claudish-to-english) |
@@ -138,6 +140,8 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `agent-browser` | 面向 agents 的 Rust 浏览器自动化 CLI，提供 accessibility refs、CDP、MCP 与 experimental WebMCP；页面工具与后果性动作须独立授权。 | [GitHub](https://github.com/vercel-labs/agent-browser) |
+| `arcbox` | 在 macOS 上以独立内核 Firecracker microVM 运行 agents 与不可信代码；需 M3+/macOS 15+，网络、凭据和控制面仍须对抗验证。 | [GitHub](https://github.com/arcboxlabs/arcbox) |
 | `OpenShell` | NVIDIA 的 agent 隔离运行时，在进程外用 gateway、sandbox、策略与推理路由约束文件、网络和凭据；真实隔离强度须按后端对抗验证。 | [GitHub](https://github.com/NVIDIA/OpenShell) |
 | `reverse-skill` | 面向授权逆向、CTF、取证和渗透测试的 agent 技能路由包，以 scope、场景 playbook 和证据链约束执行；不能替代书面授权与隔离靶场。 | [GitHub](https://github.com/zhaoxuya520/reverse-skill) |
 | `paperclip` | 用组织图、目标、任务、心跳、预算和日志协调外部 agents 的控制面；预算与审计记录不是 OS sandbox，外部动作仍需人工闸门。 | [GitHub](https://github.com/paperclipai/paperclip) |
@@ -366,6 +370,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `BrowserOS` | 同仓库提供 agent 专用第二浏览器与内置 agent 的 Chromium fork，可复用真实登录态并本地回放；真实账号副作用与日志隐私须严格治理。 | [GitHub](https://github.com/browseros-ai/BrowserOS) |
 | `scroll-craft` | Claude Code 的滚动网页设计与验证 skill，使用浏览器截图检查交互和显示问题；不替代无障碍与人工设计验收。 | [GitHub](https://github.com/nateherkai/scroll-craft) |
 | `chatbot-template` | shadcn-ui 的 Next.js/AI SDK 聊天模板，含流式消息、工具状态与人机问卷；公开部署前须补认证、限流和预算保护。 | [GitHub](https://github.com/shadcn-ui/chatbot-template) |
 | `moli` | Rust agent 浏览器，默认 DOM/结构化数据、布局和像素按需计算；需实测兼容性与数据边界。 | [GitHub](https://github.com/lexmount/moli) |
@@ -455,6 +460,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `sie` | 为 agents 统一服务 embedding、rerank、抽取与生成等任务模型的自托管推理引擎；模型目录与 MTEB 信息不能替代私有任务验证。 | [GitHub](https://github.com/superlinked/sie) |
 | `ODS` | 将本地推理、Web UI、工作流、RAG、语音和图像服务组织成可安装/运维的私有 AI 栈；安装脚本、端口、网络出口和升级恢复须审计。 | [GitHub](https://github.com/Osmantic/ODS) |
 | `Soup` | 用单份 YAML 组织 LoRA/QLoRA、数据、评测与交付的消费级硬件微调 CLI；低显存演示须以固定模型和硬件独立复现。 | [GitHub](https://github.com/MakazhanAlpamys/Soup) |
 | `microduck_rl` | 面向 Microduck 双足机器人的 RL、执行器/齿隙建模、ONNX 导出与 sim2real 环境；真机须在保护架、限幅和急停下验证。 | [GitHub](https://github.com/pollen-robotics/microduck_rl) |
@@ -516,6 +522,8 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `Sequoia-X` | 基于 baostock、SQLite 和规则策略的 A 股收盘后筛选系统；形态不是收益证据，README 的 MIT 声明与缺失 LICENSE 文件须复核。 | [GitHub](https://github.com/sngyai/Sequoia-X) |
+| `geo-seo-claude` | 将 GEO / SEO、crawler、schema 与报告封装成 Claude Code skills；复合分数和营销数字不能证明 AI 搜索引用或转化。 | [GitHub](https://github.com/zubair-trabzada/geo-seo-claude) |
 | `openresearch-cli` | 本地优先的科研 agent 工作区，用 worktree、实验树、commit archive 与多类计算后端保存运行谱系；记录完整不等于科学结论成立。 | [GitHub](https://github.com/alphaXiv/openresearch-cli) |
 | `open-seo` | 将关键词、排名、链接、站点审计和 AI visibility 数据通过 Web、MCP 与 skills 提供给人和 agent；自托管仍依赖付费数据 API。 | [GitHub](https://github.com/every-app/open-seo) |
 | `robin` | 通过 Tor、搜索/抓取模块和 LLM 组织暗网 OSINT 调查；仅限书面授权与合法范围，摘要不能替代证据复核。 | [GitHub](https://github.com/apurvsinghgautam/robin) |
@@ -634,9 +642,9 @@
 ## 当前状态
 
 - 状态：持续日更中。
-- 最新更新：`2026-09-02`。
-- 当前项目总数：`585`。
-- 最近新增项目：`openclaude`、`open-seo`、`robin`、`openresearch-cli`、`OpenShell`。
+- 最新更新：`2026-09-03`。
+- 当前项目总数：`593`。
+- 最近新增项目：`atlas`、`arcbox`、`Sequoia-X`、`geo-seo-claude`、`agent-browser`、`sie`、`superset`、`BrowserOS`。
 - 覆盖平台：GitHub、X、Instagram、YouTube。
 
 ## 维护约定
