@@ -49,7 +49,7 @@
 
 如果你是第一次进入这个仓库，建议从这几个入口开始：
 
-- 最新日报：[`daily/2026-09-03/ai-hotspots.md`](./daily/2026-09-03/ai-hotspots.md)
+- 最新日报：[`daily/2026-09-04/ai-hotspots.md`](./daily/2026-09-04/ai-hotspots.md)
 - 项目总目录：[`projects/`](./projects/)
 - 自动化约束：[`AGENTS.md`](./AGENTS.md)
 - 开发续接记录：[`TODO.md`](./TODO.md)
@@ -74,6 +74,8 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `portless` | 用稳定 `.localhost` 与 worktree 子域名替代本地端口，方便人和 agents 复用开发入口；本地 CA、sudo 服务与共享模式须审计。 | [GitHub](https://github.com/vercel-labs/portless) |
+| `nodeterm` | 把真实终端、coding-agent sessions、画布、Kanban、Git 与远程监督合并；tmux 不是隔离，当前许可证为 BUSL-1.1。 | [GitHub](https://github.com/eneskirca/nodeterm) |
 | `atlas` | 面向 coding agents 的 source-control 桌面工作台，将共享记忆、会话、工具调用与 Git checkpoint 关联；本地默认和 secret scrub 仍需独立验证。 | [GitHub](https://github.com/pacifio/atlas) |
 | `superset` | 以独立 worktree、终端、diff、自动化和远端 host 编排多路 CLI agents；worktree 不是 OS 隔离，ELv2 权利边界须审查。 | [GitHub](https://github.com/superset-sh/superset) |
 | `openclaude` | 跨云端 API、本地模型和多类工具的 coding-agent CLI；对话 fork 不是文件隔离，派生代码与 MIT 修改部分的许可边界须分别审查。 | [GitHub](https://github.com/Gitlawb/openclaude) |
@@ -140,6 +142,10 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `humanizer` | 用 35 类可审阅写作规则减少 AI 腔的跨宿主 skill；自然度不能替代事实、原创、语义保持和 AI 辅助披露审核。 | [GitHub](https://github.com/blader/humanizer) |
+| `skills-manager` | 以中央库、CLI、Git 备份和多设备同步管理 53 个上游列出的 agent/tool skills；跨宿主写入与后台 push 是高权限边界。 | [GitHub](https://github.com/xingkongliang/skills-manager) |
+| `ui-skills` | 通过 Web、CLI 与 MCP 分发设计工程 skills；规则不能替代品牌、无障碍、视觉回归和用户验证。 | [GitHub](https://github.com/ibelick/ui-skills) |
+| `skills-hub` | 以中央库和 symlink/copy 管理 47 个上游列出的 coding-tool skills；自动更新与批量同步会扩大供应链风险。 | [GitHub](https://github.com/qufei1993/skills-hub) |
 | `agent-browser` | 面向 agents 的 Rust 浏览器自动化 CLI，提供 accessibility refs、CDP、MCP 与 experimental WebMCP；页面工具与后果性动作须独立授权。 | [GitHub](https://github.com/vercel-labs/agent-browser) |
 | `arcbox` | 在 macOS 上以独立内核 Firecracker microVM 运行 agents 与不可信代码；需 M3+/macOS 15+，网络、凭据和控制面仍须对抗验证。 | [GitHub](https://github.com/arcboxlabs/arcbox) |
 | `OpenShell` | NVIDIA 的 agent 隔离运行时，在进程外用 gateway、sandbox、策略与推理路由约束文件、网络和凭据；真实隔离强度须按后端对抗验证。 | [GitHub](https://github.com/NVIDIA/OpenShell) |
@@ -460,6 +466,9 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `magnitude` | 探测本机硬件、推荐 GGUF 并把本地推理接入多种 agent harness；“best”、估计 tok/s 和离线边界须实测。 | [GitHub](https://github.com/magnitudedev/magnitude) |
+| `Personal-AI-Router` | NVIDIA PAIR 在局域网多节点间路由独立 Ollama/LM Studio 请求；不合并 VRAM，PIN、telemetry 与本地 API 仍需治理。 | [GitHub](https://github.com/NVIDIA/Personal-AI-Router) |
+| `deep-swe` | 用 113 个长时程原始工程任务、隔离 verifier 和 trajectory 评测 coding agents；公开榜单仍需污染、版本、成本和人工质量审计。 | [GitHub](https://github.com/datacurve-ai/deep-swe) |
 | `sie` | 为 agents 统一服务 embedding、rerank、抽取与生成等任务模型的自托管推理引擎；模型目录与 MTEB 信息不能替代私有任务验证。 | [GitHub](https://github.com/superlinked/sie) |
 | `ODS` | 将本地推理、Web UI、工作流、RAG、语音和图像服务组织成可安装/运维的私有 AI 栈；安装脚本、端口、网络出口和升级恢复须审计。 | [GitHub](https://github.com/Osmantic/ODS) |
 | `Soup` | 用单份 YAML 组织 LoRA/QLoRA、数据、评测与交付的消费级硬件微调 CLI；低显存演示须以固定模型和硬件独立复现。 | [GitHub](https://github.com/MakazhanAlpamys/Soup) |
@@ -572,6 +581,8 @@
 
 - 全量项目目录：[`projects/`](./projects/)
 - 最近日报：
+  - [`2026-09-04`](./daily/2026-09-04/ai-hotspots.md)
+  - [`2026-09-03`](./daily/2026-09-03/ai-hotspots.md)
   - [`2026-09-02`](./daily/2026-09-02/ai-hotspots.md)
   - [`2026-09-01`](./daily/2026-09-01/ai-hotspots.md)
   - [`2026-08-31`](./daily/2026-08-31/ai-hotspots.md)
@@ -642,9 +653,9 @@
 ## 当前状态
 
 - 状态：持续日更中。
-- 最新更新：`2026-09-03`。
-- 当前项目总数：`593`。
-- 最近新增项目：`atlas`、`arcbox`、`Sequoia-X`、`geo-seo-claude`、`agent-browser`、`sie`、`superset`、`BrowserOS`。
+- 最新更新：`2026-09-04`。
+- 当前项目总数：`602`。
+- 最近新增项目：`humanizer`、`portless`、`nodeterm`、`magnitude`、`skills-manager`、`ui-skills`、`skills-hub`、`deep-swe`、`Personal-AI-Router`。
 - 覆盖平台：GitHub、X、Instagram、YouTube。
 
 ## 维护约定
