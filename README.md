@@ -49,7 +49,7 @@
 
 如果你是第一次进入这个仓库，建议从这几个入口开始：
 
-- 最新日报：[`daily/2026-09-04/ai-hotspots.md`](./daily/2026-09-04/ai-hotspots.md)
+- 最新日报：[`daily/2026-09-05/ai-hotspots.md`](./daily/2026-09-05/ai-hotspots.md)
 - 项目总目录：[`projects/`](./projects/)
 - 自动化约束：[`AGENTS.md`](./AGENTS.md)
 - 开发续接记录：[`TODO.md`](./TODO.md)
@@ -142,6 +142,9 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `agentdesktop` | Solo.io 的桌面 AI 工具治理层，清点并管理 harness、MCP、skills、sandbox 意图、身份和 gateway 凭据；client label 不是进程级证明。 | [GitHub](https://github.com/agentdesktop-dev/agentdesktop) |
+| `loopx` | 跨 Codex、Claude Code 等 harness 保存 goal、gate、evidence、quota 与 handoff 的长时程控制层；不是 OS sandbox 或自主生产控制器。 | [GitHub](https://github.com/huangruiteng/loopx) |
+| `text-to-cad` | CAD、DXF、URDF / SRDF / SDF、DfAM、G-code 与打印交接的 agent skills；生成与 watertight 不能替代工程审核和物理安全。 | [GitHub](https://github.com/earthtojake/text-to-cad) |
 | `humanizer` | 用 35 类可审阅写作规则减少 AI 腔的跨宿主 skill；自然度不能替代事实、原创、语义保持和 AI 辅助披露审核。 | [GitHub](https://github.com/blader/humanizer) |
 | `skills-manager` | 以中央库、CLI、Git 备份和多设备同步管理 53 个上游列出的 agent/tool skills；跨宿主写入与后台 push 是高权限边界。 | [GitHub](https://github.com/xingkongliang/skills-manager) |
 | `ui-skills` | 通过 Web、CLI 与 MCP 分发设计工程 skills；规则不能替代品牌、无障碍、视觉回归和用户验证。 | [GitHub](https://github.com/ibelick/ui-skills) |
@@ -297,6 +300,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `OB1` | 以数据库、向量检索、MCP / gateway、导入 recipe 与治理 schema 让多种 AI 共享个人记忆；当前为 FSL-1.1-MIT，RLS、来源和删除须审计。 | [GitHub](https://github.com/NateBJones-Projects/OB1) |
 | `claude-obsidian` | 将来源、主张、链接笔记与 Obsidian vault 组织成 local-first 知识系统；模型、检索和批量写入仍须审计。 | [GitHub](https://github.com/AgriciDaniel/claude-obsidian) |
 | `Evaan_Personal_Intelligence_Engine` | 用小型本地模型、prompt、规则式语气与 JSON 状态实现陪伴式聊天示例；明文记忆、心理陪伴边界与许可证须先审计。 | [GitHub](https://github.com/Tahirpathan-AiLab/Evaan_Personal_Intelligence_Engine) |
 | `sessiontrove` | 私有归档 Claude Code、Codex 等 agent 的原始会话；其中可能含密钥、路径与第三方材料，训练或同步前必须脱敏治理。 | [GitHub](https://github.com/maedmatt/sessiontrove) |
@@ -466,6 +470,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `miles` | 用 SGLang rollout、Megatron-LM / FSDP2、MoE routing replay 与低精度训练组织大规模 agent / VLM 后训练；性能和稳定性须固定集群复现。 | [GitHub](https://github.com/radixark/miles) |
 | `magnitude` | 探测本机硬件、推荐 GGUF 并把本地推理接入多种 agent harness；“best”、估计 tok/s 和离线边界须实测。 | [GitHub](https://github.com/magnitudedev/magnitude) |
 | `Personal-AI-Router` | NVIDIA PAIR 在局域网多节点间路由独立 Ollama/LM Studio 请求；不合并 VRAM，PIN、telemetry 与本地 API 仍需治理。 | [GitHub](https://github.com/NVIDIA/Personal-AI-Router) |
 | `deep-swe` | 用 113 个长时程原始工程任务、隔离 verifier 和 trajectory 评测 coding agents；公开榜单仍需污染、版本、成本和人工质量审计。 | [GitHub](https://github.com/datacurve-ai/deep-swe) |
@@ -522,6 +527,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `Hands-On-AI-Engineering` | 覆盖 agent、OCR、音频、多模态、RAG 和微调的实践样例库；“production-ready”须逐项目验证，README 的 MIT 声明缺少根目录 LICENSE 支撑。 | [GitHub](https://github.com/Sumanth077/Hands-On-AI-Engineering) |
 | `agent_tutorial` | 中文八章智能体教程，按模型调用、RAG、工具、记忆、harness 与协作递进；生产级安全、评测和依赖仍须逐章补齐。 | [GitHub](https://github.com/gitzyong812/agent_tutorial) |
 | `ai-agent-book` | 覆盖上下文、工具、评估、后训练与协作的开源 AI Agent 书稿，配有 10 章和 103 个实验入口。 | [GitHub](https://github.com/bojieli/ai-agent-book) |
 | `AI-For-Beginners` | Microsoft 的 12 周、24 课 AI 入门课程，覆盖经典 AI、深度学习、视觉、NLP、多智能体与伦理；课程时效与外部依赖须另行复核。 | [GitHub](https://github.com/microsoft/AI-For-Beginners) |
@@ -531,6 +537,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `MathModelAgent` | 数学建模、代码、图表、Typst 与验收的 skills / 桌面工作流；功能表与 TODO 状态不一致，且当前许可限制商业用途。 | [GitHub](https://github.com/jihe520/MathModelAgent) |
 | `Sequoia-X` | 基于 baostock、SQLite 和规则策略的 A 股收盘后筛选系统；形态不是收益证据，README 的 MIT 声明与缺失 LICENSE 文件须复核。 | [GitHub](https://github.com/sngyai/Sequoia-X) |
 | `geo-seo-claude` | 将 GEO / SEO、crawler、schema 与报告封装成 Claude Code skills；复合分数和营销数字不能证明 AI 搜索引用或转化。 | [GitHub](https://github.com/zubair-trabzada/geo-seo-claude) |
 | `openresearch-cli` | 本地优先的科研 agent 工作区，用 worktree、实验树、commit archive 与多类计算后端保存运行谱系；记录完整不等于科学结论成立。 | [GitHub](https://github.com/alphaXiv/openresearch-cli) |
@@ -581,6 +588,7 @@
 
 - 全量项目目录：[`projects/`](./projects/)
 - 最近日报：
+  - [`2026-09-05`](./daily/2026-09-05/ai-hotspots.md)
   - [`2026-09-04`](./daily/2026-09-04/ai-hotspots.md)
   - [`2026-09-03`](./daily/2026-09-03/ai-hotspots.md)
   - [`2026-09-02`](./daily/2026-09-02/ai-hotspots.md)
@@ -653,9 +661,9 @@
 ## 当前状态
 
 - 状态：持续日更中。
-- 最新更新：`2026-09-04`。
-- 当前项目总数：`602`。
-- 最近新增项目：`humanizer`、`portless`、`nodeterm`、`magnitude`、`skills-manager`、`ui-skills`、`skills-hub`、`deep-swe`、`Personal-AI-Router`。
+- 最新更新：`2026-09-05`。
+- 当前项目总数：`609`。
+- 最近新增项目：`miles`、`loopx`、`text-to-cad`、`MathModelAgent`、`OB1`、`Hands-On-AI-Engineering`、`agentdesktop`。
 - 覆盖平台：GitHub、X、Instagram、YouTube。
 
 ## 维护约定

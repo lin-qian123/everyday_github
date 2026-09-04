@@ -9,8 +9,11 @@
 - 增加每周汇总（周趋势、重复热点、降温话题）。
 - 评估是否为首页分类索引增加“自动统计脚本”，减少手工维护成本。
 - 建立 `projects/` 的轻量索引脚本或清单，减少人工判断“是否已建档”。
+- 设计 owner-aware 的项目键（如 `owner--repo` 或元数据映射）并保留旧链接兼容性，解决多个仓库同名为 `skills` 时无法无歧义建档的问题。
 
 ## 阶段性开发记录
+
+- 2026-09-05：新增 `miles`、`loopx`、`text-to-cad`、`MathModelAgent`、`OB1`、`Hands-On-AI-Engineering`、`agentdesktop` 项目说明与当日热点日报。前六个项目在官方 GitHub Trending 抓取时分别约为 +55、+82、+88、+47、+10、+76 当日 stars；REST API 快照分别为 2,545/442/955（Apache-2.0）、5,606/501/60（Apache-2.0）、14,337/1,520/18（MIT）、4,161/360/31（API 无 SPDX，README 限个人非商业使用）、4,557/879/211（API `NOASSERTION`，仓库为 FSL-1.1-MIT）、3,137/814/8（API 无 SPDX，README 声明 MIT 但根目录缺 LICENSE，均为 stars/forks/open issues）。`agentdesktop` 依据 Solo.io 9 月 3 日官方发布和 `v0.1.0` 收录，API 为 78/9/17、Apache-2.0，未写成 Trending 排名。七者归入现有分类，首页项目总数重算为 `609`；`mattpocock/skills` 已有历史日报覆盖，`ponytail`、`ECC`、`anthropics/skills`、`humanizer`、`hermes-agent`、`caveman`、`magnitude`、`VoiceStudio`、`timesfm`、`opencode`、`diagram-design` 等已有页面或记录，本轮去重。多源近一周检索返回 0 条可用项目候选，证据降级到 Trending、API、README、release 与官方发布。X 只采用上游链接账号/搜索入口，YouTube 与 Instagram 仅保留搜索/标签入口；均未声称同日项目级互动量。后续验证 Miles 训练闭环、LoopX 长时程 gate / quota、agentdesktop 身份与配置边界、CAD 物理安全、数学建模证据和 OB1 记忆隐私，并设计 owner-aware slug 解决多个 `skills` 同名仓库冲突。
 
 - 2026-09-04：新增 `humanizer`、`portless`、`nodeterm`、`magnitude`、`skills-manager`、`ui-skills`、`skills-hub`、`deep-swe`、`Personal-AI-Router` 项目说明与当日热点日报。前八个项目在官方 GitHub Trending 抓取时分别约为 +1,214、+498、+246、+130、+69、+46、+43、+21 当日 stars；REST API 快照分别为 41,425/3,546/31（MIT）、12,046/394/125（Apache-2.0）、1,682/173/50（API `NOASSERTION`，README/LICENSE 为 BUSL-1.1）、1,921/142/13（Apache-2.0）、4,399/373/191（MIT）、8,052/363/13（MIT）、1,562/172/5（MIT）、1,592/106/72（Apache-2.0，均为 stars/forks/open issues）。NVIDIA `Personal-AI-Router` 依据 9 月 3 日官方发布说明收录，API 为 66/6/0、`v0.1.1`、Apache-2.0，未写成 Trending 排名。九者归入现有分类，首页项目总数重算为 `602`，并补回“最近日报”中遗漏的 9 月 3 日入口；`ponytail`、`VoiceStudio`、`timesfm`、`hermes-agent`、`skills`、`caveman`、`ECC`、`graphify`、`orca`、`pi`、`gstack`、`agent-browser` 等候选已建档，本轮去重。`search-layer` 近一周多源检索返回 0 条可用项目结果，证据降级到 Trending、API、README、release 和 NVIDIA 官方博客。X 仅使用上游链接账号，YouTube 使用 Skills Manager README 引用视频及搜索入口，Instagram 仅保留标签入口；均未声称同日项目级互动量。后续验证 skills 供应链的版本/回滚、本地推理的真实质量与网络边界、Nodeterm/Portless 的系统权限和远程表面，以及 DeepSWE 的污染、成本与人工补丁质量。
 
