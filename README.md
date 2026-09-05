@@ -49,7 +49,7 @@
 
 如果你是第一次进入这个仓库，建议从这几个入口开始：
 
-- 最新日报：[`daily/2026-09-05/ai-hotspots.md`](./daily/2026-09-05/ai-hotspots.md)
+- 最新日报：[`daily/2026-09-06/ai-hotspots.md`](./daily/2026-09-06/ai-hotspots.md)
 - 项目总目录：[`projects/`](./projects/)
 - 自动化约束：[`AGENTS.md`](./AGENTS.md)
 - 开发续接记录：[`TODO.md`](./TODO.md)
@@ -74,6 +74,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `lazycodex` | 为 Codex 分发 OmO 的项目记忆、规划、验证、skills、hooks 与多模型路由；安装会修改用户级配置，须按第三方供应链审查。 | [GitHub](https://github.com/code-yeongyu/lazycodex) |
 | `portless` | 用稳定 `.localhost` 与 worktree 子域名替代本地端口，方便人和 agents 复用开发入口；本地 CA、sudo 服务与共享模式须审计。 | [GitHub](https://github.com/vercel-labs/portless) |
 | `nodeterm` | 把真实终端、coding-agent sessions、画布、Kanban、Git 与远程监督合并；tmux 不是隔离，当前许可证为 BUSL-1.1。 | [GitHub](https://github.com/eneskirca/nodeterm) |
 | `atlas` | 面向 coding agents 的 source-control 桌面工作台，将共享记忆、会话、工具调用与 Git checkpoint 关联；本地默认和 secret scrub 仍需独立验证。 | [GitHub](https://github.com/pacifio/atlas) |
@@ -142,6 +143,8 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `context-mode` | 用 MCP、hooks、SQLite FTS5/BM25 和代码侧聚合外置大工具输出；“sandbox output”不是 OS sandbox，ELv2 条款须审查。 | [GitHub](https://github.com/mksglu/context-mode) |
+| `agent-teams-ai` | 将多 runtime 团队、Kanban、消息、日志、diff、终端与预算合入 Electron 控制面；worktree 和审批不证明隔离或正确完成。 | [GitHub](https://github.com/777genius/agent-teams-ai) |
 | `agentdesktop` | Solo.io 的桌面 AI 工具治理层，清点并管理 harness、MCP、skills、sandbox 意图、身份和 gateway 凭据；client label 不是进程级证明。 | [GitHub](https://github.com/agentdesktop-dev/agentdesktop) |
 | `loopx` | 跨 Codex、Claude Code 等 harness 保存 goal、gate、evidence、quota 与 handoff 的长时程控制层；不是 OS sandbox 或自主生产控制器。 | [GitHub](https://github.com/huangruiteng/loopx) |
 | `text-to-cad` | CAD、DXF、URDF / SRDF / SDF、DfAM、G-code 与打印交接的 agent skills；生成与 watertight 不能替代工程审核和物理安全。 | [GitHub](https://github.com/earthtojake/text-to-cad) |
@@ -423,6 +426,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `OmniVoice` | 支持 600+ 语言的 zero-shot TTS、voice cloning/design 与批量合成；代码 Apache-2.0、预训练模型 CC-BY-NC，声音授权是前置门。 | [GitHub](https://github.com/k2-fsa/OmniVoice) |
 | `VoiceStudio` | 本地优先的语音克隆、配音、转写、听写与长音频工作台；声音同意、模型许可、可选网络功能和水印效果须独立审查。 | [GitHub](https://github.com/debpalash/VoiceStudio) |
 | `clipfactory` | 自托管短视频流水线，保存脚本、镜头、字幕和渲染中间产物；无认证 API、外部 provider、费用与 Elastic 2.0 条款需审查。 | [GitHub](https://github.com/feyzilim/clipfactory) |
 | `modly` | 本地 GPU 图像/提示词到 3D mesh 桌面工作台，带工作流、扩展与 CLI；扩展供应链、模型许可和输出网格须独立验收。 | [GitHub](https://github.com/lightningpixel/modly) |
@@ -527,6 +531,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `dive-into-llms` | 中文大模型课件、教程与 notebook，覆盖微调、知识编辑、多模态、GUI agent 和安全；依赖时效与缺失根许可证须核验。 | [GitHub](https://github.com/Lordog/dive-into-llms) |
 | `Hands-On-AI-Engineering` | 覆盖 agent、OCR、音频、多模态、RAG 和微调的实践样例库；“production-ready”须逐项目验证，README 的 MIT 声明缺少根目录 LICENSE 支撑。 | [GitHub](https://github.com/Sumanth077/Hands-On-AI-Engineering) |
 | `agent_tutorial` | 中文八章智能体教程，按模型调用、RAG、工具、记忆、harness 与协作递进；生产级安全、评测和依赖仍须逐章补齐。 | [GitHub](https://github.com/gitzyong812/agent_tutorial) |
 | `ai-agent-book` | 覆盖上下文、工具、评估、后训练与协作的开源 AI Agent 书稿，配有 10 章和 103 个实验入口。 | [GitHub](https://github.com/bojieli/ai-agent-book) |
@@ -588,6 +593,7 @@
 
 - 全量项目目录：[`projects/`](./projects/)
 - 最近日报：
+  - [`2026-09-06`](./daily/2026-09-06/ai-hotspots.md)
   - [`2026-09-05`](./daily/2026-09-05/ai-hotspots.md)
   - [`2026-09-04`](./daily/2026-09-04/ai-hotspots.md)
   - [`2026-09-03`](./daily/2026-09-03/ai-hotspots.md)
@@ -661,9 +667,9 @@
 ## 当前状态
 
 - 状态：持续日更中。
-- 最新更新：`2026-09-05`。
-- 当前项目总数：`609`。
-- 最近新增项目：`miles`、`loopx`、`text-to-cad`、`MathModelAgent`、`OB1`、`Hands-On-AI-Engineering`、`agentdesktop`。
+- 最新更新：`2026-09-06`。
+- 当前项目总数：`614`。
+- 最近新增项目：`OmniVoice`、`context-mode`、`agent-teams-ai`、`lazycodex`、`dive-into-llms`。
 - 覆盖平台：GitHub、X、Instagram、YouTube。
 
 ## 维护约定
