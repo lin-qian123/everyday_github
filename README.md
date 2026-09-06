@@ -49,7 +49,7 @@
 
 如果你是第一次进入这个仓库，建议从这几个入口开始：
 
-- 最新日报：[`daily/2026-09-06/ai-hotspots.md`](./daily/2026-09-06/ai-hotspots.md)
+- 最新日报：[`daily/2026-09-07/ai-hotspots.md`](./daily/2026-09-07/ai-hotspots.md)
 - 项目总目录：[`projects/`](./projects/)
 - 自动化约束：[`AGENTS.md`](./AGENTS.md)
 - 开发续接记录：[`TODO.md`](./TODO.md)
@@ -143,6 +143,8 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `marketingskills` | 用共享产品定位连接 CRO、文案、SEO/AEO、广告、分析与 RevOps 的 agent skills；不能替代市场事实、真实实验或发布审批。 | [GitHub](https://github.com/coreyhaines31/marketingskills) |
+| `METATRON` | 本地编排 nmap/nikto 等侦察并由 Ollama 分析的渗透测试 CLI；仅限书面授权靶场，模型与免责声明不能防止越界。 | [GitHub](https://github.com/sooryathejas/METATRON) |
 | `context-mode` | 用 MCP、hooks、SQLite FTS5/BM25 和代码侧聚合外置大工具输出；“sandbox output”不是 OS sandbox，ELv2 条款须审查。 | [GitHub](https://github.com/mksglu/context-mode) |
 | `agent-teams-ai` | 将多 runtime 团队、Kanban、消息、日志、diff、终端与预算合入 Electron 控制面；worktree 和审批不证明隔离或正确完成。 | [GitHub](https://github.com/777genius/agent-teams-ai) |
 | `agentdesktop` | Solo.io 的桌面 AI 工具治理层，清点并管理 harness、MCP、skills、sandbox 意图、身份和 gateway 凭据；client label 不是进程级证明。 | [GitHub](https://github.com/agentdesktop-dev/agentdesktop) |
@@ -349,6 +351,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `wigolo` | 为 agents 本地组合 search、fetch、crawl、cache 与证据定位；公共 Web、prompt injection、缓存和 AGPL 服务边界须审查。 | [GitHub](https://github.com/KnockOutEZ/wigolo) |
 | `pdf-inspector` | Rust PDF 分类、位置感知抽取和选择性 OCR 路由层，覆盖 CLI、Python、Node 与 Wasm；关键数字、表格和阅读顺序仍须版面对照。 | [GitHub](https://github.com/firecrawl/pdf-inspector) |
 | `datahub` | 面向数据发现、治理、血缘和可观测性的 AI data catalog，以 metadata graph 为 agent/RAG 提供上下文；连接器、权限、数据新鲜度和生产部署须独立核验。 | [GitHub](https://github.com/datahub-project/datahub) |
 | `research-radar` | workspace-first 的自托管研究订阅、去重、透明排序与本地检索工具；当前为 v0.1 alpha，真实订阅/反馈数据须独立保护。 | [GitHub](https://github.com/researchradar/research-radar) |
@@ -426,6 +429,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `openwhispr` | 跨平台听写、会议、笔记和语音 agent，支持本地/云端模型；麦克风、声纹、日历、截图、分享与自动粘贴须逐项治理。 | [GitHub](https://github.com/OpenWhispr/openwhispr) |
 | `OmniVoice` | 支持 600+ 语言的 zero-shot TTS、voice cloning/design 与批量合成；代码 Apache-2.0、预训练模型 CC-BY-NC，声音授权是前置门。 | [GitHub](https://github.com/k2-fsa/OmniVoice) |
 | `VoiceStudio` | 本地优先的语音克隆、配音、转写、听写与长音频工作台；声音同意、模型许可、可选网络功能和水印效果须独立审查。 | [GitHub](https://github.com/debpalash/VoiceStudio) |
 | `clipfactory` | 自托管短视频流水线，保存脚本、镜头、字幕和渲染中间产物；无认证 API、外部 provider、费用与 Elastic 2.0 条款需审查。 | [GitHub](https://github.com/feyzilim/clipfactory) |
@@ -474,6 +478,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `experiential` | 统一 hosted/BYOK/local 模型、身份、预算与 trace-driven router 的开源网关；集中 keys/traces/费用和默认 telemetry 须审计。 | [GitHub](https://github.com/experientiallabs/experiential) |
 | `miles` | 用 SGLang rollout、Megatron-LM / FSDP2、MoE routing replay 与低精度训练组织大规模 agent / VLM 后训练；性能和稳定性须固定集群复现。 | [GitHub](https://github.com/radixark/miles) |
 | `magnitude` | 探测本机硬件、推荐 GGUF 并把本地推理接入多种 agent harness；“best”、估计 tok/s 和离线边界须实测。 | [GitHub](https://github.com/magnitudedev/magnitude) |
 | `Personal-AI-Router` | NVIDIA PAIR 在局域网多节点间路由独立 Ollama/LM Studio 请求；不合并 VRAM，PIN、telemetry 与本地 API 仍需治理。 | [GitHub](https://github.com/NVIDIA/Personal-AI-Router) |
@@ -542,6 +547,8 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `AutoHedge` | 将交易研究、量化、风险与执行拆成多 agent 流水线；真实钱包、收益、维护时效和监管边界须独立验证。 | [GitHub](https://github.com/The-Swarm-Corporation/AutoHedge) |
+| `Konnect` | 通过 KiCAD 10 IPC、原子原理图写入、ERC/DRC 与制造导出辅助 PCB；beta 与检查通过不等于电气安全或可制造。 | [GitHub](https://github.com/mixelpixx/Konnect) |
 | `MathModelAgent` | 数学建模、代码、图表、Typst 与验收的 skills / 桌面工作流；功能表与 TODO 状态不一致，且当前许可限制商业用途。 | [GitHub](https://github.com/jihe520/MathModelAgent) |
 | `Sequoia-X` | 基于 baostock、SQLite 和规则策略的 A 股收盘后筛选系统；形态不是收益证据，README 的 MIT 声明与缺失 LICENSE 文件须复核。 | [GitHub](https://github.com/sngyai/Sequoia-X) |
 | `geo-seo-claude` | 将 GEO / SEO、crawler、schema 与报告封装成 Claude Code skills；复合分数和营销数字不能证明 AI 搜索引用或转化。 | [GitHub](https://github.com/zubair-trabzada/geo-seo-claude) |
@@ -593,6 +600,7 @@
 
 - 全量项目目录：[`projects/`](./projects/)
 - 最近日报：
+  - [`2026-09-07`](./daily/2026-09-07/ai-hotspots.md)
   - [`2026-09-06`](./daily/2026-09-06/ai-hotspots.md)
   - [`2026-09-05`](./daily/2026-09-05/ai-hotspots.md)
   - [`2026-09-04`](./daily/2026-09-04/ai-hotspots.md)
@@ -667,9 +675,9 @@
 ## 当前状态
 
 - 状态：持续日更中。
-- 最新更新：`2026-09-06`。
-- 当前项目总数：`614`。
-- 最近新增项目：`OmniVoice`、`context-mode`、`agent-teams-ai`、`lazycodex`、`dive-into-llms`。
+- 最新更新：`2026-09-07`。
+- 当前项目总数：`621`。
+- 最近新增项目：`marketingskills`、`openwhispr`、`AutoHedge`、`METATRON`、`experiential`、`wigolo`、`Konnect`。
 - 覆盖平台：GitHub、X、Instagram、YouTube。
 
 ## 维护约定
