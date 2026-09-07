@@ -49,7 +49,7 @@
 
 如果你是第一次进入这个仓库，建议从这几个入口开始：
 
-- 最新日报：[`daily/2026-09-07/ai-hotspots.md`](./daily/2026-09-07/ai-hotspots.md)
+- 最新日报：[`daily/2026-09-08/ai-hotspots.md`](./daily/2026-09-08/ai-hotspots.md)
 - 项目总目录：[`projects/`](./projects/)
 - 自动化约束：[`AGENTS.md`](./AGENTS.md)
 - 开发续接记录：[`TODO.md`](./TODO.md)
@@ -143,6 +143,9 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `camofox-browser` | 面向 agents 的 Camoufox / REST 浏览器服务，支持 accessibility refs、持久会话和反检测能力；绕过宣传、登录态、默认网络绑定与 telemetry 须严格审计。 | [GitHub](https://github.com/jo-inc/camofox-browser) |
+| `cve-mcp-server` | 聚合 CVE、EPSS、CISA KEV、PoC 和威胁情报的 MCP server；风险公式、缓存、资产映射与 README / LICENSE 许可冲突须复核。 | [GitHub](https://github.com/mukul975/cve-mcp-server) |
+| `openai-plugins` | OpenAI 的 Codex plugin 示例和 64-entry marketplace 清单；官方 / curated 不等于逐项安全、兼容或已有统一许可。 | [GitHub](https://github.com/openai/plugins) |
 | `marketingskills` | 用共享产品定位连接 CRO、文案、SEO/AEO、广告、分析与 RevOps 的 agent skills；不能替代市场事实、真实实验或发布审批。 | [GitHub](https://github.com/coreyhaines31/marketingskills) |
 | `METATRON` | 本地编排 nmap/nikto 等侦察并由 Ollama 分析的渗透测试 CLI；仅限书面授权靶场，模型与免责声明不能防止越界。 | [GitHub](https://github.com/sooryathejas/METATRON) |
 | `context-mode` | 用 MCP、hooks、SQLite FTS5/BM25 和代码侧聚合外置大工具输出；“sandbox output”不是 OS sandbox，ELv2 条款须审查。 | [GitHub](https://github.com/mksglu/context-mode) |
@@ -305,6 +308,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `funes` | 跨 Claude Code、Codex、pi、Hermes 索引会话并可发布为 Hugging Face dataset 的记忆层；hook、原始 transcript、secret gate 与 Hub 可见性须审计。 | [GitHub](https://github.com/huggingface/funes) |
 | `OB1` | 以数据库、向量检索、MCP / gateway、导入 recipe 与治理 schema 让多种 AI 共享个人记忆；当前为 FSL-1.1-MIT，RLS、来源和删除须审计。 | [GitHub](https://github.com/NateBJones-Projects/OB1) |
 | `claude-obsidian` | 将来源、主张、链接笔记与 Obsidian vault 组织成 local-first 知识系统；模型、检索和批量写入仍须审计。 | [GitHub](https://github.com/AgriciDaniel/claude-obsidian) |
 | `Evaan_Personal_Intelligence_Engine` | 用小型本地模型、prompt、规则式语气与 JSON 状态实现陪伴式聊天示例；明文记忆、心理陪伴边界与许可证须先审计。 | [GitHub](https://github.com/Tahirpathan-AiLab/Evaan_Personal_Intelligence_Engine) |
@@ -351,6 +355,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `WeKnora` | 腾讯的 RAG、Agent、Wiki、长期记忆、skill sandbox 与多租户知识平台；connector、RBAC、数据出口和复合许可证清单须逐层核验。 | [GitHub](https://github.com/Tencent/WeKnora) |
 | `wigolo` | 为 agents 本地组合 search、fetch、crawl、cache 与证据定位；公共 Web、prompt injection、缓存和 AGPL 服务边界须审查。 | [GitHub](https://github.com/KnockOutEZ/wigolo) |
 | `pdf-inspector` | Rust PDF 分类、位置感知抽取和选择性 OCR 路由层，覆盖 CLI、Python、Node 与 Wasm；关键数字、表格和阅读顺序仍须版面对照。 | [GitHub](https://github.com/firecrawl/pdf-inspector) |
 | `datahub` | 面向数据发现、治理、血缘和可观测性的 AI data catalog，以 metadata graph 为 agent/RAG 提供上下文；连接器、权限、数据新鲜度和生产部署须独立核验。 | [GitHub](https://github.com/datahub-project/datahub) |
@@ -547,6 +552,8 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `claude-ads` | 覆盖 12 个广告平台的只读优先运营 skill，以证据覆盖、partial run 和 capability gate 约束账户变更；真实预算写入须沙箱复现和外部审批。 | [GitHub](https://github.com/AgriciDaniel/claude-ads) |
+| `OpenBidKit_Yibiao` | Electron AI 标书工作台，覆盖解析、知识库、生成、查重和废标项检查；关键承诺、报价、签章、保密和 AGPL 义务须人工闭环。 | [GitHub](https://github.com/FB208/OpenBidKit_Yibiao) |
 | `AutoHedge` | 将交易研究、量化、风险与执行拆成多 agent 流水线；真实钱包、收益、维护时效和监管边界须独立验证。 | [GitHub](https://github.com/The-Swarm-Corporation/AutoHedge) |
 | `Konnect` | 通过 KiCAD 10 IPC、原子原理图写入、ERC/DRC 与制造导出辅助 PCB；beta 与检查通过不等于电气安全或可制造。 | [GitHub](https://github.com/mixelpixx/Konnect) |
 | `MathModelAgent` | 数学建模、代码、图表、Typst 与验收的 skills / 桌面工作流；功能表与 TODO 状态不一致，且当前许可限制商业用途。 | [GitHub](https://github.com/jihe520/MathModelAgent) |
@@ -600,6 +607,7 @@
 
 - 全量项目目录：[`projects/`](./projects/)
 - 最近日报：
+  - [`2026-09-08`](./daily/2026-09-08/ai-hotspots.md)
   - [`2026-09-07`](./daily/2026-09-07/ai-hotspots.md)
   - [`2026-09-06`](./daily/2026-09-06/ai-hotspots.md)
   - [`2026-09-05`](./daily/2026-09-05/ai-hotspots.md)
@@ -675,9 +683,9 @@
 ## 当前状态
 
 - 状态：持续日更中。
-- 最新更新：`2026-09-07`。
-- 当前项目总数：`621`。
-- 最近新增项目：`marketingskills`、`openwhispr`、`AutoHedge`、`METATRON`、`experiential`、`wigolo`、`Konnect`。
+- 最新更新：`2026-09-08`。
+- 当前项目总数：`628`。
+- 最近新增项目：`camofox-browser`、`cve-mcp-server`、`claude-ads`、`funes`、`WeKnora`、`OpenBidKit_Yibiao`、`openai-plugins`。
 - 覆盖平台：GitHub、X、Instagram、YouTube。
 
 ## 维护约定
