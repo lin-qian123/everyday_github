@@ -49,7 +49,7 @@
 
 如果你是第一次进入这个仓库，建议从这几个入口开始：
 
-- 最新日报：[`daily/2026-09-08/ai-hotspots.md`](./daily/2026-09-08/ai-hotspots.md)
+- 最新日报：[`daily/2026-09-09/ai-hotspots.md`](./daily/2026-09-09/ai-hotspots.md)
 - 项目总目录：[`projects/`](./projects/)
 - 自动化约束：[`AGENTS.md`](./AGENTS.md)
 - 开发续接记录：[`TODO.md`](./TODO.md)
@@ -143,6 +143,9 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `i-have-adhd` | 用十条行动优先规则压缩 coding-agent 输出并重述状态；它是沟通 policy，不是 ADHD 医疗工具，且不能删掉关键 caveat。 | [GitHub](https://github.com/ayghri/i-have-adhd) |
+| `teamai-cli` | 用 Git/MR 在多种 agent 宿主间同步 skills、rules、hooks、MCP 与团队知识；自动 pull 和用户级注入须按高信任供应链治理。 | [GitHub](https://github.com/Tencent/teamai-cli) |
+| `superplane` | 以 factory、work order、automation line 与 run 把高置信 backlog 转成可审阅 PR；beta、connector 权限、幂等和官网比例须复核。 | [GitHub](https://github.com/superplanehq/superplane) |
 | `camofox-browser` | 面向 agents 的 Camoufox / REST 浏览器服务，支持 accessibility refs、持久会话和反检测能力；绕过宣传、登录态、默认网络绑定与 telemetry 须严格审计。 | [GitHub](https://github.com/jo-inc/camofox-browser) |
 | `cve-mcp-server` | 聚合 CVE、EPSS、CISA KEV、PoC 和威胁情报的 MCP server；风险公式、缓存、资产映射与 README / LICENSE 许可冲突须复核。 | [GitHub](https://github.com/mukul975/cve-mcp-server) |
 | `openai-plugins` | OpenAI 的 Codex plugin 示例和 64-entry marketplace 清单；官方 / curated 不等于逐项安全、兼容或已有统一许可。 | [GitHub](https://github.com/openai/plugins) |
@@ -355,6 +358,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `feynman` | 将 paper access、文献综述、citation graph、代码审计与复现计划合入本地 research agent；source-grounded、下载或运行不等于科学结论已复现。 | [GitHub](https://github.com/advaitpaliwal/feynman) |
 | `WeKnora` | 腾讯的 RAG、Agent、Wiki、长期记忆、skill sandbox 与多租户知识平台；connector、RBAC、数据出口和复合许可证清单须逐层核验。 | [GitHub](https://github.com/Tencent/WeKnora) |
 | `wigolo` | 为 agents 本地组合 search、fetch、crawl、cache 与证据定位；公共 Web、prompt injection、缓存和 AGPL 服务边界须审查。 | [GitHub](https://github.com/KnockOutEZ/wigolo) |
 | `pdf-inspector` | Rust PDF 分类、位置感知抽取和选择性 OCR 路由层，覆盖 CLI、Python、Node 与 Wasm；关键数字、表格和阅读顺序仍须版面对照。 | [GitHub](https://github.com/firecrawl/pdf-inspector) |
@@ -483,6 +487,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `agentic-api` | vLLM 前方的 Rust stateful Responses/tool gateway；production storage / observability 尚在 roadmap，协议兼容不代表模型语义等价。 | [GitHub](https://github.com/vllm-project/agentic-api) |
 | `experiential` | 统一 hosted/BYOK/local 模型、身份、预算与 trace-driven router 的开源网关；集中 keys/traces/费用和默认 telemetry 须审计。 | [GitHub](https://github.com/experientiallabs/experiential) |
 | `miles` | 用 SGLang rollout、Megatron-LM / FSDP2、MoE routing replay 与低精度训练组织大规模 agent / VLM 后训练；性能和稳定性须固定集群复现。 | [GitHub](https://github.com/radixark/miles) |
 | `magnitude` | 探测本机硬件、推荐 GGUF 并把本地推理接入多种 agent harness；“best”、估计 tok/s 和离线边界须实测。 | [GitHub](https://github.com/magnitudedev/magnitude) |
@@ -552,6 +557,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `notfair-plugin` | 45 个 SEO/GEO/广告/分析 skills 加 hosted OAuth MCP；行为 guardrail 不能替代账户 scope、预算限制、回读与人工审批。 | [GitHub](https://github.com/nowork-studio/notfair-plugin) |
 | `claude-ads` | 覆盖 12 个广告平台的只读优先运营 skill，以证据覆盖、partial run 和 capability gate 约束账户变更；真实预算写入须沙箱复现和外部审批。 | [GitHub](https://github.com/AgriciDaniel/claude-ads) |
 | `OpenBidKit_Yibiao` | Electron AI 标书工作台，覆盖解析、知识库、生成、查重和废标项检查；关键承诺、报价、签章、保密和 AGPL 义务须人工闭环。 | [GitHub](https://github.com/FB208/OpenBidKit_Yibiao) |
 | `AutoHedge` | 将交易研究、量化、风险与执行拆成多 agent 流水线；真实钱包、收益、维护时效和监管边界须独立验证。 | [GitHub](https://github.com/The-Swarm-Corporation/AutoHedge) |
@@ -607,6 +613,7 @@
 
 - 全量项目目录：[`projects/`](./projects/)
 - 最近日报：
+  - [`2026-09-09`](./daily/2026-09-09/ai-hotspots.md)
   - [`2026-09-08`](./daily/2026-09-08/ai-hotspots.md)
   - [`2026-09-07`](./daily/2026-09-07/ai-hotspots.md)
   - [`2026-09-06`](./daily/2026-09-06/ai-hotspots.md)
@@ -683,9 +690,9 @@
 ## 当前状态
 
 - 状态：持续日更中。
-- 最新更新：`2026-09-08`。
-- 当前项目总数：`628`。
-- 最近新增项目：`camofox-browser`、`cve-mcp-server`、`claude-ads`、`funes`、`WeKnora`、`OpenBidKit_Yibiao`、`openai-plugins`。
+- 最新更新：`2026-09-09`。
+- 当前项目总数：`634`。
+- 最近新增项目：`i-have-adhd`、`teamai-cli`、`notfair-plugin`、`agentic-api`、`superplane`、`feynman`。
 - 覆盖平台：GitHub、X、Instagram、YouTube。
 
 ## 维护约定
