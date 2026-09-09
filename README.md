@@ -49,7 +49,7 @@
 
 如果你是第一次进入这个仓库，建议从这几个入口开始：
 
-- 最新日报：[`daily/2026-09-09/ai-hotspots.md`](./daily/2026-09-09/ai-hotspots.md)
+- 最新日报：[`daily/2026-09-10/ai-hotspots.md`](./daily/2026-09-10/ai-hotspots.md)
 - 项目总目录：[`projects/`](./projects/)
 - 自动化约束：[`AGENTS.md`](./AGENTS.md)
 - 开发续接记录：[`TODO.md`](./TODO.md)
@@ -74,6 +74,9 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `PI-Desktop` | Electron + Rust host core + pi sidecar 的 local-first coding-agent 桌面工作区；Early Preview、插件信任和云端 provider 数据流须独立治理。 | [GitHub](https://github.com/vastsa/PI-Desktop) |
+| `prime-agent` | 以 RLM、持久 Python REPL、subagents 与 continual harness 支撑长时程任务；生成代码以用户权限运行，生命周期隔离不是 sandbox。 | [GitHub](https://github.com/PrimeIntellect-ai/prime-agent) |
+| `open-code-review` | 阿里开源的混合式 code-review CLI，将确定性文件覆盖 / 定位与 LLM agent 结合；低 recall 取舍和代码外发须复核。 | [GitHub](https://github.com/alibaba/open-code-review) |
 | `lazycodex` | 为 Codex 分发 OmO 的项目记忆、规划、验证、skills、hooks 与多模型路由；安装会修改用户级配置，须按第三方供应链审查。 | [GitHub](https://github.com/code-yeongyu/lazycodex) |
 | `portless` | 用稳定 `.localhost` 与 worktree 子域名替代本地端口，方便人和 agents 复用开发入口；本地 CA、sudo 服务与共享模式须审计。 | [GitHub](https://github.com/vercel-labs/portless) |
 | `nodeterm` | 把真实终端、coding-agent sessions、画布、Kanban、Git 与远程监督合并；tmux 不是隔离，当前许可证为 BUSL-1.1。 | [GitHub](https://github.com/eneskirca/nodeterm) |
@@ -358,6 +361,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `fff` | 以 Rust 常驻文件树、内容索引、frecency 和 Git 状态优化 agent 的重复检索；速度收益依赖 warm workload，并以额外内存换取。 | [GitHub](https://github.com/dmtrKovalenko/fff) |
 | `feynman` | 将 paper access、文献综述、citation graph、代码审计与复现计划合入本地 research agent；source-grounded、下载或运行不等于科学结论已复现。 | [GitHub](https://github.com/advaitpaliwal/feynman) |
 | `WeKnora` | 腾讯的 RAG、Agent、Wiki、长期记忆、skill sandbox 与多租户知识平台；connector、RBAC、数据出口和复合许可证清单须逐层核验。 | [GitHub](https://github.com/Tencent/WeKnora) |
 | `wigolo` | 为 agents 本地组合 search、fetch、crawl、cache 与证据定位；公共 Web、prompt injection、缓存和 AGPL 服务边界须审查。 | [GitHub](https://github.com/KnockOutEZ/wigolo) |
@@ -395,6 +399,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `editor` | Pascal 的 local-first 3D 建筑编辑器，以 CLI、MCP 与 skills 让人和 agent 操作场景；版本面、并发状态和专业工程审核须分开验证。 | [GitHub](https://github.com/pascalorg/editor) |
 | `BrowserOS` | 同仓库提供 agent 专用第二浏览器与内置 agent 的 Chromium fork，可复用真实登录态并本地回放；真实账号副作用与日志隐私须严格治理。 | [GitHub](https://github.com/browseros-ai/BrowserOS) |
 | `scroll-craft` | Claude Code 的滚动网页设计与验证 skill，使用浏览器截图检查交互和显示问题；不替代无障碍与人工设计验收。 | [GitHub](https://github.com/nateherkai/scroll-craft) |
 | `chatbot-template` | shadcn-ui 的 Next.js/AI SDK 聊天模板，含流式消息、工具状态与人机问卷；公开部署前须补认证、限流和预算保护。 | [GitHub](https://github.com/shadcn-ui/chatbot-template) |
@@ -546,6 +551,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `all-agentic-architectures` | 用统一 Python contract 与 notebooks 实现 35 种 agent pattern；17-task 自报 benchmark 适合作为 A/B 起点，不是生产可靠性证明。 | [GitHub](https://github.com/FareedKhan-dev/all-agentic-architectures) |
 | `dive-into-llms` | 中文大模型课件、教程与 notebook，覆盖微调、知识编辑、多模态、GUI agent 和安全；依赖时效与缺失根许可证须核验。 | [GitHub](https://github.com/Lordog/dive-into-llms) |
 | `Hands-On-AI-Engineering` | 覆盖 agent、OCR、音频、多模态、RAG 和微调的实践样例库；“production-ready”须逐项目验证，README 的 MIT 声明缺少根目录 LICENSE 支撑。 | [GitHub](https://github.com/Sumanth077/Hands-On-AI-Engineering) |
 | `agent_tutorial` | 中文八章智能体教程，按模型调用、RAG、工具、记忆、harness 与协作递进；生产级安全、评测和依赖仍须逐章补齐。 | [GitHub](https://github.com/gitzyong812/agent_tutorial) |
@@ -557,6 +563,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `lark-cli` | larksuite 官方 Lark / 飞书 CLI，以 200+ commands 和 26 skills 连接消息、文档、表格、日历与审批；OAuth scope 和 actor identity 必须最小化。 | [GitHub](https://github.com/larksuite/cli) |
 | `notfair-plugin` | 45 个 SEO/GEO/广告/分析 skills 加 hosted OAuth MCP；行为 guardrail 不能替代账户 scope、预算限制、回读与人工审批。 | [GitHub](https://github.com/nowork-studio/notfair-plugin) |
 | `claude-ads` | 覆盖 12 个广告平台的只读优先运营 skill，以证据覆盖、partial run 和 capability gate 约束账户变更；真实预算写入须沙箱复现和外部审批。 | [GitHub](https://github.com/AgriciDaniel/claude-ads) |
 | `OpenBidKit_Yibiao` | Electron AI 标书工作台，覆盖解析、知识库、生成、查重和废标项检查；关键承诺、报价、签章、保密和 AGPL 义务须人工闭环。 | [GitHub](https://github.com/FB208/OpenBidKit_Yibiao) |
@@ -613,6 +620,7 @@
 
 - 全量项目目录：[`projects/`](./projects/)
 - 最近日报：
+  - [`2026-09-10`](./daily/2026-09-10/ai-hotspots.md)
   - [`2026-09-09`](./daily/2026-09-09/ai-hotspots.md)
   - [`2026-09-08`](./daily/2026-09-08/ai-hotspots.md)
   - [`2026-09-07`](./daily/2026-09-07/ai-hotspots.md)
@@ -690,9 +698,9 @@
 ## 当前状态
 
 - 状态：持续日更中。
-- 最新更新：`2026-09-09`。
-- 当前项目总数：`634`。
-- 最近新增项目：`i-have-adhd`、`teamai-cli`、`notfair-plugin`、`agentic-api`、`superplane`、`feynman`。
+- 最新更新：`2026-09-10`。
+- 当前项目总数：`641`。
+- 最近新增项目：`editor`、`PI-Desktop`、`prime-agent`、`fff`、`open-code-review`、`lark-cli`、`all-agentic-architectures`。
 - 覆盖平台：GitHub、X、Instagram、YouTube。
 
 ## 维护约定
