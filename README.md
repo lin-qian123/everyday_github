@@ -49,7 +49,7 @@
 
 如果你是第一次进入这个仓库，建议从这几个入口开始：
 
-- 最新日报：[`daily/2026-09-10/ai-hotspots.md`](./daily/2026-09-10/ai-hotspots.md)
+- 最新日报：[`daily/2026-09-11/ai-hotspots.md`](./daily/2026-09-11/ai-hotspots.md)
 - 项目总目录：[`projects/`](./projects/)
 - 自动化约束：[`AGENTS.md`](./AGENTS.md)
 - 开发续接记录：[`TODO.md`](./TODO.md)
@@ -74,6 +74,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `webcodex` | 通过 MCP/HTTPS Server 与本地 Runner，让 cloud agent 使用真实 checkout、Git 和 toolchain；代码在本机不等于内容不外发，tunnel 也不收窄执行权限。 | [GitHub](https://github.com/yyjeqhc/webcodex) |
 | `PI-Desktop` | Electron + Rust host core + pi sidecar 的 local-first coding-agent 桌面工作区；Early Preview、插件信任和云端 provider 数据流须独立治理。 | [GitHub](https://github.com/vastsa/PI-Desktop) |
 | `prime-agent` | 以 RLM、持久 Python REPL、subagents 与 continual harness 支撑长时程任务；生成代码以用户权限运行，生命周期隔离不是 sandbox。 | [GitHub](https://github.com/PrimeIntellect-ai/prime-agent) |
 | `open-code-review` | 阿里开源的混合式 code-review CLI，将确定性文件覆盖 / 定位与 LLM agent 结合；低 recall 取舍和代码外发须复核。 | [GitHub](https://github.com/alibaba/open-code-review) |
@@ -361,6 +362,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `llm_wiki` | 把 raw sources 增量编译为带链接和来源字段的持久 Markdown wiki；生成错误、cloud 数据流与 GPL-3.0 义务须独立治理。 | [GitHub](https://github.com/nashsu/llm_wiki) |
 | `fff` | 以 Rust 常驻文件树、内容索引、frecency 和 Git 状态优化 agent 的重复检索；速度收益依赖 warm workload，并以额外内存换取。 | [GitHub](https://github.com/dmtrKovalenko/fff) |
 | `feynman` | 将 paper access、文献综述、citation graph、代码审计与复现计划合入本地 research agent；source-grounded、下载或运行不等于科学结论已复现。 | [GitHub](https://github.com/advaitpaliwal/feynman) |
 | `WeKnora` | 腾讯的 RAG、Agent、Wiki、长期记忆、skill sandbox 与多租户知识平台；connector、RBAC、数据出口和复合许可证清单须逐层核验。 | [GitHub](https://github.com/Tencent/WeKnora) |
@@ -492,6 +494,8 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `OmniRoute` | 统一多 provider、quota、自动回退、compression 与 MCP/A2A 的本地 AI gateway；免费额度、模型语义、数据去向和高权限扩展须独立验证。 | [GitHub](https://github.com/diegosouzapw/OmniRoute) |
+| `colibri` | 用纯 C runtime 在 VRAM/RAM/NVMe 间按需流式加载 MoE experts；超大模型“能加载”不能写成消费级实时 serving，benchmark 依赖硬件和缓存。 | [GitHub](https://github.com/JustVugg/colibri) |
 | `agentic-api` | vLLM 前方的 Rust stateful Responses/tool gateway；production storage / observability 尚在 roadmap，协议兼容不代表模型语义等价。 | [GitHub](https://github.com/vllm-project/agentic-api) |
 | `experiential` | 统一 hosted/BYOK/local 模型、身份、预算与 trace-driven router 的开源网关；集中 keys/traces/费用和默认 telemetry 须审计。 | [GitHub](https://github.com/experientiallabs/experiential) |
 | `miles` | 用 SGLang rollout、Megatron-LM / FSDP2、MoE routing replay 与低精度训练组织大规模 agent / VLM 后训练；性能和稳定性须固定集群复现。 | [GitHub](https://github.com/radixark/miles) |
@@ -563,6 +567,8 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `gods-eye-view` | 将航班、卫星、船舶、火点、摄像头等公开信号融合到 3D globe，并由 voice agent 操作；simulated/estimated 数据、聚合风险与第三方许可须核验。 | [GitHub](https://github.com/bilawalsidhu/gods-eye-view) |
+| `CloddsBot` | 将 LLM 接到预测市场、交易所、DEX、钱包、杠杆和 token launch 的 AI 交易终端；真实资产操作必须默认关闭并外部审批。 | [GitHub](https://github.com/alsk1992/CloddsBot) |
 | `lark-cli` | larksuite 官方 Lark / 飞书 CLI，以 200+ commands 和 26 skills 连接消息、文档、表格、日历与审批；OAuth scope 和 actor identity 必须最小化。 | [GitHub](https://github.com/larksuite/cli) |
 | `notfair-plugin` | 45 个 SEO/GEO/广告/分析 skills 加 hosted OAuth MCP；行为 guardrail 不能替代账户 scope、预算限制、回读与人工审批。 | [GitHub](https://github.com/nowork-studio/notfair-plugin) |
 | `claude-ads` | 覆盖 12 个广告平台的只读优先运营 skill，以证据覆盖、partial run 和 capability gate 约束账户变更；真实预算写入须沙箱复现和外部审批。 | [GitHub](https://github.com/AgriciDaniel/claude-ads) |
@@ -572,7 +578,7 @@
 | `MathModelAgent` | 数学建模、代码、图表、Typst 与验收的 skills / 桌面工作流；功能表与 TODO 状态不一致，且当前许可限制商业用途。 | [GitHub](https://github.com/jihe520/MathModelAgent) |
 | `Sequoia-X` | 基于 baostock、SQLite 和规则策略的 A 股收盘后筛选系统；形态不是收益证据，README 的 MIT 声明与缺失 LICENSE 文件须复核。 | [GitHub](https://github.com/sngyai/Sequoia-X) |
 | `geo-seo-claude` | 将 GEO / SEO、crawler、schema 与报告封装成 Claude Code skills；复合分数和营销数字不能证明 AI 搜索引用或转化。 | [GitHub](https://github.com/zubair-trabzada/geo-seo-claude) |
-| `openresearch-cli` | 本地优先的科研 agent 工作区，用 worktree、实验树、commit archive 与多类计算后端保存运行谱系；记录完整不等于科学结论成立。 | [GitHub](https://github.com/alphaXiv/openresearch-cli) |
+| `openresearch-cli` | 本地优先的科研 agent 工作区，用 worktree、实验树、commit archive 与多类计算后端保存运行谱系；上游已改名 OpenResearch，记录完整不等于科学结论成立。 | [GitHub](https://github.com/alphaXiv/OpenResearch) |
 | `open-seo` | 将关键词、排名、链接、站点审计和 AI visibility 数据通过 Web、MCP 与 skills 提供给人和 agent；自托管仍依赖付费数据 API。 | [GitHub](https://github.com/every-app/open-seo) |
 | `robin` | 通过 Tor、搜索/抓取模块和 LLM 组织暗网 OSINT 调查；仅限书面授权与合法范围，摘要不能替代证据复核。 | [GitHub](https://github.com/apurvsinghgautam/robin) |
 | `OpenBB` | 面向分析师、量化人员和 AI agent 的金融数据集成层，统一连接 provider、Python、Workspace、Excel、MCP 与 REST；数据许可、金融风险和 AGPL 义务须分别审查。 | [GitHub](https://github.com/OpenBB-finance/OpenBB) |
@@ -620,6 +626,7 @@
 
 - 全量项目目录：[`projects/`](./projects/)
 - 最近日报：
+  - [`2026-09-11`](./daily/2026-09-11/ai-hotspots.md)
   - [`2026-09-10`](./daily/2026-09-10/ai-hotspots.md)
   - [`2026-09-09`](./daily/2026-09-09/ai-hotspots.md)
   - [`2026-09-08`](./daily/2026-09-08/ai-hotspots.md)
@@ -698,9 +705,10 @@
 ## 当前状态
 
 - 状态：持续日更中。
-- 最新更新：`2026-09-10`。
-- 当前项目总数：`641`。
-- 最近新增项目：`editor`、`PI-Desktop`、`prime-agent`、`fff`、`open-code-review`、`lark-cli`、`all-agentic-architectures`。
+- 最新更新：`2026-09-11`。
+- 当前项目总数：`647`。
+- 最近新增项目：`gods-eye-view`、`CloddsBot`、`OmniRoute`、`colibri`、
+  `llm_wiki`、`webcodex`；并更新 `openresearch-cli` 以跟随上游改名为 OpenResearch。
 - 覆盖平台：GitHub、X、Instagram、YouTube。
 
 ## 维护约定

@@ -1,14 +1,8 @@
 <!-- markdownlint-disable MD013 MD034 -->
 
-# openresearch-cli：为并行科研 agents 保存实验谱系与可追溯工件
+# OpenResearch（alphaXiv/OpenResearch）中文解读
 
-## 项目概览
-
-- 上游仓库：https://github.com/alphaXiv/openresearch-cli
-- GitHub API 快照（2026-09-02）：644 stars、47 forks、7 个开放 issue
-- 当前 release：`v0.1.118`
-- 主要技术：Rust CLI、本地 Web dashboard、SQLite、Git / worktree、SSH 与多类远程计算后端
-- 许可证：MIT
+> 证据快照：2026-09-11（Asia/Shanghai）。上游仓库已从 `alphaXiv/openresearch-cli` 改名为 `alphaXiv/OpenResearch`；为保持本仓库历史链接，仍沿用 `projects/openresearch-cli/` 目录。GitHub REST API 显示 982 stars、77 forks、11 open issues，MIT；最新 release 与 Cargo package 均为 `v0.1.122` / `0.1.122`。本文未安装、登录，也未向本地、Slurm 或托管计算提交实验。
 
 ## 定位
 
@@ -25,7 +19,7 @@ curl -LsSf https://openresearch.sh/install.sh | sh
 orx up
 ```
 
-默认 dashboard 运行在 `127.0.0.1:4791`。`orx install-skills` 可向受支持的 coding agent 安装技能；`orx exp run`、`orx logs`、`orx paper` 等命令管理实验、日志和文献入口。远端模式可通过 SSH 把服务放在 GPU 主机旁。
+默认 dashboard 运行在 `127.0.0.1:4791`。`orx install-skills` 可向受支持的 coding agent 安装技能；`orx exp run`、`orx logs`、`orx discover keyword`、`orx paper` 等命令管理实验、日志、发现和文献入口。远端模式可通过 SSH 把服务放在 GPU 主机旁。安装脚本应先下载审阅并固定 release。
 
 ## 原理
 
@@ -59,9 +53,11 @@ orx up
 
 ## 参考资料
 
-- 仓库与 README：https://github.com/alphaXiv/openresearch-cli
-- 官方站点：https://openresearch.sh
-- 文档：https://openresearch.sh/docs
-- Releases：https://github.com/alphaXiv/openresearch-cli/releases
-- 安装页：https://openresearch.sh/download
-- 遥测说明：https://github.com/alphaXiv/openresearch-cli#usage-analytics
+- GitHub：<https://github.com/alphaXiv/OpenResearch>
+- GitHub REST API：<https://api.github.com/repos/alphaXiv/OpenResearch>
+- 官方站点：<https://openresearch.sh>
+- 文档：<https://openresearch.sh/docs>
+- Releases：<https://github.com/alphaXiv/OpenResearch/releases>
+- 安装页：<https://openresearch.sh/download>
+- 遥测说明：<https://github.com/alphaXiv/OpenResearch#usage-analytics>
+- LICENSE：<https://github.com/alphaXiv/OpenResearch/blob/main/LICENSE>
