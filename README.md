@@ -49,7 +49,7 @@
 
 如果你是第一次进入这个仓库，建议从这几个入口开始：
 
-- 最新日报：[`daily/2026-09-11/ai-hotspots.md`](./daily/2026-09-11/ai-hotspots.md)
+- 最新日报：[`daily/2026-09-13/ai-hotspots.md`](./daily/2026-09-13/ai-hotspots.md)
 - 项目总目录：[`projects/`](./projects/)
 - 自动化约束：[`AGENTS.md`](./AGENTS.md)
 - 开发续接记录：[`TODO.md`](./TODO.md)
@@ -74,6 +74,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `worktrunk` | 面向并行 coding agents 的 Git worktree CLI，统一 create/list/merge/remove、hooks 与 cache；worktree 不等于系统权限或凭据隔离。 | [GitHub](https://github.com/max-sixty/worktrunk) |
 | `webcodex` | 通过 MCP/HTTPS Server 与本地 Runner，让 cloud agent 使用真实 checkout、Git 和 toolchain；代码在本机不等于内容不外发，tunnel 也不收窄执行权限。 | [GitHub](https://github.com/yyjeqhc/webcodex) |
 | `PI-Desktop` | Electron + Rust host core + pi sidecar 的 local-first coding-agent 桌面工作区；Early Preview、插件信任和云端 provider 数据流须独立治理。 | [GitHub](https://github.com/vastsa/PI-Desktop) |
 | `prime-agent` | 以 RLM、持久 Python REPL、subagents 与 continual harness 支撑长时程任务；生成代码以用户权限运行，生命周期隔离不是 sandbox。 | [GitHub](https://github.com/PrimeIntellect-ai/prime-agent) |
@@ -147,6 +148,9 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `Claude-Red` | 将 23 类进攻安全方法封装成 78 个 Claude skills；只限书面授权靶场，skill 文本和模型策略不能替代访问控制。 | [GitHub](https://github.com/SnailSploit/Claude-Red) |
+| `book-to-skill` | 把书籍、文档目录或多源资料转换为分章节可按需加载的 agent skill；解析、token 降幅和衍生笔记版权须核验。 | [GitHub](https://github.com/virgiliojr94/book-to-skill) |
+| `CubeSandbox` | 基于 RustVMM/KVM 的 E2B-compatible agent microVM sandbox，提供 egress 与 credential proxy；性能和隔离均须对抗复现。 | [GitHub](https://github.com/TencentCloud/CubeSandbox) |
 | `i-have-adhd` | 用十条行动优先规则压缩 coding-agent 输出并重述状态；它是沟通 policy，不是 ADHD 医疗工具，且不能删掉关键 caveat。 | [GitHub](https://github.com/ayghri/i-have-adhd) |
 | `teamai-cli` | 用 Git/MR 在多种 agent 宿主间同步 skills、rules、hooks、MCP 与团队知识；自动 pull 和用户级注入须按高信任供应链治理。 | [GitHub](https://github.com/Tencent/teamai-cli) |
 | `superplane` | 以 factory、work order、automation line 与 run 把高置信 backlog 转成可审阅 PR；beta、connector 权限、幂等和官网比例须复核。 | [GitHub](https://github.com/superplanehq/superplane) |
@@ -315,6 +319,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `OpenContext` | 跨 Codex、Claude Code、OpenCode 等宿主的个人 context store、MCP、skills 与 GUI；全局记忆会放大越界、过期和敏感信息风险。 | [GitHub](https://github.com/0xranx/OpenContext) |
 | `funes` | 跨 Claude Code、Codex、pi、Hermes 索引会话并可发布为 Hugging Face dataset 的记忆层；hook、原始 transcript、secret gate 与 Hub 可见性须审计。 | [GitHub](https://github.com/huggingface/funes) |
 | `OB1` | 以数据库、向量检索、MCP / gateway、导入 recipe 与治理 schema 让多种 AI 共享个人记忆；当前为 FSL-1.1-MIT，RLS、来源和删除须审计。 | [GitHub](https://github.com/NateBJones-Projects/OB1) |
 | `claude-obsidian` | 将来源、主张、链接笔记与 Obsidian vault 组织成 local-first 知识系统；模型、检索和批量写入仍须审计。 | [GitHub](https://github.com/AgriciDaniel/claude-obsidian) |
@@ -362,6 +367,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `hyperresearch` | 16 步 Claude Code 深度研究 harness 与 Markdown/SQLite 持久 vault；内部 leaderboard 投影、多来源质量和浏览器数据边界须核验。 | [GitHub](https://github.com/jordan-gibbs/hyperresearch) |
 | `llm_wiki` | 把 raw sources 增量编译为带链接和来源字段的持久 Markdown wiki；生成错误、cloud 数据流与 GPL-3.0 义务须独立治理。 | [GitHub](https://github.com/nashsu/llm_wiki) |
 | `fff` | 以 Rust 常驻文件树、内容索引、frecency 和 Git 状态优化 agent 的重复检索；速度收益依赖 warm workload，并以额外内存换取。 | [GitHub](https://github.com/dmtrKovalenko/fff) |
 | `feynman` | 将 paper access、文献综述、citation graph、代码审计与复现计划合入本地 research agent；source-grounded、下载或运行不等于科学结论已复现。 | [GitHub](https://github.com/advaitpaliwal/feynman) |
@@ -445,6 +451,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `YuE` | 用可编辑 score、semantic token、acoustic latent 与 VAE 统一歌曲创作、翻唱和 agentic editing；代码/权重许可及版权须分开审查。 | [GitHub](https://github.com/multimodal-art-projection/YuE) |
 | `openwhispr` | 跨平台听写、会议、笔记和语音 agent，支持本地/云端模型；麦克风、声纹、日历、截图、分享与自动粘贴须逐项治理。 | [GitHub](https://github.com/OpenWhispr/openwhispr) |
 | `OmniVoice` | 支持 600+ 语言的 zero-shot TTS、voice cloning/design 与批量合成；代码 Apache-2.0、预训练模型 CC-BY-NC，声音授权是前置门。 | [GitHub](https://github.com/k2-fsa/OmniVoice) |
 | `VoiceStudio` | 本地优先的语音克隆、配音、转写、听写与长音频工作台；声音同意、模型许可、可选网络功能和水印效果须独立审查。 | [GitHub](https://github.com/debpalash/VoiceStudio) |
@@ -567,6 +574,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `DeskcommCRM` | 自托管 WhatsApp AI 销售 CRM，将按租户 RAG、agent、人工接管、漏斗和自动化统一；个人数据、发送权限和 provider 出口须治理。 | [GitHub](https://github.com/melgarafael/DeskcommCRM) |
 | `gods-eye-view` | 将航班、卫星、船舶、火点、摄像头等公开信号融合到 3D globe，并由 voice agent 操作；simulated/estimated 数据、聚合风险与第三方许可须核验。 | [GitHub](https://github.com/bilawalsidhu/gods-eye-view) |
 | `CloddsBot` | 将 LLM 接到预测市场、交易所、DEX、钱包、杠杆和 token launch 的 AI 交易终端；真实资产操作必须默认关闭并外部审批。 | [GitHub](https://github.com/alsk1992/CloddsBot) |
 | `lark-cli` | larksuite 官方 Lark / 飞书 CLI，以 200+ commands 和 26 skills 连接消息、文档、表格、日历与审批；OAuth scope 和 actor identity 必须最小化。 | [GitHub](https://github.com/larksuite/cli) |
@@ -626,6 +634,7 @@
 
 - 全量项目目录：[`projects/`](./projects/)
 - 最近日报：
+  - [`2026-09-13`](./daily/2026-09-13/ai-hotspots.md)
   - [`2026-09-11`](./daily/2026-09-11/ai-hotspots.md)
   - [`2026-09-10`](./daily/2026-09-10/ai-hotspots.md)
   - [`2026-09-09`](./daily/2026-09-09/ai-hotspots.md)
@@ -705,10 +714,10 @@
 ## 当前状态
 
 - 状态：持续日更中。
-- 最新更新：`2026-09-11`。
-- 当前项目总数：`647`。
-- 最近新增项目：`gods-eye-view`、`CloddsBot`、`OmniRoute`、`colibri`、
-  `llm_wiki`、`webcodex`；并更新 `openresearch-cli` 以跟随上游改名为 OpenResearch。
+- 最新更新：`2026-09-13`。
+- 当前项目总数：`655`。
+- 最近新增项目：`DeskcommCRM`、`Claude-Red`、`YuE`、`book-to-skill`、
+  `hyperresearch`、`worktrunk`、`OpenContext`、`CubeSandbox`。
 - 覆盖平台：GitHub、X、Instagram、YouTube。
 
 ## 维护约定
