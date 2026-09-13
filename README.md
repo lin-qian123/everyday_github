@@ -49,7 +49,7 @@
 
 如果你是第一次进入这个仓库，建议从这几个入口开始：
 
-- 最新日报：[`daily/2026-09-13/ai-hotspots.md`](./daily/2026-09-13/ai-hotspots.md)
+- 最新日报：[`daily/2026-09-14/ai-hotspots.md`](./daily/2026-09-14/ai-hotspots.md)
 - 项目总目录：[`projects/`](./projects/)
 - 自动化约束：[`AGENTS.md`](./AGENTS.md)
 - 开发续接记录：[`TODO.md`](./TODO.md)
@@ -74,6 +74,8 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `AI-Engineering-Coach` | 本地解析多类 coding-agent session，以规则和仪表盘观察实践模式；score 不是绩效或代码质量证明。 | [GitHub](https://github.com/microsoft/AI-Engineering-Coach) |
+| `git-ai` | 用 agent checkpoint 与 Git Notes 记录行级 AI 代码归因；Notes 身份、默认错误遥测和 cloud 上传须治理。 | [GitHub](https://github.com/git-ai-project/git-ai) |
 | `worktrunk` | 面向并行 coding agents 的 Git worktree CLI，统一 create/list/merge/remove、hooks 与 cache；worktree 不等于系统权限或凭据隔离。 | [GitHub](https://github.com/max-sixty/worktrunk) |
 | `webcodex` | 通过 MCP/HTTPS Server 与本地 Runner，让 cloud agent 使用真实 checkout、Git 和 toolchain；代码在本机不等于内容不外发，tunnel 也不收窄执行权限。 | [GitHub](https://github.com/yyjeqhc/webcodex) |
 | `PI-Desktop` | Electron + Rust host core + pi sidecar 的 local-first coding-agent 桌面工作区；Early Preview、插件信任和云端 provider 数据流须独立治理。 | [GitHub](https://github.com/vastsa/PI-Desktop) |
@@ -501,6 +503,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `gpt-load` | 集中管理多 provider、API/OAuth 凭据、协议、路由和用量的自托管网关；2.0 RC 不可原地迁移 1.x，集中密钥面须治理。 | [GitHub](https://github.com/tbphp/gpt-load) |
 | `OmniRoute` | 统一多 provider、quota、自动回退、compression 与 MCP/A2A 的本地 AI gateway；免费额度、模型语义、数据去向和高权限扩展须独立验证。 | [GitHub](https://github.com/diegosouzapw/OmniRoute) |
 | `colibri` | 用纯 C runtime 在 VRAM/RAM/NVMe 间按需流式加载 MoE experts；超大模型“能加载”不能写成消费级实时 serving，benchmark 依赖硬件和缓存。 | [GitHub](https://github.com/JustVugg/colibri) |
 | `agentic-api` | vLLM 前方的 Rust stateful Responses/tool gateway；production storage / observability 尚在 roadmap，协议兼容不代表模型语义等价。 | [GitHub](https://github.com/vllm-project/agentic-api) |
@@ -562,6 +565,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `dictionary-of-ai-coding` | 将 model、context、tool、handoff、memory 和工作模式整理为通俗词典；术语漂移、来源与无 LICENSE 再利用边界须复核。 | [GitHub](https://github.com/mattpocock/dictionary-of-ai-coding) |
 | `all-agentic-architectures` | 用统一 Python contract 与 notebooks 实现 35 种 agent pattern；17-task 自报 benchmark 适合作为 A/B 起点，不是生产可靠性证明。 | [GitHub](https://github.com/FareedKhan-dev/all-agentic-architectures) |
 | `dive-into-llms` | 中文大模型课件、教程与 notebook，覆盖微调、知识编辑、多模态、GUI agent 和安全；依赖时效与缺失根许可证须核验。 | [GitHub](https://github.com/Lordog/dive-into-llms) |
 | `Hands-On-AI-Engineering` | 覆盖 agent、OCR、音频、多模态、RAG 和微调的实践样例库；“production-ready”须逐项目验证，README 的 MIT 声明缺少根目录 LICENSE 支撑。 | [GitHub](https://github.com/Sumanth077/Hands-On-AI-Engineering) |
@@ -574,6 +578,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `tradingview-mcp` | 通过 CDP 把 TradingView Desktop 图表、Pine、提醒和回放接入 MCP/CLI；高权限端口、行情时效、数据条款与人工 gate 须治理。 | [GitHub](https://github.com/tradesdontlie/tradingview-mcp) |
 | `DeskcommCRM` | 自托管 WhatsApp AI 销售 CRM，将按租户 RAG、agent、人工接管、漏斗和自动化统一；个人数据、发送权限和 provider 出口须治理。 | [GitHub](https://github.com/melgarafael/DeskcommCRM) |
 | `gods-eye-view` | 将航班、卫星、船舶、火点、摄像头等公开信号融合到 3D globe，并由 voice agent 操作；simulated/estimated 数据、聚合风险与第三方许可须核验。 | [GitHub](https://github.com/bilawalsidhu/gods-eye-view) |
 | `CloddsBot` | 将 LLM 接到预测市场、交易所、DEX、钱包、杠杆和 token launch 的 AI 交易终端；真实资产操作必须默认关闭并外部审批。 | [GitHub](https://github.com/alsk1992/CloddsBot) |
@@ -634,6 +639,7 @@
 
 - 全量项目目录：[`projects/`](./projects/)
 - 最近日报：
+  - [`2026-09-14`](./daily/2026-09-14/ai-hotspots.md)
   - [`2026-09-13`](./daily/2026-09-13/ai-hotspots.md)
   - [`2026-09-11`](./daily/2026-09-11/ai-hotspots.md)
   - [`2026-09-10`](./daily/2026-09-10/ai-hotspots.md)
@@ -714,10 +720,10 @@
 ## 当前状态
 
 - 状态：持续日更中。
-- 最新更新：`2026-09-13`。
-- 当前项目总数：`655`。
-- 最近新增项目：`DeskcommCRM`、`Claude-Red`、`YuE`、`book-to-skill`、
-  `hyperresearch`、`worktrunk`、`OpenContext`、`CubeSandbox`。
+- 最新更新：`2026-09-14`。
+- 当前项目总数：`660`。
+- 最近新增项目：`AI-Engineering-Coach`、`dictionary-of-ai-coding`、
+  `tradingview-mcp`、`gpt-load`、`git-ai`。
 - 覆盖平台：GitHub、X、Instagram、YouTube。
 
 ## 维护约定
