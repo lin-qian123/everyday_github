@@ -49,7 +49,7 @@
 
 如果你是第一次进入这个仓库，建议从这几个入口开始：
 
-- 最新日报：[`daily/2026-09-14/ai-hotspots.md`](./daily/2026-09-14/ai-hotspots.md)
+- 最新日报：[`daily/2026-09-15/ai-hotspots.md`](./daily/2026-09-15/ai-hotspots.md)
 - 项目总目录：[`projects/`](./projects/)
 - 自动化约束：[`AGENTS.md`](./AGENTS.md)
 - 开发续接记录：[`TODO.md`](./TODO.md)
@@ -150,6 +150,9 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `oh-my-hermes` | Hermes Agent 的工作流、模型路由、skills、证据状态和 review-first memory 操作层；产品 A/B 尚无发布 measured run。 | [GitHub](https://github.com/rlaope/oh-my-hermes) |
+| `eigenwise-toolshed` | 六个可独立安装的 Claude Code 插件，覆盖仓库地图、条件规则、side work、模型网关、observability 与维护。 | [GitHub](https://github.com/Eigenwise/eigenwise-toolshed) |
+| `zeroclaw` | Rust 多 provider / 多 channel 个人 agent runtime；sandbox 自动降级、默认网络和 YOLO 高权限边界须实测。 | [GitHub](https://github.com/zeroclaw-labs/zeroclaw) |
 | `Claude-Red` | 将 23 类进攻安全方法封装成 78 个 Claude skills；只限书面授权靶场，skill 文本和模型策略不能替代访问控制。 | [GitHub](https://github.com/SnailSploit/Claude-Red) |
 | `book-to-skill` | 把书籍、文档目录或多源资料转换为分章节可按需加载的 agent skill；解析、token 降幅和衍生笔记版权须核验。 | [GitHub](https://github.com/virgiliojr94/book-to-skill) |
 | `CubeSandbox` | 基于 RustVMM/KVM 的 E2B-compatible agent microVM sandbox，提供 egress 与 credential proxy；性能和隔离均须对抗复现。 | [GitHub](https://github.com/TencentCloud/CubeSandbox) |
@@ -409,6 +412,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `ux-ui-agent-skills` | DTCG token、19 skills、5 commands 与 rendered gates 组成的 Claude 设计知识层；gate 通过不等于审美或可用性。 | [GitHub](https://github.com/plugin87/ux-ui-agent-skills) |
 | `editor` | Pascal 的 local-first 3D 建筑编辑器，以 CLI、MCP 与 skills 让人和 agent 操作场景；版本面、并发状态和专业工程审核须分开验证。 | [GitHub](https://github.com/pascalorg/editor) |
 | `BrowserOS` | 同仓库提供 agent 专用第二浏览器与内置 agent 的 Chromium fork，可复用真实登录态并本地回放；真实账号副作用与日志隐私须严格治理。 | [GitHub](https://github.com/browseros-ai/BrowserOS) |
 | `scroll-craft` | Claude Code 的滚动网页设计与验证 skill，使用浏览器截图检查交互和显示问题；不替代无障碍与人工设计验收。 | [GitHub](https://github.com/nateherkai/scroll-craft) |
@@ -578,6 +582,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `no-ai-slop` | 用 20 多类可点名模式审阅和最小改写 AI 腔；它不是作者身份、事实、原创或披露证明。 | [GitHub](https://github.com/petergyang/no-ai-slop) |
 | `tradingview-mcp` | 通过 CDP 把 TradingView Desktop 图表、Pine、提醒和回放接入 MCP/CLI；高权限端口、行情时效、数据条款与人工 gate 须治理。 | [GitHub](https://github.com/tradesdontlie/tradingview-mcp) |
 | `DeskcommCRM` | 自托管 WhatsApp AI 销售 CRM，将按租户 RAG、agent、人工接管、漏斗和自动化统一；个人数据、发送权限和 provider 出口须治理。 | [GitHub](https://github.com/melgarafael/DeskcommCRM) |
 | `gods-eye-view` | 将航班、卫星、船舶、火点、摄像头等公开信号融合到 3D globe，并由 voice agent 操作；simulated/estimated 数据、聚合风险与第三方许可须核验。 | [GitHub](https://github.com/bilawalsidhu/gods-eye-view) |
@@ -639,6 +644,7 @@
 
 - 全量项目目录：[`projects/`](./projects/)
 - 最近日报：
+  - [`2026-09-15`](./daily/2026-09-15/ai-hotspots.md)
   - [`2026-09-14`](./daily/2026-09-14/ai-hotspots.md)
   - [`2026-09-13`](./daily/2026-09-13/ai-hotspots.md)
   - [`2026-09-11`](./daily/2026-09-11/ai-hotspots.md)
@@ -720,10 +726,10 @@
 ## 当前状态
 
 - 状态：持续日更中。
-- 最新更新：`2026-09-14`。
-- 当前项目总数：`660`。
-- 最近新增项目：`AI-Engineering-Coach`、`dictionary-of-ai-coding`、
-  `tradingview-mcp`、`gpt-load`、`git-ai`。
+- 最新更新：`2026-09-15`。
+- 当前项目总数：`665`。
+- 最近新增项目：`oh-my-hermes`、`no-ai-slop`、`eigenwise-toolshed`、
+  `ux-ui-agent-skills`、`zeroclaw`。
 - 覆盖平台：GitHub、X、Instagram、YouTube。
 
 ## 维护约定
