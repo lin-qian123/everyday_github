@@ -49,7 +49,7 @@
 
 如果你是第一次进入这个仓库，建议从这几个入口开始：
 
-- 最新日报：[`daily/2026-09-15/ai-hotspots.md`](./daily/2026-09-15/ai-hotspots.md)
+- 最新日报：[`daily/2026-09-16/ai-hotspots.md`](./daily/2026-09-16/ai-hotspots.md)
 - 项目总目录：[`projects/`](./projects/)
 - 自动化约束：[`AGENTS.md`](./AGENTS.md)
 - 开发续接记录：[`TODO.md`](./TODO.md)
@@ -150,6 +150,8 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `ASC` | 面向 agent / 移动研究者的按需 Android 反编译 CLI，以只读查询和最小 DEX 重建减少大型 APK 预处理；性能与恶意输入边界须独立复现。 | [GitHub](https://github.com/MG1937/ASC) |
+| `awesome-claude-skills` | Composio 维护的跨 agent skill 目录与 SaaS 动作集合；目录收录不是安全/质量认证，根许可与各 skill 许可须逐项核验。 | [GitHub](https://github.com/ComposioHQ/awesome-claude-skills) |
 | `oh-my-hermes` | Hermes Agent 的工作流、模型路由、skills、证据状态和 review-first memory 操作层；产品 A/B 尚无发布 measured run。 | [GitHub](https://github.com/rlaope/oh-my-hermes) |
 | `eigenwise-toolshed` | 六个可独立安装的 Claude Code 插件，覆盖仓库地图、条件规则、side work、模型网关、observability 与维护。 | [GitHub](https://github.com/Eigenwise/eigenwise-toolshed) |
 | `zeroclaw` | Rust 多 provider / 多 channel 个人 agent runtime；sandbox 自动降级、默认网络和 YOLO 高权限边界须实测。 | [GitHub](https://github.com/zeroclaw-labs/zeroclaw) |
@@ -372,6 +374,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `Vane` | 自托管 SearXNG + 本地/云模型的检索增强问答与文件研究引擎；云端数据流、引用精度和缺省认证须治理。 | [GitHub](https://github.com/ItzCrazyKns/Vane) |
 | `hyperresearch` | 16 步 Claude Code 深度研究 harness 与 Markdown/SQLite 持久 vault；内部 leaderboard 投影、多来源质量和浏览器数据边界须核验。 | [GitHub](https://github.com/jordan-gibbs/hyperresearch) |
 | `llm_wiki` | 把 raw sources 增量编译为带链接和来源字段的持久 Markdown wiki；生成错误、cloud 数据流与 GPL-3.0 义务须独立治理。 | [GitHub](https://github.com/nashsu/llm_wiki) |
 | `fff` | 以 Rust 常驻文件树、内容索引、frecency 和 Git 状态优化 agent 的重复检索；速度收益依赖 warm workload，并以额外内存换取。 | [GitHub](https://github.com/dmtrKovalenko/fff) |
@@ -457,6 +460,8 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `youtube-automation-agent` | AgentTube 将研究、脚本、素材、事实/权利审阅、排期和发布做成可恢复的审批优先流水线；OAuth、费用、版本时差和平台政策须独立验收。 | [GitHub](https://github.com/darkzOGx/youtube-automation-agent) |
+| `LocalMiniDrama` | 本地 SQLite / 文件与画布驱动的 AI 短剧工作台；调用外部文本、图像、视频、资产库或图床时，素材仍会离开本机。 | [GitHub](https://github.com/xuanyustudio/LocalMiniDrama) |
 | `YuE` | 用可编辑 score、semantic token、acoustic latent 与 VAE 统一歌曲创作、翻唱和 agentic editing；代码/权重许可及版权须分开审查。 | [GitHub](https://github.com/multimodal-art-projection/YuE) |
 | `openwhispr` | 跨平台听写、会议、笔记和语音 agent，支持本地/云端模型；麦克风、声纹、日历、截图、分享与自动粘贴须逐项治理。 | [GitHub](https://github.com/OpenWhispr/openwhispr) |
 | `OmniVoice` | 支持 600+ 语言的 zero-shot TTS、voice cloning/design 与批量合成；代码 Apache-2.0、预训练模型 CC-BY-NC，声音授权是前置门。 | [GitHub](https://github.com/k2-fsa/OmniVoice) |
@@ -582,6 +587,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `SparkyFitness` | 自托管家庭健康/健身数据平台，带多源同步和 beta AI；采用非商业 source-available 许可，高敏感数据与医学边界须严格治理。 | [GitHub](https://github.com/CodeWithCJ/SparkyFitness) |
 | `no-ai-slop` | 用 20 多类可点名模式审阅和最小改写 AI 腔；它不是作者身份、事实、原创或披露证明。 | [GitHub](https://github.com/petergyang/no-ai-slop) |
 | `tradingview-mcp` | 通过 CDP 把 TradingView Desktop 图表、Pine、提醒和回放接入 MCP/CLI；高权限端口、行情时效、数据条款与人工 gate 须治理。 | [GitHub](https://github.com/tradesdontlie/tradingview-mcp) |
 | `DeskcommCRM` | 自托管 WhatsApp AI 销售 CRM，将按租户 RAG、agent、人工接管、漏斗和自动化统一；个人数据、发送权限和 provider 出口须治理。 | [GitHub](https://github.com/melgarafael/DeskcommCRM) |
@@ -644,6 +650,7 @@
 
 - 全量项目目录：[`projects/`](./projects/)
 - 最近日报：
+  - [`2026-09-16`](./daily/2026-09-16/ai-hotspots.md)
   - [`2026-09-15`](./daily/2026-09-15/ai-hotspots.md)
   - [`2026-09-14`](./daily/2026-09-14/ai-hotspots.md)
   - [`2026-09-13`](./daily/2026-09-13/ai-hotspots.md)
@@ -726,10 +733,10 @@
 ## 当前状态
 
 - 状态：持续日更中。
-- 最新更新：`2026-09-15`。
-- 当前项目总数：`665`。
-- 最近新增项目：`oh-my-hermes`、`no-ai-slop`、`eigenwise-toolshed`、
-  `ux-ui-agent-skills`、`zeroclaw`。
+- 最新更新：`2026-09-16`。
+- 当前项目总数：`671`。
+- 最近新增项目：`ASC`、`awesome-claude-skills`、`Vane`、
+  `youtube-automation-agent`、`LocalMiniDrama`、`SparkyFitness`。
 - 覆盖平台：GitHub、X、Instagram、YouTube。
 
 ## 维护约定
