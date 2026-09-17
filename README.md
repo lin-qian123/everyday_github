@@ -49,7 +49,7 @@
 
 如果你是第一次进入这个仓库，建议从这几个入口开始：
 
-- 最新日报：[`daily/2026-09-16/ai-hotspots.md`](./daily/2026-09-16/ai-hotspots.md)
+- 最新日报：[`daily/2026-09-18/ai-hotspots.md`](./daily/2026-09-18/ai-hotspots.md)
 - 项目总目录：[`projects/`](./projects/)
 - 自动化约束：[`AGENTS.md`](./AGENTS.md)
 - 开发续接记录：[`TODO.md`](./TODO.md)
@@ -74,6 +74,8 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `freebuff` | 以广告和访问层级支持的 Desktop / CLI / Web / Cloud / Chat coding-agent 产品组；模型路由、OAuth、广告和 data-use 提示须逐次核验。 | [GitHub](https://github.com/CodebuffAI/freebuff) |
+| `gentle-ai` | 为 16 类既有 coding agents 配置 memory、ODD / SDD、skills 和 opt-in review；用户级写入、恢复与 telemetry 须独立审计。 | [GitHub](https://github.com/Gentleman-Programming/gentle-ai) |
 | `AI-Engineering-Coach` | 本地解析多类 coding-agent session，以规则和仪表盘观察实践模式；score 不是绩效或代码质量证明。 | [GitHub](https://github.com/microsoft/AI-Engineering-Coach) |
 | `git-ai` | 用 agent checkpoint 与 Git Notes 记录行级 AI 代码归因；Notes 身份、默认错误遥测和 cloud 上传须治理。 | [GitHub](https://github.com/git-ai-project/git-ai) |
 | `worktrunk` | 面向并行 coding agents 的 Git worktree CLI，统一 create/list/merge/remove、hooks 与 cache；worktree 不等于系统权限或凭据隔离。 | [GitHub](https://github.com/max-sixty/worktrunk) |
@@ -150,6 +152,9 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `BrowserSkill` | 通过本地 CLI / daemon 与 Chrome / Edge 扩展把 Agent 接到真实登录态；借用确认重要，但 `<all_urls>`、debugger 与真实账号仍是高权限边界。 | [GitHub](https://github.com/Tencent/BrowserSkill) |
+| `harness-sdk` | Strands 的 Python / TypeScript 进程内 agent harness SDK，覆盖 tools、memory、hooks、guardrails、tracing 与 eval；工具权限仍需应用层治理。 | [GitHub](https://github.com/strands-agents/harness-sdk) |
+| `runtime` | E2B 的 Firecracker microVM sandbox backend，支持 snapshot、pause/resume、fork 与 envd；单机 Embed 只是 evaluation package。 | [GitHub](https://github.com/e2b-dev/runtime) |
 | `ASC` | 面向 agent / 移动研究者的按需 Android 反编译 CLI，以只读查询和最小 DEX 重建减少大型 APK 预处理；性能与恶意输入边界须独立复现。 | [GitHub](https://github.com/MG1937/ASC) |
 | `awesome-claude-skills` | Composio 维护的跨 agent skill 目录与 SaaS 动作集合；目录收录不是安全/质量认证，根许可与各 skill 许可须逐项核验。 | [GitHub](https://github.com/ComposioHQ/awesome-claude-skills) |
 | `oh-my-hermes` | Hermes Agent 的工作流、模型路由、skills、证据状态和 review-first memory 操作层；产品 A/B 尚无发布 measured run。 | [GitHub](https://github.com/rlaope/oh-my-hermes) |
@@ -326,6 +331,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `Octop` | 自托管多人、多 Agent 助手控制面，整合 IM、RAG、memory、browser、remote desktop 与 ACP；self-hosted 不等于外部 provider 零外发。 | [GitHub](https://github.com/TencentCloud/Octop) |
 | `OpenContext` | 跨 Codex、Claude Code、OpenCode 等宿主的个人 context store、MCP、skills 与 GUI；全局记忆会放大越界、过期和敏感信息风险。 | [GitHub](https://github.com/0xranx/OpenContext) |
 | `funes` | 跨 Claude Code、Codex、pi、Hermes 索引会话并可发布为 Hugging Face dataset 的记忆层；hook、原始 transcript、secret gate 与 Hub 可见性须审计。 | [GitHub](https://github.com/huggingface/funes) |
 | `OB1` | 以数据库、向量检索、MCP / gateway、导入 recipe 与治理 schema 让多种 AI 共享个人记忆；当前为 FSL-1.1-MIT，RLS、来源和删除须审计。 | [GitHub](https://github.com/NateBJones-Projects/OB1) |
@@ -374,6 +380,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `quant-mind` | 将论文 / 新闻加工为带类型、时间和引用的量化金融知识，并以 repo-as-harness 约束 Agent；知识质量 benchmark 仍在设计。 | [GitHub](https://github.com/LLMQuant/quant-mind) |
 | `Vane` | 自托管 SearXNG + 本地/云模型的检索增强问答与文件研究引擎；云端数据流、引用精度和缺省认证须治理。 | [GitHub](https://github.com/ItzCrazyKns/Vane) |
 | `hyperresearch` | 16 步 Claude Code 深度研究 harness 与 Markdown/SQLite 持久 vault；内部 leaderboard 投影、多来源质量和浏览器数据边界须核验。 | [GitHub](https://github.com/jordan-gibbs/hyperresearch) |
 | `llm_wiki` | 把 raw sources 增量编译为带链接和来源字段的持久 Markdown wiki；生成错误、cloud 数据流与 GPL-3.0 义务须独立治理。 | [GitHub](https://github.com/nashsu/llm_wiki) |
@@ -460,6 +467,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `fugleramme` | 用本地 BirdNET-Go 鸟声识别驱动电子墨水自然图鉴；检测不能替代生态调查，BirdNET 与素材许可证须和 MIT 代码分开审查。 | [GitHub](https://github.com/arnegiacomo/fugleramme) |
 | `youtube-automation-agent` | AgentTube 将研究、脚本、素材、事实/权利审阅、排期和发布做成可恢复的审批优先流水线；OAuth、费用、版本时差和平台政策须独立验收。 | [GitHub](https://github.com/darkzOGx/youtube-automation-agent) |
 | `LocalMiniDrama` | 本地 SQLite / 文件与画布驱动的 AI 短剧工作台；调用外部文本、图像、视频、资产库或图床时，素材仍会离开本机。 | [GitHub](https://github.com/xuanyustudio/LocalMiniDrama) |
 | `YuE` | 用可编辑 score、semantic token、acoustic latent 与 VAE 统一歌曲创作、翻唱和 agentic editing；代码/权重许可及版权须分开审查。 | [GitHub](https://github.com/multimodal-art-projection/YuE) |
@@ -650,6 +658,7 @@
 
 - 全量项目目录：[`projects/`](./projects/)
 - 最近日报：
+  - [`2026-09-18`](./daily/2026-09-18/ai-hotspots.md)
   - [`2026-09-16`](./daily/2026-09-16/ai-hotspots.md)
   - [`2026-09-15`](./daily/2026-09-15/ai-hotspots.md)
   - [`2026-09-14`](./daily/2026-09-14/ai-hotspots.md)
@@ -733,10 +742,10 @@
 ## 当前状态
 
 - 状态：持续日更中。
-- 最新更新：`2026-09-16`。
-- 当前项目总数：`671`。
-- 最近新增项目：`ASC`、`awesome-claude-skills`、`Vane`、
-  `youtube-automation-agent`、`LocalMiniDrama`、`SparkyFitness`。
+- 最新更新：`2026-09-18`。
+- 当前项目总数：`679`。
+- 最近新增项目：`BrowserSkill`、`Octop`、`fugleramme`、`harness-sdk`、
+  `quant-mind`、`freebuff`、`runtime`、`gentle-ai`。
 - 覆盖平台：GitHub、X、Instagram、YouTube。
 
 ## 维护约定
