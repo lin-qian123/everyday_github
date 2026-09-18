@@ -49,7 +49,7 @@
 
 如果你是第一次进入这个仓库，建议从这几个入口开始：
 
-- 最新日报：[`daily/2026-09-18/ai-hotspots.md`](./daily/2026-09-18/ai-hotspots.md)
+- 最新日报：[`daily/2026-09-19/ai-hotspots.md`](./daily/2026-09-19/ai-hotspots.md)
 - 项目总目录：[`projects/`](./projects/)
 - 自动化约束：[`AGENTS.md`](./AGENTS.md)
 - 开发续接记录：[`TODO.md`](./TODO.md)
@@ -74,6 +74,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `cc-haha` | 跨平台 Claude Code / Agent 桌面工作台，整合 Worktree、Diff、权限、SubAgent、Computer Use、H5 与 IM；本地优先不等于零外发。 | [GitHub](https://github.com/NanmiCoder/cc-haha) |
 | `freebuff` | 以广告和访问层级支持的 Desktop / CLI / Web / Cloud / Chat coding-agent 产品组；模型路由、OAuth、广告和 data-use 提示须逐次核验。 | [GitHub](https://github.com/CodebuffAI/freebuff) |
 | `gentle-ai` | 为 16 类既有 coding agents 配置 memory、ODD / SDD、skills 和 opt-in review；用户级写入、恢复与 telemetry 须独立审计。 | [GitHub](https://github.com/Gentleman-Programming/gentle-ai) |
 | `AI-Engineering-Coach` | 本地解析多类 coding-agent session，以规则和仪表盘观察实践模式；score 不是绩效或代码质量证明。 | [GitHub](https://github.com/microsoft/AI-Engineering-Coach) |
@@ -152,6 +153,8 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `skill-up` | 阿里巴巴的 Agent Skill 评测与演进 CLI，用 YAML、多 engine、judge、报告与 CI 建立回归闭环；须防自动改 eval 过拟合。 | [GitHub](https://github.com/alibaba/skill-up) |
+| `buzz` | Block 的人机协作 relay，把人类、Agent、workflow、Git 与 audit 写入同一签名事件流；rate limit 和部分 workflow 仍未完成。 | [GitHub](https://github.com/block/buzz) |
 | `BrowserSkill` | 通过本地 CLI / daemon 与 Chrome / Edge 扩展把 Agent 接到真实登录态；借用确认重要，但 `<all_urls>`、debugger 与真实账号仍是高权限边界。 | [GitHub](https://github.com/Tencent/BrowserSkill) |
 | `harness-sdk` | Strands 的 Python / TypeScript 进程内 agent harness SDK，覆盖 tools、memory、hooks、guardrails、tracing 与 eval；工具权限仍需应用层治理。 | [GitHub](https://github.com/strands-agents/harness-sdk) |
 | `runtime` | E2B 的 Firecracker microVM sandbox backend，支持 snapshot、pause/resume、fork 与 envd；单机 Embed 只是 evaluation package。 | [GitHub](https://github.com/e2b-dev/runtime) |
@@ -331,6 +334,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `Memoh` | 为每个 Agent 提供持久 workspace container、长期记忆、浏览器、桌面、MCP 与渠道；容器、egress 和凭据隔离须独立验证。 | [GitHub](https://github.com/felinics/Memoh) |
 | `Octop` | 自托管多人、多 Agent 助手控制面，整合 IM、RAG、memory、browser、remote desktop 与 ACP；self-hosted 不等于外部 provider 零外发。 | [GitHub](https://github.com/TencentCloud/Octop) |
 | `OpenContext` | 跨 Codex、Claude Code、OpenCode 等宿主的个人 context store、MCP、skills 与 GUI；全局记忆会放大越界、过期和敏感信息风险。 | [GitHub](https://github.com/0xranx/OpenContext) |
 | `funes` | 跨 Claude Code、Codex、pi、Hermes 索引会话并可发布为 Hugging Face dataset 的记忆层；hook、原始 transcript、secret gate 与 Hub 可见性须审计。 | [GitHub](https://github.com/huggingface/funes) |
@@ -380,6 +384,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `code-review-graph` | 用 Tree-sitter、SQLite 图、MCP 与 CI 为 Coding Agent 提供 blast radius 和最小上下文；上游 benchmark 基线与 recall 循环性须保留。 | [GitHub](https://github.com/tirth8205/code-review-graph) |
 | `quant-mind` | 将论文 / 新闻加工为带类型、时间和引用的量化金融知识，并以 repo-as-harness 约束 Agent；知识质量 benchmark 仍在设计。 | [GitHub](https://github.com/LLMQuant/quant-mind) |
 | `Vane` | 自托管 SearXNG + 本地/云模型的检索增强问答与文件研究引擎；云端数据流、引用精度和缺省认证须治理。 | [GitHub](https://github.com/ItzCrazyKns/Vane) |
 | `hyperresearch` | 16 步 Claude Code 深度研究 harness 与 Markdown/SQLite 持久 vault；内部 leaderboard 投影、多来源质量和浏览器数据边界须核验。 | [GitHub](https://github.com/jordan-gibbs/hyperresearch) |
@@ -422,6 +427,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `plannotator` | 为 Agent 计划、文档、HTML 与 Diff 提供本地浏览器批注和结构化反馈；Ask AI、URL 抓取、分享与 hosted Workspaces 是不同数据边界。 | [GitHub](https://github.com/backnotprop/plannotator) |
 | `ux-ui-agent-skills` | DTCG token、19 skills、5 commands 与 rendered gates 组成的 Claude 设计知识层；gate 通过不等于审美或可用性。 | [GitHub](https://github.com/plugin87/ux-ui-agent-skills) |
 | `editor` | Pascal 的 local-first 3D 建筑编辑器，以 CLI、MCP 与 skills 让人和 agent 操作场景；版本面、并发状态和专业工程审核须分开验证。 | [GitHub](https://github.com/pascalorg/editor) |
 | `BrowserOS` | 同仓库提供 agent 专用第二浏览器与内置 agent 的 Chromium fork，可复用真实登录态并本地回放；真实账号副作用与日志隐私须严格治理。 | [GitHub](https://github.com/browseros-ai/BrowserOS) |
@@ -520,6 +526,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `router` | Weave 的 Anthropic / OpenAI / Gemini 兼容 action-level 模型路由器；hosted / self-hosted 数据流、费用口径、公开 benchmark 与 ELv2 须分别审查。 | [GitHub](https://github.com/weave-os/router) |
 | `gpt-load` | 集中管理多 provider、API/OAuth 凭据、协议、路由和用量的自托管网关；2.0 RC 不可原地迁移 1.x，集中密钥面须治理。 | [GitHub](https://github.com/tbphp/gpt-load) |
 | `OmniRoute` | 统一多 provider、quota、自动回退、compression 与 MCP/A2A 的本地 AI gateway；免费额度、模型语义、数据去向和高权限扩展须独立验证。 | [GitHub](https://github.com/diegosouzapw/OmniRoute) |
 | `colibri` | 用纯 C runtime 在 VRAM/RAM/NVMe 间按需流式加载 MoE experts；超大模型“能加载”不能写成消费级实时 serving，benchmark 依赖硬件和缓存。 | [GitHub](https://github.com/JustVugg/colibri) |
@@ -595,6 +602,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `power-platform-skills` | 微软官方 Power Platform Agent 插件市场，覆盖 Pages、Apps、MCP、Canvas 与 Automate；真实租户权限、自动更新和 telemetry 须治理。 | [GitHub](https://github.com/microsoft/power-platform-skills) |
 | `SparkyFitness` | 自托管家庭健康/健身数据平台，带多源同步和 beta AI；采用非商业 source-available 许可，高敏感数据与医学边界须严格治理。 | [GitHub](https://github.com/CodeWithCJ/SparkyFitness) |
 | `no-ai-slop` | 用 20 多类可点名模式审阅和最小改写 AI 腔；它不是作者身份、事实、原创或披露证明。 | [GitHub](https://github.com/petergyang/no-ai-slop) |
 | `tradingview-mcp` | 通过 CDP 把 TradingView Desktop 图表、Pine、提醒和回放接入 MCP/CLI；高权限端口、行情时效、数据条款与人工 gate 须治理。 | [GitHub](https://github.com/tradesdontlie/tradingview-mcp) |
@@ -658,6 +666,7 @@
 
 - 全量项目目录：[`projects/`](./projects/)
 - 最近日报：
+  - [`2026-09-19`](./daily/2026-09-19/ai-hotspots.md)
   - [`2026-09-18`](./daily/2026-09-18/ai-hotspots.md)
   - [`2026-09-16`](./daily/2026-09-16/ai-hotspots.md)
   - [`2026-09-15`](./daily/2026-09-15/ai-hotspots.md)
@@ -742,10 +751,10 @@
 ## 当前状态
 
 - 状态：持续日更中。
-- 最新更新：`2026-09-18`。
-- 当前项目总数：`679`。
-- 最近新增项目：`BrowserSkill`、`Octop`、`fugleramme`、`harness-sdk`、
-  `quant-mind`、`freebuff`、`runtime`、`gentle-ai`。
+- 最新更新：`2026-09-19`。
+- 当前项目总数：`687`。
+- 最近新增项目：`code-review-graph`、`cc-haha`、`plannotator`、`Memoh`、
+  `router`、`skill-up`、`buzz`、`power-platform-skills`。
 - 覆盖平台：GitHub、X、Instagram、YouTube。
 
 ## 维护约定
