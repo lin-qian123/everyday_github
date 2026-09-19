@@ -49,7 +49,7 @@
 
 如果你是第一次进入这个仓库，建议从这几个入口开始：
 
-- 最新日报：[`daily/2026-09-19/ai-hotspots.md`](./daily/2026-09-19/ai-hotspots.md)
+- 最新日报：[`daily/2026-09-20/ai-hotspots.md`](./daily/2026-09-20/ai-hotspots.md)
 - 项目总目录：[`projects/`](./projects/)
 - 自动化约束：[`AGENTS.md`](./AGENTS.md)
 - 开发续接记录：[`TODO.md`](./TODO.md)
@@ -74,6 +74,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `coder` | 用 Terraform、加密连接、AI Gateway 与审计为开发者和 Coding Agent 供应自托管 workspace；环境存在不等于强隔离。 | [GitHub](https://github.com/coder/coder) |
 | `cc-haha` | 跨平台 Claude Code / Agent 桌面工作台，整合 Worktree、Diff、权限、SubAgent、Computer Use、H5 与 IM；本地优先不等于零外发。 | [GitHub](https://github.com/NanmiCoder/cc-haha) |
 | `freebuff` | 以广告和访问层级支持的 Desktop / CLI / Web / Cloud / Chat coding-agent 产品组；模型路由、OAuth、广告和 data-use 提示须逐次核验。 | [GitHub](https://github.com/CodebuffAI/freebuff) |
 | `gentle-ai` | 为 16 类既有 coding agents 配置 memory、ODD / SDD、skills 和 opt-in review；用户级写入、恢复与 telemetry 须独立审计。 | [GitHub](https://github.com/Gentleman-Programming/gentle-ai) |
@@ -153,6 +154,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `yichen-skills` | 覆盖内容、研究、微信 / 企业微信、本地数据与记忆的个人 Skill 集合；根许可仅限个人学习 / 非商业使用，高权限能力须逐项授权。 | [GitHub](https://github.com/mcncarl/yichen-skills) |
 | `skill-up` | 阿里巴巴的 Agent Skill 评测与演进 CLI，用 YAML、多 engine、judge、报告与 CI 建立回归闭环；须防自动改 eval 过拟合。 | [GitHub](https://github.com/alibaba/skill-up) |
 | `buzz` | Block 的人机协作 relay，把人类、Agent、workflow、Git 与 audit 写入同一签名事件流；rate limit 和部分 workflow 仍未完成。 | [GitHub](https://github.com/block/buzz) |
 | `BrowserSkill` | 通过本地 CLI / daemon 与 Chrome / Edge 扩展把 Agent 接到真实登录态；借用确认重要，但 `<all_urls>`、debugger 与真实账号仍是高权限边界。 | [GitHub](https://github.com/Tencent/BrowserSkill) |
@@ -384,6 +386,8 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `docling` | 将 PDF、Office、图片、音视频、邮件和专业 XML 解析为统一文档结构；关键表格、公式、阅读顺序和模型许可须回到原证据核验。 | [GitHub](https://github.com/docling-project/docling) |
+| `gitdiagram` | 读取仓库树、README 与有限源码生成可点击架构图；抽样、模型外发和持久 artifact 使私有仓库使用需谨慎。 | [GitHub](https://github.com/ahmedkhaleel2004/gitdiagram) |
 | `code-review-graph` | 用 Tree-sitter、SQLite 图、MCP 与 CI 为 Coding Agent 提供 blast radius 和最小上下文；上游 benchmark 基线与 recall 循环性须保留。 | [GitHub](https://github.com/tirth8205/code-review-graph) |
 | `quant-mind` | 将论文 / 新闻加工为带类型、时间和引用的量化金融知识，并以 repo-as-harness 约束 Agent；知识质量 benchmark 仍在设计。 | [GitHub](https://github.com/LLMQuant/quant-mind) |
 | `Vane` | 自托管 SearXNG + 本地/云模型的检索增强问答与文件研究引擎；云端数据流、引用精度和缺省认证须治理。 | [GitHub](https://github.com/ItzCrazyKns/Vane) |
@@ -427,6 +431,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `json-render` | 用 component catalog、schema 与多端 renderer 约束 Generative UI；组件 allowlist 不等于 action 副作用安全。 | [GitHub](https://github.com/vercel-labs/json-render) |
 | `plannotator` | 为 Agent 计划、文档、HTML 与 Diff 提供本地浏览器批注和结构化反馈；Ask AI、URL 抓取、分享与 hosted Workspaces 是不同数据边界。 | [GitHub](https://github.com/backnotprop/plannotator) |
 | `ux-ui-agent-skills` | DTCG token、19 skills、5 commands 与 rendered gates 组成的 Claude 设计知识层；gate 通过不等于审美或可用性。 | [GitHub](https://github.com/plugin87/ux-ui-agent-skills) |
 | `editor` | Pascal 的 local-first 3D 建筑编辑器，以 CLI、MCP 与 skills 让人和 agent 操作场景；版本面、并发状态和专业工程审核须分开验证。 | [GitHub](https://github.com/pascalorg/editor) |
@@ -526,6 +531,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `higgsfield` | 将 GPU 调度、ZeRO-3 / FSDP、实验队列和 GitHub 部署接成训练框架；release / manifest 时差与高权限节点安装须先处理。 | [GitHub](https://github.com/higgsfield-ai/higgsfield) |
 | `router` | Weave 的 Anthropic / OpenAI / Gemini 兼容 action-level 模型路由器；hosted / self-hosted 数据流、费用口径、公开 benchmark 与 ELv2 须分别审查。 | [GitHub](https://github.com/weave-os/router) |
 | `gpt-load` | 集中管理多 provider、API/OAuth 凭据、协议、路由和用量的自托管网关；2.0 RC 不可原地迁移 1.x，集中密钥面须治理。 | [GitHub](https://github.com/tbphp/gpt-load) |
 | `OmniRoute` | 统一多 provider、quota、自动回退、compression 与 MCP/A2A 的本地 AI gateway；免费额度、模型语义、数据去向和高权限扩展须独立验证。 | [GitHub](https://github.com/diegosouzapw/OmniRoute) |
@@ -602,6 +608,8 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `OpenStock` | 股票观察、图表、提醒与可选 AI 邮件 / 新闻摘要应用；不是券商或投资顾问，行情可能延迟。 | [GitHub](https://github.com/Open-Dev-Society/OpenStock) |
+| `chinese-novelist-skill` | 用问答、大纲、人物、持久计划和多 Agent 生成中文长篇；字数与自评不证明原创性、版权或文学质量。 | [GitHub](https://github.com/PenglongHuang/chinese-novelist-skill) |
 | `power-platform-skills` | 微软官方 Power Platform Agent 插件市场，覆盖 Pages、Apps、MCP、Canvas 与 Automate；真实租户权限、自动更新和 telemetry 须治理。 | [GitHub](https://github.com/microsoft/power-platform-skills) |
 | `SparkyFitness` | 自托管家庭健康/健身数据平台，带多源同步和 beta AI；采用非商业 source-available 许可，高敏感数据与医学边界须严格治理。 | [GitHub](https://github.com/CodeWithCJ/SparkyFitness) |
 | `no-ai-slop` | 用 20 多类可点名模式审阅和最小改写 AI 腔；它不是作者身份、事实、原创或披露证明。 | [GitHub](https://github.com/petergyang/no-ai-slop) |
@@ -666,6 +674,7 @@
 
 - 全量项目目录：[`projects/`](./projects/)
 - 最近日报：
+  - [`2026-09-20`](./daily/2026-09-20/ai-hotspots.md)
   - [`2026-09-19`](./daily/2026-09-19/ai-hotspots.md)
   - [`2026-09-18`](./daily/2026-09-18/ai-hotspots.md)
   - [`2026-09-16`](./daily/2026-09-16/ai-hotspots.md)
@@ -751,10 +760,10 @@
 ## 当前状态
 
 - 状态：持续日更中。
-- 最新更新：`2026-09-19`。
-- 当前项目总数：`687`。
-- 最近新增项目：`code-review-graph`、`cc-haha`、`plannotator`、`Memoh`、
-  `router`、`skill-up`、`buzz`、`power-platform-skills`。
+- 最新更新：`2026-09-20`。
+- 当前项目总数：`695`。
+- 最近新增项目：`coder`、`OpenStock`、`higgsfield`、`docling`、
+  `json-render`、`gitdiagram`、`yichen-skills`、`chinese-novelist-skill`。
 - 覆盖平台：GitHub、X、Instagram、YouTube。
 
 ## 维护约定
