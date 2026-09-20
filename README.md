@@ -49,7 +49,7 @@
 
 如果你是第一次进入这个仓库，建议从这几个入口开始：
 
-- 最新日报：[`daily/2026-09-20/ai-hotspots.md`](./daily/2026-09-20/ai-hotspots.md)
+- 最新日报：[`daily/2026-09-21/ai-hotspots.md`](./daily/2026-09-21/ai-hotspots.md)
 - 项目总目录：[`projects/`](./projects/)
 - 自动化约束：[`AGENTS.md`](./AGENTS.md)
 - 开发续接记录：[`TODO.md`](./TODO.md)
@@ -74,6 +74,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `agent-desktop` | 基于 macOS Accessibility tree、qualified refs、actionability 与 session trace 的桌面 Agent CLI；高权限 UI 动作仍须外部审批。 | [GitHub](https://github.com/lahfir/agent-desktop) |
 | `coder` | 用 Terraform、加密连接、AI Gateway 与审计为开发者和 Coding Agent 供应自托管 workspace；环境存在不等于强隔离。 | [GitHub](https://github.com/coder/coder) |
 | `cc-haha` | 跨平台 Claude Code / Agent 桌面工作台，整合 Worktree、Diff、权限、SubAgent、Computer Use、H5 与 IM；本地优先不等于零外发。 | [GitHub](https://github.com/NanmiCoder/cc-haha) |
 | `freebuff` | 以广告和访问层级支持的 Desktop / CLI / Web / Cloud / Chat coding-agent 产品组；模型路由、OAuth、广告和 data-use 提示须逐次核验。 | [GitHub](https://github.com/CodebuffAI/freebuff) |
@@ -154,6 +155,8 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `tunnel-client` | OpenAI 的客户侧 Secure MCP Tunnel client，以出站连接把私有 MCP 接到 ChatGPT / Codex / API；连接安全不替代工具授权。 | [GitHub](https://github.com/openai/tunnel-client) |
+| `smolvm` | 以独立 guest kernel、OCI image、Smolfile 与 live branch 运行 Agent workload 的轻量 microVM；显式转发能力与 release 供应链须审计。 | [GitHub](https://github.com/smol-machines/smolvm) |
 | `yichen-skills` | 覆盖内容、研究、微信 / 企业微信、本地数据与记忆的个人 Skill 集合；根许可仅限个人学习 / 非商业使用，高权限能力须逐项授权。 | [GitHub](https://github.com/mcncarl/yichen-skills) |
 | `skill-up` | 阿里巴巴的 Agent Skill 评测与演进 CLI，用 YAML、多 engine、judge、报告与 CI 建立回归闭环；须防自动改 eval 过拟合。 | [GitHub](https://github.com/alibaba/skill-up) |
 | `buzz` | Block 的人机协作 relay，把人类、Agent、workflow、Git 与 audit 写入同一签名事件流；rate limit 和部分 workflow 仍未完成。 | [GitHub](https://github.com/block/buzz) |
@@ -386,6 +389,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `hister` | 自托管浏览历史 / 本地文件全文搜索与 MCP，支持可选 semantic endpoint；集中浏览史、远端 embedding 与过期内容须治理。 | [GitHub](https://github.com/asciimoo/hister) |
 | `docling` | 将 PDF、Office、图片、音视频、邮件和专业 XML 解析为统一文档结构；关键表格、公式、阅读顺序和模型许可须回到原证据核验。 | [GitHub](https://github.com/docling-project/docling) |
 | `gitdiagram` | 读取仓库树、README 与有限源码生成可点击架构图；抽样、模型外发和持久 artifact 使私有仓库使用需谨慎。 | [GitHub](https://github.com/ahmedkhaleel2004/gitdiagram) |
 | `code-review-graph` | 用 Tree-sitter、SQLite 图、MCP 与 CI 为 Coding Agent 提供 blast radius 和最小上下文；上游 benchmark 基线与 recall 循环性须保留。 | [GitHub](https://github.com/tirth8205/code-review-graph) |
@@ -478,6 +482,8 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `autoclip` | 以下载 / 上传、AI 时间线和高光评分、FFmpeg、Celery、CLI / MCP 组成自动切片流水线；版权与发布仍须人工确认。 | [GitHub](https://github.com/zhouxiaoka/autoclip) |
+| `OpenCreator` | 复用 Codex loop、Skills 与 MCP 的本地 AI 创作工作区，覆盖视频、图像、语音与版本化 review；provider 数据流和许可须审查。 | [GitHub](https://github.com/krillinai/OpenCreator) |
 | `fugleramme` | 用本地 BirdNET-Go 鸟声识别驱动电子墨水自然图鉴；检测不能替代生态调查，BirdNET 与素材许可证须和 MIT 代码分开审查。 | [GitHub](https://github.com/arnegiacomo/fugleramme) |
 | `youtube-automation-agent` | AgentTube 将研究、脚本、素材、事实/权利审阅、排期和发布做成可恢复的审批优先流水线；OAuth、费用、版本时差和平台政策须独立验收。 | [GitHub](https://github.com/darkzOGx/youtube-automation-agent) |
 | `LocalMiniDrama` | 本地 SQLite / 文件与画布驱动的 AI 短剧工作台；调用外部文本、图像、视频、资产库或图床时，素材仍会离开本机。 | [GitHub](https://github.com/xuanyustudio/LocalMiniDrama) |
@@ -531,6 +537,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `awesome-free-llm-apis` | 汇总带免费层的 LLM provider、model、context 与 quota；“permanent free”、协议兼容、数据使用和限额必须回到官方条款复核。 | [GitHub](https://github.com/mnfst/awesome-free-llm-apis) |
 | `higgsfield` | 将 GPU 调度、ZeRO-3 / FSDP、实验队列和 GitHub 部署接成训练框架；release / manifest 时差与高权限节点安装须先处理。 | [GitHub](https://github.com/higgsfield-ai/higgsfield) |
 | `router` | Weave 的 Anthropic / OpenAI / Gemini 兼容 action-level 模型路由器；hosted / self-hosted 数据流、费用口径、公开 benchmark 与 ELv2 须分别审查。 | [GitHub](https://github.com/weave-os/router) |
 | `gpt-load` | 集中管理多 provider、API/OAuth 凭据、协议、路由和用量的自托管网关；2.0 RC 不可原地迁移 1.x，集中密钥面须治理。 | [GitHub](https://github.com/tbphp/gpt-load) |
@@ -595,6 +602,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `modern-software-dev-assignments` | Stanford CS146S 八周 AI 软件开发作业，覆盖 prompting、MCP、Agent、Semgrep、AI review 与多 stack build；年份、依赖和无 LICENSE 须复核。 | [GitHub](https://github.com/mihail911/modern-software-dev-assignments) |
 | `dictionary-of-ai-coding` | 将 model、context、tool、handoff、memory 和工作模式整理为通俗词典；术语漂移、来源与无 LICENSE 再利用边界须复核。 | [GitHub](https://github.com/mattpocock/dictionary-of-ai-coding) |
 | `all-agentic-architectures` | 用统一 Python contract 与 notebooks 实现 35 种 agent pattern；17-task 自报 benchmark 适合作为 A/B 起点，不是生产可靠性证明。 | [GitHub](https://github.com/FareedKhan-dev/all-agentic-architectures) |
 | `dive-into-llms` | 中文大模型课件、教程与 notebook，覆盖微调、知识编辑、多模态、GUI agent 和安全；依赖时效与缺失根许可证须核验。 | [GitHub](https://github.com/Lordog/dive-into-llms) |
@@ -674,6 +682,7 @@
 
 - 全量项目目录：[`projects/`](./projects/)
 - 最近日报：
+  - [`2026-09-21`](./daily/2026-09-21/ai-hotspots.md)
   - [`2026-09-20`](./daily/2026-09-20/ai-hotspots.md)
   - [`2026-09-19`](./daily/2026-09-19/ai-hotspots.md)
   - [`2026-09-18`](./daily/2026-09-18/ai-hotspots.md)
@@ -760,10 +769,10 @@
 ## 当前状态
 
 - 状态：持续日更中。
-- 最新更新：`2026-09-20`。
-- 当前项目总数：`695`。
-- 最近新增项目：`coder`、`OpenStock`、`higgsfield`、`docling`、
-  `json-render`、`gitdiagram`、`yichen-skills`、`chinese-novelist-skill`。
+- 最新更新：`2026-09-21`。
+- 当前项目总数：`703`。
+- 最近新增项目：`agent-desktop`、`tunnel-client`、`smolvm`、`hister`、
+  `autoclip`、`OpenCreator`、`awesome-free-llm-apis`、`modern-software-dev-assignments`。
 - 覆盖平台：GitHub、X、Instagram、YouTube。
 
 ## 维护约定
