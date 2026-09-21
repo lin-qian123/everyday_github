@@ -49,7 +49,7 @@
 
 如果你是第一次进入这个仓库，建议从这几个入口开始：
 
-- 最新日报：[`daily/2026-09-21/ai-hotspots.md`](./daily/2026-09-21/ai-hotspots.md)
+- 最新日报：[`daily/2026-09-22/ai-hotspots.md`](./daily/2026-09-22/ai-hotspots.md)
 - 项目总目录：[`projects/`](./projects/)
 - 自动化约束：[`AGENTS.md`](./AGENTS.md)
 - 开发续接记录：[`TODO.md`](./TODO.md)
@@ -74,6 +74,8 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `claude-code-templates` | Claude Code 的第三方 agents / hooks / MCP / skills / settings 目录与安装器；组件来源、权限、许可和 tunnel 数据边界须逐项审计。 | [GitHub](https://github.com/davila7/claude-code-templates) |
+| `destructive_command_guard` | 在多类 coding-agent 执行前拦截危险 shell / git 命令的 Rust hook；不是 sandbox，且自定义 OpenAI / Anthropic rider 有实质采用限制。 | [GitHub](https://github.com/Dicklesworthstone/destructive_command_guard) |
 | `agent-desktop` | 基于 macOS Accessibility tree、qualified refs、actionability 与 session trace 的桌面 Agent CLI；高权限 UI 动作仍须外部审批。 | [GitHub](https://github.com/lahfir/agent-desktop) |
 | `coder` | 用 Terraform、加密连接、AI Gateway 与审计为开发者和 Coding Agent 供应自托管 workspace；环境存在不等于强隔离。 | [GitHub](https://github.com/coder/coder) |
 | `cc-haha` | 跨平台 Claude Code / Agent 桌面工作台，整合 Worktree、Diff、权限、SubAgent、Computer Use、H5 与 IM；本地优先不等于零外发。 | [GitHub](https://github.com/NanmiCoder/cc-haha) |
@@ -155,6 +157,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `substrate` | 在 Kubernetes 上复用 worker、快照与路由来运行大量有状态 Agent 的执行底座；早期 threat model 明写当前实现几乎未安全加固。 | [GitHub](https://github.com/agent-substrate/substrate) |
 | `tunnel-client` | OpenAI 的客户侧 Secure MCP Tunnel client，以出站连接把私有 MCP 接到 ChatGPT / Codex / API；连接安全不替代工具授权。 | [GitHub](https://github.com/openai/tunnel-client) |
 | `smolvm` | 以独立 guest kernel、OCI image、Smolfile 与 live branch 运行 Agent workload 的轻量 microVM；显式转发能力与 release 供应链须审计。 | [GitHub](https://github.com/smol-machines/smolvm) |
 | `yichen-skills` | 覆盖内容、研究、微信 / 企业微信、本地数据与记忆的个人 Skill 集合；根许可仅限个人学习 / 非商业使用，高权限能力须逐项授权。 | [GitHub](https://github.com/mcncarl/yichen-skills) |
@@ -389,6 +392,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `Crucix` | 聚合 27 类开放情报源、delta、告警与可选 LLM 的个人情报 dashboard；本地托管不等于外部 feed / 模型零外发。 | [GitHub](https://github.com/calesthio/Crucix) |
 | `hister` | 自托管浏览历史 / 本地文件全文搜索与 MCP，支持可选 semantic endpoint；集中浏览史、远端 embedding 与过期内容须治理。 | [GitHub](https://github.com/asciimoo/hister) |
 | `docling` | 将 PDF、Office、图片、音视频、邮件和专业 XML 解析为统一文档结构；关键表格、公式、阅读顺序和模型许可须回到原证据核验。 | [GitHub](https://github.com/docling-project/docling) |
 | `gitdiagram` | 读取仓库树、README 与有限源码生成可点击架构图；抽样、模型外发和持久 artifact 使私有仓库使用需谨慎。 | [GitHub](https://github.com/ahmedkhaleel2004/gitdiagram) |
@@ -435,6 +439,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `thinking-orbs` | 以 Canvas 2D、九种语义状态、reduced motion 与主题适配呈现 Agent 工作反馈；动效不是任务进度或真实推理证据。 | [GitHub](https://github.com/Jakubantalik/thinking-orbs) |
 | `json-render` | 用 component catalog、schema 与多端 renderer 约束 Generative UI；组件 allowlist 不等于 action 副作用安全。 | [GitHub](https://github.com/vercel-labs/json-render) |
 | `plannotator` | 为 Agent 计划、文档、HTML 与 Diff 提供本地浏览器批注和结构化反馈；Ask AI、URL 抓取、分享与 hosted Workspaces 是不同数据边界。 | [GitHub](https://github.com/backnotprop/plannotator) |
 | `ux-ui-agent-skills` | DTCG token、19 skills、5 commands 与 rendered gates 组成的 Claude 设计知识层；gate 通过不等于审美或可用性。 | [GitHub](https://github.com/plugin87/ux-ui-agent-skills) |
@@ -537,6 +542,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `new-api` | 统一 OpenAI / Responses / Anthropic / Gemini 协议、路由、认证、配额与计费的自托管 AI gateway；协议转换和集中密钥须回归审计。 | [GitHub](https://github.com/QuantumNous/new-api) |
 | `awesome-free-llm-apis` | 汇总带免费层的 LLM provider、model、context 与 quota；“permanent free”、协议兼容、数据使用和限额必须回到官方条款复核。 | [GitHub](https://github.com/mnfst/awesome-free-llm-apis) |
 | `higgsfield` | 将 GPU 调度、ZeRO-3 / FSDP、实验队列和 GitHub 部署接成训练框架；release / manifest 时差与高权限节点安装须先处理。 | [GitHub](https://github.com/higgsfield-ai/higgsfield) |
 | `router` | Weave 的 Anthropic / OpenAI / Gemini 兼容 action-level 模型路由器；hosted / self-hosted 数据流、费用口径、公开 benchmark 与 ELv2 须分别审查。 | [GitHub](https://github.com/weave-os/router) |
@@ -616,6 +622,8 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `easyeda-agent` | 用 typed actions、Connector、写前守卫和写后回读让 Agent 操作 EasyEDA Pro；DRC 不等于实物电气、安规或制造验证。 | [GitHub](https://github.com/zhoushoujianwork/easyeda-agent) |
+| `PanWatch` | 自托管多市场持仓、指标、TradingAgents、模拟盘与通知工作台；多 Agent 分析不是持牌投资建议或收益证明。 | [GitHub](https://github.com/TNT-Likely/PanWatch) |
 | `OpenStock` | 股票观察、图表、提醒与可选 AI 邮件 / 新闻摘要应用；不是券商或投资顾问，行情可能延迟。 | [GitHub](https://github.com/Open-Dev-Society/OpenStock) |
 | `chinese-novelist-skill` | 用问答、大纲、人物、持久计划和多 Agent 生成中文长篇；字数与自评不证明原创性、版权或文学质量。 | [GitHub](https://github.com/PenglongHuang/chinese-novelist-skill) |
 | `power-platform-skills` | 微软官方 Power Platform Agent 插件市场，覆盖 Pages、Apps、MCP、Canvas 与 Automate；真实租户权限、自动更新和 telemetry 须治理。 | [GitHub](https://github.com/microsoft/power-platform-skills) |
@@ -682,6 +690,7 @@
 
 - 全量项目目录：[`projects/`](./projects/)
 - 最近日报：
+  - [`2026-09-22`](./daily/2026-09-22/ai-hotspots.md)
   - [`2026-09-21`](./daily/2026-09-21/ai-hotspots.md)
   - [`2026-09-20`](./daily/2026-09-20/ai-hotspots.md)
   - [`2026-09-19`](./daily/2026-09-19/ai-hotspots.md)
@@ -769,10 +778,10 @@
 ## 当前状态
 
 - 状态：持续日更中。
-- 最新更新：`2026-09-21`。
-- 当前项目总数：`703`。
-- 最近新增项目：`agent-desktop`、`tunnel-client`、`smolvm`、`hister`、
-  `autoclip`、`OpenCreator`、`awesome-free-llm-apis`、`modern-software-dev-assignments`。
+- 最新更新：`2026-09-22`。
+- 当前项目总数：`711`。
+- 最近新增项目：`substrate`、`thinking-orbs`、`Crucix`、`easyeda-agent`、
+  `PanWatch`、`new-api`、`claude-code-templates`、`destructive_command_guard`。
 - 覆盖平台：GitHub、X、Instagram、YouTube。
 
 ## 维护约定
