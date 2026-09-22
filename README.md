@@ -49,7 +49,7 @@
 
 如果你是第一次进入这个仓库，建议从这几个入口开始：
 
-- 最新日报：[`daily/2026-09-22/ai-hotspots.md`](./daily/2026-09-22/ai-hotspots.md)
+- 最新日报：[`daily/2026-09-23/ai-hotspots.md`](./daily/2026-09-23/ai-hotspots.md)
 - 项目总目录：[`projects/`](./projects/)
 - 自动化约束：[`AGENTS.md`](./AGENTS.md)
 - 开发续接记录：[`TODO.md`](./TODO.md)
@@ -157,6 +157,8 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `treg` | 面向 Agent 工具的 registry、credential relay 与按次计费目录；集中 secret / 执行权限、扫描上传和非标准 hosted-service 许可须严格治理。 | [GitHub](https://github.com/superdesigndev/treg) |
+| `nasiko` | 统一 A2A、MCP、LLM router、OCI registry、flow guard 和 trace 的自托管多 Agent 控制面；用户级 hook / 路由与容器隔离须实测。 | [GitHub](https://github.com/Nasiko-Labs/nasiko) |
 | `substrate` | 在 Kubernetes 上复用 worker、快照与路由来运行大量有状态 Agent 的执行底座；早期 threat model 明写当前实现几乎未安全加固。 | [GitHub](https://github.com/agent-substrate/substrate) |
 | `tunnel-client` | OpenAI 的客户侧 Secure MCP Tunnel client，以出站连接把私有 MCP 接到 ChatGPT / Codex / API；连接安全不替代工具授权。 | [GitHub](https://github.com/openai/tunnel-client) |
 | `smolvm` | 以独立 guest kernel、OCI image、Smolfile 与 live branch 运行 Agent workload 的轻量 microVM；显式转发能力与 release 供应链须审计。 | [GitHub](https://github.com/smol-machines/smolvm) |
@@ -392,6 +394,9 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `helix-db` | 面向知识图谱、RAG 与 Agent memory 的 graph-vector database；一键 chef、Cloud 数据边界和多组件版本须固定审计。 | [GitHub](https://github.com/HelixDB/helix-db) |
+| `hydradb` | 以对象存储为持久层、分离 data node / indexer 的分布式图数据库；一致性、故障恢复、Bolt 差分和 AGPL 义务须复现。 | [GitHub](https://github.com/hydra-db/hydradb) |
+| `bkn-foundry` | 用 ontology、Context Loader、policy、execution 与 trace 构建企业 Agent 知识 / 执行后端；作者 benchmark 与多许可证须独立核验。 | [GitHub](https://github.com/openbkn-ai/bkn-foundry) |
 | `Crucix` | 聚合 27 类开放情报源、delta、告警与可选 LLM 的个人情报 dashboard；本地托管不等于外部 feed / 模型零外发。 | [GitHub](https://github.com/calesthio/Crucix) |
 | `hister` | 自托管浏览历史 / 本地文件全文搜索与 MCP，支持可选 semantic endpoint；集中浏览史、远端 embedding 与过期内容须治理。 | [GitHub](https://github.com/asciimoo/hister) |
 | `docling` | 将 PDF、Office、图片、音视频、邮件和专业 XML 解析为统一文档结构；关键表格、公式、阅读顺序和模型许可须回到原证据核验。 | [GitHub](https://github.com/docling-project/docling) |
@@ -622,6 +627,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `univer` | 可嵌入的 Office SDK，以插件、公式、Canvas、Facade 与 Headless 支撑人 / Agent 共编；开源核心、Pro 和最终语义 / 视觉验收须分层。 | [GitHub](https://github.com/dream-num/univer) |
 | `easyeda-agent` | 用 typed actions、Connector、写前守卫和写后回读让 Agent 操作 EasyEDA Pro；DRC 不等于实物电气、安规或制造验证。 | [GitHub](https://github.com/zhoushoujianwork/easyeda-agent) |
 | `PanWatch` | 自托管多市场持仓、指标、TradingAgents、模拟盘与通知工作台；多 Agent 分析不是持牌投资建议或收益证明。 | [GitHub](https://github.com/TNT-Likely/PanWatch) |
 | `OpenStock` | 股票观察、图表、提醒与可选 AI 邮件 / 新闻摘要应用；不是券商或投资顾问，行情可能延迟。 | [GitHub](https://github.com/Open-Dev-Society/OpenStock) |
@@ -690,6 +696,7 @@
 
 - 全量项目目录：[`projects/`](./projects/)
 - 最近日报：
+  - [`2026-09-23`](./daily/2026-09-23/ai-hotspots.md)
   - [`2026-09-22`](./daily/2026-09-22/ai-hotspots.md)
   - [`2026-09-21`](./daily/2026-09-21/ai-hotspots.md)
   - [`2026-09-20`](./daily/2026-09-20/ai-hotspots.md)
@@ -778,10 +785,9 @@
 ## 当前状态
 
 - 状态：持续日更中。
-- 最新更新：`2026-09-22`。
-- 当前项目总数：`711`。
-- 最近新增项目：`substrate`、`thinking-orbs`、`Crucix`、`easyeda-agent`、
-  `PanWatch`、`new-api`、`claude-code-templates`、`destructive_command_guard`。
+- 最新更新：`2026-09-23`。
+- 当前项目总数：`717`。
+- 最近新增项目：`univer`、`treg`、`nasiko`、`helix-db`、`hydradb`、`bkn-foundry`。
 - 覆盖平台：GitHub、X、Instagram、YouTube。
 
 ## 维护约定
