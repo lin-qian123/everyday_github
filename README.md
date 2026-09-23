@@ -49,7 +49,7 @@
 
 如果你是第一次进入这个仓库，建议从这几个入口开始：
 
-- 最新日报：[`daily/2026-09-23/ai-hotspots.md`](./daily/2026-09-23/ai-hotspots.md)
+- 最新日报：[`daily/2026-09-24/ai-hotspots.md`](./daily/2026-09-24/ai-hotspots.md)
 - 项目总目录：[`projects/`](./projects/)
 - 自动化约束：[`AGENTS.md`](./AGENTS.md)
 - 开发续接记录：[`TODO.md`](./TODO.md)
@@ -74,6 +74,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `gortex` | 面向 Coding Agent / IDE 的本地多仓库代码 graph、SQLite 增量索引与 CLI / MCP；作者 benchmark、动态语义和网络可选项须独立验证。 | [GitHub](https://github.com/zzet/gortex) |
 | `claude-code-templates` | Claude Code 的第三方 agents / hooks / MCP / skills / settings 目录与安装器；组件来源、权限、许可和 tunnel 数据边界须逐项审计。 | [GitHub](https://github.com/davila7/claude-code-templates) |
 | `destructive_command_guard` | 在多类 coding-agent 执行前拦截危险 shell / git 命令的 Rust hook；不是 sandbox，且自定义 OpenAI / Anthropic rider 有实质采用限制。 | [GitHub](https://github.com/Dicklesworthstone/destructive_command_guard) |
 | `agent-desktop` | 基于 macOS Accessibility tree、qualified refs、actionability 与 session trace 的桌面 Agent CLI；高权限 UI 动作仍须外部审批。 | [GitHub](https://github.com/lahfir/agent-desktop) |
@@ -157,6 +158,8 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `portal-ai-plugins` | Spotify Portal 的官方 Claude Code / Codex / Cursor plugin marketplace；认证、生产 actions、AiKA 数据流和无 Release 版本固定须治理。 | [GitHub](https://github.com/spotify/portal-ai-plugins) |
+| `microsandbox` | 以本地 microVM、OCI、snapshot / branch 与多语言 SDK 隔离 Agent workload；beta、egress、secret、volume 和安装供应链须对抗验证。 | [GitHub](https://github.com/superradcompany/microsandbox) |
 | `treg` | 面向 Agent 工具的 registry、credential relay 与按次计费目录；集中 secret / 执行权限、扫描上传和非标准 hosted-service 许可须严格治理。 | [GitHub](https://github.com/superdesigndev/treg) |
 | `nasiko` | 统一 A2A、MCP、LLM router、OCI registry、flow guard 和 trace 的自托管多 Agent 控制面；用户级 hook / 路由与容器隔离须实测。 | [GitHub](https://github.com/Nasiko-Labs/nasiko) |
 | `substrate` | 在 Kubernetes 上复用 worker、快照与路由来运行大量有状态 Agent 的执行底座；早期 threat model 明写当前实现几乎未安全加固。 | [GitHub](https://github.com/agent-substrate/substrate) |
@@ -344,6 +347,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `agent-beacon` | 跨 harness 采集 Agent session、统一为 OTel / JSONL 并抽取可审阅记忆；完整内容 retention、Managed 转发和 redaction 须严格治理。 | [GitHub](https://github.com/Asymptote-Labs/agent-beacon) |
 | `Memoh` | 为每个 Agent 提供持久 workspace container、长期记忆、浏览器、桌面、MCP 与渠道；容器、egress 和凭据隔离须独立验证。 | [GitHub](https://github.com/felinics/Memoh) |
 | `Octop` | 自托管多人、多 Agent 助手控制面，整合 IM、RAG、memory、browser、remote desktop 与 ACP；self-hosted 不等于外部 provider 零外发。 | [GitHub](https://github.com/TencentCloud/Octop) |
 | `OpenContext` | 跨 Codex、Claude Code、OpenCode 等宿主的个人 context store、MCP、skills 与 GUI；全局记忆会放大越界、过期和敏感信息风险。 | [GitHub](https://github.com/0xranx/OpenContext) |
@@ -492,6 +496,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `spirula-studio` | 跨 NVIDIA / AMD / Intel / Apple GPU 的一体化 3DGS 训练、SfM、AI masking 与 mesh 工具；画质、影像权利、SAM 和视频专利须分别审查。 | [GitHub](https://github.com/harry7557558/spirula-studio) |
 | `autoclip` | 以下载 / 上传、AI 时间线和高光评分、FFmpeg、Celery、CLI / MCP 组成自动切片流水线；版权与发布仍须人工确认。 | [GitHub](https://github.com/zhouxiaoka/autoclip) |
 | `OpenCreator` | 复用 Codex loop、Skills 与 MCP 的本地 AI 创作工作区，覆盖视频、图像、语音与版本化 review；provider 数据流和许可须审查。 | [GitHub](https://github.com/krillinai/OpenCreator) |
 | `fugleramme` | 用本地 BirdNET-Go 鸟声识别驱动电子墨水自然图鉴；检测不能替代生态调查，BirdNET 与素材许可证须和 MIT 代码分开审查。 | [GitHub](https://github.com/arnegiacomo/fugleramme) |
@@ -547,6 +552,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `Atomic-Chat` | 将 llama.cpp / MLX 等本地推理统一为桌面应用和 OpenAI-compatible endpoint；cloud / MCP / LAN 数据边界、模型许可和版本漂移须实测。 | [GitHub](https://github.com/AtomicBot-ai/Atomic-Chat) |
 | `new-api` | 统一 OpenAI / Responses / Anthropic / Gemini 协议、路由、认证、配额与计费的自托管 AI gateway；协议转换和集中密钥须回归审计。 | [GitHub](https://github.com/QuantumNous/new-api) |
 | `awesome-free-llm-apis` | 汇总带免费层的 LLM provider、model、context 与 quota；“permanent free”、协议兼容、数据使用和限额必须回到官方条款复核。 | [GitHub](https://github.com/mnfst/awesome-free-llm-apis) |
 | `higgsfield` | 将 GPU 调度、ZeRO-3 / FSDP、实验队列和 GitHub 部署接成训练框架；release / manifest 时差与高权限节点安装须先处理。 | [GitHub](https://github.com/higgsfield-ai/higgsfield) |
@@ -696,6 +702,7 @@
 
 - 全量项目目录：[`projects/`](./projects/)
 - 最近日报：
+  - [`2026-09-24`](./daily/2026-09-24/ai-hotspots.md)
   - [`2026-09-23`](./daily/2026-09-23/ai-hotspots.md)
   - [`2026-09-22`](./daily/2026-09-22/ai-hotspots.md)
   - [`2026-09-21`](./daily/2026-09-21/ai-hotspots.md)
@@ -785,9 +792,9 @@
 ## 当前状态
 
 - 状态：持续日更中。
-- 最新更新：`2026-09-23`。
-- 当前项目总数：`717`。
-- 最近新增项目：`univer`、`treg`、`nasiko`、`helix-db`、`hydradb`、`bkn-foundry`。
+- 最新更新：`2026-09-24`。
+- 当前项目总数：`723`。
+- 最近新增项目：`spirula-studio`、`portal-ai-plugins`、`Atomic-Chat`、`agent-beacon`、`gortex`、`microsandbox`。
 - 覆盖平台：GitHub、X、Instagram、YouTube。
 
 ## 维护约定
