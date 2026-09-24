@@ -49,7 +49,7 @@
 
 如果你是第一次进入这个仓库，建议从这几个入口开始：
 
-- 最新日报：[`daily/2026-09-24/ai-hotspots.md`](./daily/2026-09-24/ai-hotspots.md)
+- 最新日报：[`daily/2026-09-25/ai-hotspots.md`](./daily/2026-09-25/ai-hotspots.md)
 - 项目总目录：[`projects/`](./projects/)
 - 自动化约束：[`AGENTS.md`](./AGENTS.md)
 - 开发续接记录：[`TODO.md`](./TODO.md)
@@ -74,6 +74,8 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `zeron` | Claude Code、Codex、Cursor 等 coding agents 的本地优先控制面；可选 sync 会把同账户设备提升为可读写 workspace 的互信节点。 | [GitHub](https://github.com/zeronsh/zeron) |
+| `Step-Code` | Step provider 的终端 coding agent，整合 MCP / Skill / plugin、`/goal`、`/cron` 与 StepPage；无 sandbox，须外部隔离。 | [GitHub](https://github.com/stepfun-ai/Step-Code) |
 | `gortex` | 面向 Coding Agent / IDE 的本地多仓库代码 graph、SQLite 增量索引与 CLI / MCP；作者 benchmark、动态语义和网络可选项须独立验证。 | [GitHub](https://github.com/zzet/gortex) |
 | `claude-code-templates` | Claude Code 的第三方 agents / hooks / MCP / skills / settings 目录与安装器；组件来源、权限、许可和 tunnel 数据边界须逐项审计。 | [GitHub](https://github.com/davila7/claude-code-templates) |
 | `destructive_command_guard` | 在多类 coding-agent 执行前拦截危险 shell / git 命令的 Rust hook；不是 sandbox，且自定义 OpenAI / Anthropic rider 有实质采用限制。 | [GitHub](https://github.com/Dicklesworthstone/destructive_command_guard) |
@@ -158,6 +160,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `starnet` | 用像素风 station 投影真实多 Agent、能力、预算、交接和交付；local-first 外发项、明文状态与无人值守执行须审计。 | [GitHub](https://github.com/androoAGI/starnet) |
 | `portal-ai-plugins` | Spotify Portal 的官方 Claude Code / Codex / Cursor plugin marketplace；认证、生产 actions、AiKA 数据流和无 Release 版本固定须治理。 | [GitHub](https://github.com/spotify/portal-ai-plugins) |
 | `microsandbox` | 以本地 microVM、OCI、snapshot / branch 与多语言 SDK 隔离 Agent workload；beta、egress、secret、volume 和安装供应链须对抗验证。 | [GitHub](https://github.com/superradcompany/microsandbox) |
 | `treg` | 面向 Agent 工具的 registry、credential relay 与按次计费目录；集中 secret / 执行权限、扫描上传和非标准 hosted-service 许可须严格治理。 | [GitHub](https://github.com/superdesigndev/treg) |
@@ -347,6 +350,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `hindsight` | 以 retain / recall / reflect 和 memory bank 为多类 Agent 提供长期记忆；自动采集、provider 外发、bank 隔离和 benchmark 须验证。 | [GitHub](https://github.com/vectorize-io/hindsight) |
 | `agent-beacon` | 跨 harness 采集 Agent session、统一为 OTel / JSONL 并抽取可审阅记忆；完整内容 retention、Managed 转发和 redaction 须严格治理。 | [GitHub](https://github.com/Asymptote-Labs/agent-beacon) |
 | `Memoh` | 为每个 Agent 提供持久 workspace container、长期记忆、浏览器、桌面、MCP 与渠道；容器、egress 和凭据隔离须独立验证。 | [GitHub](https://github.com/felinics/Memoh) |
 | `Octop` | 自托管多人、多 Agent 助手控制面，整合 IM、RAG、memory、browser、remote desktop 与 ACP；self-hosted 不等于外部 provider 零外发。 | [GitHub](https://github.com/TencentCloud/Octop) |
@@ -398,6 +402,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `llm-wiki-compiler` | 把原始材料编译为 citation-aware typed wiki，并提供 hybrid retrieval、lifecycle gate、MCP / SDK / OKF；持久化错误与版本兼容须审阅。 | [GitHub](https://github.com/atomicstrata/llm-wiki-compiler) |
 | `helix-db` | 面向知识图谱、RAG 与 Agent memory 的 graph-vector database；一键 chef、Cloud 数据边界和多组件版本须固定审计。 | [GitHub](https://github.com/HelixDB/helix-db) |
 | `hydradb` | 以对象存储为持久层、分离 data node / indexer 的分布式图数据库；一致性、故障恢复、Bolt 差分和 AGPL 义务须复现。 | [GitHub](https://github.com/hydra-db/hydradb) |
 | `bkn-foundry` | 用 ontology、Context Loader、policy、execution 与 trace 构建企业 Agent 知识 / 执行后端；作者 benchmark 与多许可证须独立核验。 | [GitHub](https://github.com/openbkn-ai/bkn-foundry) |
@@ -496,6 +501,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `stable-diffusion.cpp` | 基于 ggml 的纯 C++ diffusion runtime，跨 CPU / CUDA / Vulkan / Metal 等运行图像与视频模型；模型权利、backend 差异和滚动 API 须治理。 | [GitHub](https://github.com/leejet/stable-diffusion.cpp) |
 | `spirula-studio` | 跨 NVIDIA / AMD / Intel / Apple GPU 的一体化 3DGS 训练、SfM、AI masking 与 mesh 工具；画质、影像权利、SAM 和视频专利须分别审查。 | [GitHub](https://github.com/harry7557558/spirula-studio) |
 | `autoclip` | 以下载 / 上传、AI 时间线和高光评分、FFmpeg、Celery、CLI / MCP 组成自动切片流水线；版权与发布仍须人工确认。 | [GitHub](https://github.com/zhouxiaoka/autoclip) |
 | `OpenCreator` | 复用 Codex loop、Skills 与 MCP 的本地 AI 创作工作区，覆盖视频、图像、语音与版本化 review；provider 数据流和许可须审查。 | [GitHub](https://github.com/krillinai/OpenCreator) |
@@ -552,6 +558,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `Model-Optimizer` | NVIDIA 的量化、QAT、剪枝、蒸馏、speculative decoding 与多 backend export 工具库；性能、质量回归、版本和第三方许可须固定实测。 | [GitHub](https://github.com/NVIDIA/Model-Optimizer) |
 | `Atomic-Chat` | 将 llama.cpp / MLX 等本地推理统一为桌面应用和 OpenAI-compatible endpoint；cloud / MCP / LAN 数据边界、模型许可和版本漂移须实测。 | [GitHub](https://github.com/AtomicBot-ai/Atomic-Chat) |
 | `new-api` | 统一 OpenAI / Responses / Anthropic / Gemini 协议、路由、认证、配额与计费的自托管 AI gateway；协议转换和集中密钥须回归审计。 | [GitHub](https://github.com/QuantumNous/new-api) |
 | `awesome-free-llm-apis` | 汇总带免费层的 LLM provider、model、context 与 quota；“permanent free”、协议兼容、数据使用和限额必须回到官方条款复核。 | [GitHub](https://github.com/mnfst/awesome-free-llm-apis) |
@@ -633,6 +640,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `laya` | 聚合邮件、聊天、issue、日历与 coding-agent workspace 的 local-first Action Card 控制面；连接器、自动 egress、n8n 与集中敏感数据须治理。 | [GitHub](https://github.com/aayushch/laya) |
 | `univer` | 可嵌入的 Office SDK，以插件、公式、Canvas、Facade 与 Headless 支撑人 / Agent 共编；开源核心、Pro 和最终语义 / 视觉验收须分层。 | [GitHub](https://github.com/dream-num/univer) |
 | `easyeda-agent` | 用 typed actions、Connector、写前守卫和写后回读让 Agent 操作 EasyEDA Pro；DRC 不等于实物电气、安规或制造验证。 | [GitHub](https://github.com/zhoushoujianwork/easyeda-agent) |
 | `PanWatch` | 自托管多市场持仓、指标、TradingAgents、模拟盘与通知工作台；多 Agent 分析不是持牌投资建议或收益证明。 | [GitHub](https://github.com/TNT-Likely/PanWatch) |
@@ -702,6 +710,7 @@
 
 - 全量项目目录：[`projects/`](./projects/)
 - 最近日报：
+  - [`2026-09-25`](./daily/2026-09-25/ai-hotspots.md)
   - [`2026-09-24`](./daily/2026-09-24/ai-hotspots.md)
   - [`2026-09-23`](./daily/2026-09-23/ai-hotspots.md)
   - [`2026-09-22`](./daily/2026-09-22/ai-hotspots.md)
@@ -792,9 +801,9 @@
 ## 当前状态
 
 - 状态：持续日更中。
-- 最新更新：`2026-09-24`。
-- 当前项目总数：`723`。
-- 最近新增项目：`spirula-studio`、`portal-ai-plugins`、`Atomic-Chat`、`agent-beacon`、`gortex`、`microsandbox`。
+- 最新更新：`2026-09-25`。
+- 当前项目总数：`731`。
+- 最近新增项目：`hindsight`、`starnet`、`laya`、`zeron`、`Step-Code`、`llm-wiki-compiler`、`Model-Optimizer`、`stable-diffusion.cpp`。
 - 覆盖平台：GitHub、X、Instagram、YouTube。
 
 ## 维护约定
