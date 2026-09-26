@@ -49,7 +49,7 @@
 
 如果你是第一次进入这个仓库，建议从这几个入口开始：
 
-- 最新日报：[`daily/2026-09-25/ai-hotspots.md`](./daily/2026-09-25/ai-hotspots.md)
+- 最新日报：[`daily/2026-09-26/ai-hotspots.md`](./daily/2026-09-26/ai-hotspots.md)
 - 项目总目录：[`projects/`](./projects/)
 - 自动化约束：[`AGENTS.md`](./AGENTS.md)
 - 开发续接记录：[`TODO.md`](./TODO.md)
@@ -74,6 +74,8 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `desktop-cc-gui` | 用 Tauri / Rust 专用 adapter 汇总 Claude Code、Codex、OpenCode 等十类 CLI 的 session、权限、provider 与 Git UI；GUI 不是 sandbox，根许可证仍待补齐。 | [GitHub](https://github.com/zhukunpenglinyutong/desktop-cc-gui) |
+| `ai-usagebar` | 聚合 Claude、Codex、Copilot、OpenRouter 等套餐用量的 Waybar / TUI / tray 工具；会读取或刷新高价值 CLI / Keychain 凭据。 | [GitHub](https://github.com/akitaonrails/ai-usagebar) |
 | `zeron` | Claude Code、Codex、Cursor 等 coding agents 的本地优先控制面；可选 sync 会把同账户设备提升为可读写 workspace 的互信节点。 | [GitHub](https://github.com/zeronsh/zeron) |
 | `Step-Code` | Step provider 的终端 coding agent，整合 MCP / Skill / plugin、`/goal`、`/cron` 与 StepPage；无 sandbox，须外部隔离。 | [GitHub](https://github.com/stepfun-ai/Step-Code) |
 | `gortex` | 面向 Coding Agent / IDE 的本地多仓库代码 graph、SQLite 增量索引与 CLI / MCP；作者 benchmark、动态语义和网络可选项须独立验证。 | [GitHub](https://github.com/zzet/gortex) |
@@ -160,6 +162,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `openrig` | 用 RigSpec、稳定 seat、tmux、daemon、队列和快照编排 Claude Code / Codex 团队；会写用户级 trust、hooks 与 skills，控制面不是 sandbox。 | [GitHub](https://github.com/mvschwarz/openrig) |
 | `starnet` | 用像素风 station 投影真实多 Agent、能力、预算、交接和交付；local-first 外发项、明文状态与无人值守执行须审计。 | [GitHub](https://github.com/androoAGI/starnet) |
 | `portal-ai-plugins` | Spotify Portal 的官方 Claude Code / Codex / Cursor plugin marketplace；认证、生产 actions、AiKA 数据流和无 Release 版本固定须治理。 | [GitHub](https://github.com/spotify/portal-ai-plugins) |
 | `microsandbox` | 以本地 microVM、OCI、snapshot / branch 与多语言 SDK 隔离 Agent workload；beta、egress、secret、volume 和安装供应链须对抗验证。 | [GitHub](https://github.com/superradcompany/microsandbox) |
@@ -501,6 +504,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `audio.cpp` | 基于 ggml 的原生 C++ 音频推理框架，统一 TTS / ASR / 克隆 / 转换 / 音乐等模型；权重许可、声音同意、backend 与性能须逐模型复核。 | [GitHub](https://github.com/0xShug0/audio.cpp) |
 | `stable-diffusion.cpp` | 基于 ggml 的纯 C++ diffusion runtime，跨 CPU / CUDA / Vulkan / Metal 等运行图像与视频模型；模型权利、backend 差异和滚动 API 须治理。 | [GitHub](https://github.com/leejet/stable-diffusion.cpp) |
 | `spirula-studio` | 跨 NVIDIA / AMD / Intel / Apple GPU 的一体化 3DGS 训练、SfM、AI masking 与 mesh 工具；画质、影像权利、SAM 和视频专利须分别审查。 | [GitHub](https://github.com/harry7557558/spirula-studio) |
 | `autoclip` | 以下载 / 上传、AI 时间线和高光评分、FFmpeg、Celery、CLI / MCP 组成自动切片流水线；版权与发布仍须人工确认。 | [GitHub](https://github.com/zhouxiaoka/autoclip) |
@@ -558,6 +562,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `nobodywho` | 用 Rust core、llama.cpp 与 ONNX Runtime 向 Python / Kotlin / Swift / RN / Flutter / Godot 暴露本地多模态推理；binding、模型与设备矩阵须固定。 | [GitHub](https://github.com/nobodywho-ooo/nobodywho) |
 | `Model-Optimizer` | NVIDIA 的量化、QAT、剪枝、蒸馏、speculative decoding 与多 backend export 工具库；性能、质量回归、版本和第三方许可须固定实测。 | [GitHub](https://github.com/NVIDIA/Model-Optimizer) |
 | `Atomic-Chat` | 将 llama.cpp / MLX 等本地推理统一为桌面应用和 OpenAI-compatible endpoint；cloud / MCP / LAN 数据边界、模型许可和版本漂移须实测。 | [GitHub](https://github.com/AtomicBot-ai/Atomic-Chat) |
 | `new-api` | 统一 OpenAI / Responses / Anthropic / Gemini 协议、路由、认证、配额与计费的自托管 AI gateway；协议转换和集中密钥须回归审计。 | [GitHub](https://github.com/QuantumNous/new-api) |
@@ -640,6 +645,9 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `follow-builders` | 把 X、YouTube 与博客内容汇入公共 feed，再由本地 Agent 生成 digest；来源策展、转录、中心服务、注入与交付渠道须治理。 | [GitHub](https://github.com/zarazhangrui/follow-builders) |
+| `Pentest-Swarm-AI` | 用共享 blackboard、pheromone 和真实安全工具运行 offensive Agent swarm；alpha 级高危工具，只可在书面授权范围与隔离靶场中使用。 | [GitHub](https://github.com/Armur-Ai/Pentest-Swarm-AI) |
+| `tick-stock-panel` | 自托管 A 股数据路由、因子、回测、监控与只读 AI 问答工作台；数据、样本外、版本和非投资建议边界须明确。 | [GitHub](https://github.com/shy3130/tick-stock-panel) |
 | `laya` | 聚合邮件、聊天、issue、日历与 coding-agent workspace 的 local-first Action Card 控制面；连接器、自动 egress、n8n 与集中敏感数据须治理。 | [GitHub](https://github.com/aayushch/laya) |
 | `univer` | 可嵌入的 Office SDK，以插件、公式、Canvas、Facade 与 Headless 支撑人 / Agent 共编；开源核心、Pro 和最终语义 / 视觉验收须分层。 | [GitHub](https://github.com/dream-num/univer) |
 | `easyeda-agent` | 用 typed actions、Connector、写前守卫和写后回读让 Agent 操作 EasyEDA Pro；DRC 不等于实物电气、安规或制造验证。 | [GitHub](https://github.com/zhoushoujianwork/easyeda-agent) |
@@ -710,6 +718,7 @@
 
 - 全量项目目录：[`projects/`](./projects/)
 - 最近日报：
+  - [`2026-09-26`](./daily/2026-09-26/ai-hotspots.md)
   - [`2026-09-25`](./daily/2026-09-25/ai-hotspots.md)
   - [`2026-09-24`](./daily/2026-09-24/ai-hotspots.md)
   - [`2026-09-23`](./daily/2026-09-23/ai-hotspots.md)
@@ -801,9 +810,9 @@
 ## 当前状态
 
 - 状态：持续日更中。
-- 最新更新：`2026-09-25`。
-- 当前项目总数：`731`。
-- 最近新增项目：`hindsight`、`starnet`、`laya`、`zeron`、`Step-Code`、`llm-wiki-compiler`、`Model-Optimizer`、`stable-diffusion.cpp`。
+- 最新更新：`2026-09-26`。
+- 当前项目总数：`739`。
+- 最近新增项目：`openrig`、`desktop-cc-gui`、`follow-builders`、`Pentest-Swarm-AI`、`nobodywho`、`ai-usagebar`、`tick-stock-panel`、`audio.cpp`。
 - 覆盖平台：GitHub、X、Instagram、YouTube。
 
 ## 维护约定
