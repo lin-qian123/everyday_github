@@ -49,7 +49,7 @@
 
 如果你是第一次进入这个仓库，建议从这几个入口开始：
 
-- 最新日报：[`daily/2026-09-27/ai-hotspots.md`](./daily/2026-09-27/ai-hotspots.md)
+- 最新日报：[`daily/2026-09-29/ai-hotspots.md`](./daily/2026-09-29/ai-hotspots.md)
 - 项目总目录：[`projects/`](./projects/)
 - 自动化约束：[`AGENTS.md`](./AGENTS.md)
 - 开发续接记录：[`TODO.md`](./TODO.md)
@@ -74,6 +74,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `syrtis` | 原生 macOS 菜单栏聚合 25+ coding tools 的 session、token、cost 与 quota；本地日志隐私、provider OAuth、pricing 与 parser 漂移须对账。 | [GitHub](https://github.com/Nanako0129/syrtis) |
 | `terminal-browser` | 以 Electron offscreen rendering 与 kitty graphics 在终端运行真实 Chromium，并向 coding agent 提供 action CLI；真实 profile、网页注入和实验 plugin 须隔离。 | [GitHub](https://github.com/zenbu-labs/terminal-browser) |
 | `navop` | 将 database、SSH / SFTP、terminal、RDP 与 Agent Hub 合并的 Rust / GPUI 原生工作台；凭据集中、Auto tools、sync 与附加许可证须治理。 | [GitHub](https://github.com/feigeCode/navop) |
 | `desktop-cc-gui` | 用 Tauri / Rust 专用 adapter 汇总 Claude Code、Codex、OpenCode 等十类 CLI 的 session、权限、provider 与 Git UI；GUI 不是 sandbox，根许可证仍待补齐。 | [GitHub](https://github.com/zhukunpenglinyutong/desktop-cc-gui) |
@@ -164,6 +165,9 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `anythingmcp` | 把 REST / SOAP / GraphQL / OData / SQL 转成 MCP tools 的自托管 gateway；集中凭据、完整响应审计、写操作与模型数据流须最小化。 | [GitHub](https://github.com/HelpCode-ai/anythingmcp) |
+| `SkillOpt` | 用 rollout、reflection、edit selection 与 validation gate 训练 Markdown skill；作者增益、数据泄漏和持久规则安全须用私有 holdout 重验。 | [GitHub](https://github.com/microsoft/SkillOpt) |
+| `redamon` | 把 recon、exploit、post-exploitation、triage 与修复 PR 串联的高危 Agent 红队平台；只可用于书面授权目标和隔离靶场。 | [GitHub](https://github.com/samugit83/redamon) |
 | `mobile-mcp` | 以统一 MCP tools 控制 iOS / Android 模拟器与真机；工具覆盖安装、屏幕、日志、剪贴板和 cloud device，须使用专用测试设备。 | [GitHub](https://github.com/mobile-next/mobile-mcp) |
 | `monty` | Pydantic 的 Rust 语言级 Python sandbox，默认无文件 / 网络 / FFI；不是 OS 隔离，host capability 和资源生命周期须最小化。 | [GitHub](https://github.com/pydantic/monty) |
 | `mcp` | Microsoft 官方 MCP server 源码与目录；每个 local / remote server、tenant scope、write capability 和独立版本必须分开治理。 | [GitHub](https://github.com/microsoft/mcp) |
@@ -461,6 +465,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `hermes-relay` | Hermes Agent 的 Android companion 与 desktop relay；sideload Device Control、终端 / 文件工具、远程路由和多 release tracks 必须分别授权。 | [GitHub](https://github.com/Codename-11/hermes-relay) |
 | `Libraries.dev` | 为 AI 产品提供七类 React 动效组件与 agent copy-prompt；WebGL 性能、reduced motion、DOM 语义和 Pro 内容授权须独立验证。 | [GitHub](https://github.com/Jakubantalik/Libraries.dev) |
 | `interface-design` | 用 skill 与 `.interface-design/system.md` 记录产品 UI 决策；一致性不替代 accessibility、用户研究、性能和人工审批。 | [GitHub](https://github.com/Dammyjay93/interface-design) |
 | `thinking-orbs` | 以 Canvas 2D、九种语义状态、reduced motion 与主题适配呈现 Agent 工作反馈；动效不是任务进度或真实推理证据。 | [GitHub](https://github.com/Jakubantalik/thinking-orbs) |
@@ -569,6 +574,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `TensorFold` | 为指定模型族提供 Apple Silicon MLX / NVIDIA CUDA serving、draft verification 与 OpenAI-compatible API；实验 kernel、checkpoint 许可和 benchmark 须复核。 | [GitHub](https://github.com/ashhart/TensorFold) |
 | `nobodywho` | 用 Rust core、llama.cpp 与 ONNX Runtime 向 Python / Kotlin / Swift / RN / Flutter / Godot 暴露本地多模态推理；binding、模型与设备矩阵须固定。 | [GitHub](https://github.com/nobodywho-ooo/nobodywho) |
 | `Model-Optimizer` | NVIDIA 的量化、QAT、剪枝、蒸馏、speculative decoding 与多 backend export 工具库；性能、质量回归、版本和第三方许可须固定实测。 | [GitHub](https://github.com/NVIDIA/Model-Optimizer) |
 | `Atomic-Chat` | 将 llama.cpp / MLX 等本地推理统一为桌面应用和 OpenAI-compatible endpoint；cloud / MCP / LAN 数据边界、模型许可和版本漂移须实测。 | [GitHub](https://github.com/AtomicBot-ai/Atomic-Chat) |
@@ -652,6 +658,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `macro` | 把邮件、聊天、文档、任务、CRM、PR 与 nightly team memory 合并的 AGPL 团队工作区；派生记忆、模型出口和 Agent 写操作须治理。 | [GitHub](https://github.com/macro-inc/macro) |
 | `follow-builders` | 把 X、YouTube 与博客内容汇入公共 feed，再由本地 Agent 生成 digest；来源策展、转录、中心服务、注入与交付渠道须治理。 | [GitHub](https://github.com/zarazhangrui/follow-builders) |
 | `Pentest-Swarm-AI` | 用共享 blackboard、pheromone 和真实安全工具运行 offensive Agent swarm；alpha 级高危工具，只可在书面授权范围与隔离靶场中使用。 | [GitHub](https://github.com/Armur-Ai/Pentest-Swarm-AI) |
 | `tick-stock-panel` | 自托管 A 股数据路由、因子、回测、监控与只读 AI 问答工作台；数据、样本外、版本和非投资建议边界须明确。 | [GitHub](https://github.com/shy3130/tick-stock-panel) |
@@ -725,6 +732,7 @@
 
 - 全量项目目录：[`projects/`](./projects/)
 - 最近日报：
+  - [`2026-09-29`](./daily/2026-09-29/ai-hotspots.md)
   - [`2026-09-27`](./daily/2026-09-27/ai-hotspots.md)
   - [`2026-09-26`](./daily/2026-09-26/ai-hotspots.md)
   - [`2026-09-25`](./daily/2026-09-25/ai-hotspots.md)
@@ -818,9 +826,9 @@
 ## 当前状态
 
 - 状态：持续日更中。
-- 最新更新：`2026-09-27`。
-- 当前项目总数：`746`。
-- 最近新增项目：`mobile-mcp`、`Libraries.dev`、`terminal-browser`、`monty`、`navop`、`interface-design`、`mcp`。
+- 最新更新：`2026-09-29`。
+- 当前项目总数：`753`。
+- 最近新增项目：`TensorFold`、`anythingmcp`、`SkillOpt`、`redamon`、`macro`、`syrtis`、`hermes-relay`。
 - 覆盖平台：GitHub、X、Instagram、YouTube。
 
 ## 维护约定
