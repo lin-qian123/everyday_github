@@ -49,7 +49,7 @@
 
 如果你是第一次进入这个仓库，建议从这几个入口开始：
 
-- 最新日报：[`daily/2026-09-29/ai-hotspots.md`](./daily/2026-09-29/ai-hotspots.md)
+- 最新日报：[`daily/2026-09-30/ai-hotspots.md`](./daily/2026-09-30/ai-hotspots.md)
 - 项目总目录：[`projects/`](./projects/)
 - 自动化约束：[`AGENTS.md`](./AGENTS.md)
 - 开发续接记录：[`TODO.md`](./TODO.md)
@@ -74,6 +74,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `tuios` | 把 Agent 状态、Inbox、审批、fan-out、worktree 和远端 host 合入终端 multiplexer；pane grant 与工作台可见性不等于 OS 隔离。 | [GitHub](https://github.com/Gaurav-Gosain/tuios) |
 | `syrtis` | 原生 macOS 菜单栏聚合 25+ coding tools 的 session、token、cost 与 quota；本地日志隐私、provider OAuth、pricing 与 parser 漂移须对账。 | [GitHub](https://github.com/Nanako0129/syrtis) |
 | `terminal-browser` | 以 Electron offscreen rendering 与 kitty graphics 在终端运行真实 Chromium，并向 coding agent 提供 action CLI；真实 profile、网页注入和实验 plugin 须隔离。 | [GitHub](https://github.com/zenbu-labs/terminal-browser) |
 | `navop` | 将 database、SSH / SFTP、terminal、RDP 与 Agent Hub 合并的 Rust / GPUI 原生工作台；凭据集中、Auto tools、sync 与附加许可证须治理。 | [GitHub](https://github.com/feigeCode/navop) |
@@ -165,6 +166,8 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `ouroboros` | 用 interview、冻结 Seed、ledger 与 evaluation gate 组织多宿主 coding workflow；“Agent OS”不是 sandbox，默认有限 telemetry 须按政策配置。 | [GitHub](https://github.com/Q00/ouroboros) |
+| `unity-mcp` | 以 47 个 MCP 工具操作 Unity scene、asset、script、test 与 build；须在工程副本、固定实例和最小 tool group 中验收。 | [GitHub](https://github.com/CoplayDev/unity-mcp) |
 | `anythingmcp` | 把 REST / SOAP / GraphQL / OData / SQL 转成 MCP tools 的自托管 gateway；集中凭据、完整响应审计、写操作与模型数据流须最小化。 | [GitHub](https://github.com/HelpCode-ai/anythingmcp) |
 | `SkillOpt` | 用 rollout、reflection、edit selection 与 validation gate 训练 Markdown skill；作者增益、数据泄漏和持久规则安全须用私有 holdout 重验。 | [GitHub](https://github.com/microsoft/SkillOpt) |
 | `redamon` | 把 recon、exploit、post-exploitation、triage 与修复 PR 串联的高危 Agent 红队平台；只可用于书面授权目标和隔离靶场。 | [GitHub](https://github.com/samugit83/redamon) |
@@ -516,6 +519,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `qwen-audio-agent` | 将实时语音前台、conversation coordinator 与 ACP / A2A 后台 Agent 分层；provider、视觉、memory、MCP 与远程数据流须逐项治理。 | [GitHub](https://github.com/QwenAudio/qwen-audio-agent) |
 | `audio.cpp` | 基于 ggml 的原生 C++ 音频推理框架，统一 TTS / ASR / 克隆 / 转换 / 音乐等模型；权重许可、声音同意、backend 与性能须逐模型复核。 | [GitHub](https://github.com/0xShug0/audio.cpp) |
 | `stable-diffusion.cpp` | 基于 ggml 的纯 C++ diffusion runtime，跨 CPU / CUDA / Vulkan / Metal 等运行图像与视频模型；模型权利、backend 差异和滚动 API 须治理。 | [GitHub](https://github.com/leejet/stable-diffusion.cpp) |
 | `spirula-studio` | 跨 NVIDIA / AMD / Intel / Apple GPU 的一体化 3DGS 训练、SfM、AI masking 与 mesh 工具；画质、影像权利、SAM 和视频专利须分别审查。 | [GitHub](https://github.com/harry7557558/spirula-studio) |
@@ -574,6 +578,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `InferenceX` | 持续追踪 e2e serving、collective、operator、power 与 AgentX workload 的开放推理研究平台；作者 dashboard 与 benchmark 须按自身负载复跑。 | [GitHub](https://github.com/SemiAnalysisAI/InferenceX) |
 | `TensorFold` | 为指定模型族提供 Apple Silicon MLX / NVIDIA CUDA serving、draft verification 与 OpenAI-compatible API；实验 kernel、checkpoint 许可和 benchmark 须复核。 | [GitHub](https://github.com/ashhart/TensorFold) |
 | `nobodywho` | 用 Rust core、llama.cpp 与 ONNX Runtime 向 Python / Kotlin / Swift / RN / Flutter / Godot 暴露本地多模态推理；binding、模型与设备矩阵须固定。 | [GitHub](https://github.com/nobodywho-ooo/nobodywho) |
 | `Model-Optimizer` | NVIDIA 的量化、QAT、剪枝、蒸馏、speculative decoding 与多 backend export 工具库；性能、质量回归、版本和第三方许可须固定实测。 | [GitHub](https://github.com/NVIDIA/Model-Optimizer) |
@@ -644,6 +649,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `cs249r_book` | Harvard ML systems 四卷课程仓库，连接书稿、labs、TinyTorch、硬件与模拟；preview / in-development 状态和 CC BY-NC-SA 4.0 须明确。 | [GitHub](https://github.com/harvard-edge/cs249r_book) |
 | `modern-software-dev-assignments` | Stanford CS146S 八周 AI 软件开发作业，覆盖 prompting、MCP、Agent、Semgrep、AI review 与多 stack build；年份、依赖和无 LICENSE 须复核。 | [GitHub](https://github.com/mihail911/modern-software-dev-assignments) |
 | `dictionary-of-ai-coding` | 将 model、context、tool、handoff、memory 和工作模式整理为通俗词典；术语漂移、来源与无 LICENSE 再利用边界须复核。 | [GitHub](https://github.com/mattpocock/dictionary-of-ai-coding) |
 | `all-agentic-architectures` | 用统一 Python contract 与 notebooks 实现 35 种 agent pattern；17-task 自报 benchmark 适合作为 A/B 起点，不是生产可靠性证明。 | [GitHub](https://github.com/FareedKhan-dev/all-agentic-architectures) |
@@ -658,6 +664,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `dbx` | 统一 100+ 数据库、AI SQL、CLI 与独立 MCP server 的 Rust / Tauri 客户端；真实写入、集中凭据、driver 差异和插件隔离须验证。 | [GitHub](https://github.com/t8y2/dbx) |
 | `macro` | 把邮件、聊天、文档、任务、CRM、PR 与 nightly team memory 合并的 AGPL 团队工作区；派生记忆、模型出口和 Agent 写操作须治理。 | [GitHub](https://github.com/macro-inc/macro) |
 | `follow-builders` | 把 X、YouTube 与博客内容汇入公共 feed，再由本地 Agent 生成 digest；来源策展、转录、中心服务、注入与交付渠道须治理。 | [GitHub](https://github.com/zarazhangrui/follow-builders) |
 | `Pentest-Swarm-AI` | 用共享 blackboard、pheromone 和真实安全工具运行 offensive Agent swarm；alpha 级高危工具，只可在书面授权范围与隔离靶场中使用。 | [GitHub](https://github.com/Armur-Ai/Pentest-Swarm-AI) |
@@ -732,6 +739,7 @@
 
 - 全量项目目录：[`projects/`](./projects/)
 - 最近日报：
+  - [`2026-09-30`](./daily/2026-09-30/ai-hotspots.md)
   - [`2026-09-29`](./daily/2026-09-29/ai-hotspots.md)
   - [`2026-09-27`](./daily/2026-09-27/ai-hotspots.md)
   - [`2026-09-26`](./daily/2026-09-26/ai-hotspots.md)
@@ -826,9 +834,9 @@
 ## 当前状态
 
 - 状态：持续日更中。
-- 最新更新：`2026-09-29`。
-- 当前项目总数：`753`。
-- 最近新增项目：`TensorFold`、`anythingmcp`、`SkillOpt`、`redamon`、`macro`、`syrtis`、`hermes-relay`。
+- 最新更新：`2026-09-30`。
+- 当前项目总数：`760`。
+- 最近新增项目：`dbx`、`tuios`、`cs249r_book`、`unity-mcp`、`qwen-audio-agent`、`ouroboros`、`InferenceX`。
 - 覆盖平台：GitHub、X、Instagram、YouTube。
 
 ## 维护约定
