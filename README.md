@@ -49,7 +49,7 @@
 
 如果你是第一次进入这个仓库，建议从这几个入口开始：
 
-- 最新日报：[`daily/2026-10-01/ai-hotspots.md`](./daily/2026-10-01/ai-hotspots.md)
+- 最新日报：[`daily/2026-10-02/ai-hotspots.md`](./daily/2026-10-02/ai-hotspots.md)
 - 项目总目录：[`projects/`](./projects/)
 - 自动化约束：[`AGENTS.md`](./AGENTS.md)
 - 开发续接记录：[`TODO.md`](./TODO.md)
@@ -167,6 +167,11 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `awesome-codex-plugins` | 含 250 个条目与镜像 bundle 的 Codex / ChatGPT plugin marketplace；集中 scanner 阈值、可选 source CI 与浮动 main 不能替代逐包审计。 | [GitHub](https://github.com/hashgraph-online/awesome-codex-plugins) |
+| `planning-with-files` | 用三份 Markdown、lifecycle hook、attestation 与 completion gate 持久化长任务计划；重注入和显式 session replay 须按敏感上下文治理。 | [GitHub](https://github.com/OthmanAdi/planning-with-files) |
+| `claude-octopus` | 以显式命令编排十二类外部 provider、council、审查与长流程；共识、自动路由、成本、外发和安全文档漂移须独立治理。 | [GitHub](https://github.com/nyldn/claude-octopus) |
+| `Claude-Code-Game-Studios` | 把 49 Agent、74 Skill、hooks、rules 与模板编码为游戏开发工作室；角色与文档门不能替代引擎运行和真实 playtest。 | [GitHub](https://github.com/Donchitos/Claude-Code-Game-Studios) |
+| `cordis` | 以可撤销 effect、reactive coeffect、service 与 HMR 管理动态组件生命周期；RC API 和未登记外部副作用不受自动回滚保证。 | [GitHub](https://github.com/cordiverse/cordis) |
 | `iFixAi` | 以固定 60 项检查、fixture、跨 provider judge 与 manifest 诊断 Agent 治理行为；分数不是认证，报告可能保存敏感模型输入输出。 | [GitHub](https://github.com/ifixai-ai/iFixAi) |
 | `skillhub` | 自托管 Agent Skill registry，提供 namespace、版本、RBAC、审核、扫描与 CLI；扫描和上架不能证明包安全或许可可再分发。 | [GitHub](https://github.com/iflytek/skillhub) |
 | `ouroboros` | 用 interview、冻结 Seed、ledger 与 evaluation gate 组织多宿主 coding workflow；“Agent OS”不是 sandbox，默认有限 telemetry 须按政策配置。 | [GitHub](https://github.com/Q00/ouroboros) |
@@ -420,6 +425,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `opendataloader-pdf` | 本地 PDF → Markdown / JSON / HTML / Tagged PDF，并可启 hybrid AI；作者 benchmark、prompt-injection filtering 和 PDF/UA 相关主张须复验。 | [GitHub](https://github.com/opendataloader-project/opendataloader-pdf) |
 | `OpenKB` | 把多格式资料编译成 Markdown wiki、概念 / 实体页、query / chat 与 Skill；LLM 正确性、重编译覆盖、默认无认证 Web 与 provider 数据流须治理。 | [GitHub](https://github.com/VectifyAI/OpenKB) |
 | `llm-wiki-compiler` | 把原始材料编译为 citation-aware typed wiki，并提供 hybrid retrieval、lifecycle gate、MCP / SDK / OKF；持久化错误与版本兼容须审阅。 | [GitHub](https://github.com/atomicstrata/llm-wiki-compiler) |
 | `helix-db` | 面向知识图谱、RAG 与 Agent memory 的 graph-vector database；一键 chef、Cloud 数据边界和多组件版本须固定审计。 | [GitHub](https://github.com/HelixDB/helix-db) |
@@ -523,6 +529,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `UniMate` | 用 flow matching 为不同 skeleton 生成文本条件动画；代码 MIT、权重 CC BY-NC 4.0、数据混合许可，OOD rig 与失败样例须独立验证。 | [GitHub](https://github.com/Friedrich-M/UniMate) |
 | `fframes` | 用 Rust / SVG / GPU / FFmpeg 和 Agent-readable QA 构建程序化视频；速度数据、native build、codec / 素材许可与最终观看须独立验收。 | [GitHub](https://github.com/dmtrKovalenko/fframes) |
 | `autoshorts` | Tauri 桌面端串联转写、片段排名、竖屏裁剪和渲染；根许可证缺失、未签名构建、版本漂移与云端媒体数据流须先审计。 | [GitHub](https://github.com/JayWebtech/autoshorts) |
 | `qwen-audio-agent` | 将实时语音前台、conversation coordinator 与 ACP / A2A 后台 Agent 分层；provider、视觉、memory、MCP 与远程数据流须逐项治理。 | [GitHub](https://github.com/QwenAudio/qwen-audio-agent) |
@@ -747,6 +754,7 @@
 
 - 全量项目目录：[`projects/`](./projects/)
 - 最近日报：
+  - [`2026-10-02`](./daily/2026-10-02/ai-hotspots.md)
   - [`2026-10-01`](./daily/2026-10-01/ai-hotspots.md)
   - [`2026-09-30`](./daily/2026-09-30/ai-hotspots.md)
   - [`2026-09-29`](./daily/2026-09-29/ai-hotspots.md)
@@ -843,9 +851,9 @@
 ## 当前状态
 
 - 状态：持续日更中。
-- 最新更新：`2026-10-01`。
-- 当前项目总数：`768`。
-- 最近新增项目：`OpenKB`、`iFixAi`、`ARES`、`TokenTracker`、`skillhub`、`claude-seo`、`autoshorts`、`fframes`。
+- 最新更新：`2026-10-02`。
+- 当前项目总数：`775`。
+- 最近新增项目：`awesome-codex-plugins`、`cordis`、`UniMate`、`Claude-Code-Game-Studios`、`planning-with-files`、`opendataloader-pdf`、`claude-octopus`。
 - 覆盖平台：GitHub、X、Instagram、YouTube。
 
 ## 维护约定
