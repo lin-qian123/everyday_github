@@ -49,7 +49,7 @@
 
 如果你是第一次进入这个仓库，建议从这几个入口开始：
 
-- 最新日报：[`daily/2026-10-02/ai-hotspots.md`](./daily/2026-10-02/ai-hotspots.md)
+- 最新日报：[`daily/2026-10-03/ai-hotspots.md`](./daily/2026-10-03/ai-hotspots.md)
 - 项目总目录：[`projects/`](./projects/)
 - 自动化约束：[`AGENTS.md`](./AGENTS.md)
 - 开发续接记录：[`TODO.md`](./TODO.md)
@@ -74,6 +74,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `CopilotForXcode` | GitHub 官方 Xcode 补全、Chat、Review 与 Agent Mode；background / Accessibility / editor extension、terminal / MCP、托管数据和计费须逐层治理。 | [GitHub](https://github.com/github/CopilotForXcode) |
 | `TokenTracker` | 从多种 coding-agent 本地日志汇总 token、费用与 quota；会安装用户级 hooks、读取本地 auth / usage metadata，有限 telemetry 与账单口径须审计。 | [GitHub](https://github.com/xiufengsun/TokenTracker) |
 | `tuios` | 把 Agent 状态、Inbox、审批、fan-out、worktree 和远端 host 合入终端 multiplexer；pane grant 与工作台可见性不等于 OS 隔离。 | [GitHub](https://github.com/Gaurav-Gosain/tuios) |
 | `syrtis` | 原生 macOS 菜单栏聚合 25+ coding tools 的 session、token、cost 与 quota；本地日志隐私、provider OAuth、pricing 与 parser 漂移须对账。 | [GitHub](https://github.com/Nanako0129/syrtis) |
@@ -167,6 +168,9 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `webbrain` | 以 accessibility tree、权限模式和 MCP 操作真实已登录浏览器；prompt injection、云 / 本地 provider、分享开关与跳过权限须审计。 | [GitHub](https://github.com/webbrain-one/webbrain) |
+| `gh-aw` | 将 Markdown Agent workflow 编译为 GitHub Actions，并用只读 job / safe output 控制写入；权限、runner、网络、锁文件和版本漏洞仍须复核。 | [GitHub](https://github.com/github/gh-aw) |
+| `agentgateway` | 面向 LLM / MCP / A2A 的 Rust proxy，统一 routing、RBAC、budget、guardrail 与 telemetry；集中数据面和 policy 配置须做对抗验证。 | [GitHub](https://github.com/agentgateway/agentgateway) |
 | `awesome-codex-plugins` | 含 250 个条目与镜像 bundle 的 Codex / ChatGPT plugin marketplace；集中 scanner 阈值、可选 source CI 与浮动 main 不能替代逐包审计。 | [GitHub](https://github.com/hashgraph-online/awesome-codex-plugins) |
 | `planning-with-files` | 用三份 Markdown、lifecycle hook、attestation 与 completion gate 持久化长任务计划；重注入和显式 session replay 须按敏感上下文治理。 | [GitHub](https://github.com/OthmanAdi/planning-with-files) |
 | `claude-octopus` | 以显式命令编排十二类外部 provider、council、审查与长流程；共识、自动路由、成本、外发和安全文档漂移须独立治理。 | [GitHub](https://github.com/nyldn/claude-octopus) |
@@ -591,6 +595,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `gallery` | Google AI Edge 的多端本地模型试用 / benchmark、skills 与 mobile actions 应用；模型许可、设备差异、网络工具和动作权限须分开验证。 | [GitHub](https://github.com/google-ai-edge/gallery) |
 | `InferenceX` | 持续追踪 e2e serving、collective、operator、power 与 AgentX workload 的开放推理研究平台；作者 dashboard 与 benchmark 须按自身负载复跑。 | [GitHub](https://github.com/SemiAnalysisAI/InferenceX) |
 | `TensorFold` | 为指定模型族提供 Apple Silicon MLX / NVIDIA CUDA serving、draft verification 与 OpenAI-compatible API；实验 kernel、checkpoint 许可和 benchmark 须复核。 | [GitHub](https://github.com/ashhart/TensorFold) |
 | `nobodywho` | 用 Rust core、llama.cpp 与 ONNX Runtime 向 Python / Kotlin / Swift / RN / Flutter / Godot 暴露本地多模态推理；binding、模型与设备矩阵须固定。 | [GitHub](https://github.com/nobodywho-ooo/nobodywho) |
@@ -677,6 +682,8 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `opensre` | 把可观测性、云、数据库与 incident 工具接进 evidence-linked SRE Agent；public alpha、hosted sign-in、opt-out telemetry 与 remediation 须严格治理。 | [GitHub](https://github.com/Tracer-Cloud/opensre) |
+| `mcp-server-excel` | 经 COM 让 Agent 操作真实 Excel、Power Query、DAX、VBA 与 Pivot；Windows-only，同用户 daemon、云功能和 telemetry 须逐项控制。 | [GitHub](https://github.com/sbroenne/mcp-server-excel) |
 | `ARES` | 面向书面授权红队的 campaign、attack DAG、vault、scope 与报告平台；Python hook / Docker bridge 不是完整 egress 边界，内核隔离须实测。 | [GitHub](https://github.com/Mafifrizi/ARES) |
 | `claude-seo` | 以 26 个 SEO skill、19 个 Agent、确定性脚本及可选外部 API 生成审计；效果、成本、客户数据和写操作须分层验证。 | [GitHub](https://github.com/AgriciDaniel/claude-seo) |
 | `dbx` | 统一 100+ 数据库、AI SQL、CLI 与独立 MCP server 的 Rust / Tauri 客户端；真实写入、集中凭据、driver 差异和插件隔离须验证。 | [GitHub](https://github.com/t8y2/dbx) |
@@ -754,6 +761,7 @@
 
 - 全量项目目录：[`projects/`](./projects/)
 - 最近日报：
+  - [`2026-10-03`](./daily/2026-10-03/ai-hotspots.md)
   - [`2026-10-02`](./daily/2026-10-02/ai-hotspots.md)
   - [`2026-10-01`](./daily/2026-10-01/ai-hotspots.md)
   - [`2026-09-30`](./daily/2026-09-30/ai-hotspots.md)
@@ -851,9 +859,9 @@
 ## 当前状态
 
 - 状态：持续日更中。
-- 最新更新：`2026-10-02`。
-- 当前项目总数：`775`。
-- 最近新增项目：`awesome-codex-plugins`、`cordis`、`UniMate`、`Claude-Code-Game-Studios`、`planning-with-files`、`opendataloader-pdf`、`claude-octopus`。
+- 最新更新：`2026-10-03`。
+- 当前项目总数：`782`。
+- 最近新增项目：`opensre`、`webbrain`、`mcp-server-excel`、`gh-aw`、`CopilotForXcode`、`gallery`、`agentgateway`。
 - 覆盖平台：GitHub、X、Instagram、YouTube。
 
 ## 维护约定
