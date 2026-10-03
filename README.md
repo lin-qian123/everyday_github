@@ -49,7 +49,7 @@
 
 如果你是第一次进入这个仓库，建议从这几个入口开始：
 
-- 最新日报：[`daily/2026-10-03/ai-hotspots.md`](./daily/2026-10-03/ai-hotspots.md)
+- 最新日报：[`daily/2026-10-04/ai-hotspots.md`](./daily/2026-10-04/ai-hotspots.md)
 - 项目总目录：[`projects/`](./projects/)
 - 自动化约束：[`AGENTS.md`](./AGENTS.md)
 - 开发续接记录：[`TODO.md`](./TODO.md)
@@ -74,6 +74,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `t3code` | 跨 Web / Electron / mobile 控制 Codex、Claude、Cursor 等本地 Agent 的工作台；新线程默认 Full access，远程连接和 provider 凭据须联合治理。 | [GitHub](https://github.com/pingdotgg/t3code) |
 | `CopilotForXcode` | GitHub 官方 Xcode 补全、Chat、Review 与 Agent Mode；background / Accessibility / editor extension、terminal / MCP、托管数据和计费须逐层治理。 | [GitHub](https://github.com/github/CopilotForXcode) |
 | `TokenTracker` | 从多种 coding-agent 本地日志汇总 token、费用与 quota；会安装用户级 hooks、读取本地 auth / usage metadata，有限 telemetry 与账单口径须审计。 | [GitHub](https://github.com/xiufengsun/TokenTracker) |
 | `tuios` | 把 Agent 状态、Inbox、审批、fan-out、worktree 和远端 host 合入终端 multiplexer；pane grant 与工作台可见性不等于 OS 隔离。 | [GitHub](https://github.com/Gaurav-Gosain/tuios) |
@@ -429,6 +430,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `chandra` | 将 PDF / 图像转成带布局的 HTML、Markdown 或 JSON 的多语言 OCR；代码与权重许可分离，识别和注入风险须回到原页验收。 | [GitHub](https://github.com/datalab-to/chandra) |
 | `opendataloader-pdf` | 本地 PDF → Markdown / JSON / HTML / Tagged PDF，并可启 hybrid AI；作者 benchmark、prompt-injection filtering 和 PDF/UA 相关主张须复验。 | [GitHub](https://github.com/opendataloader-project/opendataloader-pdf) |
 | `OpenKB` | 把多格式资料编译成 Markdown wiki、概念 / 实体页、query / chat 与 Skill；LLM 正确性、重编译覆盖、默认无认证 Web 与 provider 数据流须治理。 | [GitHub](https://github.com/VectifyAI/OpenKB) |
 | `llm-wiki-compiler` | 把原始材料编译为 citation-aware typed wiki，并提供 hybrid retrieval、lifecycle gate、MCP / SDK / OKF；持久化错误与版本兼容须审阅。 | [GitHub](https://github.com/atomicstrata/llm-wiki-compiler) |
@@ -533,6 +535,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `LongCat-Video` | 美团 13.6B 统一视频生成、续写、长视频与音频 Avatar 模型；作者 MOS、GPU 成本、重复动作和肖像 / 声音权利须独立验收。 | [GitHub](https://github.com/meituan-longcat/LongCat-Video) |
 | `UniMate` | 用 flow matching 为不同 skeleton 生成文本条件动画；代码 MIT、权重 CC BY-NC 4.0、数据混合许可，OOD rig 与失败样例须独立验证。 | [GitHub](https://github.com/Friedrich-M/UniMate) |
 | `fframes` | 用 Rust / SVG / GPU / FFmpeg 和 Agent-readable QA 构建程序化视频；速度数据、native build、codec / 素材许可与最终观看须独立验收。 | [GitHub](https://github.com/dmtrKovalenko/fframes) |
 | `autoshorts` | Tauri 桌面端串联转写、片段排名、竖屏裁剪和渲染；根许可证缺失、未签名构建、版本漂移与云端媒体数据流须先审计。 | [GitHub](https://github.com/JayWebtech/autoshorts) |
@@ -595,6 +598,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `CLIProxyAPI` | 将多 provider CLI / OAuth 账号统一成 OpenAI、Gemini、Claude 兼容 API；默认网络监听、TLS、集中 token、协议语义和订阅条款须治理。 | [GitHub](https://github.com/router-for-me/CLIProxyAPI) |
 | `gallery` | Google AI Edge 的多端本地模型试用 / benchmark、skills 与 mobile actions 应用；模型许可、设备差异、网络工具和动作权限须分开验证。 | [GitHub](https://github.com/google-ai-edge/gallery) |
 | `InferenceX` | 持续追踪 e2e serving、collective、operator、power 与 AgentX workload 的开放推理研究平台；作者 dashboard 与 benchmark 须按自身负载复跑。 | [GitHub](https://github.com/SemiAnalysisAI/InferenceX) |
 | `TensorFold` | 为指定模型族提供 Apple Silicon MLX / NVIDIA CUDA serving、draft verification 与 OpenAI-compatible API；实验 kernel、checkpoint 许可和 benchmark 须复核。 | [GitHub](https://github.com/ashhart/TensorFold) |
@@ -682,6 +686,9 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `cloudflare-os` | 以 Gadget、Dynamic Worker、Gatekeeper 和 capability 组织企业 AI 工作区；Early Access、模拟审批、分享与绝对安全宣传须独立复测。 | [GitHub](https://github.com/cloudflare/cloudflare-os) |
+| `user-scanner` | Email / username OSINT、cross-scan、breach intel 与 MCP 工具；个人数据、同名误判、递归范围和平台条款须严格控制。 | [GitHub](https://github.com/kaifcodec/user-scanner) |
+| `ARTEX` | 双图、真实工具、MITM、审批与复测组成的自主渗透研究系统；上游仅允许本地隔离学习，guard / scope 边界须源码级审计。 | [GitHub](https://github.com/Autumn-27/ARTEX) |
 | `opensre` | 把可观测性、云、数据库与 incident 工具接进 evidence-linked SRE Agent；public alpha、hosted sign-in、opt-out telemetry 与 remediation 须严格治理。 | [GitHub](https://github.com/Tracer-Cloud/opensre) |
 | `mcp-server-excel` | 经 COM 让 Agent 操作真实 Excel、Power Query、DAX、VBA 与 Pivot；Windows-only，同用户 daemon、云功能和 telemetry 须逐项控制。 | [GitHub](https://github.com/sbroenne/mcp-server-excel) |
 | `ARES` | 面向书面授权红队的 campaign、attack DAG、vault、scope 与报告平台；Python hook / Docker bridge 不是完整 egress 边界，内核隔离须实测。 | [GitHub](https://github.com/Mafifrizi/ARES) |
@@ -761,6 +768,7 @@
 
 - 全量项目目录：[`projects/`](./projects/)
 - 最近日报：
+  - [`2026-10-04`](./daily/2026-10-04/ai-hotspots.md)
   - [`2026-10-03`](./daily/2026-10-03/ai-hotspots.md)
   - [`2026-10-02`](./daily/2026-10-02/ai-hotspots.md)
   - [`2026-10-01`](./daily/2026-10-01/ai-hotspots.md)
@@ -859,9 +867,9 @@
 ## 当前状态
 
 - 状态：持续日更中。
-- 最新更新：`2026-10-03`。
-- 当前项目总数：`782`。
-- 最近新增项目：`opensre`、`webbrain`、`mcp-server-excel`、`gh-aw`、`CopilotForXcode`、`gallery`、`agentgateway`。
+- 最新更新：`2026-10-04`。
+- 当前项目总数：`789`。
+- 最近新增项目：`t3code`、`cloudflare-os`、`LongCat-Video`、`chandra`、`user-scanner`、`CLIProxyAPI`、`ARTEX`。
 - 覆盖平台：GitHub、X、Instagram、YouTube。
 
 ## 维护约定
