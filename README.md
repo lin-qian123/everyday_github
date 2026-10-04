@@ -49,7 +49,7 @@
 
 如果你是第一次进入这个仓库，建议从这几个入口开始：
 
-- 最新日报：[`daily/2026-10-04/ai-hotspots.md`](./daily/2026-10-04/ai-hotspots.md)
+- 最新日报：[`daily/2026-10-05/ai-hotspots.md`](./daily/2026-10-05/ai-hotspots.md)
 - 项目总目录：[`projects/`](./projects/)
 - 自动化约束：[`AGENTS.md`](./AGENTS.md)
 - 开发续接记录：[`TODO.md`](./TODO.md)
@@ -74,6 +74,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `uniterm` | 汇总 30+ 运维协议、AI Agent 与 MCP 的跨平台终端；真实 shell / 数据库 / 集群权限、集中凭据、sync 和未签名制品须治理。 | [GitHub](https://github.com/ys-ll/uniterm) |
 | `t3code` | 跨 Web / Electron / mobile 控制 Codex、Claude、Cursor 等本地 Agent 的工作台；新线程默认 Full access，远程连接和 provider 凭据须联合治理。 | [GitHub](https://github.com/pingdotgg/t3code) |
 | `CopilotForXcode` | GitHub 官方 Xcode 补全、Chat、Review 与 Agent Mode；background / Accessibility / editor extension、terminal / MCP、托管数据和计费须逐层治理。 | [GitHub](https://github.com/github/CopilotForXcode) |
 | `TokenTracker` | 从多种 coding-agent 本地日志汇总 token、费用与 quota；会安装用户级 hooks、读取本地 auth / usage metadata，有限 telemetry 与账单口径须审计。 | [GitHub](https://github.com/xiufengsun/TokenTracker) |
@@ -169,6 +170,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `e2e` | 将自然语言 Agent 步骤、确定性 locator / assertion 与 replay cache 结合的 Web / mobile 测试框架；code-trust、跨 origin 和 telemetry 须审计。 | [GitHub](https://github.com/tester-army/e2e) |
 | `webbrain` | 以 accessibility tree、权限模式和 MCP 操作真实已登录浏览器；prompt injection、云 / 本地 provider、分享开关与跳过权限须审计。 | [GitHub](https://github.com/webbrain-one/webbrain) |
 | `gh-aw` | 将 Markdown Agent workflow 编译为 GitHub Actions，并用只读 job / safe output 控制写入；权限、runner、网络、锁文件和版本漏洞仍须复核。 | [GitHub](https://github.com/github/gh-aw) |
 | `agentgateway` | 面向 LLM / MCP / A2A 的 Rust proxy，统一 routing、RBAC、budget、guardrail 与 telemetry；集中数据面和 policy 配置须做对抗验证。 | [GitHub](https://github.com/agentgateway/agentgateway) |
@@ -535,6 +537,8 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `EchoMuse` | 将第二代 Echo Dot 改造成 Home Assistant 本地语音卫星；刷机恢复、麦克风模式、软件 mute、LAN 配对与 Assist cloud path 须实测。 | [GitHub](https://github.com/wilbowes/EchoMuse) |
+| `mesh-avatar-studio` | 用 coding agent 初步 rig 单张插画、再在本地编辑器校准 2D avatar；视觉坐标、生成外发和角色 / 素材许可须分开治理。 | [GitHub](https://github.com/shinshin86/mesh-avatar-studio) |
 | `LongCat-Video` | 美团 13.6B 统一视频生成、续写、长视频与音频 Avatar 模型；作者 MOS、GPU 成本、重复动作和肖像 / 声音权利须独立验收。 | [GitHub](https://github.com/meituan-longcat/LongCat-Video) |
 | `UniMate` | 用 flow matching 为不同 skeleton 生成文本条件动画；代码 MIT、权重 CC BY-NC 4.0、数据混合许可，OOD rig 与失败样例须独立验证。 | [GitHub](https://github.com/Friedrich-M/UniMate) |
 | `fframes` | 用 Rust / SVG / GPU / FFmpeg 和 Agent-readable QA 构建程序化视频；速度数据、native build、codec / 素材许可与最终观看须独立验收。 | [GitHub](https://github.com/dmtrKovalenko/fframes) |
@@ -598,6 +602,9 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `ds4` | 为少数 DeepSeek / GLM / Qwen 模型定向优化的 Metal / CUDA / ROCm 原生推理引擎；beta、硬件外推、浮动 commit 和独立权重许可须审计。 | [GitHub](https://github.com/antirez/ds4) |
+| `semantic-router` | vLLM 的可编程 Mixture-of-Models signal / decision / route 层；路由正确、交付、答案质量、cache / replay 与管理面须分开验收。 | [GitHub](https://github.com/vllm-project/semantic-router) |
+| `ninfer` | 为单张 RTX 5090 与少数 Qwen checkpoint 窄优化的 C++ / CUDA runtime；作者 benchmark、artifact provenance、无 tag 与服务暴露须治理。 | [GitHub](https://github.com/Neroued/ninfer) |
 | `CLIProxyAPI` | 将多 provider CLI / OAuth 账号统一成 OpenAI、Gemini、Claude 兼容 API；默认网络监听、TLS、集中 token、协议语义和订阅条款须治理。 | [GitHub](https://github.com/router-for-me/CLIProxyAPI) |
 | `gallery` | Google AI Edge 的多端本地模型试用 / benchmark、skills 与 mobile actions 应用；模型许可、设备差异、网络工具和动作权限须分开验证。 | [GitHub](https://github.com/google-ai-edge/gallery) |
 | `InferenceX` | 持续追踪 e2e serving、collective、operator、power 与 AgentX workload 的开放推理研究平台；作者 dashboard 与 benchmark 须按自身负载复跑。 | [GitHub](https://github.com/SemiAnalysisAI/InferenceX) |
@@ -686,6 +693,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `FounderOS-DEMO` | 带 seeded 数据、typed repository、connector status、Agent / knowledge contract 的单人公司控制台样板；demo UI 不等于真实业务自动化或生产治理。 | [GitHub](https://github.com/Bennettxai/FounderOS-DEMO) |
 | `cloudflare-os` | 以 Gadget、Dynamic Worker、Gatekeeper 和 capability 组织企业 AI 工作区；Early Access、模拟审批、分享与绝对安全宣传须独立复测。 | [GitHub](https://github.com/cloudflare/cloudflare-os) |
 | `user-scanner` | Email / username OSINT、cross-scan、breach intel 与 MCP 工具；个人数据、同名误判、递归范围和平台条款须严格控制。 | [GitHub](https://github.com/kaifcodec/user-scanner) |
 | `ARTEX` | 双图、真实工具、MITM、审批与复测组成的自主渗透研究系统；上游仅允许本地隔离学习，guard / scope 边界须源码级审计。 | [GitHub](https://github.com/Autumn-27/ARTEX) |
@@ -768,6 +776,7 @@
 
 - 全量项目目录：[`projects/`](./projects/)
 - 最近日报：
+  - [`2026-10-05`](./daily/2026-10-05/ai-hotspots.md)
   - [`2026-10-04`](./daily/2026-10-04/ai-hotspots.md)
   - [`2026-10-03`](./daily/2026-10-03/ai-hotspots.md)
   - [`2026-10-02`](./daily/2026-10-02/ai-hotspots.md)
@@ -867,9 +876,9 @@
 ## 当前状态
 
 - 状态：持续日更中。
-- 最新更新：`2026-10-04`。
-- 当前项目总数：`789`。
-- 最近新增项目：`t3code`、`cloudflare-os`、`LongCat-Video`、`chandra`、`user-scanner`、`CLIProxyAPI`、`ARTEX`。
+- 最新更新：`2026-10-05`。
+- 当前项目总数：`797`。
+- 最近新增项目：`e2e`、`ds4`、`EchoMuse`、`semantic-router`、`uniterm`、`ninfer`、`FounderOS-DEMO`、`mesh-avatar-studio`。
 - 覆盖平台：GitHub、X、Instagram、YouTube。
 
 ## 维护约定
