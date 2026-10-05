@@ -49,7 +49,7 @@
 
 如果你是第一次进入这个仓库，建议从这几个入口开始：
 
-- 最新日报：[`daily/2026-10-05/ai-hotspots.md`](./daily/2026-10-05/ai-hotspots.md)
+- 最新日报：[`daily/2026-10-06/ai-hotspots.md`](./daily/2026-10-06/ai-hotspots.md)
 - 项目总目录：[`projects/`](./projects/)
 - 自动化约束：[`AGENTS.md`](./AGENTS.md)
 - 开发续接记录：[`TODO.md`](./TODO.md)
@@ -74,6 +74,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `ZeroScript-Free` | 用浏览器扩展与本机 Bridge 把多种网页聊天接入 Roblox Studio MCP；真实登录态、DOM 漂移、Luau 执行和资产来源须治理。 | [GitHub](https://github.com/sebattfg/ZeroScript-Free) |
 | `uniterm` | 汇总 30+ 运维协议、AI Agent 与 MCP 的跨平台终端；真实 shell / 数据库 / 集群权限、集中凭据、sync 和未签名制品须治理。 | [GitHub](https://github.com/ys-ll/uniterm) |
 | `t3code` | 跨 Web / Electron / mobile 控制 Codex、Claude、Cursor 等本地 Agent 的工作台；新线程默认 Full access，远程连接和 provider 凭据须联合治理。 | [GitHub](https://github.com/pingdotgg/t3code) |
 | `CopilotForXcode` | GitHub 官方 Xcode 补全、Chat、Review 与 Agent Mode；background / Accessibility / editor extension、terminal / MCP、托管数据和计费须逐层治理。 | [GitHub](https://github.com/github/CopilotForXcode) |
@@ -380,6 +381,8 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `OptMem` | 用固定宽度 append-only log 与二叉摘要缓存提供本地 Agent 记忆；无许可证、浮动安装、隐私和持久注入须先处理。 | [GitHub](https://github.com/VictorTaelin/OptMem) |
+| `agentmemoryrepo` | Cognition 发起的 Git-backed Agent Memory Repo 开放规范；Git 历史不等于加密、事实验证或语义冲突消解。 | [GitHub](https://github.com/AgentMemoryRepo/agentmemoryrepo) |
 | `hindsight` | 以 retain / recall / reflect 和 memory bank 为多类 Agent 提供长期记忆；自动采集、provider 外发、bank 隔离和 benchmark 须验证。 | [GitHub](https://github.com/vectorize-io/hindsight) |
 | `agent-beacon` | 跨 harness 采集 Agent session、统一为 OTel / JSONL 并抽取可审阅记忆；完整内容 retention、Managed 转发和 redaction 须严格治理。 | [GitHub](https://github.com/Asymptote-Labs/agent-beacon) |
 | `Memoh` | 为每个 Agent 提供持久 workspace container、长期记忆、浏览器、桌面、MCP 与渠道；容器、egress 和凭据隔离须独立验证。 | [GitHub](https://github.com/felinics/Memoh) |
@@ -432,6 +435,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `leviathan` | 用本地 SQLite FTS5、BM25 与只读 MCP 把大规模记录压成短引用卡；合成 benchmark、召回与索引隐私须复验。 | [GitHub](https://github.com/elstongun/leviathan) |
 | `chandra` | 将 PDF / 图像转成带布局的 HTML、Markdown 或 JSON 的多语言 OCR；代码与权重许可分离，识别和注入风险须回到原页验收。 | [GitHub](https://github.com/datalab-to/chandra) |
 | `opendataloader-pdf` | 本地 PDF → Markdown / JSON / HTML / Tagged PDF，并可启 hybrid AI；作者 benchmark、prompt-injection filtering 和 PDF/UA 相关主张须复验。 | [GitHub](https://github.com/opendataloader-project/opendataloader-pdf) |
 | `OpenKB` | 把多格式资料编译成 Markdown wiki、概念 / 实体页、query / chat 与 Skill；LLM 正确性、重编译覆盖、默认无认证 Web 与 provider 数据流须治理。 | [GitHub](https://github.com/VectifyAI/OpenKB) |
@@ -486,6 +490,8 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `prompt-optimizer` | 跨 Web / desktop / extension / Docker / MCP 的提示词优化与评测工作台；provider 外发、key / backup、网络面和自评偏差须审计。 | [GitHub](https://github.com/linshenkx/prompt-optimizer) |
+| `pi-pocket` | 自托管、移动优先的 Pi Agent 持久会话与多人控制面；steer、public tunnel、server browser 和无人值守任务须严格限权。 | [GitHub](https://github.com/TannerMidd/pi-pocket) |
 | `hermes-relay` | Hermes Agent 的 Android companion 与 desktop relay；sideload Device Control、终端 / 文件工具、远程路由和多 release tracks 必须分别授权。 | [GitHub](https://github.com/Codename-11/hermes-relay) |
 | `Libraries.dev` | 为 AI 产品提供七类 React 动效组件与 agent copy-prompt；WebGL 性能、reduced motion、DOM 语义和 Pro 内容授权须独立验证。 | [GitHub](https://github.com/Jakubantalik/Libraries.dev) |
 | `interface-design` | 用 skill 与 `.interface-design/system.md` 记录产品 UI 决策；一致性不替代 accessibility、用户研究、性能和人工审批。 | [GitHub](https://github.com/Dammyjay93/interface-design) |
@@ -537,6 +543,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `qiaomu-codex-imagegen` | 把 Codex 生图封装成 Skill / MCP / CLI，并提供中文场景模板与验收项；额度、参考图外发和素材权利须逐张治理。 | [GitHub](https://github.com/joeseesun/qiaomu-codex-imagegen) |
 | `EchoMuse` | 将第二代 Echo Dot 改造成 Home Assistant 本地语音卫星；刷机恢复、麦克风模式、软件 mute、LAN 配对与 Assist cloud path 须实测。 | [GitHub](https://github.com/wilbowes/EchoMuse) |
 | `mesh-avatar-studio` | 用 coding agent 初步 rig 单张插画、再在本地编辑器校准 2D avatar；视觉坐标、生成外发和角色 / 素材许可须分开治理。 | [GitHub](https://github.com/shinshin86/mesh-avatar-studio) |
 | `LongCat-Video` | 美团 13.6B 统一视频生成、续写、长视频与音频 Avatar 模型；作者 MOS、GPU 成本、重复动作和肖像 / 声音权利须独立验收。 | [GitHub](https://github.com/meituan-longcat/LongCat-Video) |
@@ -602,6 +609,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `brewery-ai` | 引导数据、模型选择、SSH GPU、CPT / SFT / DPO、评测与发布的微调 Agent；费用、远端权限、数据许可和自定义许可证须拆分治理。 | [GitHub](https://github.com/empero-org/brewery-ai) |
 | `ds4` | 为少数 DeepSeek / GLM / Qwen 模型定向优化的 Metal / CUDA / ROCm 原生推理引擎；beta、硬件外推、浮动 commit 和独立权重许可须审计。 | [GitHub](https://github.com/antirez/ds4) |
 | `semantic-router` | vLLM 的可编程 Mixture-of-Models signal / decision / route 层；路由正确、交付、答案质量、cache / replay 与管理面须分开验收。 | [GitHub](https://github.com/vllm-project/semantic-router) |
 | `ninfer` | 为单张 RTX 5090 与少数 Qwen checkpoint 窄优化的 C++ / CUDA runtime；作者 benchmark、artifact provenance、无 tag 与服务暴露须治理。 | [GitHub](https://github.com/Neroued/ninfer) |
@@ -776,6 +784,7 @@
 
 - 全量项目目录：[`projects/`](./projects/)
 - 最近日报：
+  - [`2026-10-06`](./daily/2026-10-06/ai-hotspots.md)
   - [`2026-10-05`](./daily/2026-10-05/ai-hotspots.md)
   - [`2026-10-04`](./daily/2026-10-04/ai-hotspots.md)
   - [`2026-10-03`](./daily/2026-10-03/ai-hotspots.md)
@@ -876,9 +885,9 @@
 ## 当前状态
 
 - 状态：持续日更中。
-- 最新更新：`2026-10-05`。
-- 当前项目总数：`797`。
-- 最近新增项目：`e2e`、`ds4`、`EchoMuse`、`semantic-router`、`uniterm`、`ninfer`、`FounderOS-DEMO`、`mesh-avatar-studio`。
+- 最新更新：`2026-10-06`。
+- 当前项目总数：`805`。
+- 最近新增项目：`OptMem`、`prompt-optimizer`、`ZeroScript-Free`、`leviathan`、`brewery-ai`、`agentmemoryrepo`、`pi-pocket`、`qiaomu-codex-imagegen`。
 - 覆盖平台：GitHub、X、Instagram、YouTube。
 
 ## 维护约定
