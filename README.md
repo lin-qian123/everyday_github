@@ -49,7 +49,7 @@
 
 如果你是第一次进入这个仓库，建议从这几个入口开始：
 
-- 最新日报：[`daily/2026-10-06/ai-hotspots.md`](./daily/2026-10-06/ai-hotspots.md)
+- 最新日报：[`daily/2026-10-07/ai-hotspots.md`](./daily/2026-10-07/ai-hotspots.md)
 - 项目总目录：[`projects/`](./projects/)
 - 自动化约束：[`AGENTS.md`](./AGENTS.md)
 - 开发续接记录：[`TODO.md`](./TODO.md)
@@ -74,6 +74,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `rea` | 以 CLI / MCP、provider adapter 与 Evidence 串联原生、JS / Electron、.NET、APK、固件和网页逆向调查；法律授权、动态执行与同用户权限须隔离。 | [GitHub](https://github.com/morluto/rea) |
 | `ZeroScript-Free` | 用浏览器扩展与本机 Bridge 把多种网页聊天接入 Roblox Studio MCP；真实登录态、DOM 漂移、Luau 执行和资产来源须治理。 | [GitHub](https://github.com/sebattfg/ZeroScript-Free) |
 | `uniterm` | 汇总 30+ 运维协议、AI Agent 与 MCP 的跨平台终端；真实 shell / 数据库 / 集群权限、集中凭据、sync 和未签名制品须治理。 | [GitHub](https://github.com/ys-ll/uniterm) |
 | `t3code` | 跨 Web / Electron / mobile 控制 Codex、Claude、Cursor 等本地 Agent 的工作台；新线程默认 Full access，远程连接和 provider 凭据须联合治理。 | [GitHub](https://github.com/pingdotgg/t3code) |
@@ -171,6 +172,8 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `claude-plugins-community` | Anthropic 的社区插件市场只读镜像，registry 含固定来源 SHA；自动扫描 / 审批不替代逐插件权限、外发、许可与副作用审计。 | [GitHub](https://github.com/anthropics/claude-plugins-community) |
+| `hexstrike-ai` | 汇总 150+ offensive tools 与 MCP / Agent 的安全自动化平台；默认全网卡监听、通用执行路由和授权范围要求断网靶场收敛。 | [GitHub](https://github.com/0x4m4/hexstrike-ai) |
 | `e2e` | 将自然语言 Agent 步骤、确定性 locator / assertion 与 replay cache 结合的 Web / mobile 测试框架；code-trust、跨 origin 和 telemetry 须审计。 | [GitHub](https://github.com/tester-army/e2e) |
 | `webbrain` | 以 accessibility tree、权限模式和 MCP 操作真实已登录浏览器；prompt injection、云 / 本地 provider、分享开关与跳过权限须审计。 | [GitHub](https://github.com/webbrain-one/webbrain) |
 | `gh-aw` | 将 Markdown Agent workflow 编译为 GitHub Actions，并用只读 job / safe output 控制写入；权限、runner、网络、锁文件和版本漏洞仍须复核。 | [GitHub](https://github.com/github/gh-aw) |
@@ -435,6 +438,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `FalkorDB` | 用 Rust、GraphBLAS、稀疏矩阵与 OpenCypher 构建 property graph / GraphRAG 数据库；SSPL、公开端口、图谱权限和作者 benchmark 须治理。 | [GitHub](https://github.com/FalkorDB/FalkorDB) |
 | `leviathan` | 用本地 SQLite FTS5、BM25 与只读 MCP 把大规模记录压成短引用卡；合成 benchmark、召回与索引隐私须复验。 | [GitHub](https://github.com/elstongun/leviathan) |
 | `chandra` | 将 PDF / 图像转成带布局的 HTML、Markdown 或 JSON 的多语言 OCR；代码与权重许可分离，识别和注入风险须回到原页验收。 | [GitHub](https://github.com/datalab-to/chandra) |
 | `opendataloader-pdf` | 本地 PDF → Markdown / JSON / HTML / Tagged PDF，并可启 hybrid AI；作者 benchmark、prompt-injection filtering 和 PDF/UA 相关主张须复验。 | [GitHub](https://github.com/opendataloader-project/opendataloader-pdf) |
@@ -543,6 +547,8 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `Handy` | 用 Silero VAD 与 Whisper / Parakeet 做跨平台本地听写；模型 / 更新供应链、历史、麦克风 / 辅助功能 / 剪贴板权限与识别误差须验收。 | [GitHub](https://github.com/cjpais/Handy) |
+| `artcraft` | 以 2D / 3D scene、角色姿态、camera 与多 provider 模型构建可编辑媒体 IDE；WIP 非 OSI 许可、素材外发、费用和权利须逐层核验。 | [GitHub](https://github.com/storytold/artcraft) |
 | `qiaomu-codex-imagegen` | 把 Codex 生图封装成 Skill / MCP / CLI，并提供中文场景模板与验收项；额度、参考图外发和素材权利须逐张治理。 | [GitHub](https://github.com/joeseesun/qiaomu-codex-imagegen) |
 | `EchoMuse` | 将第二代 Echo Dot 改造成 Home Assistant 本地语音卫星；刷机恢复、麦克风模式、软件 mute、LAN 配对与 Assist cloud path 须实测。 | [GitHub](https://github.com/wilbowes/EchoMuse) |
 | `mesh-avatar-studio` | 用 coding agent 初步 rig 单张插画、再在本地编辑器校准 2D avatar；视觉坐标、生成外发和角色 / 素材许可须分开治理。 | [GitHub](https://github.com/shinshin86/mesh-avatar-studio) |
@@ -609,6 +615,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `DeepGEMM` | 面向 SM90 / SM100 的 FP8 / FP4 / BF16 GEMM、MQA 与 Mega MoE DeepJIT kernel 库；硬件、数值、JIT 供应链、benchmark 和版本漂移须固定复测。 | [GitHub](https://github.com/deepseek-ai/DeepGEMM) |
 | `brewery-ai` | 引导数据、模型选择、SSH GPU、CPT / SFT / DPO、评测与发布的微调 Agent；费用、远端权限、数据许可和自定义许可证须拆分治理。 | [GitHub](https://github.com/empero-org/brewery-ai) |
 | `ds4` | 为少数 DeepSeek / GLM / Qwen 模型定向优化的 Metal / CUDA / ROCm 原生推理引擎；beta、硬件外推、浮动 commit 和独立权重许可须审计。 | [GitHub](https://github.com/antirez/ds4) |
 | `semantic-router` | vLLM 的可编程 Mixture-of-Models signal / decision / route 层；路由正确、交付、答案质量、cache / replay 与管理面须分开验收。 | [GitHub](https://github.com/vllm-project/semantic-router) |
@@ -701,6 +708,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `12306-mcp` | 把车站、余票、中转与经停查询封装为 MCP tools；第三方接口、动态数据、HTTP 网络面和“查询不等于购票”须显式保留。 | [GitHub](https://github.com/Joooook/12306-mcp) |
 | `FounderOS-DEMO` | 带 seeded 数据、typed repository、connector status、Agent / knowledge contract 的单人公司控制台样板；demo UI 不等于真实业务自动化或生产治理。 | [GitHub](https://github.com/Bennettxai/FounderOS-DEMO) |
 | `cloudflare-os` | 以 Gadget、Dynamic Worker、Gatekeeper 和 capability 组织企业 AI 工作区；Early Access、模拟审批、分享与绝对安全宣传须独立复测。 | [GitHub](https://github.com/cloudflare/cloudflare-os) |
 | `user-scanner` | Email / username OSINT、cross-scan、breach intel 与 MCP 工具；个人数据、同名误判、递归范围和平台条款须严格控制。 | [GitHub](https://github.com/kaifcodec/user-scanner) |
@@ -784,6 +792,7 @@
 
 - 全量项目目录：[`projects/`](./projects/)
 - 最近日报：
+  - [`2026-10-07`](./daily/2026-10-07/ai-hotspots.md)
   - [`2026-10-06`](./daily/2026-10-06/ai-hotspots.md)
   - [`2026-10-05`](./daily/2026-10-05/ai-hotspots.md)
   - [`2026-10-04`](./daily/2026-10-04/ai-hotspots.md)
@@ -885,9 +894,9 @@
 ## 当前状态
 
 - 状态：持续日更中。
-- 最新更新：`2026-10-06`。
-- 当前项目总数：`805`。
-- 最近新增项目：`OptMem`、`prompt-optimizer`、`ZeroScript-Free`、`leviathan`、`brewery-ai`、`agentmemoryrepo`、`pi-pocket`、`qiaomu-codex-imagegen`。
+- 最新更新：`2026-10-07`。
+- 当前项目总数：`813`。
+- 最近新增项目：`rea`、`DeepGEMM`、`hexstrike-ai`、`12306-mcp`、`claude-plugins-community`、`FalkorDB`、`Handy`、`artcraft`。
 - 覆盖平台：GitHub、X、Instagram、YouTube。
 
 ## 维护约定
