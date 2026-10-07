@@ -49,7 +49,7 @@
 
 如果你是第一次进入这个仓库，建议从这几个入口开始：
 
-- 最新日报：[`daily/2026-10-07/ai-hotspots.md`](./daily/2026-10-07/ai-hotspots.md)
+- 最新日报：[`daily/2026-10-08/ai-hotspots.md`](./daily/2026-10-08/ai-hotspots.md)
 - 项目总目录：[`projects/`](./projects/)
 - 自动化约束：[`AGENTS.md`](./AGENTS.md)
 - 开发续接记录：[`TODO.md`](./TODO.md)
@@ -74,6 +74,8 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `ghidra-mcp` | 以 GUI plugin、headless server 与 MCP bridge 暴露 200+ Ghidra 工具；script、debugger、共享 server 和项目写入须在断网 VM 收敛。 | [GitHub](https://github.com/bethington/ghidra-mcp) |
+| `gcx` | Grafana 面向人和 Coding Agent 的统一 CLI / skills，覆盖资源、signals 与 Cloud products；token scope、raw API、写入和费用须治理。 | [GitHub](https://github.com/grafana/gcx) |
 | `rea` | 以 CLI / MCP、provider adapter 与 Evidence 串联原生、JS / Electron、.NET、APK、固件和网页逆向调查；法律授权、动态执行与同用户权限须隔离。 | [GitHub](https://github.com/morluto/rea) |
 | `ZeroScript-Free` | 用浏览器扩展与本机 Bridge 把多种网页聊天接入 Roblox Studio MCP；真实登录态、DOM 漂移、Luau 执行和资产来源须治理。 | [GitHub](https://github.com/sebattfg/ZeroScript-Free) |
 | `uniterm` | 汇总 30+ 运维协议、AI Agent 与 MCP 的跨平台终端；真实 shell / 数据库 / 集群权限、集中凭据、sync 和未签名制品须治理。 | [GitHub](https://github.com/ys-ll/uniterm) |
@@ -172,6 +174,9 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `ADR` | Uber 的 Agent 工具发现、遥测、合成安全 benchmark 与 detector 套件；开源版不含 Prevention / Explorer，敏感日志和复现范围须分开。 | [GitHub](https://github.com/uber/ADR) |
+| `agent-sandbox` | 用 Kubernetes CRD、Claim 与 WarmPool 管理有状态 Agent workload；生命周期控制不等于强隔离，runtime、egress 与 service account 须外部收敛。 | [GitHub](https://github.com/kubernetes-sigs/agent-sandbox) |
+| `n8n-skills` | 以 14 个 skills、router 与 hooks 指导 n8n workflow 构建和校验；提醒 / validation 不是授权层，credential、trigger 与生产写入须审批。 | [GitHub](https://github.com/czlonkowski/n8n-skills) |
 | `claude-plugins-community` | Anthropic 的社区插件市场只读镜像，registry 含固定来源 SHA；自动扫描 / 审批不替代逐插件权限、外发、许可与副作用审计。 | [GitHub](https://github.com/anthropics/claude-plugins-community) |
 | `hexstrike-ai` | 汇总 150+ offensive tools 与 MCP / Agent 的安全自动化平台；默认全网卡监听、通用执行路由和授权范围要求断网靶场收敛。 | [GitHub](https://github.com/0x4m4/hexstrike-ai) |
 | `e2e` | 将自然语言 Agent 步骤、确定性 locator / assertion 与 replay cache 结合的 Web / mobile 测试框架；code-trust、跨 origin 和 telemetry 须审计。 | [GitHub](https://github.com/tester-army/e2e) |
@@ -384,6 +389,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `gbrain` | 用来源、纠正、撤回、visibility 与 facts / takes 分层提供跨 Agent 记忆；默认共享、provider 外发和后台改写须做隔离测试。 | [GitHub](https://github.com/garrytan/gbrain) |
 | `OptMem` | 用固定宽度 append-only log 与二叉摘要缓存提供本地 Agent 记忆；无许可证、浮动安装、隐私和持久注入须先处理。 | [GitHub](https://github.com/VictorTaelin/OptMem) |
 | `agentmemoryrepo` | Cognition 发起的 Git-backed Agent Memory Repo 开放规范；Git 历史不等于加密、事实验证或语义冲突消解。 | [GitHub](https://github.com/AgentMemoryRepo/agentmemoryrepo) |
 | `hindsight` | 以 retain / recall / reflect 和 memory bank 为多类 Agent 提供长期记忆；自动采集、provider 外发、bank 隔离和 benchmark 须验证。 | [GitHub](https://github.com/vectorize-io/hindsight) |
@@ -438,6 +444,8 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `open-ontologies` | 用语义 plan、blast radius 与独立 checker certificate 审计本体变化；证明范围、用户规则与无证书 reasoner opinion 必须分层。 | [GitHub](https://github.com/fabio-rovai/open-ontologies) |
+| `xerj` | 本地 Elasticsearch-compatible 自动索引、搜索 / RAG / memory 引擎；私有语料吸入、RC 兼容、作者 benchmark 与 rerank 外发须复测。 | [GitHub](https://github.com/xerj-org/xerj) |
 | `FalkorDB` | 用 Rust、GraphBLAS、稀疏矩阵与 OpenCypher 构建 property graph / GraphRAG 数据库；SSPL、公开端口、图谱权限和作者 benchmark 须治理。 | [GitHub](https://github.com/FalkorDB/FalkorDB) |
 | `leviathan` | 用本地 SQLite FTS5、BM25 与只读 MCP 把大规模记录压成短引用卡；合成 benchmark、召回与索引隐私须复验。 | [GitHub](https://github.com/elstongun/leviathan) |
 | `chandra` | 将 PDF / 图像转成带布局的 HTML、Markdown 或 JSON 的多语言 OCR；代码与权重许可分离，识别和注入风险须回到原页验收。 | [GitHub](https://github.com/datalab-to/chandra) |
@@ -792,6 +800,7 @@
 
 - 全量项目目录：[`projects/`](./projects/)
 - 最近日报：
+  - [`2026-10-08`](./daily/2026-10-08/ai-hotspots.md)
   - [`2026-10-07`](./daily/2026-10-07/ai-hotspots.md)
   - [`2026-10-06`](./daily/2026-10-06/ai-hotspots.md)
   - [`2026-10-05`](./daily/2026-10-05/ai-hotspots.md)
@@ -894,9 +903,9 @@
 ## 当前状态
 
 - 状态：持续日更中。
-- 最新更新：`2026-10-07`。
-- 当前项目总数：`813`。
-- 最近新增项目：`rea`、`DeepGEMM`、`hexstrike-ai`、`12306-mcp`、`claude-plugins-community`、`FalkorDB`、`Handy`、`artcraft`。
+- 最新更新：`2026-10-08`。
+- 当前项目总数：`821`。
+- 最近新增项目：`ADR`、`gbrain`、`gcx`、`agent-sandbox`、`open-ontologies`、`xerj`、`ghidra-mcp`、`n8n-skills`。
 - 覆盖平台：GitHub、X、Instagram、YouTube。
 
 ## 维护约定
