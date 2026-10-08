@@ -49,7 +49,7 @@
 
 如果你是第一次进入这个仓库，建议从这几个入口开始：
 
-- 最新日报：[`daily/2026-10-08/ai-hotspots.md`](./daily/2026-10-08/ai-hotspots.md)
+- 最新日报：[`daily/2026-10-09/ai-hotspots.md`](./daily/2026-10-09/ai-hotspots.md)
 - 项目总目录：[`projects/`](./projects/)
 - 自动化约束：[`AGENTS.md`](./AGENTS.md)
 - 开发续接记录：[`TODO.md`](./TODO.md)
@@ -74,6 +74,8 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `codex-security` | 用 Agent 串联漏洞发现、验证、补丁、威胁模型与 SARIF；模型 finding、源码外发、成本和无认证 preview findings service 须治理。 | [GitHub](https://github.com/openai/codex-security) |
+| `Windows-MCP` | 以 UIA、截图、PowerShell、文件、进程与注册表让 Agent 控制 Windows；默认全工具、远程网络面和 telemetry 须在专用 VM 收敛。 | [GitHub](https://github.com/CursorTouch/Windows-MCP) |
 | `ghidra-mcp` | 以 GUI plugin、headless server 与 MCP bridge 暴露 200+ Ghidra 工具；script、debugger、共享 server 和项目写入须在断网 VM 收敛。 | [GitHub](https://github.com/bethington/ghidra-mcp) |
 | `gcx` | Grafana 面向人和 Coding Agent 的统一 CLI / skills，覆盖资源、signals 与 Cloud products；token scope、raw API、写入和费用须治理。 | [GitHub](https://github.com/grafana/gcx) |
 | `rea` | 以 CLI / MCP、provider adapter 与 Evidence 串联原生、JS / Electron、.NET、APK、固件和网页逆向调查；法律授权、动态执行与同用户权限须隔离。 | [GitHub](https://github.com/morluto/rea) |
@@ -174,6 +176,9 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `docker-agent` | Docker 的声明式 Agent builder / runtime，覆盖 MCP、多 Agent、RAG、评估、OCI 与 sandbox 编排；safety default、telemetry、secret 和 mount 须治理。 | [GitHub](https://github.com/docker/docker-agent) |
+| `mxc` | Microsoft 的跨平台不可信执行 SDK，以统一 policy 连接 ProcessContainer、Bubblewrap、Seatbelt 与多类 VM backend；隔离强度须逐 backend 验证。 | [GitHub](https://github.com/microsoft/mxc) |
+| `agent-framework` | Microsoft 的 Python / .NET Agent 与 graph workflow 框架，覆盖 checkpoint、hosting、skills 和观测；多包版本、provider 数据流和恢复语义须固定。 | [GitHub](https://github.com/microsoft/agent-framework) |
 | `ADR` | Uber 的 Agent 工具发现、遥测、合成安全 benchmark 与 detector 套件；开源版不含 Prevention / Explorer，敏感日志和复现范围须分开。 | [GitHub](https://github.com/uber/ADR) |
 | `agent-sandbox` | 用 Kubernetes CRD、Claim 与 WarmPool 管理有状态 Agent workload；生命周期控制不等于强隔离，runtime、egress 与 service account 须外部收敛。 | [GitHub](https://github.com/kubernetes-sigs/agent-sandbox) |
 | `n8n-skills` | 以 14 个 skills、router 与 hooks 指导 n8n workflow 构建和校验；提醒 / validation 不是授权层，credential、trigger 与生产写入须审批。 | [GitHub](https://github.com/czlonkowski/n8n-skills) |
@@ -444,6 +449,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `flowsint` | 将 OSINT enrichers、任务队列和多类实体组织为本地调查图；个人数据、误关联、外部查询与公网部署边界须治理。 | [GitHub](https://github.com/reconurge/flowsint) |
 | `open-ontologies` | 用语义 plan、blast radius 与独立 checker certificate 审计本体变化；证明范围、用户规则与无证书 reasoner opinion 必须分层。 | [GitHub](https://github.com/fabio-rovai/open-ontologies) |
 | `xerj` | 本地 Elasticsearch-compatible 自动索引、搜索 / RAG / memory 引擎；私有语料吸入、RC 兼容、作者 benchmark 与 rerank 外发须复测。 | [GitHub](https://github.com/xerj-org/xerj) |
 | `FalkorDB` | 用 Rust、GraphBLAS、稀疏矩阵与 OpenCypher 构建 property graph / GraphRAG 数据库；SSPL、公开端口、图谱权限和作者 benchmark 须治理。 | [GitHub](https://github.com/FalkorDB/FalkorDB) |
@@ -623,6 +629,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `llm-d-router` | 用 EPP、Envoy / Gateway API、KV-cache locality 与 priority 路由推理请求；集中数据面、API 演进和 workload 依赖收益须实测。 | [GitHub](https://github.com/llm-d/llm-d-router) |
 | `DeepGEMM` | 面向 SM90 / SM100 的 FP8 / FP4 / BF16 GEMM、MQA 与 Mega MoE DeepJIT kernel 库；硬件、数值、JIT 供应链、benchmark 和版本漂移须固定复测。 | [GitHub](https://github.com/deepseek-ai/DeepGEMM) |
 | `brewery-ai` | 引导数据、模型选择、SSH GPU、CPT / SFT / DPO、评测与发布的微调 Agent；费用、远端权限、数据许可和自定义许可证须拆分治理。 | [GitHub](https://github.com/empero-org/brewery-ai) |
 | `ds4` | 为少数 DeepSeek / GLM / Qwen 模型定向优化的 Metal / CUDA / ROCm 原生推理引擎；beta、硬件外推、浮动 commit 和独立权重许可须审计。 | [GitHub](https://github.com/antirez/ds4) |
@@ -716,6 +723,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `atlassian-mcp-server` | Atlassian 官方托管 MCP 连接 Jira、Confluence、JSM、Bitbucket、Loom 与 Teamwork Graph；写权限、托管服务边界和 v1 / v2 漂移须治理。 | [GitHub](https://github.com/atlassian/atlassian-mcp-server) |
 | `12306-mcp` | 把车站、余票、中转与经停查询封装为 MCP tools；第三方接口、动态数据、HTTP 网络面和“查询不等于购票”须显式保留。 | [GitHub](https://github.com/Joooook/12306-mcp) |
 | `FounderOS-DEMO` | 带 seeded 数据、typed repository、connector status、Agent / knowledge contract 的单人公司控制台样板；demo UI 不等于真实业务自动化或生产治理。 | [GitHub](https://github.com/Bennettxai/FounderOS-DEMO) |
 | `cloudflare-os` | 以 Gadget、Dynamic Worker、Gatekeeper 和 capability 组织企业 AI 工作区；Early Access、模拟审批、分享与绝对安全宣传须独立复测。 | [GitHub](https://github.com/cloudflare/cloudflare-os) |
@@ -800,6 +808,7 @@
 
 - 全量项目目录：[`projects/`](./projects/)
 - 最近日报：
+  - [`2026-10-09`](./daily/2026-10-09/ai-hotspots.md)
   - [`2026-10-08`](./daily/2026-10-08/ai-hotspots.md)
   - [`2026-10-07`](./daily/2026-10-07/ai-hotspots.md)
   - [`2026-10-06`](./daily/2026-10-06/ai-hotspots.md)
@@ -903,9 +912,9 @@
 ## 当前状态
 
 - 状态：持续日更中。
-- 最新更新：`2026-10-08`。
-- 当前项目总数：`821`。
-- 最近新增项目：`ADR`、`gbrain`、`gcx`、`agent-sandbox`、`open-ontologies`、`xerj`、`ghidra-mcp`、`n8n-skills`。
+- 最新更新：`2026-10-09`。
+- 当前项目总数：`829`。
+- 最近新增项目：`flowsint`、`codex-security`、`docker-agent`、`mxc`、`Windows-MCP`、`atlassian-mcp-server`、`agent-framework`、`llm-d-router`。
 - 覆盖平台：GitHub、X、Instagram、YouTube。
 
 ## 维护约定
