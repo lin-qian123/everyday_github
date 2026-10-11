@@ -49,7 +49,7 @@
 
 如果你是第一次进入这个仓库，建议从这几个入口开始：
 
-- 最新日报：[`daily/2026-10-09/ai-hotspots.md`](./daily/2026-10-09/ai-hotspots.md)
+- 最新日报：[`daily/2026-10-12/ai-hotspots.md`](./daily/2026-10-12/ai-hotspots.md)
 - 项目总目录：[`projects/`](./projects/)
 - 自动化约束：[`AGENTS.md`](./AGENTS.md)
 - 开发续接记录：[`TODO.md`](./TODO.md)
@@ -176,6 +176,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `agentscope-java` | 面向 Java 企业生态的长时程 Agent framework / harness，覆盖事件、权限、memory、subagent、sandbox 与分布式恢复；统一接口不等于统一隔离强度。 | [GitHub](https://github.com/agentscope-ai/agentscope-java) |
 | `docker-agent` | Docker 的声明式 Agent builder / runtime，覆盖 MCP、多 Agent、RAG、评估、OCI 与 sandbox 编排；safety default、telemetry、secret 和 mount 须治理。 | [GitHub](https://github.com/docker/docker-agent) |
 | `mxc` | Microsoft 的跨平台不可信执行 SDK，以统一 policy 连接 ProcessContainer、Bubblewrap、Seatbelt 与多类 VM backend；隔离强度须逐 backend 验证。 | [GitHub](https://github.com/microsoft/mxc) |
 | `agent-framework` | Microsoft 的 Python / .NET Agent 与 graph workflow 框架，覆盖 checkpoint、hosting、skills 和观测；多包版本、provider 数据流和恢复语义须固定。 | [GitHub](https://github.com/microsoft/agent-framework) |
@@ -449,6 +450,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `repowise` | 将代码图、Git、测试、文档与决策编成本地 MCP 索引；动态语义、作者 benchmark、衍生索引与 opt-out telemetry 须独立验证。 | [GitHub](https://github.com/repowise-dev/repowise) |
 | `flowsint` | 将 OSINT enrichers、任务队列和多类实体组织为本地调查图；个人数据、误关联、外部查询与公网部署边界须治理。 | [GitHub](https://github.com/reconurge/flowsint) |
 | `open-ontologies` | 用语义 plan、blast radius 与独立 checker certificate 审计本体变化；证明范围、用户规则与无证书 reasoner opinion 必须分层。 | [GitHub](https://github.com/fabio-rovai/open-ontologies) |
 | `xerj` | 本地 Elasticsearch-compatible 自动索引、搜索 / RAG / memory 引擎；私有语料吸入、RC 兼容、作者 benchmark 与 rerank 外发须复测。 | [GitHub](https://github.com/xerj-org/xerj) |
@@ -508,6 +510,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `OpenIntelligentUI` | CopilotKit 的 Generative UI 完整示例，在文本、原生组件与 sandboxed custom UI 间路由；事实、bridge、CSP、provider 与持久化须补齐。 | [GitHub](https://github.com/CopilotKit/OpenIntelligentUI) |
 | `prompt-optimizer` | 跨 Web / desktop / extension / Docker / MCP 的提示词优化与评测工作台；provider 外发、key / backup、网络面和自评偏差须审计。 | [GitHub](https://github.com/linshenkx/prompt-optimizer) |
 | `pi-pocket` | 自托管、移动优先的 Pi Agent 持久会话与多人控制面；steer、public tunnel、server browser 和无人值守任务须严格限权。 | [GitHub](https://github.com/TannerMidd/pi-pocket) |
 | `hermes-relay` | Hermes Agent 的 Android companion 与 desktop relay；sideload Device Control、终端 / 文件工具、远程路由和多 release tracks 必须分别授权。 | [GitHub](https://github.com/Codename-11/hermes-relay) |
@@ -561,6 +564,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `TRELLIS.2` | Microsoft 的 4B image-to-3D 模型，以 O-Voxel 生成复杂拓扑和 PBR 材质；小孔、非流形、H100 benchmark 与素材权利须人工验收。 | [GitHub](https://github.com/microsoft/TRELLIS.2) |
 | `Handy` | 用 Silero VAD 与 Whisper / Parakeet 做跨平台本地听写；模型 / 更新供应链、历史、麦克风 / 辅助功能 / 剪贴板权限与识别误差须验收。 | [GitHub](https://github.com/cjpais/Handy) |
 | `artcraft` | 以 2D / 3D scene、角色姿态、camera 与多 provider 模型构建可编辑媒体 IDE；WIP 非 OSI 许可、素材外发、费用和权利须逐层核验。 | [GitHub](https://github.com/storytold/artcraft) |
 | `qiaomu-codex-imagegen` | 把 Codex 生图封装成 Skill / MCP / CLI，并提供中文场景模板与验收项；额度、参考图外发和素材权利须逐张治理。 | [GitHub](https://github.com/joeseesun/qiaomu-codex-imagegen) |
@@ -629,6 +633,8 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `airllm` | 通过逐层权重流式让低显存单卡运行 / 训练超大模型；磁盘、主存、I/O、吞吐、质量、模型许可和远端代码须联合验收。 | [GitHub](https://github.com/lyogavin/airllm) |
+| `sparkDash` | 汇总 DGX Spark / GPU、LLM、ComfyUI、Hermes、benchmark 与电源动作的 fleet 面板；SSH key、主机可见性和远程认证须严格收敛。 | [GitHub](https://github.com/MiaAI-Lab/sparkDash) |
 | `llm-d-router` | 用 EPP、Envoy / Gateway API、KV-cache locality 与 priority 路由推理请求；集中数据面、API 演进和 workload 依赖收益须实测。 | [GitHub](https://github.com/llm-d/llm-d-router) |
 | `DeepGEMM` | 面向 SM90 / SM100 的 FP8 / FP4 / BF16 GEMM、MQA 与 Mega MoE DeepJIT kernel 库；硬件、数值、JIT 供应链、benchmark 和版本漂移须固定复测。 | [GitHub](https://github.com/deepseek-ai/DeepGEMM) |
 | `brewery-ai` | 引导数据、模型选择、SSH GPU、CPT / SFT / DPO、评测与发布的微调 Agent；费用、远端权限、数据许可和自定义许可证须拆分治理。 | [GitHub](https://github.com/empero-org/brewery-ai) |
@@ -723,6 +729,8 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `nao` | 将数据、metadata、规则、工具与 SQL evaluation 组织成 analytics-agent context；指标口径、数据权限、模型出口和复合许可证须审计。 | [GitHub](https://github.com/getnao/nao) |
+| `whatsapp-mcp` | 以 Go bridge、SQLite 与 Python MCP 读取 / 搜索真实 WhatsApp 并发送消息和媒体；注入、私聊外发、非官方协议和旧维护状态风险很高。 | [GitHub](https://github.com/lharries/whatsapp-mcp) |
 | `atlassian-mcp-server` | Atlassian 官方托管 MCP 连接 Jira、Confluence、JSM、Bitbucket、Loom 与 Teamwork Graph；写权限、托管服务边界和 v1 / v2 漂移须治理。 | [GitHub](https://github.com/atlassian/atlassian-mcp-server) |
 | `12306-mcp` | 把车站、余票、中转与经停查询封装为 MCP tools；第三方接口、动态数据、HTTP 网络面和“查询不等于购票”须显式保留。 | [GitHub](https://github.com/Joooook/12306-mcp) |
 | `FounderOS-DEMO` | 带 seeded 数据、typed repository、connector status、Agent / knowledge contract 的单人公司控制台样板；demo UI 不等于真实业务自动化或生产治理。 | [GitHub](https://github.com/Bennettxai/FounderOS-DEMO) |
@@ -808,6 +816,7 @@
 
 - 全量项目目录：[`projects/`](./projects/)
 - 最近日报：
+  - [`2026-10-12`](./daily/2026-10-12/ai-hotspots.md)
   - [`2026-10-09`](./daily/2026-10-09/ai-hotspots.md)
   - [`2026-10-08`](./daily/2026-10-08/ai-hotspots.md)
   - [`2026-10-07`](./daily/2026-10-07/ai-hotspots.md)
@@ -912,9 +921,9 @@
 ## 当前状态
 
 - 状态：持续日更中。
-- 最新更新：`2026-10-09`。
-- 当前项目总数：`829`。
-- 最近新增项目：`flowsint`、`codex-security`、`docker-agent`、`mxc`、`Windows-MCP`、`atlassian-mcp-server`、`agent-framework`、`llm-d-router`。
+- 最新更新：`2026-10-12`。
+- 当前项目总数：`837`。
+- 最近新增项目：`airllm`、`TRELLIS.2`、`repowise`、`OpenIntelligentUI`、`nao`、`sparkDash`、`whatsapp-mcp`、`agentscope-java`。
 - 覆盖平台：GitHub、X、Instagram、YouTube。
 
 ## 维护约定
