@@ -74,6 +74,8 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `billion-context` | 以 proxy / plugin / launcher 为多类 coding agents 注入可逆分层压缩；模型流量 MITM、Early 状态、日志和 MIT 附加署名条款须审计。 | [GitHub](https://github.com/ranxianglei/billion-context) |
+| `token-monitor` | 本地聚合 44+ AI 工具的 token、成本、限额与 session，并可自托管跨设备同步；凭据、标题、archive 和公网 Hub 须逐项 opt-in。 | [GitHub](https://github.com/Javis603/token-monitor) |
 | `codex-security` | 用 Agent 串联漏洞发现、验证、补丁、威胁模型与 SARIF；模型 finding、源码外发、成本和无认证 preview findings service 须治理。 | [GitHub](https://github.com/openai/codex-security) |
 | `Windows-MCP` | 以 UIA、截图、PowerShell、文件、进程与注册表让 Agent 控制 Windows；默认全工具、远程网络面和 telemetry 须在专用 VM 收敛。 | [GitHub](https://github.com/CursorTouch/Windows-MCP) |
 | `ghidra-mcp` | 以 GUI plugin、headless server 与 MCP bridge 暴露 200+ Ghidra 工具；script、debugger、共享 server 和项目写入须在断网 VM 收敛。 | [GitHub](https://github.com/bethington/ghidra-mcp) |
@@ -176,6 +178,8 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `k-skill` | 面向韩国交通、政务、法律、金融、医疗与生活服务的 125 个 Agent Skills；动态 CLI、proxy、浏览器权限与全局安装须按 skill 收敛。 | [GitHub](https://github.com/NomaDamas/k-skill) |
+| `unreal-engine-skills-for-claude-code-plugin` | Epic 官方 Claude Code / Unreal MCP skills 与 hook；live editor、任意 Python、跳过权限和批量资产写入须在工程副本中验收。 | [GitHub](https://github.com/EpicGames/unreal-engine-skills-for-claude-code-plugin) |
 | `agentscope-java` | 面向 Java 企业生态的长时程 Agent framework / harness，覆盖事件、权限、memory、subagent、sandbox 与分布式恢复；统一接口不等于统一隔离强度。 | [GitHub](https://github.com/agentscope-ai/agentscope-java) |
 | `docker-agent` | Docker 的声明式 Agent builder / runtime，覆盖 MCP、多 Agent、RAG、评估、OCI 与 sandbox 编排；safety default、telemetry、secret 和 mount 须治理。 | [GitHub](https://github.com/docker/docker-agent) |
 | `mxc` | Microsoft 的跨平台不可信执行 SDK，以统一 policy 连接 ProcessContainer、Bubblewrap、Seatbelt 与多类 VM backend；隔离强度须逐 backend 验证。 | [GitHub](https://github.com/microsoft/mxc) |
@@ -395,6 +399,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `obsidian-mind` | 以 Obsidian、Git、hooks、QMD 与 MCP 为 Claude Code / Codex / Gemini 保存跨 session 工作记忆；PII、transcript、索引过期和 unsandboxed mod 须治理。 | [GitHub](https://github.com/breferrari/obsidian-mind) |
 | `gbrain` | 用来源、纠正、撤回、visibility 与 facts / takes 分层提供跨 Agent 记忆；默认共享、provider 外发和后台改写须做隔离测试。 | [GitHub](https://github.com/garrytan/gbrain) |
 | `OptMem` | 用固定宽度 append-only log 与二叉摘要缓存提供本地 Agent 记忆；无许可证、浮动安装、隐私和持久注入须先处理。 | [GitHub](https://github.com/VictorTaelin/OptMem) |
 | `agentmemoryrepo` | Cognition 发起的 Git-backed Agent Memory Repo 开放规范；Git 历史不等于加密、事实验证或语义冲突消解。 | [GitHub](https://github.com/AgentMemoryRepo/agentmemoryrepo) |
@@ -714,6 +719,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `agents-towards-production` | 覆盖工具、RAG、memory、部署、安全、观测与评测的可运行 Agent 教程集；逐目录依赖、赞助内容和自定义非商业许可须核验。 | [GitHub](https://github.com/NirDiamant/agents-towards-production) |
 | `cs249r_book` | Harvard ML systems 四卷课程仓库，连接书稿、labs、TinyTorch、硬件与模拟；preview / in-development 状态和 CC BY-NC-SA 4.0 须明确。 | [GitHub](https://github.com/harvard-edge/cs249r_book) |
 | `modern-software-dev-assignments` | Stanford CS146S 八周 AI 软件开发作业，覆盖 prompting、MCP、Agent、Semgrep、AI review 与多 stack build；年份、依赖和无 LICENSE 须复核。 | [GitHub](https://github.com/mihail911/modern-software-dev-assignments) |
 | `dictionary-of-ai-coding` | 将 model、context、tool、handoff、memory 和工作模式整理为通俗词典；术语漂移、来源与无 LICENSE 再利用边界须复核。 | [GitHub](https://github.com/mattpocock/dictionary-of-ai-coding) |
@@ -729,6 +735,8 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `FounderOS` | 将通信、漏斗、财务、内容、Agent 与知识图谱组织成个人公司控制面；开发默认 secret / 端口、connector 权限与外部写入须生产化治理。 | [GitHub](https://github.com/Bennettxai/FounderOS) |
+| `OpenWA` | 自托管 WhatsApp 多 session API / dashboard / MCP，支持 session / chat scoped key；非官方协议、私聊、外发和 Docker 控制面风险很高。 | [GitHub](https://github.com/rmyndharis/OpenWA) |
 | `nao` | 将数据、metadata、规则、工具与 SQL evaluation 组织成 analytics-agent context；指标口径、数据权限、模型出口和复合许可证须审计。 | [GitHub](https://github.com/getnao/nao) |
 | `whatsapp-mcp` | 以 Go bridge、SQLite 与 Python MCP 读取 / 搜索真实 WhatsApp 并发送消息和媒体；注入、私聊外发、非官方协议和旧维护状态风险很高。 | [GitHub](https://github.com/lharries/whatsapp-mcp) |
 | `atlassian-mcp-server` | Atlassian 官方托管 MCP 连接 Jira、Confluence、JSM、Bitbucket、Loom 与 Teamwork Graph；写权限、托管服务边界和 v1 / v2 漂移须治理。 | [GitHub](https://github.com/atlassian/atlassian-mcp-server) |
@@ -816,6 +824,7 @@
 
 - 全量项目目录：[`projects/`](./projects/)
 - 最近日报：
+  - [`2026-10-13`](./daily/2026-10-13/ai-hotspots.md)
   - [`2026-10-12`](./daily/2026-10-12/ai-hotspots.md)
   - [`2026-10-09`](./daily/2026-10-09/ai-hotspots.md)
   - [`2026-10-08`](./daily/2026-10-08/ai-hotspots.md)
@@ -921,9 +930,9 @@
 ## 当前状态
 
 - 状态：持续日更中。
-- 最新更新：`2026-10-12`。
-- 当前项目总数：`837`。
-- 最近新增项目：`airllm`、`TRELLIS.2`、`repowise`、`OpenIntelligentUI`、`nao`、`sparkDash`、`whatsapp-mcp`、`agentscope-java`。
+- 最新更新：`2026-10-13`。
+- 当前项目总数：`845`。
+- 最近新增项目：`obsidian-mind`、`billion-context`、`token-monitor`、`FounderOS`、`OpenWA`、`agents-towards-production`、`k-skill`、`unreal-engine-skills-for-claude-code-plugin`。
 - 覆盖平台：GitHub、X、Instagram、YouTube。
 
 ## 维护约定
