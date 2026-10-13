@@ -49,7 +49,7 @@
 
 如果你是第一次进入这个仓库，建议从这几个入口开始：
 
-- 最新日报：[`daily/2026-10-12/ai-hotspots.md`](./daily/2026-10-12/ai-hotspots.md)
+- 最新日报：[`daily/2026-10-14/ai-hotspots.md`](./daily/2026-10-14/ai-hotspots.md)
 - 项目总目录：[`projects/`](./projects/)
 - 自动化约束：[`AGENTS.md`](./AGENTS.md)
 - 开发续接记录：[`TODO.md`](./TODO.md)
@@ -178,6 +178,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `apify-mcp-server` | 把 Apify Store 中数千个 scraper / automation Actors 暴露为可动态发现的 MCP tools；默认遥测、外部网站访问、可写工具和 agentic payment 须显式收敛。 | [GitHub](https://github.com/apify/apify-mcp-server) |
 | `k-skill` | 面向韩国交通、政务、法律、金融、医疗与生活服务的 125 个 Agent Skills；动态 CLI、proxy、浏览器权限与全局安装须按 skill 收敛。 | [GitHub](https://github.com/NomaDamas/k-skill) |
 | `unreal-engine-skills-for-claude-code-plugin` | Epic 官方 Claude Code / Unreal MCP skills 与 hook；live editor、任意 Python、跳过权限和批量资产写入须在工程副本中验收。 | [GitHub](https://github.com/EpicGames/unreal-engine-skills-for-claude-code-plugin) |
 | `agentscope-java` | 面向 Java 企业生态的长时程 Agent framework / harness，覆盖事件、权限、memory、subagent、sandbox 与分布式恢复；统一接口不等于统一隔离强度。 | [GitHub](https://github.com/agentscope-ai/agentscope-java) |
@@ -455,6 +456,8 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `Unlimited-OCR` | 百度的长文档 OCR / parsing 模型，以 R-SWA 约束长序列 KV cache；remote code、自带开发 wheel、作者 benchmark 与无认证 serving 须审计。 | [GitHub](https://github.com/baidu/Unlimited-OCR) |
+| `edgequake` | Rust + PostgreSQL / pgvector / AGE 的 GraphRAG 平台；quickstart open mode、模型抽取事实、citation 与版本漂移须复核。 | [GitHub](https://github.com/raphaelmansuy/edgequake) |
 | `repowise` | 将代码图、Git、测试、文档与决策编成本地 MCP 索引；动态语义、作者 benchmark、衍生索引与 opt-out telemetry 须独立验证。 | [GitHub](https://github.com/repowise-dev/repowise) |
 | `flowsint` | 将 OSINT enrichers、任务队列和多类实体组织为本地调查图；个人数据、误关联、外部查询与公网部署边界须治理。 | [GitHub](https://github.com/reconurge/flowsint) |
 | `open-ontologies` | 用语义 plan、blast radius 与独立 checker certificate 审计本体变化；证明范围、用户规则与无证书 reasoner opinion 必须分层。 | [GitHub](https://github.com/fabio-rovai/open-ontologies) |
@@ -569,6 +572,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `personaplex` | NVIDIA 的 7B 全双工 speech-to-speech 模型，以文本控制角色、音频控制声音；代码 MIT、权重 gated 且声纹同意与冒充风险须治理。 | [GitHub](https://github.com/NVIDIA/personaplex) |
 | `TRELLIS.2` | Microsoft 的 4B image-to-3D 模型，以 O-Voxel 生成复杂拓扑和 PBR 材质；小孔、非流形、H100 benchmark 与素材权利须人工验收。 | [GitHub](https://github.com/microsoft/TRELLIS.2) |
 | `Handy` | 用 Silero VAD 与 Whisper / Parakeet 做跨平台本地听写；模型 / 更新供应链、历史、麦克风 / 辅助功能 / 剪贴板权限与识别误差须验收。 | [GitHub](https://github.com/cjpais/Handy) |
 | `artcraft` | 以 2D / 3D scene、角色姿态、camera 与多 provider 模型构建可编辑媒体 IDE；WIP 非 OSI 许可、素材外发、费用和权利须逐层核验。 | [GitHub](https://github.com/storytold/artcraft) |
@@ -638,6 +642,8 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `sglang-omni` | 面向 omni、ASR、TTS 与音乐模型的多阶段 serving runtime；router 不内置 client auth / TLS，模型许可、声音权利和 backend 差异须逐项治理。 | [GitHub](https://github.com/sgl-project/sglang-omni) |
+| `bifrost` | 统一 23+ provider、MCP、cache、virtual key、budget 与 logs 的 Go AI gateway；集中 secrets / prompt 数据、插件与模块版本须收敛。 | [GitHub](https://github.com/maximhq/bifrost) |
 | `airllm` | 通过逐层权重流式让低显存单卡运行 / 训练超大模型；磁盘、主存、I/O、吞吐、质量、模型许可和远端代码须联合验收。 | [GitHub](https://github.com/lyogavin/airllm) |
 | `sparkDash` | 汇总 DGX Spark / GPU、LLM、ComfyUI、Hermes、benchmark 与电源动作的 fleet 面板；SSH key、主机可见性和远程认证须严格收敛。 | [GitHub](https://github.com/MiaAI-Lab/sparkDash) |
 | `llm-d-router` | 用 EPP、Envoy / Gateway API、KV-cache locality 与 priority 路由推理请求；集中数据面、API 演进和 workload 依赖收益须实测。 | [GitHub](https://github.com/llm-d/llm-d-router) |
@@ -735,6 +741,8 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `ai-native-callcenter` | 自托管 AI 呼叫中心，把实时语音 bot、FreeSWITCH queue、人工接管、CDR、transcript 与 recording 接成一条记录；录音、DTMF 与 backend 写入须合规治理。 | [GitHub](https://github.com/rasonyang/ai-native-callcenter) |
+| `Product-Manager-Skills` | 将 77 个 PM 方法封装成 component / interactive / workflow skills；框架完整度不等于业务结论，CC BY-NC-SA 4.0 义务须审查。 | [GitHub](https://github.com/deanpeters/Product-Manager-Skills) |
 | `FounderOS` | 将通信、漏斗、财务、内容、Agent 与知识图谱组织成个人公司控制面；开发默认 secret / 端口、connector 权限与外部写入须生产化治理。 | [GitHub](https://github.com/Bennettxai/FounderOS) |
 | `OpenWA` | 自托管 WhatsApp 多 session API / dashboard / MCP，支持 session / chat scoped key；非官方协议、私聊、外发和 Docker 控制面风险很高。 | [GitHub](https://github.com/rmyndharis/OpenWA) |
 | `nao` | 将数据、metadata、规则、工具与 SQL evaluation 组织成 analytics-agent context；指标口径、数据权限、模型出口和复合许可证须审计。 | [GitHub](https://github.com/getnao/nao) |
@@ -824,6 +832,7 @@
 
 - 全量项目目录：[`projects/`](./projects/)
 - 最近日报：
+  - [`2026-10-14`](./daily/2026-10-14/ai-hotspots.md)
   - [`2026-10-13`](./daily/2026-10-13/ai-hotspots.md)
   - [`2026-10-12`](./daily/2026-10-12/ai-hotspots.md)
   - [`2026-10-09`](./daily/2026-10-09/ai-hotspots.md)
@@ -930,9 +939,9 @@
 ## 当前状态
 
 - 状态：持续日更中。
-- 最新更新：`2026-10-13`。
-- 当前项目总数：`845`。
-- 最近新增项目：`obsidian-mind`、`billion-context`、`token-monitor`、`FounderOS`、`OpenWA`、`agents-towards-production`、`k-skill`、`unreal-engine-skills-for-claude-code-plugin`。
+- 最新更新：`2026-10-14`。
+- 当前项目总数：`853`。
+- 最近新增项目：`Unlimited-OCR`、`sglang-omni`、`personaplex`、`apify-mcp-server`、`ai-native-callcenter`、`bifrost`、`edgequake`、`Product-Manager-Skills`。
 - 覆盖平台：GitHub、X、Instagram、YouTube。
 
 ## 维护约定
