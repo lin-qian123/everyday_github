@@ -74,6 +74,10 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `reversa` | 用多 Agent 从遗留源码提取可追溯规格、架构与业务规则；目录约束不是 sandbox，forward coding、源码外发和版本漂移须验证。 | [GitHub](https://github.com/sandeco/reversa) |
+| `jadx-ai-mcp` | 将 JADX GUI 的反编译、导航、重命名与 debug context 暴露给 MCP；远程 HTTP 无 TLS / auth，只能在授权隔离环境使用。 | [GitHub](https://github.com/zinja-coder/jadx-ai-mcp) |
+| `jetbrains-cc-gui` | 在 JetBrains 中统一 Claude、Codex 等 CLI 的会话、diff、MCP 与配置；GUI 与权限弹窗不会降低底层工具权限。 | [GitHub](https://github.com/zhukunpenglinyutong/jetbrains-cc-gui) |
+| `android-reverse-engineering-skill` | 用本地脚本编排 Android 指纹、双 decompiler、调用链和 API 清单；合法授权、依赖下载与模型数据出口须先治理。 | [GitHub](https://github.com/SimoneAvogadro/android-reverse-engineering-skill) |
 | `billion-context` | 以 proxy / plugin / launcher 为多类 coding agents 注入可逆分层压缩；模型流量 MITM、Early 状态、日志和 MIT 附加署名条款须审计。 | [GitHub](https://github.com/ranxianglei/billion-context) |
 | `token-monitor` | 本地聚合 44+ AI 工具的 token、成本、限额与 session，并可自托管跨设备同步；凭据、标题、archive 和公网 Hub 须逐项 opt-in。 | [GitHub](https://github.com/Javis603/token-monitor) |
 | `codex-security` | 用 Agent 串联漏洞发现、验证、补丁、威胁模型与 SARIF；模型 finding、源码外发、成本和无认证 preview findings service 须治理。 | [GitHub](https://github.com/openai/codex-security) |
@@ -178,6 +182,8 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `agentmesh` | 以 workload identity、task attenuation、加密 P2P 与 egress 凭据连接跨环境 Agent；明确不提供 OS / 容器 sandbox。 | [GitHub](https://github.com/google/agentmesh) |
+| `azure-skills` | 微软官方 Azure skills + Azure / Foundry MCP 插件；200+ tools 的云写权限、`npx` 供应链、telemetry、RBAC 与预算须联合治理。 | [GitHub](https://github.com/microsoft/azure-skills) |
 | `apify-mcp-server` | 把 Apify Store 中数千个 scraper / automation Actors 暴露为可动态发现的 MCP tools；默认遥测、外部网站访问、可写工具和 agentic payment 须显式收敛。 | [GitHub](https://github.com/apify/apify-mcp-server) |
 | `k-skill` | 面向韩国交通、政务、法律、金融、医疗与生活服务的 125 个 Agent Skills；动态 CLI、proxy、浏览器权限与全局安装须按 skill 收敛。 | [GitHub](https://github.com/NomaDamas/k-skill) |
 | `unreal-engine-skills-for-claude-code-plugin` | Epic 官方 Claude Code / Unreal MCP skills 与 hook；live editor、任意 Python、跳过权限和批量资产写入须在工程副本中验收。 | [GitHub](https://github.com/EpicGames/unreal-engine-skills-for-claude-code-plugin) |
@@ -741,6 +747,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `slashdocs` | 让 Agent 发布可版本化 HTML、供人评论并经 MCP 迭代；不可信 HTML 分域、dev secrets、分享与 service account 须生产化治理。 | [GitHub](https://github.com/razorpay/slashdocs) |
 | `ai-native-callcenter` | 自托管 AI 呼叫中心，把实时语音 bot、FreeSWITCH queue、人工接管、CDR、transcript 与 recording 接成一条记录；录音、DTMF 与 backend 写入须合规治理。 | [GitHub](https://github.com/rasonyang/ai-native-callcenter) |
 | `Product-Manager-Skills` | 将 77 个 PM 方法封装成 component / interactive / workflow skills；框架完整度不等于业务结论，CC BY-NC-SA 4.0 义务须审查。 | [GitHub](https://github.com/deanpeters/Product-Manager-Skills) |
 | `FounderOS` | 将通信、漏斗、财务、内容、Agent 与知识图谱组织成个人公司控制面；开发默认 secret / 端口、connector 权限与外部写入须生产化治理。 | [GitHub](https://github.com/Bennettxai/FounderOS) |
@@ -832,6 +839,7 @@
 
 - 全量项目目录：[`projects/`](./projects/)
 - 最近日报：
+  - [`2026-10-15`](./daily/2026-10-15/ai-hotspots.md)
   - [`2026-10-14`](./daily/2026-10-14/ai-hotspots.md)
   - [`2026-10-13`](./daily/2026-10-13/ai-hotspots.md)
   - [`2026-10-12`](./daily/2026-10-12/ai-hotspots.md)
@@ -939,9 +947,9 @@
 ## 当前状态
 
 - 状态：持续日更中。
-- 最新更新：`2026-10-14`。
-- 当前项目总数：`853`。
-- 最近新增项目：`Unlimited-OCR`、`sglang-omni`、`personaplex`、`apify-mcp-server`、`ai-native-callcenter`、`bifrost`、`edgequake`、`Product-Manager-Skills`。
+- 最新更新：`2026-10-15`。
+- 当前项目总数：`860`。
+- 最近新增项目：`reversa`、`slashdocs`、`agentmesh`、`jadx-ai-mcp`、`jetbrains-cc-gui`、`android-reverse-engineering-skill`、`azure-skills`。
 - 覆盖平台：GitHub、X、Instagram、YouTube。
 
 ## 维护约定
