@@ -49,7 +49,7 @@
 
 如果你是第一次进入这个仓库，建议从这几个入口开始：
 
-- 最新日报：[`daily/2026-10-14/ai-hotspots.md`](./daily/2026-10-14/ai-hotspots.md)
+- 最新日报：[`daily/2026-10-16/ai-hotspots.md`](./daily/2026-10-16/ai-hotspots.md)
 - 项目总目录：[`projects/`](./projects/)
 - 自动化约束：[`AGENTS.md`](./AGENTS.md)
 - 开发续接记录：[`TODO.md`](./TODO.md)
@@ -182,6 +182,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `phone-harness` | 通过 iPhone Mirroring / adb / HTTPS 为 Agent 提供手机屏幕与动作；默认内容相关遥测、真实账号与外部动作须收敛。 | [解读](./projects/phone-harness/README.md) · [GitHub](https://github.com/ShawnPana/phone-harness) |
 | `agentmesh` | 以 workload identity、task attenuation、加密 P2P 与 egress 凭据连接跨环境 Agent；明确不提供 OS / 容器 sandbox。 | [GitHub](https://github.com/google/agentmesh) |
 | `azure-skills` | 微软官方 Azure skills + Azure / Foundry MCP 插件；200+ tools 的云写权限、`npx` 供应链、telemetry、RBAC 与预算须联合治理。 | [GitHub](https://github.com/microsoft/azure-skills) |
 | `apify-mcp-server` | 把 Apify Store 中数千个 scraper / automation Actors 暴露为可动态发现的 MCP tools；默认遥测、外部网站访问、可写工具和 agentic payment 须显式收敛。 | [GitHub](https://github.com/apify/apify-mcp-server) |
@@ -406,6 +407,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `beads` | 用 Dolt 与依赖图持久化 Agent 任务；schema、明文数据、依赖遥测和各后端差异须验证。 | [解读](./projects/beads/README.md) · [GitHub](https://github.com/gastownhall/beads) |
 | `obsidian-mind` | 以 Obsidian、Git、hooks、QMD 与 MCP 为 Claude Code / Codex / Gemini 保存跨 session 工作记忆；PII、transcript、索引过期和 unsandboxed mod 须治理。 | [GitHub](https://github.com/breferrari/obsidian-mind) |
 | `gbrain` | 用来源、纠正、撤回、visibility 与 facts / takes 分层提供跨 Agent 记忆；默认共享、provider 外发和后台改写须做隔离测试。 | [GitHub](https://github.com/garrytan/gbrain) |
 | `OptMem` | 用固定宽度 append-only log 与二叉摘要缓存提供本地 Agent 记忆；无许可证、浮动安装、隐私和持久注入须先处理。 | [GitHub](https://github.com/VictorTaelin/OptMem) |
@@ -578,6 +580,10 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `mcp-for-blender` | 把 Blender 场景、viewport、Python 和素材工具接给 Agent；任意代码、默认 usage 遥测与资产权利须治理。 | [解读](./projects/mcp-for-blender/README.md) · [GitHub](https://github.com/ahujasid/mcp-for-blender) |
+| `HeliosGen` | 本地 Tauri 节点画布管理生成媒体，但 kie.ai 请求 / 参考图外发；许可文本、未签名制品和模型缺口须核实。 | [解读](./projects/HeliosGen/README.md) · [GitHub](https://github.com/SegFault42/HeliosGen) |
+| `koharu` | 串联漫画检测、OCR、翻译、去字修复与排版；hosted provider、Sentry、漏译和模型 / 字体许可须复核。 | [解读](./projects/koharu/README.md) · [GitHub](https://github.com/koharu-rs/koharu) |
+| `livekit` | Go WebRTC SFU 为人、设备和 Agent 转发实时音视频；server / Agents / Cloud、JWT 与媒体数据出口须分清。 | [解读](./projects/livekit/README.md) · [GitHub](https://github.com/livekit/livekit) |
 | `personaplex` | NVIDIA 的 7B 全双工 speech-to-speech 模型，以文本控制角色、音频控制声音；代码 MIT、权重 gated 且声纹同意与冒充风险须治理。 | [GitHub](https://github.com/NVIDIA/personaplex) |
 | `TRELLIS.2` | Microsoft 的 4B image-to-3D 模型，以 O-Voxel 生成复杂拓扑和 PBR 材质；小孔、非流形、H100 benchmark 与素材权利须人工验收。 | [GitHub](https://github.com/microsoft/TRELLIS.2) |
 | `Handy` | 用 Silero VAD 与 Whisper / Parakeet 做跨平台本地听写；模型 / 更新供应链、历史、麦克风 / 辅助功能 / 剪贴板权限与识别误差须验收。 | [GitHub](https://github.com/cjpais/Handy) |
@@ -648,6 +654,8 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `tokenspeed` | C++ 调度、Python 执行与可插拔 kernels 的 LLM 引擎；特权 runner、nightly 制品与性能口径须固定。 | [解读](./projects/tokenspeed/README.md) · [GitHub](https://github.com/lightseekorg/tokenspeed) |
+| `dynamo` | 在 vLLM / SGLang / TensorRT-LLM 上编排多节点、KV 与扩缩容；可信内网、认证网关和同硬件评测是前提。 | [解读](./projects/dynamo/README.md) · [GitHub](https://github.com/ai-dynamo/dynamo) |
 | `sglang-omni` | 面向 omni、ASR、TTS 与音乐模型的多阶段 serving runtime；router 不内置 client auth / TLS，模型许可、声音权利和 backend 差异须逐项治理。 | [GitHub](https://github.com/sgl-project/sglang-omni) |
 | `bifrost` | 统一 23+ provider、MCP、cache、virtual key、budget 与 logs 的 Go AI gateway；集中 secrets / prompt 数据、插件与模块版本须收敛。 | [GitHub](https://github.com/maximhq/bifrost) |
 | `airllm` | 通过逐层权重流式让低显存单卡运行 / 训练超大模型；磁盘、主存、I/O、吞吐、质量、模型许可和远端代码须联合验收。 | [GitHub](https://github.com/lyogavin/airllm) |
@@ -839,6 +847,7 @@
 
 - 全量项目目录：[`projects/`](./projects/)
 - 最近日报：
+  - [`2026-10-16`](./daily/2026-10-16/ai-hotspots.md)
   - [`2026-10-15`](./daily/2026-10-15/ai-hotspots.md)
   - [`2026-10-14`](./daily/2026-10-14/ai-hotspots.md)
   - [`2026-10-13`](./daily/2026-10-13/ai-hotspots.md)
@@ -947,9 +956,9 @@
 ## 当前状态
 
 - 状态：持续日更中。
-- 最新更新：`2026-10-15`。
-- 当前项目总数：`860`。
-- 最近新增项目：`reversa`、`slashdocs`、`agentmesh`、`jadx-ai-mcp`、`jetbrains-cc-gui`、`android-reverse-engineering-skill`、`azure-skills`。
+- 最新更新：`2026-10-16`。
+- 当前项目总数：`868`。
+- 最近新增项目：`phone-harness`、`mcp-for-blender`、`HeliosGen`、`koharu`、`tokenspeed`、`dynamo`、`livekit`、`beads`。
 - 覆盖平台：GitHub、X、Instagram、YouTube。
 
 ## 维护约定
