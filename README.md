@@ -49,7 +49,7 @@
 
 如果你是第一次进入这个仓库，建议从这几个入口开始：
 
-- 最新日报：[`daily/2026-10-16/ai-hotspots.md`](./daily/2026-10-16/ai-hotspots.md)
+- 最新日报：[`daily/2026-10-17/ai-hotspots.md`](./daily/2026-10-17/ai-hotspots.md)
 - 项目总目录：[`projects/`](./projects/)
 - 自动化约束：[`AGENTS.md`](./AGENTS.md)
 - 开发续接记录：[`TODO.md`](./TODO.md)
@@ -182,6 +182,10 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `pstack-claude` | 跨宿主移植严谨开发工作流；hook、模型费用、源码 / transcript 外发和兼容性须分别验证。 | [GitHub](https://github.com/michael-denyer/pstack-claude) |
+| `artemis` | Android 测试闭环与 replay 有工程价值；99%+ 为作者报告，真实设备权限与无账号 console 须收敛。 | [GitHub](https://github.com/google/artemis) |
+| `scion` | Hub / Broker、身份和容器支撑协作；agent full role、共享 mount 和 token observe / enforce 边界须审阅。 | [GitHub](https://github.com/GoogleCloudPlatform/scion) |
+| `firstmate` | 指令与脚本把 CLI agent 变为主管；worktree 不是 OS 隔离，Calm 不删上下文，codex-app backend 仍 blocked。 | [GitHub](https://github.com/kunchenguid/firstmate) |
 | `phone-harness` | 通过 iPhone Mirroring / adb / HTTPS 为 Agent 提供手机屏幕与动作；默认内容相关遥测、真实账号与外部动作须收敛。 | [解读](./projects/phone-harness/README.md) · [GitHub](https://github.com/ShawnPana/phone-harness) |
 | `agentmesh` | 以 workload identity、task attenuation、加密 P2P 与 egress 凭据连接跨环境 Agent；明确不提供 OS / 容器 sandbox。 | [GitHub](https://github.com/google/agentmesh) |
 | `azure-skills` | 微软官方 Azure skills + Azure / Foundry MCP 插件；200+ tools 的云写权限、`npx` 供应链、telemetry、RBAC 与预算须联合治理。 | [GitHub](https://github.com/microsoft/azure-skills) |
@@ -407,6 +411,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `picoclaw` | Go 多架构轻量个人 AI 助手；远程 exec 的 main 默认 true 与文档 false 冲突，子进程不受递归检查。 | [GitHub](https://github.com/sipeed/picoclaw) |
 | `beads` | 用 Dolt 与依赖图持久化 Agent 任务；schema、明文数据、依赖遥测和各后端差异须验证。 | [解读](./projects/beads/README.md) · [GitHub](https://github.com/gastownhall/beads) |
 | `obsidian-mind` | 以 Obsidian、Git、hooks、QMD 与 MCP 为 Claude Code / Codex / Gemini 保存跨 session 工作记忆；PII、transcript、索引过期和 unsandboxed mod 须治理。 | [GitHub](https://github.com/breferrari/obsidian-mind) |
 | `gbrain` | 用来源、纠正、撤回、visibility 与 facts / takes 分层提供跨 Agent 记忆；默认共享、provider 外发和后台改写须做隔离测试。 | [GitHub](https://github.com/garrytan/gbrain) |
@@ -526,6 +531,8 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `superdesign` | 在 IDE 生成与迭代 UI 的历史设计扩展，已停止积极维护；当前 Web / skill 和混合许可须分别核对。 | [GitHub](https://github.com/superdesigndev/superdesign) |
+| `stitch-skills` | Google Stitch 的设计、资产上传、设计系统与组件技能集；会外发本地文件并创建远端 screen。 | [GitHub](https://github.com/google-labs-code/stitch-skills) |
 | `OpenIntelligentUI` | CopilotKit 的 Generative UI 完整示例，在文本、原生组件与 sandboxed custom UI 间路由；事实、bridge、CSP、provider 与持久化须补齐。 | [GitHub](https://github.com/CopilotKit/OpenIntelligentUI) |
 | `prompt-optimizer` | 跨 Web / desktop / extension / Docker / MCP 的提示词优化与评测工作台；provider 外发、key / backup、网络面和自评偏差须审计。 | [GitHub](https://github.com/linshenkx/prompt-optimizer) |
 | `pi-pocket` | 自托管、移动优先的 Pi Agent 持久会话与多人控制面；steer、public tunnel、server browser 和无人值守任务须严格限权。 | [GitHub](https://github.com/TannerMidd/pi-pocket) |
@@ -580,6 +587,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `NeuralNote` | 本机多乐器 audio-to-MIDI 适合人工修订初稿；权重仅非商业、MIDI 不等于正式谱面。 | [GitHub](https://github.com/DamRsn/NeuralNote) |
 | `mcp-for-blender` | 把 Blender 场景、viewport、Python 和素材工具接给 Agent；任意代码、默认 usage 遥测与资产权利须治理。 | [解读](./projects/mcp-for-blender/README.md) · [GitHub](https://github.com/ahujasid/mcp-for-blender) |
 | `HeliosGen` | 本地 Tauri 节点画布管理生成媒体，但 kie.ai 请求 / 参考图外发；许可文本、未签名制品和模型缺口须核实。 | [解读](./projects/HeliosGen/README.md) · [GitHub](https://github.com/SegFault42/HeliosGen) |
 | `koharu` | 串联漫画检测、OCR、翻译、去字修复与排版；hosted provider、Sentry、漏译和模型 / 字体许可须复核。 | [解读](./projects/koharu/README.md) · [GitHub](https://github.com/koharu-rs/koharu) |
@@ -847,6 +855,7 @@
 
 - 全量项目目录：[`projects/`](./projects/)
 - 最近日报：
+  - [`2026-10-17`](./daily/2026-10-17/ai-hotspots.md)
   - [`2026-10-16`](./daily/2026-10-16/ai-hotspots.md)
   - [`2026-10-15`](./daily/2026-10-15/ai-hotspots.md)
   - [`2026-10-14`](./daily/2026-10-14/ai-hotspots.md)
@@ -956,9 +965,9 @@
 ## 当前状态
 
 - 状态：持续日更中。
-- 最新更新：`2026-10-16`。
-- 当前项目总数：`868`。
-- 最近新增项目：`phone-harness`、`mcp-for-blender`、`HeliosGen`、`koharu`、`tokenspeed`、`dynamo`、`livekit`、`beads`。
+- 最新更新：`2026-10-17`。
+- 当前项目总数：`876`。
+- 最近新增项目：`pstack-claude`、`artemis`、`superdesign`、`stitch-skills`、`picoclaw`、`scion`、`firstmate`、`NeuralNote`。
 - 覆盖平台：GitHub、X、Instagram、YouTube。
 
 ## 维护约定
