@@ -49,7 +49,7 @@
 
 如果你是第一次进入这个仓库，建议从这几个入口开始：
 
-- 最新日报：[`daily/2026-10-17/ai-hotspots.md`](./daily/2026-10-17/ai-hotspots.md)
+- 最新日报：[`daily/2026-10-18/ai-hotspots.md`](./daily/2026-10-18/ai-hotspots.md)
 - 项目总目录：[`projects/`](./projects/)
 - 自动化约束：[`AGENTS.md`](./AGENTS.md)
 - 开发续接记录：[`TODO.md`](./TODO.md)
@@ -74,6 +74,8 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `OpenBitFun` | Rust runtime + 四种 harness + 多设备；1.0 数据迁移和 README / Relay 文档漂移要先处理。 | [GitHub](https://github.com/GCWing/OpenBitFun) / [解读](./projects/OpenBitFun/README.md) |
+| `Ghostex` | CLI / GUI / 手机工作台；最新默认会写各 CLI 的项目信任记录，需检查自动信任开关。 | [GitHub](https://github.com/maddada/Ghostex) / [解读](./projects/Ghostex/README.md) |
 | `reversa` | 用多 Agent 从遗留源码提取可追溯规格、架构与业务规则；目录约束不是 sandbox，forward coding、源码外发和版本漂移须验证。 | [GitHub](https://github.com/sandeco/reversa) |
 | `jadx-ai-mcp` | 将 JADX GUI 的反编译、导航、重命名与 debug context 暴露给 MCP；远程 HTTP 无 TLS / auth，只能在授权隔离环境使用。 | [GitHub](https://github.com/zinja-coder/jadx-ai-mcp) |
 | `jetbrains-cc-gui` | 在 JetBrains 中统一 Claude、Codex 等 CLI 的会话、diff、MCP 与配置；GUI 与权限弹窗不会降低底层工具权限。 | [GitHub](https://github.com/zhukunpenglinyutong/jetbrains-cc-gui) |
@@ -182,6 +184,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `BMAD-METHOD` | 把需求、架构、构建与评审串起来；稳定 v6 与 main v7 alpha 分开，安装模块相当于执行代码。 | [GitHub](https://github.com/bmad-code-org/BMAD-METHOD) / [解读](./projects/BMAD-METHOD/README.md) |
 | `pstack-claude` | 跨宿主移植严谨开发工作流；hook、模型费用、源码 / transcript 外发和兼容性须分别验证。 | [GitHub](https://github.com/michael-denyer/pstack-claude) |
 | `artemis` | Android 测试闭环与 replay 有工程价值；99%+ 为作者报告，真实设备权限与无账号 console 须收敛。 | [GitHub](https://github.com/google/artemis) |
 | `scion` | Hub / Broker、身份和容器支撑协作；agent full role、共享 mount 和 token observe / enforce 边界须审阅。 | [GitHub](https://github.com/GoogleCloudPlatform/scion) |
@@ -411,6 +414,8 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `rakazo` | 持久队友与独立 computer provider；Team 子目录 / Chrome profile 不构成同容器进程隔离。 | [GitHub](https://github.com/elie222/rakazo) / [解读](./projects/rakazo/README.md) |
+| `PilotDeck` | 可编辑记忆、路由和后台任务；Workspace 组织与 OS 边界不同，需核 UI auth、端口和 shell 权限。 | [GitHub](https://github.com/OpenBMB/PilotDeck) / [解读](./projects/PilotDeck/README.md) |
 | `picoclaw` | Go 多架构轻量个人 AI 助手；远程 exec 的 main 默认 true 与文档 false 冲突，子进程不受递归检查。 | [GitHub](https://github.com/sipeed/picoclaw) |
 | `beads` | 用 Dolt 与依赖图持久化 Agent 任务；schema、明文数据、依赖遥测和各后端差异须验证。 | [解读](./projects/beads/README.md) · [GitHub](https://github.com/gastownhall/beads) |
 | `obsidian-mind` | 以 Obsidian、Git、hooks、QMD 与 MCP 为 Claude Code / Codex / Gemini 保存跨 session 工作记忆；PII、transcript、索引过期和 unsandboxed mod 须治理。 | [GitHub](https://github.com/breferrari/obsidian-mind) |
@@ -662,6 +667,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `Bonsai-demo` | 低比特本地模型入口；packing、图变换和后端必须匹配，权重体积不是总内存。 | [GitHub](https://github.com/PrismML-Eng/Bonsai-demo) / [解读](./projects/Bonsai-demo/README.md) |
 | `tokenspeed` | C++ 调度、Python 执行与可插拔 kernels 的 LLM 引擎；特权 runner、nightly 制品与性能口径须固定。 | [解读](./projects/tokenspeed/README.md) · [GitHub](https://github.com/lightseekorg/tokenspeed) |
 | `dynamo` | 在 vLLM / SGLang / TensorRT-LLM 上编排多节点、KV 与扩缩容；可信内网、认证网关和同硬件评测是前提。 | [解读](./projects/dynamo/README.md) · [GitHub](https://github.com/ai-dynamo/dynamo) |
 | `sglang-omni` | 面向 omni、ASR、TTS 与音乐模型的多阶段 serving runtime；router 不内置 client auth / TLS，模型许可、声音权利和 backend 差异须逐项治理。 | [GitHub](https://github.com/sgl-project/sglang-omni) |
@@ -747,6 +753,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `Hands-On-Large-Language-Models` | 12 章 LLM 实验骨架；旧依赖复现、现代 API 迁移和云调用费用需分别评估。 | [GitHub](https://github.com/HandsOnLLM/Hands-On-Large-Language-Models) / [解读](./projects/Hands-On-Large-Language-Models/README.md) |
 | `agents-towards-production` | 覆盖工具、RAG、memory、部署、安全、观测与评测的可运行 Agent 教程集；逐目录依赖、赞助内容和自定义非商业许可须核验。 | [GitHub](https://github.com/NirDiamant/agents-towards-production) |
 | `cs249r_book` | Harvard ML systems 四卷课程仓库，连接书稿、labs、TinyTorch、硬件与模拟；preview / in-development 状态和 CC BY-NC-SA 4.0 须明确。 | [GitHub](https://github.com/harvard-edge/cs249r_book) |
 | `modern-software-dev-assignments` | Stanford CS146S 八周 AI 软件开发作业，覆盖 prompting、MCP、Agent、Semgrep、AI review 与多 stack build；年份、依赖和无 LICENSE 须复核。 | [GitHub](https://github.com/mihail911/modern-software-dev-assignments) |
@@ -763,6 +770,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `social-media-research-skills` | 用账号内中位数基线识别异常表现；依赖第三方 API，不提供免费、完整或私有社媒访问保证。 | [GitHub](https://github.com/ScrapeCreators/social-media-research-skills) / [解读](./projects/social-media-research-skills/README.md) |
 | `slashdocs` | 让 Agent 发布可版本化 HTML、供人评论并经 MCP 迭代；不可信 HTML 分域、dev secrets、分享与 service account 须生产化治理。 | [GitHub](https://github.com/razorpay/slashdocs) |
 | `ai-native-callcenter` | 自托管 AI 呼叫中心，把实时语音 bot、FreeSWITCH queue、人工接管、CDR、transcript 与 recording 接成一条记录；录音、DTMF 与 backend 写入须合规治理。 | [GitHub](https://github.com/rasonyang/ai-native-callcenter) |
 | `Product-Manager-Skills` | 将 77 个 PM 方法封装成 component / interactive / workflow skills；框架完整度不等于业务结论，CC BY-NC-SA 4.0 义务须审查。 | [GitHub](https://github.com/deanpeters/Product-Manager-Skills) |
@@ -855,6 +863,7 @@
 
 - 全量项目目录：[`projects/`](./projects/)
 - 最近日报：
+  - [`2026-10-18`](./daily/2026-10-18/ai-hotspots.md)
   - [`2026-10-17`](./daily/2026-10-17/ai-hotspots.md)
   - [`2026-10-16`](./daily/2026-10-16/ai-hotspots.md)
   - [`2026-10-15`](./daily/2026-10-15/ai-hotspots.md)
@@ -965,9 +974,9 @@
 ## 当前状态
 
 - 状态：持续日更中。
-- 最新更新：`2026-10-17`。
-- 当前项目总数：`876`。
-- 最近新增项目：`pstack-claude`、`artemis`、`superdesign`、`stitch-skills`、`picoclaw`、`scion`、`firstmate`、`NeuralNote`。
+- 最新更新：`2026-10-18`。
+- 当前项目总数：`884`。
+- 最近新增项目：`BMAD-METHOD`、`social-media-research-skills`、`rakazo`、`PilotDeck`、`OpenBitFun`、`Ghostex`、`Bonsai-demo`、`Hands-On-Large-Language-Models`。
 - 覆盖平台：GitHub、X、Instagram、YouTube。
 
 ## 维护约定
