@@ -49,7 +49,7 @@
 
 如果你是第一次进入这个仓库，建议从这几个入口开始：
 
-- 最新日报：[`daily/2026-10-18/ai-hotspots.md`](./daily/2026-10-18/ai-hotspots.md)
+- 最新日报：[`daily/2026-10-19/ai-hotspots.md`](./daily/2026-10-19/ai-hotspots.md)
 - 项目总目录：[`projects/`](./projects/)
 - 自动化约束：[`AGENTS.md`](./AGENTS.md)
 - 开发续接记录：[`TODO.md`](./TODO.md)
@@ -184,6 +184,9 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `ASPIRE` | 让 coding agent 在模拟反馈中积累机器人技能；seed 初始化、结构检查和实体实验边界需分开。 | [GitHub](https://github.com/NVlabs/ASPIRE) / [解读](./projects/ASPIRE/README.md) |
+| `lazyskills` | Agent skills 库存、可见性、doctor 与恢复 TUI；需审技能来源；README 有 star 抽贴纸活动。 | [GitHub](https://github.com/alvinunreal/lazyskills) / [解读](./projects/lazyskills/README.md) |
+| `open-computer-use` | 跨平台本地 MCP 桌面控制与 JS REPL；无 session approval，系统认证集成需独立验收。 | [GitHub](https://github.com/iFurySt/open-computer-use) / [解读](./projects/open-computer-use/README.md) |
 | `BMAD-METHOD` | 把需求、架构、构建与评审串起来；稳定 v6 与 main v7 alpha 分开，安装模块相当于执行代码。 | [GitHub](https://github.com/bmad-code-org/BMAD-METHOD) / [解读](./projects/BMAD-METHOD/README.md) |
 | `pstack-claude` | 跨宿主移植严谨开发工作流；hook、模型费用、源码 / transcript 外发和兼容性须分别验证。 | [GitHub](https://github.com/michael-denyer/pstack-claude) |
 | `artemis` | Android 测试闭环与 replay 有工程价值；99%+ 为作者报告，真实设备权限与无账号 console 须收敛。 | [GitHub](https://github.com/google/artemis) |
@@ -592,6 +595,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `ComfyUI` | 多模态节点工作流引擎；本地 / partner / custom nodes 的网络、权限和模型条款分别治理。 | [GitHub](https://github.com/Comfy-Org/ComfyUI) / [解读](./projects/ComfyUI/README.md) |
 | `NeuralNote` | 本机多乐器 audio-to-MIDI 适合人工修订初稿；权重仅非商业、MIDI 不等于正式谱面。 | [GitHub](https://github.com/DamRsn/NeuralNote) |
 | `mcp-for-blender` | 把 Blender 场景、viewport、Python 和素材工具接给 Agent；任意代码、默认 usage 遥测与资产权利须治理。 | [解读](./projects/mcp-for-blender/README.md) · [GitHub](https://github.com/ahujasid/mcp-for-blender) |
 | `HeliosGen` | 本地 Tauri 节点画布管理生成媒体，但 kie.ai 请求 / 参考图外发；许可文本、未签名制品和模型缺口须核实。 | [解读](./projects/HeliosGen/README.md) · [GitHub](https://github.com/SegFault42/HeliosGen) |
@@ -667,6 +671,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `otari` | 自托管多 provider 网关，统一 keys / 预算 / 路由；v0.28 provider 声明与 hybrid / trace 边界需核。 | [GitHub](https://github.com/mozilla-ai/otari) / [解读](./projects/otari/README.md) |
 | `Bonsai-demo` | 低比特本地模型入口；packing、图变换和后端必须匹配，权重体积不是总内存。 | [GitHub](https://github.com/PrismML-Eng/Bonsai-demo) / [解读](./projects/Bonsai-demo/README.md) |
 | `tokenspeed` | C++ 调度、Python 执行与可插拔 kernels 的 LLM 引擎；特权 runner、nightly 制品与性能口径须固定。 | [解读](./projects/tokenspeed/README.md) · [GitHub](https://github.com/lightseekorg/tokenspeed) |
 | `dynamo` | 在 vLLM / SGLang / TensorRT-LLM 上编排多节点、KV 与扩缩容；可信内网、认证网关和同硬件评测是前提。 | [解读](./projects/dynamo/README.md) · [GitHub](https://github.com/ai-dynamo/dynamo) |
@@ -753,6 +758,8 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `llm-course` | LLM 基础 / 训练 / 应用三路线与 notebook 入口；外链环境、模型条款和云成本需逐项复现。 | [GitHub](https://github.com/mlabonne/llm-course) / [解读](./projects/llm-course/README.md) |
+| `claude-quickstarts` | Anthropic 应用参考实现集；各子项目的桌面 / shell 权限、依赖、费用与持久化分别评估。 | [GitHub](https://github.com/anthropics/claude-quickstarts) / [解读](./projects/claude-quickstarts/README.md) |
 | `Hands-On-Large-Language-Models` | 12 章 LLM 实验骨架；旧依赖复现、现代 API 迁移和云调用费用需分别评估。 | [GitHub](https://github.com/HandsOnLLM/Hands-On-Large-Language-Models) / [解读](./projects/Hands-On-Large-Language-Models/README.md) |
 | `agents-towards-production` | 覆盖工具、RAG、memory、部署、安全、观测与评测的可运行 Agent 教程集；逐目录依赖、赞助内容和自定义非商业许可须核验。 | [GitHub](https://github.com/NirDiamant/agents-towards-production) |
 | `cs249r_book` | Harvard ML systems 四卷课程仓库，连接书稿、labs、TinyTorch、硬件与模拟；preview / in-development 状态和 CC BY-NC-SA 4.0 须明确。 | [GitHub](https://github.com/harvard-edge/cs249r_book) |
@@ -770,6 +777,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `cli` | gws 动态生成 Workspace CLI 与 skills；非正式支持产品，OAuth scope、凭据继承和写入需验权。 | [GitHub](https://github.com/googleworkspace/cli) / [解读](./projects/cli/README.md) |
 | `social-media-research-skills` | 用账号内中位数基线识别异常表现；依赖第三方 API，不提供免费、完整或私有社媒访问保证。 | [GitHub](https://github.com/ScrapeCreators/social-media-research-skills) / [解读](./projects/social-media-research-skills/README.md) |
 | `slashdocs` | 让 Agent 发布可版本化 HTML、供人评论并经 MCP 迭代；不可信 HTML 分域、dev secrets、分享与 service account 须生产化治理。 | [GitHub](https://github.com/razorpay/slashdocs) |
 | `ai-native-callcenter` | 自托管 AI 呼叫中心，把实时语音 bot、FreeSWITCH queue、人工接管、CDR、transcript 与 recording 接成一条记录；录音、DTMF 与 backend 写入须合规治理。 | [GitHub](https://github.com/rasonyang/ai-native-callcenter) |
@@ -863,6 +871,7 @@
 
 - 全量项目目录：[`projects/`](./projects/)
 - 最近日报：
+  - [`2026-10-19`](./daily/2026-10-19/ai-hotspots.md)
   - [`2026-10-18`](./daily/2026-10-18/ai-hotspots.md)
   - [`2026-10-17`](./daily/2026-10-17/ai-hotspots.md)
   - [`2026-10-16`](./daily/2026-10-16/ai-hotspots.md)
@@ -974,9 +983,9 @@
 ## 当前状态
 
 - 状态：持续日更中。
-- 最新更新：`2026-10-18`。
-- 当前项目总数：`884`。
-- 最近新增项目：`BMAD-METHOD`、`social-media-research-skills`、`rakazo`、`PilotDeck`、`OpenBitFun`、`Ghostex`、`Bonsai-demo`、`Hands-On-Large-Language-Models`。
+- 最新更新：`2026-10-19`。
+- 当前项目总数：`892`。
+- 最近新增项目：`llm-course`、`ASPIRE`、`otari`、`claude-quickstarts`、`lazyskills`、`open-computer-use`、`cli`、`ComfyUI`。
 - 覆盖平台：GitHub、X、Instagram、YouTube。
 
 ## 维护约定
