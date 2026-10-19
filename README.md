@@ -49,7 +49,7 @@
 
 如果你是第一次进入这个仓库，建议从这几个入口开始：
 
-- 最新日报：[`daily/2026-10-19/ai-hotspots.md`](./daily/2026-10-19/ai-hotspots.md)
+- 最新日报：[`daily/2026-10-20/ai-hotspots.md`](./daily/2026-10-20/ai-hotspots.md)
 - 项目总目录：[`projects/`](./projects/)
 - 自动化约束：[`AGENTS.md`](./AGENTS.md)
 - 开发续接记录：[`TODO.md`](./TODO.md)
@@ -74,6 +74,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `claude-code-action` | 将 Claude Code 接入 PR / issue 与 CI；触发者、bot allowlist、runner 和 secrets 边界须分别核对。 | [GitHub](https://github.com/anthropics/claude-code-action) / [解读](./projects/claude-code-action/README.md) |
 | `OpenBitFun` | Rust runtime + 四种 harness + 多设备；1.0 数据迁移和 README / Relay 文档漂移要先处理。 | [GitHub](https://github.com/GCWing/OpenBitFun) / [解读](./projects/OpenBitFun/README.md) |
 | `Ghostex` | CLI / GUI / 手机工作台；最新默认会写各 CLI 的项目信任记录，需检查自动信任开关。 | [GitHub](https://github.com/maddada/Ghostex) / [解读](./projects/Ghostex/README.md) |
 | `reversa` | 用多 Agent 从遗留源码提取可追溯规格、架构与业务规则；目录约束不是 sandbox，forward coding、源码外发和版本漂移须验证。 | [GitHub](https://github.com/sandeco/reversa) |
@@ -184,6 +185,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `Fabric` | 以可复用 patterns 和 CLI 管道调用模型；当前 REST 对非回环监听要求 key，模板和数据出口须审查。 | [GitHub](https://github.com/danielmiessler/Fabric) / [解读](./projects/Fabric/README.md) |
 | `ASPIRE` | 让 coding agent 在模拟反馈中积累机器人技能；seed 初始化、结构检查和实体实验边界需分开。 | [GitHub](https://github.com/NVlabs/ASPIRE) / [解读](./projects/ASPIRE/README.md) |
 | `lazyskills` | Agent skills 库存、可见性、doctor 与恢复 TUI；需审技能来源；README 有 star 抽贴纸活动。 | [GitHub](https://github.com/alvinunreal/lazyskills) / [解读](./projects/lazyskills/README.md) |
 | `open-computer-use` | 跨平台本地 MCP 桌面控制与 JS REPL；无 session approval，系统认证集成需独立验收。 | [GitHub](https://github.com/iFurySt/open-computer-use) / [解读](./projects/open-computer-use/README.md) |
@@ -417,6 +419,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `Codync` | 将本机 coding agents 变成手机 / 桌面可聊天 bot；配对设备按拥有者信任，relay 加密不等于推理离线。 | [GitHub](https://github.com/leepokai/Codync) / [解读](./projects/Codync/README.md) |
 | `rakazo` | 持久队友与独立 computer provider；Team 子目录 / Chrome profile 不构成同容器进程隔离。 | [GitHub](https://github.com/elie222/rakazo) / [解读](./projects/rakazo/README.md) |
 | `PilotDeck` | 可编辑记忆、路由和后台任务；Workspace 组织与 OS 边界不同，需核 UI auth、端口和 shell 权限。 | [GitHub](https://github.com/OpenBMB/PilotDeck) / [解读](./projects/PilotDeck/README.md) |
 | `picoclaw` | Go 多架构轻量个人 AI 助手；远程 exec 的 main 默认 true 与文档 false 冲突，子进程不受递归检查。 | [GitHub](https://github.com/sipeed/picoclaw) |
@@ -671,6 +674,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `smg` | Rust 模型路由与缓存感知网关；默认监听、数据 / 控制面认证、上游 key 和存储需分层配置。 | [GitHub](https://github.com/smg-project/smg) / [解读](./projects/smg/README.md) |
 | `otari` | 自托管多 provider 网关，统一 keys / 预算 / 路由；v0.28 provider 声明与 hybrid / trace 边界需核。 | [GitHub](https://github.com/mozilla-ai/otari) / [解读](./projects/otari/README.md) |
 | `Bonsai-demo` | 低比特本地模型入口；packing、图变换和后端必须匹配，权重体积不是总内存。 | [GitHub](https://github.com/PrismML-Eng/Bonsai-demo) / [解读](./projects/Bonsai-demo/README.md) |
 | `tokenspeed` | C++ 调度、Python 执行与可插拔 kernels 的 LLM 引擎；特权 runner、nightly 制品与性能口径须固定。 | [解读](./projects/tokenspeed/README.md) · [GitHub](https://github.com/lightseekorg/tokenspeed) |
@@ -758,6 +762,8 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `os-taxonomy` | 基础教育微主题与前置知识图谱；Agent 教学建议、缺覆盖及数据库 / 正文 / 标准多层许可需分开。 | [GitHub](https://github.com/withmarbleapp/os-taxonomy) / [解读](./projects/os-taxonomy/README.md) |
+| `generative-ai-for-beginners` | 21 节生成式 AI 课程与 Python / TypeScript 实践；provider 迁移、依赖、费用和翻译需逐课复核。 | [GitHub](https://github.com/microsoft/generative-ai-for-beginners) / [解读](./projects/generative-ai-for-beginners/README.md) |
 | `llm-course` | LLM 基础 / 训练 / 应用三路线与 notebook 入口；外链环境、模型条款和云成本需逐项复现。 | [GitHub](https://github.com/mlabonne/llm-course) / [解读](./projects/llm-course/README.md) |
 | `claude-quickstarts` | Anthropic 应用参考实现集；各子项目的桌面 / shell 权限、依赖、费用与持久化分别评估。 | [GitHub](https://github.com/anthropics/claude-quickstarts) / [解读](./projects/claude-quickstarts/README.md) |
 | `Hands-On-Large-Language-Models` | 12 章 LLM 实验骨架；旧依赖复现、现代 API 迁移和云调用费用需分别评估。 | [GitHub](https://github.com/HandsOnLLM/Hands-On-Large-Language-Models) / [解读](./projects/Hands-On-Large-Language-Models/README.md) |
@@ -777,6 +783,8 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `crm` | 单租户 Agent CRM，用队列、预算与证据写入管理客户记录；空白字段自动填充及沙箱 / 遥测边界需核。 | [GitHub](https://github.com/trycompai/crm) / [解读](./projects/crm/README.md) |
+| `itsaplan` | 自托管任务系统，人和 Agent 共用看板；外部 CLI 审批模式、默认遥测及主体 / runner 许可不同。 | [GitHub](https://github.com/croffasia/itsaplan) / [解读](./projects/itsaplan/README.md) |
 | `cli` | gws 动态生成 Workspace CLI 与 skills；非正式支持产品，OAuth scope、凭据继承和写入需验权。 | [GitHub](https://github.com/googleworkspace/cli) / [解读](./projects/cli/README.md) |
 | `social-media-research-skills` | 用账号内中位数基线识别异常表现；依赖第三方 API，不提供免费、完整或私有社媒访问保证。 | [GitHub](https://github.com/ScrapeCreators/social-media-research-skills) / [解读](./projects/social-media-research-skills/README.md) |
 | `slashdocs` | 让 Agent 发布可版本化 HTML、供人评论并经 MCP 迭代；不可信 HTML 分域、dev secrets、分享与 service account 须生产化治理。 | [GitHub](https://github.com/razorpay/slashdocs) |
@@ -871,6 +879,7 @@
 
 - 全量项目目录：[`projects/`](./projects/)
 - 最近日报：
+  - [`2026-10-20`](./daily/2026-10-20/ai-hotspots.md)
   - [`2026-10-19`](./daily/2026-10-19/ai-hotspots.md)
   - [`2026-10-18`](./daily/2026-10-18/ai-hotspots.md)
   - [`2026-10-17`](./daily/2026-10-17/ai-hotspots.md)
@@ -983,9 +992,9 @@
 ## 当前状态
 
 - 状态：持续日更中。
-- 最新更新：`2026-10-19`。
-- 当前项目总数：`892`。
-- 最近新增项目：`llm-course`、`ASPIRE`、`otari`、`claude-quickstarts`、`lazyskills`、`open-computer-use`、`cli`、`ComfyUI`。
+- 最新更新：`2026-10-20`。
+- 当前项目总数：`900`。
+- 最近新增项目：`claude-code-action`、`crm`、`itsaplan`、`smg`、`Codync`、`Fabric`、`os-taxonomy`、`generative-ai-for-beginners`。
 - 覆盖平台：GitHub、X、Instagram、YouTube。
 
 ## 维护约定
