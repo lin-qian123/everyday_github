@@ -49,7 +49,7 @@
 
 如果你是第一次进入这个仓库，建议从这几个入口开始：
 
-- 最新日报：[`daily/2026-10-20/ai-hotspots.md`](./daily/2026-10-20/ai-hotspots.md)
+- 最新日报：[`daily/2026-10-21/ai-hotspots.md`](./daily/2026-10-21/ai-hotspots.md)
 - 项目总目录：[`projects/`](./projects/)
 - 自动化约束：[`AGENTS.md`](./AGENTS.md)
 - 开发续接记录：[`TODO.md`](./TODO.md)
@@ -74,6 +74,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `copilot-cli` | GitHub 官方终端编码 Agent；当前许可限制修改 / 再分发，自动授权、MCP 与可选 sandbox 需独立配置。 | [GitHub](https://github.com/github/copilot-cli) / [解读](./projects/copilot-cli/README.md) |
 | `claude-code-action` | 将 Claude Code 接入 PR / issue 与 CI；触发者、bot allowlist、runner 和 secrets 边界须分别核对。 | [GitHub](https://github.com/anthropics/claude-code-action) / [解读](./projects/claude-code-action/README.md) |
 | `OpenBitFun` | Rust runtime + 四种 harness + 多设备；1.0 数据迁移和 README / Relay 文档漂移要先处理。 | [GitHub](https://github.com/GCWing/OpenBitFun) / [解读](./projects/OpenBitFun/README.md) |
 | `Ghostex` | CLI / GUI / 手机工作台；最新默认会写各 CLI 的项目信任记录，需检查自动信任开关。 | [GitHub](https://github.com/maddada/Ghostex) / [解读](./projects/Ghostex/README.md) |
@@ -185,6 +186,8 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `cc-skills-golang` | Go 专项 Agent 指令与参考资料；跨技能依赖、安装指向及作者评估口径须核。 | [GitHub](https://github.com/samber/cc-skills-golang) / [解读](./projects/cc-skills-golang/README.md) |
+| `gepa` | 用执行反馈、LLM 反思与 Pareto 搜索优化文本参数；评估泄漏、执行权限、模型费用和版本须治理。 | [GitHub](https://github.com/gepa-ai/gepa) / [解读](./projects/gepa/README.md) |
 | `Fabric` | 以可复用 patterns 和 CLI 管道调用模型；当前 REST 对非回环监听要求 key，模板和数据出口须审查。 | [GitHub](https://github.com/danielmiessler/Fabric) / [解读](./projects/Fabric/README.md) |
 | `ASPIRE` | 让 coding agent 在模拟反馈中积累机器人技能；seed 初始化、结构检查和实体实验边界需分开。 | [GitHub](https://github.com/NVlabs/ASPIRE) / [解读](./projects/ASPIRE/README.md) |
 | `lazyskills` | Agent skills 库存、可见性、doctor 与恢复 TUI；需审技能来源；README 有 star 抽贴纸活动。 | [GitHub](https://github.com/alvinunreal/lazyskills) / [解读](./projects/lazyskills/README.md) |
@@ -480,6 +483,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `Scrapegraph-ai` | 用图式流水线与 LLM 从网页 / 文档提取结构化数据；默认内容遥测、数据出口和结果准确性须核。 | [GitHub](https://github.com/ScrapeGraphAI/Scrapegraph-ai) / [解读](./projects/Scrapegraph-ai/README.md) |
 | `Unlimited-OCR` | 百度的长文档 OCR / parsing 模型，以 R-SWA 约束长序列 KV cache；remote code、自带开发 wheel、作者 benchmark 与无认证 serving 须审计。 | [GitHub](https://github.com/baidu/Unlimited-OCR) |
 | `edgequake` | Rust + PostgreSQL / pgvector / AGE 的 GraphRAG 平台；quickstart open mode、模型抽取事实、citation 与版本漂移须复核。 | [GitHub](https://github.com/raphaelmansuy/edgequake) |
 | `repowise` | 将代码图、Git、测试、文档与决策编成本地 MCP 索引；动态语义、作者 benchmark、衍生索引与 opt-out telemetry 须独立验证。 | [GitHub](https://github.com/repowise-dev/repowise) |
@@ -542,6 +546,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `dsh-pet` | 把 DSH 会话状态接到透明动画桌宠，含独立模式与素材管线；代码、素材和二创条款须分开核。 | [GitHub](https://github.com/PC2005-cloud/dsh-pet) / [解读](./projects/dsh-pet/README.md) |
 | `superdesign` | 在 IDE 生成与迭代 UI 的历史设计扩展，已停止积极维护；当前 Web / skill 和混合许可须分别核对。 | [GitHub](https://github.com/superdesigndev/superdesign) |
 | `stitch-skills` | Google Stitch 的设计、资产上传、设计系统与组件技能集；会外发本地文件并创建远端 screen。 | [GitHub](https://github.com/google-labs-code/stitch-skills) |
 | `OpenIntelligentUI` | CopilotKit 的 Generative UI 完整示例，在文本、原生组件与 sandboxed custom UI 间路由；事实、bridge、CSP、provider 与持久化须补齐。 | [GitHub](https://github.com/CopilotKit/OpenIntelligentUI) |
@@ -598,6 +603,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `Qwen3-VL` | Dense / MoE 视觉语言模型与图像、视频工具；权重、视觉 token 预算、时序采样和 API 数据出口须固定。 | [GitHub](https://github.com/QwenLM/Qwen3-VL) / [解读](./projects/Qwen3-VL/README.md) |
 | `ComfyUI` | 多模态节点工作流引擎；本地 / partner / custom nodes 的网络、权限和模型条款分别治理。 | [GitHub](https://github.com/Comfy-Org/ComfyUI) / [解读](./projects/ComfyUI/README.md) |
 | `NeuralNote` | 本机多乐器 audio-to-MIDI 适合人工修订初稿；权重仅非商业、MIDI 不等于正式谱面。 | [GitHub](https://github.com/DamRsn/NeuralNote) |
 | `mcp-for-blender` | 把 Blender 场景、viewport、Python 和素材工具接给 Agent；任意代码、默认 usage 遥测与资产权利须治理。 | [解读](./projects/mcp-for-blender/README.md) · [GitHub](https://github.com/ahujasid/mcp-for-blender) |
@@ -674,6 +680,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `dinov3` | 自监督视觉 backbone 与稠密特征；下游任务头、权重获取及自定义 DINOv3 License 须分别核。 | [GitHub](https://github.com/facebookresearch/dinov3) / [解读](./projects/dinov3/README.md) |
 | `smg` | Rust 模型路由与缓存感知网关；默认监听、数据 / 控制面认证、上游 key 和存储需分层配置。 | [GitHub](https://github.com/smg-project/smg) / [解读](./projects/smg/README.md) |
 | `otari` | 自托管多 provider 网关，统一 keys / 预算 / 路由；v0.28 provider 声明与 hybrid / trace 边界需核。 | [GitHub](https://github.com/mozilla-ai/otari) / [解读](./projects/otari/README.md) |
 | `Bonsai-demo` | 低比特本地模型入口；packing、图变换和后端必须匹配，权重体积不是总内存。 | [GitHub](https://github.com/PrismML-Eng/Bonsai-demo) / [解读](./projects/Bonsai-demo/README.md) |
@@ -762,6 +769,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `udlbook` | Simon J.D. Prince 教材配套站、notebooks 与 slides；正文 CC BY-NC-ND 和 notebooks MIT 分层使用。 | [GitHub](https://github.com/udlbook/udlbook) / [解读](./projects/udlbook/README.md) |
 | `os-taxonomy` | 基础教育微主题与前置知识图谱；Agent 教学建议、缺覆盖及数据库 / 正文 / 标准多层许可需分开。 | [GitHub](https://github.com/withmarbleapp/os-taxonomy) / [解读](./projects/os-taxonomy/README.md) |
 | `generative-ai-for-beginners` | 21 节生成式 AI 课程与 Python / TypeScript 实践；provider 迁移、依赖、费用和翻译需逐课复核。 | [GitHub](https://github.com/microsoft/generative-ai-for-beginners) / [解读](./projects/generative-ai-for-beginners/README.md) |
 | `llm-course` | LLM 基础 / 训练 / 应用三路线与 notebook 入口；外链环境、模型条款和云成本需逐项复现。 | [GitHub](https://github.com/mlabonne/llm-course) / [解读](./projects/llm-course/README.md) |
@@ -879,6 +887,7 @@
 
 - 全量项目目录：[`projects/`](./projects/)
 - 最近日报：
+  - [`2026-10-21`](./daily/2026-10-21/ai-hotspots.md)
   - [`2026-10-20`](./daily/2026-10-20/ai-hotspots.md)
   - [`2026-10-19`](./daily/2026-10-19/ai-hotspots.md)
   - [`2026-10-18`](./daily/2026-10-18/ai-hotspots.md)
@@ -992,9 +1001,9 @@
 ## 当前状态
 
 - 状态：持续日更中。
-- 最新更新：`2026-10-20`。
-- 当前项目总数：`900`。
-- 最近新增项目：`claude-code-action`、`crm`、`itsaplan`、`smg`、`Codync`、`Fabric`、`os-taxonomy`、`generative-ai-for-beginners`。
+- 最新更新：`2026-10-21`。
+- 当前项目总数：`908`。
+- 最近新增项目：`dsh-pet`、`Scrapegraph-ai`、`copilot-cli`、`cc-skills-golang`、`gepa`、`Qwen3-VL`、`dinov3`、`udlbook`。
 - 覆盖平台：GitHub、X、Instagram、YouTube。
 
 ## 维护约定

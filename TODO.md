@@ -14,6 +14,8 @@
 
 ## 阶段性开发记录
 
+- 2026-10-21：新增 `dsh-pet`、`Scrapegraph-ai`、`copilot-cli`、`cc-skills-golang`、`gepa`、`Qwen3-VL`、`dinov3`、`udlbook` 七节页与四平台日报，复用七类导航，实际目录 `908`。官方 daily 增星依次约 +505 / +57 / +10 / +10 / +24 / +9 / +12 / +16。search-layer 为空，Web 社媒搜索未取可用当日原帖；X 三账号与一历史帖入口、Instagram 两次 popular、YouTube 两条固定元数据均标边界。接续：ScrapeGraphAI README 与内容遥测差异及关闭开关；Copilot 专有许可 / 自动授权 / 可选 sandbox；桌宠素材禁商用 / 独立 AI 默认关；Go 技能安装目标与作者评估；GEPA 独立测试 / 费用 / main 与 Release；Qwen 2025 日期与模型卡依赖漂移；DINOv3 自定义许可；UDL 正文 / notebooks 分层。保留原有 AGENTS.md 修改，未安装运行项目。
+
 - 2026-10-20：新增 `claude-code-action`、`crm`、`itsaplan`、`smg`、`Codync`、`Fabric`、`os-taxonomy`、`generative-ai-for-beginners` 七节页与四平台日报，复用六类导航，实际目录 `900`。官方当日增星约 +10 / +54 / +112 / +8 / +49 / +27 / +301 / +72（按上述项目顺序）；累计 / Release 时间见日报。search-layer 为空，Web 未取得可用的当日社媒原帖，采用官方榜单 / API / 固定文件；X 三个有效身份入口及一项 404、Instagram 两次 popular、YouTube 三条固定元数据均标明边界，未填当日互动量。核 repository ID 确认 Headroom / Graphify owner 迁移并去重。接续：Action bot allowlist / PR secrets；CRM 空白字段证据写入与沙箱 / 遥测；Itsaplan 各 CLI 审批和默认遥测；SMG 默认监听 / 认证；Codync 完全信任配对设备；Fabric REST 当前 key / loopback guard；Marble 生成教学建议 / 多层许可及课程 provider 漂移。保留原有 AGENTS.md 修改，未安装运行项目。
 
 - 2026-10-19：新增 `llm-course`、`ASPIRE`、`otari`、`claude-quickstarts`、`lazyskills`、`open-computer-use`、`cli`、`ComfyUI` 七节页与四平台日报，复用五类导航，实际目录 `892`。官方当日增星依次约 +81 / +99 / +46 / +453 / +107 / +29 / +51 / +155。search-layer 与社媒定向搜索为空，转官方榜单 / API / 文件；X 5 个身份入口、Instagram 官网回链 / login / popular、YouTube 3 条固定元数据与 Comfy 频道均标明边界，没有项目级当日互动量。接续：Otari v0.28 provider 配置迁移、预算与 key / trace；ASPIRE saved / seeded 与模拟 / 实体证据；Open Computer Use JS 权限、无 session approval 和 Locked Use 未闭环；gws 非正式支持、scope / Discovery / 可选清洗；ComfyUI offline 与自定义节点 / 版本差异；LazySkills 恢复与抽贴纸传播；学习材料依赖和费用。保留原有 AGENTS.md 修改，未安装运行项目。
