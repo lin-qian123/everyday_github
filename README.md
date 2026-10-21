@@ -49,7 +49,7 @@
 
 如果你是第一次进入这个仓库，建议从这几个入口开始：
 
-- 最新日报：[`daily/2026-10-21/ai-hotspots.md`](./daily/2026-10-21/ai-hotspots.md)
+- 最新日报：[`daily/2026-10-22/ai-hotspots.md`](./daily/2026-10-22/ai-hotspots.md)
 - 项目总目录：[`projects/`](./projects/)
 - 自动化约束：[`AGENTS.md`](./AGENTS.md)
 - 开发续接记录：[`TODO.md`](./TODO.md)
@@ -186,6 +186,8 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `dsh-im` | 把 IM 机器人接到 DeepSeek Harness；渠道访问模式、默认群归档和文件回传范围须逐项核。 | [GitHub](https://github.com/xmanrui/dsh-im) / [解读](./projects/dsh-im/README.md) |
+| `eino` | Go 的组件、图编排与 ADK；支持流式、工具和中断恢复，审批规则、并发副作用及状态存储由应用治理。 | [GitHub](https://github.com/cloudwego/eino) / [解读](./projects/eino/README.md) |
 | `cc-skills-golang` | Go 专项 Agent 指令与参考资料；跨技能依赖、安装指向及作者评估口径须核。 | [GitHub](https://github.com/samber/cc-skills-golang) / [解读](./projects/cc-skills-golang/README.md) |
 | `gepa` | 用执行反馈、LLM 反思与 Pareto 搜索优化文本参数；评估泄漏、执行权限、模型费用和版本须治理。 | [GitHub](https://github.com/gepa-ai/gepa) / [解读](./projects/gepa/README.md) |
 | `Fabric` | 以可复用 patterns 和 CLI 管道调用模型；当前 REST 对非回环监听要求 key，模板和数据出口须审查。 | [GitHub](https://github.com/danielmiessler/Fabric) / [解读](./projects/Fabric/README.md) |
@@ -546,6 +548,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `dsh-pocket` | 用手机同步操作 Harness Web，支持 LAN 与 Cloudflare 隧道；代理拥有宿主操作能力，PIN 和监听面须核。 | [GitHub](https://github.com/shaobeichen/dsh-pocket) / [解读](./projects/dsh-pocket/README.md) |
 | `dsh-pet` | 把 DSH 会话状态接到透明动画桌宠，含独立模式与素材管线；代码、素材和二创条款须分开核。 | [GitHub](https://github.com/PC2005-cloud/dsh-pet) / [解读](./projects/dsh-pet/README.md) |
 | `superdesign` | 在 IDE 生成与迭代 UI 的历史设计扩展，已停止积极维护；当前 Web / skill 和混合许可须分别核对。 | [GitHub](https://github.com/superdesigndev/superdesign) |
 | `stitch-skills` | Google Stitch 的设计、资产上传、设计系统与组件技能集；会外发本地文件并创建远端 screen。 | [GitHub](https://github.com/google-labs-code/stitch-skills) |
@@ -603,6 +606,8 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `CozyClay` | 浏览器 3D 分镜与运动预演，导出参考帧、片段和提示词给视频模型；遥测、云端调用及素材许可分层核。 | [GitHub](https://github.com/NomaDamas/CozyClay) / [解读](./projects/CozyClay/README.md) |
+| `sam2` | 图像与视频的可提示分割模型，依靠流式记忆传播掩膜；旧发布日期、模型配置、编译差异与数据许可须区分。 | [GitHub](https://github.com/facebookresearch/sam2) / [解读](./projects/sam2/README.md) |
 | `Qwen3-VL` | Dense / MoE 视觉语言模型与图像、视频工具；权重、视觉 token 预算、时序采样和 API 数据出口须固定。 | [GitHub](https://github.com/QwenLM/Qwen3-VL) / [解读](./projects/Qwen3-VL/README.md) |
 | `ComfyUI` | 多模态节点工作流引擎；本地 / partner / custom nodes 的网络、权限和模型条款分别治理。 | [GitHub](https://github.com/Comfy-Org/ComfyUI) / [解读](./projects/ComfyUI/README.md) |
 | `NeuralNote` | 本机多乐器 audio-to-MIDI 适合人工修订初稿；权重仅非商业、MIDI 不等于正式谱面。 | [GitHub](https://github.com/DamRsn/NeuralNote) |
@@ -680,6 +685,8 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `uzu` | 面向 Apple 设备的多语言推理引擎，支持本地与云模型；API、系统版本、权重下载和真实延迟须分别固定。 | [GitHub](https://github.com/trymirai/uzu) / [解读](./projects/uzu/README.md) |
+| `FlashMLA` | DeepSeek 注意力内核；当前主线面向 SM100/103 与 Ascend 950，已移除 Hopper 和旧 KV 格式，集成须固定版本。 | [GitHub](https://github.com/deepseek-ai/FlashMLA) / [解读](./projects/FlashMLA/README.md) |
 | `dinov3` | 自监督视觉 backbone 与稠密特征；下游任务头、权重获取及自定义 DINOv3 License 须分别核。 | [GitHub](https://github.com/facebookresearch/dinov3) / [解读](./projects/dinov3/README.md) |
 | `smg` | Rust 模型路由与缓存感知网关；默认监听、数据 / 控制面认证、上游 key 和存储需分层配置。 | [GitHub](https://github.com/smg-project/smg) / [解读](./projects/smg/README.md) |
 | `otari` | 自托管多 provider 网关，统一 keys / 预算 / 路由；v0.28 provider 声明与 hybrid / trace 边界需核。 | [GitHub](https://github.com/mozilla-ai/otari) / [解读](./projects/otari/README.md) |
@@ -791,6 +798,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `Biscotti` | macOS 本地会议录音、分说话人转写和摘要；MCP 默认关闭但启用后本机应用可读，许可含竞争限制。 | [GitHub](https://github.com/scosman/Biscotti) / [解读](./projects/Biscotti/README.md) |
 | `crm` | 单租户 Agent CRM，用队列、预算与证据写入管理客户记录；空白字段自动填充及沙箱 / 遥测边界需核。 | [GitHub](https://github.com/trycompai/crm) / [解读](./projects/crm/README.md) |
 | `itsaplan` | 自托管任务系统，人和 Agent 共用看板；外部 CLI 审批模式、默认遥测及主体 / runner 许可不同。 | [GitHub](https://github.com/croffasia/itsaplan) / [解读](./projects/itsaplan/README.md) |
 | `cli` | gws 动态生成 Workspace CLI 与 skills；非正式支持产品，OAuth scope、凭据继承和写入需验权。 | [GitHub](https://github.com/googleworkspace/cli) / [解读](./projects/cli/README.md) |
@@ -887,6 +895,7 @@
 
 - 全量项目目录：[`projects/`](./projects/)
 - 最近日报：
+  - [`2026-10-22`](./daily/2026-10-22/ai-hotspots.md)
   - [`2026-10-21`](./daily/2026-10-21/ai-hotspots.md)
   - [`2026-10-20`](./daily/2026-10-20/ai-hotspots.md)
   - [`2026-10-19`](./daily/2026-10-19/ai-hotspots.md)
@@ -1001,9 +1010,9 @@
 ## 当前状态
 
 - 状态：持续日更中。
-- 最新更新：`2026-10-21`。
-- 当前项目总数：`908`。
-- 最近新增项目：`dsh-pet`、`Scrapegraph-ai`、`copilot-cli`、`cc-skills-golang`、`gepa`、`Qwen3-VL`、`dinov3`、`udlbook`。
+- 最新更新：`2026-10-22`。
+- 当前项目总数：`916`。
+- 最近新增项目：`dsh-im`、`dsh-pocket`、`CozyClay`、`eino`、`uzu`、`FlashMLA`、`sam2`、`Biscotti`。
 - 覆盖平台：GitHub、X、Instagram、YouTube。
 
 ## 维护约定
