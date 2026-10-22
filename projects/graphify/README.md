@@ -1,86 +1,50 @@
-# graphify（safishamsi/graphify）
+<!-- markdownlint-disable MD013 -->
 
-- GitHub: https://github.com/safishamsi/graphify
-- 记录日期: 2026-04-22 (Asia/Shanghai)
+# graphify
 
-## 这是什么
+- 主上游：[Graphify-Labs/graphify](https://github.com/Graphify-Labs/graphify)
+- 分类：RAG、检索与知识处理。
+- 核验日期：2026-10-23（Asia/Shanghai）；主线快照 `c588b72d9369`。
+- [API](https://api.github.com/repos/Graphify-Labs/graphify) 快照：132,892 stars / 12,717 forks / 1,601 open issues；发行列表首项 [v0.9.94](https://github.com/Graphify-Labs/graphify/releases/tag/v0.9.94)（UTC 2026-10-22，正式）。累计值不代表今日增量。
 
-`graphify` 是一个把代码、文档、论文、图片、音视频统一抽取为“可查询知识图谱”的 AI 编码助手技能，目标是加速大型代码库/多模态资料的结构化理解。
+## 定位
 
-按 GitHub 页面快照（2026-04-22 抓取）约为 `32k stars`、`3.6k forks`，并且近期 issue/PR 活跃度很高。
+Graphify 将代码与相关文档转为可查询知识图谱，供编码助手按节点、路径和证据理解工程。本轮更新既有页面，主上游为 Graphify-Labs/graphify；旧 safishamsi 地址的 API 迁移目标与新地址 repository ID 同为 `1200597263`，属于同一仓库，不计新增。[当前仓库](https://github.com/Graphify-Labs/graphify)、[旧 API](https://api.github.com/repos/safishamsi/graphify)
 
-## 为什么值得关注
+## 用法
 
-1. 不是只做 RAG，而是强调“结构关系图 + 可解释证据标注”。
-2. 同时支持代码与非代码资料，适合真实工程里的混合信息源。
-3. 对“上下文窗口不够”的问题给了工程化方案（预抽取、缓存、图查询）。
-
-## 怎么用（最短路径）
-
-### 1) 安装
+官方 PyPI 包名是双 y 的 `graphifyy`，CLI 仍叫 `graphify`。当前默认分支为 `v8`，正式发行和 manifest 为 0.9.94，Python 下限 3.10。示例：
 
 ```bash
-uv tool install graphifyy && graphify install
-# 或
-pipx install graphifyy && graphify install
+uv tool install graphifyy==0.9.94
+graphify install --platform codex --project
 ```
 
-### 2) 对当前目录生成图谱
+安装集成会写入项目技能 / 指令文件，运行前审查改动；Codex 会话使用 `$graphify`，其他助手的调用语法见 README。先选择公开小仓库、限制扫描范围，完成图谱构建后再使用 `graphify query`、`path`、`explain`。[用法与发行差异](https://github.com/Graphify-Labs/graphify/blob/c588b72d936927790a87ad009955078ed40562a3/README.md)、[manifest](https://github.com/Graphify-Labs/graphify/blob/c588b72d936927790a87ad009955078ed40562a3/pyproject.toml)
 
-```bash
-/graphify .
-```
+## 原理
 
-输出目录通常包含：
-- `graphify-out/graph.html`（交互图）
-- `graphify-out/GRAPH_REPORT.md`（摘要与发现）
-- `graphify-out/graph.json`（可编程查询）
+代码通过 tree-sitter 等本地解析抽取结构关系；文档、PDF、图片可走可选模型语义抽取，音视频可先本地转写，再融合图结构与社区划分。查询可返回关系路径与证据，仍应区分直接抽取和语义推断。代码图不是运行时动态依赖与业务因果的完整证明。
 
-### 3) 忽略无关文件
+## 价值
 
-创建 `.graphifyignore`（语法同 `.gitignore`）控制扫描范围。
+适合跨模块理解、找影响面与减少重复读取。README 的 Recall@10、零 LLM credits 或 Cloud 节省 token 宣传各自有实验范围；本轮未复现实验，不能把单项检索指标或宣传比例推广到全部 Agent 任务。
 
-## 核心原理
+## 风险边界
 
-1. 三阶段流水线
-- 阶段一：基于 tree-sitter 的 AST 确定性抽取（结构、调用、注释线索）。
-- 阶段二：本地转写音视频（可选 whisper/faster-whisper）。
-- 阶段三：并行 Agent 抽取语义关系，融合为统一图结构。
+- AST 代码抽取与语义资料抽取的数据流不同。README 说明混合资料可送至助手 / 配置模型；自动检测 provider 可能由环境中的 key 决定。需固定 backend；禁用模型用 `GRAPHIFY_BACKEND=none`，代码扫描范围用 `--code-only`。[隐私说明](https://github.com/Graphify-Labs/graphify/blob/c588b72d936927790a87ad009955078ed40562a3/README.md)
+- “无遥测”不代表没有本地记录：query / path / explain 和 MCP query 默认写 `~/.cache/graphify-queries.log`；可用 `GRAPHIFY_QUERY_LOG_DISABLE=1` 关闭。日志有问题文本等字段，默认不保存完整子图响应。
+- 本地 CLI skill 安装与 MCP 连接是两条不同接入方式；安装 skill 不会自动建立 MCP。HTTP MCP 为可选网络监听，SSRF / 路径防护属于上游安全设计，本轮未做攻击验证。[安全模型](https://github.com/Graphify-Labs/graphify/blob/c588b72d936927790a87ad009955078ed40562a3/SECURITY.md)
+- Graphify Cloud 有跨库、持续记忆与连接器等另外的数据边界；本页开源快照采用 Apache-2.0，不能据此推断 Cloud 服务条款。[LICENSE](https://github.com/Graphify-Labs/graphify/blob/c588b72d936927790a87ad009955078ed40562a3/LICENSE)
 
-2. 图拓扑聚类
-利用图关系密度做社区发现（如 Leiden），让“模块边界、隐含耦合、关键节点”更直观。
+## 补充建议
 
-3. 证据分层
-关系可标记为 EXTRACTED / INFERRED / AMBIGUOUS，便于区分“直接证据”和“推断结论”。
+先做禁用 LLM 的公开代码图，抽查已知 import / call 链的误报漏报；需要语义资料时再测 provider 与来源引用。将 skill / hook 写入文件、日志位置和模型数据出口纳入项目配置记录。原 2026-04 页面已在原路径更新，历史说明由 Git 保留。本轮未安装、构建图谱或连接 Cloud。
 
-4. 增量缓存
-基于文件哈希缓存，重复运行时只处理变更内容，适合持续迭代项目。
+## 参考资料
 
-## 适用场景
-
-1. 新成员快速理解大型仓库。
-2. 架构评审时识别耦合热点和隐式依赖。
-3. 代码 + 设计文档 +会议材料联合检索。
-4. 研究型项目中“论文-实现-实验记录”对齐。
-
-## 价值与风险
-
-价值：
-- 把碎片化上下文压缩成可追溯知识网络。
-- 让“为什么这样设计”更可查询而非只靠口口相传。
-
-风险：
-- INFERRED 关系若未经人工复核，可能误导决策。
-- 多模态数据接入后，权限边界和敏感信息治理更复杂。
-
-## 我认为有价值的补充材料
-
-1. 为团队定义“图谱验收基线”（关键节点召回率、误连边率）。
-2. 在 CI 中定期生成图谱快照，对比架构漂移。
-3. 与 ADR（Architecture Decision Record）联动，形成“决策 -> 实现 -> 证据”闭环。
-
-## 参考来源
-
-- https://github.com/safishamsi/graphify
-- https://github.com/safishamsi/graphify/blob/main/README.md
-- https://ossinsight.io/trending
+- [README.md](https://github.com/Graphify-Labs/graphify/blob/c588b72d936927790a87ad009955078ed40562a3/README.md)（固定 commit）。
+- [SECURITY.md](https://github.com/Graphify-Labs/graphify/blob/c588b72d936927790a87ad009955078ed40562a3/SECURITY.md)（固定 commit）。
+- [pyproject.toml](https://github.com/Graphify-Labs/graphify/blob/c588b72d936927790a87ad009955078ed40562a3/pyproject.toml)（固定 commit）。
+- [LICENSE](https://github.com/Graphify-Labs/graphify/blob/c588b72d936927790a87ad009955078ed40562a3/LICENSE)（固定 commit）。
+- [正式发行列表](https://github.com/Graphify-Labs/graphify/releases)、[仓库 API](https://api.github.com/repos/Graphify-Labs/graphify)（动态状态）。

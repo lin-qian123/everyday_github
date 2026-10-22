@@ -14,6 +14,8 @@
 
 ## 阶段性开发记录
 
+- 2026-10-23：新增 `genoffice`、`dsh-context`、`OpenBot`、`litellm`、`onyx`、`FluidAudio`，按同一 repository ID 刷新 Graphify 原页；七个七节页、四平台日报，复用六类，总数按目录核为 `922`。官方 daily 增星依次 +191 / +321 / +89 / +101 / +201 / +17，Graphify +1,407。社媒搜索未取可用当日原帖；X 固定帖为 2025-10-13，Instagram 为主题聚合，YouTube 三条固定元数据与两条历史日期 / 累计播放已核，无当日传播结论。接续：GenOffice 默认统计 / 格式保真；dsh-context 计量与提示注入；OpenBot 单用户、自动学习 / 桌面遥测；LiteLLM 主线版本和 enterprise 许可路径漂移；Onyx CE / EE 权限同步；FluidAudio 下载、traits 与模型边界；Graphify backend / 查询日志 / CLI 与 MCP。保留原 AGENTS.md 用户修改，未安装运行上游。
+
 - 2026-10-22：新增 `dsh-im`、`dsh-pocket`、`CozyClay`、`eino`、`uzu`、`FlashMLA`、`sam2`、`Biscotti` 七节页与四平台日报，复用五类，实际目录 `916`。官方语言榜日增星依次约 +49 / +189 / +29 / +13 / +15 / +42 / +10 / +49。search-layer 为空；X 三个来源映射账号可达，Instagram 两次登录重定向，YouTube 官方频道三条累计约数 / 相对时间与 oEmbed 标题作者已核，不作今日增量或社群争议统计。接续：IM 默认群归档 / 无逐群开关 / 已有文件回传；Pocket PIN / 代理宿主权限；CozyClay 官方制品遥测与 AGPL；Eino 默认工具并行及恢复副作用；uzu 平台下限 / 云模型；FlashMLA 移除 Hopper 与旧 KV 格式；SAM 2024 发布 / 编译差异；Biscotti 预发行 / 本机 MCP / 竞争许可。保留原 AGENTS.md 修改，未安装运行上游。
 
 - 2026-10-21：新增 `dsh-pet`、`Scrapegraph-ai`、`copilot-cli`、`cc-skills-golang`、`gepa`、`Qwen3-VL`、`dinov3`、`udlbook` 七节页与四平台日报，复用七类导航，实际目录 `908`。官方 daily 增星依次约 +505 / +57 / +10 / +10 / +24 / +9 / +12 / +16。search-layer 为空，Web 社媒搜索未取可用当日原帖；X 三账号与一历史帖入口、Instagram 两次 popular、YouTube 两条固定元数据均标边界。接续：ScrapeGraphAI README 与内容遥测差异及关闭开关；Copilot 专有许可 / 自动授权 / 可选 sandbox；桌宠素材禁商用 / 独立 AI 默认关；Go 技能安装目标与作者评估；GEPA 独立测试 / 费用 / main 与 Release；Qwen 2025 日期与模型卡依赖漂移；DINOv3 自定义许可；UDL 正文 / notebooks 分层。保留原有 AGENTS.md 修改，未安装运行项目。

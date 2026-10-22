@@ -49,7 +49,7 @@
 
 如果你是第一次进入这个仓库，建议从这几个入口开始：
 
-- 最新日报：[`daily/2026-10-22/ai-hotspots.md`](./daily/2026-10-22/ai-hotspots.md)
+- 最新日报：[`daily/2026-10-23/ai-hotspots.md`](./daily/2026-10-23/ai-hotspots.md)
 - 项目总目录：[`projects/`](./projects/)
 - 自动化约束：[`AGENTS.md`](./AGENTS.md)
 - 开发续接记录：[`TODO.md`](./TODO.md)
@@ -186,6 +186,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `OpenBot` | 基于 AG-UI 的 AI 同事平台，提供独立浏览器、策略和审计；默认单用户与自动学习须配置。 | [GitHub](https://github.com/CopilotKit/OpenBot) / [解读](./projects/OpenBot/README.md) |
 | `dsh-im` | 把 IM 机器人接到 DeepSeek Harness；渠道访问模式、默认群归档和文件回传范围须逐项核。 | [GitHub](https://github.com/xmanrui/dsh-im) / [解读](./projects/dsh-im/README.md) |
 | `eino` | Go 的组件、图编排与 ADK；支持流式、工具和中断恢复，审批规则、并发副作用及状态存储由应用治理。 | [GitHub](https://github.com/cloudwego/eino) / [解读](./projects/eino/README.md) |
 | `cc-skills-golang` | Go 专项 Agent 指令与参考资料；跨技能依赖、安装指向及作者评估口径须核。 | [GitHub](https://github.com/samber/cc-skills-golang) / [解读](./projects/cc-skills-golang/README.md) |
@@ -424,6 +425,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `dsh-context` | DeepSeek Harness 上下文洞察插件；展示构成、历史和费用估算，并可注入系统提示前后缀。 | [GitHub](https://github.com/bowenliang123/dsh-context) / [解读](./projects/dsh-context/README.md) |
 | `Codync` | 将本机 coding agents 变成手机 / 桌面可聊天 bot；配对设备按拥有者信任，relay 加密不等于推理离线。 | [GitHub](https://github.com/leepokai/Codync) / [解读](./projects/Codync/README.md) |
 | `rakazo` | 持久队友与独立 computer provider；Team 子目录 / Chrome profile 不构成同容器进程隔离。 | [GitHub](https://github.com/elie222/rakazo) / [解读](./projects/rakazo/README.md) |
 | `PilotDeck` | 可编辑记忆、路由和后台任务；Workspace 组织与 OS 边界不同，需核 UI auth、端口和 shell 权限。 | [GitHub](https://github.com/OpenBMB/PilotDeck) / [解读](./projects/PilotDeck/README.md) |
@@ -485,6 +487,8 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `onyx` | 连接企业资料的 RAG 与 Agent 平台；Standard 才能索引，CE 与 EE 权限同步能力须区分。 | [GitHub](https://github.com/onyx-dot-app/onyx) / [解读](./projects/onyx/README.md) |
+| `graphify` | 将代码与资料转为可查询图谱；旧 owner 已迁移，需区分本地 AST、语义模型与 Cloud 数据流。 | [GitHub](https://github.com/Graphify-Labs/graphify) / [解读](./projects/graphify/README.md) |
 | `Scrapegraph-ai` | 用图式流水线与 LLM 从网页 / 文档提取结构化数据；默认内容遥测、数据出口和结果准确性须核。 | [GitHub](https://github.com/ScrapeGraphAI/Scrapegraph-ai) / [解读](./projects/Scrapegraph-ai/README.md) |
 | `Unlimited-OCR` | 百度的长文档 OCR / parsing 模型，以 R-SWA 约束长序列 KV cache；remote code、自带开发 wheel、作者 benchmark 与无认证 serving 须审计。 | [GitHub](https://github.com/baidu/Unlimited-OCR) |
 | `edgequake` | Rust + PostgreSQL / pgvector / AGE 的 GraphRAG 平台；quickstart open mode、模型抽取事实、citation 与版本漂移须复核。 | [GitHub](https://github.com/raphaelmansuy/edgequake) |
@@ -606,6 +610,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `FluidAudio` | Apple 设备的 CoreML 语音 SDK，覆盖转写、TTS、VAD 和分说话人；下载、模型许可与硬件须核。 | [GitHub](https://github.com/FluidInference/FluidAudio) / [解读](./projects/FluidAudio/README.md) |
 | `CozyClay` | 浏览器 3D 分镜与运动预演，导出参考帧、片段和提示词给视频模型；遥测、云端调用及素材许可分层核。 | [GitHub](https://github.com/NomaDamas/CozyClay) / [解读](./projects/CozyClay/README.md) |
 | `sam2` | 图像与视频的可提示分割模型，依靠流式记忆传播掩膜；旧发布日期、模型配置、编译差异与数据许可须区分。 | [GitHub](https://github.com/facebookresearch/sam2) / [解读](./projects/sam2/README.md) |
 | `Qwen3-VL` | Dense / MoE 视觉语言模型与图像、视频工具；权重、视觉 token 预算、时序采样和 API 数据出口须固定。 | [GitHub](https://github.com/QwenLM/Qwen3-VL) / [解读](./projects/Qwen3-VL/README.md) |
@@ -685,6 +690,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `litellm` | 统一多模型 API 的 Python SDK 与网关；路由、费用和日志集中管理，需核服务语义与版本。 | [GitHub](https://github.com/BerriAI/litellm) / [解读](./projects/litellm/README.md) |
 | `uzu` | 面向 Apple 设备的多语言推理引擎，支持本地与云模型；API、系统版本、权重下载和真实延迟须分别固定。 | [GitHub](https://github.com/trymirai/uzu) / [解读](./projects/uzu/README.md) |
 | `FlashMLA` | DeepSeek 注意力内核；当前主线面向 SM100/103 与 Ascend 950，已移除 Hopper 和旧 KV 格式，集成须固定版本。 | [GitHub](https://github.com/deepseek-ai/FlashMLA) / [解读](./projects/FlashMLA/README.md) |
 | `dinov3` | 自监督视觉 backbone 与稠密特征；下游任务头、权重获取及自定义 DINOv3 License 须分别核。 | [GitHub](https://github.com/facebookresearch/dinov3) / [解读](./projects/dinov3/README.md) |
@@ -798,6 +804,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `genoffice` | 本地 Office 编辑器与 Agent CLI，支持真实文档格式；默认统计、云 AI 和格式往返须分别验收。 | [GitHub](https://github.com/genspark-ai/genoffice) / [解读](./projects/genoffice/README.md) |
 | `Biscotti` | macOS 本地会议录音、分说话人转写和摘要；MCP 默认关闭但启用后本机应用可读，许可含竞争限制。 | [GitHub](https://github.com/scosman/Biscotti) / [解读](./projects/Biscotti/README.md) |
 | `crm` | 单租户 Agent CRM，用队列、预算与证据写入管理客户记录；空白字段自动填充及沙箱 / 遥测边界需核。 | [GitHub](https://github.com/trycompai/crm) / [解读](./projects/crm/README.md) |
 | `itsaplan` | 自托管任务系统，人和 Agent 共用看板；外部 CLI 审批模式、默认遥测及主体 / runner 许可不同。 | [GitHub](https://github.com/croffasia/itsaplan) / [解读](./projects/itsaplan/README.md) |
@@ -895,6 +902,7 @@
 
 - 全量项目目录：[`projects/`](./projects/)
 - 最近日报：
+  - [`2026-10-23`](./daily/2026-10-23/ai-hotspots.md)
   - [`2026-10-22`](./daily/2026-10-22/ai-hotspots.md)
   - [`2026-10-21`](./daily/2026-10-21/ai-hotspots.md)
   - [`2026-10-20`](./daily/2026-10-20/ai-hotspots.md)
@@ -1010,9 +1018,10 @@
 ## 当前状态
 
 - 状态：持续日更中。
-- 最新更新：`2026-10-22`。
-- 当前项目总数：`916`。
-- 最近新增项目：`dsh-im`、`dsh-pocket`、`CozyClay`、`eino`、`uzu`、`FlashMLA`、`sam2`、`Biscotti`。
+- 最新更新：`2026-10-23`。
+- 当前项目总数：`922`。
+- 最近新增项目：`genoffice`、`dsh-context`、`OpenBot`、`litellm`、`onyx`、`FluidAudio`。
+- 本轮刷新：`graphify`（沿用原目录，更新主上游与用法）。
 - 覆盖平台：GitHub、X、Instagram、YouTube。
 
 ## 维护约定
