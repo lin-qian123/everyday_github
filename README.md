@@ -49,7 +49,7 @@
 
 如果你是第一次进入这个仓库，建议从这几个入口开始：
 
-- 最新日报：[`daily/2026-10-23/ai-hotspots.md`](./daily/2026-10-23/ai-hotspots.md)
+- 最新日报：[`daily/2026-10-24/ai-hotspots.md`](./daily/2026-10-24/ai-hotspots.md)
 - 项目总目录：[`projects/`](./projects/)
 - 自动化约束：[`AGENTS.md`](./AGENTS.md)
 - 开发续接记录：[`TODO.md`](./TODO.md)
@@ -186,6 +186,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `chops` | macOS 多工具技能管理器；无 App Sandbox，远程可写及 FSL 许可需明确。 | [GitHub](https://github.com/Shpigford/chops) / [解读](./projects/chops/README.md) |
 | `OpenBot` | 基于 AG-UI 的 AI 同事平台，提供独立浏览器、策略和审计；默认单用户与自动学习须配置。 | [GitHub](https://github.com/CopilotKit/OpenBot) / [解读](./projects/OpenBot/README.md) |
 | `dsh-im` | 把 IM 机器人接到 DeepSeek Harness；渠道访问模式、默认群归档和文件回传范围须逐项核。 | [GitHub](https://github.com/xmanrui/dsh-im) / [解读](./projects/dsh-im/README.md) |
 | `eino` | Go 的组件、图编排与 ADK；支持流式、工具和中断恢复，审批规则、并发副作用及状态存储由应用治理。 | [GitHub](https://github.com/cloudwego/eino) / [解读](./projects/eino/README.md) |
@@ -425,6 +426,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `ds-harness-remote` | 多设备延续 Harness / Codex 工作区；默认远程终端与 E2EE 文档差异须核。 | [GitHub](https://github.com/liguobao/ds-harness-remote) / [解读](./projects/ds-harness-remote/README.md) |
 | `dsh-context` | DeepSeek Harness 上下文洞察插件；展示构成、历史和费用估算，并可注入系统提示前后缀。 | [GitHub](https://github.com/bowenliang123/dsh-context) / [解读](./projects/dsh-context/README.md) |
 | `Codync` | 将本机 coding agents 变成手机 / 桌面可聊天 bot；配对设备按拥有者信任，relay 加密不等于推理离线。 | [GitHub](https://github.com/leepokai/Codync) / [解读](./projects/Codync/README.md) |
 | `rakazo` | 持久队友与独立 computer provider；Team 子目录 / Chrome profile 不构成同容器进程隔离。 | [GitHub](https://github.com/elie222/rakazo) / [解读](./projects/rakazo/README.md) |
@@ -552,6 +554,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `tiny-engineer` | 将 Agent 事件变成 ESP32 桌面机器人动作；默认 LAN 免认证，软硬件许可分层。 | [GitHub](https://github.com/jamro/tiny-engineer) / [解读](./projects/tiny-engineer/README.md) |
 | `dsh-pocket` | 用手机同步操作 Harness Web，支持 LAN 与 Cloudflare 隧道；代理拥有宿主操作能力，PIN 和监听面须核。 | [GitHub](https://github.com/shaobeichen/dsh-pocket) / [解读](./projects/dsh-pocket/README.md) |
 | `dsh-pet` | 把 DSH 会话状态接到透明动画桌宠，含独立模式与素材管线；代码、素材和二创条款须分开核。 | [GitHub](https://github.com/PC2005-cloud/dsh-pet) / [解读](./projects/dsh-pet/README.md) |
 | `superdesign` | 在 IDE 生成与迭代 UI 的历史设计扩展，已停止积极维护；当前 Web / skill 和混合许可须分别核对。 | [GitHub](https://github.com/superdesigndev/superdesign) |
@@ -610,6 +613,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `hex` | Rust 本地语音听写；云改写、历史保留、权限与主线 / 发行配置分别核对。 | [GitHub](https://github.com/anomalyco/hex) / [解读](./projects/hex/README.md) |
 | `FluidAudio` | Apple 设备的 CoreML 语音 SDK，覆盖转写、TTS、VAD 和分说话人；下载、模型许可与硬件须核。 | [GitHub](https://github.com/FluidInference/FluidAudio) / [解读](./projects/FluidAudio/README.md) |
 | `CozyClay` | 浏览器 3D 分镜与运动预演，导出参考帧、片段和提示词给视频模型；遥测、云端调用及素材许可分层核。 | [GitHub](https://github.com/NomaDamas/CozyClay) / [解读](./projects/CozyClay/README.md) |
 | `sam2` | 图像与视频的可提示分割模型，依靠流式记忆传播掩膜；旧发布日期、模型配置、编译差异与数据许可须区分。 | [GitHub](https://github.com/facebookresearch/sam2) / [解读](./projects/sam2/README.md) |
@@ -690,6 +694,8 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `promptfoo` | 配置化模型 / Agent 回归与红队评测；目标、生成、裁判和遥测数据流应分开核。 | [GitHub](https://github.com/promptfoo/promptfoo) / [解读](./projects/promptfoo/README.md) |
+| `onnxruntime` | 跨平台 ONNX 推理运行时；EP 分配、导出误差、版本和遥测影响实际部署。 | [GitHub](https://github.com/microsoft/onnxruntime) / [解读](./projects/onnxruntime/README.md) |
 | `litellm` | 统一多模型 API 的 Python SDK 与网关；路由、费用和日志集中管理，需核服务语义与版本。 | [GitHub](https://github.com/BerriAI/litellm) / [解读](./projects/litellm/README.md) |
 | `uzu` | 面向 Apple 设备的多语言推理引擎，支持本地与云模型；API、系统版本、权重下载和真实延迟须分别固定。 | [GitHub](https://github.com/trymirai/uzu) / [解读](./projects/uzu/README.md) |
 | `FlashMLA` | DeepSeek 注意力内核；当前主线面向 SM100/103 与 Ascend 950，已移除 Hopper 和旧 KV 格式，集成须固定版本。 | [GitHub](https://github.com/deepseek-ai/FlashMLA) / [解读](./projects/FlashMLA/README.md) |
@@ -782,6 +788,8 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `happy-llm` | 中文大模型原理与实践教程；按章隔离依赖，远端 RL 费用和代码执行须核。 | [GitHub](https://github.com/datawhalechina/happy-llm) / [解读](./projects/happy-llm/README.md) |
+| `courses` | Anthropic 五条 notebook 课程；示例模型年代、API 费用与 CC 非商业许可须核。 | [GitHub](https://github.com/anthropics/courses) / [解读](./projects/courses/README.md) |
 | `udlbook` | Simon J.D. Prince 教材配套站、notebooks 与 slides；正文 CC BY-NC-ND 和 notebooks MIT 分层使用。 | [GitHub](https://github.com/udlbook/udlbook) / [解读](./projects/udlbook/README.md) |
 | `os-taxonomy` | 基础教育微主题与前置知识图谱；Agent 教学建议、缺覆盖及数据库 / 正文 / 标准多层许可需分开。 | [GitHub](https://github.com/withmarbleapp/os-taxonomy) / [解读](./projects/os-taxonomy/README.md) |
 | `generative-ai-for-beginners` | 21 节生成式 AI 课程与 Python / TypeScript 实践；provider 迁移、依赖、费用和翻译需逐课复核。 | [GitHub](https://github.com/microsoft/generative-ai-for-beginners) / [解读](./projects/generative-ai-for-beginners/README.md) |
@@ -902,6 +910,7 @@
 
 - 全量项目目录：[`projects/`](./projects/)
 - 最近日报：
+  - [`2026-10-24`](./daily/2026-10-24/ai-hotspots.md)
   - [`2026-10-23`](./daily/2026-10-23/ai-hotspots.md)
   - [`2026-10-22`](./daily/2026-10-22/ai-hotspots.md)
   - [`2026-10-21`](./daily/2026-10-21/ai-hotspots.md)
@@ -1018,10 +1027,9 @@
 ## 当前状态
 
 - 状态：持续日更中。
-- 最新更新：`2026-10-23`。
-- 当前项目总数：`922`。
-- 最近新增项目：`genoffice`、`dsh-context`、`OpenBot`、`litellm`、`onyx`、`FluidAudio`。
-- 本轮刷新：`graphify`（沿用原目录，更新主上游与用法）。
+- 最新更新：`2026-10-24`。
+- 当前项目总数：`930`。
+- 最近新增项目：`promptfoo`、`ds-harness-remote`、`hex`、`onnxruntime`、`tiny-engineer`、`happy-llm`、`chops`、`courses`。
 - 覆盖平台：GitHub、X、Instagram、YouTube。
 
 ## 维护约定
