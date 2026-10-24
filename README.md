@@ -49,7 +49,7 @@
 
 如果你是第一次进入这个仓库，建议从这几个入口开始：
 
-- 最新日报：[`daily/2026-10-24/ai-hotspots.md`](./daily/2026-10-24/ai-hotspots.md)
+- 最新日报：[`daily/2026-10-25/ai-hotspots.md`](./daily/2026-10-25/ai-hotspots.md)
 - 项目总目录：[`projects/`](./projects/)
 - 自动化约束：[`AGENTS.md`](./AGENTS.md)
 - 开发续接记录：[`TODO.md`](./TODO.md)
@@ -74,6 +74,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `cindy` | 以桌面与手机客户端统一 Claude Code / Codex、记忆和自动化；默认云服务、真实登录态、二进制下载与遥测须核。 | [GitHub](https://github.com/makecindy/cindy) / [解读](./projects/cindy/README.md) |
 | `copilot-cli` | GitHub 官方终端编码 Agent；当前许可限制修改 / 再分发，自动授权、MCP 与可选 sandbox 需独立配置。 | [GitHub](https://github.com/github/copilot-cli) / [解读](./projects/copilot-cli/README.md) |
 | `claude-code-action` | 将 Claude Code 接入 PR / issue 与 CI；触发者、bot allowlist、runner 和 secrets 边界须分别核对。 | [GitHub](https://github.com/anthropics/claude-code-action) / [解读](./projects/claude-code-action/README.md) |
 | `OpenBitFun` | Rust runtime + 四种 harness + 多设备；1.0 数据迁移和 README / Relay 文档漂移要先处理。 | [GitHub](https://github.com/GCWing/OpenBitFun) / [解读](./projects/OpenBitFun/README.md) |
@@ -186,6 +187,8 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `agentskills` | Agent Skills 开放格式与渐进加载规范；元数据兼容不保证脚本安全、宿主权限一致或业务正确。 | [GitHub](https://github.com/agentskills/agentskills) / [解读](./projects/agentskills/README.md) |
+| `sandbox-runtime` | 用 OS 原语及网络代理约束命令 / MCP；默认可读、宽域名、Unix socket 与弱化开关决定实际隔离边界。 | [GitHub](https://github.com/anthropics/sandbox-runtime) / [解读](./projects/sandbox-runtime/README.md) |
 | `chops` | macOS 多工具技能管理器；无 App Sandbox，远程可写及 FSL 许可需明确。 | [GitHub](https://github.com/Shpigford/chops) / [解读](./projects/chops/README.md) |
 | `OpenBot` | 基于 AG-UI 的 AI 同事平台，提供独立浏览器、策略和审计；默认单用户与自动学习须配置。 | [GitHub](https://github.com/CopilotKit/OpenBot) / [解读](./projects/OpenBot/README.md) |
 | `dsh-im` | 把 IM 机器人接到 DeepSeek Harness；渠道访问模式、默认群归档和文件回传范围须逐项核。 | [GitHub](https://github.com/xmanrui/dsh-im) / [解读](./projects/dsh-im/README.md) |
@@ -554,6 +557,8 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `hallmark` | 用主题、页面任务与浏览器检查约束 AI 网页设计；规则通过不等于审美、转化或功能验收，照片许可独立。 | [GitHub](https://github.com/Nutlope/hallmark) / [解读](./projects/hallmark/README.md) |
+| `infinite-canvas` | 图片 / 视频与 Agent 的无限画布工作台；浏览器存储、页面内插件权限、本机 Agent token 和历史数据兼容须核。 | [GitHub](https://github.com/basketikun/infinite-canvas) / [解读](./projects/infinite-canvas/README.md) |
 | `tiny-engineer` | 将 Agent 事件变成 ESP32 桌面机器人动作；默认 LAN 免认证，软硬件许可分层。 | [GitHub](https://github.com/jamro/tiny-engineer) / [解读](./projects/tiny-engineer/README.md) |
 | `dsh-pocket` | 用手机同步操作 Harness Web，支持 LAN 与 Cloudflare 隧道；代理拥有宿主操作能力，PIN 和监听面须核。 | [GitHub](https://github.com/shaobeichen/dsh-pocket) / [解读](./projects/dsh-pocket/README.md) |
 | `dsh-pet` | 把 DSH 会话状态接到透明动画桌宠，含独立模式与素材管线；代码、素材和二创条款须分开核。 | [GitHub](https://github.com/PC2005-cloud/dsh-pet) / [解读](./projects/dsh-pet/README.md) |
@@ -694,6 +699,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `langfuse` | 把 trace、prompt、数据集与评测关联起来的开源核心平台；敏感 trace、默认遥测、EE 条款与基础设施须分别治理。 | [GitHub](https://github.com/langfuse/langfuse) / [解读](./projects/langfuse/README.md) |
 | `promptfoo` | 配置化模型 / Agent 回归与红队评测；目标、生成、裁判和遥测数据流应分开核。 | [GitHub](https://github.com/promptfoo/promptfoo) / [解读](./projects/promptfoo/README.md) |
 | `onnxruntime` | 跨平台 ONNX 推理运行时；EP 分配、导出误差、版本和遥测影响实际部署。 | [GitHub](https://github.com/microsoft/onnxruntime) / [解读](./projects/onnxruntime/README.md) |
 | `litellm` | 统一多模型 API 的 Python SDK 与网关；路由、费用和日志集中管理，需核服务语义与版本。 | [GitHub](https://github.com/BerriAI/litellm) / [解读](./projects/litellm/README.md) |
@@ -812,6 +818,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `SenseNova-Skills` | 按 Agent Skills 格式组织办公、研究、PPT 与图像工作流；模型费用、环境写入、PPT 编辑性及事实来源须独立验收。 | [GitHub](https://github.com/OpenSenseNova/SenseNova-Skills) / [解读](./projects/SenseNova-Skills/README.md) |
 | `genoffice` | 本地 Office 编辑器与 Agent CLI，支持真实文档格式；默认统计、云 AI 和格式往返须分别验收。 | [GitHub](https://github.com/genspark-ai/genoffice) / [解读](./projects/genoffice/README.md) |
 | `Biscotti` | macOS 本地会议录音、分说话人转写和摘要；MCP 默认关闭但启用后本机应用可读，许可含竞争限制。 | [GitHub](https://github.com/scosman/Biscotti) / [解读](./projects/Biscotti/README.md) |
 | `crm` | 单租户 Agent CRM，用队列、预算与证据写入管理客户记录；空白字段自动填充及沙箱 / 遥测边界需核。 | [GitHub](https://github.com/trycompai/crm) / [解读](./projects/crm/README.md) |
@@ -910,6 +917,7 @@
 
 - 全量项目目录：[`projects/`](./projects/)
 - 最近日报：
+  - [`2026-10-25`](./daily/2026-10-25/ai-hotspots.md)
   - [`2026-10-24`](./daily/2026-10-24/ai-hotspots.md)
   - [`2026-10-23`](./daily/2026-10-23/ai-hotspots.md)
   - [`2026-10-22`](./daily/2026-10-22/ai-hotspots.md)
@@ -1027,9 +1035,9 @@
 ## 当前状态
 
 - 状态：持续日更中。
-- 最新更新：`2026-10-24`。
-- 当前项目总数：`930`。
-- 最近新增项目：`promptfoo`、`ds-harness-remote`、`hex`、`onnxruntime`、`tiny-engineer`、`happy-llm`、`chops`、`courses`。
+- 最新更新：`2026-10-25`。
+- 当前项目总数：`937`。
+- 最近新增项目：`hallmark`、`cindy`、`agentskills`、`sandbox-runtime`、`langfuse`、`infinite-canvas`、`SenseNova-Skills`。
 - 覆盖平台：GitHub、X、Instagram、YouTube。
 
 ## 维护约定

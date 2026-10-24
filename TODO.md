@@ -14,6 +14,8 @@
 
 ## 阶段性开发记录
 
+- 2026-10-25：新增 `hallmark`、`cindy`、`agentskills`、`sandbox-runtime`、`langfuse`、`infinite-canvas`、`SenseNova-Skills` 七个七节页与四平台日报，复用五类，实际目录 `930 → 937`。官方 daily 日增星依次 +570 / +471 / +64 / +592 / +45 / +549 / +26。两轮检索未取得可用当日项目社媒原帖；X 核 Langfuse 上游账号，Instagram 两个主题重定向，YouTube 核官方两视频标题 / 作者及累计 8.9K / 868、相对 1mo / 2mo，未作日增或争议统计。接续：Hallmark 审美与功能验收；Cindy 官方服务、二进制与统计条件；Agent Skills 格式 / 宿主授权区别；srt 默认读取和弱化选项；Langfuse OSS / EE 遥测与许可；无限画布页面内插件权限、token / Origin 和旧数据；SenseNova .env 写入及 PPT 编辑性。同名 knowledge-work-plugins、herdr、agents 待身份核对，未覆盖既有页。保留 AGENTS.md 用户修改；未安装运行上游或调用模型。
+
 - 2026-10-24：新增 `promptfoo`、`ds-harness-remote`、`hex`、`onnxruntime`、`tiny-engineer`、`happy-llm`、`chops`、`courses` 八个七节页及四平台日报，复用六类，实际目录 `922 → 930`。官方 daily 日增星依次 +68 / +331 / +28 / +7 / +24 / +18 / +34 / +7。社媒定向搜索未取可用当日原帖；X 核 Chops 作者账号，Instagram 两个主题页重定向，YouTube 上游固定 Tiny Engineer 视频核 oEmbed 标题 / 作者，观看页未取得日期 / 播放量。接续：Promptfoo 红队生成 / 遥测关闭事件静态路径；Remote 默认终端与 E2EE 文档范围差异；HEX 历史 / 云改写；ORT 1DS / ETW 与主线版本；Tiny Engineer LAN 默认认证 / 软硬件许可；Happy-LLM 远端 RL 和 ReTool 隔离；Chops SSH 首次身份 / FSL；courses 历史模型与 CC BY-NC。OpenHands 旧 owner 与同名插件集合须按身份后续核对，未覆盖既有页。保留 AGENTS.md 用户修改；未安装运行上游或调用模型。
 
 - 2026-10-23：新增 `genoffice`、`dsh-context`、`OpenBot`、`litellm`、`onyx`、`FluidAudio`，按同一 repository ID 刷新 Graphify 原页；七个七节页、四平台日报，复用六类，总数按目录核为 `922`。官方 daily 增星依次 +191 / +321 / +89 / +101 / +201 / +17，Graphify +1,407。社媒搜索未取可用当日原帖；X 固定帖为 2025-10-13，Instagram 为主题聚合，YouTube 三条固定元数据与两条历史日期 / 累计播放已核，无当日传播结论。接续：GenOffice 默认统计 / 格式保真；dsh-context 计量与提示注入；OpenBot 单用户、自动学习 / 桌面遥测；LiteLLM 主线版本和 enterprise 许可路径漂移；Onyx CE / EE 权限同步；FluidAudio 下载、traits 与模型边界；Graphify backend / 查询日志 / CLI 与 MCP。保留原 AGENTS.md 用户修改，未安装运行上游。
