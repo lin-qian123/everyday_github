@@ -14,6 +14,8 @@
 
 ## 阶段性开发记录
 
+- 2026-10-26：新增 `thinkrail`、`kandev`、`llama-swap`、`diy-llm`、`MAPIE` 五个七节页，刷新 `tuios` 原页及四平台日报；复用三类，实际目录 `937 → 942`。官方 daily 日增星依次 +52 / +4 / +12 / +66 / +13，TUIOS +197。两轮外部检索未取得可用当日原帖；YouTube 原生搜索和 oEmbed 核两第三方视频，累计 26,332 / 50,331、相对 2d，并记录标题不一致；Instagram 两聚合落点，X 保留 TUIOS 无账号声明和搜索缺口。接续：TUIOS ≤0.10.1 权限公告与 0.11.0 修复 / daemon 重启，未复现补丁；ThinkRail basic / additional 遥测区别；Kandev 默认认证关闭与 Office 实验状态；llama-swap 默认认证 / 捕获 / MCP；diy-llm 随机数据回退、年份 / 数据集与许可差异；MAPIE 依赖文档漂移和边际覆盖前提。保留 AGENTS.md 用户修改，未安装运行上游或调用模型。
+
 - 2026-10-25：新增 `hallmark`、`cindy`、`agentskills`、`sandbox-runtime`、`langfuse`、`infinite-canvas`、`SenseNova-Skills` 七个七节页与四平台日报，复用五类，实际目录 `930 → 937`。官方 daily 日增星依次 +570 / +471 / +64 / +592 / +45 / +549 / +26。两轮检索未取得可用当日项目社媒原帖；X 核 Langfuse 上游账号，Instagram 两个主题重定向，YouTube 核官方两视频标题 / 作者及累计 8.9K / 868、相对 1mo / 2mo，未作日增或争议统计。接续：Hallmark 审美与功能验收；Cindy 官方服务、二进制与统计条件；Agent Skills 格式 / 宿主授权区别；srt 默认读取和弱化选项；Langfuse OSS / EE 遥测与许可；无限画布页面内插件权限、token / Origin 和旧数据；SenseNova .env 写入及 PPT 编辑性。同名 knowledge-work-plugins、herdr、agents 待身份核对，未覆盖既有页。保留 AGENTS.md 用户修改；未安装运行上游或调用模型。
 
 - 2026-10-24：新增 `promptfoo`、`ds-harness-remote`、`hex`、`onnxruntime`、`tiny-engineer`、`happy-llm`、`chops`、`courses` 八个七节页及四平台日报，复用六类，实际目录 `922 → 930`。官方 daily 日增星依次 +68 / +331 / +28 / +7 / +24 / +18 / +34 / +7。社媒定向搜索未取可用当日原帖；X 核 Chops 作者账号，Instagram 两个主题页重定向，YouTube 上游固定 Tiny Engineer 视频核 oEmbed 标题 / 作者，观看页未取得日期 / 播放量。接续：Promptfoo 红队生成 / 遥测关闭事件静态路径；Remote 默认终端与 E2EE 文档范围差异；HEX 历史 / 云改写；ORT 1DS / ETW 与主线版本；Tiny Engineer LAN 默认认证 / 软硬件许可；Happy-LLM 远端 RL 和 ReTool 隔离；Chops SSH 首次身份 / FSL；courses 历史模型与 CC BY-NC。OpenHands 旧 owner 与同名插件集合须按身份后续核对，未覆盖既有页。保留 AGENTS.md 用户修改；未安装运行上游或调用模型。

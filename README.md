@@ -49,7 +49,7 @@
 
 如果你是第一次进入这个仓库，建议从这几个入口开始：
 
-- 最新日报：[`daily/2026-10-25/ai-hotspots.md`](./daily/2026-10-25/ai-hotspots.md)
+- 最新日报：[`daily/2026-10-26/ai-hotspots.md`](./daily/2026-10-26/ai-hotspots.md)
 - 项目总目录：[`projects/`](./projects/)
 - 自动化约束：[`AGENTS.md`](./AGENTS.md)
 - 开发续接记录：[`TODO.md`](./TODO.md)
@@ -74,6 +74,8 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `kandev` | 看板与多执行器编码 Agent 工作台；默认认证关闭、Office 实验状态和日志 / 分享数据须核。 | [GitHub](https://github.com/kdlbs/kandev) / [解读](./projects/kandev/README.md) |
+| `thinkrail` | 围绕 pi 组织工作区、规格与审阅的 Agent IDE；worktree、MCP 授权和分层遥测须分别核对。 | [GitHub](https://github.com/JetBrains/thinkrail) / [解读](./projects/thinkrail/README.md) |
 | `cindy` | 以桌面与手机客户端统一 Claude Code / Codex、记忆和自动化；默认云服务、真实登录态、二进制下载与遥测须核。 | [GitHub](https://github.com/makecindy/cindy) / [解读](./projects/cindy/README.md) |
 | `copilot-cli` | GitHub 官方终端编码 Agent；当前许可限制修改 / 再分发，自动授权、MCP 与可选 sandbox 需独立配置。 | [GitHub](https://github.com/github/copilot-cli) / [解读](./projects/copilot-cli/README.md) |
 | `claude-code-action` | 将 Claude Code 接入 PR / issue 与 CI；触发者、bot allowlist、runner 和 secrets 边界须分别核对。 | [GitHub](https://github.com/anthropics/claude-code-action) / [解读](./projects/claude-code-action/README.md) |
@@ -95,7 +97,7 @@
 | `t3code` | 跨 Web / Electron / mobile 控制 Codex、Claude、Cursor 等本地 Agent 的工作台；新线程默认 Full access，远程连接和 provider 凭据须联合治理。 | [GitHub](https://github.com/pingdotgg/t3code) |
 | `CopilotForXcode` | GitHub 官方 Xcode 补全、Chat、Review 与 Agent Mode；background / Accessibility / editor extension、terminal / MCP、托管数据和计费须逐层治理。 | [GitHub](https://github.com/github/CopilotForXcode) |
 | `TokenTracker` | 从多种 coding-agent 本地日志汇总 token、费用与 quota；会安装用户级 hooks、读取本地 auth / usage metadata，有限 telemetry 与账单口径须审计。 | [GitHub](https://github.com/xiufengsun/TokenTracker) |
-| `tuios` | 把 Agent 状态、Inbox、审批、fan-out、worktree 和远端 host 合入终端 multiplexer；pane grant 与工作台可见性不等于 OS 隔离。 | [GitHub](https://github.com/Gaurav-Gosain/tuios) |
+| `tuios` | Agent 终端窗口、会话与 Inbox；0.11.0 修复跨 pane 代答权限提示，上游明确没有 X 账号。 | [GitHub](https://github.com/Gaurav-Gosain/tuios) / [解读](./projects/tuios/README.md) |
 | `syrtis` | 原生 macOS 菜单栏聚合 25+ coding tools 的 session、token、cost 与 quota；本地日志隐私、provider OAuth、pricing 与 parser 漂移须对账。 | [GitHub](https://github.com/Nanako0129/syrtis) |
 | `terminal-browser` | 以 Electron offscreen rendering 与 kitty graphics 在终端运行真实 Chromium，并向 coding agent 提供 action CLI；真实 profile、网页注入和实验 plugin 须隔离。 | [GitHub](https://github.com/zenbu-labs/terminal-browser) |
 | `navop` | 将 database、SSH / SFTP、terminal、RDP 与 Agent Hub 合并的 Rust / GPUI 原生工作台；凭据集中、Auto tools、sync 与附加许可证须治理。 | [GitHub](https://github.com/feigeCode/navop) |
@@ -699,6 +701,8 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `MAPIE` | 用 conformal prediction 为预测加区间 / 集合并控制指定风险；可交换性、边际 / 条件覆盖和版本依赖须核。 | [GitHub](https://github.com/scikit-learn-contrib/MAPIE) / [解读](./projects/MAPIE/README.md) |
+| `llama-swap` | 按模型请求启动 / 切换推理进程；默认无认证、请求捕获、容器监听与实际显存容量须核。 | [GitHub](https://github.com/mostlygeek/llama-swap) / [解读](./projects/llama-swap/README.md) |
 | `langfuse` | 把 trace、prompt、数据集与评测关联起来的开源核心平台；敏感 trace、默认遥测、EE 条款与基础设施须分别治理。 | [GitHub](https://github.com/langfuse/langfuse) / [解读](./projects/langfuse/README.md) |
 | `promptfoo` | 配置化模型 / Agent 回归与红队评测；目标、生成、裁判和遥测数据流应分开核。 | [GitHub](https://github.com/promptfoo/promptfoo) / [解读](./projects/promptfoo/README.md) |
 | `onnxruntime` | 跨平台 ONNX 推理运行时；EP 分配、导出误差、版本和遥测影响实际部署。 | [GitHub](https://github.com/microsoft/onnxruntime) / [解读](./projects/onnxruntime/README.md) |
@@ -794,6 +798,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `diy-llm` | CS336 方向中文课程与六类作业；模拟训练数据、作业年份 / 评测集差异、GPU 与分层许可须核。 | [GitHub](https://github.com/datawhalechina/diy-llm) / [解读](./projects/diy-llm/README.md) |
 | `happy-llm` | 中文大模型原理与实践教程；按章隔离依赖，远端 RL 费用和代码执行须核。 | [GitHub](https://github.com/datawhalechina/happy-llm) / [解读](./projects/happy-llm/README.md) |
 | `courses` | Anthropic 五条 notebook 课程；示例模型年代、API 费用与 CC 非商业许可须核。 | [GitHub](https://github.com/anthropics/courses) / [解读](./projects/courses/README.md) |
 | `udlbook` | Simon J.D. Prince 教材配套站、notebooks 与 slides；正文 CC BY-NC-ND 和 notebooks MIT 分层使用。 | [GitHub](https://github.com/udlbook/udlbook) / [解读](./projects/udlbook/README.md) |
@@ -917,6 +922,7 @@
 
 - 全量项目目录：[`projects/`](./projects/)
 - 最近日报：
+  - [`2026-10-26`](./daily/2026-10-26/ai-hotspots.md)
   - [`2026-10-25`](./daily/2026-10-25/ai-hotspots.md)
   - [`2026-10-24`](./daily/2026-10-24/ai-hotspots.md)
   - [`2026-10-23`](./daily/2026-10-23/ai-hotspots.md)
@@ -1035,9 +1041,9 @@
 ## 当前状态
 
 - 状态：持续日更中。
-- 最新更新：`2026-10-25`。
-- 当前项目总数：`937`。
-- 最近新增项目：`hallmark`、`cindy`、`agentskills`、`sandbox-runtime`、`langfuse`、`infinite-canvas`、`SenseNova-Skills`。
+- 最新更新：`2026-10-26`。
+- 当前项目总数：`942`。
+- 最近新增项目：`thinkrail`、`kandev`、`llama-swap`、`diy-llm`、`MAPIE`；本轮另刷新 `tuios`。
 - 覆盖平台：GitHub、X、Instagram、YouTube。
 
 ## 维护约定
