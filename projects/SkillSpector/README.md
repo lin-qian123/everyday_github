@@ -1,71 +1,55 @@
-# SkillSpector（NVIDIA/SkillSpector）
+<!-- markdownlint-disable MD013 -->
 
-- GitHub: https://github.com/NVIDIA/SkillSpector
-- 记录日期: 2026-06-26 (Asia/Shanghai)
+# SkillSpector：在安装前检查 Agent 技能与 MCP 风险
+
+- 主上游：[NVIDIA/SkillSpector](https://github.com/NVIDIA/SkillSpector)；repository ID `1187630119`。
+- 采样日期：2026-10-27（Asia/Shanghai）；首次建档 2026-06-26，本轮刷新原页；分类：Agent 框架与技能生态。
+- API 累计快照：22,132 stars / 1,932 forks / 175 open issues（含 PR 口径），与榜单日增分开。
+- 默认分支 `main`；本页主线静态依据固定在 `d7338f58200a9ae2a24810cee08911ab68b107a7`。发行 API 首项 [v2.13.1](https://github.com/NVIDIA/SkillSpector/releases/tag/v2.13.1)，UTC 2026-10-23T09:40:35Z，正式发行标记。
+- 核验层级：读取一手文档、许可、元数据与所列部分实现；未安装运行上游、调用模型或复现实验。
 
 ## 定位
 
-`SkillSpector` 是一个面向 AI agent skills 的安全扫描器，重点不是做通用 SAST，而是专门检查 Claude Code、Codex CLI、Gemini CLI 等生态里技能包的恶意行为、危险模式和权限风险。
-
-## 热度信号
-
-1. GitHub API 在 2026-06-26 抓取时显示约 `10,667 stars`、`856 forks`，仓库在 `2026-06-25T00:23:50Z` 仍有推送。
-2. GitHub Trending Python 日榜在 2026-06-26 抓取时显示其当日新增约 `410 stars today`。
-3. 官方 README 直接写到 `26.1% of skills contain vulnerabilities`、`5.2% show likely malicious intent`，很明确地把 skill 安全当成独立问题域。
+SkillSpector 是 NVIDIA 的 Agent 技能扫描器，面向技能包、脚本、依赖、提示词及部分 MCP 输入，组合静态检测和可选模型分析。它适合安装前筛查与 CI 复扫；扫描器给出的 SAFE / safe_to_install 不能证明目标安全，也不会自动限制技能执行权限。
 
 ## 用法
 
-### 1) 直接用 `uv` 安装
-
-README 推荐的无克隆安装方式是：
+在 Python ≥3.12、<3.15 的隔离环境固定源码或发行。上游提供 uv tool 安装，运行本地静态基线可用以下入口，本轮未执行：
 
 ```bash
 uv tool install git+https://github.com/NVIDIA/skillspector.git
+skillspector scan ./my-skill/ --no-llm --format json --output report.json
 ```
 
-### 2) 扫描本地技能目录或单个文件
-
-```bash
-skillspector scan ./my-skill/
-skillspector scan ./SKILL.md
-```
-
-### 3) 扫描远程仓库并输出结构化报告
-
-```bash
-skillspector scan https://github.com/user/my-skill
-skillspector scan ./my-skill/ --format sarif --output report.sarif
-```
-
-如果只想跑静态分析，可以加 `--no-llm`。
+语义扫描再明确 provider、模型、数据出口和预算。接 MCP 需要额外安装 `skillspector[mcp]`；本地 stdio 与 HTTP 的目标范围不同。CI 应按自己的阈值配置，并考虑 `--fail-on-incomplete`、`--min-coverage`、`--fail-on-findings`，不能只看进程退出为零。
 
 ## 原理
 
-1. 它围绕 agent skill 这个特定对象做扫描，而不是只按普通代码文件处理。
-2. 核心检测分成两层：快速静态分析，以及可选的 LLM 语义分析。
-3. README 列出的风险面覆盖 prompt injection、数据外传、权限升级、memory poisoning、tool misuse、MCP least privilege、MCP tool poisoning 等多种 agent 特有问题。
-4. 输出支持终端、JSON、Markdown、SARIF，说明它既能给人工审查，也能接进 CI / 安全平台。
+摄取仓库、URL、压缩包或本地路径后，流水线解析文本 / AST / 依赖与特征，检查注入、数据外传、过量权限、记忆污染及 MCP 工具风险；可选 LLM 补充语义检查，再合并 finding、抑制基线、风险分数和终端 / JSON / Markdown / SARIF 报告。OSV 查询用于已知依赖漏洞，下载、解析、嵌套容器和分析时间有各自预算。
 
 ## 价值
 
-- 这是今天非常值得关注的信号：agent 生态已经开始从“装更多 skill”转向“先验证 skill 安不安全”。
-- 相比一般安全工具，`SkillSpector` 更贴近当前真实风险，因为 skill、plugin、MCP server 天生就带着高权限与隐式信任。
-- 如果厂商和社区后续都开始把 skill 审计前置，这类项目可能会成为 agent 供应链的基础设施层。
+适合把技能安装从“看 stars 决定”改成可追踪的来源、扫描、人工复核和后续重扫。MCP 接口可把检查放入 Agent 工作流，结构化报告也方便比较版本；收益仍取决于规则覆盖、误报处理和调用方是否执行策略。
 
 ## 风险边界
 
-- 扫描结果只能提高发现概率，不等于完全证明某个 skill 安全。
-- README 自带的风险统计结论来自项目研究上下文，落地时仍应关注误报、漏报和规则漂移。
-- 若团队把它接入 CI，还需要自己决定“多高风险分数才阻塞安装或合并”，工具不会自动替代安全治理。
+- README 的 26.1% 漏洞 / 5.2% 可能恶意比例限定于研究数据中 31,132 个已分析技能，不能外推为今天整个生态的真实比例；本轮未复现数据集标注或误报率。
+- `--no-llm` 跳过模型分析，**不等于禁网**：远程输入、依赖来源和 OSV 查询仍可能联网。语义扫描可把技能内容发送至所选 provider，缺凭据 / 失败时需查真实扫描模式。
+- CLI 的“不完整即失败”和“有 finding 即失败”默认均未开启。MCP 同时给出 `llm_requested`、`llm_available`、`llm_used`、`scan_mode` 和要求满足状态；低分不应掩盖未完成分析或被抑制的 finding。
+- HTTP MCP 无内置认证，绑定限制为 loopback，并拒绝本地路径、带凭据的 URL 及非 HTTPS 目标；可达端口的本机调用者仍可触发扫描。stdio 的本地权限更广，远程代理需要独立认证。README 还保留 stdio 初始化 hang 的已知问题说明。
+- 当前发行首项 v2.13.1，但所查主线 pyproject 版本字符串为 2.12.0；固定安装来源、commit 和包版本分别记录。代码 Apache-2.0，依赖与模型服务另计。
 
 ## 补充建议
 
-1. 先用 `--no-llm` 跑一遍基线扫描，再决定是否引入联网语义分析，避免把审计流程本身做得过重。
-2. 若仓库里已经在用 `agents`、`nvidia-skills`、`agent-toolkit-for-aws` 这类插件 / skill 目录项目，可以把 `SkillSpector` 视为它们的配套治理层。
-3. 更适合把它放在“安装前检查”和“定期重扫”两个环节，而不是只在出现事故后补救。
+用包含已知良性、恶性和边界样本的离线副本校准 finding，再在有网络出口记录的环境测试联网分析。CI 同时保存固定输入身份、扫描模式、完整性、覆盖率、抑制规则与原始 finding；复核后才授权安装。把扫描结果和宿主权限控制分开验收。
 
 ## 参考资料
 
-- https://github.com/NVIDIA/SkillSpector
-- https://github.com/trending/python
-- https://osv.dev
+- [README.md](https://github.com/NVIDIA/SkillSpector/blob/d7338f58200a9ae2a24810cee08911ab68b107a7/README.md)。
+- [pyproject.toml](https://github.com/NVIDIA/SkillSpector/blob/d7338f58200a9ae2a24810cee08911ab68b107a7/pyproject.toml)。
+- [src/skillspector/cli.py](https://github.com/NVIDIA/SkillSpector/blob/d7338f58200a9ae2a24810cee08911ab68b107a7/src/skillspector/cli.py)。
+- [src/skillspector/mcp_server.py](https://github.com/NVIDIA/SkillSpector/blob/d7338f58200a9ae2a24810cee08911ab68b107a7/src/skillspector/mcp_server.py)。
+- [docs/ANALYSIS_RESOURCE_BOUNDS.md](https://github.com/NVIDIA/SkillSpector/blob/d7338f58200a9ae2a24810cee08911ab68b107a7/docs/ANALYSIS_RESOURCE_BOUNDS.md)。
+- [LICENSE](https://github.com/NVIDIA/SkillSpector/blob/d7338f58200a9ae2a24810cee08911ab68b107a7/LICENSE)。
+- [仓库 API](https://api.github.com/repos/NVIDIA/SkillSpector)、[发行 API](https://api.github.com/repos/NVIDIA/SkillSpector/releases?per_page=1)；动态元数据仅代表本轮采样。
+- 事实依据为以上一手材料；价值、风险判断与建议为本库工程分析，未写作实测结论。

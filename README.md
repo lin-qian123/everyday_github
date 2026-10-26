@@ -49,7 +49,7 @@
 
 如果你是第一次进入这个仓库，建议从这几个入口开始：
 
-- 最新日报：[`daily/2026-10-26/ai-hotspots.md`](./daily/2026-10-26/ai-hotspots.md)
+- 最新日报：[`daily/2026-10-27/ai-hotspots.md`](./daily/2026-10-27/ai-hotspots.md)
 - 项目总目录：[`projects/`](./projects/)
 - 自动化约束：[`AGENTS.md`](./AGENTS.md)
 - 开发续接记录：[`TODO.md`](./TODO.md)
@@ -66,7 +66,7 @@
 
 说明：
 
-- 首页只放“精选索引”，强调可读性，不把 200+ 项目全部堆在首页。
+- 首页只放“精选索引”，强调可读性，不把全部项目堆在首页。
 - 每个项目都可在 [`projects/`](./projects/) 找到独立中文说明。
 - 链接优先放 GitHub 仓库主页，便于快速打开与二次判断。
 
@@ -189,6 +189,8 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `harnessrouter` | 统一多种 Agent harness 的任务 / 会话 API；默认口令、共享容器与 provider 数据出口须核。 | [GitHub](https://github.com/HarnessRouter/harnessrouter) / [解读](./projects/harnessrouter/README.md) |
+| `skill-recorder` | 把屏幕工作录制整理为步骤、技能和自动化；完整采集、云端分析与按进程隐私确认须核。 | [GitHub](https://github.com/microsoft/skill-recorder) / [解读](./projects/skill-recorder/README.md) |
 | `agentskills` | Agent Skills 开放格式与渐进加载规范；元数据兼容不保证脚本安全、宿主权限一致或业务正确。 | [GitHub](https://github.com/agentskills/agentskills) / [解读](./projects/agentskills/README.md) |
 | `sandbox-runtime` | 用 OS 原语及网络代理约束命令 / MCP；默认可读、宽域名、Unix socket 与弱化开关决定实际隔离边界。 | [GitHub](https://github.com/anthropics/sandbox-runtime) / [解读](./projects/sandbox-runtime/README.md) |
 | `chops` | macOS 多工具技能管理器；无 App Sandbox，远程可写及 FSL 许可需明确。 | [GitHub](https://github.com/Shpigford/chops) / [解读](./projects/chops/README.md) |
@@ -361,7 +363,7 @@
 | `agent-toolkit-for-aws` | AWS 官方维护的 agent 插件、skills 与 MCP 接入工具包。 | [GitHub](https://github.com/aws/agent-toolkit-for-aws) |
 | `agents` | 面向 Claude Code、Codex、Cursor 等多种 harness 的插件市场与技能分发仓库。 | [GitHub](https://github.com/wshobson/agents) |
 | `nvidia-skills` | NVIDIA 官方验证的 agent skill 目录，面向 CUDA-X、蓝图与平台工具。 | [GitHub](https://github.com/NVIDIA/skills) |
-| `SkillSpector` | 面向 agent skills 的安全扫描器，专查恶意模式、权限风险与 MCP 相关漏洞。 | [GitHub](https://github.com/NVIDIA/SkillSpector) |
+| `SkillSpector` | Agent 技能静态 / 语义扫描；完整性、抑制规则、联网与 MCP 目标范围须核，评分不是安全证明。 | [GitHub](https://github.com/NVIDIA/SkillSpector) / [解读](./projects/SkillSpector/README.md) |
 | `strix` | 用 AI hacker agents 做应用漏洞发现、PoC 验证和 CI 安全门禁。 | [GitHub](https://github.com/usestrix/strix) |
 | `ai-maestro` | 面向多终端、多机器、多 agent 协作的 AI agent 控制面与编排系统。 | [GitHub](https://github.com/23blocks-OS/ai-maestro) |
 | `awesome-harness-engineering` | 汇总 agent harness 工程的上下文、工具、记忆、权限、验证与可观测性模式。 | [GitHub](https://github.com/ai-boost/awesome-harness-engineering) |
@@ -431,6 +433,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `obsidian-second-brain` | 多宿主技能维护 Markdown 知识库；云模型出口、并发写入、索引新鲜度和恢复须核。 | [GitHub](https://github.com/eugeniughelbur/obsidian-second-brain) / [解读](./projects/obsidian-second-brain/README.md) |
 | `ds-harness-remote` | 多设备延续 Harness / Codex 工作区；默认远程终端与 E2EE 文档差异须核。 | [GitHub](https://github.com/liguobao/ds-harness-remote) / [解读](./projects/ds-harness-remote/README.md) |
 | `dsh-context` | DeepSeek Harness 上下文洞察插件；展示构成、历史和费用估算，并可注入系统提示前后缀。 | [GitHub](https://github.com/bowenliang123/dsh-context) / [解读](./projects/dsh-context/README.md) |
 | `Codync` | 将本机 coding agents 变成手机 / 桌面可聊天 bot；配对设备按拥有者信任，relay 加密不等于推理离线。 | [GitHub](https://github.com/leepokai/Codync) / [解读](./projects/Codync/README.md) |
@@ -559,6 +562,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `huashu-design` | 用真实参照、多方向初稿和 HTML 管线组织设计；PPTX 编辑性、模板继承与素材许可须分别验收。 | [GitHub](https://github.com/alchaincyf/huashu-design) / [解读](./projects/huashu-design/README.md) |
 | `hallmark` | 用主题、页面任务与浏览器检查约束 AI 网页设计；规则通过不等于审美、转化或功能验收，照片许可独立。 | [GitHub](https://github.com/Nutlope/hallmark) / [解读](./projects/hallmark/README.md) |
 | `infinite-canvas` | 图片 / 视频与 Agent 的无限画布工作台；浏览器存储、页面内插件权限、本机 Agent token 和历史数据兼容须核。 | [GitHub](https://github.com/basketikun/infinite-canvas) / [解读](./projects/infinite-canvas/README.md) |
 | `tiny-engineer` | 将 Agent 事件变成 ESP32 桌面机器人动作；默认 LAN 免认证，软硬件许可分层。 | [GitHub](https://github.com/jamro/tiny-engineer) / [解读](./projects/tiny-engineer/README.md) |
@@ -701,6 +705,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `microduck` | Microduck 机载 RL 策略运行、控制与更新；与训练仓库分开，模拟与实体安全独立验证。 | [GitHub](https://github.com/pollen-robotics/microduck) / [解读](./projects/microduck/README.md) |
 | `MAPIE` | 用 conformal prediction 为预测加区间 / 集合并控制指定风险；可交换性、边际 / 条件覆盖和版本依赖须核。 | [GitHub](https://github.com/scikit-learn-contrib/MAPIE) / [解读](./projects/MAPIE/README.md) |
 | `llama-swap` | 按模型请求启动 / 切换推理进程；默认无认证、请求捕获、容器监听与实际显存容量须核。 | [GitHub](https://github.com/mostlygeek/llama-swap) / [解读](./projects/llama-swap/README.md) |
 | `langfuse` | 把 trace、prompt、数据集与评测关联起来的开源核心平台；敏感 trace、默认遥测、EE 条款与基础设施须分别治理。 | [GitHub](https://github.com/langfuse/langfuse) / [解读](./projects/langfuse/README.md) |
@@ -823,6 +828,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `postiz-app` | Agent / API 驱动的多平台社媒排程；OAuth 审批、token 保存、示例部署与真实发布权限须核。 | [GitHub](https://github.com/gitroomhq/postiz-app) / [解读](./projects/postiz-app/README.md) |
 | `SenseNova-Skills` | 按 Agent Skills 格式组织办公、研究、PPT 与图像工作流；模型费用、环境写入、PPT 编辑性及事实来源须独立验收。 | [GitHub](https://github.com/OpenSenseNova/SenseNova-Skills) / [解读](./projects/SenseNova-Skills/README.md) |
 | `genoffice` | 本地 Office 编辑器与 Agent CLI，支持真实文档格式；默认统计、云 AI 和格式往返须分别验收。 | [GitHub](https://github.com/genspark-ai/genoffice) / [解读](./projects/genoffice/README.md) |
 | `Biscotti` | macOS 本地会议录音、分说话人转写和摘要；MCP 默认关闭但启用后本机应用可读，许可含竞争限制。 | [GitHub](https://github.com/scosman/Biscotti) / [解读](./projects/Biscotti/README.md) |
@@ -922,6 +928,7 @@
 
 - 全量项目目录：[`projects/`](./projects/)
 - 最近日报：
+  - [`2026-10-27`](./daily/2026-10-27/ai-hotspots.md)
   - [`2026-10-26`](./daily/2026-10-26/ai-hotspots.md)
   - [`2026-10-25`](./daily/2026-10-25/ai-hotspots.md)
   - [`2026-10-24`](./daily/2026-10-24/ai-hotspots.md)
@@ -1041,9 +1048,10 @@
 ## 当前状态
 
 - 状态：持续日更中。
-- 最新更新：`2026-10-26`。
-- 当前项目总数：`942`。
-- 最近新增项目：`thinkrail`、`kandev`、`llama-swap`、`diy-llm`、`MAPIE`；本轮另刷新 `tuios`。
+- 最新更新：`2026-10-27`。
+- 当前项目总数：`948`。
+- 最近新增项目：`skill-recorder`、`harnessrouter`、`huashu-design`、`microduck`、
+  `postiz-app`、`obsidian-second-brain`；本轮另刷新 `SkillSpector`。
 - 覆盖平台：GitHub、X、Instagram、YouTube。
 
 ## 维护约定

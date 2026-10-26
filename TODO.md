@@ -14,6 +14,8 @@
 
 ## 阶段性开发记录
 
+- 2026-10-27：新增 `skill-recorder`、`harnessrouter`、`huashu-design`、`microduck`、`postiz-app`、`obsidian-second-brain` 六个七节页，刷新 `SkillSpector` 原页及四平台日报；复用五类，实际目录 `942 → 948`。官方 daily 增星依次 +257 / +95 / +409 / +844 / +146 / +35，SkillSpector +203。两轮检索未得当日社媒原帖；X 从 Postiz 官网核两条历史 oEmbed，YouTube 两个主视频累计 20,796 / 79,133 及 2026-06-04 / 2026-01-19，Instagram 两聚合入口，无日增或争议强度结论。接续：录制采集 / 云分析与按进程隐私确认；HarnessRouter 共享容器和密钥层；设计导出路线 / 母版；Microduck 模拟 / 真机与 manifest；Postiz token 模型 / 示例部署；知识库并发 / 恢复；SkillSpector 完整性和联网。保留 AGENTS.md 用户修改，未运行上游或产生产品外部写入。
+
 - 2026-10-26：新增 `thinkrail`、`kandev`、`llama-swap`、`diy-llm`、`MAPIE` 五个七节页，刷新 `tuios` 原页及四平台日报；复用三类，实际目录 `937 → 942`。官方 daily 日增星依次 +52 / +4 / +12 / +66 / +13，TUIOS +197。两轮外部检索未取得可用当日原帖；YouTube 原生搜索和 oEmbed 核两第三方视频，累计 26,332 / 50,331、相对 2d，并记录标题不一致；Instagram 两聚合落点，X 保留 TUIOS 无账号声明和搜索缺口。接续：TUIOS ≤0.10.1 权限公告与 0.11.0 修复 / daemon 重启，未复现补丁；ThinkRail basic / additional 遥测区别；Kandev 默认认证关闭与 Office 实验状态；llama-swap 默认认证 / 捕获 / MCP；diy-llm 随机数据回退、年份 / 数据集与许可差异；MAPIE 依赖文档漂移和边际覆盖前提。保留 AGENTS.md 用户修改，未安装运行上游或调用模型。
 
 - 2026-10-25：新增 `hallmark`、`cindy`、`agentskills`、`sandbox-runtime`、`langfuse`、`infinite-canvas`、`SenseNova-Skills` 七个七节页与四平台日报，复用五类，实际目录 `930 → 937`。官方 daily 日增星依次 +570 / +471 / +64 / +592 / +45 / +549 / +26。两轮检索未取得可用当日项目社媒原帖；X 核 Langfuse 上游账号，Instagram 两个主题重定向，YouTube 核官方两视频标题 / 作者及累计 8.9K / 868、相对 1mo / 2mo，未作日增或争议统计。接续：Hallmark 审美与功能验收；Cindy 官方服务、二进制与统计条件；Agent Skills 格式 / 宿主授权区别；srt 默认读取和弱化选项；Langfuse OSS / EE 遥测与许可；无限画布页面内插件权限、token / Origin 和旧数据；SenseNova .env 写入及 PPT 编辑性。同名 knowledge-work-plugins、herdr、agents 待身份核对，未覆盖既有页。保留 AGENTS.md 用户修改；未安装运行上游或调用模型。
