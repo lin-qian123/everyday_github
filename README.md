@@ -49,7 +49,7 @@
 
 如果你是第一次进入这个仓库，建议从这几个入口开始：
 
-- 最新日报：[`daily/2026-10-27/ai-hotspots.md`](./daily/2026-10-27/ai-hotspots.md)
+- 最新日报：[`daily/2026-10-28/ai-hotspots.md`](./daily/2026-10-28/ai-hotspots.md)
 - 项目总目录：[`projects/`](./projects/)
 - 自动化约束：[`AGENTS.md`](./AGENTS.md)
 - 开发续接记录：[`TODO.md`](./TODO.md)
@@ -189,6 +189,8 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `mcp-grafana` | 让 Agent 查询监控并管理资源；写开关、双层认证、默认使用统计与查询成本须治理。 | [GitHub](https://github.com/grafana/mcp-grafana) / [解读](./projects/mcp-grafana/README.md) |
+| `AutoSwarm` | 把已有 Agent 接成可跟踪委派流程；dev 主线、原生能力、上下文出口与权限须分别核。 | [GitHub](https://github.com/HKUDS/AutoSwarm) / [解读](./projects/AutoSwarm/README.md) |
 | `harnessrouter` | 统一多种 Agent harness 的任务 / 会话 API；默认口令、共享容器与 provider 数据出口须核。 | [GitHub](https://github.com/HarnessRouter/harnessrouter) / [解读](./projects/harnessrouter/README.md) |
 | `skill-recorder` | 把屏幕工作录制整理为步骤、技能和自动化；完整采集、云端分析与按进程隐私确认须核。 | [GitHub](https://github.com/microsoft/skill-recorder) / [解读](./projects/skill-recorder/README.md) |
 | `agentskills` | Agent Skills 开放格式与渐进加载规范；元数据兼容不保证脚本安全、宿主权限一致或业务正确。 | [GitHub](https://github.com/agentskills/agentskills) / [解读](./projects/agentskills/README.md) |
@@ -497,6 +499,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `auto-ontology` | 给 NL-to-SQL 补业务语义与来源；Vault 不完整配置回退明文，查询权限与公开端口须核。 | [GitHub](https://github.com/NVIDIA/auto-ontology) / [解读](./projects/auto-ontology/README.md) |
 | `onyx` | 连接企业资料的 RAG 与 Agent 平台；Standard 才能索引，CE 与 EE 权限同步能力须区分。 | [GitHub](https://github.com/onyx-dot-app/onyx) / [解读](./projects/onyx/README.md) |
 | `graphify` | 将代码与资料转为可查询图谱；旧 owner 已迁移，需区分本地 AST、语义模型与 Cloud 数据流。 | [GitHub](https://github.com/Graphify-Labs/graphify) / [解读](./projects/graphify/README.md) |
 | `Scrapegraph-ai` | 用图式流水线与 LLM 从网页 / 文档提取结构化数据；默认内容遥测、数据出口和结果准确性须核。 | [GitHub](https://github.com/ScrapeGraphAI/Scrapegraph-ai) / [解读](./projects/Scrapegraph-ai/README.md) |
@@ -624,6 +627,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `remotion` | React 源码驱动视频与 Agent Skills；特殊许可、素材权利、编辑性与成片需单独验收。 | [GitHub](https://github.com/remotion-dev/remotion) / [解读](./projects/remotion/README.md) |
 | `hex` | Rust 本地语音听写；云改写、历史保留、权限与主线 / 发行配置分别核对。 | [GitHub](https://github.com/anomalyco/hex) / [解读](./projects/hex/README.md) |
 | `FluidAudio` | Apple 设备的 CoreML 语音 SDK，覆盖转写、TTS、VAD 和分说话人；下载、模型许可与硬件须核。 | [GitHub](https://github.com/FluidInference/FluidAudio) / [解读](./projects/FluidAudio/README.md) |
 | `CozyClay` | 浏览器 3D 分镜与运动预演，导出参考帧、片段和提示词给视频模型；遥测、云端调用及素材许可分层核。 | [GitHub](https://github.com/NomaDamas/CozyClay) / [解读](./projects/CozyClay/README.md) |
@@ -803,6 +807,8 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `DeepTutor` | 知识、练习与长期学习的 Agent 工作区；全局记忆、代码执行后端和教学效果须分别验证。 | [GitHub](https://github.com/HKUDS/DeepTutor) / [解读](./projects/DeepTutor/README.md) |
+| `micrograd` | 以标量计算图教授反向传播；梯度累加与教学 / 生产性能范围需明确。 | [GitHub](https://github.com/karpathy/micrograd) / [解读](./projects/micrograd/README.md) |
 | `diy-llm` | CS336 方向中文课程与六类作业；模拟训练数据、作业年份 / 评测集差异、GPU 与分层许可须核。 | [GitHub](https://github.com/datawhalechina/diy-llm) / [解读](./projects/diy-llm/README.md) |
 | `happy-llm` | 中文大模型原理与实践教程；按章隔离依赖，远端 RL 费用和代码执行须核。 | [GitHub](https://github.com/datawhalechina/happy-llm) / [解读](./projects/happy-llm/README.md) |
 | `courses` | Anthropic 五条 notebook 课程；示例模型年代、API 费用与 CC 非商业许可须核。 | [GitHub](https://github.com/anthropics/courses) / [解读](./projects/courses/README.md) |
@@ -828,6 +834,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `call.md` | 会议实时转写、MCP 与会后工作流；VideoDB 云处理、可写工具及许可文本缺口须核。 | [GitHub](https://github.com/video-db/call.md) / [解读](./projects/call.md/README.md) |
 | `postiz-app` | Agent / API 驱动的多平台社媒排程；OAuth 审批、token 保存、示例部署与真实发布权限须核。 | [GitHub](https://github.com/gitroomhq/postiz-app) / [解读](./projects/postiz-app/README.md) |
 | `SenseNova-Skills` | 按 Agent Skills 格式组织办公、研究、PPT 与图像工作流；模型费用、环境写入、PPT 编辑性及事实来源须独立验收。 | [GitHub](https://github.com/OpenSenseNova/SenseNova-Skills) / [解读](./projects/SenseNova-Skills/README.md) |
 | `genoffice` | 本地 Office 编辑器与 Agent CLI，支持真实文档格式；默认统计、云 AI 和格式往返须分别验收。 | [GitHub](https://github.com/genspark-ai/genoffice) / [解读](./projects/genoffice/README.md) |
@@ -928,6 +935,7 @@
 
 - 全量项目目录：[`projects/`](./projects/)
 - 最近日报：
+  - [`2026-10-28`](./daily/2026-10-28/ai-hotspots.md)
   - [`2026-10-27`](./daily/2026-10-27/ai-hotspots.md)
   - [`2026-10-26`](./daily/2026-10-26/ai-hotspots.md)
   - [`2026-10-25`](./daily/2026-10-25/ai-hotspots.md)
@@ -1048,10 +1056,10 @@
 ## 当前状态
 
 - 状态：持续日更中。
-- 最新更新：`2026-10-27`。
-- 当前项目总数：`948`。
-- 最近新增项目：`skill-recorder`、`harnessrouter`、`huashu-design`、`microduck`、
-  `postiz-app`、`obsidian-second-brain`；本轮另刷新 `SkillSpector`。
+- 最新更新：`2026-10-28`。
+- 当前项目总数：`954`。
+- 最近新增项目：`AutoSwarm`、`auto-ontology`、`remotion`、`call.md`、
+  `mcp-grafana`、`micrograd`；本轮另刷新 `DeepTutor`。
 - 覆盖平台：GitHub、X、Instagram、YouTube。
 
 ## 维护约定
