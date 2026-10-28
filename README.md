@@ -49,7 +49,7 @@
 
 如果你是第一次进入这个仓库，建议从这几个入口开始：
 
-- 最新日报：[`daily/2026-10-28/ai-hotspots.md`](./daily/2026-10-28/ai-hotspots.md)
+- 最新日报：[`daily/2026-10-29/ai-hotspots.md`](./daily/2026-10-29/ai-hotspots.md)
 - 项目总目录：[`projects/`](./projects/)
 - 自动化约束：[`AGENTS.md`](./AGENTS.md)
 - 开发续接记录：[`TODO.md`](./TODO.md)
@@ -189,6 +189,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `oh-my-claudecode` | Claude Code 任务编排与终端 workers；插件 / CLI 两轨、自动批准与共享权限须核。 | [GitHub](https://github.com/Yeachan-Heo/oh-my-claudecode) / [解读](./projects/oh-my-claudecode/README.md) |
 | `mcp-grafana` | 让 Agent 查询监控并管理资源；写开关、双层认证、默认使用统计与查询成本须治理。 | [GitHub](https://github.com/grafana/mcp-grafana) / [解读](./projects/mcp-grafana/README.md) |
 | `AutoSwarm` | 把已有 Agent 接成可跟踪委派流程；dev 主线、原生能力、上下文出口与权限须分别核。 | [GitHub](https://github.com/HKUDS/AutoSwarm) / [解读](./projects/AutoSwarm/README.md) |
 | `harnessrouter` | 统一多种 Agent harness 的任务 / 会话 API；默认口令、共享容器与 provider 数据出口须核。 | [GitHub](https://github.com/HarnessRouter/harnessrouter) / [解读](./projects/harnessrouter/README.md) |
@@ -320,7 +321,7 @@
 | `video-to-skill` | 将有权访问的视频或课程转为带时间戳证据、可安装的 Claude Code/Codex skill。 | [GitHub](https://github.com/Lum1104/video-to-skill) |
 | `skill-audit-router` | 盘点可加载 skills、重复/遮蔽项与难路由描述，并支持重测改进。 | [GitHub](https://github.com/rushindrasinha/skill-audit-router) |
 | `letsfinddomain-skill` | 为 Codex/Claude Code/Cursor 生成域名候选、批量检查可用性与续费价的只读 skill。 | [GitHub](https://github.com/meepo-it/letsfinddomain-skill) |
-| `ai-design-skills` | 将落地页结构、视觉 token 与动效约束写成 coding agent 可读取的设计 skill 集。 | [GitHub](https://github.com/elayadesign/ai-design-skills) |
+| `ai-design-skills` | 落地页策略与视觉规则；硬性风格、真实证明、可访问性与 MIT 通知须分别审查。 | [GitHub](https://github.com/elayadesign/ai-design-skills) / [解读](./projects/ai-design-skills/README.md) |
 | `lit-review-skill` | 为 Claude/Codex 等 agent 提供文献检索、书目核验与主张支持度审计。 | [GitHub](https://github.com/Zachariah9420/lit-review-skill) |
 | `frieren-dast-ai` | 将 MITM 代理、规则扫描、多 agent 检查与仪表板组合的授权 DAST 工具。 | [GitHub](https://github.com/knowbe4/frieren-dast-ai) |
 | `oil-tone` | 面向中英写作的 agent skill，以明确规则和轻量 lint 压制无信息文案。 | [GitHub](https://github.com/oil-oil/oil-tone) |
@@ -499,6 +500,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `seekdb` | Agent 状态、混合检索与数据分叉；runtime / 主线版本、作者性能结果及库外副作用须核。 | [GitHub](https://github.com/oceanbase/seekdb) / [解读](./projects/seekdb/README.md) |
 | `auto-ontology` | 给 NL-to-SQL 补业务语义与来源；Vault 不完整配置回退明文，查询权限与公开端口须核。 | [GitHub](https://github.com/NVIDIA/auto-ontology) / [解读](./projects/auto-ontology/README.md) |
 | `onyx` | 连接企业资料的 RAG 与 Agent 平台；Standard 才能索引，CE 与 EE 权限同步能力须区分。 | [GitHub](https://github.com/onyx-dot-app/onyx) / [解读](./projects/onyx/README.md) |
 | `graphify` | 将代码与资料转为可查询图谱；旧 owner 已迁移，需区分本地 AST、语义模型与 Cloud 数据流。 | [GitHub](https://github.com/Graphify-Labs/graphify) / [解读](./projects/graphify/README.md) |
@@ -627,6 +629,8 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `see-through` | 动漫单图分层与补绘，输出语义 PSD；仍需美术和绑骨，显存 / 质量须实测。 | [GitHub](https://github.com/shitagaki-lab/see-through) / [解读](./projects/see-through/README.md) |
+| `upscayl` | 本地原生 AI 图像放大；推断细节、GPU 兼容和主线统计初始化路径须复核。 | [GitHub](https://github.com/upscayl/upscayl) / [解读](./projects/upscayl/README.md) |
 | `remotion` | React 源码驱动视频与 Agent Skills；特殊许可、素材权利、编辑性与成片需单独验收。 | [GitHub](https://github.com/remotion-dev/remotion) / [解读](./projects/remotion/README.md) |
 | `hex` | Rust 本地语音听写；云改写、历史保留、权限与主线 / 发行配置分别核对。 | [GitHub](https://github.com/anomalyco/hex) / [解读](./projects/hex/README.md) |
 | `FluidAudio` | Apple 设备的 CoreML 语音 SDK，覆盖转写、TTS、VAD 和分说话人；下载、模型许可与硬件须核。 | [GitHub](https://github.com/FluidInference/FluidAudio) / [解读](./projects/FluidAudio/README.md) |
@@ -807,6 +811,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `prompt-eng-interactive-tutorial` | Anthropic 九章提示词练习；旧模型、key 持久变量及分目录许可须处理。 | [GitHub](https://github.com/anthropics/prompt-eng-interactive-tutorial) / [解读](./projects/prompt-eng-interactive-tutorial/README.md) |
 | `DeepTutor` | 知识、练习与长期学习的 Agent 工作区；全局记忆、代码执行后端和教学效果须分别验证。 | [GitHub](https://github.com/HKUDS/DeepTutor) / [解读](./projects/DeepTutor/README.md) |
 | `micrograd` | 以标量计算图教授反向传播；梯度累加与教学 / 生产性能范围需明确。 | [GitHub](https://github.com/karpathy/micrograd) / [解读](./projects/micrograd/README.md) |
 | `diy-llm` | CS336 方向中文课程与六类作业；模拟训练数据、作业年份 / 评测集差异、GPU 与分层许可须核。 | [GitHub](https://github.com/datawhalechina/diy-llm) / [解读](./projects/diy-llm/README.md) |
@@ -834,6 +839,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `n8n` | 可视化 AI / 业务工作流；Sustainable Use / Enterprise、默认遥测与外部动作须治理。 | [GitHub](https://github.com/n8n-io/n8n) / [解读](./projects/n8n/README.md) |
 | `call.md` | 会议实时转写、MCP 与会后工作流；VideoDB 云处理、可写工具及许可文本缺口须核。 | [GitHub](https://github.com/video-db/call.md) / [解读](./projects/call.md/README.md) |
 | `postiz-app` | Agent / API 驱动的多平台社媒排程；OAuth 审批、token 保存、示例部署与真实发布权限须核。 | [GitHub](https://github.com/gitroomhq/postiz-app) / [解读](./projects/postiz-app/README.md) |
 | `SenseNova-Skills` | 按 Agent Skills 格式组织办公、研究、PPT 与图像工作流；模型费用、环境写入、PPT 编辑性及事实来源须独立验收。 | [GitHub](https://github.com/OpenSenseNova/SenseNova-Skills) / [解读](./projects/SenseNova-Skills/README.md) |
@@ -935,6 +941,7 @@
 
 - 全量项目目录：[`projects/`](./projects/)
 - 最近日报：
+  - [`2026-10-29`](./daily/2026-10-29/ai-hotspots.md)
   - [`2026-10-28`](./daily/2026-10-28/ai-hotspots.md)
   - [`2026-10-27`](./daily/2026-10-27/ai-hotspots.md)
   - [`2026-10-26`](./daily/2026-10-26/ai-hotspots.md)
@@ -1056,10 +1063,10 @@
 ## 当前状态
 
 - 状态：持续日更中。
-- 最新更新：`2026-10-28`。
-- 当前项目总数：`954`。
-- 最近新增项目：`AutoSwarm`、`auto-ontology`、`remotion`、`call.md`、
-  `mcp-grafana`、`micrograd`；本轮另刷新 `DeepTutor`。
+- 最新更新：`2026-10-29`。
+- 当前项目总数：`960`。
+- 最近新增项目：`see-through`、`oh-my-claudecode`、`n8n`、`upscayl`、
+  `seekdb`、`prompt-eng-interactive-tutorial`；本轮另刷新 `ai-design-skills`。
 - 覆盖平台：GitHub、X、Instagram、YouTube。
 
 ## 维护约定
