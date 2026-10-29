@@ -49,7 +49,7 @@
 
 如果你是第一次进入这个仓库，建议从这几个入口开始：
 
-- 最新日报：[`daily/2026-10-29/ai-hotspots.md`](./daily/2026-10-29/ai-hotspots.md)
+- 最新日报：[`daily/2026-10-30/ai-hotspots.md`](./daily/2026-10-30/ai-hotspots.md)
 - 项目总目录：[`projects/`](./projects/)
 - 自动化约束：[`AGENTS.md`](./AGENTS.md)
 - 开发续接记录：[`TODO.md`](./TODO.md)
@@ -74,6 +74,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `OpenMausBot` | 多 provider 机器人团队与电脑工作台；主机权限、Cloud 数据出口和企业许可需分别核。 | [GitHub](https://github.com/milind-soni/OpenMausBot) / [解读](./projects/OpenMausBot/README.md) |
 | `kandev` | 看板与多执行器编码 Agent 工作台；默认认证关闭、Office 实验状态和日志 / 分享数据须核。 | [GitHub](https://github.com/kdlbs/kandev) / [解读](./projects/kandev/README.md) |
 | `thinkrail` | 围绕 pi 组织工作区、规格与审阅的 Agent IDE；worktree、MCP 授权和分层遥测须分别核对。 | [GitHub](https://github.com/JetBrains/thinkrail) / [解读](./projects/thinkrail/README.md) |
 | `cindy` | 以桌面与手机客户端统一 Claude Code / Codex、记忆和自动化；默认云服务、真实登录态、二进制下载与遥测须核。 | [GitHub](https://github.com/makecindy/cindy) / [解读](./projects/cindy/README.md) |
@@ -189,6 +190,8 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `infinity` | Rust 消息驱动 Agent runtime / RAP；FIFO、持久存储与外部动作幂等须独立验收。 | [GitHub](https://github.com/hydro-project/infinity) / [解读](./projects/infinity/README.md) |
+| `impeccable` | 设计词汇、24 命令与确定性 detector；安装 hook、catalog 联网和视觉验收须核。 | [GitHub](https://github.com/pbakaus/impeccable) / [解读](./projects/impeccable/README.md) |
 | `oh-my-claudecode` | Claude Code 任务编排与终端 workers；插件 / CLI 两轨、自动批准与共享权限须核。 | [GitHub](https://github.com/Yeachan-Heo/oh-my-claudecode) / [解读](./projects/oh-my-claudecode/README.md) |
 | `mcp-grafana` | 让 Agent 查询监控并管理资源；写开关、双层认证、默认使用统计与查询成本须治理。 | [GitHub](https://github.com/grafana/mcp-grafana) / [解读](./projects/mcp-grafana/README.md) |
 | `AutoSwarm` | 把已有 Agent 接成可跟踪委派流程；dev 主线、原生能力、上下文出口与权限须分别核。 | [GitHub](https://github.com/HKUDS/AutoSwarm) / [解读](./projects/AutoSwarm/README.md) |
@@ -436,6 +439,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `QwenPaw` | 多渠道 Agent 工作站与 ReMe 记忆；运行期遥测、插件权限和内置素材许可须核。 | [GitHub](https://github.com/agentscope-ai/QwenPaw) / [解读](./projects/QwenPaw/README.md) |
 | `obsidian-second-brain` | 多宿主技能维护 Markdown 知识库；云模型出口、并发写入、索引新鲜度和恢复须核。 | [GitHub](https://github.com/eugeniughelbur/obsidian-second-brain) / [解读](./projects/obsidian-second-brain/README.md) |
 | `ds-harness-remote` | 多设备延续 Harness / Codex 工作区；默认远程终端与 E2EE 文档差异须核。 | [GitHub](https://github.com/liguobao/ds-harness-remote) / [解读](./projects/ds-harness-remote/README.md) |
 | `dsh-context` | DeepSeek Harness 上下文洞察插件；展示构成、历史和费用估算，并可注入系统提示前后缀。 | [GitHub](https://github.com/bowenliang123/dsh-context) / [解读](./projects/dsh-context/README.md) |
@@ -629,6 +633,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `Concat` | Rust 本地视频编辑与 MCP；beta、工程锁、API token、媒体和模型授权须核。 | [GitHub](https://github.com/jub0t/Concat) / [解读](./projects/Concat/README.md) |
 | `see-through` | 动漫单图分层与补绘，输出语义 PSD；仍需美术和绑骨，显存 / 质量须实测。 | [GitHub](https://github.com/shitagaki-lab/see-through) / [解读](./projects/see-through/README.md) |
 | `upscayl` | 本地原生 AI 图像放大；推断细节、GPU 兼容和主线统计初始化路径须复核。 | [GitHub](https://github.com/upscayl/upscayl) / [解读](./projects/upscayl/README.md) |
 | `remotion` | React 源码驱动视频与 Agent Skills；特殊许可、素材权利、编辑性与成片需单独验收。 | [GitHub](https://github.com/remotion-dev/remotion) / [解读](./projects/remotion/README.md) |
@@ -713,6 +718,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `cuda-rust` | NVIDIA Rust SIMT / Tile GPU 研究平台；工具链、设备兼容、数值和性能需实测。 | [GitHub](https://github.com/NVIDIA/cuda-rust) / [解读](./projects/cuda-rust/README.md) |
 | `microduck` | Microduck 机载 RL 策略运行、控制与更新；与训练仓库分开，模拟与实体安全独立验证。 | [GitHub](https://github.com/pollen-robotics/microduck) / [解读](./projects/microduck/README.md) |
 | `MAPIE` | 用 conformal prediction 为预测加区间 / 集合并控制指定风险；可交换性、边际 / 条件覆盖和版本依赖须核。 | [GitHub](https://github.com/scikit-learn-contrib/MAPIE) / [解读](./projects/MAPIE/README.md) |
 | `llama-swap` | 按模型请求启动 / 切换推理进程；默认无认证、请求捕获、容器监听与实际显存容量须核。 | [GitHub](https://github.com/mostlygeek/llama-swap) / [解读](./projects/llama-swap/README.md) |
@@ -839,6 +845,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `AiSOC` | 安全遥测检测、Agent 调查与证据账本；合成回放、真实准确率和响应权限分开验收。 | [GitHub](https://github.com/beenuar/AiSOC) / [解读](./projects/AiSOC/README.md) |
 | `n8n` | 可视化 AI / 业务工作流；Sustainable Use / Enterprise、默认遥测与外部动作须治理。 | [GitHub](https://github.com/n8n-io/n8n) / [解读](./projects/n8n/README.md) |
 | `call.md` | 会议实时转写、MCP 与会后工作流；VideoDB 云处理、可写工具及许可文本缺口须核。 | [GitHub](https://github.com/video-db/call.md) / [解读](./projects/call.md/README.md) |
 | `postiz-app` | Agent / API 驱动的多平台社媒排程；OAuth 审批、token 保存、示例部署与真实发布权限须核。 | [GitHub](https://github.com/gitroomhq/postiz-app) / [解读](./projects/postiz-app/README.md) |
@@ -941,6 +948,7 @@
 
 - 全量项目目录：[`projects/`](./projects/)
 - 最近日报：
+  - [`2026-10-30`](./daily/2026-10-30/ai-hotspots.md)
   - [`2026-10-29`](./daily/2026-10-29/ai-hotspots.md)
   - [`2026-10-28`](./daily/2026-10-28/ai-hotspots.md)
   - [`2026-10-27`](./daily/2026-10-27/ai-hotspots.md)
@@ -1063,10 +1071,9 @@
 ## 当前状态
 
 - 状态：持续日更中。
-- 最新更新：`2026-10-29`。
-- 当前项目总数：`960`。
-- 最近新增项目：`see-through`、`oh-my-claudecode`、`n8n`、`upscayl`、
-  `seekdb`、`prompt-eng-interactive-tutorial`；本轮另刷新 `ai-design-skills`。
+- 最新更新：`2026-10-30`。
+- 当前项目总数：`966`。
+- 最近新增项目：`OpenMausBot`、`AiSOC`、`QwenPaw`、`Concat`、`infinity`、`cuda-rust`；本轮另刷新 `impeccable`。
 - 覆盖平台：GitHub、X、Instagram、YouTube。
 
 ## 维护约定

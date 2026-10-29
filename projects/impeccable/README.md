@@ -1,96 +1,48 @@
-# impeccable（pbakaus/impeccable）项目速览与上手指南
+<!-- markdownlint-disable MD013 -->
 
-- GitHub: https://github.com/pbakaus/impeccable
-- 更新日期: 2026-03-25（Asia/Shanghai）
+# impeccable
 
-## 1. 为什么今天值得跟踪
+## 定位
 
-`impeccable` 是一个面向 AI 编程助手的“前端设计语言 + 指令体系”项目。它把“如何让模型产出更好 UI”从零散 prompt，做成可安装、可复用、可治理的技能包。
+Impeccable 为 coding agent 提供设计词汇、技能命令和确定性检测器，主线已经从旧页的多目录复制流程发展为统一安装、项目上下文、24 个命令及 live 迭代。2026-03-25 旧页在此原位刷新，避免按同一上游重复建档。
 
-- 热度信号（仓库页可见）：`13.2k stars`、`542 forks`（抓取时间：2026-03-25）
-- 结构信号：同时提供 `.codex/.claude/.cursor/.gemini/.opencode/.pi` 等多生态目录，说明其定位是“跨 agent 通用设计能力层”。
+2026-10-30 快照：综合 / Rust daily +2,881 stars；API 累计 95,212 stars / 5,610 forks / 45 open issues（含 PR）。核读 main `02523aec3e4c`；发行 API 首项 [skill-v4.8.0](https://github.com/pbakaus/impeccable/releases/tag/skill-v4.8.0)，2026-10-26 UTC。以下为文档与有限源码核读，未安装运行。
 
-## 2. 项目在做什么（核心定位）
+## 用法
 
-从 README 可提炼出三个核心层：
-
-1. `frontend-design` 扩展技能
-- 覆盖 `typography`、`color-and-contrast`、`spatial-design`、`motion-design`、`interaction-design`、`responsive-design`、`ux-writing` 七个专项参考。
-
-2. 20 个可执行设计命令
-- 如 `/audit`、`/critique`、`/normalize`、`/polish`、`/distill`、`/harden`、`/animate`。
-- 作用是把“设计评审/修复/打磨”流程标准化，而非每次手写长 prompt。
-
-3. 反模式（Anti-patterns）白名单化约束
-- 明确告诉模型“不要做什么”（如过度模板化字体、卡片套卡片、灰字压彩底等），减少 AI 生成“同质化 UI”。
-
-## 3. 怎么用（可直接执行）
-
-### 安装方式 A：官网下载（README 推荐）
-
-1. 打开 `https://impeccable.style`
-2. 下载对应工具的 ZIP
-3. 解压到你的项目
-
-### 安装方式 B：从仓库复制
-
-Claude Code：
+在准备修改的项目根目录审阅安装器后运行上游入口：
 
 ```bash
-# 项目级
-cp -r dist/claude-code/.claude your-project/
-
-# 全局级
-cp -r dist/claude-code/.claude/* ~/.claude/
+npx impeccable install
 ```
 
-Codex CLI：
+重载宿主后初始化项目；Codex 文档入口是 $impeccable init，其他宿主可用 /impeccable init。先选一个组件运行 critique / audit，再决定修改。init 写 PRODUCT.md，document 写 DESIGN.md。本文介绍上游用法，未安装或批准任何 hook。
 
-```bash
-cp -r dist/codex/.codex/* ~/.codex/
-```
+检测器可单独执行 npx impeccable detect src/ 或扫描自己的本地开发 URL。退出 2 表示有 findings，1 表示目标不能扫描；源码和浏览器扫描覆盖不同规则。
 
-Cursor：
+## 原理
 
-```bash
-cp -r dist/cursor/.cursor your-project/
-```
+技能把设计动作拆成可组合命令并读取产品 / 视觉上下文；detector 用 62 条确定性规则检查模式，源码扫描偏语法，渲染扫描补充对比度和字号。live overlay 可选择页面元素、生成变体并把接受结果写回源码，不同层分别依赖宿主模型、浏览器与本地引擎。
 
-Gemini CLI：
+## 价值
 
-```bash
-cp -r dist/gemini/.gemini your-project/
-```
+给设计沟通与回归检查建立共同词汇，减少“再好看一点”的模糊反馈。适合对已有组件做窄范围迭代，同时将例外写入带理由的 ignore；作者示例不构成跨任务效果评测。
 
-## 4. 原理是什么（工程视角）
+## 风险边界
 
-它的本质是“把设计能力做成可版本化中间层”：
+- 根 Apache-2.0。旧页中 20 命令、dist/ 复制路径及 3 月热度已过时；当前主线 24 命令含已弃用 craft 别名，发行 skill-v4.8.0 与 main 仍需区别。
+- skill 使用模型与宿主工具；只有确定性 detector 的相关路径不需 LLM / API key，不能把整套设计流程说成无模型或完全离线。
+- 安装可写 hook 并下载引擎；README 特别说明 Claude Code command hooks 可能在模型命令被拒绝时仍运行。Codex 项目 hook 另需宿主信任，先核已安装项。
+- live mode 只应用于本地 checkout；手动文案应用可运行 package.json 的 impeccable:manual-edit-validate，以用户权限执行。
+- 关闭 telemetry 仍会请求 visual directions catalog；关闭匿名选择记录不等于零联网。README 的字段排除声明未在本轮抓包验证。
+- 规则命中、模型 critique 分数与可访问性 / 产品效果不同。品牌字体可能合理，需要有理由的例外和真实浏览器 / 用户检验。
 
-1. 规范化输入
-- 通过固定命令与技能上下文，减少模型每次重新理解任务的随机性。
+## 补充建议
 
-2. 显式约束输出
-- 反模式库相当于“负向规则集”，在生成阶段提前压制常见劣化设计。
+先固定版本，检查安装 diff 与 hook 内容，运行源码加本地 URL 两种扫描；核对键盘操作、移动端、对比度、字体授权及真实文案。分别保留自动规则结果、人工设计判断和页面截图，不能用编译成功替代视觉验收。
 
-3. 可组合工作流
-- 例如 `/audit -> /normalize -> /polish`，从诊断到修复到收尾形成闭环。
+## 参考资料
 
-4. 跨工具迁移
-- 同一套设计策略能映射到不同 AI harness，降低团队切换成本。
-
-## 5. 适用场景
-
-- 需要批量产出落地网页/前端组件，并保持视觉质量一致。
-- 团队内多人使用不同 AI 编程工具，但希望共享统一设计标准。
-- 希望把“设计评审经验”沉淀成可审计资产，而非口头经验。
-
-## 6. 风险与注意事项
-
-- 语义对齐风险：同一命令在不同 agent 中仍可能有行为差异，建议做小样本验收。
-- 质量上限风险：技能能显著提升平均质量，但不能替代高质量设计判断。
-- 维护风险：当设计系统升级时，技能与反模式规则需同步维护。
-
-## 7. 信息来源
-
-- 仓库主页与 README（星标、安装、命令、反模式）：https://github.com/pbakaus/impeccable
-- 官方站点（分发入口）：https://impeccable.style
+- [上游仓库](https://github.com/pbakaus/impeccable)、[仓库 API](https://api.github.com/repos/pbakaus/impeccable)。
+- [README.md](https://github.com/pbakaus/impeccable/blob/02523aec3e4c4580102d996d1b6a71fbe062e03f/README.md)。
+- [LICENSE](https://github.com/pbakaus/impeccable/blob/02523aec3e4c4580102d996d1b6a71fbe062e03f/LICENSE)。
