@@ -49,7 +49,7 @@
 
 如果你是第一次进入这个仓库，建议从这几个入口开始：
 
-- 最新日报：[`daily/2026-10-30/ai-hotspots.md`](./daily/2026-10-30/ai-hotspots.md)
+- 最新日报：[`daily/2026-10-31/ai-hotspots.md`](./daily/2026-10-31/ai-hotspots.md)
 - 项目总目录：[`projects/`](./projects/)
 - 自动化约束：[`AGENTS.md`](./AGENTS.md)
 - 开发续接记录：[`TODO.md`](./TODO.md)
@@ -74,6 +74,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `KiroCrew` | 持久开发工作区与 Gateway 调度；平台相关 sandbox、凭证可见性和日心跳需分别配置。 | [GitHub](https://github.com/kirodotdev/KiroCrew) / [解读](./projects/KiroCrew/README.md) |
 | `OpenMausBot` | 多 provider 机器人团队与电脑工作台；主机权限、Cloud 数据出口和企业许可需分别核。 | [GitHub](https://github.com/milind-soni/OpenMausBot) / [解读](./projects/OpenMausBot/README.md) |
 | `kandev` | 看板与多执行器编码 Agent 工作台；默认认证关闭、Office 实验状态和日志 / 分享数据须核。 | [GitHub](https://github.com/kdlbs/kandev) / [解读](./projects/kandev/README.md) |
 | `thinkrail` | 围绕 pi 组织工作区、规格与审阅的 Agent IDE；worktree、MCP 授权和分层遥测须分别核对。 | [GitHub](https://github.com/JetBrains/thinkrail) / [解读](./projects/thinkrail/README.md) |
@@ -190,6 +191,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `deepagents` | LangGraph 上的长任务 harness；默认状态文件、宿主执行与真正 sandbox 的边界要分清。 | [GitHub](https://github.com/langchain-ai/deepagents) / [解读](./projects/deepagents/README.md) |
 | `infinity` | Rust 消息驱动 Agent runtime / RAP；FIFO、持久存储与外部动作幂等须独立验收。 | [GitHub](https://github.com/hydro-project/infinity) / [解读](./projects/infinity/README.md) |
 | `impeccable` | 设计词汇、24 命令与确定性 detector；安装 hook、catalog 联网和视觉验收须核。 | [GitHub](https://github.com/pbakaus/impeccable) / [解读](./projects/impeccable/README.md) |
 | `oh-my-claudecode` | Claude Code 任务编排与终端 workers；插件 / CLI 两轨、自动批准与共享权限须核。 | [GitHub](https://github.com/Yeachan-Heo/oh-my-claudecode) / [解读](./projects/oh-my-claudecode/README.md) |
@@ -477,7 +479,7 @@
 | `mem0` | 热度很高的长期记忆基础设施项目。 | [GitHub](https://github.com/mem0ai/mem0) |
 | `memsearch` | 面向 coding agent 的可检索持久记忆层。 | [GitHub](https://github.com/zilliztech/memsearch) |
 | `agentmemory` | 强调 agent 可复用记忆的轻量项目。 | [GitHub](https://github.com/rohitg00/agentmemory) |
-| `claude-mem` | 面向 Claude 工作流的记忆插件路线。 | [GitHub](https://github.com/thedotmack/claude-mem) |
+| `claude-mem` | 跨会话捕获、压缩与分层检索；区分 observer、云同步、默认遥测、本地日志和截图开关。 | [GitHub](https://github.com/thedotmack/claude-mem) / [解读](./projects/claude-mem/README.md) |
 | `Personal_AI_Infrastructure` | Daniel Miessler 的个人 AI 基础设施方案。 | [GitHub](https://github.com/danielmiessler/Personal_AI_Infrastructure) |
 | `supermemory` | 试图把“记忆”做成可复用产品层能力。 | [GitHub](https://github.com/supermemoryai/supermemory) |
 | `open-notebook` | 把笔记与 AI 工作流结合的本地化知识项目。 | [GitHub](https://github.com/lfnovo/open-notebook) |
@@ -504,6 +506,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `RAG_Techniques` | RAG notebooks 与脚本教材；优先诊断解析 / 分块，注意自定义非商用许可及赞助样例边界。 | [GitHub](https://github.com/NirDiamant/RAG_Techniques) / [解读](./projects/RAG_Techniques/README.md) |
 | `seekdb` | Agent 状态、混合检索与数据分叉；runtime / 主线版本、作者性能结果及库外副作用须核。 | [GitHub](https://github.com/oceanbase/seekdb) / [解读](./projects/seekdb/README.md) |
 | `auto-ontology` | 给 NL-to-SQL 补业务语义与来源；Vault 不完整配置回退明文，查询权限与公开端口须核。 | [GitHub](https://github.com/NVIDIA/auto-ontology) / [解读](./projects/auto-ontology/README.md) |
 | `onyx` | 连接企业资料的 RAG 与 Agent 平台；Standard 才能索引，CE 与 EE 权限同步能力须区分。 | [GitHub](https://github.com/onyx-dot-app/onyx) / [解读](./projects/onyx/README.md) |
@@ -718,6 +721,8 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `mesh-llm` | 跨机器汇聚 GPU / 内存并提供兼容 API；发现、令牌、准入和传输加密是不同边界。 | [GitHub](https://github.com/Mesh-LLM/mesh-llm) / [解读](./projects/mesh-llm/README.md) |
+| `nixl` | AI 推理点对点数据传输抽象；GPU / CPU / 存储插件、可信 descriptor 和端到端性能需分别验。 | [GitHub](https://github.com/ai-dynamo/nixl) / [解读](./projects/nixl/README.md) |
 | `cuda-rust` | NVIDIA Rust SIMT / Tile GPU 研究平台；工具链、设备兼容、数值和性能需实测。 | [GitHub](https://github.com/NVIDIA/cuda-rust) / [解读](./projects/cuda-rust/README.md) |
 | `microduck` | Microduck 机载 RL 策略运行、控制与更新；与训练仓库分开，模拟与实体安全独立验证。 | [GitHub](https://github.com/pollen-robotics/microduck) / [解读](./projects/microduck/README.md) |
 | `MAPIE` | 用 conformal prediction 为预测加区间 / 集合并控制指定风险；可交换性、边际 / 条件覆盖和版本依赖须核。 | [GitHub](https://github.com/scikit-learn-contrib/MAPIE) / [解读](./projects/MAPIE/README.md) |
@@ -845,6 +850,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `Orkas` | Commander 协调专业 Agent 与本地 CLI，交付文档 / 视频等；云出口、后台学习和逐任务授权须核。 | [GitHub](https://github.com/Orkas-AI/Orkas) / [解读](./projects/Orkas/README.md) |
 | `AiSOC` | 安全遥测检测、Agent 调查与证据账本；合成回放、真实准确率和响应权限分开验收。 | [GitHub](https://github.com/beenuar/AiSOC) / [解读](./projects/AiSOC/README.md) |
 | `n8n` | 可视化 AI / 业务工作流；Sustainable Use / Enterprise、默认遥测与外部动作须治理。 | [GitHub](https://github.com/n8n-io/n8n) / [解读](./projects/n8n/README.md) |
 | `call.md` | 会议实时转写、MCP 与会后工作流；VideoDB 云处理、可写工具及许可文本缺口须核。 | [GitHub](https://github.com/video-db/call.md) / [解读](./projects/call.md/README.md) |
@@ -948,6 +954,7 @@
 
 - 全量项目目录：[`projects/`](./projects/)
 - 最近日报：
+  - [`2026-10-31`](./daily/2026-10-31/ai-hotspots.md)
   - [`2026-10-30`](./daily/2026-10-30/ai-hotspots.md)
   - [`2026-10-29`](./daily/2026-10-29/ai-hotspots.md)
   - [`2026-10-28`](./daily/2026-10-28/ai-hotspots.md)
@@ -1071,9 +1078,10 @@
 ## 当前状态
 
 - 状态：持续日更中。
-- 最新更新：`2026-10-30`。
-- 当前项目总数：`966`。
-- 最近新增项目：`OpenMausBot`、`AiSOC`、`QwenPaw`、`Concat`、`infinity`、`cuda-rust`；本轮另刷新 `impeccable`。
+- 最新更新：`2026-10-31`。
+- 当前项目总数：`972`。
+- 最近新增项目：`deepagents`、`KiroCrew`、`Orkas`、`mesh-llm`、`nixl`、`RAG_Techniques`；
+  本轮另刷新 `claude-mem`。
 - 覆盖平台：GitHub、X、Instagram、YouTube。
 
 ## 维护约定
