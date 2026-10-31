@@ -49,7 +49,7 @@
 
 如果你是第一次进入这个仓库，建议从这几个入口开始：
 
-- 最新日报：[`daily/2026-10-31/ai-hotspots.md`](./daily/2026-10-31/ai-hotspots.md)
+- 最新日报：[`daily/2026-11-01/ai-hotspots.md`](./daily/2026-11-01/ai-hotspots.md)
 - 项目总目录：[`projects/`](./projects/)
 - 自动化约束：[`AGENTS.md`](./AGENTS.md)
 - 开发续接记录：[`TODO.md`](./TODO.md)
@@ -74,6 +74,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `pr-agent` | 社区维护的 PR 审查工具；本地 diff / JSON 与默认评论发布分开管理。 | [GitHub](https://github.com/The-PR-Agent/pr-agent) / [解读](./projects/pr-agent/README.md) |
 | `KiroCrew` | 持久开发工作区与 Gateway 调度；平台相关 sandbox、凭证可见性和日心跳需分别配置。 | [GitHub](https://github.com/kirodotdev/KiroCrew) / [解读](./projects/KiroCrew/README.md) |
 | `OpenMausBot` | 多 provider 机器人团队与电脑工作台；主机权限、Cloud 数据出口和企业许可需分别核。 | [GitHub](https://github.com/milind-soni/OpenMausBot) / [解读](./projects/OpenMausBot/README.md) |
 | `kandev` | 看板与多执行器编码 Agent 工作台；默认认证关闭、Office 实验状态和日志 / 分享数据须核。 | [GitHub](https://github.com/kdlbs/kandev) / [解读](./projects/kandev/README.md) |
@@ -574,6 +575,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `a2ui` | 声明式 Agent UI 格式与 renderer；固定协议 / catalog，业务动作另做授权。 | [GitHub](https://github.com/a2ui-project/a2ui) / [解读](./projects/a2ui/README.md) |
 | `huashu-design` | 用真实参照、多方向初稿和 HTML 管线组织设计；PPTX 编辑性、模板继承与素材许可须分别验收。 | [GitHub](https://github.com/alchaincyf/huashu-design) / [解读](./projects/huashu-design/README.md) |
 | `hallmark` | 用主题、页面任务与浏览器检查约束 AI 网页设计；规则通过不等于审美、转化或功能验收，照片许可独立。 | [GitHub](https://github.com/Nutlope/hallmark) / [解读](./projects/hallmark/README.md) |
 | `infinite-canvas` | 图片 / 视频与 Agent 的无限画布工作台；浏览器存储、页面内插件权限、本机 Agent token 和历史数据兼容须核。 | [GitHub](https://github.com/basketikun/infinite-canvas) / [解读](./projects/infinite-canvas/README.md) |
@@ -610,7 +612,7 @@
 | `UI-TARS-desktop` | 偏桌面 Agent UI 与可操作前端表面。 | [GitHub](https://github.com/bytedance/UI-TARS-desktop) |
 | `OpenSandbox` | 为 Agent 提供可控执行环境与隔离层。 | [GitHub](https://github.com/alibaba/OpenSandbox) |
 | `page-agent` | 页面级 agent 交互与操作路线。 | [GitHub](https://github.com/alibaba/page-agent) |
-| `lightpanda-browser` | 为自动化与 Agent 场景设计的高性能浏览器内核路线。 | [GitHub](https://github.com/lightpanda-io/browser) |
+| `lightpanda-browser` | Zig 无头浏览器与原生 MCP / Agent / 脚本；注意版本、默认统计和作者基准条件。 | [GitHub](https://github.com/lightpanda-io/browser) / [解读](./projects/lightpanda-browser/README.md) |
 | `openui` | 开源生成式 UI 原型工具，支持描述界面并导出到多种前端框架。 | [GitHub](https://github.com/wandb/openui) |
 | `chatbot-ui` | 开源 AI 聊天前端骨架，适合做多模型、自托管聊天入口。 | [GitHub](https://github.com/mckaywrigley/chatbot-ui) |
 | `stitch-mcp` | 把 Google Stitch 生成的 UI 设计接入本地开发与 coding agent 工作流的 CLI / MCP 桥接层。 | [GitHub](https://github.com/davideast/stitch-mcp) |
@@ -636,6 +638,8 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `agent-sprite-forge` | 原画到多动作精灵的生成与后处理链；预算、人工审片与引擎回读分层验收。 | [GitHub](https://github.com/0x0funky/agent-sprite-forge) / [解读](./projects/agent-sprite-forge/README.md) |
+| `sherpa-onnx` | 跨平台端侧语音工具集；识别 / 合成 / VAD / 分离及模型许可逐项确认。 | [GitHub](https://github.com/k2-fsa/sherpa-onnx) / [解读](./projects/sherpa-onnx/README.md) |
 | `Concat` | Rust 本地视频编辑与 MCP；beta、工程锁、API token、媒体和模型授权须核。 | [GitHub](https://github.com/jub0t/Concat) / [解读](./projects/Concat/README.md) |
 | `see-through` | 动漫单图分层与补绘，输出语义 PSD；仍需美术和绑骨，显存 / 质量须实测。 | [GitHub](https://github.com/shitagaki-lab/see-through) / [解读](./projects/see-through/README.md) |
 | `upscayl` | 本地原生 AI 图像放大；推断细节、GPU 兼容和主线统计初始化路径须复核。 | [GitHub](https://github.com/upscayl/upscayl) / [解读](./projects/upscayl/README.md) |
@@ -850,6 +854,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `anarlog` | 本地优先会议笔记；转写 / 摘要双模型与统计、同步、connectors 独立配置。 | [GitHub](https://github.com/fastrepl/anarlog) / [解读](./projects/anarlog/README.md) |
 | `Orkas` | Commander 协调专业 Agent 与本地 CLI，交付文档 / 视频等；云出口、后台学习和逐任务授权须核。 | [GitHub](https://github.com/Orkas-AI/Orkas) / [解读](./projects/Orkas/README.md) |
 | `AiSOC` | 安全遥测检测、Agent 调查与证据账本；合成回放、真实准确率和响应权限分开验收。 | [GitHub](https://github.com/beenuar/AiSOC) / [解读](./projects/AiSOC/README.md) |
 | `n8n` | 可视化 AI / 业务工作流；Sustainable Use / Enterprise、默认遥测与外部动作须治理。 | [GitHub](https://github.com/n8n-io/n8n) / [解读](./projects/n8n/README.md) |
@@ -954,6 +959,7 @@
 
 - 全量项目目录：[`projects/`](./projects/)
 - 最近日报：
+  - [`2026-11-01`](./daily/2026-11-01/ai-hotspots.md)
   - [`2026-10-31`](./daily/2026-10-31/ai-hotspots.md)
   - [`2026-10-30`](./daily/2026-10-30/ai-hotspots.md)
   - [`2026-10-29`](./daily/2026-10-29/ai-hotspots.md)
@@ -1078,10 +1084,10 @@
 ## 当前状态
 
 - 状态：持续日更中。
-- 最新更新：`2026-10-31`。
-- 当前项目总数：`972`。
-- 最近新增项目：`deepagents`、`KiroCrew`、`Orkas`、`mesh-llm`、`nixl`、`RAG_Techniques`；
-  本轮另刷新 `claude-mem`。
+- 最新更新：`2026-11-01`。
+- 当前项目总数：`977`。
+- 最近新增项目：`agent-sprite-forge`、`pr-agent`、`a2ui`、`anarlog`、`sherpa-onnx`；
+  本轮另刷新 `lightpanda-browser`。
 - 覆盖平台：GitHub、X、Instagram、YouTube。
 
 ## 维护约定

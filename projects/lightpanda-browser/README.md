@@ -1,92 +1,60 @@
-# lightpanda-io/browser
+<!-- markdownlint-disable MD013 -->
 
-- GitHub: https://github.com/lightpanda-io/browser
-- 官网: https://lightpanda.io
-- 记录时间: 2026-03-16（Asia/Shanghai）
+# lightpanda-browser
 
-## 这是什么
-`lightpanda-io/browser` 是一个专门为 AI 与自动化场景打造的开源无头浏览器（Headless Browser）。
-它的目标不是做“完整 GUI 浏览器替代品”，而是把浏览器能力做成高性能、低资源占用、可脚本化的执行引擎，适合 Agent 自动化、网页抓取、E2E 测试与批量任务。
+- 上游：[lightpanda-io/browser](https://github.com/lightpanda-io/browser)；分类：前端、UI 与 Agent 交互层。
+- 核读：2026-11-01（Asia/Shanghai）；初次收录：2026-03-16；固定主线 `49d717daba2c694ef1f02889ea49ca02fbb881a6`。
+- [仓库 API](https://api.github.com/repos/lightpanda-io/browser) 快照：39,197 stars / 1,905 forks / 103 open issues（含 PR）；发行首项 [1.0.2](https://github.com/lightpanda-io/browser/releases/tag/1.0.2)，2026-10-23 UTC。发行与主线分别看。
+- 证据：上游文档及指定文件静态核读；本轮未安装运行、调用模型或复现作者实验。
 
-根据 2026-03-16 的 GitHub Trending 快照，该项目位于全站前列，页面显示约 `2,320 stars today`，累计约 `16.2k stars`，属于当天增速非常高的 AI 基础工具型项目。
+## 定位
 
-## 为什么今天会被关注
-1. AI Agent 大量依赖“网页操作”能力，传统浏览器在批量运行时资源成本偏高。
-2. 开发者正在从“单机调试”转向“并发自动化 + 云端运行”，更关注吞吐、稳定性与可观测性。
-3. Lightpanda 明确给出性能口径（更低内存、更快启动），并强调对 Playwright/Puppeteer 常见自动化工作流的兼容，降低迁移门槛。
+从头用 Zig 构建的无头浏览器，组合 V8、libcurl、html5ever 与 DOM，面向 AI Agent 和网页自动化。保留原目录 `lightpanda-browser`，本轮原位刷新 3 月说明。官方综合 daily 榜本轮显示 +929 stars。
 
-## 怎么用（最小可跑通）
+当前主线已含 CDP、WebDriver BiDi、原生 Agent、MCP 和 PandaScript。它优先网页操作与数据提取，PNG / PDF dump 的文本渲染不等于 Chromium 的完整视觉结果。
 
-### 1) 启动浏览器服务
+## 用法
+
+当前 README 的 macOS 入口是 Homebrew nightly：
+
 ```bash
-docker run -p 9222:9222 ghcr.io/lightpanda-io/browser:latest
+brew install lightpanda-io/browser/lightpanda
+lightpanda version
+LIGHTPANDA_DISABLE_TELEMETRY=true lightpanda fetch --obey-robots --dump markdown https://example.com
+LIGHTPANDA_DISABLE_TELEMETRY=true lightpanda serve --obey-robots --host 127.0.0.1 --port 9222
 ```
 
-### 2) 用 DevTools 协议连接
-```bash
-curl http://localhost:9222/json/version
-```
-若返回包含 `webSocketDebuggerUrl`，说明可被自动化客户端接入。
+Puppeteer 用 `browserWSEndpoint: "ws://127.0.0.1:9222"` 接入；原生 MCP 可用 `lightpanda mcp`（stdio），HTTP 示例为 `lightpanda mcp --host 127.0.0.1 --port 9223`。README 的 Docker 当前入口是 `lightpanda/browser`，端口映射到 `127.0.0.1`；原页的旧 GHCR 示例不再作为推荐。
 
-### 3) 用 Playwright（Node.js）连接
-```bash
-npm i playwright
-```
+记录实际 binary version 和下载来源。发行首项是 1.0.2，但 Homebrew / latest / nightly 可能跟随不同主线；本页主线功能不能无条件套给 1.0.2。Linux 预编译制品的 glibc 下限，README 当前写 x86_64 2.35、arm64 2.38；Alpine / Android Bionic 不能直接照搬。
 
-```js
-import { chromium } from "playwright";
+## 原理
 
-const browser = await chromium.connectOverCDP("http://localhost:9222");
-const context = await browser.newContext();
-const page = await context.newPage();
-await page.goto("https://example.com");
-console.log(await page.title());
-await browser.close();
-```
+浏览器自身执行 JS / DOM，通过协议或内置工具控制导航、点击、填表和提取。内置 Agent 用所选模型做决策，`/save` 可导出 PandaScript，再用 `lightpanda run` 重放；脚本无需模型 token，但仍访问网络和处理动态网页，不能保证业务结果每次相同。
 
-### 4) 用 Puppeteer 连接
-```bash
-npm i puppeteer-core
-```
+HTTP MCP 按 `Mcp-Session-Id` 路由独立浏览会话；相同 ID 可共享 cookies / 页面状态。当前源码拒绝带 Origin 的请求，并检查 Host，但这些浏览器来源防护不是用户认证，session ID 也不是身份凭证。
 
-```js
-import puppeteer from "puppeteer-core";
+## 价值
 
-const browser = await puppeteer.connect({
-  browserURL: "http://localhost:9222",
-});
-const page = await browser.newPage();
-await page.goto("https://example.com");
-console.log(await page.title());
-await browser.close();
-```
+提供从模型探索到可重放脚本的路径，适合抽取、批量操作和确定步骤的自动化。README 展示约 16 倍峰值内存差异、9 倍时间差异，说明对应 AWS m5.large、真实页面抓取基准；这些是作者特定 workload 的数字，本轮没有重跑。
 
-## 原理拆解（工程视角）
+## 风险边界
 
-### 1) 从“全功能桌面浏览器”转为“自动化执行内核”
-Lightpanda 重点优化的是自动化任务常用路径（网络加载、DOM 执行、脚本驱动），而不是桌面交互体验，因此能在内存与启动时延上做更激进的取舍。
+- CDP / MCP 控制面可操作网页与登录状态；保持 loopback / Unix socket，远程服务需另加认证、网络边界和任务权限。会话隔离不能代替多租户授权。
+- 默认发送 usage telemetry；`LIGHTPANDA_DISABLE_TELEMETRY=true` 可关闭。主线源码实际上按环境变量是否存在判定，并在 debug build 中关闭；示例统一显式设 true，避免误解 false 字符串。
+- 事件结构包含运行、导航类型、工具来源 / 结果 / 时长、MCP 客户端类型、模型 provider / model 等元数据。关闭此统计不关闭所选云模型或目标网页的请求；本轮未抓包验证。
+- 网页 API 与完整视觉兼容性须按目标站点实测；`--obey-robots` 是显式选项，能打开网页不代表被授权采集或执行交易。
+- 根许可 AGPL-3.0，嵌入 / 修改 / 提供网络服务时需按实际用法检查义务；主线构建文档要求 Zig 0.17.0，勿套旧版本依赖。
 
-### 2) 以标准协议做生态兼容
-项目通过 Chrome DevTools Protocol（CDP）暴露控制接口，因此可被现有 Playwright/Puppeteer 生态复用，减少“新浏览器 = 新工具链”的替换成本。
+## 补充建议
 
-### 3) 高并发场景优先
-文档强调其适合批量抓取、Agent 网页操作与云端自动化。核心价值是“同等机器资源下能跑更多并发任务”，而不是单次任务极致渲染效果。
+选 20 个授权目标页，对照 Chromium 核提取字段、表单事件、cookie 隔离、失败恢复和真实资源占用；涉及视觉必须另看截图与交互。把最新 X 的单场景 demo、README 抓取 benchmark 和第三方视频标题分开比较，固定网页、脚本、版本及硬件后再谈加速倍数。
 
-### 4) 反爬与真实浏览器差异是天然边界
-因为它不是完整用户态浏览器，在对抗检测严格的网站上可能遇到指纹/行为识别问题，生产中通常要配合代理策略、重试策略与多引擎兜底。
+## 参考资料
 
-## 适用场景
-- AI Agent 的网页检索、填表、下单、后台操作等自动化动作
-- 大规模网页抓取与结构化抽取
-- CI 中的无头页面回归测试
-- 需要在容器环境中低成本并发运行浏览器任务的服务
-
-## 风险与注意点
-1. 对前沿 Web API 的支持度需按目标站点逐个验证。
-2. 与 Chromium 行为并非 100% 完全一致，关键业务流程要做回归测试。
-3. 抓取/自动化必须遵守目标站点的 ToS、robots、隐私和合规要求。
-
-## 参考来源
-- GitHub Trending: https://github.com/trending
-- 项目仓库 README: https://github.com/lightpanda-io/browser
-- 官方网站: https://lightpanda.io
+- [固定 README / 安装、功能与作者基准](https://github.com/lightpanda-io/browser/blob/49d717daba2c694ef1f02889ea49ca02fbb881a6/README.md)。
+- [主线配置与监听参数](https://github.com/lightpanda-io/browser/blob/49d717daba2c694ef1f02889ea49ca02fbb881a6/src/Config.zig)。
+- [MCP 会话及来源校验](https://github.com/lightpanda-io/browser/blob/49d717daba2c694ef1f02889ea49ca02fbb881a6/src/mcp/HttpServer.zig)。
+- [遥测开关与事件定义](https://github.com/lightpanda-io/browser/blob/49d717daba2c694ef1f02889ea49ca02fbb881a6/src/telemetry/telemetry.zig)。
+- [遥测发送实现](https://github.com/lightpanda-io/browser/blob/49d717daba2c694ef1f02889ea49ca02fbb881a6/src/telemetry/lightpanda.zig)。
+- [AGPL-3.0 许可](https://github.com/lightpanda-io/browser/blob/49d717daba2c694ef1f02889ea49ca02fbb881a6/LICENSE)。
