@@ -49,7 +49,7 @@
 
 如果你是第一次进入这个仓库，建议从这几个入口开始：
 
-- 最新日报：[`daily/2026-11-01/ai-hotspots.md`](./daily/2026-11-01/ai-hotspots.md)
+- 最新日报：[`daily/2026-11-02/ai-hotspots.md`](./daily/2026-11-02/ai-hotspots.md)
 - 项目总目录：[`projects/`](./projects/)
 - 自动化约束：[`AGENTS.md`](./AGENTS.md)
 - 开发续接记录：[`TODO.md`](./TODO.md)
@@ -74,6 +74,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `serena` | 为编码 Agent 提供 LSP / JetBrains 语义工具；REPL 权限与分组件 GPL / MIT 许可须分别核。 | [GitHub](https://github.com/oraios/serena) / [解读](./projects/serena/README.md) |
 | `pr-agent` | 社区维护的 PR 审查工具；本地 diff / JSON 与默认评论发布分开管理。 | [GitHub](https://github.com/The-PR-Agent/pr-agent) / [解读](./projects/pr-agent/README.md) |
 | `KiroCrew` | 持久开发工作区与 Gateway 调度；平台相关 sandbox、凭证可见性和日心跳需分别配置。 | [GitHub](https://github.com/kirodotdev/KiroCrew) / [解读](./projects/KiroCrew/README.md) |
 | `OpenMausBot` | 多 provider 机器人团队与电脑工作台；主机权限、Cloud 数据出口和企业许可需分别核。 | [GitHub](https://github.com/milind-soni/OpenMausBot) / [解读](./projects/OpenMausBot/README.md) |
@@ -638,6 +639,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `moonshine` | 端侧流式语音工具包；STT / TTS、历史模型许可、中文 CER 与英文 WER 分开核。 | [GitHub](https://github.com/moonshine-ai/moonshine) / [解读](./projects/moonshine/README.md) |
 | `agent-sprite-forge` | 原画到多动作精灵的生成与后处理链；预算、人工审片与引擎回读分层验收。 | [GitHub](https://github.com/0x0funky/agent-sprite-forge) / [解读](./projects/agent-sprite-forge/README.md) |
 | `sherpa-onnx` | 跨平台端侧语音工具集；识别 / 合成 / VAD / 分离及模型许可逐项确认。 | [GitHub](https://github.com/k2-fsa/sherpa-onnx) / [解读](./projects/sherpa-onnx/README.md) |
 | `Concat` | Rust 本地视频编辑与 MCP；beta、工程锁、API token、媒体和模型授权须核。 | [GitHub](https://github.com/jub0t/Concat) / [解读](./projects/Concat/README.md) |
@@ -725,6 +727,9 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `FreeToken` | 面向消费硬件的 MoE 推理服务；RAM / 带宽、CUDA 主路线、双控制面和 wheel 身份须核。 | [GitHub](https://github.com/FlashML-org/FreeToken) / [解读](./projects/FreeToken/README.md) |
+| `kornia` | PyTorch 可微视觉与几何库；坐标约定、数值、设备 / dtype 支持和性能需逐算子验。 | [GitHub](https://github.com/kornia/kornia) / [解读](./projects/kornia/README.md) |
+| `LiteRT-LM` | LiteRT 端侧 LLM 编排层；SDK 状态、C API 变更、适配模型与硬件后端须匹配。 | [GitHub](https://github.com/google-ai-edge/LiteRT-LM) / [解读](./projects/LiteRT-LM/README.md) |
 | `mesh-llm` | 跨机器汇聚 GPU / 内存并提供兼容 API；发现、令牌、准入和传输加密是不同边界。 | [GitHub](https://github.com/Mesh-LLM/mesh-llm) / [解读](./projects/mesh-llm/README.md) |
 | `nixl` | AI 推理点对点数据传输抽象；GPU / CPU / 存储插件、可信 descriptor 和端到端性能需分别验。 | [GitHub](https://github.com/ai-dynamo/nixl) / [解读](./projects/nixl/README.md) |
 | `cuda-rust` | NVIDIA Rust SIMT / Tile GPU 研究平台；工具链、设备兼容、数值和性能需实测。 | [GitHub](https://github.com/NVIDIA/cuda-rust) / [解读](./projects/cuda-rust/README.md) |
@@ -826,6 +831,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `ai-engineering-hub` | 按难度组织的 RAG / Agent 教程集合；单目录锁依赖、外部服务和独立评估须补齐。 | [GitHub](https://github.com/patchy631/ai-engineering-hub) / [解读](./projects/ai-engineering-hub/README.md) |
 | `prompt-eng-interactive-tutorial` | Anthropic 九章提示词练习；旧模型、key 持久变量及分目录许可须处理。 | [GitHub](https://github.com/anthropics/prompt-eng-interactive-tutorial) / [解读](./projects/prompt-eng-interactive-tutorial/README.md) |
 | `DeepTutor` | 知识、练习与长期学习的 Agent 工作区；全局记忆、代码执行后端和教学效果须分别验证。 | [GitHub](https://github.com/HKUDS/DeepTutor) / [解读](./projects/DeepTutor/README.md) |
 | `micrograd` | 以标量计算图教授反向传播；梯度累加与教学 / 生产性能范围需明确。 | [GitHub](https://github.com/karpathy/micrograd) / [解读](./projects/micrograd/README.md) |
@@ -854,6 +860,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `Kronos` | K 线离散 token 与自回归预测模型；切分交叠、样本窗口及扣费策略评估需独立核。 | [GitHub](https://github.com/shiyu-coder/Kronos) / [解读](./projects/Kronos/README.md) |
 | `anarlog` | 本地优先会议笔记；转写 / 摘要双模型与统计、同步、connectors 独立配置。 | [GitHub](https://github.com/fastrepl/anarlog) / [解读](./projects/anarlog/README.md) |
 | `Orkas` | Commander 协调专业 Agent 与本地 CLI，交付文档 / 视频等；云出口、后台学习和逐任务授权须核。 | [GitHub](https://github.com/Orkas-AI/Orkas) / [解读](./projects/Orkas/README.md) |
 | `AiSOC` | 安全遥测检测、Agent 调查与证据账本；合成回放、真实准确率和响应权限分开验收。 | [GitHub](https://github.com/beenuar/AiSOC) / [解读](./projects/AiSOC/README.md) |
@@ -959,6 +966,7 @@
 
 - 全量项目目录：[`projects/`](./projects/)
 - 最近日报：
+  - [`2026-11-02`](./daily/2026-11-02/ai-hotspots.md)
   - [`2026-11-01`](./daily/2026-11-01/ai-hotspots.md)
   - [`2026-10-31`](./daily/2026-10-31/ai-hotspots.md)
   - [`2026-10-30`](./daily/2026-10-30/ai-hotspots.md)
@@ -1084,10 +1092,10 @@
 ## 当前状态
 
 - 状态：持续日更中。
-- 最新更新：`2026-11-01`。
-- 当前项目总数：`977`。
-- 最近新增项目：`agent-sprite-forge`、`pr-agent`、`a2ui`、`anarlog`、`sherpa-onnx`；
-  本轮另刷新 `lightpanda-browser`。
+- 最新更新：`2026-11-02`。
+- 当前项目总数：`983`。
+- 最近新增项目：`FreeToken`、`kornia`、`ai-engineering-hub`、`serena`、`moonshine`、`LiteRT-LM`；
+  本轮另纠正并刷新 `Kronos`。
 - 覆盖平台：GitHub、X、Instagram、YouTube。
 
 ## 维护约定
