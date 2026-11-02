@@ -49,7 +49,7 @@
 
 如果你是第一次进入这个仓库，建议从这几个入口开始：
 
-- 最新日报：[`daily/2026-11-02/ai-hotspots.md`](./daily/2026-11-02/ai-hotspots.md)
+- 最新日报：[`daily/2026-11-03/ai-hotspots.md`](./daily/2026-11-03/ai-hotspots.md)
 - 项目总目录：[`projects/`](./projects/)
 - 自动化约束：[`AGENTS.md`](./AGENTS.md)
 - 开发续接记录：[`TODO.md`](./TODO.md)
@@ -112,7 +112,7 @@
 | `gortex` | 面向 Coding Agent / IDE 的本地多仓库代码 graph、SQLite 增量索引与 CLI / MCP；作者 benchmark、动态语义和网络可选项须独立验证。 | [GitHub](https://github.com/zzet/gortex) |
 | `claude-code-templates` | Claude Code 的第三方 agents / hooks / MCP / skills / settings 目录与安装器；组件来源、权限、许可和 tunnel 数据边界须逐项审计。 | [GitHub](https://github.com/davila7/claude-code-templates) |
 | `destructive_command_guard` | 在多类 coding-agent 执行前拦截危险 shell / git 命令的 Rust hook；不是 sandbox，且自定义 OpenAI / Anthropic rider 有实质采用限制。 | [GitHub](https://github.com/Dicklesworthstone/destructive_command_guard) |
-| `agent-desktop` | 基于 macOS Accessibility tree、qualified refs、actionability 与 session trace 的桌面 Agent CLI；高权限 UI 动作仍须外部审批。 | [GitHub](https://github.com/lahfir/agent-desktop) |
+| `agent-desktop` | 已迁入 Vercel Labs 的跨平台桌面 CLI；完整 ref、平台契约、56 个可运行命令与可选模型 helper 数据流分别核。 | [GitHub](https://github.com/vercel-labs/agent-desktop) / [解读](./projects/agent-desktop/README.md) |
 | `coder` | 用 Terraform、加密连接、AI Gateway 与审计为开发者和 Coding Agent 供应自托管 workspace；环境存在不等于强隔离。 | [GitHub](https://github.com/coder/coder) |
 | `cc-haha` | 跨平台 Claude Code / Agent 桌面工作台，整合 Worktree、Diff、权限、SubAgent、Computer Use、H5 与 IM；本地优先不等于零外发。 | [GitHub](https://github.com/NanmiCoder/cc-haha) |
 | `freebuff` | 以广告和访问层级支持的 Desktop / CLI / Web / Cloud / Chat coding-agent 产品组；模型路由、OAuth、广告和 data-use 提示须逐次核验。 | [GitHub](https://github.com/CodebuffAI/freebuff) |
@@ -508,6 +508,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `scrapling` | HTTP、浏览器与 spider 采集层；0.5 破坏性迁移、登录会话、写工具与 HTTP MCP 认证须分别核。 | [GitHub](https://github.com/D4Vinci/Scrapling) / [解读](./projects/scrapling/README.md) |
 | `RAG_Techniques` | RAG notebooks 与脚本教材；优先诊断解析 / 分块，注意自定义非商用许可及赞助样例边界。 | [GitHub](https://github.com/NirDiamant/RAG_Techniques) / [解读](./projects/RAG_Techniques/README.md) |
 | `seekdb` | Agent 状态、混合检索与数据分叉；runtime / 主线版本、作者性能结果及库外副作用须核。 | [GitHub](https://github.com/oceanbase/seekdb) / [解读](./projects/seekdb/README.md) |
 | `auto-ontology` | 给 NL-to-SQL 补业务语义与来源；Vault 不完整配置回退明文，查询权限与公开端口须核。 | [GitHub](https://github.com/NVIDIA/auto-ontology) / [解读](./projects/auto-ontology/README.md) |
@@ -576,6 +577,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `doop` | 人与 MCP Agent 共用的 HTML 设计画布；账户权限、脚本演示、Cloud 功能与 AGPL 边界须核。 | [GitHub](https://github.com/kgoedecke/doop) / [解读](./projects/doop/README.md) |
 | `a2ui` | 声明式 Agent UI 格式与 renderer；固定协议 / catalog，业务动作另做授权。 | [GitHub](https://github.com/a2ui-project/a2ui) / [解读](./projects/a2ui/README.md) |
 | `huashu-design` | 用真实参照、多方向初稿和 HTML 管线组织设计；PPTX 编辑性、模板继承与素材许可须分别验收。 | [GitHub](https://github.com/alchaincyf/huashu-design) / [解读](./projects/huashu-design/README.md) |
 | `hallmark` | 用主题、页面任务与浏览器检查约束 AI 网页设计；规则通过不等于审美、转化或功能验收，照片许可独立。 | [GitHub](https://github.com/Nutlope/hallmark) / [解读](./projects/hallmark/README.md) |
@@ -639,6 +641,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `Portable-Local-Studio` | 图像、GGUF 聊天、Whisper 与 Kokoro 本地工作台；首次下载、可选搜索、硬件和模型许可须核。 | [GitHub](https://github.com/techjarves/Portable-Local-Studio) / [解读](./projects/Portable-Local-Studio/README.md) |
 | `moonshine` | 端侧流式语音工具包；STT / TTS、历史模型许可、中文 CER 与英文 WER 分开核。 | [GitHub](https://github.com/moonshine-ai/moonshine) / [解读](./projects/moonshine/README.md) |
 | `agent-sprite-forge` | 原画到多动作精灵的生成与后处理链；预算、人工审片与引擎回读分层验收。 | [GitHub](https://github.com/0x0funky/agent-sprite-forge) / [解读](./projects/agent-sprite-forge/README.md) |
 | `sherpa-onnx` | 跨平台端侧语音工具集；识别 / 合成 / VAD / 分离及模型许可逐项确认。 | [GitHub](https://github.com/k2-fsa/sherpa-onnx) / [解读](./projects/sherpa-onnx/README.md) |
@@ -727,6 +730,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `mlx` | 惰性数组、自动微分与 CPU / GPU 后端；Apple 统一内存、Linux 依赖及求值计时须分别核。 | [GitHub](https://github.com/ml-explore/mlx) / [解读](./projects/mlx/README.md) |
 | `FreeToken` | 面向消费硬件的 MoE 推理服务；RAM / 带宽、CUDA 主路线、双控制面和 wheel 身份须核。 | [GitHub](https://github.com/FlashML-org/FreeToken) / [解读](./projects/FreeToken/README.md) |
 | `kornia` | PyTorch 可微视觉与几何库；坐标约定、数值、设备 / dtype 支持和性能需逐算子验。 | [GitHub](https://github.com/kornia/kornia) / [解读](./projects/kornia/README.md) |
 | `LiteRT-LM` | LiteRT 端侧 LLM 编排层；SDK 状态、C API 变更、适配模型与硬件后端须匹配。 | [GitHub](https://github.com/google-ai-edge/LiteRT-LM) / [解读](./projects/LiteRT-LM/README.md) |
@@ -831,6 +835,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `nn-zero-to-hero` | 从 micrograd 手写反传到 GPT / tokenizer 的代码课程；视频、七个 notebook 与逐课环境分开核。 | [GitHub](https://github.com/karpathy/nn-zero-to-hero) / [解读](./projects/nn-zero-to-hero/README.md) |
 | `ai-engineering-hub` | 按难度组织的 RAG / Agent 教程集合；单目录锁依赖、外部服务和独立评估须补齐。 | [GitHub](https://github.com/patchy631/ai-engineering-hub) / [解读](./projects/ai-engineering-hub/README.md) |
 | `prompt-eng-interactive-tutorial` | Anthropic 九章提示词练习；旧模型、key 持久变量及分目录许可须处理。 | [GitHub](https://github.com/anthropics/prompt-eng-interactive-tutorial) / [解读](./projects/prompt-eng-interactive-tutorial/README.md) |
 | `DeepTutor` | 知识、练习与长期学习的 Agent 工作区；全局记忆、代码执行后端和教学效果须分别验证。 | [GitHub](https://github.com/HKUDS/DeepTutor) / [解读](./projects/DeepTutor/README.md) |
@@ -966,6 +971,7 @@
 
 - 全量项目目录：[`projects/`](./projects/)
 - 最近日报：
+  - [`2026-11-03`](./daily/2026-11-03/ai-hotspots.md)
   - [`2026-11-02`](./daily/2026-11-02/ai-hotspots.md)
   - [`2026-11-01`](./daily/2026-11-01/ai-hotspots.md)
   - [`2026-10-31`](./daily/2026-10-31/ai-hotspots.md)
@@ -1092,10 +1098,10 @@
 ## 当前状态
 
 - 状态：持续日更中。
-- 最新更新：`2026-11-02`。
-- 当前项目总数：`983`。
-- 最近新增项目：`FreeToken`、`kornia`、`ai-engineering-hub`、`serena`、`moonshine`、`LiteRT-LM`；
-  本轮另纠正并刷新 `Kronos`。
+- 最新更新：`2026-11-03`。
+- 当前项目总数：`987`。
+- 最近新增项目：`doop`、`mlx`、`Portable-Local-Studio`、`nn-zero-to-hero`；
+  本轮另刷新 `agent-desktop` 与 `scrapling`。
 - 覆盖平台：GitHub、X、Instagram、YouTube。
 
 ## 维护约定

@@ -1,63 +1,62 @@
-<!-- markdownlint-disable MD013 MD034 -->
+<!-- markdownlint-disable MD013 -->
 
-# agent-desktop：基于系统无障碍树的 Agent 桌面控制 CLI
+# agent-desktop：以无障碍树观察和操作桌面的 CLI
 
-> 上游仓库：https://github.com/lahfir/agent-desktop · 归类：Coding Agents 与终端助手 · 本页基于 2026-09-21 的 README、Concepts、release、许可证与 REST API 静态整理；未安装二进制、授予 macOS 权限或执行真实桌面动作。注意它与仓库已收录的 Solo.io `agentdesktop` 不是同一项目。
+- 上游：[vercel-labs/agent-desktop](https://github.com/vercel-labs/agent-desktop)；分类：Coding Agents 与终端助手。
+- 更新：2026-11-03（Asia/Shanghai）；固定主线 SHA：`060c83af4be63096de33fc22d79fb9c4d02f528e`。
+- 热度快照：综合 daily +2,243；API 9,469 stars / 642 forks / 122 open issues（含 PR）。最新发行 v1.0.2，UTC 2026-10-30。
+- 证据：官方 Trending / API 与固定源码静态核读；下文用法供复核，不表示本轮已运行。
 
 ## 定位
 
-`lahfir/agent-desktop` 是面向通用 AI Agent 的桌面自动化 CLI / Rust 库。它优先读取 macOS Accessibility tree，用带 snapshot 身份的 element refs 观察和操作原生应用；截图、物理鼠标与 CDP 是补充路径，而不是把所有界面动作都退化成像素坐标猜测。
+agent-desktop 为 Agent 提供桌面观察与动作 CLI / C 库，主路径是操作系统无障碍树，配合截图、窗口和剪贴板能力。循环由宿主 Agent 负责：观察、按 ref 操作、再次观察。
 
-2026-09-21 的 GitHub 官方 Rust Trending 抓取显示约 `+41 stars today`；REST API 快照为 `1,334 stars / 88 forks / 22 open issues`，Apache-2.0，最新 release 为 `v0.9.2`（9 月 17 日）。
+本页从原 lahfir/agent-desktop 原位更新。旧 API 返回 Moved Permanently 并指向 repository ID 1161958643，新 vercel-labs API 返回同一 ID；v1.0.2 发行记录也明确提及组织迁移，因此没有另建目录。它仍与 Solo.io 的 agentdesktop 不同。
 
 ## 用法
 
-上游推荐通过 npm 安装预构建二进制；macOS 需要按功能授予 Accessibility、Screen Recording 和 Automation 权限：
-
 ```sh
 npm install -g agent-desktop
-agent-desktop permissions
-agent-desktop snapshot --app Finder -i --compact
-agent-desktop click @s8f3k2p9:e3
+agent-desktop version
+agent-desktop skills get desktop
+agent-desktop skills get platform
+agent-desktop list-apps
+agent-desktop snapshot --app Finder -i
 ```
 
-复杂应用可先做 skeleton snapshot，再按局部 ref 深入；高后果操作前应固定 session、保存 trace，并在动作后重新 snapshot 回读状态。
+示例 Finder 适用于 macOS。动作要使用本次快照实际返回的完整 ref，不能复制文档占位 ref；动作后重新 snapshot 回读。macOS 用 permissions --guide 按需授予权限；Windows 受进程 integrity level 限制，Linux 需要用户图形会话和 AT-SPI。官方 Homebrew / Scoop 默认目录包仍在提交，不能照旧假设已经可用。
 
 ## 原理
 
-- platform adapter 将 macOS Accessibility 元素规范化为带 role、name、bounds 与稳定证据的树。
-- snapshot 生成带 ID 的命名空间；qualified ref 同时包含 snapshot 与 element 身份，避免并发或新快照下把裸序号误用到另一元素。
-- 动作前执行 visibility、stability、enabled、supported action、policy 与 editability 等 actionability 检查；歧义目标返回错误而不是任意点击。
-- session 把多进程 trace、截图和 refs 收到同一运行记录；多 Agent 仍须为各自快照 pin qualified refs 并协调共享桌面。
-- Chromium 应用可由 `launch --cdp` 暴露只绑定 `127.0.0.1` 的 DevTools endpoint；原生菜单、窗口和系统对话框继续走无障碍路径。
+- 每次 CLI 调用独立进程；平台 adapter 将 macOS AX、Windows UIA、Linux AT-SPI 结果归一成 JSON envelope。
+- Ref 包含 snapshot 身份。裸 @e8 被拒绝；STALE_REF / AMBIGUOUS_TARGET 要重新观察或指定 window-id。
+- 默认 headless 阻止前台激活与合成输入，--headed 才开放物理输入；这是一类副作用约束。
+- 当前 README 区分 60 个命令名与 56 个可运行命令；四个持续按住键 / 鼠标的命令要等能够释放输入的 daemon，当前拒绝运行。
 
 ## 价值
 
-- 结构化树和 JSON error contract 比纯视觉坐标更适合可重试、可审计的 Agent loop。
-- skeleton / scoped traversal 可压缩密集桌面 UI 的上下文体积；上游给出的 78--96% token 降幅仍需在目标应用复现。
-- CLI、C ABI 与 bundled skill 可让不同语言和 Agent 宿主复用同一操作协议。
-- trace export、session namespace 和 stale-ref recovery 为桌面任务提供比“录屏证明”更细的过程证据。
+结构化元素身份、错误 disposition、局部 skeleton 和动作后回读可减少盲点与错误重试。原生 archive 可绕过 JS launcher 的逐次启动开销；实际收益仍需同一应用、任务和日志条件比较。
 
 ## 风险边界
 
-- Accessibility、Screen Recording、Automation 与 CDP 都是高权限能力；结构化 refs 不会自动限制 Agent 可读、可写或可发送的内容。
-- 默认 headless 只减少静默焦点 / 鼠标副作用，不等于 OS sandbox、应用级授权或业务动作审批。
-- 本地 `127.0.0.1` CDP endpoint 对同用户本地进程仍可达；会话 trace 和截图可能包含密码、通知、客户信息或私有代码。
-- macOS 是当前完整支持面，Windows / Linux 多项能力仍标为 planned；跨平台包存在不等于功能等价。
-- 上游 token 降幅、稳定 ref 与安全重试是项目自报能力，本页未在 Finder、Slack、VS Code 或系统对话框上实测。
+- 无障碍、截图、剪贴板和通知可读写真实桌面数据；headless 不构成 OS sandbox 或业务审批。
+- 现有 macOS / Windows / Linux 支持表已比旧页完整，但 Linux X11 / Wayland、GNOME 和系统 shell 能力不同，不能视为功能完全一致。
+- 快照、trace、截图和 debug HTML 可含私密信息。可选 JEV helper 会将屏幕描述发给配置的模型 provider，不能把原生 CLI 与该 helper 的数据流混为一谈。
+- 包括远端 model provider 在内的宿主 Agent 权限不会因 CLI 使用结构化 ref 自动降低。C ABI 还需核版本、内存所有权与线程约定。
+- Apache-2.0。本轮没有安装工具、授予权限、操作桌面或测试跨平台行为。
 
 ## 补充建议
 
-1. 从专用 macOS 测试用户、无真实账号的副本应用和只读动作开始，逐项授予权限。
-2. 为 delete、send、publish、purchase、credential 等后果性动作增加外部 policy gate 与人工确认。
-3. 每次动作保存前后 snapshot、command、result 与窗口身份；遇到 `STALE_REF` 或 `AMBIGUOUS_TARGET` 先重观测，不盲目重试。
-4. 将 trace / screenshot 当敏感日志管理，设置脱敏、最小访问、TTL 和安全删除。
+1. 先用专用测试用户和只读 snapshot 验证目标应用的树覆盖、权限与错误恢复。
+2. 对发送、删除、支付、发布等动作保留宿主侧审批，并记录动作前后窗口与状态。
+3. 为 trace / screenshot 设访问与保留期限；共享桌面上协调多 Agent，避免焦点和窗口竞争。
 
 ## 参考资料
 
-- 上游 README：https://github.com/lahfir/agent-desktop
-- Concepts：https://github.com/lahfir/agent-desktop/blob/main/CONCEPTS.md
-- 安全策略：https://github.com/lahfir/agent-desktop/blob/main/SECURITY.md
-- `v0.9.2` release：https://github.com/lahfir/agent-desktop/releases/tag/v0.9.2
-- GitHub REST API：https://api.github.com/repos/lahfir/agent-desktop
-- LICENSE：https://github.com/lahfir/agent-desktop/blob/main/LICENSE
+- [README.md](https://github.com/vercel-labs/agent-desktop/blob/060c83af4be63096de33fc22d79fb9c4d02f528e/README.md)。
+- [docs/install.md](https://github.com/vercel-labs/agent-desktop/blob/060c83af4be63096de33fc22d79fb9c4d02f528e/docs/install.md)。
+- [docs/faq.md](https://github.com/vercel-labs/agent-desktop/blob/060c83af4be63096de33fc22d79fb9c4d02f528e/docs/faq.md)。
+- [SECURITY.md](https://github.com/vercel-labs/agent-desktop/blob/060c83af4be63096de33fc22d79fb9c4d02f528e/SECURITY.md)。
+- [Cargo.toml](https://github.com/vercel-labs/agent-desktop/blob/060c83af4be63096de33fc22d79fb9c4d02f528e/Cargo.toml)。
+- [LICENSE](https://github.com/vercel-labs/agent-desktop/blob/060c83af4be63096de33fc22d79fb9c4d02f528e/LICENSE)。
+- [仓库 API](https://api.github.com/repos/vercel-labs/agent-desktop)；[发行记录](https://github.com/vercel-labs/agent-desktop/releases/tag/v1.0.2)。
