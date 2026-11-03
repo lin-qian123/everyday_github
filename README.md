@@ -49,7 +49,7 @@
 
 如果你是第一次进入这个仓库，建议从这几个入口开始：
 
-- 最新日报：[`daily/2026-11-03/ai-hotspots.md`](./daily/2026-11-03/ai-hotspots.md)
+- 最新日报：[`daily/2026-11-04/ai-hotspots.md`](./daily/2026-11-04/ai-hotspots.md)
 - 项目总目录：[`projects/`](./projects/)
 - 自动化约束：[`AGENTS.md`](./AGENTS.md)
 - 开发续接记录：[`TODO.md`](./TODO.md)
@@ -119,7 +119,7 @@
 | `gentle-ai` | 为 16 类既有 coding agents 配置 memory、ODD / SDD、skills 和 opt-in review；用户级写入、恢复与 telemetry 须独立审计。 | [GitHub](https://github.com/Gentleman-Programming/gentle-ai) |
 | `AI-Engineering-Coach` | 本地解析多类 coding-agent session，以规则和仪表盘观察实践模式；score 不是绩效或代码质量证明。 | [GitHub](https://github.com/microsoft/AI-Engineering-Coach) |
 | `git-ai` | 用 agent checkpoint 与 Git Notes 记录行级 AI 代码归因；Notes 身份、默认错误遥测和 cloud 上传须治理。 | [GitHub](https://github.com/git-ai-project/git-ai) |
-| `worktrunk` | 面向并行 coding agents 的 Git worktree CLI，统一 create/list/merge/remove、hooks 与 cache；worktree 不等于系统权限或凭据隔离。 | [GitHub](https://github.com/max-sixty/worktrunk) |
+| `worktrunk` | 并行 coding agents 的 Git worktree CLI；v0.81 hook / stdin 迁移、默认暂存与合并需核，目录隔离不替代权限隔离。 | [GitHub](https://github.com/max-sixty/worktrunk) / [解读](./projects/worktrunk/README.md) |
 | `webcodex` | 通过 MCP/HTTPS Server 与本地 Runner，让 cloud agent 使用真实 checkout、Git 和 toolchain；代码在本机不等于内容不外发，tunnel 也不收窄执行权限。 | [GitHub](https://github.com/yyjeqhc/webcodex) |
 | `PI-Desktop` | Electron + Rust host core + pi sidecar 的 local-first coding-agent 桌面工作区；Early Preview、插件信任和云端 provider 数据流须独立治理。 | [GitHub](https://github.com/vastsa/PI-Desktop) |
 | `prime-agent` | 以 RLM、持久 Python REPL、subagents 与 continual harness 支撑长时程任务；生成代码以用户权限运行，生命周期隔离不是 sandbox。 | [GitHub](https://github.com/PrimeIntellect-ai/prime-agent) |
@@ -193,6 +193,9 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `sandcastle` | TypeScript 编排 coding agents 与原生 / 云 sandbox；网络、凭据、分支默认和自动合并须分别核对。 | [GitHub](https://github.com/mattpocock/sandcastle) / [解读](./projects/sandcastle/README.md) |
+| `nature-skills` | 论文阅读、写作与图件技能库；完整共享依赖、来源、安装更新与评估范围需核对。 | [GitHub](https://github.com/Yuan1z0825/nature-skills) / [解读](./projects/nature-skills/README.md) |
+| `SimpleEnglish` | 用受控语言规则约束英文技术写作；技能 / hook、旧版格式指标与读者理解分开评估。 | [GitHub](https://github.com/AminBlg/SimpleEnglish) / [解读](./projects/SimpleEnglish/README.md) |
 | `deepagents` | LangGraph 上的长任务 harness；默认状态文件、宿主执行与真正 sandbox 的边界要分清。 | [GitHub](https://github.com/langchain-ai/deepagents) / [解读](./projects/deepagents/README.md) |
 | `infinity` | Rust 消息驱动 Agent runtime / RAP；FIFO、持久存储与外部动作幂等须独立验收。 | [GitHub](https://github.com/hydro-project/infinity) / [解读](./projects/infinity/README.md) |
 | `impeccable` | 设计词汇、24 命令与确定性 detector；安装 hook、catalog 联网和视觉验收须核。 | [GitHub](https://github.com/pbakaus/impeccable) / [解读](./projects/impeccable/README.md) |
@@ -730,6 +733,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `jan` | 本地模型桌面工作台与兼容 API；云模型、工具权限、Trusted Hosts 和分层统计须分别核。 | [GitHub](https://github.com/janhq/jan) / [解读](./projects/jan/README.md) |
 | `mlx` | 惰性数组、自动微分与 CPU / GPU 后端；Apple 统一内存、Linux 依赖及求值计时须分别核。 | [GitHub](https://github.com/ml-explore/mlx) / [解读](./projects/mlx/README.md) |
 | `FreeToken` | 面向消费硬件的 MoE 推理服务；RAM / 带宽、CUDA 主路线、双控制面和 wheel 身份须核。 | [GitHub](https://github.com/FlashML-org/FreeToken) / [解读](./projects/FreeToken/README.md) |
 | `kornia` | PyTorch 可微视觉与几何库；坐标约定、数值、设备 / dtype 支持和性能需逐算子验。 | [GitHub](https://github.com/kornia/kornia) / [解读](./projects/kornia/README.md) |
@@ -865,6 +869,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `ai-goofish-monitor` | 闲鱼多任务采集、关键词 / AI 筛选和通知；前端登录不代表 API 鉴权，SQLite / 镜像升级须核对。 | [GitHub](https://github.com/Usagi-org/ai-goofish-monitor) / [解读](./projects/ai-goofish-monitor/README.md) |
 | `Kronos` | K 线离散 token 与自回归预测模型；切分交叠、样本窗口及扣费策略评估需独立核。 | [GitHub](https://github.com/shiyu-coder/Kronos) / [解读](./projects/Kronos/README.md) |
 | `anarlog` | 本地优先会议笔记；转写 / 摘要双模型与统计、同步、connectors 独立配置。 | [GitHub](https://github.com/fastrepl/anarlog) / [解读](./projects/anarlog/README.md) |
 | `Orkas` | Commander 协调专业 Agent 与本地 CLI，交付文档 / 视频等；云出口、后台学习和逐任务授权须核。 | [GitHub](https://github.com/Orkas-AI/Orkas) / [解读](./projects/Orkas/README.md) |
@@ -971,6 +976,7 @@
 
 - 全量项目目录：[`projects/`](./projects/)
 - 最近日报：
+  - [`2026-11-04`](./daily/2026-11-04/ai-hotspots.md)
   - [`2026-11-03`](./daily/2026-11-03/ai-hotspots.md)
   - [`2026-11-02`](./daily/2026-11-02/ai-hotspots.md)
   - [`2026-11-01`](./daily/2026-11-01/ai-hotspots.md)
@@ -1098,10 +1104,10 @@
 ## 当前状态
 
 - 状态：持续日更中。
-- 最新更新：`2026-11-03`。
-- 当前项目总数：`987`。
-- 最近新增项目：`doop`、`mlx`、`Portable-Local-Studio`、`nn-zero-to-hero`；
-  本轮另刷新 `agent-desktop` 与 `scrapling`。
+- 最新更新：`2026-11-04`。
+- 当前项目总数：`992`。
+- 最近新增项目：`ai-goofish-monitor`、`sandcastle`、`nature-skills`、`SimpleEnglish`、`jan`；
+  本轮另刷新 `worktrunk`。
 - 覆盖平台：GitHub、X、Instagram、YouTube。
 
 ## 维护约定

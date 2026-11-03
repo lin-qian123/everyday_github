@@ -2,7 +2,7 @@
 
 # Worktrunk（max-sixty/worktrunk）中文解读
 
-> 证据快照：2026-09-13（Asia/Shanghai）。GitHub REST API 显示 7,211 stars、256 forks、39 open issues，最新 release 为 `v0.77.0`。API 许可证字段为 `NOASSERTION`，根 `LICENSE` 明确允许用户在 MIT 或 Apache-2.0 中任选其一。本文未安装 CLI、创建 worktree、执行 hook 或合并分支。
+> 证据快照：2026-11-04（Asia/Shanghai）。综合 daily +437；GitHub API 为 10,457 stars / 375 forks / 66 open issues（含 PR），最新发行 v0.81.0，UTC 2026-10-20。固定 main SHA：`786978fdbb6aea461336bba6653c4d47e53b4c4f`。API 许可仍为 NOASSERTION，根 LICENSE 为 MIT OR Apache-2.0。本文为文档 / 源码静态核读，未安装 CLI、创建 worktree、执行 hook 或合并分支。
 
 ## 定位
 
@@ -17,17 +17,17 @@ macOS/Linux 可用 Homebrew 安装并启用 shell 集成：
 ```bash
 brew install worktrunk
 wt config shell install
-wt switch --create feature-auth
+wt switch --no-hooks --create feature-auth
 wt list
 ```
 
-也可用 Cargo 安装。并行 agent 示例通过 `wt switch -x <agent> -c <branch> -- '<prompt>'` 创建 worktree 后启动命令；正式项目中应先在测试仓库检查路径模板、hook、base branch 与 remove/merge 行为。
+也可用 Cargo 安装；Windows 需留意 Windows Terminal 的 wt 命令冲突，上游提供 git-wt。此处安装会修改本机和 shell 配置，命令仅供复核。并行 agent 示例通过 `wt switch -x <agent> -c <branch> -- '<prompt>'` 创建 worktree 后启动命令；先在测试仓库检查路径模板、hook、base branch 与 remove/merge 行为。
 
 ## 原理
 
 - 分支名映射到可配置 worktree 路径，shell integration 让 `wt switch` 能改变当前目录。
 - `wt list` 汇总脏文件、ahead/behind、remote、commit、CI 和可选 AI summary，形成多 worktree 状态面板。
-- hook 可在 create、start、pre/post-merge 等阶段执行依赖安装、服务启动、校验或清理命令。
+- `pre-*` hook 阻塞且失败中止操作；`post-*` 默认后台执行，日志单独查看。一个表的多个命令并行，多个 `[[hook]]` 块依次执行，避免把启动完成误认为后台构建完成。
 - `wt merge` 可组合提交、rebase/fast-forward、合并和后台清理；`wt step` 暴露更细的可组合操作。
 - APFS、btrfs、XFS 上可复制 ignored build cache，减少多个 worktree 重复安装/构建。
 
@@ -44,21 +44,21 @@ wt list
 - `wt merge`、自动提交、LLM commit message 与清理会修改 Git 状态；错误 base、hook 或未审 diff 可把问题快速带入主分支。
 - 复制 ignored cache 能传播损坏或被污染的依赖/构建产物；不同分支未必兼容同一 cache。
 - hooks 和 aliases 是命令执行供应链；从仓库或团队配置继承后必须像 CI 脚本一样审计。
+- 项目 hook 首次运行需批准，命令改变后重批；用户 hook 不需此批准。--yes 会绕过提示，--no-hooks 用于明确跳过。拒绝项目命令后操作仍可继续，不能据此认为初始化成功。
+- v0.81.0 的串行前台 hook 继承 stdin，能交互；并发 / 后台 hook 读到 EOF。旧版把上下文 JSON 放 stdin 的接口已移除，应改模板参数 / tojson；这会影响已有自动化。
+- wt merge 默认 squash，并按 --stage all 把工作区变更纳入，随后 rebase、前台 hook、fast-forward 和清理；卷入的工作区变化会先备份到 refs/wt-backup，但仍须先审查 diff，尤其不能混入他人编辑。冲突可能留下待处理的 rebase。
 - API 未识别 SPDX 不等于无许可；实际根文件是 MIT OR Apache-2.0，但依赖与发行包仍应分别检查。
 
 ## 补充建议
 
-1. 先在可丢弃仓库验证 create/list/remove，默认关闭自动 merge、LLM commit 和第三方 hooks。
+1. 先在可丢弃仓库用 --no-hooks 验证 create/list/remove，再逐条审查和启用 hook；自动 merge 与 LLM commit 另行决定。
 2. 每个 agent 使用独立端口、测试数据库和最小凭据；不要让 worktree 路径隔离替代系统权限隔离。
 3. 合并前执行 `git status`、diff、测试与人工 review，并确认主分支、remote 和未推送提交。
 4. 对 cache、hook、shell integration 与配置文件固定版本，记录失败恢复和残留 worktree 的清理流程。
 
 ## 参考资料
 
-- GitHub：<https://github.com/max-sixty/worktrunk>
-- GitHub REST API：<https://api.github.com/repos/max-sixty/worktrunk>
-- Releases：<https://github.com/max-sixty/worktrunk/releases>
-- 官方文档：<https://worktrunk.dev>
-- Git worktree 文档：<https://git-scm.com/docs/git-worktree>
-- 上游发布 X 帖：<https://x.com/max_sixty/status/2006077845391724739>
-- LICENSE：<https://github.com/max-sixty/worktrunk/blob/main/LICENSE>
+- [仓库](https://github.com/max-sixty/worktrunk)、[API](https://api.github.com/repos/max-sixty/worktrunk)、[v0.81.0](https://github.com/max-sixty/worktrunk/releases/tag/v0.81.0)。
+- [固定 README 与平台安装](https://github.com/max-sixty/worktrunk/blob/786978fdbb6aea461336bba6653c4d47e53b4c4f/README.md)。
+- [Hook 生命周期、批准和交互](https://github.com/max-sixty/worktrunk/blob/786978fdbb6aea461336bba6653c4d47e53b4c4f/docs/src/content/docs/hook.md)。
+- [Merge 管线与默认暂存](https://github.com/max-sixty/worktrunk/blob/786978fdbb6aea461336bba6653c4d47e53b4c4f/docs/src/content/docs/merge.md)、[LICENSE](https://github.com/max-sixty/worktrunk/blob/786978fdbb6aea461336bba6653c4d47e53b4c4f/LICENSE)。
