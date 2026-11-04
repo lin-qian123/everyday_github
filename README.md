@@ -49,7 +49,7 @@
 
 如果你是第一次进入这个仓库，建议从这几个入口开始：
 
-- 最新日报：[`daily/2026-11-04/ai-hotspots.md`](./daily/2026-11-04/ai-hotspots.md)
+- 最新日报：[`daily/2026-11-05/ai-hotspots.md`](./daily/2026-11-05/ai-hotspots.md)
 - 项目总目录：[`projects/`](./projects/)
 - 自动化约束：[`AGENTS.md`](./AGENTS.md)
 - 开发续接记录：[`TODO.md`](./TODO.md)
@@ -193,6 +193,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `open-duet` | 具名 AI 同事、记忆与审批工作区；桌面账号、单 owner 自托管、可选电脑和实验功能须分别验收。 | [GitHub](https://github.com/Anil-matcha/open-duet) / [解读](./projects/open-duet/README.md) |
 | `sandcastle` | TypeScript 编排 coding agents 与原生 / 云 sandbox；网络、凭据、分支默认和自动合并须分别核对。 | [GitHub](https://github.com/mattpocock/sandcastle) / [解读](./projects/sandcastle/README.md) |
 | `nature-skills` | 论文阅读、写作与图件技能库；完整共享依赖、来源、安装更新与评估范围需核对。 | [GitHub](https://github.com/Yuan1z0825/nature-skills) / [解读](./projects/nature-skills/README.md) |
 | `SimpleEnglish` | 用受控语言规则约束英文技术写作；技能 / hook、旧版格式指标与读者理解分开评估。 | [GitHub](https://github.com/AminBlg/SimpleEnglish) / [解读](./projects/SimpleEnglish/README.md) |
@@ -511,10 +512,11 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `Horizon` | 用 Profile 配置多源采集、筛选和双语日报；历史摘要不是独立证据，模型与投递出口须核。 | [GitHub](https://github.com/Thysrael/Horizon) / [解读](./projects/Horizon/README.md) |
 | `scrapling` | HTTP、浏览器与 spider 采集层；0.5 破坏性迁移、登录会话、写工具与 HTTP MCP 认证须分别核。 | [GitHub](https://github.com/D4Vinci/Scrapling) / [解读](./projects/scrapling/README.md) |
 | `RAG_Techniques` | RAG notebooks 与脚本教材；优先诊断解析 / 分块，注意自定义非商用许可及赞助样例边界。 | [GitHub](https://github.com/NirDiamant/RAG_Techniques) / [解读](./projects/RAG_Techniques/README.md) |
 | `seekdb` | Agent 状态、混合检索与数据分叉；runtime / 主线版本、作者性能结果及库外副作用须核。 | [GitHub](https://github.com/oceanbase/seekdb) / [解读](./projects/seekdb/README.md) |
-| `auto-ontology` | 给 NL-to-SQL 补业务语义与来源；Vault 不完整配置回退明文，查询权限与公开端口须核。 | [GitHub](https://github.com/NVIDIA/auto-ontology) / [解读](./projects/auto-ontology/README.md) |
+| `auto-ontology` | 给 NL-to-SQL 补业务语义与来源；用户级 MCP OAuth、后端信任头与无认证 ingestion 的私网边界须核。 | [GitHub](https://github.com/NVIDIA/auto-ontology) / [解读](./projects/auto-ontology/README.md) |
 | `onyx` | 连接企业资料的 RAG 与 Agent 平台；Standard 才能索引，CE 与 EE 权限同步能力须区分。 | [GitHub](https://github.com/onyx-dot-app/onyx) / [解读](./projects/onyx/README.md) |
 | `graphify` | 将代码与资料转为可查询图谱；旧 owner 已迁移，需区分本地 AST、语义模型与 Cloud 数据流。 | [GitHub](https://github.com/Graphify-Labs/graphify) / [解读](./projects/graphify/README.md) |
 | `Scrapegraph-ai` | 用图式流水线与 LLM 从网页 / 文档提取结构化数据；默认内容遥测、数据出口和结果准确性须核。 | [GitHub](https://github.com/ScrapeGraphAI/Scrapegraph-ai) / [解读](./projects/Scrapegraph-ai/README.md) |
@@ -644,6 +646,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `remote-mic-app` | SayAll 蓝牙遥控器语音入口与可选只读历史 MCP；候选能力、第三方转写、授权与模型外发分开核。 | [GitHub](https://github.com/HD838A/remote-mic-app) / [解读](./projects/remote-mic-app/README.md) |
 | `Portable-Local-Studio` | 图像、GGUF 聊天、Whisper 与 Kokoro 本地工作台；首次下载、可选搜索、硬件和模型许可须核。 | [GitHub](https://github.com/techjarves/Portable-Local-Studio) / [解读](./projects/Portable-Local-Studio/README.md) |
 | `moonshine` | 端侧流式语音工具包；STT / TTS、历史模型许可、中文 CER 与英文 WER 分开核。 | [GitHub](https://github.com/moonshine-ai/moonshine) / [解读](./projects/moonshine/README.md) |
 | `agent-sprite-forge` | 原画到多动作精灵的生成与后处理链；预算、人工审片与引擎回读分层验收。 | [GitHub](https://github.com/0x0funky/agent-sprite-forge) / [解读](./projects/agent-sprite-forge/README.md) |
@@ -733,6 +736,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `kimi-k3-in-c` | C99 CPU 推理以磁盘流式读取换低 RSS；约 1.7 TB 存储、124 CPU 基准和单 token 记录须带条件解读。 | [GitHub](https://github.com/FareedKhan-dev/kimi-k3-in-c) / [解读](./projects/kimi-k3-in-c/README.md) |
 | `jan` | 本地模型桌面工作台与兼容 API；云模型、工具权限、Trusted Hosts 和分层统计须分别核。 | [GitHub](https://github.com/janhq/jan) / [解读](./projects/jan/README.md) |
 | `mlx` | 惰性数组、自动微分与 CPU / GPU 后端；Apple 统一内存、Linux 依赖及求值计时须分别核。 | [GitHub](https://github.com/ml-explore/mlx) / [解读](./projects/mlx/README.md) |
 | `FreeToken` | 面向消费硬件的 MoE 推理服务；RAM / 带宽、CUDA 主路线、双控制面和 wheel 身份须核。 | [GitHub](https://github.com/FlashML-org/FreeToken) / [解读](./projects/FreeToken/README.md) |
@@ -976,6 +980,7 @@
 
 - 全量项目目录：[`projects/`](./projects/)
 - 最近日报：
+  - [`2026-11-05`](./daily/2026-11-05/ai-hotspots.md)
   - [`2026-11-04`](./daily/2026-11-04/ai-hotspots.md)
   - [`2026-11-03`](./daily/2026-11-03/ai-hotspots.md)
   - [`2026-11-02`](./daily/2026-11-02/ai-hotspots.md)
@@ -1104,10 +1109,10 @@
 ## 当前状态
 
 - 状态：持续日更中。
-- 最新更新：`2026-11-04`。
-- 当前项目总数：`992`。
-- 最近新增项目：`ai-goofish-monitor`、`sandcastle`、`nature-skills`、`SimpleEnglish`、`jan`；
-  本轮另刷新 `worktrunk`。
+- 最新更新：`2026-11-05`。
+- 当前项目总数：`996`。
+- 最近新增项目：`kimi-k3-in-c`、`Horizon`、`open-duet`、`remote-mic-app`；
+  本轮原位刷新 `auto-ontology`。
 - 覆盖平台：GitHub、X、Instagram、YouTube。
 
 ## 维护约定
