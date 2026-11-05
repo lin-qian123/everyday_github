@@ -49,7 +49,7 @@
 
 如果你是第一次进入这个仓库，建议从这几个入口开始：
 
-- 最新日报：[`daily/2026-11-05/ai-hotspots.md`](./daily/2026-11-05/ai-hotspots.md)
+- 最新日报：[`daily/2026-11-06/ai-hotspots.md`](./daily/2026-11-06/ai-hotspots.md)
 - 项目总目录：[`projects/`](./projects/)
 - 自动化约束：[`AGENTS.md`](./AGENTS.md)
 - 开发续接记录：[`TODO.md`](./TODO.md)
@@ -193,6 +193,8 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `switch` | 将聊天频道连接人与 Agent 的 room；稳定包、执行器权限、默认遥测与 Commons Clause 须分别核。 | [GitHub](https://github.com/sandbox-quantum/switch) / [解读](./projects/switch/README.md) |
+| `gemini-skills` | 四个 Gemini API 开发技能；动态文档、CLI 凭据、云端存储与视频上限冲突需核。 | [GitHub](https://github.com/google-gemini/gemini-skills) / [解读](./projects/gemini-skills/README.md) |
 | `open-duet` | 具名 AI 同事、记忆与审批工作区；桌面账号、单 owner 自托管、可选电脑和实验功能须分别验收。 | [GitHub](https://github.com/Anil-matcha/open-duet) / [解读](./projects/open-duet/README.md) |
 | `sandcastle` | TypeScript 编排 coding agents 与原生 / 云 sandbox；网络、凭据、分支默认和自动合并须分别核对。 | [GitHub](https://github.com/mattpocock/sandcastle) / [解读](./projects/sandcastle/README.md) |
 | `nature-skills` | 论文阅读、写作与图件技能库；完整共享依赖、来源、安装更新与评估范围需核对。 | [GitHub](https://github.com/Yuan1z0825/nature-skills) / [解读](./projects/nature-skills/README.md) |
@@ -447,6 +449,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `dsh-memory-evolve` | DSH 分轨记忆、技能与会话评审插件；写入确认差异、公开 Git 远端与宿主版本须核。 | [GitHub](https://github.com/csyangwen/dsh-memory-evolve) / [解读](./projects/dsh-memory-evolve/README.md) |
 | `QwenPaw` | 多渠道 Agent 工作站与 ReMe 记忆；运行期遥测、插件权限和内置素材许可须核。 | [GitHub](https://github.com/agentscope-ai/QwenPaw) / [解读](./projects/QwenPaw/README.md) |
 | `obsidian-second-brain` | 多宿主技能维护 Markdown 知识库；云模型出口、并发写入、索引新鲜度和恢复须核。 | [GitHub](https://github.com/eugeniughelbur/obsidian-second-brain) / [解读](./projects/obsidian-second-brain/README.md) |
 | `ds-harness-remote` | 多设备延续 Harness / Codex 工作区；默认远程终端与 E2EE 文档差异须核。 | [GitHub](https://github.com/liguobao/ds-harness-remote) / [解读](./projects/ds-harness-remote/README.md) |
@@ -582,6 +585,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `figma-console-mcp` | 设计 token / 组件读写与一致性检查；本地 / 云模式、PAT 范围与桥插件版本须分开。 | [GitHub](https://github.com/southleft/figma-console-mcp) / [解读](./projects/figma-console-mcp/README.md) |
 | `doop` | 人与 MCP Agent 共用的 HTML 设计画布；账户权限、脚本演示、Cloud 功能与 AGPL 边界须核。 | [GitHub](https://github.com/kgoedecke/doop) / [解读](./projects/doop/README.md) |
 | `a2ui` | 声明式 Agent UI 格式与 renderer；固定协议 / catalog，业务动作另做授权。 | [GitHub](https://github.com/a2ui-project/a2ui) / [解读](./projects/a2ui/README.md) |
 | `huashu-design` | 用真实参照、多方向初稿和 HTML 管线组织设计；PPTX 编辑性、模板继承与素材许可须分别验收。 | [GitHub](https://github.com/alchaincyf/huashu-design) / [解读](./projects/huashu-design/README.md) |
@@ -646,6 +650,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `video2x` | C++ 视频超分与插帧流水线；Vulkan、AVX2、历史演示和生成伪影需单独验收。 | [GitHub](https://github.com/k4yt3x/video2x) / [解读](./projects/video2x/README.md) |
 | `remote-mic-app` | SayAll 蓝牙遥控器语音入口与可选只读历史 MCP；候选能力、第三方转写、授权与模型外发分开核。 | [GitHub](https://github.com/HD838A/remote-mic-app) / [解读](./projects/remote-mic-app/README.md) |
 | `Portable-Local-Studio` | 图像、GGUF 聊天、Whisper 与 Kokoro 本地工作台；首次下载、可选搜索、硬件和模型许可须核。 | [GitHub](https://github.com/techjarves/Portable-Local-Studio) / [解读](./projects/Portable-Local-Studio/README.md) |
 | `moonshine` | 端侧流式语音工具包；STT / TTS、历史模型许可、中文 CER 与英文 WER 分开核。 | [GitHub](https://github.com/moonshine-ai/moonshine) / [解读](./projects/moonshine/README.md) |
@@ -712,7 +717,7 @@
 | `Pixelle-Video` | 视频生成/编辑方向的高热项目。 | [GitHub](https://github.com/AIDC-AI/Pixelle-Video) |
 | `video-search-and-summarization` | NVIDIA 的视频搜索与摘要蓝图。 | [GitHub](https://github.com/NVIDIA-AI-Blueprints/video-search-and-summarization) |
 | `voicebox` | 本地优先的语音合成与声音工作台。 | [GitHub](https://github.com/jamiepine/voicebox) |
-| `VibeVoice` | Microsoft 的语音方向项目。 | [GitHub](https://github.com/microsoft/VibeVoice) |
+| `VibeVoice` | 分开核离线 / 增量 ASR 与单人 Realtime TTS；原多说话人 TTS 代码已撤下，语言 / 延迟与默认监听须核。 | [GitHub](https://github.com/microsoft/VibeVoice) / [解读](./projects/VibeVoice/README.md) |
 | `OpenMontage` | 多代理驱动的开源视频生产系统，把研究、脚本、素材、字幕和合成串成完整流水线。 | [GitHub](https://github.com/calesthio/OpenMontage) |
 | `palmier-pro` | 面向 macOS 的 AI 时间线视频编辑器，支持通过 MCP 与 Claude / Codex / Cursor 协作。 | [GitHub](https://github.com/palmier-io/palmier-pro) |
 | `LTX-2` | Lightricks 的音视频基础模型与推理/训练工具栈，覆盖 audio-to-video、lipdub 与多条视频 pipeline。 | [GitHub](https://github.com/Lightricks/LTX-2) |
@@ -980,6 +985,7 @@
 
 - 全量项目目录：[`projects/`](./projects/)
 - 最近日报：
+  - [`2026-11-06`](./daily/2026-11-06/ai-hotspots.md)
   - [`2026-11-05`](./daily/2026-11-05/ai-hotspots.md)
   - [`2026-11-04`](./daily/2026-11-04/ai-hotspots.md)
   - [`2026-11-03`](./daily/2026-11-03/ai-hotspots.md)
@@ -1109,10 +1115,10 @@
 ## 当前状态
 
 - 状态：持续日更中。
-- 最新更新：`2026-11-05`。
-- 当前项目总数：`996`。
-- 最近新增项目：`kimi-k3-in-c`、`Horizon`、`open-duet`、`remote-mic-app`；
-  本轮原位刷新 `auto-ontology`。
+- 最新更新：`2026-11-06`。
+- 当前项目总数：`1001`。
+- 最近新增项目：`switch`、`gemini-skills`、`figma-console-mcp`、`dsh-memory-evolve`、`video2x`；
+  本轮原位刷新 `VibeVoice`。
 - 覆盖平台：GitHub、X、Instagram、YouTube。
 
 ## 维护约定

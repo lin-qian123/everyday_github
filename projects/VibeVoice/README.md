@@ -1,116 +1,57 @@
-# VibeVoice（microsoft/VibeVoice）项目速览与上手指南
+<!-- markdownlint-disable MD013 -->
 
-- GitHub: https://github.com/microsoft/VibeVoice
-- 更新时间: 2026-04-07（Asia/Shanghai）
+# VibeVoice（microsoft/VibeVoice）
 
-## 1. 为什么今天值得跟踪
+- 更新：2026-11-06（Asia/Shanghai）；官方 综合 daily +214，为读取快照，不是自然日结算。
+- GitHub API：55,857 stars / 6,280 forks / 205 open issues（含 PR）；仓库 ID `1044296738`。
+- 核读基线：`16fb2cb1217c9934a886e1948ffb06120caa2df5`；文档与抽样实现核验，不是安装运行、安全或性能认证。
 
-`VibeVoice` 是近期 GitHub Trending 上涨最快的开源语音 AI 项目之一，主打“长音频 + 结构化转写 + 流式语音生成”。
+## 定位
 
-- 热度信号（2026-04-07 抓取）:
-  - GitHub 仓库页：`36.8k stars`、`4.2k forks`
-  - Trending 快照（第三方）：`3,863 stars today`（同日快照）
+Microsoft 的语音模型家族，需按任务区分：长音频 ASR、增量 ASR-Streaming、单说话人 Realtime TTS，以及另外仓库中的 CPU BitNet 路径。2026-09-03 的增量 ASR 是已有历史发布，今日综合榜关注增长不等于新模型发布。
 
-## 2. 项目在做什么（核心定位）
+**旧页纠正**：上游说明因不当使用，已于 2025-09-05 从本仓库撤下原 VibeVoice-TTS 代码；模型表也标 Disabled。README 仍保留 90 分钟 / 四说话人介绍，不能把它当当前已提供的完整可运行路径。
 
-VibeVoice 是一个“语音模型家族”，不是单一模型，覆盖：
+## 用法
 
-1. `VibeVoice-ASR`：长语音识别（语音转文字）
-- 支持最长约 60 分钟音频单次处理。
-- 输出是结构化转写：`Who（说话人）+ When（时间戳）+ What（内容）`。
-
-2. `VibeVoice-TTS`：长文本语音合成
-- 面向长对话、多说话人播客类场景（文档中提到可到 90 分钟级别）。
-
-3. `VibeVoice-Realtime-0.5B`：流式实时 TTS
-- 主打低延迟（文档示例约 300ms 首包可听延迟）。
-
-## 3. 怎么用（快速上手）
-
-以下是官方文档给出的最短路径（以 README/docs 最新内容为准）。
-
-## 3.1 安装
+Python 要求 >=3.10。先按所选模型文档准备匹配的 CUDA / PyTorch 环境与权重，固定本页 commit 后安装：
 
 ```bash
-# 推荐 CUDA 环境；官方文档示例使用 NVIDIA 容器
-sudo docker run --privileged --net=host --ipc=host \
-  --ulimit memlock=-1:-1 --ulimit stack=-1:-1 --gpus all --rm -it \
-  nvcr.io/nvidia/pytorch:25.12-py3
-
-# 拉代码并安装
-git clone https://github.com/microsoft/VibeVoice.git
-cd VibeVoice
 pip install -e .
+python demo/vibevoice_asr_inference_from_file.py --model_path /path/to/asr-checkpoint --audio_files /path/to/audio.wav
+python demo/vibevoice_asr_streaming_inference_from_file.py --model_path /path/to/streaming-checkpoint --audio_files /path/to/audio.wav
 ```
 
-## 3.2 跑 ASR Gradio Demo
+两条推理命令是不同 checkpoint 路径的示例，不能混用。流式模型的 chunk / lookahead 来自权重的 `preprocessor_config.json`。需要网页演示时，先核 host / 端口 / 认证；Gradio 实现默认 host 为 `0.0.0.0`，`--share` 会创建公开链接，旧页不应把它作为默认本地上手方式。
 
-```bash
-apt update && apt install ffmpeg -y
-python demo/vibevoice_asr_gradio_demo.py --model_path microsoft/VibeVoice-ASR --share
-```
+Realtime TTS 按独立文档与依赖安装；`streamingtts` extra 固定 Transformers 4.51.3，根依赖范围则为 >=4.51.3、<5.0.0。本轮未下载权重、转写、合成、录音或启动服务。
 
-## 3.3 文件推理（离线批处理）
+## 原理
 
-```bash
-python demo/vibevoice_asr_inference_from_file.py \
-  --model_path microsoft/VibeVoice-ASR \
-  --audio_files /path/to/audio.wav
-```
+长音频 ASR 将识别、说话人和时间戳一起建模，上游标称可在 64K 上下文处理最长约 60 分钟；增量 ASR 按音频 chunk 输出。Realtime TTS 使用交错窗口与扩散声学生成，文档明确移除了完整多说话人版本的 semantic tokenizer，仅用 7.5 Hz acoustic tokenizer。不能把家族总览中的双 tokenizer / diffusion 描述无差别套到每个模型。
 
-## 3.4 快速体验入口
+## 价值
 
-- ASR Playground: https://aka.ms/vibevoiceasr
-- Hugging Face 权重（ASR）: https://huggingface.co/microsoft/VibeVoice-ASR
-- Realtime Colab: https://colab.research.google.com/github/microsoft/VibeVoice/blob/main/demo/vibevoice_realtime_demo_colab.ipynb
+ASR 的 Who / When / What 结构适合会议、访谈与长录音后处理；流式路径降低等整段结束的等待。实时 TTS 则面向逐段输入文字的发声。应分别量化识别错误、说话人归属、时间戳、首包延迟和整段吞吐，不以单个“实时”标签替代全部指标。
 
-## 4. 原理是什么（工程视角）
+## 风险边界
 
-官方给出的核心技术路线可以概括为：
+- **模型范围不相同**：README 对离线 ASR 标 50+ 语言、流式新闻标 10 语言；Realtime 主要面向英语、单说话人，额外九种语言属未充分测试的探索。不能相互借用语言 / 多人能力。
+- **上游延迟措辞不一致**：README 写约 300 ms，Realtime 专页写约 200 ms 且依赖硬件；本轮均未复测，应固定硬件、音频长度、batch 与计时定义。
+- **CPU / 量化是另一条路径**：BitNet 的 1.58 GB 和 RTF<1 来自另仓库 / 特定条件，不能作为本仓库所有 7B 模型的内存与速度保证。
+- **网络与内容**：权重下载、云 Playground、Colab、公开分享链接与本地推理数据流不同。语音授权、个人信息和合成标记需按真实用途处理。
+- 根代码为 MIT；单独权重及第三方组件条件须看相应 model card / LICENSE。转写可能漏词、错分人或幻觉，热词提示也不保证正确；关键记录必须对照原音频。
 
-1. 连续语音 tokenizer（Acoustic + Semantic）
-- 在较低帧率（文档提到 7.5Hz）下编码长语音序列，减少长上下文计算负担。
+## 补充建议
 
-2. Next-token diffusion 生成框架
-- 用 LLM 负责文本/对话语义建模，扩散头负责高保真声学细节生成。
+用授权的多说话人短音频和真实术语集建立金标，再分开测试离线 / 流式 ASR。记录 WER / CER、说话人错误、时间戳误差、chunk 等待、首包和峰值显存；TTS 还需完整试听可懂度、稳定性和音色。部署前核默认监听地址与分享选项，避免把演示服务器直接视为生产服务。
 
-3. 统一任务建模
-- 在 ASR 里把识别、说话人分离（diarization）、时间戳输出放在同一模型流程中，减少多模块串联误差累积。
+## 参考资料
 
-## 5. 适用场景
-
-- 会议纪要与访谈整理：需要“谁在什么时候说了什么”。
-- 长播客/课程转写：希望整段上下文一致而非碎片化切段。
-- 多语种混说场景：跨语种或代码切换（code-switching）语音识别。
-- 实时语音交互：对首包延迟敏感的智能语音应用。
-
-## 6. 风险与边界（必须注意）
-
-1. 深度伪造风险
-- 高质量语音合成可被滥用于冒充、诈骗和误导传播。
-
-2. 内容真实性问题
-- 转写结果并非绝对准确，关键场景需要人工复核。
-
-3. 商业化边界
-- 仓库明确强调以研究与开发为主，不建议未经充分测试直接用于高风险商业生产。
-
-## 7. 落地建议（给日常跟踪/实操）
-
-1. 先做“小闭环 PoC”
-- 选 30-60 分钟真实会议录音，验证识别质量、说话人稳定性和时间戳可用性。
-
-2. 先补“领域热词”
-- 人名、产品名、内部缩写先作为 hotwords 输入，通常会明显提升转写质量。
-
-3. 输出侧直接结构化
-- 结果直接落到 JSON/Markdown 模板（发言人、时间段、行动项），避免后处理人工拼接。
-
-## 8. 信息来源
-
-- GitHub 仓库首页（stars/forks、模型说明）:
-  - https://github.com/microsoft/VibeVoice
-- 官方 ASR 文档（安装与用法）:
-  - https://github.com/microsoft/VibeVoice/blob/main/docs/vibevoice-asr.md
-- GitHub Trending 快照（stars today）:
-  - https://www.zdoc.app/en/trending
+- [README.md](https://github.com/microsoft/VibeVoice/blob/16fb2cb1217c9934a886e1948ffb06120caa2df5/README.md)
+- [pyproject.toml](https://github.com/microsoft/VibeVoice/blob/16fb2cb1217c9934a886e1948ffb06120caa2df5/pyproject.toml)
+- [docs/vibevoice-asr.md](https://github.com/microsoft/VibeVoice/blob/16fb2cb1217c9934a886e1948ffb06120caa2df5/docs/vibevoice-asr.md)
+- [docs/vibevoice-asr-streaming.md](https://github.com/microsoft/VibeVoice/blob/16fb2cb1217c9934a886e1948ffb06120caa2df5/docs/vibevoice-asr-streaming.md)
+- [docs/vibevoice-realtime-0.5b.md](https://github.com/microsoft/VibeVoice/blob/16fb2cb1217c9934a886e1948ffb06120caa2df5/docs/vibevoice-realtime-0.5b.md)
+- [demo/vibevoice_asr_gradio_demo.py](https://github.com/microsoft/VibeVoice/blob/16fb2cb1217c9934a886e1948ffb06120caa2df5/demo/vibevoice_asr_gradio_demo.py)
+- [仓库与 API 快照](https://api.github.com/repos/microsoft/VibeVoice)；[发行列表](https://github.com/microsoft/VibeVoice/releases)。

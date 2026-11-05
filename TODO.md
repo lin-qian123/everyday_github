@@ -14,6 +14,8 @@
 
 ## 阶段性开发记录
 
+- 2026-11-06：新增 `switch`、`gemini-skills`、`figma-console-mcp`、`dsh-memory-evolve`、`video2x` 五个七节页，原位刷新 `VibeVoice` 与四平台日报；复用四类，实际目录 `996 → 1001`。官方日增依次 +215 / +12 / +242 / +32 / +51，VibeVoice +214。X 官网回链核 Switch 08-26 / 10-16 / 10-28 历史帖及 oEmbed，无可靠互动量；Instagram 同名身份未证与登录 / 聚合缺口；YouTube Video2X 回链 / 第三方、Figma 教程累计 60,649 / 793 / 4,388，相对 6y / 3w / 9mo，oEmbed 一致。接续：Switch room / provider 权限、稳定包 / dev 包、分层遥测与 Commons Clause；Gemini 凭据 / 云存储及视频 30 / 40 秒差异；Figma PAT / 当前文件 / 云配对与检查覆盖；DSH 主 / 子写入门控、默认关闭同步与公开远端；视频伪影 / GPU 和语音模型 / 语言 / 200–300 ms 条件。skills 同名问题保留；保留 AGENTS.md 原修改，未安装运行上游、下载模型、API 调用、登录写入、同步记忆或处理媒体。
+
 - 2026-11-05：新增 `kimi-k3-in-c`、`Horizon`、`open-duet`、`remote-mic-app` 四个七节页，原位刷新 `auto-ontology` 和四平台日报；复用四类，实际目录 `992 → 996`。官方日增新项依次 +351 / +121 / +105 / +78，Auto Ontology +2,053。X 官网回链核 SayAll 11-02 回复与 10-08 第三方原帖，无可靠互动增量；Instagram 同名身份未证、登录 / 429 与主题聚合；YouTube Open Duet 回链 / 第三方累计 324 / 6,707、相对 2d / 12d，oEmbed 一致。接续：Kimi 约 1.7 TB 存储、RSS / I/O / 124 CPU 条件及上游 128 GB 措辞冲突；Auto Ontology 3001 / 3002 私网与用户身份；Horizon 原始来源、错并与派生摘要；Open Duet 桌面账号、审批 / 设备 scope 和手机文档冲突；SayAll 稳定包 / 主线候选、真实语音与只读撤销。skills 同名问题保留；AGENTS.md 原修改不纳入提交，未安装运行上游、下载权重、登录采集、调用模型或操作外部服务。
 
 - 2026-11-04：新增 `ai-goofish-monitor`、`sandcastle`、`nature-skills`、`SimpleEnglish`、`jan` 五个七节页，原位刷新 `worktrunk` 与四平台日报；复用四类，实际目录 `987 → 992`。官方日增依次 +204 / +28 / +167 / +50 / +70，Worktrunk +437。X 核 Jan 10-19 / 10-14 历史宣传原帖，无互动量；Instagram 同名身份未证、登录 / 429 和主题聚合缺口；YouTube Worktrunk 回链与第三方视频累计 74,480 / 37,302、相对 8mo / 3d，oEmbed 一致。接续：闲鱼后端认证、cookie、SQLite / latest 镜像一致性；Sandcastle 原生网络 / Keychain / key 与分支默认；Worktrunk stdin 迁移、hook 批准和默认暂存；科研技能共享包、来源及完整产物；英文技能旧版格式指标与新版读者测试；Jan API / Shell / 云与分层统计。skills / herdr 同名或 owner 沿革未覆盖；保留 AGENTS.md 原修改，未安装运行上游、采集登录、调用模型或创建 sandbox。
