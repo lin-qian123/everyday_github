@@ -1,66 +1,57 @@
-# security-audit-skill
+<!-- markdownlint-disable MD013 -->
 
-## 1. 项目定位
+# security-audit-skill（Cloudflare 审计技能）
 
-`security-audit-skill` 是 Cloudflare 开源的 coding-agent 安全审计 skill，用于把支持工具调用和并行子代理的 coding agent 组织成多阶段漏洞审计流程。它强调可利用漏洞、对抗性验证、结构化输出和独立复核，而不是让模型一次性给出泛泛安全建议。
+- 更新：2026-11-07（Asia/Shanghai）；官方 综合 daily +2,524，为读取快照，不是自然日结算。
+- GitHub API：63,885 stars / 4,140 forks / 115 open issues（含 PR）；仓库 ID `1273427276`。
+- 核读基线：`c1c8a8c1471069fb0e188eeaff69b8e8db6564a8`；仅文档与抽样实现核验，未安装运行或独立评测。
 
-它适合需要用 Claude Code、Codex 等 agent 辅助做代码安全审计的工程团队，也适合作为 agent 安全工作流设计样本。
+## 定位
 
-## 2. 基本用法
+这是让支持工具与子 Agent 的 coding agent 执行代码安全审阅的技能包。当前模式区分普通安全问答 / 聚焦审阅的 guidance，与明确要求完整代码审计 / 渗透测试或报告产物的 full audit；加载技能不代表获得执行完整审计或新建文件的授权。本页仅研究上游设计，未将其作为本仓库审计指令执行。[README](https://github.com/cloudflare/security-audit-skill/blob/c1c8a8c1471069fb0e188eeaff69b8e8db6564a8/README.md)、[技能定义](https://github.com/cloudflare/security-audit-skill/blob/c1c8a8c1471069fb0e188eeaff69b8e8db6564a8/skills/security-audit/SKILL.md)
 
-官方 README 推荐通过 Skills CLI 安装：
+## 用法
+
+无 GitHub Release，需按固定源码使用；根代码为 MIT。上游安装示例为：
 
 ```bash
 npx skills add https://github.com/cloudflare/security-audit-skill \
   --skill security-audit
 ```
 
-安装后，在目标代码库中向 coding agent 提出安全审计请求，例如：
+安装后，明确目标仓库、源码版本、范围和输出位置。完整模式默认输出到目标仓库外的 `~/security-audit-skill/<repo>/run-<N>`，仅在用户显式指定且确认被版本控制忽略时写入目标内。需支持工具 / 子 Agent 的模型及 Node.js；本轮没有安装、启动审计或运行上游校验器。
 
-```text
-security audit this codebase
-find security vulnerabilities in ./src
-do a security review, output to ~/audits/my-project
-```
+## 原理
 
-skill 会根据触发词启动审计流程，并默认把输出写到独立审计目录。
+当前六阶段顺序为：
 
-## 3. 核心原理
+1. 侦察：形成 architecture.md 与 coverage-ledger.json，标出边界、输入面和覆盖单元。
+2. 按覆盖账本寻找候选，并以 coverage critic 查遗漏。
+3. 独立验证每个候选，尝试推翻源路径、前提和影响。
+4. 写 confirmed / needs_validation / rejected 三态 findings.json，执行结构与语义校验。
+5. 独立核对最终记录；重要替换还需再次独立核验。
+6. 从已核记录和覆盖账本生成 REPORT、详细发现和待验证报告。
 
-项目把安全审计拆成六个阶段：
+这修正旧页将报告先于结构化 / 最终复核的次序。重复运行会重核当前源码与历史记录，不把旧 same-source、未解决或范围外工作自动视作本轮已覆盖。quick / standard / deep 改变广度与冗余，不降低证据门槛。[验证与报告](https://github.com/cloudflare/security-audit-skill/blob/c1c8a8c1471069fb0e188eeaff69b8e8db6564a8/skills/security-audit/VALIDATION-AND-REPORTING.md)
 
-- Recon：并行研究 agent 梳理架构、信任边界和输入面。
-- Hunt：多个 agent 从注入、访问控制、业务逻辑、密码学、链式攻击等角度寻找漏洞。
-- Validate：独立 agent 尝试推翻每个发现，降低误报。
-- Report：输出人类可读报告和中高危发现的详细追踪。
-- Structured output：生成符合 schema 的 `findings.json`，并用 Node.js 校验器检查。
-- Independent verification：新的 agent 对结构化结论逐条复核源码依据。
+## 价值
 
-这种设计把“发现”和“验证”拆开，避免同一个 agent 同时当攻击者和裁判。
+将安全发现的来源、当前版本、被推翻理由、待验证事实和覆盖缺口留下可追溯记录。它的工程价值在于更严格的记录契约和复核分工，不是已被独立证明的漏洞发现率或“没有遗漏”保证。
 
-## 4. 工程价值
+## 风险边界
 
-`security-audit-skill` 的价值在于把 agent 安全审计从 prompt 模板推进到可执行流程。它要求每个漏洞有可利用场景、影响判断和事实依据，并把被否决的发现也结构化记录下来，这对减少 AI 安全报告中的泛化噪声很重要。
+- full audit 要求对目标控制的构建 / 测试 / fixture 使用 OS 强制 sandbox：禁外网、空环境 allowlist、目标与工具只读、仅 scratch 可写、资源和时限受控。做不到时应保留具体 needs_validation，不执行目标代码；提示词本身不会创建 sandbox。
+- confirmed 需完整来源链与有限观察结果；needs_validation 必须写精确阻塞且不带 severity；rejected 保留被证伪原因。未完成候选验证也不能为了收尾塞成 needs_validation。
+- 抽样 validate-findings.cjs 检查 schema、字段、路径 / 记录约束和语义一致性；填写 observed_result 能通过结构门，不证明实际观察为真，更不等同漏洞复现或部署安全。
+- 并行、覆盖 critic 和验证会消耗 token / 时间；strict budget 不足时需缩小范围或报告不完整。普通提示词工作流无法自动保证所有执行器遵循这些门控。
+- 报告、轨迹和附件可能含私有源码或漏洞细节，输出可见性与保留期限需单独管理。[校验器](https://github.com/cloudflare/security-audit-skill/blob/c1c8a8c1471069fb0e188eeaff69b8e8db6564a8/skills/security-audit/validate-findings.cjs)、[三态 schema](https://github.com/cloudflare/security-audit-skill/blob/c1c8a8c1471069fb0e188eeaff69b8e8db6564a8/skills/security-audit/report-schema.json)
 
-它和 `SkillSpector`、`strix`、`VulnClaw` 形成互补：`SkillSpector` 偏 skill 供应链审计，`strix` / `VulnClaw` 偏授权攻击验证，而 Cloudflare 这个项目偏单仓库代码审计流程。
+## 补充建议
 
-## 5. 风险边界
+在明确授权的可丢弃样本上检查三态记录、候选被拒、预算耗尽与复跑源码变化；逐项确认真实 sandbox，而非只检查说明文本。把最终引用、有限本地观察和人工复核作为独立验收项，保留未覆盖单元。需要动态证明时先给出最小安全实验计划；本次更新没有执行漏洞挖掘或攻击测试。
 
-- 它不能替代专业安全团队，尤其不能替代威胁建模、动态测试和生产环境权限审计。
-- 多 agent 并行会消耗较多 token 和时间，且结果质量依赖模型能力。
-- agent 可能读取敏感代码、配置和测试数据，输出目录也可能包含内部漏洞细节。
-- “只报告可利用漏洞”的原则能减少噪声，但也可能漏掉架构级硬化建议。
+## 参考资料
 
-## 6. 补充建议
-
-- 在隔离环境中运行，输出目录不要自动同步到公开仓库。
-- 把 `findings.json` 纳入安全团队的复核流程，而不是直接转成 issue。
-- 对高危结论要求人工复现或至少用独立工具交叉验证。
-- 后续重点观察 Cloudflare 的 vulnerability harness 经验是否会继续回流到这个公开 skill。
-
-## 7. 参考资料
-
-- GitHub 仓库：https://github.com/cloudflare/security-audit-skill
-- Cloudflare 博客：https://blog.cloudflare.com/build-your-own-vulnerability-harness
-- Skills CLI：https://skills.sh
-- GitHub API 元数据：仓库创建于 `2026-06-18`，抓取时约 `2.1k stars / 151 forks`
+- [仓库](https://github.com/cloudflare/security-audit-skill)、[发行列表（本轮为空）](https://github.com/cloudflare/security-audit-skill/releases)。
+- [README](https://github.com/cloudflare/security-audit-skill/blob/c1c8a8c1471069fb0e188eeaff69b8e8db6564a8/README.md)、[MIT 许可](https://github.com/cloudflare/security-audit-skill/blob/c1c8a8c1471069fb0e188eeaff69b8e8db6564a8/LICENSE)、[模式 / sandbox / 覆盖 / 预算](https://github.com/cloudflare/security-audit-skill/blob/c1c8a8c1471069fb0e188eeaff69b8e8db6564a8/skills/security-audit/SKILL.md)。
+- [验证和输出](https://github.com/cloudflare/security-audit-skill/blob/c1c8a8c1471069fb0e188eeaff69b8e8db6564a8/skills/security-audit/VALIDATION-AND-REPORTING.md)、[结构校验器](https://github.com/cloudflare/security-audit-skill/blob/c1c8a8c1471069fb0e188eeaff69b8e8db6564a8/skills/security-audit/validate-findings.cjs)、[schema](https://github.com/cloudflare/security-audit-skill/blob/c1c8a8c1471069fb0e188eeaff69b8e8db6564a8/skills/security-audit/report-schema.json)。

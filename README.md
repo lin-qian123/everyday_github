@@ -49,7 +49,7 @@
 
 如果你是第一次进入这个仓库，建议从这几个入口开始：
 
-- 最新日报：[`daily/2026-11-06/ai-hotspots.md`](./daily/2026-11-06/ai-hotspots.md)
+- 最新日报：[`daily/2026-11-07/ai-hotspots.md`](./daily/2026-11-07/ai-hotspots.md)
 - 项目总目录：[`projects/`](./projects/)
 - 自动化约束：[`AGENTS.md`](./AGENTS.md)
 - 开发续接记录：[`TODO.md`](./TODO.md)
@@ -128,7 +128,7 @@
 | `portless` | 用稳定 `.localhost` 与 worktree 子域名替代本地端口，方便人和 agents 复用开发入口；本地 CA、sudo 服务与共享模式须审计。 | [GitHub](https://github.com/vercel-labs/portless) |
 | `nodeterm` | 把真实终端、coding-agent sessions、画布、Kanban、Git 与远程监督合并；tmux 不是隔离，当前许可证为 BUSL-1.1。 | [GitHub](https://github.com/eneskirca/nodeterm) |
 | `atlas` | 面向 coding agents 的 source-control 桌面工作台，将共享记忆、会话、工具调用与 Git checkpoint 关联；本地默认和 secret scrub 仍需独立验证。 | [GitHub](https://github.com/pacifio/atlas) |
-| `superset` | 以独立 worktree、终端、diff、自动化和远端 host 编排多路 CLI agents；worktree 不是 OS 隔离，ELv2 权利边界须审查。 | [GitHub](https://github.com/superset-sh/superset) |
+| `superset`（现 Paradev） | CLI Agent 工作台；同一仓库更名并改 MIT，setup 时序、relay host 与删除 warnings 须核。 | [GitHub](https://github.com/ParadevAI/Paradev) / [解读](./projects/superset/README.md) |
 | `openclaude` | 跨云端 API、本地模型和多类工具的 coding-agent CLI；对话 fork 不是文件隔离，派生代码与 MIT 修改部分的许可边界须分别审查。 | [GitHub](https://github.com/Gitlawb/openclaude) |
 | `maka` | Apache 孵化中的 local-first agent 工作区，把桌面、CLI、工具审批和评测统一到可恢复的执行记录；sandbox、网络和日志仍需独立治理。 | [GitHub](https://github.com/apache/maka) |
 | `claudish-to-english` | Claude Code 显示层改写插件，默认以本地 Ollama 将助手输出转成更直白的表述；云端 provider 会产生额外数据外发。 | [GitHub](https://github.com/Leutenegger/claudish-to-english) |
@@ -387,7 +387,7 @@
 | `superlog` | agentic observability 工作台，把 OpenTelemetry 数据、incident 分组和 agent 调查摘要接起来。 | [GitHub](https://github.com/superloglabs/superlog) |
 | `VulnClaw` | 基于 LLM Agent、MCP 工具链和渗透 skill 的授权安全测试工作流。 | [GitHub](https://github.com/Unclecheng-li/VulnClaw) |
 | `loop-engineering` | 面向 AI coding agent 的 loop 工程模式、脚手架和预算/审计 CLI。 | [GitHub](https://github.com/cobusgreyling/loop-engineering) |
-| `security-audit-skill` | Cloudflare 开源的 coding-agent 安全审计 skill，强调多阶段发现、验证和结构化输出。 | [GitHub](https://github.com/cloudflare/security-audit-skill) |
+| `security-audit-skill` | Cloudflare 审计技能；覆盖账本、三态与独立复核需真实 sandbox，结构校验不能证明漏洞。 | [GitHub](https://github.com/cloudflare/security-audit-skill) / [解读](./projects/security-audit-skill/README.md) |
 | `self-learning-skills` | 面向 coding agent 的自学习元技能，把会话中验证过的黄金路径沉淀成可复用 skill / rule / memory。 | [GitHub](https://github.com/Kulaxyz/self-learning-skills) |
 | `bumblebee` | Perplexity 开源的开发端点供应链清点工具，覆盖 MCP 配置、agent skills 和扩展暴露面。 | [GitHub](https://github.com/perplexityai/bumblebee) |
 | `fable-soul` | 面向 Codex / Claude Code 的 agent 判断层规则包，把验证、根因和完成度纪律写成可加载 skill。 | [GitHub](https://github.com/akseolabs-seo/fable-soul) |
@@ -515,6 +515,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `pipeshub-ai` | 企业知识上下文与引用检索；v1 身份迁移、权限撤回、provider 出口及 telemetry 分层须核。 | [GitHub](https://github.com/pipeshub-ai/pipeshub-ai) / [解读](./projects/pipeshub-ai/README.md) |
 | `Horizon` | 用 Profile 配置多源采集、筛选和双语日报；历史摘要不是独立证据，模型与投递出口须核。 | [GitHub](https://github.com/Thysrael/Horizon) / [解读](./projects/Horizon/README.md) |
 | `scrapling` | HTTP、浏览器与 spider 采集层；0.5 破坏性迁移、登录会话、写工具与 HTTP MCP 认证须分别核。 | [GitHub](https://github.com/D4Vinci/Scrapling) / [解读](./projects/scrapling/README.md) |
 | `RAG_Techniques` | RAG notebooks 与脚本教材；优先诊断解析 / 分块，注意自定义非商用许可及赞助样例边界。 | [GitHub](https://github.com/NirDiamant/RAG_Techniques) / [解读](./projects/RAG_Techniques/README.md) |
@@ -650,6 +651,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `cross-platform-llm-client` | PrivateLM 手机本地 / 云端客户端；Android master 集群、崩溃上报、Hive key 和发行包需分别验。 | [GitHub](https://github.com/orailnoor/cross-platform-llm-client) / [解读](./projects/cross-platform-llm-client/README.md) |
 | `video2x` | C++ 视频超分与插帧流水线；Vulkan、AVX2、历史演示和生成伪影需单独验收。 | [GitHub](https://github.com/k4yt3x/video2x) / [解读](./projects/video2x/README.md) |
 | `remote-mic-app` | SayAll 蓝牙遥控器语音入口与可选只读历史 MCP；候选能力、第三方转写、授权与模型外发分开核。 | [GitHub](https://github.com/HD838A/remote-mic-app) / [解读](./projects/remote-mic-app/README.md) |
 | `Portable-Local-Studio` | 图像、GGUF 聊天、Whisper 与 Kokoro 本地工作台；首次下载、可选搜索、硬件和模型许可须核。 | [GitHub](https://github.com/techjarves/Portable-Local-Studio) / [解读](./projects/Portable-Local-Studio/README.md) |
@@ -741,6 +743,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `TensorRT-LLM` | NVIDIA GPU 推理框架；main / rc / wheel 区别、KV 量化正确性和分组件许可需核。 | [GitHub](https://github.com/NVIDIA/TensorRT-LLM) / [解读](./projects/TensorRT-LLM/README.md) |
 | `kimi-k3-in-c` | C99 CPU 推理以磁盘流式读取换低 RSS；约 1.7 TB 存储、124 CPU 基准和单 token 记录须带条件解读。 | [GitHub](https://github.com/FareedKhan-dev/kimi-k3-in-c) / [解读](./projects/kimi-k3-in-c/README.md) |
 | `jan` | 本地模型桌面工作台与兼容 API；云模型、工具权限、Trusted Hosts 和分层统计须分别核。 | [GitHub](https://github.com/janhq/jan) / [解读](./projects/jan/README.md) |
 | `mlx` | 惰性数组、自动微分与 CPU / GPU 后端；Apple 统一内存、Linux 依赖及求值计时须分别核。 | [GitHub](https://github.com/ml-explore/mlx) / [解读](./projects/mlx/README.md) |
@@ -848,6 +851,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `llm-zoomcamp` | DataTalks.Club 的 RAG / Agent 课程；当期入口、Python 版本、合成评估和证书条件分别核。 | [GitHub](https://github.com/DataTalksClub/llm-zoomcamp) / [解读](./projects/llm-zoomcamp/README.md) |
 | `nn-zero-to-hero` | 从 micrograd 手写反传到 GPT / tokenizer 的代码课程；视频、七个 notebook 与逐课环境分开核。 | [GitHub](https://github.com/karpathy/nn-zero-to-hero) / [解读](./projects/nn-zero-to-hero/README.md) |
 | `ai-engineering-hub` | 按难度组织的 RAG / Agent 教程集合；单目录锁依赖、外部服务和独立评估须补齐。 | [GitHub](https://github.com/patchy631/ai-engineering-hub) / [解读](./projects/ai-engineering-hub/README.md) |
 | `prompt-eng-interactive-tutorial` | Anthropic 九章提示词练习；旧模型、key 持久变量及分目录许可须处理。 | [GitHub](https://github.com/anthropics/prompt-eng-interactive-tutorial) / [解读](./projects/prompt-eng-interactive-tutorial/README.md) |
@@ -985,6 +989,7 @@
 
 - 全量项目目录：[`projects/`](./projects/)
 - 最近日报：
+  - [`2026-11-07`](./daily/2026-11-07/ai-hotspots.md)
   - [`2026-11-06`](./daily/2026-11-06/ai-hotspots.md)
   - [`2026-11-05`](./daily/2026-11-05/ai-hotspots.md)
   - [`2026-11-04`](./daily/2026-11-04/ai-hotspots.md)
@@ -1115,10 +1120,10 @@
 ## 当前状态
 
 - 状态：持续日更中。
-- 最新更新：`2026-11-06`。
-- 当前项目总数：`1001`。
-- 最近新增项目：`switch`、`gemini-skills`、`figma-console-mcp`、`dsh-memory-evolve`、`video2x`；
-  本轮原位刷新 `VibeVoice`。
+- 最新更新：`2026-11-07`。
+- 当前项目总数：`1005`。
+- 最近新增项目：`pipeshub-ai`、`cross-platform-llm-client`、`TensorRT-LLM`、`llm-zoomcamp`；
+  本轮原位刷新 `superset`（Paradev）与 `security-audit-skill`。
 - 覆盖平台：GitHub、X、Instagram、YouTube。
 
 ## 维护约定
