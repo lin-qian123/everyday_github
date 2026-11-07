@@ -49,7 +49,7 @@
 
 如果你是第一次进入这个仓库，建议从这几个入口开始：
 
-- 最新日报：[`daily/2026-11-07/ai-hotspots.md`](./daily/2026-11-07/ai-hotspots.md)
+- 最新日报：[`daily/2026-11-08/ai-hotspots.md`](./daily/2026-11-08/ai-hotspots.md)
 - 项目总目录：[`projects/`](./projects/)
 - 自动化约束：[`AGENTS.md`](./AGENTS.md)
 - 开发续接记录：[`TODO.md`](./TODO.md)
@@ -193,6 +193,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `gemini-api-cli` | 让现有 Agent 经 Shell 调用 Gemini 模型与托管任务；dry-run、凭据来源、远端状态和预算需分别核。 | [GitHub](https://github.com/google-gemini/gemini-api-cli) / [解读](./projects/gemini-api-cli/README.md) |
 | `switch` | 将聊天频道连接人与 Agent 的 room；稳定包、执行器权限、默认遥测与 Commons Clause 须分别核。 | [GitHub](https://github.com/sandbox-quantum/switch) / [解读](./projects/switch/README.md) |
 | `gemini-skills` | 四个 Gemini API 开发技能；动态文档、CLI 凭据、云端存储与视频上限冲突需核。 | [GitHub](https://github.com/google-gemini/gemini-skills) / [解读](./projects/gemini-skills/README.md) |
 | `open-duet` | 具名 AI 同事、记忆与审批工作区；桌面账号、单 owner 自托管、可选电脑和实验功能须分别验收。 | [GitHub](https://github.com/Anil-matcha/open-duet) / [解读](./projects/open-duet/README.md) |
@@ -298,7 +299,7 @@
 | `skills-manager` | 以中央库、CLI、Git 备份和多设备同步管理 53 个上游列出的 agent/tool skills；跨宿主写入与后台 push 是高权限边界。 | [GitHub](https://github.com/xingkongliang/skills-manager) |
 | `ui-skills` | 通过 Web、CLI 与 MCP 分发设计工程 skills；规则不能替代品牌、无障碍、视觉回归和用户验证。 | [GitHub](https://github.com/ibelick/ui-skills) |
 | `skills-hub` | 以中央库和 symlink/copy 管理 47 个上游列出的 coding-tool skills；自动更新与批量同步会扩大供应链风险。 | [GitHub](https://github.com/qufei1993/skills-hub) |
-| `agent-browser` | 面向 agents 的 Rust 浏览器自动化 CLI，提供 accessibility refs、CDP、MCP 与 experimental WebMCP；页面工具与后果性动作须独立授权。 | [GitHub](https://github.com/vercel-labs/agent-browser) |
+| `agent-browser` | 用快照引用驱动浏览器；0.41 工具 / session 迁移、opt-in 策略与 allowlist 后端限制需分别核。 | [GitHub](https://github.com/vercel-labs/agent-browser) / [解读](./projects/agent-browser/README.md) |
 | `arcbox` | 在 macOS 上以独立内核 Firecracker microVM 运行 agents 与不可信代码；需 M3+/macOS 15+，网络、凭据和控制面仍须对抗验证。 | [GitHub](https://github.com/arcboxlabs/arcbox) |
 | `OpenShell` | NVIDIA 的 agent 隔离运行时，在进程外用 gateway、sandbox、策略与推理路由约束文件、网络和凭据；真实隔离强度须按后端对抗验证。 | [GitHub](https://github.com/NVIDIA/OpenShell) |
 | `reverse-skill` | 面向授权逆向、CTF、取证和渗透测试的 agent 技能路由包，以 scope、场景 playbook 和证据链约束执行；不能替代书面授权与隔离靶场。 | [GitHub](https://github.com/zhaoxuya520/reverse-skill) |
@@ -515,6 +516,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `AutoRAG` | 原位检索与整理个人文件的 Librarian 引擎；legacy Python、入口默认权限、模型数据出口与 FSL 桌面分开。 | [GitHub](https://github.com/Marker-Inc-Korea/AutoRAG) / [解读](./projects/AutoRAG/README.md) |
 | `pipeshub-ai` | 企业知识上下文与引用检索；v1 身份迁移、权限撤回、provider 出口及 telemetry 分层须核。 | [GitHub](https://github.com/pipeshub-ai/pipeshub-ai) / [解读](./projects/pipeshub-ai/README.md) |
 | `Horizon` | 用 Profile 配置多源采集、筛选和双语日报；历史摘要不是独立证据，模型与投递出口须核。 | [GitHub](https://github.com/Thysrael/Horizon) / [解读](./projects/Horizon/README.md) |
 | `scrapling` | HTTP、浏览器与 spider 采集层；0.5 破坏性迁移、登录会话、写工具与 HTTP MCP 认证须分别核。 | [GitHub](https://github.com/D4Vinci/Scrapling) / [解读](./projects/scrapling/README.md) |
@@ -586,6 +588,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `astryx` | Meta React 19 设计系统与 Agent CLI；Beta、scoped 包名、版本一致性、项目写入和无障碍需核。 | [GitHub](https://github.com/meta/astryx) / [解读](./projects/astryx/README.md) |
 | `figma-console-mcp` | 设计 token / 组件读写与一致性检查；本地 / 云模式、PAT 范围与桥插件版本须分开。 | [GitHub](https://github.com/southleft/figma-console-mcp) / [解读](./projects/figma-console-mcp/README.md) |
 | `doop` | 人与 MCP Agent 共用的 HTML 设计画布；账户权限、脚本演示、Cloud 功能与 AGPL 边界须核。 | [GitHub](https://github.com/kgoedecke/doop) / [解读](./projects/doop/README.md) |
 | `a2ui` | 声明式 Agent UI 格式与 renderer；固定协议 / catalog，业务动作另做授权。 | [GitHub](https://github.com/a2ui-project/a2ui) / [解读](./projects/a2ui/README.md) |
@@ -743,6 +746,8 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `nvke` | 自有 GPU 基础设施的 Kubernetes 管理面预览；默认 HTTP / 认证关闭、全端点权限与恢复缺口须核。 | [GitHub](https://github.com/dsx-ai-factory/nvke) / [解读](./projects/nvke/README.md) |
+| `MNN` | 端侧推理引擎与 LLM 导出 / runtime；模型、后端、量化正确性和特定硬件吞吐分项验证。 | [GitHub](https://github.com/alibaba/MNN) / [解读](./projects/MNN/README.md) |
 | `TensorRT-LLM` | NVIDIA GPU 推理框架；main / rc / wheel 区别、KV 量化正确性和分组件许可需核。 | [GitHub](https://github.com/NVIDIA/TensorRT-LLM) / [解读](./projects/TensorRT-LLM/README.md) |
 | `kimi-k3-in-c` | C99 CPU 推理以磁盘流式读取换低 RSS；约 1.7 TB 存储、124 CPU 基准和单 token 记录须带条件解读。 | [GitHub](https://github.com/FareedKhan-dev/kimi-k3-in-c) / [解读](./projects/kimi-k3-in-c/README.md) |
 | `jan` | 本地模型桌面工作台与兼容 API；云模型、工具权限、Trusted Hosts 和分层统计须分别核。 | [GitHub](https://github.com/janhq/jan) / [解读](./projects/jan/README.md) |
@@ -989,6 +994,7 @@
 
 - 全量项目目录：[`projects/`](./projects/)
 - 最近日报：
+  - [`2026-11-08`](./daily/2026-11-08/ai-hotspots.md)
   - [`2026-11-07`](./daily/2026-11-07/ai-hotspots.md)
   - [`2026-11-06`](./daily/2026-11-06/ai-hotspots.md)
   - [`2026-11-05`](./daily/2026-11-05/ai-hotspots.md)
@@ -1120,10 +1126,10 @@
 ## 当前状态
 
 - 状态：持续日更中。
-- 最新更新：`2026-11-07`。
-- 当前项目总数：`1005`。
-- 最近新增项目：`pipeshub-ai`、`cross-platform-llm-client`、`TensorRT-LLM`、`llm-zoomcamp`；
-  本轮原位刷新 `superset`（Paradev）与 `security-audit-skill`。
+- 最新更新：`2026-11-08`。
+- 当前项目总数：`1010`。
+- 最近新增项目：`astryx`、`nvke`、`AutoRAG`、`gemini-api-cli`、`MNN`；
+  本轮原位刷新 `agent-browser`。
 - 覆盖平台：GitHub、X、Instagram、YouTube。
 
 ## 维护约定
