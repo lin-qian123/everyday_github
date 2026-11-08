@@ -49,7 +49,7 @@
 
 如果你是第一次进入这个仓库，建议从这几个入口开始：
 
-- 最新日报：[`daily/2026-11-08/ai-hotspots.md`](./daily/2026-11-08/ai-hotspots.md)
+- 最新日报：[`daily/2026-11-09/ai-hotspots.md`](./daily/2026-11-09/ai-hotspots.md)
 - 项目总目录：[`projects/`](./projects/)
 - 自动化约束：[`AGENTS.md`](./AGENTS.md)
 - 开发续接记录：[`TODO.md`](./TODO.md)
@@ -74,6 +74,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `mini-swe-agent` | bash 与线性轨迹构成的极简编码 Agent；默认本机执行、确认、预算与基准条件分别核。 | [GitHub](https://github.com/SWE-agent/mini-swe-agent) / [解读](./projects/mini-swe-agent/README.md) |
 | `serena` | 为编码 Agent 提供 LSP / JetBrains 语义工具；REPL 权限与分组件 GPL / MIT 许可须分别核。 | [GitHub](https://github.com/oraios/serena) / [解读](./projects/serena/README.md) |
 | `pr-agent` | 社区维护的 PR 审查工具；本地 diff / JSON 与默认评论发布分开管理。 | [GitHub](https://github.com/The-PR-Agent/pr-agent) / [解读](./projects/pr-agent/README.md) |
 | `KiroCrew` | 持久开发工作区与 Gateway 调度；平台相关 sandbox、凭证可见性和日心跳需分别配置。 | [GitHub](https://github.com/kirodotdev/KiroCrew) / [解读](./projects/KiroCrew/README.md) |
@@ -89,7 +90,7 @@
 | `jadx-ai-mcp` | 将 JADX GUI 的反编译、导航、重命名与 debug context 暴露给 MCP；远程 HTTP 无 TLS / auth，只能在授权隔离环境使用。 | [GitHub](https://github.com/zinja-coder/jadx-ai-mcp) |
 | `jetbrains-cc-gui` | 在 JetBrains 中统一 Claude、Codex 等 CLI 的会话、diff、MCP 与配置；GUI 与权限弹窗不会降低底层工具权限。 | [GitHub](https://github.com/zhukunpenglinyutong/jetbrains-cc-gui) |
 | `android-reverse-engineering-skill` | 用本地脚本编排 Android 指纹、双 decompiler、调用链和 API 清单；合法授权、依赖下载与模型数据出口须先治理。 | [GitHub](https://github.com/SimoneAvogadro/android-reverse-engineering-skill) |
-| `billion-context` | 以 proxy / plugin / launcher 为多类 coding agents 注入可逆分层压缩；模型流量 MITM、Early 状态、日志和 MIT 附加署名条款须审计。 | [GitHub](https://github.com/ranxianglei/billion-context) |
+| `billion-context` | 多宿主上下文压缩代理与插件；接入差异、真实代理命中、独立 advisory 更新及附加署名须核。 | [GitHub](https://github.com/ranxianglei/billion-context) / [解读](./projects/billion-context/README.md) |
 | `token-monitor` | 本地聚合 44+ AI 工具的 token、成本、限额与 session，并可自托管跨设备同步；凭据、标题、archive 和公网 Hub 须逐项 opt-in。 | [GitHub](https://github.com/Javis603/token-monitor) |
 | `codex-security` | 用 Agent 串联漏洞发现、验证、补丁、威胁模型与 SARIF；模型 finding、源码外发、成本和无认证 preview findings service 须治理。 | [GitHub](https://github.com/openai/codex-security) |
 | `Windows-MCP` | 以 UIA、截图、PowerShell、文件、进程与注册表让 Agent 控制 Windows；默认全工具、远程网络面和 telemetry 须在专用 VM 收敛。 | [GitHub](https://github.com/CursorTouch/Windows-MCP) |
@@ -516,6 +517,8 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `txtai` | 向量 / SQL / 图检索、RAG 与模型工作流；默认 HTTP、safeopen 范围和 MCP 工具须核。 | [GitHub](https://github.com/neuml/txtai) / [解读](./projects/txtai/README.md) |
+| `Agentero` | PDF、结构化正文、笔记和 Agent 科研工作台；Catalog 备份、provider 出口及本地活动 / 遥测分开。 | [GitHub](https://github.com/poco-ai/Agentero) / [解读](./projects/Agentero/README.md) |
 | `AutoRAG` | 原位检索与整理个人文件的 Librarian 引擎；legacy Python、入口默认权限、模型数据出口与 FSL 桌面分开。 | [GitHub](https://github.com/Marker-Inc-Korea/AutoRAG) / [解读](./projects/AutoRAG/README.md) |
 | `pipeshub-ai` | 企业知识上下文与引用检索；v1 身份迁移、权限撤回、provider 出口及 telemetry 分层须核。 | [GitHub](https://github.com/pipeshub-ai/pipeshub-ai) / [解读](./projects/pipeshub-ai/README.md) |
 | `Horizon` | 用 Profile 配置多源采集、筛选和双语日报；历史摘要不是独立证据，模型与投递出口须核。 | [GitHub](https://github.com/Thysrael/Horizon) / [解读](./projects/Horizon/README.md) |
@@ -746,6 +749,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `google-colab-cli` | 终端申请 Colab runtime 并执行脚本 / 管理文件；账户、配额、超时、下载和资源清理须核。 | [GitHub](https://github.com/googlecolab/google-colab-cli) / [解读](./projects/google-colab-cli/README.md) |
 | `nvke` | 自有 GPU 基础设施的 Kubernetes 管理面预览；默认 HTTP / 认证关闭、全端点权限与恢复缺口须核。 | [GitHub](https://github.com/dsx-ai-factory/nvke) / [解读](./projects/nvke/README.md) |
 | `MNN` | 端侧推理引擎与 LLM 导出 / runtime；模型、后端、量化正确性和特定硬件吞吐分项验证。 | [GitHub](https://github.com/alibaba/MNN) / [解读](./projects/MNN/README.md) |
 | `TensorRT-LLM` | NVIDIA GPU 推理框架；main / rc / wheel 区别、KV 量化正确性和分组件许可需核。 | [GitHub](https://github.com/NVIDIA/TensorRT-LLM) / [解读](./projects/TensorRT-LLM/README.md) |
@@ -887,6 +891,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `niubigeo` | 自托管品牌 AI 回答与竞品观测；原始证据、成功分母、独立采样、费用和镜像身份分别核。 | [GitHub](https://github.com/Albert-Weasker/niubigeo) / [解读](./projects/niubigeo/README.md) |
 | `ai-goofish-monitor` | 闲鱼多任务采集、关键词 / AI 筛选和通知；前端登录不代表 API 鉴权，SQLite / 镜像升级须核对。 | [GitHub](https://github.com/Usagi-org/ai-goofish-monitor) / [解读](./projects/ai-goofish-monitor/README.md) |
 | `Kronos` | K 线离散 token 与自回归预测模型；切分交叠、样本窗口及扣费策略评估需独立核。 | [GitHub](https://github.com/shiyu-coder/Kronos) / [解读](./projects/Kronos/README.md) |
 | `anarlog` | 本地优先会议笔记；转写 / 摘要双模型与统计、同步、connectors 独立配置。 | [GitHub](https://github.com/fastrepl/anarlog) / [解读](./projects/anarlog/README.md) |
@@ -994,6 +999,7 @@
 
 - 全量项目目录：[`projects/`](./projects/)
 - 最近日报：
+  - [`2026-11-09`](./daily/2026-11-09/ai-hotspots.md)
   - [`2026-11-08`](./daily/2026-11-08/ai-hotspots.md)
   - [`2026-11-07`](./daily/2026-11-07/ai-hotspots.md)
   - [`2026-11-06`](./daily/2026-11-06/ai-hotspots.md)
@@ -1126,10 +1132,10 @@
 ## 当前状态
 
 - 状态：持续日更中。
-- 最新更新：`2026-11-08`。
-- 当前项目总数：`1010`。
-- 最近新增项目：`astryx`、`nvke`、`AutoRAG`、`gemini-api-cli`、`MNN`；
-  本轮原位刷新 `agent-browser`。
+- 最新更新：`2026-11-09`。
+- 当前项目总数：`1015`。
+- 最近新增项目：`niubigeo`、`google-colab-cli`、`txtai`、`mini-swe-agent`、`Agentero`；
+  本轮原位刷新 `billion-context`。
 - 覆盖平台：GitHub、X、Instagram、YouTube。
 
 ## 维护约定
