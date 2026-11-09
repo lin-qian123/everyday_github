@@ -49,7 +49,7 @@
 
 如果你是第一次进入这个仓库，建议从这几个入口开始：
 
-- 最新日报：[`daily/2026-11-09/ai-hotspots.md`](./daily/2026-11-09/ai-hotspots.md)
+- 最新日报：[`daily/2026-11-10/ai-hotspots.md`](./daily/2026-11-10/ai-hotspots.md)
 - 项目总目录：[`projects/`](./projects/)
 - 自动化约束：[`AGENTS.md`](./AGENTS.md)
 - 开发续接记录：[`TODO.md`](./TODO.md)
@@ -194,6 +194,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `ha-mcp` | Home Assistant 的 MCP 管理面；管理员身份、普通 / readonly 入口与客户端策略分别核。 | [GitHub](https://github.com/homeassistant-ai/ha-mcp) / [解读](./projects/ha-mcp/README.md) |
 | `gemini-api-cli` | 让现有 Agent 经 Shell 调用 Gemini 模型与托管任务；dry-run、凭据来源、远端状态和预算需分别核。 | [GitHub](https://github.com/google-gemini/gemini-api-cli) / [解读](./projects/gemini-api-cli/README.md) |
 | `switch` | 将聊天频道连接人与 Agent 的 room；稳定包、执行器权限、默认遥测与 Commons Clause 须分别核。 | [GitHub](https://github.com/sandbox-quantum/switch) / [解读](./projects/switch/README.md) |
 | `gemini-skills` | 四个 Gemini API 开发技能；动态文档、CLI 凭据、云端存储与视频上限冲突需核。 | [GitHub](https://github.com/google-gemini/gemini-skills) / [解读](./projects/gemini-skills/README.md) |
@@ -657,6 +658,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `VoxCPM` | 连续声学表征 TTS；VoxCPM2 / 旧版、参考条件、网络监听与真实听感分别核。 | [GitHub](https://github.com/OpenBMB/VoxCPM) / [解读](./projects/VoxCPM/README.md) |
 | `cross-platform-llm-client` | PrivateLM 手机本地 / 云端客户端；Android master 集群、崩溃上报、Hive key 和发行包需分别验。 | [GitHub](https://github.com/orailnoor/cross-platform-llm-client) / [解读](./projects/cross-platform-llm-client/README.md) |
 | `video2x` | C++ 视频超分与插帧流水线；Vulkan、AVX2、历史演示和生成伪影需单独验收。 | [GitHub](https://github.com/k4yt3x/video2x) / [解读](./projects/video2x/README.md) |
 | `remote-mic-app` | SayAll 蓝牙遥控器语音入口与可选只读历史 MCP；候选能力、第三方转写、授权与模型外发分开核。 | [GitHub](https://github.com/HD838A/remote-mic-app) / [解读](./projects/remote-mic-app/README.md) |
@@ -749,6 +751,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `mujoco` | 机器人与学习环境物理引擎；4.0 数值回归、模型迁移、步长和实验适用性需核。 | [GitHub](https://github.com/google-deepmind/mujoco) / [解读](./projects/mujoco/README.md) |
 | `google-colab-cli` | 终端申请 Colab runtime 并执行脚本 / 管理文件；账户、配额、超时、下载和资源清理须核。 | [GitHub](https://github.com/googlecolab/google-colab-cli) / [解读](./projects/google-colab-cli/README.md) |
 | `nvke` | 自有 GPU 基础设施的 Kubernetes 管理面预览；默认 HTTP / 认证关闭、全端点权限与恢复缺口须核。 | [GitHub](https://github.com/dsx-ai-factory/nvke) / [解读](./projects/nvke/README.md) |
 | `MNN` | 端侧推理引擎与 LLM 导出 / runtime；模型、后端、量化正确性和特定硬件吞吐分项验证。 | [GitHub](https://github.com/alibaba/MNN) / [解读](./projects/MNN/README.md) |
@@ -891,6 +894,8 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `CompanyOS` | Kortix 团队 agent 运行平台；worker 自合并、secret 共享、云成本与 ELv2 / 白标条款须核。 | [GitHub](https://github.com/kortix-ai/CompanyOS) / [解读](./projects/CompanyOS/README.md) |
+| `GeoLibre` | 本地 GIS 与 AI / MCP 操作平台；坐标数值、数据出口、分享与部署策略分别核。 | [GitHub](https://github.com/opengeos/GeoLibre) / [解读](./projects/GeoLibre/README.md) |
 | `niubigeo` | 自托管品牌 AI 回答与竞品观测；原始证据、成功分母、独立采样、费用和镜像身份分别核。 | [GitHub](https://github.com/Albert-Weasker/niubigeo) / [解读](./projects/niubigeo/README.md) |
 | `ai-goofish-monitor` | 闲鱼多任务采集、关键词 / AI 筛选和通知；前端登录不代表 API 鉴权，SQLite / 镜像升级须核对。 | [GitHub](https://github.com/Usagi-org/ai-goofish-monitor) / [解读](./projects/ai-goofish-monitor/README.md) |
 | `Kronos` | K 线离散 token 与自回归预测模型；切分交叠、样本窗口及扣费策略评估需独立核。 | [GitHub](https://github.com/shiyu-coder/Kronos) / [解读](./projects/Kronos/README.md) |
@@ -999,6 +1004,7 @@
 
 - 全量项目目录：[`projects/`](./projects/)
 - 最近日报：
+  - [`2026-11-10`](./daily/2026-11-10/ai-hotspots.md)
   - [`2026-11-09`](./daily/2026-11-09/ai-hotspots.md)
   - [`2026-11-08`](./daily/2026-11-08/ai-hotspots.md)
   - [`2026-11-07`](./daily/2026-11-07/ai-hotspots.md)
@@ -1132,10 +1138,10 @@
 ## 当前状态
 
 - 状态：持续日更中。
-- 最新更新：`2026-11-09`。
-- 当前项目总数：`1015`。
-- 最近新增项目：`niubigeo`、`google-colab-cli`、`txtai`、`mini-swe-agent`、`Agentero`；
-  本轮原位刷新 `billion-context`。
+- 最新更新：`2026-11-10`。
+- 当前项目总数：`1019`。
+- 最近新增项目：`mujoco`、`ha-mcp`、`CompanyOS`、`GeoLibre`；
+  本轮原位刷新 `VoxCPM`，并补齐其首页解读入口。
 - 覆盖平台：GitHub、X、Instagram、YouTube。
 
 ## 维护约定
