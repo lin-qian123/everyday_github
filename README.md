@@ -49,7 +49,7 @@
 
 如果你是第一次进入这个仓库，建议从这几个入口开始：
 
-- 最新日报：[`daily/2026-11-10/ai-hotspots.md`](./daily/2026-11-10/ai-hotspots.md)
+- 最新日报：[`daily/2026-11-11/ai-hotspots.md`](./daily/2026-11-11/ai-hotspots.md)
 - 项目总目录：[`projects/`](./projects/)
 - 自动化约束：[`AGENTS.md`](./AGENTS.md)
 - 开发续接记录：[`TODO.md`](./TODO.md)
@@ -592,6 +592,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `pocketpal-ai` | 手机端 GGUF / 语音 / 工具客户端；离线聊天、可选联网和本地 API POC 分项验收。 | [GitHub](https://github.com/a-ghorbani/pocketpal-ai) / [解读](./projects/pocketpal-ai/README.md) |
 | `astryx` | Meta React 19 设计系统与 Agent CLI；Beta、scoped 包名、版本一致性、项目写入和无障碍需核。 | [GitHub](https://github.com/meta/astryx) / [解读](./projects/astryx/README.md) |
 | `figma-console-mcp` | 设计 token / 组件读写与一致性检查；本地 / 云模式、PAT 范围与桥插件版本须分开。 | [GitHub](https://github.com/southleft/figma-console-mcp) / [解读](./projects/figma-console-mcp/README.md) |
 | `doop` | 人与 MCP Agent 共用的 HTML 设计画布；账户权限、脚本演示、Cloud 功能与 AGPL 边界须核。 | [GitHub](https://github.com/kgoedecke/doop) / [解读](./projects/doop/README.md) |
@@ -658,6 +659,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `ooosplat` | 本机 COLMAP / Brush 高斯重建、编辑与导出；默认统计、MCP 身份、平台与尺度边界需核。 | [GitHub](https://github.com/ooolabdev/ooosplat) / [解读](./projects/ooosplat/README.md) |
 | `VoxCPM` | 连续声学表征 TTS；VoxCPM2 / 旧版、参考条件、网络监听与真实听感分别核。 | [GitHub](https://github.com/OpenBMB/VoxCPM) / [解读](./projects/VoxCPM/README.md) |
 | `cross-platform-llm-client` | PrivateLM 手机本地 / 云端客户端；Android master 集群、崩溃上报、Hive key 和发行包需分别验。 | [GitHub](https://github.com/orailnoor/cross-platform-llm-client) / [解读](./projects/cross-platform-llm-client/README.md) |
 | `video2x` | C++ 视频超分与插帧流水线；Vulkan、AVX2、历史演示和生成伪影需单独验收。 | [GitHub](https://github.com/k4yt3x/video2x) / [解读](./projects/video2x/README.md) |
@@ -876,7 +878,7 @@
 | `os-taxonomy` | 基础教育微主题与前置知识图谱；Agent 教学建议、缺覆盖及数据库 / 正文 / 标准多层许可需分开。 | [GitHub](https://github.com/withmarbleapp/os-taxonomy) / [解读](./projects/os-taxonomy/README.md) |
 | `generative-ai-for-beginners` | 21 节生成式 AI 课程与 Python / TypeScript 实践；provider 迁移、依赖、费用和翻译需逐课复核。 | [GitHub](https://github.com/microsoft/generative-ai-for-beginners) / [解读](./projects/generative-ai-for-beginners/README.md) |
 | `llm-course` | LLM 基础 / 训练 / 应用三路线与 notebook 入口；外链环境、模型条款和云成本需逐项复现。 | [GitHub](https://github.com/mlabonne/llm-course) / [解读](./projects/llm-course/README.md) |
-| `claude-quickstarts` | Anthropic 应用参考实现集；各子项目的桌面 / shell 权限、依赖、费用与持久化分别评估。 | [GitHub](https://github.com/anthropics/claude-quickstarts) / [解读](./projects/claude-quickstarts/README.md) |
+| `claude-quickstarts` | Anthropic 应用参考集；知识 Wiki 的来源 / 并发完整性、日报状态、桌面权限和成本分别评估。 | [GitHub](https://github.com/anthropics/claude-quickstarts) / [解读](./projects/claude-quickstarts/README.md) |
 | `Hands-On-Large-Language-Models` | 12 章 LLM 实验骨架；旧依赖复现、现代 API 迁移和云调用费用需分别评估。 | [GitHub](https://github.com/HandsOnLLM/Hands-On-Large-Language-Models) / [解读](./projects/Hands-On-Large-Language-Models/README.md) |
 | `agents-towards-production` | 覆盖工具、RAG、memory、部署、安全、观测与评测的可运行 Agent 教程集；逐目录依赖、赞助内容和自定义非商业许可须核验。 | [GitHub](https://github.com/NirDiamant/agents-towards-production) |
 | `cs249r_book` | Harvard ML systems 四卷课程仓库，连接书稿、labs、TinyTorch、硬件与模拟；preview / in-development 状态和 CC BY-NC-SA 4.0 须明确。 | [GitHub](https://github.com/harvard-edge/cs249r_book) |
@@ -894,6 +896,8 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `sure` | 带可选 AI 的个人财务账本；聊天 / 分类双流水线、MCP 写权限、数据出口与完整恢复分别核。 | [GitHub](https://github.com/we-promise/sure) / [解读](./projects/sure/README.md) |
+| `ohmygame` | Pi 驱动的游戏设计、素材与试玩工作台；原生插件权限、CLI 默认模式和发布质量须分别审。 | [GitHub](https://github.com/WhiteTowerAI/ohmygame) / [解读](./projects/ohmygame/README.md) |
 | `CompanyOS` | Kortix 团队 agent 运行平台；worker 自合并、secret 共享、云成本与 ELv2 / 白标条款须核。 | [GitHub](https://github.com/kortix-ai/CompanyOS) / [解读](./projects/CompanyOS/README.md) |
 | `GeoLibre` | 本地 GIS 与 AI / MCP 操作平台；坐标数值、数据出口、分享与部署策略分别核。 | [GitHub](https://github.com/opengeos/GeoLibre) / [解读](./projects/GeoLibre/README.md) |
 | `niubigeo` | 自托管品牌 AI 回答与竞品观测；原始证据、成功分母、独立采样、费用和镜像身份分别核。 | [GitHub](https://github.com/Albert-Weasker/niubigeo) / [解读](./projects/niubigeo/README.md) |
@@ -1004,6 +1008,7 @@
 
 - 全量项目目录：[`projects/`](./projects/)
 - 最近日报：
+  - [`2026-11-11`](./daily/2026-11-11/ai-hotspots.md)
   - [`2026-11-10`](./daily/2026-11-10/ai-hotspots.md)
   - [`2026-11-09`](./daily/2026-11-09/ai-hotspots.md)
   - [`2026-11-08`](./daily/2026-11-08/ai-hotspots.md)
@@ -1138,10 +1143,10 @@
 ## 当前状态
 
 - 状态：持续日更中。
-- 最新更新：`2026-11-10`。
-- 当前项目总数：`1019`。
-- 最近新增项目：`mujoco`、`ha-mcp`、`CompanyOS`、`GeoLibre`；
-  本轮原位刷新 `VoxCPM`，并补齐其首页解读入口。
+- 最新更新：`2026-11-11`。
+- 当前项目总数：`1023`。
+- 最近新增项目：`sure`、`ohmygame`、`pocketpal-ai`、`ooosplat`；
+  本轮原位刷新 `claude-quickstarts` 的知识 Wiki 与 Daily Brief 说明。
 - 覆盖平台：GitHub、X、Instagram、YouTube。
 
 ## 维护约定
