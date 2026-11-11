@@ -49,7 +49,7 @@
 
 如果你是第一次进入这个仓库，建议从这几个入口开始：
 
-- 最新日报：[`daily/2026-11-11/ai-hotspots.md`](./daily/2026-11-11/ai-hotspots.md)
+- 最新日报：[`daily/2026-11-12/ai-hotspots.md`](./daily/2026-11-12/ai-hotspots.md)
 - 项目总目录：[`projects/`](./projects/)
 - 自动化约束：[`AGENTS.md`](./AGENTS.md)
 - 开发续接记录：[`TODO.md`](./TODO.md)
@@ -189,6 +189,7 @@
 | `codex-router` | Codex 外部模型路由器，把 Kimi、DeepSeek 等 provider 接入 Codex model picker。 | [GitHub](https://github.com/duolahypercho/codex-router) |
 | `ego-lite` | 为外部 coding agent 提供独立 browser Space 的 macOS 浏览器；迁移登录态前须隔离 profile、最小权限并审计网络数据流。 | [GitHub](https://github.com/citrolabs/ego-lite) |
 | `munder-difflin` | 以真实终端 CLI、文件型消息/记忆与人工闸门编排本地多 agent 的桌面 harness；不是沙箱，须审计权限和许可证。 | [GitHub](https://github.com/chaitanyagiri/munder-difflin) |
+| `LoopForge` | 自托管 Coding Agent 聊天与 SOP 交付，组合脚本、独立复核和人工关卡；默认注册、团队可见性、Docker socket 与迁移须治理。 | [GitHub](https://github.com/Tencent/LoopForge) / [解读](./projects/LoopForge/README.md) |
 
 ### Agent 框架与技能生态
 
@@ -447,6 +448,7 @@
 | `open-kritt` | 开源 agentic security scanner，用多 agent workflow 查找、验证并构建漏洞 PoC。 | [GitHub](https://github.com/Kritt-ai/open-kritt) |
 | `fabrica` | 基于 Kubernetes、Kata Containers 和 Cloud Hypervisor 的 agent microVM sandbox 平台。 | [GitHub](https://github.com/mitkox/fabrica) |
 | `graphkit` | Claude Code graph engineering skill，用 executor、supervisor、ledger 拆解长时程 coding 任务。 | [GitHub](https://github.com/levi-qiao/graphkit) |
+| `improve` | 强模型调查并写自包含计划，执行者另行实施；提示词只读、worktree、漂移与总费用须分别验证。 | [GitHub](https://github.com/shadcn/improve) / [解读](./projects/improve/README.md) |
 
 ### 记忆层与个人 AI 基础设施
 
@@ -631,7 +633,7 @@
 | `open-design` | 面向开放设计流程和组件思路的项目。 | [GitHub](https://github.com/nexu-io/open-design) |
 | `AionUi` | 偏 AI 应用界面的组件/模板方向。 | [GitHub](https://github.com/iOfficeAI/AionUi) |
 | `UI-TARS-desktop` | 偏桌面 Agent UI 与可操作前端表面。 | [GitHub](https://github.com/bytedance/UI-TARS-desktop) |
-| `OpenSandbox` | 为 Agent 提供可控执行环境与隔离层。 | [GitHub](https://github.com/alibaba/OpenSandbox) |
+| `OpenSandbox` | AAIF 项目的统一 Agent 沙箱 API，组织迁移已核同 ID；稳定 / RC、组件版本、默认认证、签名缺口和 warm 成功率须核验。 | [GitHub](https://github.com/opensandbox-group/OpenSandbox) / [解读](./projects/OpenSandbox/README.md) |
 | `page-agent` | 页面级 agent 交互与操作路线。 | [GitHub](https://github.com/alibaba/page-agent) |
 | `lightpanda-browser` | Zig 无头浏览器与原生 MCP / Agent / 脚本；注意版本、默认统计和作者基准条件。 | [GitHub](https://github.com/lightpanda-io/browser) / [解读](./projects/lightpanda-browser/README.md) |
 | `openui` | 开源生成式 UI 原型工具，支持描述界面并导出到多种前端框架。 | [GitHub](https://github.com/wandb/openui) |
@@ -654,6 +656,7 @@
 | `kill-ai-slop` | 把 AI 生成产品的视觉/文案套路整理成 taxonomy，并提供 agent skill 扫描与修复。 | [GitHub](https://github.com/yetone/kill-ai-slop) |
 | `bolt-slides` | StackBlitz 的 agent 友好型 React/Web slide 框架，让演示文稿成为可运行 Web app。 | [GitHub](https://github.com/stackblitz/bolt-slides) |
 | `diagram-design` | 面向 Claude Code、Codex、Pi 的图表设计 skill，输出可审阅 HTML/SVG；品牌 URL 抽取与事实准确性需独立审查。 | [GitHub](https://github.com/cathrynlavery/diagram-design) |
+| `modern-web-guidance-src` | 现代 Web 指南的创作、检索与评测源仓库；分发技能、Baseline、默认遥测和代码 / 指南许可须分开核对。 | [GitHub](https://github.com/GoogleChrome/modern-web-guidance-src) / [解读](./projects/modern-web-guidance-src/README.md) |
 
 ### 语音、视频与多模态
 
@@ -891,6 +894,7 @@
 | `ai-agent-book` | 覆盖上下文、工具、评估、后训练与协作的开源 AI Agent 书稿，配有 10 章和 103 个实验入口。 | [GitHub](https://github.com/bojieli/ai-agent-book) |
 | `AI-For-Beginners` | Microsoft 的 12 周、24 课 AI 入门课程，覆盖经典 AI、深度学习、视觉、NLP、多智能体与伦理；课程时效与外部依赖须另行复核。 | [GitHub](https://github.com/microsoft/AI-For-Beginners) |
 | `OpenMAIC` | 清华 THU-MAIC 的多智能体互动课堂平台，把主题/材料生成课程、幻灯片、测验、交互场景和课堂讨论；教育效果、材料、模型和导出结果须独立审核。 | [GitHub](https://github.com/THU-MAIC/OpenMAIC) |
+| `rag-from-scratch` | LangChain 五份历史 Notebook 拆解 RAG；依赖、远端 tracing、引用质量和根许可缺口须先核对。 | [GitHub](https://github.com/langchain-ai/rag-from-scratch) / [解读](./projects/rag-from-scratch/README.md) |
 
 ### 办公、商业与行业应用
 
@@ -1008,6 +1012,7 @@
 
 - 全量项目目录：[`projects/`](./projects/)
 - 最近日报：
+  - [`2026-11-12`](./daily/2026-11-12/ai-hotspots.md)
   - [`2026-11-11`](./daily/2026-11-11/ai-hotspots.md)
   - [`2026-11-10`](./daily/2026-11-10/ai-hotspots.md)
   - [`2026-11-09`](./daily/2026-11-09/ai-hotspots.md)
@@ -1143,10 +1148,10 @@
 ## 当前状态
 
 - 状态：持续日更中。
-- 最新更新：`2026-11-11`。
-- 当前项目总数：`1023`。
-- 最近新增项目：`sure`、`ohmygame`、`pocketpal-ai`、`ooosplat`；
-  本轮原位刷新 `claude-quickstarts` 的知识 Wiki 与 Daily Brief 说明。
+- 最新更新：`2026-11-12`。
+- 当前项目总数：`1027`。
+- 最近新增项目：`improve`、`modern-web-guidance-src`、`LoopForge`、`rag-from-scratch`；
+  本轮原位刷新 `OpenSandbox` 的组织迁移、发行与隔离边界。
 - 覆盖平台：GitHub、X、Instagram、YouTube。
 
 ## 维护约定

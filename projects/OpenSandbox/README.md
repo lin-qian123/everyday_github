@@ -1,86 +1,57 @@
-# OpenSandbox
+<!-- markdownlint-disable MD013 -->
 
-- GitHub: https://github.com/alibaba/OpenSandbox
-- 官方文档: https://open-sandbox.ai/
-- 记录时间: 2026-03-05
+# OpenSandbox：统一 Agent 沙箱 API，区分运行时与发行验证
 
-## 这是什么
-OpenSandbox 是阿里开源的通用 Sandbox 平台，核心目标是给 AI Agent 提供“可控、可隔离、可观测”的执行环境。它提供统一 API、跨语言 SDK，以及 Docker/Kubernetes 运行时，适用于代码执行、浏览器自动化、桌面 Agent、评测和训练等场景。
+- 上游：[`opensandbox-group/OpenSandbox`](https://github.com/opensandbox-group/OpenSandbox)；仓库 ID：`1118085970`。
+- 核读：2026-11-12（Asia/Shanghai）；主线固定于 [`f72baeae3a7f`](https://github.com/opensandbox-group/OpenSandbox/tree/f72baeae3a7feb11a49cc42f48dba3e93a94600d)。
+- 热度快照：17,201 stars / 1,630 forks / 210 open issues（含 PR）；来自 [GitHub API](https://api.github.com/repos/opensandbox-group/OpenSandbox)，不代表采用量或质量。
 
-从 GitHub Trending（daily）可见，它在今日榜单前列，且单日星标增长明显。
+## 定位
 
-## 为什么它最近热
-- Agent 进入“要执行真实任务”的阶段后，必须解决执行隔离、网络权限、文件系统、安全审计问题。
-- OpenSandbox 把这些能力做成标准化平台，降低了“每个团队重复造 sandbox”的成本。
-- 官方示例覆盖 Claude Code、Codex CLI、Gemini CLI、Playwright、VNC Desktop 等，落地感很强。
+在自有基础设施中运行 Agent 代码、命令、文件操作、浏览器和桌面环境的开源平台，以生命周期 / 执行 API 连接 Docker、Kubernetes 和 Fast Sandbox，提供多语言 SDK、CLI、MCP。
 
-## 怎么用（最小可跑）
+原页 2026-03-05 跟踪 `alibaba/OpenSandbox`；该 API 当前返回迁移目标 `/repositories/1118085970`，与新组织仓库 ID 一致，故在原目录刷新，不另建项目。当前 README 标明为 AAIF 项目，代码 Apache-2.0。今天官方 Python daily +88；榜单语言分组并不等同 API 当前主语言（Go）。
 
-### 1) 安装并初始化服务
-```bash
-uv pip install opensandbox-server
-opensandbox-server init-config ~/.sandbox.toml --example docker
-opensandbox-server
-```
+## 用法
 
-### 2) 安装 Code Interpreter SDK
-```bash
-uv pip install opensandbox-code-interpreter
-```
+先按**已发布版本**选 server / SDK / 镜像组合。[PyPI `opensandbox-server`](https://pypi.org/pypi/opensandbox-server/json) 当前为 1.2.0；稳定平台发行 `release-1.2.0` 于 UTC 10-27 发布。最新 `release-1.2.1-rc.2`（UTC 11-11）是候选版，发行说明明确只发布镜像，SDK/CLI 包留待 1.2.1 稳定发布；不要直接把主线新能力套给 1.2.0 安装。
 
-### 3) 创建 sandbox 并执行命令（Python）
-```python
-import asyncio
-from datetime import timedelta
-from opensandbox import Sandbox
+本地需 Docker 和 Python >=3.10。上游工作流先生成 Docker TOML，再启动 server、用 SDK 创建实例，执行命令 / 文件操作，最后在 `finally` 销毁实例；当前文档清理方法为 `destroy()`，不沿用旧页过时示例。CLI `osb` 与 MCP 分别安装，都是有实际创建和执行权限的入口。
 
-async def main():
-    sandbox = await Sandbox.create(
-        "opensandbox/code-interpreter:v1.0.1",
-        entrypoint=["/opt/opensandbox/code-interpreter.sh"],
-        timeout=timedelta(minutes=10),
-    )
-    async with sandbox:
-        execution = await sandbox.commands.run("echo 'Hello OpenSandbox!'")
-        print(execution.logs.stdout[0].text)
-        await sandbox.kill()
+主线示例 TOML 监听 `127.0.0.1:8080`，API key 留空注释。空 key 会无认证，需 TTY 确认，非交互需 `OPENSANDBOX_INSECURE_SERVER=YES` 显式承认；实际接入应设置 key。生成配置后核对版本、监听、沙箱端口发布地址和 egress，不要以控制面 loopback 推断所有入口仅本机可达。
 
-asyncio.run(main())
-```
+## 原理
 
-## 原理（架构拆解）
+生命周期层创建、查询、暂停 / 恢复、销毁沙箱，执行层提供 commands / files 等接口；具体隔离强度取决于容器 / 微虚机、挂载、权限和宿主。Fast Sandbox 的预热容量与快照恢复降低创建等待，不能等同冷启动或任意负载性能。
 
-### 1) 协议层：统一 Sandbox Protocol
-OpenSandbox 定义了生命周期管理 API 和执行 API，把“创建实例、执行命令、文件读写、网络控制”抽象成统一接口。上层 Agent 不需要关心底层是 Docker 还是 Kubernetes。
+网络分 ingress 和逐沙箱 egress。Credential Vault 由 egress sidecar 保管真实凭据，工作负载使用假值或空值；对获准 HTTPS 请求进行绑定匹配和认证头注入。主线要求 `dns+nft`、网络策略和 Credential Proxy，建议 `defaultAction=deny`；不是启用 SDK 就自动具备的保护。
 
-### 2) 运行时层：Docker + Kubernetes 双栈
-- 本地快速开发可走 Docker。
-- 生产与高并发调度可走 Kubernetes（高性能 runtime）。
+## 价值
 
-### 3) 能力层：命令/文件/代码解释器
-默认内建命令执行、文件系统操作、代码解释器（Code Interpreter）等能力，方便 Agent 直接做“执行-读写-回传”闭环。
+把 Agent 执行环境和应用逻辑解耦，适合每任务独立空间、受控代码执行、浏览器任务和评测训练。统一 API 便于替换后端，但各后端的版本、能力、恢复和网络策略仍须逐项验证。
 
-### 4) 网络层：Ingress + Egress 控制
-- Ingress 网关统一接入策略。
-- Egress 做每个 sandbox 的出网控制，限制数据外泄和越权访问。
+作者 10-08 双节点 ACK warm 测量中，初始串行 create 100/100 成功、p50 64 ms；并发 20 则为 51/100 成功。时延只统计成功样本，且预热、缓存、客户端和存储条件已说明；不可把“64 ms”外推为生产吞吐、冷启动或全负载 SLA。
 
-## 典型场景
-- Coding Agent 安全执行 PR 修复脚本。
-- Browser Agent 在隔离浏览器中做抓取/测试。
-- 多租户 AI 平台为每个任务分配独立运行空间。
-- RL/评测环境复现可控执行轨迹。
+## 风险边界
 
-## 与同类方案的差异（实用视角）
-- 不只是“容器工具”，而是面向 Agent 的完整执行平台。
-- SDK 和示例齐全，接入门槛低。
-- 既支持本地，也支持大规模集群调度。
+- **发行签名有明确缺口**：SECURITY 有概括性签名说明，但更具体的当前 release-verification 文档指出 umbrella / package workflow 缺 Cosign / provenance 步骤，并跟踪 issue #2463。digest 对应只证明内容身份，不能代替构建者来源证明。
+- `release-1.2.1-rc.1` 的 API `prerelease=false`，但名称和说明明确仍是 RC；不能仅按布尔标志认定稳定。rc.2 的资源超配、修复和功能属于候选版，不是本轮部署验收。
+- 控制面 key、工作负载身份、execd、公开沙箱端口、ingress 和 egress 是不同边界；单一 server key 不自动建立业务多租户授权。
+- Vault 仍需审 request scheme / host / port / method / path、代理 CA、宿主及 sidecar 权限；保密凭据不等于请求行为获授权。动态 exchange 主线文档和发行说明对 SDK 覆盖存在粒度差异，接入前逐语言核版本。
+- 容器共享内核、宿主 bind、镜像、恢复制品和集群权限均影响隔离。网络控制必须在所选后端实际验，不能只看 API 接受策略或健康检查成功。
 
-## 风险与注意事项
-- 仍需做好镜像供应链安全和依赖审计。
-- Egress 白名单策略要默认收紧，不要全开。
-- 对“可执行用户代码”场景，需要叠加配额、审计日志与超时熔断。
+## 补充建议
 
-## 参考
-- https://github.com/alibaba/OpenSandbox
-- https://open-sandbox.ai/
-- https://raw.githubusercontent.com/alibaba/OpenSandbox/main/README.md
+固定 server、SDK、组件镜像 digest、配置和部署后端，先验证禁止访问、端口曝光、超时销毁、失败恢复和凭据不落盘，再测 warm / cold、成功率和尾延迟。若组织要求签名来源，当前缺失应作为未满足条件保留，或使用经独立核验的构建流程。
+
+本轮为迁移身份、文件、发行与性能文档静态核读；未安装 server、拉镜像、启动沙箱、注入凭据、跑 ACK / KVM、验签或执行隔离测试。
+
+## 参考资料
+
+- [README 与统一入口](https://github.com/opensandbox-group/OpenSandbox/blob/f72baeae3a7feb11a49cc42f48dba3e93a94600d/README.md)。
+- [主线 server 配置与认证](https://github.com/opensandbox-group/OpenSandbox/blob/f72baeae3a7feb11a49cc42f48dba3e93a94600d/docs/getting-started/configuration.md)。
+- [Docker 示例 TOML](https://github.com/opensandbox-group/OpenSandbox/blob/f72baeae3a7feb11a49cc42f48dba3e93a94600d/server/opensandbox_server/examples/example.config.toml)。
+- [当前发行验证缺口](https://github.com/opensandbox-group/OpenSandbox/blob/f72baeae3a7feb11a49cc42f48dba3e93a94600d/docs/community/release-verification.md)。
+- [Vault 前提和匹配规则](https://github.com/opensandbox-group/OpenSandbox/blob/f72baeae3a7feb11a49cc42f48dba3e93a94600d/docs/guides/credential-vault.md)。
+- [性能环境、成功率和样本定义](https://github.com/opensandbox-group/OpenSandbox/blob/f72baeae3a7feb11a49cc42f48dba3e93a94600d/docs/architecture/fast-sandbox/performance.md)。
+- [安全报告与支持范围](https://github.com/opensandbox-group/OpenSandbox/blob/f72baeae3a7feb11a49cc42f48dba3e93a94600d/SECURITY.md)。
