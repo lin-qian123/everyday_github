@@ -14,6 +14,8 @@
 
 ## 阶段性开发记录
 
+- 2026-11-14 07 时段续更：在同日日报补充 `Veyra-NRVideo`、`locally-uncensored` 两个七节页与两个既有分类，实际目录 `1030 → 1032`；不重复凌晨三新一更。官方 daily +245 / +154。X 两搜索转登录，Instagram aiagents 129K 聚合 / aivideo 429；YouTube Veyra 第三方 GTA5 演示列表与 oEmbed 一致，699 累计 / 11d / 4:43，未核当日增量、未完整观看。接续：Veyra 软件帧节奏改善与延迟增加、实卡 / 组合许可 / 发行身份；LU 目录约束与宿主 shell、MCP override、Cloud 出口、聊天备份恢复、首装 / 更新签名及平台验收。保留 AGENTS.md 原修改；未安装运行上游、下载模型 / 发行包、登录、串流、恢复或做性能 / 权限 / 签名实验。
+
 - 2026-11-14：新增 `Hy-MT2`、`ffmpeg-skill`、`avenoxbeyin` 三个七节页，原位刷新 `open-code-review`（1.11.7 → 1.13.9）；同步四平台日报与四类导航，实际目录 `1027 → 1030`。官方 daily 日增新项 +49 / +224 / +46，刷新 +206。X 搜索 / 作者账号 403，以 11-04 官方工程博客作明确标注的历史背景；Instagram 主题聚合 129K 仅宽泛话题、翻译标签限流；YouTube 两第三方历史视频列表 / oEmbed 一致，累计 775 / 212，相对 5mo / 8d，无每日增量。接续：Hy STQ PR 未合并 / 模型与数据双许可 / judge 与缺失分母；FFmpeg 3.x / MCP 全工具可调用 / 采样与帧 / 完整视听；记忆词法召回 / Desktop hook / global bridge / 本机 Web；OCR coverage / tools / provider-delegate / raw 日志。未把当前快照回填为 11-13；保留 AGENTS.md 原修改和 owner-aware 待办。未安装运行上游、调用模型、下载权重、处理媒体、改 hooks、启动服务、发评论或做权限性能实验。
 
 - 2026-11-12：新增 `improve`、`modern-web-guidance-src`、`LoopForge`、`rag-from-scratch` 四个七节页，按同 ID 原位刷新 `OpenSandbox`；同步四平台日报与四类导航，目录 `1023 → 1027`。官方 daily 日增新项 +333 / +133 / +76 / +164，刷新 +88。X 官网回链核 Chrome 11-10 / 11-11 两原帖及 oEmbed，Views 136.5K / 9,229；Instagram 主题聚合 / 登录限流缺口；YouTube 官方 Chrome / RAG 列表与 oEmbed 绑定，累计 14,139 / 约 270K，相对 1d / 2y，不算每日增长。接续：计划漂移与总费用；Chrome 默认遥测 / 分发 / 双许可 / Baseline；LoopForge 注册 / 可信团队 / Docker 控制面 / Local 与迁移；OpenSandbox 稳定-RC / 包 / 签名缺口 / Vault / warm 成功分母；RAG tracing / 历史依赖 / prompt / 根许可。保留 AGENTS.md 原修改及 owner-aware 同名键待办；未安装执行上游、登录、调用模型、启动沙箱、验签、跑隔离性能或完整观看。

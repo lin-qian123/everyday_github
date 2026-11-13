@@ -454,6 +454,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `locally-uncensored` | 本地模型、媒体与 Agent 桌面工作台；目录 Sandbox、shell / MCP 权限、Cloud 出口、备份与平台状态分开核。 | [GitHub](https://github.com/PurpleDoubleD/locally-uncensored) / [解读](./projects/locally-uncensored/README.md) |
 | `avenoxbeyin` | Markdown 来源、词法索引与跨客户端任务 / receipt；Desktop 自动 hook、可选 global bridge 与本机 Web 信任面须分别验证。 | [GitHub](https://github.com/avenoxai/avenoxbeyin) / [解读](./projects/avenoxbeyin/README.md) |
 | `dsh-memory-evolve` | DSH 分轨记忆、技能与会话评审插件；写入确认差异、公开 Git 远端与宿主版本须核。 | [GitHub](https://github.com/csyangwen/dsh-memory-evolve) / [解读](./projects/dsh-memory-evolve/README.md) |
 | `QwenPaw` | 多渠道 Agent 工作站与 ReMe 记忆；运行期遥测、插件权限和内置素材许可须核。 | [GitHub](https://github.com/agentscope-ai/QwenPaw) / [解读](./projects/QwenPaw/README.md) |
@@ -663,6 +664,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `Veyra-NRVideo` | Windows 超分 / NR / HDR / 补帧与采集预览；呈现节奏、真实延迟、社区后端和组合许可须分别核。 | [GitHub](https://github.com/Likely7/Veyra-NRVideo) / [解读](./projects/Veyra-NRVideo/README.md) |
 | `ffmpeg-skill` | 42 个本地 FFmpeg 工具与生成式 CLI / MCP 契约；精简工具列表不限制调用，技术 QA 与完整视听验收分开。 | [GitHub](https://github.com/kajisho5/ffmpeg-skill) / [解读](./projects/ffmpeg-skill/README.md) |
 | `ooosplat` | 本机 COLMAP / Brush 高斯重建、编辑与导出；默认统计、MCP 身份、平台与尺度边界需核。 | [GitHub](https://github.com/ooolabdev/ooosplat) / [解读](./projects/ooosplat/README.md) |
 | `VoxCPM` | 连续声学表征 TTS；VoxCPM2 / 旧版、参考条件、网络监听与真实听感分别核。 | [GitHub](https://github.com/OpenBMB/VoxCPM) / [解读](./projects/VoxCPM/README.md) |
@@ -1153,9 +1155,9 @@
 
 - 状态：持续日更中。
 - 最新更新：`2026-11-14`。
-- 当前项目总数：`1030`。
-- 最近新增项目：`Hy-MT2`、`ffmpeg-skill`、`avenoxbeyin`；
-  本轮原位刷新 `open-code-review` 的发行、覆盖分母、鉴权与日志边界。
+- 当前项目总数：`1032`。
+- 最近新增项目：`Veyra-NRVideo`、`locally-uncensored`（11-14 07 时段补充）；
+  同日 01 时段已新增 `Hy-MT2`、`ffmpeg-skill`、`avenoxbeyin` 并原位刷新 `open-code-review`。
 - 覆盖平台：GitHub、X、Instagram、YouTube。
 
 ## 维护约定
