@@ -49,7 +49,7 @@
 
 如果你是第一次进入这个仓库，建议从这几个入口开始：
 
-- 最新日报：[`daily/2026-11-12/ai-hotspots.md`](./daily/2026-11-12/ai-hotspots.md)
+- 最新日报：[`daily/2026-11-14/ai-hotspots.md`](./daily/2026-11-14/ai-hotspots.md)
 - 项目总目录：[`projects/`](./projects/)
 - 自动化约束：[`AGENTS.md`](./AGENTS.md)
 - 开发续接记录：[`TODO.md`](./TODO.md)
@@ -124,7 +124,7 @@
 | `webcodex` | 通过 MCP/HTTPS Server 与本地 Runner，让 cloud agent 使用真实 checkout、Git 和 toolchain；代码在本机不等于内容不外发，tunnel 也不收窄执行权限。 | [GitHub](https://github.com/yyjeqhc/webcodex) |
 | `PI-Desktop` | Electron + Rust host core + pi sidecar 的 local-first coding-agent 桌面工作区；Early Preview、插件信任和云端 provider 数据流须独立治理。 | [GitHub](https://github.com/vastsa/PI-Desktop) |
 | `prime-agent` | 以 RLM、持久 Python REPL、subagents 与 continual harness 支撑长时程任务；生成代码以用户权限运行，生命周期隔离不是 sandbox。 | [GitHub](https://github.com/PrimeIntellect-ai/prime-agent) |
-| `open-code-review` | 阿里开源的混合式 code-review CLI，将确定性文件覆盖 / 定位与 LLM agent 结合；低 recall 取舍和代码外发须复核。 | [GitHub](https://github.com/alibaba/open-code-review) |
+| `open-code-review` | 确定性覆盖与 LLM 审查的混合 CLI；1.13.9 单列 excluded / warnings，模型鉴权、低 recall 与本地原始日志须核。 | [GitHub](https://github.com/alibaba/open-code-review) / [解读](./projects/open-code-review/README.md) |
 | `lazycodex` | 为 Codex 分发 OmO 的项目记忆、规划、验证、skills、hooks 与多模型路由；安装会修改用户级配置，须按第三方供应链审查。 | [GitHub](https://github.com/code-yeongyu/lazycodex) |
 | `portless` | 用稳定 `.localhost` 与 worktree 子域名替代本地端口，方便人和 agents 复用开发入口；本地 CA、sudo 服务与共享模式须审计。 | [GitHub](https://github.com/vercel-labs/portless) |
 | `nodeterm` | 把真实终端、coding-agent sessions、画布、Kanban、Git 与远程监督合并；tmux 不是隔离，当前许可证为 BUSL-1.1。 | [GitHub](https://github.com/eneskirca/nodeterm) |
@@ -454,6 +454,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `avenoxbeyin` | Markdown 来源、词法索引与跨客户端任务 / receipt；Desktop 自动 hook、可选 global bridge 与本机 Web 信任面须分别验证。 | [GitHub](https://github.com/avenoxai/avenoxbeyin) / [解读](./projects/avenoxbeyin/README.md) |
 | `dsh-memory-evolve` | DSH 分轨记忆、技能与会话评审插件；写入确认差异、公开 Git 远端与宿主版本须核。 | [GitHub](https://github.com/csyangwen/dsh-memory-evolve) / [解读](./projects/dsh-memory-evolve/README.md) |
 | `QwenPaw` | 多渠道 Agent 工作站与 ReMe 记忆；运行期遥测、插件权限和内置素材许可须核。 | [GitHub](https://github.com/agentscope-ai/QwenPaw) / [解读](./projects/QwenPaw/README.md) |
 | `obsidian-second-brain` | 多宿主技能维护 Markdown 知识库；云模型出口、并发写入、索引新鲜度和恢复须核。 | [GitHub](https://github.com/eugeniughelbur/obsidian-second-brain) / [解读](./projects/obsidian-second-brain/README.md) |
@@ -662,6 +663,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `ffmpeg-skill` | 42 个本地 FFmpeg 工具与生成式 CLI / MCP 契约；精简工具列表不限制调用，技术 QA 与完整视听验收分开。 | [GitHub](https://github.com/kajisho5/ffmpeg-skill) / [解读](./projects/ffmpeg-skill/README.md) |
 | `ooosplat` | 本机 COLMAP / Brush 高斯重建、编辑与导出；默认统计、MCP 身份、平台与尺度边界需核。 | [GitHub](https://github.com/ooolabdev/ooosplat) / [解读](./projects/ooosplat/README.md) |
 | `VoxCPM` | 连续声学表征 TTS；VoxCPM2 / 旧版、参考条件、网络监听与真实听感分别核。 | [GitHub](https://github.com/OpenBMB/VoxCPM) / [解读](./projects/VoxCPM/README.md) |
 | `cross-platform-llm-client` | PrivateLM 手机本地 / 云端客户端；Android master 集群、崩溃上报、Hive key 和发行包需分别验。 | [GitHub](https://github.com/orailnoor/cross-platform-llm-client) / [解读](./projects/cross-platform-llm-client/README.md) |
@@ -756,6 +758,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `Hy-MT2` | 多尺寸翻译模型、低比特权重与 IFMTBench；STQ 未合并后端、模型 / 数据双许可和评分分母须核。 | [GitHub](https://github.com/Tencent-Hunyuan/Hy-MT2) / [解读](./projects/Hy-MT2/README.md) |
 | `mujoco` | 机器人与学习环境物理引擎；4.0 数值回归、模型迁移、步长和实验适用性需核。 | [GitHub](https://github.com/google-deepmind/mujoco) / [解读](./projects/mujoco/README.md) |
 | `google-colab-cli` | 终端申请 Colab runtime 并执行脚本 / 管理文件；账户、配额、超时、下载和资源清理须核。 | [GitHub](https://github.com/googlecolab/google-colab-cli) / [解读](./projects/google-colab-cli/README.md) |
 | `nvke` | 自有 GPU 基础设施的 Kubernetes 管理面预览；默认 HTTP / 认证关闭、全端点权限与恢复缺口须核。 | [GitHub](https://github.com/dsx-ai-factory/nvke) / [解读](./projects/nvke/README.md) |
@@ -1012,6 +1015,7 @@
 
 - 全量项目目录：[`projects/`](./projects/)
 - 最近日报：
+  - [`2026-11-14`](./daily/2026-11-14/ai-hotspots.md)
   - [`2026-11-12`](./daily/2026-11-12/ai-hotspots.md)
   - [`2026-11-11`](./daily/2026-11-11/ai-hotspots.md)
   - [`2026-11-10`](./daily/2026-11-10/ai-hotspots.md)
@@ -1148,10 +1152,10 @@
 ## 当前状态
 
 - 状态：持续日更中。
-- 最新更新：`2026-11-12`。
-- 当前项目总数：`1027`。
-- 最近新增项目：`improve`、`modern-web-guidance-src`、`LoopForge`、`rag-from-scratch`；
-  本轮原位刷新 `OpenSandbox` 的组织迁移、发行与隔离边界。
+- 最新更新：`2026-11-14`。
+- 当前项目总数：`1030`。
+- 最近新增项目：`Hy-MT2`、`ffmpeg-skill`、`avenoxbeyin`；
+  本轮原位刷新 `open-code-review` 的发行、覆盖分母、鉴权与日志边界。
 - 覆盖平台：GitHub、X、Instagram、YouTube。
 
 ## 维护约定
