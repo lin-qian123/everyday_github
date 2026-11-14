@@ -49,7 +49,7 @@
 
 如果你是第一次进入这个仓库，建议从这几个入口开始：
 
-- 最新日报：[`daily/2026-11-14/ai-hotspots.md`](./daily/2026-11-14/ai-hotspots.md)
+- 最新日报：[`daily/2026-11-15/ai-hotspots.md`](./daily/2026-11-15/ai-hotspots.md)
 - 项目总目录：[`projects/`](./projects/)
 - 自动化约束：[`AGENTS.md`](./AGENTS.md)
 - 开发续接记录：[`TODO.md`](./TODO.md)
@@ -195,6 +195,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `SkillEvaluator` | 三层技能评测与有 / 无技能对照；静态质量、CI advisory、失败覆盖、模型出口和费用分别核。 | [GitHub](https://github.com/NVIDIA/SkillEvaluator) / [解读](./projects/SkillEvaluator/README.md) |
 | `ha-mcp` | Home Assistant 的 MCP 管理面；管理员身份、普通 / readonly 入口与客户端策略分别核。 | [GitHub](https://github.com/homeassistant-ai/ha-mcp) / [解读](./projects/ha-mcp/README.md) |
 | `gemini-api-cli` | 让现有 Agent 经 Shell 调用 Gemini 模型与托管任务；dry-run、凭据来源、远端状态和预算需分别核。 | [GitHub](https://github.com/google-gemini/gemini-api-cli) / [解读](./projects/gemini-api-cli/README.md) |
 | `switch` | 将聊天频道连接人与 Agent 的 room；稳定包、执行器权限、默认遥测与 Commons Clause 须分别核。 | [GitHub](https://github.com/sandbox-quantum/switch) / [解读](./projects/switch/README.md) |
@@ -596,6 +597,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `ag-ui` | Agent 与应用的类型化事件协议；1.0 / 包版本、中断覆盖、状态信任和真实动作授权分开验收。 | [GitHub](https://github.com/ag-ui-protocol/ag-ui) / [解读](./projects/ag-ui/README.md) |
 | `pocketpal-ai` | 手机端 GGUF / 语音 / 工具客户端；离线聊天、可选联网和本地 API POC 分项验收。 | [GitHub](https://github.com/a-ghorbani/pocketpal-ai) / [解读](./projects/pocketpal-ai/README.md) |
 | `astryx` | Meta React 19 设计系统与 Agent CLI；Beta、scoped 包名、版本一致性、项目写入和无障碍需核。 | [GitHub](https://github.com/meta/astryx) / [解读](./projects/astryx/README.md) |
 | `figma-console-mcp` | 设计 token / 组件读写与一致性检查；本地 / 云模式、PAT 范围与桥插件版本须分开。 | [GitHub](https://github.com/southleft/figma-console-mcp) / [解读](./projects/figma-console-mcp/README.md) |
@@ -905,6 +907,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `claude-trading-skills` | 交易研究、风险与复盘技能流程；YAML 关卡、行情 / 账户权限、开发包和维护自动化边界须核。 | [GitHub](https://github.com/tradermonty/claude-trading-skills) / [解读](./projects/claude-trading-skills/README.md) |
 | `sure` | 带可选 AI 的个人财务账本；聊天 / 分类双流水线、MCP 写权限、数据出口与完整恢复分别核。 | [GitHub](https://github.com/we-promise/sure) / [解读](./projects/sure/README.md) |
 | `ohmygame` | Pi 驱动的游戏设计、素材与试玩工作台；原生插件权限、CLI 默认模式和发布质量须分别审。 | [GitHub](https://github.com/WhiteTowerAI/ohmygame) / [解读](./projects/ohmygame/README.md) |
 | `CompanyOS` | Kortix 团队 agent 运行平台；worker 自合并、secret 共享、云成本与 ELv2 / 白标条款须核。 | [GitHub](https://github.com/kortix-ai/CompanyOS) / [解读](./projects/CompanyOS/README.md) |
@@ -1017,6 +1020,7 @@
 
 - 全量项目目录：[`projects/`](./projects/)
 - 最近日报：
+  - [`2026-11-15`](./daily/2026-11-15/ai-hotspots.md)
   - [`2026-11-14`](./daily/2026-11-14/ai-hotspots.md)
   - [`2026-11-12`](./daily/2026-11-12/ai-hotspots.md)
   - [`2026-11-11`](./daily/2026-11-11/ai-hotspots.md)
@@ -1154,10 +1158,9 @@
 ## 当前状态
 
 - 状态：持续日更中。
-- 最新更新：`2026-11-14`。
-- 当前项目总数：`1032`。
-- 最近新增项目：`Veyra-NRVideo`、`locally-uncensored`（11-14 07 时段补充）；
-  同日 01 时段已新增 `Hy-MT2`、`ffmpeg-skill`、`avenoxbeyin` 并原位刷新 `open-code-review`。
+- 最新更新：`2026-11-15`。
+- 当前项目总数：`1035`。
+- 最近新增项目：`claude-trading-skills`、`SkillEvaluator`、`ag-ui`；同步三个既有分类与四平台日报。
 - 覆盖平台：GitHub、X、Instagram、YouTube。
 
 ## 维护约定
