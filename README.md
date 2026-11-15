@@ -49,7 +49,7 @@
 
 如果你是第一次进入这个仓库，建议从这几个入口开始：
 
-- 最新日报：[`daily/2026-11-15/ai-hotspots.md`](./daily/2026-11-15/ai-hotspots.md)
+- 最新日报：[`daily/2026-11-16/ai-hotspots.md`](./daily/2026-11-16/ai-hotspots.md)
 - 项目总目录：[`projects/`](./projects/)
 - 自动化约束：[`AGENTS.md`](./AGENTS.md)
 - 开发续接记录：[`TODO.md`](./TODO.md)
@@ -597,6 +597,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `assistant-ui` | React 对话 primitives 与多 runtime；在线 setup、工具执行位置和可选 Cloud 身份 / 保留策略分别核。 | [GitHub](https://github.com/assistant-ui/assistant-ui) / [解读](./projects/assistant-ui/README.md) |
 | `ag-ui` | Agent 与应用的类型化事件协议；1.0 / 包版本、中断覆盖、状态信任和真实动作授权分开验收。 | [GitHub](https://github.com/ag-ui-protocol/ag-ui) / [解读](./projects/ag-ui/README.md) |
 | `pocketpal-ai` | 手机端 GGUF / 语音 / 工具客户端；离线聊天、可选联网和本地 API POC 分项验收。 | [GitHub](https://github.com/a-ghorbani/pocketpal-ai) / [解读](./projects/pocketpal-ai/README.md) |
 | `astryx` | Meta React 19 设计系统与 Agent CLI；Beta、scoped 包名、版本一致性、项目写入和无障碍需核。 | [GitHub](https://github.com/meta/astryx) / [解读](./projects/astryx/README.md) |
@@ -762,6 +763,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `ggml` | 轻量张量图、量化与异构后端；1.0 旧 API / RPC 迁移、缓冲规划与性能需按配置验证。 | [GitHub](https://github.com/ggml-org/ggml) / [解读](./projects/ggml/README.md) |
 | `Hy-MT2` | 多尺寸翻译模型、低比特权重与 IFMTBench；STQ 未合并后端、模型 / 数据双许可和评分分母须核。 | [GitHub](https://github.com/Tencent-Hunyuan/Hy-MT2) / [解读](./projects/Hy-MT2/README.md) |
 | `mujoco` | 机器人与学习环境物理引擎；4.0 数值回归、模型迁移、步长和实验适用性需核。 | [GitHub](https://github.com/google-deepmind/mujoco) / [解读](./projects/mujoco/README.md) |
 | `google-colab-cli` | 终端申请 Colab runtime 并执行脚本 / 管理文件；账户、配额、超时、下载和资源清理须核。 | [GitHub](https://github.com/googlecolab/google-colab-cli) / [解读](./projects/google-colab-cli/README.md) |
@@ -875,6 +877,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `ai-infra-book` | 从硬件约束推导 AI 系统的中文初稿与配套计算；逻辑载荷、共享设备实测和历史实验状态分开。 | [GitHub](https://github.com/bojieli/ai-infra-book) / [解读](./projects/ai-infra-book/README.md) |
 | `llm-zoomcamp` | DataTalks.Club 的 RAG / Agent 课程；当期入口、Python 版本、合成评估和证书条件分别核。 | [GitHub](https://github.com/DataTalksClub/llm-zoomcamp) / [解读](./projects/llm-zoomcamp/README.md) |
 | `nn-zero-to-hero` | 从 micrograd 手写反传到 GPT / tokenizer 的代码课程；视频、七个 notebook 与逐课环境分开核。 | [GitHub](https://github.com/karpathy/nn-zero-to-hero) / [解读](./projects/nn-zero-to-hero/README.md) |
 | `ai-engineering-hub` | 按难度组织的 RAG / Agent 教程集合；单目录锁依赖、外部服务和独立评估须补齐。 | [GitHub](https://github.com/patchy631/ai-engineering-hub) / [解读](./projects/ai-engineering-hub/README.md) |
@@ -951,7 +954,7 @@
 | `Pentest-Swarm-AI` | 用共享 blackboard、pheromone 和真实安全工具运行 offensive Agent swarm；alpha 级高危工具，只可在书面授权范围与隔离靶场中使用。 | [GitHub](https://github.com/Armur-Ai/Pentest-Swarm-AI) |
 | `tick-stock-panel` | 自托管 A 股数据路由、因子、回测、监控与只读 AI 问答工作台；数据、样本外、版本和非投资建议边界须明确。 | [GitHub](https://github.com/shy3130/tick-stock-panel) |
 | `laya` | 聚合邮件、聊天、issue、日历与 coding-agent workspace 的 local-first Action Card 控制面；连接器、自动 egress、n8n 与集中敏感数据须治理。 | [GitHub](https://github.com/aayushch/laya) |
-| `univer` | 可嵌入的 Office SDK，以插件、公式、Canvas、Facade 与 Headless 支撑人 / Agent 共编；开源核心、Pro 和最终语义 / 视觉验收须分层。 | [GitHub](https://github.com/dream-num/univer) |
+| `univer` | Office SDK 1.5；开源 / 商业边界、Worker 迁移、原生导出额度及可编辑文件回读分别核。 | [GitHub](https://github.com/dream-num/univer) / [解读](./projects/univer/README.md) |
 | `easyeda-agent` | 用 typed actions、Connector、写前守卫和写后回读让 Agent 操作 EasyEDA Pro；DRC 不等于实物电气、安规或制造验证。 | [GitHub](https://github.com/zhoushoujianwork/easyeda-agent) |
 | `PanWatch` | 自托管多市场持仓、指标、TradingAgents、模拟盘与通知工作台；多 Agent 分析不是持牌投资建议或收益证明。 | [GitHub](https://github.com/TNT-Likely/PanWatch) |
 | `OpenStock` | 股票观察、图表、提醒与可选 AI 邮件 / 新闻摘要应用；不是券商或投资顾问，行情可能延迟。 | [GitHub](https://github.com/Open-Dev-Society/OpenStock) |
@@ -1020,6 +1023,7 @@
 
 - 全量项目目录：[`projects/`](./projects/)
 - 最近日报：
+  - [`2026-11-16`](./daily/2026-11-16/ai-hotspots.md)
   - [`2026-11-15`](./daily/2026-11-15/ai-hotspots.md)
   - [`2026-11-14`](./daily/2026-11-14/ai-hotspots.md)
   - [`2026-11-12`](./daily/2026-11-12/ai-hotspots.md)
@@ -1158,9 +1162,9 @@
 ## 当前状态
 
 - 状态：持续日更中。
-- 最新更新：`2026-11-15`。
-- 当前项目总数：`1035`。
-- 最近新增项目：`claude-trading-skills`、`SkillEvaluator`、`ag-ui`；同步三个既有分类与四平台日报。
+- 最新更新：`2026-11-16`。
+- 当前项目总数：`1038`。
+- 最近新增项目：`ggml`、`ai-infra-book`、`assistant-ui`；原位刷新 `univer`，同步四个既有分类与四平台日报。
 - 覆盖平台：GitHub、X、Instagram、YouTube。
 
 ## 维护约定
