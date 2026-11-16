@@ -14,6 +14,8 @@
 
 ## 阶段性开发记录
 
+- 2026-11-17：新增 `Claude-BugHunter`、`paper-orchestra`、`whisper` 三个七节页，原位刷新 `stitch-skills`；四平台日报与四类导航同步，实际目录 `1038 → 1041`。官方 daily 新项 +1,057 / +306 / +123，刷新 +540。X 核 OpenAI 11-16 科研研究原帖 / oEmbed，253.8K 累计 Views；官网区分 1,819 人使用分析 / 251 人自报问卷，不建立因果与本轮项目关联。Instagram 129K 仅宽泛聚合、同名候选无帖子、官方账号登录 429；YouTube 第三方 PaperOrchestra / Whisper 元数据分别 46 / 167,916 累计、1d / 4y，不算日增。接续：BugHunter 双许可 / 83 与 82 漂移 / 范围 / 历史 paired eval；论文输出覆盖 / 引用匹配分母 / exec / 日志密钥；Whisper 版本与 turbo / 模型卡漂移 / CER / 回听；Stitch 浏览器采集 / 云写入 / 有限 validator。保留 AGENTS.md 原修改，未安装运行上游、扫描目标、调用模型或检索 API、下载权重 / 媒体、生成论文图、转写、登录、上传或完整观看。
+
 - 2026-11-16：新增 `ggml`、`ai-infra-book`、`assistant-ui` 三个七节页，原位刷新 `univer` 至 1.5.0；四平台日报与四类导航同步，实际目录 `1035 → 1038`。官方 daily 日增新项 +53 / +151 / +92，刷新 +1,041。X 核 Univer 11-09 原帖 / oEmbed，204K 累计 Views；Instagram 129K 聚合 / 标签登录 429；YouTube 上游频道旧演示 370 / 5mo / 3:32 与短演示 oEmbed 已核，后者日期 / 播放量缺口保留。接续：GGML 1.0 API / RPC / 数值性能；书稿静态 / 实跑与历史编号、LFS 指针；assistant-ui 在线 guide / toolkit / Cloud workspace 与 retention；Univer Worker / native / chart schema / 保存草稿 / 商业额度。书稿递归树 Transport closed 后改根树与固定文件抽样，未审计整书。保留 AGENTS.md 原修改；未安装运行上游、调用模型或 Cloud、下载权重 / LFS / 媒体、迁移、部署或完整观看。
 
 - 2026-11-15：新增 `claude-trading-skills`、`SkillEvaluator`、`ag-ui` 三个七节页，同步四平台日报与三个既有分类，实际目录 `1032 → 1035`。官方 daily 日增 +556 / +168 / +9。X 回链账号两原帖 / oEmbed 匹配：2025-05-12 AG-UI 首发 317.4K Views、11-14 OpenBot Routines 986 Views，分开历史与近期；Instagram 聚合 / 登录缺口；YouTube 官方直播及维护方 1.0 视频累计 6,918 / 5,057，相对 1mo，元数据非完整观看。接续：评测静态 / 激活 / 配对与 CI advisory、失败分母和预算；交易权威 YAML / 无 key 数据 / 宿主账户 / 无 release 与维护者自动化；AG-UI 中断覆盖 / state / 包版本 / 服务端授权与幂等；OpenBot 排程仅宣传观察。保留 AGENTS.md 原修改；未安装运行上游、调用模型 / 行情、连接账户、交易、启用维护排程、部署或完整观看。

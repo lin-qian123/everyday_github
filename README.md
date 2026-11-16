@@ -49,7 +49,7 @@
 
 如果你是第一次进入这个仓库，建议从这几个入口开始：
 
-- 最新日报：[`daily/2026-11-16/ai-hotspots.md`](./daily/2026-11-16/ai-hotspots.md)
+- 最新日报：[`daily/2026-11-17/ai-hotspots.md`](./daily/2026-11-17/ai-hotspots.md)
 - 项目总目录：[`projects/`](./projects/)
 - 自动化约束：[`AGENTS.md`](./AGENTS.md)
 - 开发续接记录：[`TODO.md`](./TODO.md)
@@ -195,6 +195,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `Claude-BugHunter` | 授权安全研究技能与决策支持流程；范围匹配、宿主安装、历史评测和双许可须分别核。 | [GitHub](https://github.com/elementalsouls/Claude-BugHunter) / [解读](./projects/Claude-BugHunter/README.md) |
 | `SkillEvaluator` | 三层技能评测与有 / 无技能对照；静态质量、CI advisory、失败覆盖、模型出口和费用分别核。 | [GitHub](https://github.com/NVIDIA/SkillEvaluator) / [解读](./projects/SkillEvaluator/README.md) |
 | `ha-mcp` | Home Assistant 的 MCP 管理面；管理员身份、普通 / readonly 入口与客户端策略分别核。 | [GitHub](https://github.com/homeassistant-ai/ha-mcp) / [解读](./projects/ha-mcp/README.md) |
 | `gemini-api-cli` | 让现有 Agent 经 Shell 调用 Gemini 模型与托管任务；dry-run、凭据来源、远端状态和预算需分别核。 | [GitHub](https://github.com/google-gemini/gemini-api-cli) / [解读](./projects/gemini-api-cli/README.md) |
@@ -611,7 +612,7 @@
 | `dsh-pocket` | 用手机同步操作 Harness Web，支持 LAN 与 Cloudflare 隧道；代理拥有宿主操作能力，PIN 和监听面须核。 | [GitHub](https://github.com/shaobeichen/dsh-pocket) / [解读](./projects/dsh-pocket/README.md) |
 | `dsh-pet` | 把 DSH 会话状态接到透明动画桌宠，含独立模式与素材管线；代码、素材和二创条款须分开核。 | [GitHub](https://github.com/PC2005-cloud/dsh-pet) / [解读](./projects/dsh-pet/README.md) |
 | `superdesign` | 在 IDE 生成与迭代 UI 的历史设计扩展，已停止积极维护；当前 Web / skill 和混合许可须分别核对。 | [GitHub](https://github.com/superdesigndev/superdesign) |
-| `stitch-skills` | Google Stitch 的设计、资产上传、设计系统与组件技能集；会外发本地文件并创建远端 screen。 | [GitHub](https://github.com/google-labs-code/stitch-skills) |
+| `stitch-skills` | Stitch 设计、快照与上传技能；浏览器采集、云端写入及有限组件校验须分开验收。 | [GitHub](https://github.com/google-labs-code/stitch-skills) / [解读](./projects/stitch-skills/README.md) |
 | `OpenIntelligentUI` | CopilotKit 的 Generative UI 完整示例，在文本、原生组件与 sandboxed custom UI 间路由；事实、bridge、CSP、provider 与持久化须补齐。 | [GitHub](https://github.com/CopilotKit/OpenIntelligentUI) |
 | `prompt-optimizer` | 跨 Web / desktop / extension / Docker / MCP 的提示词优化与评测工作台；provider 外发、key / backup、网络面和自评偏差须审计。 | [GitHub](https://github.com/linshenkx/prompt-optimizer) |
 | `pi-pocket` | 自托管、移动优先的 Pi Agent 持久会话与多人控制面；steer、public tunnel、server browser 和无人值守任务须严格限权。 | [GitHub](https://github.com/TannerMidd/pi-pocket) |
@@ -667,6 +668,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `whisper` | 多语言本地 ASR 参考实现；turbo 非翻译、首次权重下载、幻觉和逐段回听分别验收。 | [GitHub](https://github.com/openai/whisper) / [解读](./projects/whisper/README.md) |
 | `Veyra-NRVideo` | Windows 超分 / NR / HDR / 补帧与采集预览；呈现节奏、真实延迟、社区后端和组合许可须分别核。 | [GitHub](https://github.com/Likely7/Veyra-NRVideo) / [解读](./projects/Veyra-NRVideo/README.md) |
 | `ffmpeg-skill` | 42 个本地 FFmpeg 工具与生成式 CLI / MCP 契约；精简工具列表不限制调用，技术 QA 与完整视听验收分开。 | [GitHub](https://github.com/kajisho5/ffmpeg-skill) / [解读](./projects/ffmpeg-skill/README.md) |
 | `ooosplat` | 本机 COLMAP / Brush 高斯重建、编辑与导出；默认统计、MCP 身份、平台与尺度边界需核。 | [GitHub](https://github.com/ooolabdev/ooosplat) / [解读](./projects/ooosplat/README.md) |
@@ -910,6 +912,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `paper-orchestra` | 多 Agent 论文写作与 LaTeX 管线；引文分母、输出清理、远端模型与生成代码执行须核。 | [GitHub](https://github.com/google-research/paper-orchestra) / [解读](./projects/paper-orchestra/README.md) |
 | `claude-trading-skills` | 交易研究、风险与复盘技能流程；YAML 关卡、行情 / 账户权限、开发包和维护自动化边界须核。 | [GitHub](https://github.com/tradermonty/claude-trading-skills) / [解读](./projects/claude-trading-skills/README.md) |
 | `sure` | 带可选 AI 的个人财务账本；聊天 / 分类双流水线、MCP 写权限、数据出口与完整恢复分别核。 | [GitHub](https://github.com/we-promise/sure) / [解读](./projects/sure/README.md) |
 | `ohmygame` | Pi 驱动的游戏设计、素材与试玩工作台；原生插件权限、CLI 默认模式和发布质量须分别审。 | [GitHub](https://github.com/WhiteTowerAI/ohmygame) / [解读](./projects/ohmygame/README.md) |
@@ -1023,6 +1026,7 @@
 
 - 全量项目目录：[`projects/`](./projects/)
 - 最近日报：
+  - [`2026-11-17`](./daily/2026-11-17/ai-hotspots.md)
   - [`2026-11-16`](./daily/2026-11-16/ai-hotspots.md)
   - [`2026-11-15`](./daily/2026-11-15/ai-hotspots.md)
   - [`2026-11-14`](./daily/2026-11-14/ai-hotspots.md)
@@ -1162,9 +1166,9 @@
 ## 当前状态
 
 - 状态：持续日更中。
-- 最新更新：`2026-11-16`。
-- 当前项目总数：`1038`。
-- 最近新增项目：`ggml`、`ai-infra-book`、`assistant-ui`；原位刷新 `univer`，同步四个既有分类与四平台日报。
+- 最新更新：`2026-11-17`。
+- 当前项目总数：`1041`。
+- 最近新增项目：`Claude-BugHunter`、`paper-orchestra`、`whisper`；原位刷新 `stitch-skills`，同步四个既有分类与四平台日报。
 - 覆盖平台：GitHub、X、Instagram、YouTube。
 
 ## 维护约定
