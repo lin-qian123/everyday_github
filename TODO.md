@@ -14,6 +14,8 @@
 
 ## 阶段性开发记录
 
+- 2026-11-18：新增 `agenticos`、`BigMoeOnEdge`、`ai-agent-handbook` 三个七节页，同步三类导航与四平台日报，实际目录 `1041 → 1044`；官方 daily +42 / +46 / +71。AgenticOS 非预发行 v1.82.1 与旧 v1.38.2 部署例分开，核随附 runtime 网络 / 发布授权 / 并发预算与 vault；BigMoeOnEdge v0.44.0 为预发行，核 decode 分母 / 数值容差及发行说明与 API 文档的采样漂移；手册核 1,906 份特定沙龙问卷 / 教学判分 / 仿真与评价 / 黄金集冻结。X 两搜索、Instagram 三入口转登录，不沿用旧计数；YouTube 端侧话题候选元数据 6,970 累计 / 2mo / 11:43，未证仓库对应，AgenticOS 检索缺口保留。接续以上工程验证与社媒原帖补证。保留 AGENTS.md 原修改；未安装运行上游、登录、调用模型 / 云、下载权重 / 制品 / 媒体、部署、上传文档、做隔离 / 数值 / 性能实验或完整观看。
+
 - 2026-11-17：新增 `Claude-BugHunter`、`paper-orchestra`、`whisper` 三个七节页，原位刷新 `stitch-skills`；四平台日报与四类导航同步，实际目录 `1038 → 1041`。官方 daily 新项 +1,057 / +306 / +123，刷新 +540。X 核 OpenAI 11-16 科研研究原帖 / oEmbed，253.8K 累计 Views；官网区分 1,819 人使用分析 / 251 人自报问卷，不建立因果与本轮项目关联。Instagram 129K 仅宽泛聚合、同名候选无帖子、官方账号登录 429；YouTube 第三方 PaperOrchestra / Whisper 元数据分别 46 / 167,916 累计、1d / 4y，不算日增。接续：BugHunter 双许可 / 83 与 82 漂移 / 范围 / 历史 paired eval；论文输出覆盖 / 引用匹配分母 / exec / 日志密钥；Whisper 版本与 turbo / 模型卡漂移 / CER / 回听；Stitch 浏览器采集 / 云写入 / 有限 validator。保留 AGENTS.md 原修改，未安装运行上游、扫描目标、调用模型或检索 API、下载权重 / 媒体、生成论文图、转写、登录、上传或完整观看。
 
 - 2026-11-16：新增 `ggml`、`ai-infra-book`、`assistant-ui` 三个七节页，原位刷新 `univer` 至 1.5.0；四平台日报与四类导航同步，实际目录 `1035 → 1038`。官方 daily 日增新项 +53 / +151 / +92，刷新 +1,041。X 核 Univer 11-09 原帖 / oEmbed，204K 累计 Views；Instagram 129K 聚合 / 标签登录 429；YouTube 上游频道旧演示 370 / 5mo / 3:32 与短演示 oEmbed 已核，后者日期 / 播放量缺口保留。接续：GGML 1.0 API / RPC / 数值性能；书稿静态 / 实跑与历史编号、LFS 指针；assistant-ui 在线 guide / toolkit / Cloud workspace 与 retention；Univer Worker / native / chart schema / 保存草稿 / 商业额度。书稿递归树 Transport closed 后改根树与固定文件抽样，未审计整书。保留 AGENTS.md 原修改；未安装运行上游、调用模型或 Cloud、下载权重 / LFS / 媒体、迁移、部署或完整观看。

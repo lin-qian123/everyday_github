@@ -49,7 +49,7 @@
 
 如果你是第一次进入这个仓库，建议从这几个入口开始：
 
-- 最新日报：[`daily/2026-11-17/ai-hotspots.md`](./daily/2026-11-17/ai-hotspots.md)
+- 最新日报：[`daily/2026-11-18/ai-hotspots.md`](./daily/2026-11-18/ai-hotspots.md)
 - 项目总目录：[`projects/`](./projects/)
 - 自动化约束：[`AGENTS.md`](./AGENTS.md)
 - 开发续接记录：[`TODO.md`](./TODO.md)
@@ -765,6 +765,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `BigMoeOnEdge` | 用专家缓存与闪存流式读取运行超 RAM MoE；预发行状态、吞吐分母、数值和采样参数漂移须核。 | [GitHub](https://github.com/Helldez/BigMoeOnEdge) / [解读](./projects/BigMoeOnEdge/README.md) |
 | `ggml` | 轻量张量图、量化与异构后端；1.0 旧 API / RPC 迁移、缓冲规划与性能需按配置验证。 | [GitHub](https://github.com/ggml-org/ggml) / [解读](./projects/ggml/README.md) |
 | `Hy-MT2` | 多尺寸翻译模型、低比特权重与 IFMTBench；STQ 未合并后端、模型 / 数据双许可和评分分母须核。 | [GitHub](https://github.com/Tencent-Hunyuan/Hy-MT2) / [解读](./projects/Hy-MT2/README.md) |
 | `mujoco` | 机器人与学习环境物理引擎；4.0 数值回归、模型迁移、步长和实验适用性需核。 | [GitHub](https://github.com/google-deepmind/mujoco) / [解读](./projects/mujoco/README.md) |
@@ -879,6 +880,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `ai-agent-handbook` | 阿里云企业 Agent 工程手册与浏览器练习；Harness、仿真、黄金集及特定问卷样本须区分证据范围。 | [GitHub](https://github.com/aliyun/ai-agent-handbook) / [解读](./projects/ai-agent-handbook/README.md) |
 | `ai-infra-book` | 从硬件约束推导 AI 系统的中文初稿与配套计算；逻辑载荷、共享设备实测和历史实验状态分开。 | [GitHub](https://github.com/bojieli/ai-infra-book) / [解读](./projects/ai-infra-book/README.md) |
 | `llm-zoomcamp` | DataTalks.Club 的 RAG / Agent 课程；当期入口、Python 版本、合成评估和证书条件分别核。 | [GitHub](https://github.com/DataTalksClub/llm-zoomcamp) / [解读](./projects/llm-zoomcamp/README.md) |
 | `nn-zero-to-hero` | 从 micrograd 手写反传到 GPT / tokenizer 的代码课程；视频、七个 notebook 与逐课环境分开核。 | [GitHub](https://github.com/karpathy/nn-zero-to-hero) / [解读](./projects/nn-zero-to-hero/README.md) |
@@ -912,6 +914,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `agenticos` | 自托管团队 Agent、RAG、工具与治理平台；沙箱网络、共享授权、并发预算和数据出口须分别验证。 | [GitHub](https://github.com/vstorm-co/agenticos) / [解读](./projects/agenticos/README.md) |
 | `paper-orchestra` | 多 Agent 论文写作与 LaTeX 管线；引文分母、输出清理、远端模型与生成代码执行须核。 | [GitHub](https://github.com/google-research/paper-orchestra) / [解读](./projects/paper-orchestra/README.md) |
 | `claude-trading-skills` | 交易研究、风险与复盘技能流程；YAML 关卡、行情 / 账户权限、开发包和维护自动化边界须核。 | [GitHub](https://github.com/tradermonty/claude-trading-skills) / [解读](./projects/claude-trading-skills/README.md) |
 | `sure` | 带可选 AI 的个人财务账本；聊天 / 分类双流水线、MCP 写权限、数据出口与完整恢复分别核。 | [GitHub](https://github.com/we-promise/sure) / [解读](./projects/sure/README.md) |
@@ -1026,6 +1029,7 @@
 
 - 全量项目目录：[`projects/`](./projects/)
 - 最近日报：
+  - [`2026-11-18`](./daily/2026-11-18/ai-hotspots.md)
   - [`2026-11-17`](./daily/2026-11-17/ai-hotspots.md)
   - [`2026-11-16`](./daily/2026-11-16/ai-hotspots.md)
   - [`2026-11-15`](./daily/2026-11-15/ai-hotspots.md)
@@ -1166,9 +1170,9 @@
 ## 当前状态
 
 - 状态：持续日更中。
-- 最新更新：`2026-11-17`。
-- 当前项目总数：`1041`。
-- 最近新增项目：`Claude-BugHunter`、`paper-orchestra`、`whisper`；原位刷新 `stitch-skills`，同步四个既有分类与四平台日报。
+- 最新更新：`2026-11-18`。
+- 当前项目总数：`1044`。
+- 最近新增项目：`agenticos`、`BigMoeOnEdge`、`ai-agent-handbook`；同步三个既有分类与四平台日报。
 - 覆盖平台：GitHub、X、Instagram、YouTube。
 
 ## 维护约定
