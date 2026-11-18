@@ -10,9 +10,12 @@
 - 评估是否为首页分类索引增加“自动统计脚本”，减少手工维护成本。
 - 建立 `projects/` 的轻量索引脚本或清单，减少人工判断“是否已建档”。
 - 设计 owner-aware 的项目键（如 `owner--repo` 或元数据映射）并保留旧链接兼容性，解决多个仓库同名为 `skills` 时无法无歧义建档的问题。
+- 核对 `projects/taste-skill` 的上游身份：2026-11-19 旧 `KOHbDS/taste-skill` API 404；当前上榜 `Leonxlnx/taste-skill` ID `1162099055`，缺同一 ID / 迁移证据，暂不覆盖旧档案。
 - 核验并修复首页 6 个历史失效上游链接：`openclaude-improved`、`ponytail-improved`、`hybrid-cli-ai`、`claudish-to-english`、`bridgebench`、`InduSecAgent`；2026-09-11 聚焦范围的 73 个 URL 均可访问。
 
 ## 阶段性开发记录
+
+- 2026-11-19：新增 `app-store-compliance`、`sellbird`、`openvino` 三个七节页，同步三类首页与四平台日报，目录 `1044 → 1047`；官方 daily +596 / +358 / +18。核 App Store 2.4.0 未检查 hook 放行、123 / 107 数据与 API 117 / 95 漂移、ORA；Sellbird 0.4.0 改名同 ID、审批 / autopilot、订阅 CLI / 数据出口、loopback token 与 AGPL；OpenVINO 2026.4.1 补丁、设备 / 数值、首 token 后吞吐及遥测。X 两回链账号概况可读、原帖缺口；Instagram 129K 仅宽泛聚合；YouTube Sellbird / OVMS 历史元数据 404 / 11,897 累计、9d / 5mo，未完整观看。taste-skill 旧 owner API 404，无法确认与当前榜单同一身份，旧页不覆盖。接续未检查与真实 hook、发送异常 / CLI 契约、固定设备数值性能和社媒补证。保留 AGENTS.md 原修改，未安装运行上游、扫描用户项目、读取登录材料、调用模型 / 邮箱 / 云、采集联系人、发送邮件、改宿主配置、迁移、下载权重 / 制品 / 媒体或部署。
 
 - 2026-11-18：新增 `agenticos`、`BigMoeOnEdge`、`ai-agent-handbook` 三个七节页，同步三类导航与四平台日报，实际目录 `1041 → 1044`；官方 daily +42 / +46 / +71。AgenticOS 非预发行 v1.82.1 与旧 v1.38.2 部署例分开，核随附 runtime 网络 / 发布授权 / 并发预算与 vault；BigMoeOnEdge v0.44.0 为预发行，核 decode 分母 / 数值容差及发行说明与 API 文档的采样漂移；手册核 1,906 份特定沙龙问卷 / 教学判分 / 仿真与评价 / 黄金集冻结。X 两搜索、Instagram 三入口转登录，不沿用旧计数；YouTube 端侧话题候选元数据 6,970 累计 / 2mo / 11:43，未证仓库对应，AgenticOS 检索缺口保留。接续以上工程验证与社媒原帖补证。保留 AGENTS.md 原修改；未安装运行上游、登录、调用模型 / 云、下载权重 / 制品 / 媒体、部署、上传文档、做隔离 / 数值 / 性能实验或完整观看。
 

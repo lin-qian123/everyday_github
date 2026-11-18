@@ -49,7 +49,7 @@
 
 如果你是第一次进入这个仓库，建议从这几个入口开始：
 
-- 最新日报：[`daily/2026-11-18/ai-hotspots.md`](./daily/2026-11-18/ai-hotspots.md)
+- 最新日报：[`daily/2026-11-19/ai-hotspots.md`](./daily/2026-11-19/ai-hotspots.md)
 - 项目总目录：[`projects/`](./projects/)
 - 自动化约束：[`AGENTS.md`](./AGENTS.md)
 - 开发续接记录：[`TODO.md`](./TODO.md)
@@ -195,6 +195,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `app-store-compliance` | 商店发布手册、静态 guard 与 Agent 技能；未检查放行、人工证据、宿主安装和 ORA 许可须核。 | [GitHub](https://github.com/mjmirza/app-store-compliance) / [解读](./projects/app-store-compliance/README.md) |
 | `Claude-BugHunter` | 授权安全研究技能与决策支持流程；范围匹配、宿主安装、历史评测和双许可须分别核。 | [GitHub](https://github.com/elementalsouls/Claude-BugHunter) / [解读](./projects/Claude-BugHunter/README.md) |
 | `SkillEvaluator` | 三层技能评测与有 / 无技能对照；静态质量、CI advisory、失败覆盖、模型出口和费用分别核。 | [GitHub](https://github.com/NVIDIA/SkillEvaluator) / [解读](./projects/SkillEvaluator/README.md) |
 | `ha-mcp` | Home Assistant 的 MCP 管理面；管理员身份、普通 / readonly 入口与客户端策略分别核。 | [GitHub](https://github.com/homeassistant-ai/ha-mcp) / [解读](./projects/ha-mcp/README.md) |
@@ -765,6 +766,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `openvino` | 模型转换、图优化与异构推理工具链；设备驱动、数值回归、首 token 后吞吐和遥测须分开核。 | [GitHub](https://github.com/openvinotoolkit/openvino) / [解读](./projects/openvino/README.md) |
 | `BigMoeOnEdge` | 用专家缓存与闪存流式读取运行超 RAM MoE；预发行状态、吞吐分母、数值和采样参数漂移须核。 | [GitHub](https://github.com/Helldez/BigMoeOnEdge) / [解读](./projects/BigMoeOnEdge/README.md) |
 | `ggml` | 轻量张量图、量化与异构后端；1.0 旧 API / RPC 迁移、缓冲规划与性能需按配置验证。 | [GitHub](https://github.com/ggml-org/ggml) / [解读](./projects/ggml/README.md) |
 | `Hy-MT2` | 多尺寸翻译模型、低比特权重与 IFMTBench；STQ 未合并后端、模型 / 数据双许可和评分分母须核。 | [GitHub](https://github.com/Tencent-Hunyuan/Hy-MT2) / [解读](./projects/Hy-MT2/README.md) |
@@ -914,6 +916,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `sellbird` | 从线索到邮件草稿、审批与发送的外联流程；订阅 CLI、数据出口、邮箱权限和 AGPL 须分别核。 | [GitHub](https://github.com/ethanplusai/sellbird) / [解读](./projects/sellbird/README.md) |
 | `agenticos` | 自托管团队 Agent、RAG、工具与治理平台；沙箱网络、共享授权、并发预算和数据出口须分别验证。 | [GitHub](https://github.com/vstorm-co/agenticos) / [解读](./projects/agenticos/README.md) |
 | `paper-orchestra` | 多 Agent 论文写作与 LaTeX 管线；引文分母、输出清理、远端模型与生成代码执行须核。 | [GitHub](https://github.com/google-research/paper-orchestra) / [解读](./projects/paper-orchestra/README.md) |
 | `claude-trading-skills` | 交易研究、风险与复盘技能流程；YAML 关卡、行情 / 账户权限、开发包和维护自动化边界须核。 | [GitHub](https://github.com/tradermonty/claude-trading-skills) / [解读](./projects/claude-trading-skills/README.md) |
@@ -1029,6 +1032,7 @@
 
 - 全量项目目录：[`projects/`](./projects/)
 - 最近日报：
+  - [`2026-11-19`](./daily/2026-11-19/ai-hotspots.md)
   - [`2026-11-18`](./daily/2026-11-18/ai-hotspots.md)
   - [`2026-11-17`](./daily/2026-11-17/ai-hotspots.md)
   - [`2026-11-16`](./daily/2026-11-16/ai-hotspots.md)
@@ -1170,9 +1174,9 @@
 ## 当前状态
 
 - 状态：持续日更中。
-- 最新更新：`2026-11-18`。
-- 当前项目总数：`1044`。
-- 最近新增项目：`agenticos`、`BigMoeOnEdge`、`ai-agent-handbook`；同步三个既有分类与四平台日报。
+- 最新更新：`2026-11-19`。
+- 当前项目总数：`1047`。
+- 最近新增项目：`app-store-compliance`、`sellbird`、`openvino`；同步三个既有分类与四平台日报。
 - 覆盖平台：GitHub、X、Instagram、YouTube。
 
 ## 维护约定
