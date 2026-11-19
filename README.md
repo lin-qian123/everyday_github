@@ -49,7 +49,7 @@
 
 如果你是第一次进入这个仓库，建议从这几个入口开始：
 
-- 最新日报：[`daily/2026-11-19/ai-hotspots.md`](./daily/2026-11-19/ai-hotspots.md)
+- 最新日报：[`daily/2026-11-20/ai-hotspots.md`](./daily/2026-11-20/ai-hotspots.md)
 - 项目总目录：[`projects/`](./projects/)
 - 自动化约束：[`AGENTS.md`](./AGENTS.md)
 - 开发续接记录：[`TODO.md`](./TODO.md)
@@ -457,6 +457,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `edgeever` | 自托管笔记与 MCP 工作区；AI 数据出口、同步恢复和默认自动升级须分别核。 | [GitHub](https://github.com/tianma-if/edgeever) / [解读](./projects/edgeever/README.md) |
 | `locally-uncensored` | 本地模型、媒体与 Agent 桌面工作台；目录 Sandbox、shell / MCP 权限、Cloud 出口、备份与平台状态分开核。 | [GitHub](https://github.com/PurpleDoubleD/locally-uncensored) / [解读](./projects/locally-uncensored/README.md) |
 | `avenoxbeyin` | Markdown 来源、词法索引与跨客户端任务 / receipt；Desktop 自动 hook、可选 global bridge 与本机 Web 信任面须分别验证。 | [GitHub](https://github.com/avenoxai/avenoxbeyin) / [解读](./projects/avenoxbeyin/README.md) |
 | `dsh-memory-evolve` | DSH 分轨记忆、技能与会话评审插件；写入确认差异、公开 Git 远端与宿主版本须核。 | [GitHub](https://github.com/csyangwen/dsh-memory-evolve) / [解读](./projects/dsh-memory-evolve/README.md) |
@@ -669,6 +670,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `FreeVideo` | 消费级硬件 MiniMax H3 / ComfyUI 视频生成；模型许可、原生帧率、Mac 实验路径与耗时须核。 | [GitHub](https://github.com/FlashML-org/FreeVideo) / [解读](./projects/FreeVideo/README.md) |
 | `whisper` | 多语言本地 ASR 参考实现；turbo 非翻译、首次权重下载、幻觉和逐段回听分别验收。 | [GitHub](https://github.com/openai/whisper) / [解读](./projects/whisper/README.md) |
 | `Veyra-NRVideo` | Windows 超分 / NR / HDR / 补帧与采集预览；呈现节奏、真实延迟、社区后端和组合许可须分别核。 | [GitHub](https://github.com/Likely7/Veyra-NRVideo) / [解读](./projects/Veyra-NRVideo/README.md) |
 | `ffmpeg-skill` | 42 个本地 FFmpeg 工具与生成式 CLI / MCP 契约；精简工具列表不限制调用，技术 QA 与完整视听验收分开。 | [GitHub](https://github.com/kajisho5/ffmpeg-skill) / [解读](./projects/ffmpeg-skill/README.md) |
@@ -766,6 +768,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `splash` | Apple silicon 本地推理与推测解码；按首 token、并发、缓存数值及默认认证边界评价。 | [GitHub](https://github.com/incoai/splash) / [解读](./projects/splash/README.md) |
 | `openvino` | 模型转换、图优化与异构推理工具链；设备驱动、数值回归、首 token 后吞吐和遥测须分开核。 | [GitHub](https://github.com/openvinotoolkit/openvino) / [解读](./projects/openvino/README.md) |
 | `BigMoeOnEdge` | 用专家缓存与闪存流式读取运行超 RAM MoE；预发行状态、吞吐分母、数值和采样参数漂移须核。 | [GitHub](https://github.com/Helldez/BigMoeOnEdge) / [解读](./projects/BigMoeOnEdge/README.md) |
 | `ggml` | 轻量张量图、量化与异构后端；1.0 旧 API / RPC 迁移、缓冲规划与性能需按配置验证。 | [GitHub](https://github.com/ggml-org/ggml) / [解读](./projects/ggml/README.md) |
@@ -1032,6 +1035,7 @@
 
 - 全量项目目录：[`projects/`](./projects/)
 - 最近日报：
+  - [`2026-11-20`](./daily/2026-11-20/ai-hotspots.md)
   - [`2026-11-19`](./daily/2026-11-19/ai-hotspots.md)
   - [`2026-11-18`](./daily/2026-11-18/ai-hotspots.md)
   - [`2026-11-17`](./daily/2026-11-17/ai-hotspots.md)
@@ -1174,9 +1178,9 @@
 ## 当前状态
 
 - 状态：持续日更中。
-- 最新更新：`2026-11-19`。
-- 当前项目总数：`1047`。
-- 最近新增项目：`app-store-compliance`、`sellbird`、`openvino`；同步三个既有分类与四平台日报。
+- 最新更新：`2026-11-20`。
+- 当前项目总数：`1050`。
+- 最近新增项目：`FreeVideo`、`edgeever`、`splash`；同步三个既有分类与四平台日报。
 - 覆盖平台：GitHub、X、Instagram、YouTube。
 
 ## 维护约定
