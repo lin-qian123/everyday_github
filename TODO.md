@@ -15,6 +15,8 @@
 
 ## 阶段性开发记录
 
+- 2026-11-21：新增 `nightshift`、`bend`、`vllm-ascend` 三个七节指南、四平台日报及两个既有分类导航；实际目录 `1050 → 1053`，官方语言 daily +35 / +95 / +7。核 Nightshift v0.37.2、默认 auto-add / 无隔离 / 证据 off 与宿主权限；Bend v2.0.40、laws / kernel / 翻译 / 后端边界、F32 与无 F64；Ascend stable v0.30.0 / RC v0.32.0rc1 / main、软件栈和限定场景回退。X 核作者 09-27 历史原帖与累计互动，不充当今日传播；Instagram 仅宽泛聚合和登录入口；YouTube 核近期 Bend 演讲与历史视频元数据，未完整观看 / 采评论。接续目标宿主运行、规格与后端验证、NPU 精度与修复状态及社媒当日原帖；未运行上游或改宿主配置。已有 taste-skill 身份和 owner-aware 项目键待办保留。
+
 - 2026-11-20：新增 `FreeVideo`、`edgeever`、`splash` 三个七节页，同步三个既有分类与四平台日报，实际目录 `1047 → 1050`；官方 daily +99 / +57 / +61。核 FreeVideo v0.6.5 今日北京时间发布、代码 / 模型许可、Mac 实验性与耗时、插帧及草稿范围；edgeever v2.30.0 附件修复、MCP 权限、AI 直连 / Web 中转、每日自动更新与 migration 回退；splash 1.7.0 同配置作者回放的 decode / 全程 / 首 token 分母、部分回退、默认缓存精度 / 验证行数和认证。X 官网回链账号可读、搜索登录；Instagram 129K 仅宽泛聚合、项目标签 429；YouTube 三条标题 / 作者经 oEmbed 核对，累计播放 661 / 4610 / 12、相对 3w / 10h / 2d，Splash 视频版本 1.6.1 不等于最新 1.7.0，未完整观看。接续目标设备画质、同步 / 附件 / 恢复、数值 / 缓存 / 并发及社媒原帖补证。保留 AGENTS.md 原修改；未安装运行上游、连接知识库、授权、迁移、调用模型 / 云、修改宿主、下载权重 / 制品 / 媒体或部署。
 
 - 2026-11-19：新增 `app-store-compliance`、`sellbird`、`openvino` 三个七节页，同步三类首页与四平台日报，目录 `1044 → 1047`；官方 daily +596 / +358 / +18。核 App Store 2.4.0 未检查 hook 放行、123 / 107 数据与 API 117 / 95 漂移、ORA；Sellbird 0.4.0 改名同 ID、审批 / autopilot、订阅 CLI / 数据出口、loopback token 与 AGPL；OpenVINO 2026.4.1 补丁、设备 / 数值、首 token 后吞吐及遥测。X 两回链账号概况可读、原帖缺口；Instagram 129K 仅宽泛聚合；YouTube Sellbird / OVMS 历史元数据 404 / 11,897 累计、9d / 5mo，未完整观看。taste-skill 旧 owner API 404，无法确认与当前榜单同一身份，旧页不覆盖。接续未检查与真实 hook、发送异常 / CLI 契约、固定设备数值性能和社媒补证。保留 AGENTS.md 原修改，未安装运行上游、扫描用户项目、读取登录材料、调用模型 / 邮箱 / 云、采集联系人、发送邮件、改宿主配置、迁移、下载权重 / 制品 / 媒体或部署。

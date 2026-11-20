@@ -49,7 +49,7 @@
 
 如果你是第一次进入这个仓库，建议从这几个入口开始：
 
-- 最新日报：[`daily/2026-11-20/ai-hotspots.md`](./daily/2026-11-20/ai-hotspots.md)
+- 最新日报：[`daily/2026-11-21/ai-hotspots.md`](./daily/2026-11-21/ai-hotspots.md)
 - 项目总目录：[`projects/`](./projects/)
 - 自动化约束：[`AGENTS.md`](./AGENTS.md)
 - 开发续接记录：[`TODO.md`](./TODO.md)
@@ -74,6 +74,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `nightshift` | 以持久清单、hooks、恢复和收据接续长任务；默认权限、预算与证据内容须独立验收。 | [GitHub](https://github.com/orwa-mahmoud/nightshift) / [解读](./projects/nightshift/README.md) |
 | `mini-swe-agent` | bash 与线性轨迹构成的极简编码 Agent；默认本机执行、确认、预算与基准条件分别核。 | [GitHub](https://github.com/SWE-agent/mini-swe-agent) / [解读](./projects/mini-swe-agent/README.md) |
 | `serena` | 为编码 Agent 提供 LSP / JetBrains 语义工具；REPL 权限与分组件 GPL / MIT 许可须分别核。 | [GitHub](https://github.com/oraios/serena) / [解读](./projects/serena/README.md) |
 | `pr-agent` | 社区维护的 PR 审查工具；本地 diff / JSON 与默认评论发布分开管理。 | [GitHub](https://github.com/The-PR-Agent/pr-agent) / [解读](./projects/pr-agent/README.md) |
@@ -768,6 +769,8 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `bend` | 用 laws 与证明约束 AI 实现的并行语言；内核、编译器、浮点与后端边界须分层核验。 | [GitHub](https://github.com/bendlang/bend) / [解读](./projects/bend/README.md) |
+| `vllm-ascend` | vLLM 昇腾 NPU 插件；稳定版、RC、驱动软件栈及模型与功能组合需匹配。 | [GitHub](https://github.com/vllm-project/vllm-ascend) / [解读](./projects/vllm-ascend/README.md) |
 | `splash` | Apple silicon 本地推理与推测解码；按首 token、并发、缓存数值及默认认证边界评价。 | [GitHub](https://github.com/incoai/splash) / [解读](./projects/splash/README.md) |
 | `openvino` | 模型转换、图优化与异构推理工具链；设备驱动、数值回归、首 token 后吞吐和遥测须分开核。 | [GitHub](https://github.com/openvinotoolkit/openvino) / [解读](./projects/openvino/README.md) |
 | `BigMoeOnEdge` | 用专家缓存与闪存流式读取运行超 RAM MoE；预发行状态、吞吐分母、数值和采样参数漂移须核。 | [GitHub](https://github.com/Helldez/BigMoeOnEdge) / [解读](./projects/BigMoeOnEdge/README.md) |
@@ -1035,6 +1038,7 @@
 
 - 全量项目目录：[`projects/`](./projects/)
 - 最近日报：
+  - [`2026-11-21`](./daily/2026-11-21/ai-hotspots.md)
   - [`2026-11-20`](./daily/2026-11-20/ai-hotspots.md)
   - [`2026-11-19`](./daily/2026-11-19/ai-hotspots.md)
   - [`2026-11-18`](./daily/2026-11-18/ai-hotspots.md)
@@ -1178,9 +1182,9 @@
 ## 当前状态
 
 - 状态：持续日更中。
-- 最新更新：`2026-11-20`。
-- 当前项目总数：`1050`。
-- 最近新增项目：`FreeVideo`、`edgeever`、`splash`；同步三个既有分类与四平台日报。
+- 最新更新：`2026-11-21`。
+- 当前项目总数：`1053`。
+- 最近新增项目：`nightshift`、`bend`、`vllm-ascend`；同步两个既有分类与四平台日报。
 - 覆盖平台：GitHub、X、Instagram、YouTube。
 
 ## 维护约定
