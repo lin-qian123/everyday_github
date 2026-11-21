@@ -15,6 +15,8 @@
 
 ## 阶段性开发记录
 
+- 2026-11-22：新增 `torchtitan`、`cli-agent-orchestrator`、Python `agentscope` 三个七节指南，四平台日报及两个既有分类导航；实际目录 `1053 → 1056`，官方 Python daily +8 / +14 / +64。核 TorchTitan v0.4.0 / main、recipe 与单卡 debug、批次不变性条件和计算 / 整步分母、导出 / 恢复；CAO v2.5.3 / main 2.5.4、provider 强弱执行、Codex 默认 yolo / profile、委派上限和默认关闭认证 / token 继承；AgentScope v2.0.12 / latest 文档 2.0.13dev、权限 / 本机 backend / reply 预算。X 搜索登录，文档外链账号无项目关联证据而排除；Instagram 仅宽泛聚合 / 标题；YouTube 三条元数据经 oEmbed 核对，106 / 5390 / 30514 累计、9d / 1y / 5mo，未完整观看或采评论。接续目标硬件数值 / 性能 / 恢复、provider 权限与控制面、执行后端与团队费用、社媒原帖和版本对应。保留 AGENTS.md 原修改及 taste-skill / owner-aware 项目键待办；未运行上游、授权、登录、调用模型 / 云、改宿主或下载权重 / 媒体。
+
 - 2026-11-21：新增 `nightshift`、`bend`、`vllm-ascend` 三个七节指南、四平台日报及两个既有分类导航；实际目录 `1050 → 1053`，官方语言 daily +35 / +95 / +7。核 Nightshift v0.37.2、默认 auto-add / 无隔离 / 证据 off 与宿主权限；Bend v2.0.40、laws / kernel / 翻译 / 后端边界、F32 与无 F64；Ascend stable v0.30.0 / RC v0.32.0rc1 / main、软件栈和限定场景回退。X 核作者 09-27 历史原帖与累计互动，不充当今日传播；Instagram 仅宽泛聚合和登录入口；YouTube 核近期 Bend 演讲与历史视频元数据，未完整观看 / 采评论。接续目标宿主运行、规格与后端验证、NPU 精度与修复状态及社媒当日原帖；未运行上游或改宿主配置。已有 taste-skill 身份和 owner-aware 项目键待办保留。
 
 - 2026-11-20：新增 `FreeVideo`、`edgeever`、`splash` 三个七节页，同步三个既有分类与四平台日报，实际目录 `1047 → 1050`；官方 daily +99 / +57 / +61。核 FreeVideo v0.6.5 今日北京时间发布、代码 / 模型许可、Mac 实验性与耗时、插帧及草稿范围；edgeever v2.30.0 附件修复、MCP 权限、AI 直连 / Web 中转、每日自动更新与 migration 回退；splash 1.7.0 同配置作者回放的 decode / 全程 / 首 token 分母、部分回退、默认缓存精度 / 验证行数和认证。X 官网回链账号可读、搜索登录；Instagram 129K 仅宽泛聚合、项目标签 429；YouTube 三条标题 / 作者经 oEmbed 核对，累计播放 661 / 4610 / 12、相对 3w / 10h / 2d，Splash 视频版本 1.6.1 不等于最新 1.7.0，未完整观看。接续目标设备画质、同步 / 附件 / 恢复、数值 / 缓存 / 并发及社媒原帖补证。保留 AGENTS.md 原修改；未安装运行上游、连接知识库、授权、迁移、调用模型 / 云、修改宿主、下载权重 / 制品 / 媒体或部署。

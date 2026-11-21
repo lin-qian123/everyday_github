@@ -49,7 +49,7 @@
 
 如果你是第一次进入这个仓库，建议从这几个入口开始：
 
-- 最新日报：[`daily/2026-11-21/ai-hotspots.md`](./daily/2026-11-21/ai-hotspots.md)
+- 最新日报：[`daily/2026-11-22/ai-hotspots.md`](./daily/2026-11-22/ai-hotspots.md)
 - 项目总目录：[`projects/`](./projects/)
 - 自动化约束：[`AGENTS.md`](./AGENTS.md)
 - 开发续接记录：[`TODO.md`](./TODO.md)
@@ -196,6 +196,8 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `cli-agent-orchestrator` | AWS Labs 的多 CLI Agent 控制面；provider 限制强度、Codex 默认 yolo、委派上限与认证须分别核。 | [GitHub](https://github.com/awslabs/cli-agent-orchestrator) / [解读](./projects/cli-agent-orchestrator/README.md) |
+| `agentscope` | Python Agent SDK 与应用服务；权限模式、本机 / sandbox 后端、reply 预算与开发版文档须分别验收。 | [GitHub](https://github.com/agentscope-ai/agentscope) / [解读](./projects/agentscope/README.md) |
 | `app-store-compliance` | 商店发布手册、静态 guard 与 Agent 技能；未检查放行、人工证据、宿主安装和 ORA 许可须核。 | [GitHub](https://github.com/mjmirza/app-store-compliance) / [解读](./projects/app-store-compliance/README.md) |
 | `Claude-BugHunter` | 授权安全研究技能与决策支持流程；范围匹配、宿主安装、历史评测和双许可须分别核。 | [GitHub](https://github.com/elementalsouls/Claude-BugHunter) / [解读](./projects/Claude-BugHunter/README.md) |
 | `SkillEvaluator` | 三层技能评测与有 / 无技能对照；静态质量、CI advisory、失败覆盖、模型出口和费用分别核。 | [GitHub](https://github.com/NVIDIA/SkillEvaluator) / [解读](./projects/SkillEvaluator/README.md) |
@@ -769,6 +771,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `torchtitan` | PyTorch 原生预训练 / SFT / RL；recipe、数值一致性条件、性能分母与可恢复 checkpoint 须分别核。 | [GitHub](https://github.com/pytorch/torchtitan) / [解读](./projects/torchtitan/README.md) |
 | `bend` | 用 laws 与证明约束 AI 实现的并行语言；内核、编译器、浮点与后端边界须分层核验。 | [GitHub](https://github.com/bendlang/bend) / [解读](./projects/bend/README.md) |
 | `vllm-ascend` | vLLM 昇腾 NPU 插件；稳定版、RC、驱动软件栈及模型与功能组合需匹配。 | [GitHub](https://github.com/vllm-project/vllm-ascend) / [解读](./projects/vllm-ascend/README.md) |
 | `splash` | Apple silicon 本地推理与推测解码；按首 token、并发、缓存数值及默认认证边界评价。 | [GitHub](https://github.com/incoai/splash) / [解读](./projects/splash/README.md) |
@@ -1038,6 +1041,7 @@
 
 - 全量项目目录：[`projects/`](./projects/)
 - 最近日报：
+  - [`2026-11-22`](./daily/2026-11-22/ai-hotspots.md)
   - [`2026-11-21`](./daily/2026-11-21/ai-hotspots.md)
   - [`2026-11-20`](./daily/2026-11-20/ai-hotspots.md)
   - [`2026-11-19`](./daily/2026-11-19/ai-hotspots.md)
@@ -1182,9 +1186,9 @@
 ## 当前状态
 
 - 状态：持续日更中。
-- 最新更新：`2026-11-21`。
-- 当前项目总数：`1053`。
-- 最近新增项目：`nightshift`、`bend`、`vllm-ascend`；同步两个既有分类与四平台日报。
+- 最新更新：`2026-11-22`。
+- 当前项目总数：`1056`。
+- 最近新增项目：`torchtitan`、`cli-agent-orchestrator`、`agentscope`；同步两个既有分类与四平台日报。
 - 覆盖平台：GitHub、X、Instagram、YouTube。
 
 ## 维护约定
