@@ -15,6 +15,8 @@
 
 ## 阶段性开发记录
 
+- 2026-11-23：新增 `DesktopCommanderMCP`、`rig`、`Mooncake` 三个七节指南，四平台日报及三个既有分类；目录 `1056 → 1059`，官方语言 daily +12 / +8 / +6。核 Desktop Commander v0.3.4、Node 22.12 / 旧 Remote 文档差异、默认空目录和 telemetry、护栏 / Remote 会话；Rig v0.47.0、settings 迁移、默认审批 / redaction / budget 关闭、MCP 指南与默认表出入、safe 构建恢复和在途账单；Mooncake 0.3.14 / main、TE / Store / 后端、SLO 分母、KV namespace 和默认关闭 quota admission。X 上游历史原帖 07-02 / README 08-17 日期差异保留，23.5K 为累计 Views；Instagram 项目标签 429；YouTube 三条历史元数据经 oEmbed 核，141450 / 13772 / 3947 累计播放，未完整观看 / 采评论。接续目标客户端权限与撤销、Rig 插件拒绝 / 预算 / 恢复、Mooncake 目标硬件与隔离 / SLO、当日社媒补证。保留 AGENTS.md 和既有身份 / 项目键待办；未安装运行上游、授权登录、调用模型 / 云、改宿主、下载制品 / 媒体或启动服务。
+
 - 2026-11-22：新增 `torchtitan`、`cli-agent-orchestrator`、Python `agentscope` 三个七节指南，四平台日报及两个既有分类导航；实际目录 `1053 → 1056`，官方 Python daily +8 / +14 / +64。核 TorchTitan v0.4.0 / main、recipe 与单卡 debug、批次不变性条件和计算 / 整步分母、导出 / 恢复；CAO v2.5.3 / main 2.5.4、provider 强弱执行、Codex 默认 yolo / profile、委派上限和默认关闭认证 / token 继承；AgentScope v2.0.12 / latest 文档 2.0.13dev、权限 / 本机 backend / reply 预算。X 搜索登录，文档外链账号无项目关联证据而排除；Instagram 仅宽泛聚合 / 标题；YouTube 三条元数据经 oEmbed 核对，106 / 5390 / 30514 累计、9d / 1y / 5mo，未完整观看或采评论。接续目标硬件数值 / 性能 / 恢复、provider 权限与控制面、执行后端与团队费用、社媒原帖和版本对应。保留 AGENTS.md 原修改及 taste-skill / owner-aware 项目键待办；未运行上游、授权、登录、调用模型 / 云、改宿主或下载权重 / 媒体。
 
 - 2026-11-21：新增 `nightshift`、`bend`、`vllm-ascend` 三个七节指南、四平台日报及两个既有分类导航；实际目录 `1050 → 1053`，官方语言 daily +35 / +95 / +7。核 Nightshift v0.37.2、默认 auto-add / 无隔离 / 证据 off 与宿主权限；Bend v2.0.40、laws / kernel / 翻译 / 后端边界、F32 与无 F64；Ascend stable v0.30.0 / RC v0.32.0rc1 / main、软件栈和限定场景回退。X 核作者 09-27 历史原帖与累计互动，不充当今日传播；Instagram 仅宽泛聚合和登录入口；YouTube 核近期 Bend 演讲与历史视频元数据，未完整观看 / 采评论。接续目标宿主运行、规格与后端验证、NPU 精度与修复状态及社媒当日原帖；未运行上游或改宿主配置。已有 taste-skill 身份和 owner-aware 项目键待办保留。

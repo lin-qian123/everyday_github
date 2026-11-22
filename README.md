@@ -49,7 +49,7 @@
 
 如果你是第一次进入这个仓库，建议从这几个入口开始：
 
-- 最新日报：[`daily/2026-11-22/ai-hotspots.md`](./daily/2026-11-22/ai-hotspots.md)
+- 最新日报：[`daily/2026-11-23/ai-hotspots.md`](./daily/2026-11-23/ai-hotspots.md)
 - 项目总目录：[`projects/`](./projects/)
 - 自动化约束：[`AGENTS.md`](./AGENTS.md)
 - 开发续接记录：[`TODO.md`](./TODO.md)
@@ -74,6 +74,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `DesktopCommanderMCP` | MCP 文件 / 编辑 / 进程工具；目录护栏、默认统计、自动更新与 Remote 设备授权须分别核。 | [GitHub](https://github.com/wonderwhy-er/DesktopCommanderMCP) / [解读](./projects/DesktopCommanderMCP/README.md) |
 | `nightshift` | 以持久清单、hooks、恢复和收据接续长任务；默认权限、预算与证据内容须独立验收。 | [GitHub](https://github.com/orwa-mahmoud/nightshift) / [解读](./projects/nightshift/README.md) |
 | `mini-swe-agent` | bash 与线性轨迹构成的极简编码 Agent；默认本机执行、确认、预算与基准条件分别核。 | [GitHub](https://github.com/SWE-agent/mini-swe-agent) / [解读](./projects/mini-swe-agent/README.md) |
 | `serena` | 为编码 Agent 提供 LSP / JetBrains 语义工具；REPL 权限与分组件 GPL / MIT 许可须分别核。 | [GitHub](https://github.com/oraios/serena) / [解读](./projects/serena/README.md) |
@@ -196,6 +197,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `rig` | Rust LLM 库与 Bevy 插件编码 Agent；0.47 配置迁移、默认审批 / 脱敏 / 预算与 safe 含义须核。 | [GitHub](https://github.com/0xPlaygrounds/rig) / [解读](./projects/rig/README.md) |
 | `cli-agent-orchestrator` | AWS Labs 的多 CLI Agent 控制面；provider 限制强度、Codex 默认 yolo、委派上限与认证须分别核。 | [GitHub](https://github.com/awslabs/cli-agent-orchestrator) / [解读](./projects/cli-agent-orchestrator/README.md) |
 | `agentscope` | Python Agent SDK 与应用服务；权限模式、本机 / sandbox 后端、reply 预算与开发版文档须分别验收。 | [GitHub](https://github.com/agentscope-ai/agentscope) / [解读](./projects/agentscope/README.md) |
 | `app-store-compliance` | 商店发布手册、静态 guard 与 Agent 技能；未检查放行、人工证据、宿主安装和 ORA 许可须核。 | [GitHub](https://github.com/mjmirza/app-store-compliance) / [解读](./projects/app-store-compliance/README.md) |
@@ -771,6 +773,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `Mooncake` | KV cache / tensor 传输、共享 Store 与并行后端；协议矩阵、SLO 分母、namespace 和默认租户配额须核。 | [GitHub](https://github.com/kvcache-ai/Mooncake) / [解读](./projects/Mooncake/README.md) |
 | `torchtitan` | PyTorch 原生预训练 / SFT / RL；recipe、数值一致性条件、性能分母与可恢复 checkpoint 须分别核。 | [GitHub](https://github.com/pytorch/torchtitan) / [解读](./projects/torchtitan/README.md) |
 | `bend` | 用 laws 与证明约束 AI 实现的并行语言；内核、编译器、浮点与后端边界须分层核验。 | [GitHub](https://github.com/bendlang/bend) / [解读](./projects/bend/README.md) |
 | `vllm-ascend` | vLLM 昇腾 NPU 插件；稳定版、RC、驱动软件栈及模型与功能组合需匹配。 | [GitHub](https://github.com/vllm-project/vllm-ascend) / [解读](./projects/vllm-ascend/README.md) |
@@ -1041,6 +1044,7 @@
 
 - 全量项目目录：[`projects/`](./projects/)
 - 最近日报：
+  - [`2026-11-23`](./daily/2026-11-23/ai-hotspots.md)
   - [`2026-11-22`](./daily/2026-11-22/ai-hotspots.md)
   - [`2026-11-21`](./daily/2026-11-21/ai-hotspots.md)
   - [`2026-11-20`](./daily/2026-11-20/ai-hotspots.md)
@@ -1186,9 +1190,9 @@
 ## 当前状态
 
 - 状态：持续日更中。
-- 最新更新：`2026-11-22`。
-- 当前项目总数：`1056`。
-- 最近新增项目：`torchtitan`、`cli-agent-orchestrator`、`agentscope`；同步两个既有分类与四平台日报。
+- 最新更新：`2026-11-23`。
+- 当前项目总数：`1059`。
+- 最近新增项目：`DesktopCommanderMCP`、`rig`、`Mooncake`；同步三个既有分类与四平台日报。
 - 覆盖平台：GitHub、X、Instagram、YouTube。
 
 ## 维护约定
