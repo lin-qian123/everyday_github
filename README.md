@@ -49,7 +49,7 @@
 
 如果你是第一次进入这个仓库，建议从这几个入口开始：
 
-- 最新日报：[`daily/2026-11-23/ai-hotspots.md`](./daily/2026-11-23/ai-hotspots.md)
+- 最新日报：[`daily/2026-11-24/ai-hotspots.md`](./daily/2026-11-24/ai-hotspots.md)
 - 项目总目录：[`projects/`](./projects/)
 - 自动化约束：[`AGENTS.md`](./AGENTS.md)
 - 开发续接记录：[`TODO.md`](./TODO.md)
@@ -675,6 +675,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `davinci-resolve-mcp` | Resolve API 与编辑工作流 MCP；分析默认写回、归档 / safe mode 和实机版本须分别核。 | [GitHub](https://github.com/samuelgursky/davinci-resolve-mcp) / [解读](./projects/davinci-resolve-mcp/README.md) |
 | `FreeVideo` | 消费级硬件 MiniMax H3 / ComfyUI 视频生成；模型许可、原生帧率、Mac 实验路径与耗时须核。 | [GitHub](https://github.com/FlashML-org/FreeVideo) / [解读](./projects/FreeVideo/README.md) |
 | `whisper` | 多语言本地 ASR 参考实现；turbo 非翻译、首次权重下载、幻觉和逐段回听分别验收。 | [GitHub](https://github.com/openai/whisper) / [解读](./projects/whisper/README.md) |
 | `Veyra-NRVideo` | Windows 超分 / NR / HDR / 补帧与采集预览；呈现节奏、真实延迟、社区后端和组合许可须分别核。 | [GitHub](https://github.com/Likely7/Veyra-NRVideo) / [解读](./projects/Veyra-NRVideo/README.md) |
@@ -694,7 +695,7 @@
 | `remotion` | React 源码驱动视频与 Agent Skills；特殊许可、素材权利、编辑性与成片需单独验收。 | [GitHub](https://github.com/remotion-dev/remotion) / [解读](./projects/remotion/README.md) |
 | `hex` | Rust 本地语音听写；云改写、历史保留、权限与主线 / 发行配置分别核对。 | [GitHub](https://github.com/anomalyco/hex) / [解读](./projects/hex/README.md) |
 | `FluidAudio` | Apple 设备的 CoreML 语音 SDK，覆盖转写、TTS、VAD 和分说话人；下载、模型许可与硬件须核。 | [GitHub](https://github.com/FluidInference/FluidAudio) / [解读](./projects/FluidAudio/README.md) |
-| `CozyClay` | 浏览器 3D 分镜与运动预演，导出参考帧、片段和提示词给视频模型；遥测、云端调用及素材许可分层核。 | [GitHub](https://github.com/NomaDamas/CozyClay) / [解读](./projects/CozyClay/README.md) |
+| `CozyClay` | 浏览器 3D 运动预演与视频参考；3.3.0 工程兼容、motion writer 费用和托管录屏须分别核。 | [GitHub](https://github.com/HaD0Yun/CozyClay) / [解读](./projects/CozyClay/README.md) |
 | `sam2` | 图像与视频的可提示分割模型，依靠流式记忆传播掩膜；旧发布日期、模型配置、编译差异与数据许可须区分。 | [GitHub](https://github.com/facebookresearch/sam2) / [解读](./projects/sam2/README.md) |
 | `Qwen3-VL` | Dense / MoE 视觉语言模型与图像、视频工具；权重、视觉 token 预算、时序采样和 API 数据出口须固定。 | [GitHub](https://github.com/QwenLM/Qwen3-VL) / [解读](./projects/Qwen3-VL/README.md) |
 | `ComfyUI` | 多模态节点工作流引擎；本地 / partner / custom nodes 的网络、权限和模型条款分别治理。 | [GitHub](https://github.com/Comfy-Org/ComfyUI) / [解读](./projects/ComfyUI/README.md) |
@@ -894,6 +895,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `GenAI_Agents` | Agent 模式与 notebook 教程；离线 fixtures、真实云端草稿 / 审批和自定义非商业许可需分开。 | [GitHub](https://github.com/NirDiamant/GenAI_Agents) / [解读](./projects/GenAI_Agents/README.md) |
 | `ai-agent-handbook` | 阿里云企业 Agent 工程手册与浏览器练习；Harness、仿真、黄金集及特定问卷样本须区分证据范围。 | [GitHub](https://github.com/aliyun/ai-agent-handbook) / [解读](./projects/ai-agent-handbook/README.md) |
 | `ai-infra-book` | 从硬件约束推导 AI 系统的中文初稿与配套计算；逻辑载荷、共享设备实测和历史实验状态分开。 | [GitHub](https://github.com/bojieli/ai-infra-book) / [解读](./projects/ai-infra-book/README.md) |
 | `llm-zoomcamp` | DataTalks.Club 的 RAG / Agent 课程；当期入口、Python 版本、合成评估和证书条件分别核。 | [GitHub](https://github.com/DataTalksClub/llm-zoomcamp) / [解读](./projects/llm-zoomcamp/README.md) |
@@ -1044,6 +1046,7 @@
 
 - 全量项目目录：[`projects/`](./projects/)
 - 最近日报：
+  - [`2026-11-24`](./daily/2026-11-24/ai-hotspots.md)
   - [`2026-11-23`](./daily/2026-11-23/ai-hotspots.md)
   - [`2026-11-22`](./daily/2026-11-22/ai-hotspots.md)
   - [`2026-11-21`](./daily/2026-11-21/ai-hotspots.md)
@@ -1190,9 +1193,9 @@
 ## 当前状态
 
 - 状态：持续日更中。
-- 最新更新：`2026-11-23`。
-- 当前项目总数：`1059`。
-- 最近新增项目：`DesktopCommanderMCP`、`rig`、`Mooncake`；同步三个既有分类与四平台日报。
+- 最新更新：`2026-11-24`。
+- 当前项目总数：`1061`。
+- 最近新增项目：`davinci-resolve-mcp`、`GenAI_Agents`；原位刷新 `CozyClay`，同步两个既有分类与四平台日报。
 - 覆盖平台：GitHub、X、Instagram、YouTube。
 
 ## 维护约定

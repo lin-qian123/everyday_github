@@ -2,45 +2,43 @@
 
 # CozyClay
 
-> 更新：2026-10-22（Asia/Shanghai）。分类：语音、视频与多模态。主上游 `NomaDamas/CozyClay`；默认分支快照 `567c9d447f08`。官方资料与源码静态研究；热度、发行及社媒口径见[当日日报](../../daily/2026-10-22/ai-hotspots.md)。
+> 更新：2026-11-24（Asia/Shanghai）。分类：语音、视频与多模态。当前上游 `HaD0Yun/CozyClay`；旧 `NomaDamas/CozyClay` API 指向同一仓库 ID `1315384578`，原位续更。固定 SHA `7645fc69eaa06e5c1d04429c779dcdd815bf14d7` 与 v3.3.0 tag 相同。本轮为文档和局部源码静态核读，未安装、登录模型、导出 / 观看视频或迁移工程；热度见[当日日报](../../daily/2026-11-24/ai-hotspots.md)。
 
 ## 定位
 
-浏览器中的 3D 预演工具：先摆人物与场景、编动作、切镜头，再把首尾帧、灰模参考视频和提示词交给 AI 视频模型。包含 storyboard、景深 / 法线等导出与 Agent 控制面，不能把预演约束等同于下游视频必然服从。[README.md](https://github.com/NomaDamas/CozyClay/blob/567c9d447f08f169663a3b47a3880894be23facb/README.md)
+浏览器 3D 运动预演：先摆场景与人物，编动作和镜头，再把帧、参考片和提示词交给 AI 视频模型。3.3.0 改用第二个 motion writer 模型反复写运动规格、读取确定性引擎测量及 contact sheets，再安装 take；这仍是预演与参考条件，不能保证下游模型服从动作、镜头和剪辑。[README](https://github.com/HaD0Yun/CozyClay/blob/7645fc69eaa06e5c1d04429c779dcdd815bf14d7/README.md)
 
 ## 用法
 
-官方入口 `npx cozyclay`，要求 Node.js `>=22.19.0` 与 Chromium，工作室默认 `http://127.0.0.1:5180/app/`。先手动建立一个场景并导出，再接 Agent；MCP 入口为 `npx -y cozyclay mcp`。[README.md](https://github.com/NomaDamas/CozyClay/blob/567c9d447f08f169663a3b47a3880894be23facb/README.md) [package.json](https://github.com/NomaDamas/CozyClay/blob/567c9d447f08f169663a3b47a3880894be23facb/package.json)
+上游常规入口为 `npx cozyclay`，Node `>=22.19.0` 与 Chromium；本机工作室默认 `http://127.0.0.1:5180/app/`。手动建场景无需本地 GPU、Python 或模型权重；Agent motion 需要模型登录 / key。MCP 入口 `npx -y cozyclay mcp`，CLI 可用 `cclay live status --wait` 观察运行中的工作室。[README](https://github.com/HaD0Yun/CozyClay/blob/7645fc69eaa06e5c1d04429c779dcdd815bf14d7/README.md)、[package.json](https://github.com/HaD0Yun/CozyClay/blob/7645fc69eaa06e5c1d04429c779dcdd815bf14d7/package.json)
 
-本地建分镜不要求下载大模型；内置聊天可登录 ChatGPT 或配置模型服务，视频生成和相关素材生成另有后端与费用。不要把“打开本地页面”写成所有 AI 步骤都离线。[README.md](https://github.com/NomaDamas/CozyClay/blob/567c9d447f08f169663a3b47a3880894be23facb/README.md)
+**发行和包分开确认。** v3.3.0 GitHub Release 发布于 UTC 2026-11-23 22:57，即北京时间 11-24 06:57；npm 指定版本初查 404，07:06 复查指定版本与 `latest` 均 HTTP 200、版本 3.3.0。可用 `npx cozyclay@3.3.0` 固定包版本，或固定源码 SHA；这里只核元数据，未下载 / 验签包内容。常规 `npx cozyclay` 每次取新版本，而关闭 update check 不等于固定制品。[Release](https://github.com/HaD0Yun/CozyClay/releases/tag/v3.3.0)、[npm 指定版本元数据](https://registry.npmjs.org/cozyclay/3.3.0)、[README](https://github.com/HaD0Yun/CozyClay/blob/7645fc69eaa06e5c1d04429c779dcdd815bf14d7/README.md)
 
 ## 原理
 
-场景、角色和镜头形成可编辑状态；Agent 写运动规格，浏览器中的确定性编译器烘焙帧并做碰撞、滑步、接触等 QA。MCP / CLI / 面板操作同一 live studio；导出给视频模型的是参考条件，而不是经过验证的最终运动学或物理仿真。[README.md](https://github.com/NomaDamas/CozyClay/blob/567c9d447f08f169663a3b47a3880894be23facb/README.md) [mcp/README.md](https://github.com/NomaDamas/CozyClay/blob/567c9d447f08f169663a3b47a3880894be23facb/mcp/README.md)
+场景 / cast / 镜头形成可编辑状态；motion writer 写规格，确定性引擎产帧并测滑步、接触、平衡和穿模，writer 根据结果迭代。默认尝试已登录服务可用的 `claude-opus-5-5` medium，否则回落会话模型；显式 CLIProxy 环境覆盖优先，账号拒绝目标模型后有会话级回退。它是多模型 / 多数据路径，不能只核聊天面板所选模型。[CHANGELOG](https://github.com/HaD0Yun/CozyClay/blob/7645fc69eaa06e5c1d04429c779dcdd815bf14d7/CHANGELOG.md)、[motion-writer.mjs](https://github.com/HaD0Yun/CozyClay/blob/7645fc69eaa06e5c1d04429c779dcdd815bf14d7/bin/agent/motion-writer.mjs)
+
+AI video reference zip 在每四帧中导出一帧轻马赛克、三帧重模糊，每镜头重启序列，另带 `prompt.txt` 与 `scene-facts.json`。这是面向 Seedance 类视频模型的条件构造；“保持 blocking”是上游预期，仍需实片检验。[CHANGELOG](https://github.com/HaD0Yun/CozyClay/blob/7645fc69eaa06e5c1d04429c779dcdd815bf14d7/CHANGELOG.md)
 
 ## 价值
 
-工程判断：把昂贵的视频重抽样前移为便宜的构图、时序和镜头修改，适合比较多个分镜方案。是否减少总生成成本应按固定镜头、模型和重试次数评估，本轮没有成本实验。
+适合把人物位置、走位、镜头和切点提前做成可编辑资产，降低文字提示的歧义，也便于把同一预演交给多个视频后端对照。节省多少付费生成与返工，要按固定镜头、模型、失败样本和人工验收统计，不能只看作者演示片。
 
 ## 风险边界
 
-- 官网与官方 npm 制品默认有用量遥测；隐私文档列出 PostHog US Cloud、随机标识、功能与设备分桶等。源码 checkout / fork / CI 等按文档不发送；分发来源决定默认行为，不能简单归为“本地无网络”。[docs/privacy.md](https://github.com/NomaDamas/CozyClay/blob/567c9d447f08f169663a3b47a3880894be23facb/docs/privacy.md)
-- `cclay telemetry off` 可关闭；启动前可设 `COZYCLAY_TELEMETRY=0` 或 `DO_NOT_TRACK=1`。状态默认 `telemetryEnabled: true`；环境变量暂停与删除持久标识的行为不同。文档称不采 prompt / 项目内容，本轮核了配置，未抓包证明全路径。[bin/telemetry-state.mjs](https://github.com/NomaDamas/CozyClay/blob/567c9d447f08f169663a3b47a3880894be23facb/bin/telemetry-state.mjs) [docs/privacy.md](https://github.com/NomaDamas/CozyClay/blob/567c9d447f08f169663a3b47a3880894be23facb/docs/privacy.md)
-- Agent 和生成后端有自己的数据出口、密钥与权限，关闭 analytics 不会自动关闭模型调用。人物、参考图片、字体和权重需各自核权利。[README.md](https://github.com/NomaDamas/CozyClay/blob/567c9d447f08f169663a3b47a3880894be23facb/README.md) [LICENSING.md](https://github.com/NomaDamas/CozyClay/blob/567c9d447f08f169663a3b47a3880894be23facb/LICENSING.md)
-- 当前组合程序 AGPL-3.0-or-later；许可说明要求修改版网络服务提供对应源码，并通过 `VITE_SOURCE_CODE_URL` 设置来源入口。第三方材料仍有独立条款。[LICENSING.md](https://github.com/NomaDamas/CozyClay/blob/567c9d447f08f169663a3b47a3880894be23facb/LICENSING.md)
+- **旧工程兼容性有破坏。** 3.3.0 移除 storyboard project；旧 storyboard 打开为新建未保存的 animation，保存不覆盖原文件。新版本镜头文档为 v8，3.2.3 打开时没有镜头；保留原工程和旧版副本，不能把降级当成无损恢复。旧 pose library / still shots 等也有移除。[CHANGELOG](https://github.com/HaD0Yun/CozyClay/blob/7645fc69eaa06e5c1d04429c779dcdd815bf14d7/CHANGELOG.md)
+- **运动测量不等于画面完全正确。** 新 motion 只驱动 rig characters；capsule 与 imported rigs 原样站立。手接触可能差数厘米，默认 cube 外观和底层 rig 接触面不一致；手写高度须按当前显示身体尺度。上游另列手动转 rail 的描述与 shot action sentence 缺口。[CHANGELOG](https://github.com/HaD0Yun/CozyClay/blob/7645fc69eaa06e5c1d04429c779dcdd815bf14d7/CHANGELOG.md)
+- **费用面板不完整。** motion writer 的 token 不显示在 Agent 用量 / 成本里；一次 motion 可耗数分钟和多轮调用。发行记录只报告 CLIProxyAPI 上指定模型的真实运行，其他登录和 fallback 是 stand-in server 检查；不外推为所有 provider 兼容。[CHANGELOG](https://github.com/HaD0Yun/CozyClay/blob/7645fc69eaa06e5c1d04429c779dcdd815bf14d7/CHANGELOG.md)
+- **托管网页会录屏，npm 不录 replay。** 隐私文档称官网托管 `/app/` 默认 PostHog US Cloud session replay，3D viewport 2 fps，输入与 Agent transcript 遮罩，不采 console / 网络内容；landing 与 npm 不录 replay。官方 npm 仍默认用量遥测，源码 checkout 不发，不能写成“本地绝无出口”或“所有分发都录屏”。这是文档 / 配置核验，未抓包验证遮罩。[privacy.md](https://github.com/HaD0Yun/CozyClay/blob/7645fc69eaa06e5c1d04429c779dcdd815bf14d7/docs/privacy.md)、[analytics-values.js](https://github.com/HaD0Yun/CozyClay/blob/7645fc69eaa06e5c1d04429c779dcdd815bf14d7/src/analytics-values.js)
+- `cclay telemetry off` 清除 npm 标识，`COZYCLAY_TELEMETRY=0` / `DO_NOT_TRACK=1` 为启动时禁用；损坏的状态文件回落 telemetry on。关闭统计不关闭模型和生成服务，motion 记录 / contact sheets / clip 还在本机配置目录的 `motion-runs/` 保留最近 20 次。[telemetry-state.mjs](https://github.com/HaD0Yun/CozyClay/blob/7645fc69eaa06e5c1d04429c779dcdd815bf14d7/bin/telemetry-state.mjs)、[CHANGELOG](https://github.com/HaD0Yun/CozyClay/blob/7645fc69eaa06e5c1d04429c779dcdd815bf14d7/CHANGELOG.md)
+- 组合程序为 AGPL-3.0-or-later；修改后网络服务的对应源码入口由 `VITE_SOURCE_CODE_URL` 指定。素材、字体、模型和权重仍各自遵守条款。[LICENSING.md](https://github.com/HaD0Yun/CozyClay/blob/7645fc69eaa06e5c1d04429c779dcdd815bf14d7/LICENSING.md)
 
 ## 补充建议
 
-用自制角色和三镜头短场景先测保存、重开、undo 和导出；把 QA 指标与人工观感分开记录，再对比有 / 无预演的成功率、重试和总费用。固定 npm 版本与遥测状态，MCP 先在测试场景中用。本轮未运行工作室或生成视频。
+先用无敏感资产、单 rig、两镜头测试保存 / 重开 / 导出，并保留升级前副本。将运动规格的米制坐标、显示人物尺度、contact sheet 与全片逐帧对照；费用同时读 provider 账单和 motion 运行记录。完成预演 QA 后，再用同一模型和小额限额比较参考片是否减少失败 take，最后完整观看与回听。
 
 ## 参考资料
 
-- [README.md](https://github.com/NomaDamas/CozyClay/blob/567c9d447f08f169663a3b47a3880894be23facb/README.md)
-- [package.json](https://github.com/NomaDamas/CozyClay/blob/567c9d447f08f169663a3b47a3880894be23facb/package.json)
-- [LICENSE](https://github.com/NomaDamas/CozyClay/blob/567c9d447f08f169663a3b47a3880894be23facb/LICENSE)
-- [LICENSING.md](https://github.com/NomaDamas/CozyClay/blob/567c9d447f08f169663a3b47a3880894be23facb/LICENSING.md)
-- [docs/privacy.md](https://github.com/NomaDamas/CozyClay/blob/567c9d447f08f169663a3b47a3880894be23facb/docs/privacy.md)
-- [bin/telemetry-state.mjs](https://github.com/NomaDamas/CozyClay/blob/567c9d447f08f169663a3b47a3880894be23facb/bin/telemetry-state.mjs)
-- [mcp/README.md](https://github.com/NomaDamas/CozyClay/blob/567c9d447f08f169663a3b47a3880894be23facb/mcp/README.md)
-- [仓库 API](https://api.github.com/repos/NomaDamas/CozyClay)
-- [v3.0.3 Release](https://github.com/NomaDamas/CozyClay/releases/tag/v3.0.3)
+- [当前仓库](https://github.com/HaD0Yun/CozyClay)、[旧 API 的迁移指针](https://api.github.com/repos/NomaDamas/CozyClay)、[当前 API](https://api.github.com/repos/HaD0Yun/CozyClay)、[v3.3.0](https://github.com/HaD0Yun/CozyClay/releases/tag/v3.3.0)
+- 固定 SHA 的 [README](https://github.com/HaD0Yun/CozyClay/blob/7645fc69eaa06e5c1d04429c779dcdd815bf14d7/README.md)、[manifest](https://github.com/HaD0Yun/CozyClay/blob/7645fc69eaa06e5c1d04429c779dcdd815bf14d7/package.json)、[变更及限制](https://github.com/HaD0Yun/CozyClay/blob/7645fc69eaa06e5c1d04429c779dcdd815bf14d7/CHANGELOG.md)
+- [隐私](https://github.com/HaD0Yun/CozyClay/blob/7645fc69eaa06e5c1d04429c779dcdd815bf14d7/docs/privacy.md)、[统计开关](https://github.com/HaD0Yun/CozyClay/blob/7645fc69eaa06e5c1d04429c779dcdd815bf14d7/bin/telemetry-state.mjs)、[托管录屏配置](https://github.com/HaD0Yun/CozyClay/blob/7645fc69eaa06e5c1d04429c779dcdd815bf14d7/src/analytics-values.js)、[模型路由](https://github.com/HaD0Yun/CozyClay/blob/7645fc69eaa06e5c1d04429c779dcdd815bf14d7/bin/agent/motion-writer.mjs)、[许可说明](https://github.com/HaD0Yun/CozyClay/blob/7645fc69eaa06e5c1d04429c779dcdd815bf14d7/LICENSING.md)
