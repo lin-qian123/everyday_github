@@ -49,7 +49,7 @@
 
 如果你是第一次进入这个仓库，建议从这几个入口开始：
 
-- 最新日报：[`daily/2026-11-24/ai-hotspots.md`](./daily/2026-11-24/ai-hotspots.md)
+- 最新日报：[`daily/2026-11-25/ai-hotspots.md`](./daily/2026-11-25/ai-hotspots.md)
 - 项目总目录：[`projects/`](./projects/)
 - 自动化约束：[`AGENTS.md`](./AGENTS.md)
 - 开发续接记录：[`TODO.md`](./TODO.md)
@@ -74,6 +74,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `cc-switch-cli` | 多种 AI 终端的配置、账户与会话管理；发行 / 主线 schema、历史共享和代理日志须分开核。 | [GitHub](https://github.com/SaladDay/cc-switch-cli) / [解读](./projects/cc-switch-cli/README.md) |
 | `DesktopCommanderMCP` | MCP 文件 / 编辑 / 进程工具；目录护栏、默认统计、自动更新与 Remote 设备授权须分别核。 | [GitHub](https://github.com/wonderwhy-er/DesktopCommanderMCP) / [解读](./projects/DesktopCommanderMCP/README.md) |
 | `nightshift` | 以持久清单、hooks、恢复和收据接续长任务；默认权限、预算与证据内容须独立验收。 | [GitHub](https://github.com/orwa-mahmoud/nightshift) / [解读](./projects/nightshift/README.md) |
 | `mini-swe-agent` | bash 与线性轨迹构成的极简编码 Agent；默认本机执行、确认、预算与基准条件分别核。 | [GitHub](https://github.com/SWE-agent/mini-swe-agent) / [解读](./projects/mini-swe-agent/README.md) |
@@ -531,6 +532,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `pgvector` | PostgreSQL 向量扩展与 HNSW / IVFFlat；稳定 tag、过滤召回、排序和数据库权限须分别核。 | [GitHub](https://github.com/pgvector/pgvector) / [解读](./projects/pgvector/README.md) |
 | `txtai` | 向量 / SQL / 图检索、RAG 与模型工作流；默认 HTTP、safeopen 范围和 MCP 工具须核。 | [GitHub](https://github.com/neuml/txtai) / [解读](./projects/txtai/README.md) |
 | `Agentero` | PDF、结构化正文、笔记和 Agent 科研工作台；Catalog 备份、provider 出口及本地活动 / 遥测分开。 | [GitHub](https://github.com/poco-ai/Agentero) / [解读](./projects/Agentero/README.md) |
 | `AutoRAG` | 原位检索与整理个人文件的 Librarian 引擎；legacy Python、入口默认权限、模型数据出口与 FSL 桌面分开。 | [GitHub](https://github.com/Marker-Inc-Korea/AutoRAG) / [解读](./projects/AutoRAG/README.md) |
@@ -675,6 +677,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `audiocraft` | Meta 音频生成研究工具箱；稳定包 / 源码、MusicGen 权重非商业许可与完整听评分开核。 | [GitHub](https://github.com/facebookresearch/audiocraft) / [解读](./projects/audiocraft/README.md) |
 | `davinci-resolve-mcp` | Resolve API 与编辑工作流 MCP；分析默认写回、归档 / safe mode 和实机版本须分别核。 | [GitHub](https://github.com/samuelgursky/davinci-resolve-mcp) / [解读](./projects/davinci-resolve-mcp/README.md) |
 | `FreeVideo` | 消费级硬件 MiniMax H3 / ComfyUI 视频生成；模型许可、原生帧率、Mac 实验路径与耗时须核。 | [GitHub](https://github.com/FlashML-org/FreeVideo) / [解读](./projects/FreeVideo/README.md) |
 | `whisper` | 多语言本地 ASR 参考实现；turbo 非翻译、首次权重下载、幻觉和逐段回听分别验收。 | [GitHub](https://github.com/openai/whisper) / [解读](./projects/whisper/README.md) |
@@ -1046,6 +1049,7 @@
 
 - 全量项目目录：[`projects/`](./projects/)
 - 最近日报：
+  - [`2026-11-25`](./daily/2026-11-25/ai-hotspots.md)
   - [`2026-11-24`](./daily/2026-11-24/ai-hotspots.md)
   - [`2026-11-23`](./daily/2026-11-23/ai-hotspots.md)
   - [`2026-11-22`](./daily/2026-11-22/ai-hotspots.md)
@@ -1193,9 +1197,9 @@
 ## 当前状态
 
 - 状态：持续日更中。
-- 最新更新：`2026-11-24`。
-- 当前项目总数：`1061`。
-- 最近新增项目：`davinci-resolve-mcp`、`GenAI_Agents`；原位刷新 `CozyClay`，同步两个既有分类与四平台日报。
+- 最新更新：`2026-11-25`。
+- 当前项目总数：`1064`。
+- 最近新增项目：`cc-switch-cli`、`pgvector`、`audiocraft`；同步三个既有分类与四平台日报。
 - 覆盖平台：GitHub、X、Instagram、YouTube。
 
 ## 维护约定
