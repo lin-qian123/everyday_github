@@ -49,7 +49,7 @@
 
 如果你是第一次进入这个仓库，建议从这几个入口开始：
 
-- 最新日报：[`daily/2026-11-26/ai-hotspots.md`](./daily/2026-11-26/ai-hotspots.md)
+- 最新日报：[`daily/2026-11-27/ai-hotspots.md`](./daily/2026-11-27/ai-hotspots.md)
 - 项目总目录：[`projects/`](./projects/)
 - 自动化约束：[`AGENTS.md`](./AGENTS.md)
 - 开发续接记录：[`TODO.md`](./TODO.md)
@@ -74,6 +74,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `WorkDaddy` | CDP 桌面增强与账户 / 会话管理；免确认策略、原样凭据备份、默认诊断和恢复须分别核。 | [GitHub](https://github.com/babygoton/WorkDaddy) / [解读](./projects/WorkDaddy/README.md) |
 | `Antigravity-Manager` | 账户、配额与协议代理；稳定 / beta 鉴权修复、JSON 凭据路径、日志和非商业许可须分别核。 | [GitHub](https://github.com/lbjlaq/Antigravity-Manager) / [解读](./projects/Antigravity-Manager/README.md) |
 | `cc-switch-cli` | 多种 AI 终端的配置、账户与会话管理；发行 / 主线 schema、历史共享和代理日志须分开核。 | [GitHub](https://github.com/SaladDay/cc-switch-cli) / [解读](./projects/cc-switch-cli/README.md) |
 | `DesktopCommanderMCP` | MCP 文件 / 编辑 / 进程工具；目录护栏、默认统计、自动更新与 Remote 设备授权须分别核。 | [GitHub](https://github.com/wonderwhy-er/DesktopCommanderMCP) / [解读](./projects/DesktopCommanderMCP/README.md) |
@@ -779,6 +780,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `Nemotron` | 模型家族配方、steps 与部署入口；发行 / 主线、许可元数据、阶段锁定和 Parse 显存边界须分别核。 | [GitHub](https://github.com/NVIDIA-NeMo/Nemotron) / [解读](./projects/Nemotron/README.md) |
 | `Mooncake` | KV cache / tensor 传输、共享 Store 与并行后端；协议矩阵、SLO 分母、namespace 和默认租户配额须核。 | [GitHub](https://github.com/kvcache-ai/Mooncake) / [解读](./projects/Mooncake/README.md) |
 | `torchtitan` | PyTorch 原生预训练 / SFT / RL；recipe、数值一致性条件、性能分母与可恢复 checkpoint 须分别核。 | [GitHub](https://github.com/pytorch/torchtitan) / [解读](./projects/torchtitan/README.md) |
 | `bend` | 用 laws 与证明约束 AI 实现的并行语言；内核、编译器、浮点与后端边界须分层核验。 | [GitHub](https://github.com/bendlang/bend) / [解读](./projects/bend/README.md) |
@@ -900,6 +902,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `pytorch-deep-learning` | 从张量到 FoodVision / 论文复现 / 部署的课程；旧环境、batch 指标、独立测试和状态恢复须核。 | [GitHub](https://github.com/mrdbourke/pytorch-deep-learning) / [解读](./projects/pytorch-deep-learning/README.md) |
 | `llm-universe` | 中文个人知识库 / RAG 课程；PDF 与源码版本、云 API 数据出口、Hit@K 和缺失许可须核。 | [GitHub](https://github.com/datawhalechina/llm-universe) / [解读](./projects/llm-universe/README.md) |
 | `GenAI_Agents` | Agent 模式与 notebook 教程；离线 fixtures、真实云端草稿 / 审批和自定义非商业许可需分开。 | [GitHub](https://github.com/NirDiamant/GenAI_Agents) / [解读](./projects/GenAI_Agents/README.md) |
 | `ai-agent-handbook` | 阿里云企业 Agent 工程手册与浏览器练习；Harness、仿真、黄金集及特定问卷样本须区分证据范围。 | [GitHub](https://github.com/aliyun/ai-agent-handbook) / [解读](./projects/ai-agent-handbook/README.md) |
@@ -1052,6 +1055,7 @@
 
 - 全量项目目录：[`projects/`](./projects/)
 - 最近日报：
+  - [`2026-11-27`](./daily/2026-11-27/ai-hotspots.md)
   - [`2026-11-26`](./daily/2026-11-26/ai-hotspots.md)
   - [`2026-11-25`](./daily/2026-11-25/ai-hotspots.md)
   - [`2026-11-24`](./daily/2026-11-24/ai-hotspots.md)
@@ -1201,9 +1205,9 @@
 ## 当前状态
 
 - 状态：持续日更中。
-- 最新更新：`2026-11-26`。
-- 当前项目总数：`1067`。
-- 最近新增项目：`Antigravity-Manager`、`llm-universe`、`CLIP`；同步三个既有分类与四平台日报。
+- 最新更新：`2026-11-27`。
+- 当前项目总数：`1070`。
+- 最近新增项目：`WorkDaddy`、`pytorch-deep-learning`、`Nemotron`；同步三个既有分类与四平台日报。
 - 覆盖平台：GitHub、X、Instagram、YouTube。
 
 ## 维护约定
