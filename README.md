@@ -49,7 +49,7 @@
 
 如果你是第一次进入这个仓库，建议从这几个入口开始：
 
-- 最新日报：[`daily/2026-11-27/ai-hotspots.md`](./daily/2026-11-27/ai-hotspots.md)
+- 最新日报：[`daily/2026-11-28/ai-hotspots.md`](./daily/2026-11-28/ai-hotspots.md)
 - 项目总目录：[`projects/`](./projects/)
 - 自动化约束：[`AGENTS.md`](./AGENTS.md)
 - 开发续接记录：[`TODO.md`](./TODO.md)
@@ -200,6 +200,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `appwrite` | 应用与 Agent 的统一后端；Cloud OAuth / 本地 MCP、server key、写批准及发行差异须分别核。 | [GitHub](https://github.com/appwrite/appwrite) / [解读](./projects/appwrite/README.md) |
 | `rig` | Rust LLM 库与 Bevy 插件编码 Agent；0.47 配置迁移、默认审批 / 脱敏 / 预算与 safe 含义须核。 | [GitHub](https://github.com/0xPlaygrounds/rig) / [解读](./projects/rig/README.md) |
 | `cli-agent-orchestrator` | AWS Labs 的多 CLI Agent 控制面；provider 限制强度、Codex 默认 yolo、委派上限与认证须分别核。 | [GitHub](https://github.com/awslabs/cli-agent-orchestrator) / [解读](./projects/cli-agent-orchestrator/README.md) |
 | `agentscope` | Python Agent SDK 与应用服务；权限模式、本机 / sandbox 后端、reply 预算与开发版文档须分别验收。 | [GitHub](https://github.com/agentscope-ai/agentscope) / [解读](./projects/agentscope/README.md) |
@@ -902,6 +903,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `undercover` | 虚构理赔业务的 Agent 工程课程；main 骨架 / 课末分支、审核恢复、云费用和缺失许可须分别核。 | [GitHub](https://github.com/ed-donner/undercover) / [解读](./projects/undercover/README.md) |
 | `pytorch-deep-learning` | 从张量到 FoodVision / 论文复现 / 部署的课程；旧环境、batch 指标、独立测试和状态恢复须核。 | [GitHub](https://github.com/mrdbourke/pytorch-deep-learning) / [解读](./projects/pytorch-deep-learning/README.md) |
 | `llm-universe` | 中文个人知识库 / RAG 课程；PDF 与源码版本、云 API 数据出口、Hit@K 和缺失许可须核。 | [GitHub](https://github.com/datawhalechina/llm-universe) / [解读](./projects/llm-universe/README.md) |
 | `GenAI_Agents` | Agent 模式与 notebook 教程；离线 fixtures、真实云端草稿 / 审批和自定义非商业许可需分开。 | [GitHub](https://github.com/NirDiamant/GenAI_Agents) / [解读](./projects/GenAI_Agents/README.md) |
@@ -939,6 +941,7 @@
 
 | 项目 | 简介 | 链接 |
 | --- | --- | --- |
+| `intrinsic-core` | 工业机器人本地感知 / 规划 / 控制栈；主机改动、平台组合、模型许可与实机验收须分别核。 | [GitHub](https://github.com/intrinsic-ai/intrinsic-core) / [解读](./projects/intrinsic-core/README.md) |
 | `sellbird` | 从线索到邮件草稿、审批与发送的外联流程；订阅 CLI、数据出口、邮箱权限和 AGPL 须分别核。 | [GitHub](https://github.com/ethanplusai/sellbird) / [解读](./projects/sellbird/README.md) |
 | `agenticos` | 自托管团队 Agent、RAG、工具与治理平台；沙箱网络、共享授权、并发预算和数据出口须分别验证。 | [GitHub](https://github.com/vstorm-co/agenticos) / [解读](./projects/agenticos/README.md) |
 | `paper-orchestra` | 多 Agent 论文写作与 LaTeX 管线；引文分母、输出清理、远端模型与生成代码执行须核。 | [GitHub](https://github.com/google-research/paper-orchestra) / [解读](./projects/paper-orchestra/README.md) |
@@ -1055,6 +1058,7 @@
 
 - 全量项目目录：[`projects/`](./projects/)
 - 最近日报：
+  - [`2026-11-28`](./daily/2026-11-28/ai-hotspots.md)
   - [`2026-11-27`](./daily/2026-11-27/ai-hotspots.md)
   - [`2026-11-26`](./daily/2026-11-26/ai-hotspots.md)
   - [`2026-11-25`](./daily/2026-11-25/ai-hotspots.md)
@@ -1205,9 +1209,9 @@
 ## 当前状态
 
 - 状态：持续日更中。
-- 最新更新：`2026-11-27`。
-- 当前项目总数：`1070`。
-- 最近新增项目：`WorkDaddy`、`pytorch-deep-learning`、`Nemotron`；同步三个既有分类与四平台日报。
+- 最新更新：`2026-11-28`。
+- 当前项目总数：`1073`。
+- 最近新增项目：`appwrite`、`intrinsic-core`、`undercover`；同步三个既有分类与四平台日报。
 - 覆盖平台：GitHub、X、Instagram、YouTube。
 
 ## 维护约定
